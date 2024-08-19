@@ -5,4 +5,17 @@ BulbasaurEvosMoves:
 ; Learnset
 	db 1, TACKLE
 	db 1, GROWL
+	db 6, VINE_WHIP
+	db 8, LEECH_SEED
+	db 10, POISON_STING
+	db 13, STUN_SPORE
+	db 13, POISONPOWDER
+	db 15, ABSORB
+	db 18, SLEEP_POWDER
+	db 21, RAZOR_LEAF
+	db 25, GROWTH
+	db 30, TOXIC
+	db 37, PETAL_DANCE
+	db 45, SPORE
+	db 54, SOLARBEAM
 	db 0

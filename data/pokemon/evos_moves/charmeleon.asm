@@ -5,4 +5,16 @@ CharmeleonEvosMoves:
 ; Learnset
 	db 1, SCRATCH
 	db 1, LEER
+	db 6, EMBER
+	db 8, SMOKESCREEN
+	db 10, FURY_SWIPES
+	db 13, TAIL_WHIP
+	db 15, FRIGHTEN
+	db 21, FIRE_SPIN
+	db 26, HEADBUTT
+	db 30, FLAME_CHARGE
+	db 37, SLASH
+	db 45, AGILITY
+	db 52, FLAMETHROWER
+	db 60, THRASH
 	db 0
