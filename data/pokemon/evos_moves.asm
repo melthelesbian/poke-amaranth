@@ -350,7 +350,7 @@ GrimerEvosMoves:
 	db 30, POISON_GAS
 	db 33, MINIMIZE
 	db 37, SLUDGE
-	db 42, SPARK
+	db 42, DEFENSE_CURL
 	db 48, SCREECH
 	db 55, POWDER_SNOW
 	db 0
@@ -503,7 +503,7 @@ StaryuEvosMoves:
 	db 0
 ; Learnset
 	db 17, WATER_GUN
-	db 22, SPARK
+	db 22, DEFENSE_CURL
 	db 27, RECOVER
 	db 32, SWIFT
 	db 37, MINIMIZE
@@ -530,7 +530,7 @@ PinsirEvosMoves:
 	db 25, SEISMIC_TOSS
 	db 30, GUILLOTINE
 	db 36, FOCUS_ENERGY
-	db 43, SPARK
+	db 43, DEFENSE_CURL
 	db 49, SLASH
 	db 54, SWORDS_DANCE
 	db 0
@@ -579,7 +579,7 @@ OnixEvosMoves:
 	db 19, ROCK_THROW
 	db 25, RAGE
 	db 33, HEAVY_SMASH
-	db 43, SPARK
+	db 43, DEFENSE_CURL
 	db 0
 
 FearowEvosMoves:
@@ -640,7 +640,7 @@ GravelerEvosMoves:
 	db 11, DEFENSE_CURL
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
-	db 29, SPARK
+	db 29, DEFENSE_CURL
 	db 36, EARTHQUAKE
 	db 43, EXPLOSION
 	db 0
@@ -756,7 +756,7 @@ GolemEvosMoves:
 	db 11, DEFENSE_CURL
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
-	db 29, SPARK
+	db 29, DEFENSE_CURL
 	db 36, EARTHQUAKE
 	db 43, EXPLOSION
 	db 0
@@ -1036,7 +1036,7 @@ KrabbyEvosMoves:
 	db 25, GUILLOTINE
 	db 30, ASTONISH
 	db 35, CRABHAMMER
-	db 40, SPARK
+	db 40, DEFENSE_CURL
 	db 0
 
 MissingNo4FEvosMoves:
@@ -1568,7 +1568,7 @@ SnorlaxEvosMoves:
 	db 0
 ; Learnset
 	db 35, BODY_SLAM
-	db 41, SPARK
+	db 41, DEFENSE_CURL
 	db 48, FLARE_RUSH
 	db 56, HYPER_BEAM
 	db 0
@@ -1600,7 +1600,7 @@ MukEvosMoves:
 	db 30, POISON_GAS
 	db 33, MINIMIZE
 	db 37, SLUDGE
-	db 45, SPARK
+	db 45, DEFENSE_CURL
 	db 53, SCREECH
 	db 60, POWDER_SNOW
 	db 0
@@ -1619,7 +1619,7 @@ KinglerEvosMoves:
 	db 25, GUILLOTINE
 	db 34, ASTONISH
 	db 42, CRABHAMMER
-	db 49, SPARK
+	db 49, DEFENSE_CURL
 	db 0
 
 CloysterEvosMoves:
@@ -1926,7 +1926,7 @@ GeodudeEvosMoves:
 	db 11, DEFENSE_CURL
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
-	db 26, SPARK
+	db 26, DEFENSE_CURL
 	db 31, EARTHQUAKE
 	db 36, EXPLOSION
 	db 0
