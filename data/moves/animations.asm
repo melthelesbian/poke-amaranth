@@ -30,7 +30,7 @@ AttackAnimationPointers:
 	dw MudSlapAnim
 	dw HeadbuttAnim
 	dw HornAttackAnim
-	dw FurySliceAnim
+	dw FuryCutAnim
 	dw BugBuzzAnim
 	dw TackleAnim
 	dw BodySlamAnim
@@ -41,7 +41,7 @@ AttackAnimationPointers:
 	dw TailWhipAnim
 	dw PoisonStingAnim
 	dw TwineedleAnim
-	dw PinMissileAnim
+	dw BugBiteAnim
 	dw LeerAnim
 	dw BiteAnim
 	dw GrowlAnim
@@ -300,7 +300,7 @@ SwordsDanceAnim:
 	battle_anim SWORDS_DANCE_ANIM, SUBANIM_1_SWORDS_CIRCLING, 1, 6
 	db -1 ; end
 
-FurySliceAnim:
+FuryCutAnim:
 CutAnim:
 	battle_anim CUT_ANIM, SE_DARK_SCREEN_FLASH
 	battle_anim NO_MOVE_ANIM, SUBANIM_0_SLICE, 0, 4
@@ -450,6 +450,7 @@ TwineedleAnim:
 	battle_anim TWINEEDLE_ANIM, SUBANIM_0_STAR_TWICE, 0, 5
 	db -1 ; end
 
+BugBiteAnim:
 PinMissileAnim:
 	battle_anim PIN_MISSILE_ANIM, SUBANIM_0_STAR_TWICE, 0, 3
 	db -1 ; end

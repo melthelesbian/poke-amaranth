@@ -40,19 +40,19 @@ Moves:
 	move ROLLING_KICK, FLINCH_SIDE_EFFECT2,        60,   FIGHTING,     85,  15
 	move MUD_SLAP,     NO_ADDITIONAL_EFFECT,       40,   GROUND,       100, 25 ;  (SAND_ATTACK)
 	move HEADBUTT,     FLINCH_SIDE_EFFECT2,        70,   NORMAL,       100, 15
-	move HORN_ATTACK,  NO_ADDITIONAL_EFFECT,       40,   BUG,          100, 25
-	move FURY_SLICE,   RAGE_EFFECT,                40,   BUG,          95,  20 ;  (FURY_ATTACK)
-	move BUG_BUZZ,     NO_ADDITIONAL_EFFECT,       90,   BUG,          100, 10 ;  (HORN_DRILL)
+	move HORN_ATTACK,  NO_ADDITIONAL_EFFECT,       40,   ROCK,         100, 35
+	move FURY_CUT,     RAGE_EFFECT,                40,   BUG,          95,  20 ;  (FURY_ATTACK)
+	move BUG_BUZZ,     SPECIAL_DOWN_SIDE_EFFECT,   90,   BUG,          100, 10 ;  (HORN_DRILL)
 	move TACKLE,       NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 35
 	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,      85,   NORMAL,       100, 15
 	move WRAP,         TRAPPING_EFFECT,            20,   NORMAL,       85,  20
 	move TAKE_DOWN,    RECOIL_EFFECT,              90,   NORMAL,       90,  20
 	move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100,  DRAGON,       100, 10
 	move FLARE_RUSH,   RECOIL_EFFECT,              100,  FIRE,         100, 15 ;  (DOUBLE_EDGE)
-	move TAIL_WHIP,    DEFENSE_DOWN_SIDE_EFFECT,   25,   NORMAL,       100, 35
+	move TAIL_WHIP,    DEFENSE_DOWN_SIDE_EFFECT,   50,   NORMAL,       100, 25
 	move POISON_STING, POISON_SIDE_EFFECT1,        40,   POISON,       100, 35
 	move TWINEEDLE,    TWINEEDLE_EFFECT,           35,   BUG,          100, 20
-	move PIN_MISSILE,  TWO_TO_FIVE_ATTACKS_EFFECT, 25,   BUG,          85,  20
+	move BUG_BITE,     NO_ADDITIONAL_EFFECT,       40,   BUG,          100, 35 ;  (PIN_MISSILE)
 	move LEER,         DEFENSE_DOWN1_EFFECT,       0,    MYSTERY,      100, 30
 	move BITE,         FLINCH_SIDE_EFFECT1,        60,   DARK,         100, 25
 	move GROWL,        ATTACK_DOWN1_EFFECT,        0,    MYSTERY,      100, 40
@@ -91,7 +91,7 @@ Moves:
 	move STUN_SPORE,   PARALYZE_EFFECT,            0,    GRASS,        75,  30
 	move SLEEP_POWDER, SLEEP_EFFECT,               0,    GRASS,        75,  15
 	move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  90,   GRASS,        100, 20
-	move STRING_SHOT,  TRAPPING_EFFECT,            15,   BUG,          95,  40
+	move STRING_SHOT,  TRAPPING_EFFECT,            15,   BUG,          95,  30
 	move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,      1,    DRAGON,       100, 15
 	move FIRE_SPIN,    TRAPPING_EFFECT,            25,   FIRE,         75,  15
 	move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,      40,   ELECTRIC,     100, 30
@@ -132,7 +132,7 @@ Moves:
 	move MIRROR_MOVE,  MIRROR_MOVE_EFFECT,         0,    MYSTERY,      100, 20
 	move SELFDESTRUCT, EXPLODE_EFFECT,             150,  NORMAL,       100, 5
 	move EGG_BOMB,     NO_ADDITIONAL_EFFECT,       90,   GRASS,        100, 10
-	move LICK,         PARALYZE_SIDE_EFFECT2,      20,   DARK,         100, 30
+	move LICK,         PARALYZE_SIDE_EFFECT2,      25,   DARK,         100, 30
 	move SMOG,         POISON_SIDE_EFFECT2,        65,   POISON,       70,  20
 	move SLUDGE,       POISON_SIDE_EFFECT2,        90,   POISON,       100, 20
 	move BONE_CLUB,    FLINCH_SIDE_EFFECT1,        60,   GROUND,       100, 20

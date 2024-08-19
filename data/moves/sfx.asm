@@ -42,7 +42,7 @@ MoveSoundTable:
 	db SFX_BATTLE_21,          $00, $80 ; TAIL_WHIP
 	db SFX_BATTLE_1B,          $00, $80 ; POISON_STING
 	db SFX_BATTLE_1B,          $20, $c0 ; TWINEEDLE
-	db SFX_BATTLE_19,          $00, $80 ; PIN_MISSILE
+	db SFX_BATTLE_19,          $00, $80 ; BUG_BITE
 	db SFX_BATTLE_31,          $ff, $40 ; LEER
 	db SFX_BATTLE_1E,          $00, $80 ; BITE
 	db SFX_BATTLE_0B,          $00, $c0 ; GROWL
