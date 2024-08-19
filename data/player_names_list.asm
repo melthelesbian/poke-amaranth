@@ -1,3 +1,17 @@
+IF DEF(_AMARANTH)
+DefaultNamesPlayerList:
+	db "NEW NAME@"
+	db "AMAR@"
+	db "RED@"
+	db "BLUE@"
+
+DefaultNamesRivalList:
+	db "NEW NAME@"
+	db "TONY@"
+	db "BLUE@"
+	db "RED@"
+ENDC
+
 IF DEF(_RED)
 DefaultNamesPlayerList:
 	db "NEW NAME@"

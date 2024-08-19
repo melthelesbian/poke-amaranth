@@ -1,4 +1,7 @@
 BorderPalettes:
+IF DEF(_AMARANTH)
+	INCBIN "gfx/sgb/green_border.tilemap"
+ENDC
 IF DEF(_RED)
 	INCBIN "gfx/sgb/red_border.tilemap"
 ENDC
@@ -8,6 +11,15 @@ ENDC
 
 	ds $100
 
+; [TODO) credit file or add to end game credits
+; credit shinpokered for crediting Dracrius/pocketrgb-en/commit/b7750e2ded2b8acd0b507c7358057591d4c0351b
+; for correct values for green sgb border
+IF DEF(_AMARANTH)
+	RGB 30,29,29 ; PAL_SGB1
+	RGB 25,31,18
+	RGB 18,25,12
+	RGB 12,20,9
+ENDC
 IF DEF(_RED)
 	RGB 30,29,29 ; PAL_SGB1
 	RGB 25,22,25
@@ -23,6 +35,12 @@ ENDC
 
 	ds $18
 
+IF DEF(_AMARANTH)
+	RGB 30,29,29 ; PAL_SGB2
+	RGB 15,18,27
+	RGB 24,19,7
+	RGB 15,15,15
+ENDC
 IF DEF(_RED)
 	RGB 30,29,29 ; PAL_SGB2
 	RGB 22,31,16
@@ -38,6 +56,12 @@ ENDC
 
 	ds $18
 
+IF DEF(_AMARANTH)
+	RGB 30,29,29 ; PAL_SGB3
+	RGB 30,27,4
+	RGB 29,18,20
+	RGB 13,15,16
+ENDC
 IF DEF(_RED)
 	RGB 30,29,29 ; PAL_SGB3
 	RGB 31,31,17
@@ -54,6 +78,9 @@ ENDC
 	ds $18
 
 SGBBorderGraphics:
+IF DEF(_AMARANTH)
+	INCBIN "gfx/sgb/green_border.2bpp"
+ENDC
 IF DEF(_RED)
 	INCBIN "gfx/sgb/red_border.2bpp"
 ENDC

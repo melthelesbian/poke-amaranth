@@ -121,7 +121,9 @@ DisplayTitleScreen:
 	call SaveScreenTilesToBuffer2
 	call LoadScreenTilesFromBuffer2
 	call EnableLCD
-
+IF DEF(_AMARANTH)
+	ld a, FARFETCHD ; which Pokemon to show first on the title screen
+ENDC
 IF DEF(_RED)
 	ld a, STARTER1 ; which Pokemon to show first on the title screen
 ENDC
@@ -402,6 +404,9 @@ PrintGameVersionOnTitleScreen:
 
 ; these point to special tiles specifically loaded for that purpose and are not usual text
 VersionOnTitleScreenText:
+IF DEF(_AMARANTH)
+	db $60,$61,$62,$63,$64,$65,$66,$67,$68,$69,"@" ; "Amaranth Version"
+ENDC
 IF DEF(_RED)
 	db $60,$61,$7F,$65,$66,$67,$68,$69,"@" ; "Red Version"
 ENDC
