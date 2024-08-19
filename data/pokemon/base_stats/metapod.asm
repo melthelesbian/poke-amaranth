@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/metapod.pic", 0, 1 ; sprite dimensions
 	dw MetapodPicFront, MetapodPicBack
 
-	db DEFENSE_CURL, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

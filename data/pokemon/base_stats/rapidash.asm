@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/rapidash.pic", 0, 1 ; sprite dimensions
 	dw RapidashPicFront, RapidashPicBack
 
-	db EMBER, TAIL_WHIP, ASTONISH, GROWL ; level 1 learnset
+	db NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

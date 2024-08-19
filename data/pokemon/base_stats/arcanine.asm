@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/arcanine.pic", 0, 1 ; sprite dimensions
 	dw ArcaninePicFront, ArcaninePicBack
 
-	db BITE, EMBER, FRIGHTEN, TAKE_DOWN ; level 1 learnset
+	db NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
