@@ -2,7 +2,7 @@ MoltresEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 51, LEER
-	db 55, AGILITY
-	db 60, SKY_ATTACK
+	db 1, PECK
+	db 1, SCREECH
+	db 1, EMBER
 	db 0

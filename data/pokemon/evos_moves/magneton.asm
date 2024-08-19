@@ -2,10 +2,7 @@ MagnetonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 21, SONICBOOM
-	db 25, THUNDERSHOCK
-	db 29, CONFUSE_RAY
-	db 38, THUNDER_WAVE
-	db 46, HEAVY_SMASH
-	db 54, SCREECH
+	db 1, TACKLE
+	db 1, SCREECH
+	db 1, THUNDERSHOCK
 	db 0

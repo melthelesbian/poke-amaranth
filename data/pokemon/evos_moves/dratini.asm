@@ -3,9 +3,7 @@ DratiniEvosMoves:
 	db EVOLVE_LEVEL, 30, DRAGONAIR
 	db 0
 ; Learnset
-	db 10, THUNDER_WAVE
-	db 20, AGILITY
-	db 30, BODY_SLAM
-	db 40, DRAGON_RAGE
-	db 50, HYPER_BEAM
+	db 1, WRAP
+	db 1, LEER
+	db 1, BUBBLE
 	db 0

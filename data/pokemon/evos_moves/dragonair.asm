@@ -3,9 +3,7 @@ DragonairEvosMoves:
 	db EVOLVE_LEVEL, 55, DRAGONITE
 	db 0
 ; Learnset
-	db 10, THUNDER_WAVE
-	db 20, AGILITY
-	db 35, BODY_SLAM
-	db 45, DRAGON_RAGE
-	db 55, HYPER_BEAM
+	db 1, WRAP
+	db 1, LEER
+	db 1, BUBBLE
 	db 0
