@@ -1,0 +1,12 @@
+EeveeEvosMoves:
+; Evolutions
+	db EVOLVE_ITEM, FIRE_STONE, 1, FLAREON
+	db EVOLVE_ITEM, THUNDER_STONE, 1, JOLTEON
+	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
+	db 0
+; Learnset
+	db 27, QUICK_ATTACK
+	db 31, TAIL_WHIP
+	db 37, BITE
+	db 45, TAKE_DOWN
+	db 0
