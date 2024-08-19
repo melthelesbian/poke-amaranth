@@ -7,9 +7,9 @@ TypeNames:
 	dw .Poison
 	dw .Ground
 	dw .Rock
-	dw .Bird
+	dw .Steel
 	dw .Bug
-	dw .Ghost
+	dw .Dark
 
 REPT UNUSED_TYPES_END - UNUSED_TYPES
 	dw .Normal
@@ -21,7 +21,10 @@ ENDR
 	dw .Electric
 	dw .Psychic
 	dw .Ice
+	dw .Ghost
+	dw .Fairy
 	dw .Dragon
+	dw .Mystery
 
 	assert_table_length NUM_TYPES
 
@@ -29,15 +32,19 @@ ENDR
 .Fighting: db "FIGHTING@"
 .Flying:   db "FLYING@"
 .Poison:   db "POISON@"
+.Ground:   db "GROUND@"
+.Rock:     db "ROCK@"
+.Steel:    db "STEEL@"
+.Bug:      db "BUG@"
+.Dark:     db "DARK@"
 .Fire:     db "FIRE@"
 .Water:    db "WATER@"
 .Grass:    db "GRASS@"
 .Electric: db "ELECTRIC@"
 .Psychic:  db "PSYCHIC@"
 .Ice:      db "ICE@"
-.Ground:   db "GROUND@"
-.Rock:     db "ROCK@"
-.Bird:     db "BIRD@"
-.Bug:      db "BUG@"
 .Ghost:    db "GHOST@"
+.Fairy:    db "FAIRY@"
 .Dragon:   db "DRAGON@"
+.Mystery:  db "MYSTERY@"
+
