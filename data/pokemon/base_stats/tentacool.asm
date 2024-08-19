@@ -10,13 +10,13 @@
 	INCBIN "gfx/pokemon/front/tentacool.pic", 0, 1 ; sprite dimensions
 	dw TentacoolPicFront, TentacoolPicBack
 
-	db ACID, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db ACID, BUBBLE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,    FLARE_RUSH,  BUBBLEBEAM,   \
+	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,      BUBBLEBEAM,   \
 	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         MEGA_DRAIN,   \
-	     MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         SKULL_BASH,   \
+	     MIMIC,          REFLECT,      BIDE,         SKULL_BASH,   \
 	     REST,         SUBSTITUTE,   CUT,          SURF
 	; end
 

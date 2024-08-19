@@ -3,7 +3,7 @@
 	db  78,  84,  78, 100,  85
 	;   hp  atk  def  spd  spc
 
-	db FIRE, FLYING ; type
+	db FIRE, DRAGON ; type
 	db 45 ; catch rate
 	db 209 ; base exp
 
@@ -14,12 +14,12 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   SWORDS_DANCE, MOONBLAST,    TOXIC,        BODY_SLAM,    \
+	tmhm MEGA_PUNCH,   SWORDS_DANCE,     TOXIC,        BODY_SLAM,    \
 	     TAKE_DOWN,    FLARE_RUSH,  HYPER_BEAM,   SUBMISSION,   COUNTER,      \
 	     SEISMIC_TOSS, RAGE,         DRAGON_RAGE,  EARTHQUAKE,   FISSURE,      \
-	     DIG,          MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         \
+	     DIG,          MIMIC,          REFLECT,      BIDE,         \
 	     FIRE_BLAST,   SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     CUT,          STRENGTH
+	     CUT,          FLY,          STRENGTH
 	; end
 
 	db 0 ; padding

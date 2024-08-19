@@ -3,7 +3,7 @@
 	db  46,  57,  40,  50,  40
 	;   hp  atk  def  spd  spc
 
-	db POISON, POISON ; type
+	db NORMAL, POISON ; type
 	db 235 ; catch rate
 	db 60 ; base exp
 
@@ -14,9 +14,9 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BUG_BUZZ,   BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  \
+	tmhm TOXIC,           BODY_SLAM,    TAKE_DOWN,      \
 	     BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      MIMIC,        \
-	     DOUBLE_DASH,  REFLECT,      BIDE,         SKULL_BASH,   REST,         \
+	       REFLECT,      BIDE,         SKULL_BASH,   REST,         \
 	     SUBSTITUTE
 	; end
 

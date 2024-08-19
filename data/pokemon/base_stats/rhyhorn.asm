@@ -3,7 +3,7 @@
 	db  80,  85,  95,  25,  30
 	;   hp  atk  def  spd  spc
 
-	db GROUND, ROCK ; type
+	db ROCK, ROCK ; type
 	db 120 ; catch rate
 	db 135 ; base exp
 
@@ -14,9 +14,9 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BUG_BUZZ,   BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  \
+	tmhm TOXIC,           BODY_SLAM,    TAKE_DOWN,      \
 	     RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   FISSURE,      \
-	     DIG,          MIMIC,        DOUBLE_DASH,  BIDE,         FIRE_BLAST,   \
+	     DIG,          MIMIC,          BIDE,         FIRE_BLAST,   \
 	     SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 

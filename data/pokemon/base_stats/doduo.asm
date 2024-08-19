@@ -3,7 +3,7 @@
 	db  35,  85,  45,  75,  35
 	;   hp  atk  def  spd  spc
 
-	db NORMAL, FLYING ; type
+	db NORMAL, NORMAL ; type
 	db 190 ; catch rate
 	db 96 ; base exp
 
@@ -14,10 +14,10 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm ICY_WIND,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  \
+	tmhm ICY_WIND,    TOXIC,        BODY_SLAM,    TAKE_DOWN,      \
 	     RAGE,         MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         \
-	     SKULL_BASH,   SKY_ATTACK,   REST,         TRI_ATTACK,   SUBSTITUTE,   \
-	     FLY
+	     SKULL_BASH,   SKY_ATTACK,   REST,         TRI_ATTACK,   SUBSTITUTE
+
 	; end
 
 	db 0 ; padding

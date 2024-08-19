@@ -14,9 +14,9 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,    FLARE_RUSH,  HYPER_BEAM,   \
-	     RAGE,         MIMIC,        DOUBLE_DASH,  BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   CUT
+	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,      HYPER_BEAM,   \
+	     RAGE,         MIMIC,          BIDE,         SWIFT,        \
+	     SKULL_BASH,   REST,         SUBSTITUTE,   CUT, FLY
 	; end
 
 	db 0 ; padding

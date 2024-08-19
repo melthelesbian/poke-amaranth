@@ -3,7 +3,7 @@
 	db  40,  30,  50, 100,  55
 	;   hp  atk  def  spd  spc
 
-	db ELECTRIC, ELECTRIC ; type
+	db ELECTRIC, STEEL ; type
 	db 190 ; catch rate
 	db 103 ; base exp
 
@@ -15,7 +15,7 @@
 
 	; tm/hm learnset
 	tmhm TOXIC,        TAKE_DOWN,    RAGE,         THUNDERBOLT,  THUNDER,      \
-	     TELEPORT,     MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         \
+	     TELEPORT,     MIMIC,          REFLECT,      BIDE,         \
 	     SELFDESTRUCT, SWIFT,        REST,         THUNDER_WAVE, EXPLOSION,    \
 	     SUBSTITUTE,   FLASH
 	; end

@@ -3,7 +3,7 @@
 	db  95,  70,  73,  60,  85
 	;   hp  atk  def  spd  spc
 
-	db NORMAL, NORMAL ; type
+	db FAIRY, FAIRY ; type
 	db 25 ; catch rate
 	db 129 ; base exp
 
@@ -15,7 +15,7 @@
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MOONBLAST,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     FLARE_RUSH,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
+	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
 	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     SOLARBEAM,    THUNDERBOLT,  THUNDER,      PSYCHIC_M,    TELEPORT,     \
 	     MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         METRONOME,    \

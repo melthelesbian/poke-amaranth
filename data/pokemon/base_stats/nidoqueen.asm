@@ -3,7 +3,7 @@
 	db  90,  82,  87,  76,  75
 	;   hp  atk  def  spd  spc
 
-	db POISON, GROUND ; type
+	db FAIRY, GROUND ; type
 	db 45 ; catch rate
 	db 194 ; base exp
 
@@ -14,11 +14,11 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MOONBLAST,    TOXIC,        BUG_BUZZ,   BODY_SLAM,    \
-	     TAKE_DOWN,    FLARE_RUSH,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     \
+	tmhm MEGA_PUNCH,       TOXIC,           BODY_SLAM,    \
+	     TAKE_DOWN,      BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     \
 	     BLIZZARD,     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
 	     SEISMIC_TOSS, RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
-	     FISSURE,      MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         \
+	     FISSURE,      MIMIC,          REFLECT,      BIDE,         \
 	     FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
 	     SURF,         STRENGTH
 	; end

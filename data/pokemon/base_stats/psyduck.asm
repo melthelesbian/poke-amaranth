@@ -3,21 +3,21 @@
 	db  50,  52,  48,  55,  50
 	;   hp  atk  def  spd  spc
 
-	db WATER, WATER ; type
+	db WATER, PSYCHIC_TYPE ; type
 	db 190 ; catch rate
 	db 80 ; base exp
 
 	INCBIN "gfx/pokemon/front/psyduck.pic", 0, 1 ; sprite dimensions
 	dw PsyduckPicFront, PsyduckPicBack
 
-	db SCRATCH, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db SCRATCH, BUBBLE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MOONBLAST,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     FLARE_RUSH,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
+	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
+	       BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
 	     PAY_DAY,      SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     DIG,          MIMIC,        DOUBLE_DASH,  BIDE,         SWIFT,        \
+	     DIG,          MIMIC,          BIDE,         SWIFT,        \
 	     SKULL_BASH,   REST,         SUBSTITUTE,   SURF,         STRENGTH
 	; end
 

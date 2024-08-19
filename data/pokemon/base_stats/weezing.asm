@@ -15,7 +15,7 @@
 
 	; tm/hm learnset
 	tmhm TOXIC,        HYPER_BEAM,   RAGE,         THUNDERBOLT,  THUNDER,      \
-	     MIMIC,        DOUBLE_DASH,  BIDE,         SELFDESTRUCT, FIRE_BLAST,   \
+	     MIMIC,          BIDE,         SELFDESTRUCT, FIRE_BLAST,   \
 	     REST,         EXPLOSION,    SUBSTITUTE
 	; end
 

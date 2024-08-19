@@ -10,11 +10,11 @@
 	INCBIN "gfx/pokemon/front/beedrill.pic", 0, 1 ; sprite dimensions
 	dw BeedrillPicFront, BeedrillPicBack
 
-	db FURY_SLICE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db POISON_STING, TWINEEDLE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,    FLARE_RUSH,  HYPER_BEAM,   \
+	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,      HYPER_BEAM,   \
 	     RAGE,         MEGA_DRAIN,   MIMIC,        DOUBLE_DASH,  REFLECT,      \
 	     BIDE,         SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE,   \
 	     CUT

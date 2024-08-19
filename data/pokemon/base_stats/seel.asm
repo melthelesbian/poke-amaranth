@@ -3,7 +3,7 @@
 	db  65,  45,  55,  45,  70
 	;   hp  atk  def  spd  spc
 
-	db WATER, WATER ; type
+	db WATER, ICE ; type
 	db 190 ; catch rate
 	db 100 ; base exp
 
@@ -14,9 +14,9 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BUG_BUZZ,   BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  \
+	tmhm TOXIC,           BODY_SLAM,    TAKE_DOWN,      \
 	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     PAY_DAY,      \
-	     RAGE,         MIMIC,        DOUBLE_DASH,  BIDE,         SKULL_BASH,   \
+	     RAGE,         MIMIC,          BIDE,         SKULL_BASH,   \
 	     REST,         SUBSTITUTE,   SURF,         STRENGTH
 	; end
 

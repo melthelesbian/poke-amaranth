@@ -10,13 +10,13 @@
 	INCBIN "gfx/pokemon/front/cloyster.pic", 0, 1 ; sprite dimensions
 	dw CloysterPicFront, CloysterPicBack
 
-	db FLAME_CHARGE, SWEET_CRY, CLAMP, AURORA_BEAM ; level 1 learnset
+	db VICEGRIP, CONFUSE_RAY, CLAMP, AURORA_BEAM ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    FLARE_RUSH,  BUBBLEBEAM,   WATER_GUN,    \
+	tmhm TOXIC,        TAKE_DOWN,      BUBBLEBEAM,   WATER_GUN,    \
 	     ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         TELEPORT,     \
-	     MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         SELFDESTRUCT, \
+	     MIMIC,          REFLECT,      BIDE,         SELFDESTRUCT, \
 	     SWIFT,        REST,         EXPLOSION,    TRI_ATTACK,   SUBSTITUTE,   \
 	     SURF
 	; end

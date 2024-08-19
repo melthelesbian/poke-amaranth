@@ -3,7 +3,7 @@
 	db  60,  85,  69,  80,  65
 	;   hp  atk  def  spd  spc
 
-	db POISON, POISON ; type
+	db POISON, DARK ; type
 	db 90 ; catch rate
 	db 147 ; base exp
 
@@ -14,9 +14,9 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  HYPER_BEAM,   \
+	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    HYPER_BEAM,   \
 	     RAGE,         MEGA_DRAIN,   EARTHQUAKE,   FISSURE,      DIG,          \
-	     MIMIC,        DOUBLE_DASH,  BIDE,         SKULL_BASH,   REST,         \
+	     MIMIC,          BIDE,         SKULL_BASH,   REST,         \
 	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 

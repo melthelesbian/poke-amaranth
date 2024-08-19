@@ -3,7 +3,7 @@
 	db  75, 100, 110,  65,  55
 	;   hp  atk  def  spd  spc
 
-	db GROUND, GROUND ; type
+	db GROUND, NORMAL ; type
 	db 90 ; catch rate
 	db 163 ; base exp
 
@@ -14,9 +14,9 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  \
+	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,      \
 	     HYPER_BEAM,   SUBMISSION,   SEISMIC_TOSS, RAGE,         EARTHQUAKE,   \
-	     FISSURE,      DIG,          MIMIC,        DOUBLE_DASH,  BIDE,         \
+	     FISSURE,      DIG,          MIMIC,          BIDE,         \
 	     SWIFT,        SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
 	     CUT,          STRENGTH
 	; end

@@ -10,13 +10,13 @@
 	INCBIN "gfx/pokemon/front/seaking.pic", 0, 1 ; sprite dimensions
 	dw SeakingPicFront, SeakingPicBack
 
-	db PECK, TAIL_WHIP, SWEET_CRY, NO_MOVE ; level 1 learnset
+	db PECK, TAIL_WHIP, CONFUSE_RAY, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BUG_BUZZ,   TAKE_DOWN,    FLARE_RUSH,  BUBBLEBEAM,   \
+	tmhm TOXIC,           TAKE_DOWN,      BUBBLEBEAM,   \
 	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         \
-	     MIMIC,        DOUBLE_DASH,  BIDE,         SWIFT,        SKULL_BASH,   \
+	     MIMIC,          BIDE,         SWIFT,        SKULL_BASH,   \
 	     REST,         SUBSTITUTE,   SURF
 	; end
 

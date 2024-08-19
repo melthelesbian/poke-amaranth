@@ -10,12 +10,12 @@
 	INCBIN "gfx/pokemon/front/venonat.pic", 0, 1 ; sprite dimensions
 	dw VenonatPicFront, VenonatPicBack
 
-	db TACKLE, DISABLE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db TACKLE, POISON_STING, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    FLARE_RUSH,  RAGE,         MEGA_DRAIN,   \
-	     SOLARBEAM,    PSYCHIC_M,    MIMIC,        DOUBLE_DASH,  REFLECT,      \
+	tmhm TOXIC,        TAKE_DOWN,      RAGE,         MEGA_DRAIN,   \
+	     SOLARBEAM,    PSYCHIC_M,    MIMIC,          REFLECT,      \
 	     BIDE,         REST,         PSYWAVE,      SUBSTITUTE
 	; end
 

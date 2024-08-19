@@ -10,13 +10,13 @@
 	INCBIN "gfx/pokemon/front/goldeen.pic", 0, 1 ; sprite dimensions
 	dw GoldeenPicFront, GoldeenPicBack
 
-	db PECK, TAIL_WHIP, NO_MOVE, NO_MOVE ; level 1 learnset
+	db PECK, LEER, BUBBLE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BUG_BUZZ,   TAKE_DOWN,    FLARE_RUSH,  BUBBLEBEAM,   \
+	tmhm TOXIC,           TAKE_DOWN,      BUBBLEBEAM,   \
 	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         MIMIC,        \
-	     DOUBLE_DASH,  BIDE,         SWIFT,        SKULL_BASH,   REST,         \
+	       BIDE,         SWIFT,        SKULL_BASH,   REST,         \
 	     SUBSTITUTE,   SURF
 	; end
 

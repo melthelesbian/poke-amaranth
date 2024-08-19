@@ -3,7 +3,7 @@
 	db  95, 125,  79,  81, 100
 	;   hp  atk  def  spd  spc
 
-	db WATER, FLYING ; type
+	db WATER, DRAGON ; type
 	db 45 ; catch rate
 	db 214 ; base exp
 
@@ -14,9 +14,9 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  BUBBLEBEAM,   \
+	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      BUBBLEBEAM,   \
 	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         \
-	     DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      MIMIC,        DOUBLE_DASH,  \
+	     DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      MIMIC,          \
 	     REFLECT,      BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         \
 	     SUBSTITUTE,   SURF,         STRENGTH
 	; end

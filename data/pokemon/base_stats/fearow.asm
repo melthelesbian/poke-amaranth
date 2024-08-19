@@ -3,7 +3,7 @@
 	db  65,  90,  65, 100,  61
 	;   hp  atk  def  spd  spc
 
-	db NORMAL, FLYING ; type
+	db FLYING, DARK ; type
 	db 90 ; catch rate
 	db 162 ; base exp
 
@@ -14,8 +14,8 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   ICY_WIND,    TOXIC,        TAKE_DOWN,    FLARE_RUSH,  \
-	     HYPER_BEAM,   RAGE,         MIMIC,        DOUBLE_DASH,  BIDE,         \
+	tmhm RAZOR_WIND,   ICY_WIND,    TOXIC,        TAKE_DOWN,      \
+	     HYPER_BEAM,   RAGE,         MIMIC,          BIDE,         \
 	     SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   FLY
 	; end
 

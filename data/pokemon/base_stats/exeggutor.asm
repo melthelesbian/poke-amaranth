@@ -3,7 +3,7 @@
 	db  95,  95,  85,  55, 125
 	;   hp  atk  def  spd  spc
 
-	db GRASS, PSYCHIC_TYPE ; type
+	db GRASS, GRASS ; type
 	db 45 ; catch rate
 	db 212 ; base exp
 
@@ -14,9 +14,9 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    FLARE_RUSH,  HYPER_BEAM,   RAGE,         \
+	tmhm TOXIC,        TAKE_DOWN,      HYPER_BEAM,   RAGE,         \
 	     MEGA_DRAIN,   SOLARBEAM,    PSYCHIC_M,    TELEPORT,     MIMIC,        \
-	     DOUBLE_DASH,  REFLECT,      BIDE,         SELFDESTRUCT, EGG_BOMB,     \
+	       REFLECT,      BIDE,         SELFDESTRUCT, EGG_BOMB,     \
 	     REST,         PSYWAVE,      EXPLOSION,    SUBSTITUTE,   STRENGTH
 	; end
 

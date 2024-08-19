@@ -10,14 +10,14 @@
 	INCBIN "gfx/pokemon/front/golem.pic", 0, 1 ; sprite dimensions
 	dw GolemPicFront, GolemPicBack
 
-	db TACKLE, DEFENSE_CURL, NO_MOVE, NO_MOVE ; level 1 learnset
+	db TACKLE, DEFENSE_CURL, ROCK_THROW, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MOONBLAST,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     FLARE_RUSH,  HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
+	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
+	       HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
 	     RAGE,         EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        \
-	     DOUBLE_DASH,  BIDE,         METRONOME,    SELFDESTRUCT, FIRE_BLAST,   \
+	       BIDE,         METRONOME,    SELFDESTRUCT, FIRE_BLAST,   \
 	     REST,         EXPLOSION,    ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 

@@ -14,8 +14,8 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  \
-	     RAGE,         MEGA_DRAIN,   SOLARBEAM,    MIMIC,        DOUBLE_DASH,  \
+	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,      \
+	     RAGE,         MEGA_DRAIN,   SOLARBEAM,    MIMIC,          \
 	     REFLECT,      BIDE,         REST,         SUBSTITUTE,   CUT
 	; end
 

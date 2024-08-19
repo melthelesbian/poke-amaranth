@@ -3,20 +3,20 @@
 	db  30,  56,  35,  72,  25
 	;   hp  atk  def  spd  spc
 
-	db NORMAL, NORMAL ; type
+	db NORMAL, DARK ; type
 	db 255 ; catch rate
 	db 57 ; base exp
 
 	INCBIN "gfx/pokemon/front/rattata.pic", 0, 1 ; sprite dimensions
 	dw RattataPicFront, RattataPicBack
 
-	db TACKLE, TAIL_WHIP, NO_MOVE, NO_MOVE ; level 1 learnset
+	db TACKLE, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  BUBBLEBEAM,   \
+	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      BUBBLEBEAM,   \
 	     WATER_GUN,    BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      \
-	     DIG,          MIMIC,        DOUBLE_DASH,  BIDE,         SWIFT,        \
+	     DIG,          MIMIC,          BIDE,         SWIFT,        \
 	     SKULL_BASH,   REST,         SUBSTITUTE
 	; end
 

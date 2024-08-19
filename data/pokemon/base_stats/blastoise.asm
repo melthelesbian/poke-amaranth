@@ -3,7 +3,7 @@
 	db  79,  83, 100,  78,  85
 	;   hp  atk  def  spd  spc
 
-	db WATER, WATER ; type
+	db WATER, STEEL ; type
 	db 45 ; catch rate
 	db 210 ; base exp
 
@@ -14,10 +14,10 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MOONBLAST,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     FLARE_RUSH,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
+	tmhm MEGA_PUNCH,  TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
+	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
 	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_DASH,  \
+	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,          \
 	     REFLECT,      BIDE,         SKULL_BASH,   REST,         SUBSTITUTE,   \
 	     SURF,         STRENGTH
 	; end
