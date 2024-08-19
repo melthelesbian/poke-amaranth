@@ -27,7 +27,7 @@ ENDM
 
 ; [FPA 002 End]
 	vc_const "K"
-	vc_const MEGA_KICK
+	vc_const MOONBLAST
 
 ; [FPA 004 Begin]
 	vc_const "B"

@@ -158,279 +158,279 @@ Type = 98
 
 ;rsm003758
 ;No151
-[FPA 001 Begin@Reduce_move_anim_flashing_Mega_Punch_Self_Destruct_Explosion]               
-Mode = 3                      
-Type = 0                      
-Address = {HEX @}            
-MotionBEnable0 = 3            
-MotionBlur0 = 27              
-ConditionType = 11             
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}     
-ConditionValueB = {dws_ ==            ==              ==              ==              ==              ==            ||  ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }     
-ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "P"             MEGA_PUNCH    00  "S"           "E"             "L"             "F"             MEGA_PUNCH    00  "E"           "X"             "P"             "L"             MEGA_PUNCH  }     
+[FPA 001 Begin@Reduce_move_anim_flashing_Mega_Punch_Self_Destruct_Explosion]
+Mode = 3
+Type = 0
+Address = {HEX @}
+MotionBEnable0 = 3
+MotionBlur0 = 27
+ConditionType = 11
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==              ==            ||  ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "P"             MEGA_PUNCH    00  "S"           "E"             "L"             "F"             MEGA_PUNCH    00  "E"           "X"             "P"             "L"             MEGA_PUNCH  }
 
-[FPA 001 End@Stop_reducing_move_anim_flashing_Mega_Punch_Explosion]               
-Mode = 3                    
-Type = 1                    
-Address = {HEX @}           
-ConditionType = 11           
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}              
-ConditionValueB = {dws_ ==            ==              ==              ==              ==              ==            ||  ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }              
-ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "P"             MEGA_PUNCH    00  "E"           "X"             "P"             "L"             EXPLOSION     00  "E"           "X"             "P"             "L"             MEGA_PUNCH  }              
+[FPA 001 End@Stop_reducing_move_anim_flashing_Mega_Punch_Explosion]
+Mode = 3
+Type = 1
+Address = {HEX @}
+ConditionType = 11
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==              ==            ||  ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "P"             MEGA_PUNCH    00  "E"           "X"             "P"             "L"             EXPLOSION     00  "E"           "X"             "P"             "L"             MEGA_PUNCH  }
 
-                                    
-                                    
-;rsm141151   
-;No117              
-[FPA 002 Begin@Reduce_move_anim_flashing_Guillotine]                     
-Mode = 3                            
-Type = 0                            
-Address = {HEX @}                   
-MotionBEnable0 = 3                  
-MotionBlur0 = 9                     
-MotionBEnable1 = 3                  
-MotionBlur1 = 8 
-ConditionType = 0                   
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}          
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }          
-ConditionValueC = {dws_ "G"           "U"             "I"             "L"             GUILLOTINE  }          
 
-[FPA 002 End@Stop_reducing_move_anim_flashing_Guillotine]                                          
-Mode = 3                                                                             
-Type = 1                                                 
-Address = {HEX @}                                        
-ConditionType = 11                                        
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID}         
-ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==              ==          }       
-ConditionValueC = {dws_ "G"           "U"             "I"             "L"             GUILLOTINE    00  "M"           "E"             "G"             "A"             "K"             MEGA_KICK   }      
+
+;rsm141151
+;No117
+[FPA 002 Begin@Reduce_move_anim_flashing_Guillotine]
+Mode = 3
+Type = 0
+Address = {HEX @}
+MotionBEnable0 = 3
+MotionBlur0 = 9
+MotionBEnable1 = 3
+MotionBlur1 = 8
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "G"           "U"             "I"             "L"             GUILLOTINE  }
+
+[FPA 002 End@Stop_reducing_move_anim_flashing_Guillotine]
+Mode = 3
+Type = 1
+Address = {HEX @}
+ConditionType = 11
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==              ==          }
+ConditionValueC = {dws_ "G"           "U"             "I"             "L"             GUILLOTINE    00  "M"           "E"             "G"             "A"             "K"             MOONBLAST   }
 
 
 
 ;rsm143918
 ;No150
-[FPA 003 Begin@Reduce_move_anim_flashing_Mega_Kick]               
-Mode = 3                      
-Type = 0                      
-Address = {HEX @}            
-MotionBEnable0 = 3            
-MotionBlur0 = 25               
-ConditionType = 0             
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID}   
-ConditionValueB = {dws_ ==            ==              ==              ==              ==              ==          }  
-ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "K"             MEGA_KICK   }  
+[FPA 003 Begin@Reduce_move_anim_flashing_Mega_Kick]
+Mode = 3
+Type = 0
+Address = {HEX @}
+MotionBEnable0 = 3
+MotionBlur0 = 25
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==              ==          }
+ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "K"             MOONBLAST   }
 
 
 
 ;rsm152422
 ;No131
-[FPA 004 Begin@Reduce_move_anim_flashing_Blizzard]                           
-Mode = 3                                   
-Type = 0                                   
-Address = {HEX @}                         
-MotionBEnable0 = 3                         
-MotionBlur0 = 25                            
-ConditionType = 0                          
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}                                              
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }   
-ConditionValueC = {dws_ "B"           "L"             "I"             "Z"             BLIZZARD    }   
+[FPA 004 Begin@Reduce_move_anim_flashing_Blizzard]
+Mode = 3
+Type = 0
+Address = {HEX @}
+MotionBEnable0 = 3
+MotionBlur0 = 25
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "B"           "L"             "I"             "Z"             BLIZZARD    }
 
 
 ;rsm160334
 ;No123
-[FPA 005 Begin@Reduce_move_anim_flashing_Bubblebeam]                           
-Mode = 3                                   
-Type = 0                                   
-Address = {hex @}                         
-MotionBEnable0 = 3                         
-MotionBlur0 = 27                             
-ConditionType = 0                          
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}                                             
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }   
-ConditionValueC = {dws_ "B"           "U"             "B"             "B"             BUBBLEBEAM  }   
+[FPA 005 Begin@Reduce_move_anim_flashing_Bubblebeam]
+Mode = 3
+Type = 0
+Address = {hex @}
+MotionBEnable0 = 3
+MotionBlur0 = 27
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "B"           "U"             "B"             "B"             BUBBLEBEAM  }
 
-[FPA 005 End@Stop_reducing_move_anim_flashing_Bubblebeam_Hyper_Beam_Blizzard]                                        
-Mode = 3                                             
-Type = 1                                             
-Address = {HEX @}                                    
-ConditionType = 11                                    
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}            
-ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }       
-ConditionValueC = {dws_ "B"           "U"             "B"             "B"             BUBBLEBEAM    00  "H"           "Y"             "P"             "E"             HYPER_BEAM    00  "B"           "L"             "I"             "Z"             BLIZZARD    } 
+[FPA 005 End@Stop_reducing_move_anim_flashing_Bubblebeam_Hyper_Beam_Blizzard]
+Mode = 3
+Type = 1
+Address = {HEX @}
+ConditionType = 11
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "B"           "U"             "B"             "B"             BUBBLEBEAM    00  "H"           "Y"             "P"             "E"             HYPER_BEAM    00  "B"           "L"             "I"             "Z"             BLIZZARD    }
 
 
 ;rsm163356
 ;No116
-[FPA 006 Begin@Reduce_move_anim_flashing_Hyper_Beam]                                                 
-Mode = 3               
-Type = 0               
-Address = {HEX @}         
-MotionBEnable0 = 1        
-MotionBlur0 = 5 
-MotionBEnable1 = 1                   
-MotionBlur1 = 5    
-ConditionType = 0                                     
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}  
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }  
-ConditionValueC = {dws_ "H"           "Y"             "P"             "E"             HYPER_BEAM  }  
+[FPA 006 Begin@Reduce_move_anim_flashing_Hyper_Beam]
+Mode = 3
+Type = 0
+Address = {HEX @}
+MotionBEnable0 = 1
+MotionBlur0 = 5
+MotionBEnable1 = 1
+MotionBlur1 = 5
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "H"           "Y"             "P"             "E"             HYPER_BEAM  }
 
 
 
 ;rsm174631
 ;No57
-[FPA 007 Begin@Reduce_move_anim_flashing_Thunderbolt]                                                 
-Mode = 3               
-Type = 0               
-Address = {HEX @}       
-MotionBEnable0 = 3        
-MotionBlur0 = 30    
-ConditionType = 0                                     
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}  
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }  
-ConditionValueC = {dws_ "T"           "H"             "U"             "N"             THUNDERBOLT }  
-   
-                         
-[FPA 007 End@Stop_reducing_move_anim_flashing_Thunderbolt]       
-Mode = 3                 
-Type = 1                 
+[FPA 007 Begin@Reduce_move_anim_flashing_Thunderbolt]
+Mode = 3
+Type = 0
 Address = {HEX @}
-ConditionType = 0                                           
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}           
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }           
-ConditionValueC = {dws_ "T"           "H"             "U"             "N"             THUNDERBOLT }         
-                  
+MotionBEnable0 = 3
+MotionBlur0 = 30
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "T"           "H"             "U"             "N"             THUNDERBOLT }
 
-;rsm134518  
-;No159                                 
-[FPA 008 Begin@Reduce_move_anim_flashing_Reflect]                                                   
-Mode = 3                 
-Type = 0                 
-Address = {hex @}        
-MotionBEnable0 = 1       
-MotionBlur0 = 5 
-MotionBEnable1 = 1       
-MotionBlur1 = 5 
-ConditionType = 0               
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}    
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }    
-ConditionValueC = {dws_ "R"           "E"             "F"             "L"             REFLECT     }             
-                         
-[FPA 008 End@Stop_reducing_move_anim_flashing_Reflect]       
-Mode = 3                 
-Type = 1                 
+
+[FPA 007 End@Stop_reducing_move_anim_flashing_Thunderbolt]
+Mode = 3
+Type = 1
 Address = {HEX @}
-ConditionType = 0               
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}    
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }    
-ConditionValueC = {dws_ "R"           "E"             "F"             "L"             REFLECT     }    
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "T"           "H"             "U"             "N"             THUNDERBOLT }
 
 
- 
+;rsm134518
+;No159
+[FPA 008 Begin@Reduce_move_anim_flashing_Reflect]
+Mode = 3
+Type = 0
+Address = {hex @}
+MotionBEnable0 = 1
+MotionBlur0 = 5
+MotionBEnable1 = 1
+MotionBlur1 = 5
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "R"           "E"             "F"             "L"             REFLECT     }
 
-;rsm140510 
-;No56                                 
-[FPA 009 Begin@Reduce_move_anim_flashing_Self_Destruct]                                                   
-Mode = 3                 
-Type = 0                 
-Address = {HEX @}        
-MotionBEnable0 = 3       
-MotionBlur0 = 27 
-ConditionType = 0               
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID} 
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          } 
-ConditionValueC = {dws_ "S"           "E"             "L"             "F"             SELFDESTRUCT}          
-                         
-[FPA 009 End@Stop_reducing_move_anim_flashing_Self_Destruct]       
-Mode = 3                 
-Type = 1                 
+[FPA 008 End@Stop_reducing_move_anim_flashing_Reflect]
+Mode = 3
+Type = 1
 Address = {HEX @}
-ConditionType = 11               
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}     
-ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }     
-ConditionValueC = {dws_ "S"           "E"             "L"             "F"             MEGA_PUNCH    00  "S"           "E"             "L"             "F"             SELFDESTRUCT}  
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "R"           "E"             "F"             "L"             REFLECT     }
 
-;rsm150211 
-;No156                              
-[FPA 010 Begin@Reduce_move_anim_flashing_Dream_Eater]                                                   
-Mode = 3                 
-Type = 0                 
-Address = {hex @} 
-MotionBEnable0 = 3       
-MotionBlur0 = 10 
-MotionBEnable1 = 3       
-MotionBlur1 = 7 
-ConditionType = 0               
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}      
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }      
-ConditionValueC = {dws_ "D"           "R"             "E"             "A"             DREAM_EATER }               
-                         
-;[FPA 010 End]       
-;Mode = 3                 
-;Type = 1                 
+
+
+
+;rsm140510
+;No56
+[FPA 009 Begin@Reduce_move_anim_flashing_Self_Destruct]
+Mode = 3
+Type = 0
+Address = {HEX @}
+MotionBEnable0 = 3
+MotionBlur0 = 27
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "S"           "E"             "L"             "F"             SELFDESTRUCT}
+
+[FPA 009 End@Stop_reducing_move_anim_flashing_Self_Destruct]
+Mode = 3
+Type = 1
+Address = {HEX @}
+ConditionType = 11
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "S"           "E"             "L"             "F"             MEGA_PUNCH    00  "S"           "E"             "L"             "F"             SELFDESTRUCT}
+
+;rsm150211
+;No156
+[FPA 010 Begin@Reduce_move_anim_flashing_Dream_Eater]
+Mode = 3
+Type = 0
+Address = {hex @}
+MotionBEnable0 = 3
+MotionBlur0 = 10
+MotionBEnable1 = 3
+MotionBlur1 = 7
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "D"           "R"             "E"             "A"             DREAM_EATER }
+
+;[FPA 010 End]
+;Mode = 3
+;Type = 1
 ;Address = 0x78176
-;ConditionType = 0               
-;ConditionValueA = a10: 4b cf 4c cf 4d cf 4e cf 7c d0   
-;ConditionValueB = a10: 00 00 00 00 00 00 00 00 00 00   
+;ConditionType = 0
+;ConditionValueA = a10: 4b cf 4c cf 4d cf 4e cf 7c d0
+;ConditionValueB = a10: 00 00 00 00 00 00 00 00 00 00
 ;ConditionValueC = a10: 83 00 91 00 84 00 80 00 8a 00
 
-;rsm163334     
-;No36                     
-[FPA 011 Begin@Reduce_move_anim_flashing_Spore]                       
-Mode = 3                              
-Type = 0                              
-Address = {HEX @}                     
-MotionBEnable0 = 3                    
-MotionBlur0 = 8   
-MotionBEnable1 = 3                    
-MotionBlur1 = 8                     
-ConditionType = 0                     
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}             
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }             
-ConditionValueC = {dws_ "S"           "P"             "O"             "R"             SPORE       }             
-                                      
-[FPA 011 End@Stop_reducing_move_anim_flashing_Spore]                         
-Mode = 3                              
-Type = 1                              
-Address = {hex @}                     
-ConditionType = 0                     
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}          
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }          
-ConditionValueC = {dws_ "S"           "P"             "O"             "R"             SPORE       }          
+;rsm163334
+;No36
+[FPA 011 Begin@Reduce_move_anim_flashing_Spore]
+Mode = 3
+Type = 0
+Address = {HEX @}
+MotionBEnable0 = 3
+MotionBlur0 = 8
+MotionBEnable1 = 3
+MotionBlur1 = 8
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "S"           "P"             "O"             "R"             SPORE       }
 
-;rsm012224 
-;No12                        
-[FPA 012 Begin@Reduce_move_anim_flashing_Rock_Slide]                       
-Mode = 3                              
-Type = 0                              
-Address = {HEX @}                     
-MotionBEnable0 = 3                    
-MotionBlur0 = 27                      
-ConditionType = 0                     
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}            
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }         
-ConditionValueC = {dws_ "R"           "O"             "C"             "K"             ROCK_SLIDE  }         
-                                      
-[FPA 012 End@Stop_reducing_move_anim_flashing_Rock_Slide_Dream_Eater]                         
-Mode = 3                              
-Type = 1                              
-Address = {hex @}                     
-ConditionType = 11                    
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}                
-ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }       
+[FPA 011 End@Stop_reducing_move_anim_flashing_Spore]
+Mode = 3
+Type = 1
+Address = {hex @}
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "S"           "P"             "O"             "R"             SPORE       }
+
+;rsm012224
+;No12
+[FPA 012 Begin@Reduce_move_anim_flashing_Rock_Slide]
+Mode = 3
+Type = 0
+Address = {HEX @}
+MotionBEnable0 = 3
+MotionBlur0 = 27
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "R"           "O"             "C"             "K"             ROCK_SLIDE  }
+
+[FPA 012 End@Stop_reducing_move_anim_flashing_Rock_Slide_Dream_Eater]
+Mode = 3
+Type = 1
+Address = {hex @}
+ConditionType = 11
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }
 ConditionValueC = {dws_ "R"           "O"             "C"             "K"             ROCK_SLIDE    00  "D"           "R"             "E"             "A"             DREAM_EATER }
 
-        
 
 
 
-;explosion  
-;No76                                             
-[FPA 76 Begin@Reduce_move_anim_flashing_Explosion]                                                  
-Mode = 3                                                         
-Type = 0                                                         
-Address = 0x78186                                              
-MotionBEnable0 = 3                                               
-MotionBlur0 = 28                                                 
-ConditionType = 0                                                
-ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}                     
-ConditionValueB = {dws_ ==            ==              ==              ==              ==          }                     
-ConditionValueC = {dws_ "E"           "X"             "P"             "L"             EXPLOSION   }   
+
+;explosion
+;No76
+[FPA 76 Begin@Reduce_move_anim_flashing_Explosion]
+Mode = 3
+Type = 0
+Address = 0x78186
+MotionBEnable0 = 3
+MotionBlur0 = 28
+ConditionType = 0
+ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}
+ConditionValueB = {dws_ ==            ==              ==              ==              ==          }
+ConditionValueC = {dws_ "E"           "X"             "P"             "L"             EXPLOSION   }

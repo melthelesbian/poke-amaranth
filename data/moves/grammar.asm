@@ -12,11 +12,11 @@ ExclamationPointMoveSets:
 	db 0 ; end set
 
 ; set 2
-	db MEDITATE
+	db PREPARE
 	db AGILITY
 	db TELEPORT
 	db MIMIC
-	db DOUBLE_TEAM
+	db DOUBLE_DASH
 	db BARRAGE
 	db 0 ; end set
 
@@ -26,8 +26,8 @@ ExclamationPointMoveSets:
 	db VICEGRIP
 	db WING_ATTACK
 	db FLY
-	db BIND
-	db SLAM
+	db FEINT_ATTACK
+	db HEAVY_SMASH
 	db HORN_ATTACK
 	db BODY_SLAM
 	db WRAP
@@ -36,7 +36,7 @@ ExclamationPointMoveSets:
 	db LEER
 	db BITE
 	db GROWL
-	db ROAR
+	db FRIGHTEN
 	db SING
 	db PECK
 	db COUNTER
@@ -48,23 +48,23 @@ ExclamationPointMoveSets:
 	db DIG
 	db TOXIC
 	db SCREECH
-	db HARDEN
+	db SPARK
 	db MINIMIZE
-	db WITHDRAW
+	db FLAME_CHARGE
 	db DEFENSE_CURL
 	db METRONOME
 	db LICK
 	db CLAMP
-	db CONSTRICT
+	db NIGHT_SLASH
 	db POISON_GAS
 	db LEECH_LIFE
 	db BUBBLE
 	db FLASH
 	db SPLASH
-	db ACID_ARMOR
+	db POWDER_SNOW
 	db FURY_SWIPES
 	db REST
-	db SHARPEN
+	db SHADOW_CLAW
 	db SLASH
 	db SUBSTITUTE
 	db 0 ; end set

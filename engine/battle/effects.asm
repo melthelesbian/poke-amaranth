@@ -902,7 +902,7 @@ SwitchAndTeleportEffect:
 	cp TELEPORT
 	jr z, .printText
 	ld hl, RanAwayScaredText
-	cp ROAR
+	cp FRIGHTEN
 	jr z, .printText
 	ld hl, WasBlownAwayText
 .printText

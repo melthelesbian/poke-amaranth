@@ -160,13 +160,13 @@ DEF TM01 EQU const_value
 	add_tm MEGA_PUNCH   ; $C9
 	add_tm RAZOR_WIND   ; $CA
 	add_tm SWORDS_DANCE ; $CB
-	add_tm WHIRLWIND    ; $CC
-	add_tm MEGA_KICK    ; $CD
+	add_tm ICY_WIND    ; $CC
+	add_tm MOONBLAST    ; $CD
 	add_tm TOXIC        ; $CE
-	add_tm HORN_DRILL   ; $CF
+	add_tm BUG_BUZZ   ; $CF
 	add_tm BODY_SLAM    ; $D0
 	add_tm TAKE_DOWN    ; $D1
-	add_tm DOUBLE_EDGE  ; $D2
+	add_tm FLARE_RUSH  ; $D2
 	add_tm BUBBLEBEAM   ; $D3
 	add_tm WATER_GUN    ; $D4
 	add_tm ICE_BEAM     ; $D5
@@ -188,7 +188,7 @@ DEF TM01 EQU const_value
 	add_tm PSYCHIC_M    ; $E5
 	add_tm TELEPORT     ; $E6
 	add_tm MIMIC        ; $E7
-	add_tm DOUBLE_TEAM  ; $E8
+	add_tm DOUBLE_DASH  ; $E8
 	add_tm REFLECT      ; $E9
 	add_tm BIDE         ; $EA
 	add_tm METRONOME    ; $EB

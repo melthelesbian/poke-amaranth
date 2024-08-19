@@ -78,7 +78,7 @@ VictoryRoad2F_TextPointers:
 	dw_const VictoryRoad2FMoltresText,      TEXT_VICTORYROAD2F_MOLTRES
 	dw_const PickUpItemText,                TEXT_VICTORYROAD2F_TM_SUBMISSION
 	dw_const PickUpItemText,                TEXT_VICTORYROAD2F_FULL_HEAL
-	dw_const PickUpItemText,                TEXT_VICTORYROAD2F_TM_MEGA_KICK
+	dw_const PickUpItemText,                TEXT_VICTORYROAD2F_TM_MOONBLAST
 	dw_const PickUpItemText,                TEXT_VICTORYROAD2F_GUARD_SPEC
 	dw_const BoulderText,                   TEXT_VICTORYROAD2F_BOULDER1
 	dw_const BoulderText,                   TEXT_VICTORYROAD2F_BOULDER2
