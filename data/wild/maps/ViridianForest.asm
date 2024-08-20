@@ -10,7 +10,7 @@ IF DEF(_RED)
 	db	6, BEEDRILL		; 5%
 	db	7, BEEDRILL		; 5%
 ENDC
-IF DEF(_BLUE)
+IF DEF(_BLUE) || DEF(_AMARANTH)
 	db	3, CATERPIE		; 20%
 	db	4, CATERPIE		; 20%
 	db	5, METAPOD		; 10%

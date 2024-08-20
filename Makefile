@@ -95,7 +95,7 @@ ifeq ($(DEBUG),1)
 RGBASMFLAGS += -E
 endif
 
-$(amaranth_obj):            RGBASMFLAGS += -D _RED
+$(amaranth_obj):            RGBASMFLAGS += -D _AMARANTH
 $(amaranth_red_obj):        RGBASMFLAGS += -D _RED
 $(amaranth_blue_obj):       RGBASMFLAGS += -D _BLUE
 $(amaranth_blue_debug_obj): RGBASMFLAGS += -D _BLUE -D _DEBUG
@@ -147,12 +147,12 @@ amaranth_red_vc_pad     = 0x00
 amaranth_blue_vc_pad    = 0x00
 amaranth_blue_debug_pad = 0xff
 
-amaranth_red_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN AMARANTH"
-amaranth_red_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "AMARANTH RED"
-amaranth_blue_opt       = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "AMARANTH BLUE"
-amaranth_blue_debug_opt = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "AMARANTH BLUE"
-amaranth_red_vc_opt     = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "AMARANTH RED"
-amaranth_blue_vc_opt    = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "AMARANTH BLUE"
+amaranth_opt            = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "AMARANTH 25"
+amaranth_red_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON RED"
+amaranth_blue_opt       = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON BLUE"
+amaranth_blue_debug_opt = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON BLUE"
+amaranth_red_vc_opt     = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON RED"
+amaranth_blue_vc_opt    = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON BLUE"
 
 %.gbc: $$(%_obj) layout.link
 	$(RGBLINK) -p $($*_pad) -d -m $*.map -n $*.sym -l layout.link -o $@ $(filter %.o,$^)

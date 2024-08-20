@@ -1,6 +1,6 @@
 BorderPalettes:
 IF DEF(_AMARANTH)
-	INCBIN "gfx/sgb/green_border.tilemap"
+	INCBIN "gfx/sgb/amaranth_border.tilemap"
 ENDC
 IF DEF(_RED)
 	INCBIN "gfx/sgb/red_border.tilemap"
@@ -16,9 +16,9 @@ ENDC
 ; for correct values for green sgb border
 IF DEF(_AMARANTH)
 	RGB 30,29,29 ; PAL_SGB1
-	RGB 25,31,18
-	RGB 18,25,12
-	RGB 12,20,9
+	RGB 18,00,25
+	RGB 12,00,18
+	RGB 09,00,12
 ENDC
 IF DEF(_RED)
 	RGB 30,29,29 ; PAL_SGB1
@@ -79,7 +79,7 @@ ENDC
 
 SGBBorderGraphics:
 IF DEF(_AMARANTH)
-	INCBIN "gfx/sgb/green_border.2bpp"
+	INCBIN "gfx/sgb/amaranth_border.2bpp"
 ENDC
 IF DEF(_RED)
 	INCBIN "gfx/sgb/red_border.2bpp"

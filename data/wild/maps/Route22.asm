@@ -8,7 +8,7 @@ IF DEF(_RED)
 	db  2, NIDORAN_F	; 10%
 	db  4, MEOWTH		; 10%
 ENDC
-IF DEF(_BLUE)
+IF DEF(_BLUE) || DEF(_AMARANTH)
 	db  4, NIDORAN_F	; 10%
 	db  4, NIDORAN_F	; 10%
 	db  2, NIDORAN_M	; 10%
