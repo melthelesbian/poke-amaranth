@@ -282,8 +282,24 @@ OverworldLoopLessDelay::
 	ld a, [wMovementFlags]
 	bit BIT_LEDGE_OR_FISHING, a
 	jr nz, .normalPlayerSpriteAdvancement
+.bikeSpeedup
+	; [info] Running Shoes & Fast Bike
+	; credit to Luna
+	ld a, [hJoyHeld] ; Check what buttons are being pressed
+	and B_BUTTON ;
+	jr z, .notFastBike
 	call DoBikeSpeedup
+	call DoBikeSpeedup
+.notFastBike
+	call DoBikeSpeedup
+	jr .notRunning
 .normalPlayerSpriteAdvancement
+	; [info] Running shoes
+	ld a, [hJoyHeld] ; Check what buttons are being pressed
+	and B_BUTTON ; Are you holding B?
+	jr z, .notRunning ; If you aren't holding B, skip ahead to step normally.
+	call DoBikeSpeedup
+.notRunning
 	call AdvancePlayerSprite
 	ld a, [wWalkCounter]
 	and a
