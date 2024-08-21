@@ -978,6 +978,7 @@ SECTION "Maps 17", ROMX
 ViridianForest_Blocks: INCBIN "maps/ViridianForest.blk"
 UndergroundPathNorthSouth_Blocks: INCBIN "maps/UndergroundPathNorthSouth.blk"
 UndergroundPathWestEast_Blocks: INCBIN "maps/UndergroundPathWestEast.blk"
+UndergroundCrossroads_Blocks: INCBIN "maps/UndergroundCrossroads.blk"
 
 	INCBIN "maps/UnusedDiglettsCaveCopy.blk"
 
@@ -1083,6 +1084,10 @@ INCLUDE "data/maps/objects/UndergroundPathNorthSouth.asm"
 INCLUDE "data/maps/headers/UndergroundPathWestEast.asm"
 INCLUDE "scripts/UndergroundPathWestEast.asm"
 INCLUDE "data/maps/objects/UndergroundPathWestEast.asm"
+
+INCLUDE "data/maps/headers/UndergroundCrossroads.asm"
+INCLUDE "scripts/UndergroundCrossroads.asm"
+INCLUDE "data/maps/objects/UndergroundCrossroads.asm"
 
 INCLUDE "data/maps/headers/DiglettsCave.asm"
 INCLUDE "scripts/DiglettsCave.asm"

@@ -105,7 +105,7 @@ WildDataPointers:
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
-	dw NothingWildMons
+	dw NothingWildMons ; UndergroundCrossroads
 	dw NothingWildMons
 	dw NothingWildMons
 	dw VictoryRoad1FWildMons

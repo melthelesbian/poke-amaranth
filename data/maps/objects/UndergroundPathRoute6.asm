@@ -7,7 +7,7 @@ UndergroundPathRoute6_Object:
 	def_warp_events
 	warp_event  3,  7, LAST_MAP, 4
 	warp_event  4,  7, LAST_MAP, 4
-	warp_event  4,  4, UNDERGROUND_PATH_NORTH_SOUTH, 2
+	warp_event  4,  4, UNDERGROUND_CROSSROADS, 2
 
 	def_bg_events
 

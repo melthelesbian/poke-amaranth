@@ -108,7 +108,7 @@ MapHSPointers:
 	dw SSAnne1FRoomsHS
 	dw SSAnne2FRoomsHS
 	dw SSAnneB1FRoomsHS
-	dw NoHS
+	dw NoHS ; UndergroundCrossroadsHS
 	dw NoHS
 	dw NoHS
 	dw VictoryRoad1FHS
