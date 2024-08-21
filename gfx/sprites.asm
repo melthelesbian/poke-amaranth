@@ -31,8 +31,8 @@ GamblerAsleepSprite::    INCBIN "gfx/sprites/gambler_asleep.2bpp"
 
 SECTION "NPC Sprites 2", ROMX
 
-RedBikeSprite::          INCBIN "gfx/sprites/red_bike.2bpp"
-RedSprite::              INCBIN "gfx/sprites/red.2bpp"
+LeafBikeSprite::        INCBIN "gfx/sprites/leaf_bike.2bpp"
+LeafSprite::            INCBIN "gfx/sprites/leaf.2bpp"
 BlueSprite::             INCBIN "gfx/sprites/blue.2bpp"
 OakSprite::              INCBIN "gfx/sprites/oak.2bpp"
 YoungsterSprite::        INCBIN "gfx/sprites/youngster.2bpp"

@@ -83,8 +83,8 @@ OakSpeech:
 	call PrintText
 	call GBFadeOutToWhite
 	call ClearScreen
-	ld de, RedPicFront
-	lb bc, BANK(RedPicFront), $00
+	ld de, LeafPicFront
+	lb bc, BANK(LeafPicFront), $00
 	call IntroDisplayPicCenteredOrUpperRight
 	call MovePicLeft
 	ld hl, IntroducePlayerText
@@ -102,8 +102,8 @@ OakSpeech:
 .skipSpeech
 	call GBFadeOutToWhite
 	call ClearScreen
-	ld de, RedPicFront
-	lb bc, BANK(RedPicFront), $00
+	ld de, LeafPicFront
+	lb bc, BANK(LeafPicFront), $00
 	call IntroDisplayPicCenteredOrUpperRight
 	call GBFadeInFromWhite
 	ld a, [wStatusFlags3]
@@ -121,9 +121,9 @@ OakSpeech:
 	ld [MBC1RomBank], a
 	ld c, 4
 	call DelayFrames
-	ld de, RedSprite
+	ld de, LeafSprite
 	ld hl, vSprites
-	lb bc, BANK(RedSprite), $0C
+	lb bc, BANK(LeafSprite), $0C
 	call CopyVideoData
 	ld de, ShrinkPic1
 	lb bc, BANK(ShrinkPic1), $00

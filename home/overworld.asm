@@ -1992,7 +1992,7 @@ RunMapScript::
 	ret
 
 LoadWalkingPlayerSpriteGraphics::
-	ld de, RedSprite
+	ld de, LeafSprite
 	ld hl, vNPCSprites
 	jr LoadPlayerSpriteGraphicsCommon
 
@@ -2002,13 +2002,13 @@ LoadSurfingPlayerSpriteGraphics::
 	jr LoadPlayerSpriteGraphicsCommon
 
 LoadBikePlayerSpriteGraphics::
-	ld de, RedBikeSprite
+	ld de, LeafBikeSprite
 	ld hl, vNPCSprites
 
 LoadPlayerSpriteGraphicsCommon::
 	push de
 	push hl
-	lb bc, BANK(RedSprite), $0c
+	lb bc, BANK(LeafSprite), $0c
 	call CopyVideoData
 	pop hl
 	pop de
@@ -2019,7 +2019,7 @@ LoadPlayerSpriteGraphicsCommon::
 	inc d
 .noCarry
 	set 3, h
-	lb bc, BANK(RedSprite), $0c
+	lb bc, BANK(LeafSprite), $0c
 	jp CopyVideoData
 
 ; function to load data from the map header
@@ -2408,7 +2408,7 @@ ResetUsingStrengthOutOfBattleBit:
 	ret
 
 ForceBikeOrSurf::
-	ld b, BANK(RedSprite)
+	ld b, BANK(LeafSprite)
 	ld hl, LoadPlayerSpriteGraphics ; in bank 0
 	call Bankswitch
 	jp PlayDefaultMusic ; update map/player state?

@@ -380,12 +380,12 @@ FishingAnim:
 	call DelayFrames
 	ld hl, wMovementFlags
 	set BIT_LEDGE_OR_FISHING, [hl]
-	ld de, RedSprite
+	ld de, LeafSprite
 	ld hl, vNPCSprites tile $00
-	lb bc, BANK(RedSprite), 12
+	lb bc, BANK(LeafSprite), 12
 	call CopyVideoData
 	ld a, $4
-	ld hl, RedFishingTiles
+	ld hl, LeafFishingTiles
 	call LoadAnimSpriteGfx
 	ld a, [wSpritePlayerStateData1ImageIndex]
 	ld c, a
@@ -482,11 +482,11 @@ MACRO fishing_gfx
 	dw vNPCSprites tile \3
 ENDM
 
-RedFishingTiles:
-	fishing_gfx RedFishingTilesFront, 2, $02
-	fishing_gfx RedFishingTilesBack,  2, $06
-	fishing_gfx RedFishingTilesSide,  2, $0a
-	fishing_gfx RedFishingRodTiles,   3, $fd
+LeafFishingTiles:
+	fishing_gfx LeafFishingTilesFront, 2, $02
+	fishing_gfx LeafFishingTilesBack,  2, $06
+	fishing_gfx LeafFishingTilesSide,  2, $0a
+	fishing_gfx LeafFishingRodTiles,   3, $fd
 
 _HandleMidJump::
 	ld a, [wPlayerJumpingYScreenCoordsIndex]

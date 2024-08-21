@@ -1,16 +1,16 @@
 IF DEF(_AMARANTH)
 DefaultNamesPlayer:
 	db "NEW NAME"
-	next "AMAR"
-	next "RED"
-	next "BLUE"
+	next "AMARA"
+	next "VIOLET"
+	next "PLUM"
 	db   "@"
 
 DefaultNamesRival:
 	db "NEW NAME"
 	next "TONY"
 	next "BLUE"
-	next "RED"
+	next "GARY"
 	db   "@"
 ENDC
 
@@ -18,8 +18,8 @@ IF DEF(_RED)
 DefaultNamesPlayer:
 	db   "NEW NAME"
 	next "RED"
-	next "ASH"
-	next "JACK"
+	next "ASHA"
+	next "JACKIE"
 	db   "@"
 
 DefaultNamesRival:
@@ -34,8 +34,8 @@ IF DEF(_BLUE)
 DefaultNamesPlayer:
 	db   "NEW NAME"
 	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "MARY"
+	next "JOSIE"
 	db   "@"
 
 DefaultNamesRival:
