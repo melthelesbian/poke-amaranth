@@ -58,11 +58,15 @@ GymTrashScript:
 
 	ldh [hGymTrashCanRandNumMask], a
 	push hl
+	; [INFO] START fix for trash bug
+.tryAgain
 	call Random
 	swap a
 	ld b, a
 	ldh a, [hGymTrashCanRandNumMask]
 	and b
+	jr z, .tryAgain
+	; [INFO] END fix for trash bug
 	dec a
 	pop hl
 
