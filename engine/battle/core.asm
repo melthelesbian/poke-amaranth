@@ -5275,6 +5275,25 @@ AdjustDamageForMoveType:
 	ld b, a
 	ld a, [hl] ; a = damage multiplier
 	ldh [hMultiplier], a
+	; [INFO] START BUGFIX CODE
+	; New code for fixing effectiveness reporting bug
+	; [TODO) credit the tutorial properly
+	and a  ; cp NO_EFFECT
+	jr z, .gotMultiplier
+	cp NOT_VERY_EFFECTIVE
+	jr nz, .nothalf
+	ld a, [wDamageMultipliers]
+	and $7f
+	srl a
+	jr .gotMultiplier
+.nothalf
+	cp SUPER_EFFECTIVE
+	jr nz, .gotMultiplier
+	ld a, [wDamageMultipliers]
+	and $7f
+	sla a
+.gotMultiplier
+	; [INFO] END BUGFIX CODE
 	add b
 	ld [wDamageMultipliers], a
 	xor a
