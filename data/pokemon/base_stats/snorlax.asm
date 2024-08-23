@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, NORMAL ; type
-	db 25 ; catch rate
+	db CR_VERY_HARD ; catch rate
 	db 154 ; base exp
 
 	INCBIN "gfx/pokemon/front/snorlax.pic", 0, 1 ; sprite dimensions

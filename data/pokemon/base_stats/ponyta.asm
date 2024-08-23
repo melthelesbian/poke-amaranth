@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db FIRE, FIRE ; type
-	db 190 ; catch rate
+	db CR_EASY ; catch rate
 	db 152 ; base exp
 
 	INCBIN "gfx/pokemon/front/ponyta.pic", 0, 1 ; sprite dimensions

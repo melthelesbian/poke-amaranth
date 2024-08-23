@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GHOST, DARK ; type
-	db 45 ; catch rate
+	db CR_VERY_HARD ; catch rate
 	db 190 ; base exp
 
 	INCBIN "gfx/pokemon/front/gengar.pic", 0, 1 ; sprite dimensions

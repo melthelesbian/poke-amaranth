@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, FLYING ; type
-	db 255 ; catch rate
+	db CR_TRIVIAL ; catch rate
 	db 55 ; base exp
 
 	INCBIN "gfx/pokemon/front/pidgey.pic", 0, 1 ; sprite dimensions

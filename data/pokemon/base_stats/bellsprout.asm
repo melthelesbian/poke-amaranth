@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GRASS, POISON ; type
-	db 255 ; catch rate
+	db CR_TRIVIAL ; catch rate
 	db 84 ; base exp
 
 	INCBIN "gfx/pokemon/front/bellsprout.pic", 0, 1 ; sprite dimensions

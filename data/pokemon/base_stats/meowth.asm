@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db DARK, DARK ; type
-	db 255 ; catch rate
+	db CR_TRIVIAL ; catch rate
 	db 69 ; base exp
 
 	INCBIN "gfx/pokemon/front/meowth.pic", 0, 1 ; sprite dimensions

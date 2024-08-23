@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db DARK, DARK ; type
-	db 90 ; catch rate
+	db CR_HARD ; catch rate
 	db 148 ; base exp
 
 	INCBIN "gfx/pokemon/front/persian.pic", 0, 1 ; sprite dimensions

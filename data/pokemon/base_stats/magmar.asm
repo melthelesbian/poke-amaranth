@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db FIRE, FIRE ; type
-	db 45 ; catch rate
+	db CR_HARD ; catch rate
 	db 167 ; base exp
 
 	INCBIN "gfx/pokemon/front/magmar.pic", 0, 1 ; sprite dimensions

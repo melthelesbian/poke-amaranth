@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GRASS, POISON ; type
-	db 255 ; catch rate
+	db CR_TRIVIAL ; catch rate
 	db 78 ; base exp
 
 	INCBIN "gfx/pokemon/front/oddish.pic", 0, 1 ; sprite dimensions

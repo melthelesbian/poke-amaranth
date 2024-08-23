@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GRASS, POISON ; type
-	db 45 ; catch rate
+	db CR_NORMAL ; catch rate
 	db 64 ; base exp
 
 	INCBIN "gfx/pokemon/front/bulbasaur.pic", 0, 1 ; sprite dimensions

@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db PSYCHIC_TYPE, FAIRY ; type
-	db 45 ; catch rate
+	db CR_HARD ; catch rate
 	db 136 ; base exp
 
 	INCBIN "gfx/pokemon/front/mr.mime.pic", 0, 1 ; sprite dimensions

@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, GROUND ; type
-	db 120 ; catch rate
+	db CR_NORMAL ; catch rate
 	db 117 ; base exp
 
 	INCBIN "gfx/pokemon/front/nidorina.pic", 0, 1 ; sprite dimensions

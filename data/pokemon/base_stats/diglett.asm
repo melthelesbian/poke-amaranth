@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GROUND, GROUND ; type
-	db 255 ; catch rate
+	db CR_VERY_EASY ; catch rate
 	db 81 ; base exp
 
 	INCBIN "gfx/pokemon/front/diglett.pic", 0, 1 ; sprite dimensions

@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, GROUND ; type
-	db 235 ; catch rate
+	db CR_VERY_EASY ; catch rate
 	db 59 ; base exp
 
 	INCBIN "gfx/pokemon/front/nidoranf.pic", 0, 1 ; sprite dimensions

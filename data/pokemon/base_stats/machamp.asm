@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db FIGHTING, FIGHTING ; type
-	db 45 ; catch rate
+	db CR_VERY_HARD ; catch rate
 	db 193 ; base exp
 
 	INCBIN "gfx/pokemon/front/machamp.pic", 0, 1 ; sprite dimensions

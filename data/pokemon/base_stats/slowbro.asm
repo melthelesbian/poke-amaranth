@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db WATER, NORMAL ; type
-	db 75 ; catch rate
+	db CR_HARD ; catch rate
 	db 164 ; base exp
 
 	INCBIN "gfx/pokemon/front/slowbro.pic", 0, 1 ; sprite dimensions

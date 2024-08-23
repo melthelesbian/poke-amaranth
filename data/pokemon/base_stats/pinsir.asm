@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db BUG, STEEL ; type
-	db 45 ; catch rate
+	db CR_HARD ; catch rate
 	db 200 ; base exp
 
 	INCBIN "gfx/pokemon/front/pinsir.pic", 0, 1 ; sprite dimensions

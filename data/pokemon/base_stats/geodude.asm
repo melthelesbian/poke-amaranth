@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db ROCK, GROUND ; type
-	db 255 ; catch rate
+	db CR_TRIVIAL ; catch rate
 	db 86 ; base exp
 
 	INCBIN "gfx/pokemon/front/geodude.pic", 0, 1 ; sprite dimensions

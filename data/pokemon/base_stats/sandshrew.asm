@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GROUND, NORMAL ; type
-	db 255 ; catch rate
+	db CR_TRIVIAL ; catch rate
 	db 93 ; base exp
 
 	INCBIN "gfx/pokemon/front/sandshrew.pic", 0, 1 ; sprite dimensions

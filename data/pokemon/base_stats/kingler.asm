@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db WATER, STEEL ; type
-	db 60 ; catch rate
+	db CR_HARD ; catch rate
 	db 206 ; base exp
 
 	INCBIN "gfx/pokemon/front/kingler.pic", 0, 1 ; sprite dimensions

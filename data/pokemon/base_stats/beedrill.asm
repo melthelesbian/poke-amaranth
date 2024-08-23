@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db BUG, POISON ; type
-	db 45 ; catch rate
+	db CR_HARD ; catch rate
 	db 159 ; base exp
 
 	INCBIN "gfx/pokemon/front/beedrill.pic", 0, 1 ; sprite dimensions

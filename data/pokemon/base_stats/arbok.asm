@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db POISON, DARK ; type
-	db 90 ; catch rate
+	db CR_NORMAL ; catch rate
 	db 147 ; base exp
 
 	INCBIN "gfx/pokemon/front/arbok.pic", 0, 1 ; sprite dimensions

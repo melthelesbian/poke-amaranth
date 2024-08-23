@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db STEEL, ELECTRIC ; type
-	db 190 ; catch rate
+	db CR_EASY ; catch rate
 	db 89 ; base exp
 
 	INCBIN "gfx/pokemon/front/magnemite.pic", 0, 1 ; sprite dimensions

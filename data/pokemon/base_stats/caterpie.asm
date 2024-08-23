@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db BUG, BUG ; type
-	db 255 ; catch rate
+	db CR_TRIVIAL ; catch rate
 	db 53 ; base exp
 
 	INCBIN "gfx/pokemon/front/caterpie.pic", 0, 1 ; sprite dimensions

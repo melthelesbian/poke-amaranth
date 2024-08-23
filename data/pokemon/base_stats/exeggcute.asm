@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GRASS, GRASS ; type
-	db 90 ; catch rate
+	db CR_EASY ; catch rate
 	db 98 ; base exp
 
 	INCBIN "gfx/pokemon/front/exeggcute.pic", 0, 1 ; sprite dimensions

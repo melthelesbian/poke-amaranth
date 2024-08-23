@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db BUG, FLYING ; type
-	db 75 ; catch rate
+	db CR_HARD ; catch rate
 	db 138 ; base exp
 
 	INCBIN "gfx/pokemon/front/venomoth.pic", 0, 1 ; sprite dimensions

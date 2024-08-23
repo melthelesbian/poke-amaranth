@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db FLYING, DARK ; type
-	db 90 ; catch rate
+	db CR_NORMAL ; catch rate
 	db 162 ; base exp
 
 	INCBIN "gfx/pokemon/front/fearow.pic", 0, 1 ; sprite dimensions

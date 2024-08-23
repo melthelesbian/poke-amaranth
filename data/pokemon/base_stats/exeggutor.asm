@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GRASS, GRASS ; type
-	db 45 ; catch rate
+	db CR_HARD ; catch rate
 	db 212 ; base exp
 
 	INCBIN "gfx/pokemon/front/exeggutor.pic", 0, 1 ; sprite dimensions

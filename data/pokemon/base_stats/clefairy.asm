@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db FAIRY, FAIRY ; type
-	db 150 ; catch rate
+	db CR_NORMAL ; catch rate
 	db 68 ; base exp
 
 	INCBIN "gfx/pokemon/front/clefairy.pic", 0, 1 ; sprite dimensions

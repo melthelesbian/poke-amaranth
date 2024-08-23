@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db ELECTRIC, ELECTRIC ; type
-	db 45 ; catch rate
+	db CR_HARD ; catch rate
 	db 156 ; base exp
 
 	INCBIN "gfx/pokemon/front/electabuzz.pic", 0, 1 ; sprite dimensions

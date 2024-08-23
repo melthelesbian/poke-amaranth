@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db FIRE, DRAGON ; type
-	db 45 ; catch rate
+	db CR_VERY_HARD ; catch rate
 	db 209 ; base exp
 
 	INCBIN "gfx/pokemon/front/charizard.pic", 0, 1 ; sprite dimensions

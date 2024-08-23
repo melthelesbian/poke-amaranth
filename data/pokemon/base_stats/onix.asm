@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db ROCK, ROCK ; type
-	db 45 ; catch rate
+	db CR_HARD ; catch rate
 	db 108 ; base exp
 
 	INCBIN "gfx/pokemon/front/onix.pic", 0, 1 ; sprite dimensions

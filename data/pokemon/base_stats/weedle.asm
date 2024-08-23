@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db BUG, POISON ; type
-	db 255 ; catch rate
+	db CR_TRIVIAL ; catch rate
 	db 52 ; base exp
 
 	INCBIN "gfx/pokemon/front/weedle.pic", 0, 1 ; sprite dimensions

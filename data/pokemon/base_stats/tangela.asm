@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GRASS, GRASS ; type
-	db 45 ; catch rate
+	db CR_NORMAL ; catch rate
 	db 166 ; base exp
 
 	INCBIN "gfx/pokemon/front/tangela.pic", 0, 1 ; sprite dimensions

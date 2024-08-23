@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db STEEL, ELECTRIC ; type
-	db 60 ; catch rate
+	db CR_HARD ; catch rate
 	db 161 ; base exp
 
 	INCBIN "gfx/pokemon/front/magneton.pic", 0, 1 ; sprite dimensions

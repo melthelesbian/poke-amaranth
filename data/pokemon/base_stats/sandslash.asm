@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GROUND, NORMAL ; type
-	db 90 ; catch rate
+	db CR_NORMAL ; catch rate
 	db 163 ; base exp
 
 	INCBIN "gfx/pokemon/front/sandslash.pic", 0, 1 ; sprite dimensions

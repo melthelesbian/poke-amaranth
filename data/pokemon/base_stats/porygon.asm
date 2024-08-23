@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, MYSTERY ; type
-	db 45 ; catch rate
+	db CR_HARD ; catch rate
 	db 130 ; base exp
 
 	INCBIN "gfx/pokemon/front/porygon.pic", 0, 1 ; sprite dimensions

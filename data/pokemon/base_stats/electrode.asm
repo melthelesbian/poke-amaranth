@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db ELECTRIC, STEEL ; type
-	db 60 ; catch rate
+	db CR_HARD ; catch rate
 	db 150 ; base exp
 
 	INCBIN "gfx/pokemon/front/electrode.pic", 0, 1 ; sprite dimensions
