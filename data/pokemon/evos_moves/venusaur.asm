@@ -15,7 +15,7 @@ VenusaurEvosMoves:
 	db 28, GROWTH
 	db 32, SLUDGE
 	db 40, TOXIC
-	db 48, PETAL_DANCE
+	db 48, MEGA_DRAIN
 	db 56, SPORE
 	db 65, SOLARBEAM
 	db 0

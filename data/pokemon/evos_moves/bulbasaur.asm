@@ -15,7 +15,7 @@ BulbasaurEvosMoves:
 	db 21, RAZOR_LEAF
 	db 25, GROWTH
 	db 30, TOXIC
-	db 37, PETAL_DANCE
+	db 37, MEGA_DRAIN
 	db 45, SPORE
 	db 54, SOLARBEAM
 	db 0

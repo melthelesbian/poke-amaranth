@@ -15,7 +15,7 @@ IvysaurEvosMoves:
 	db 24, RAZOR_LEAF
 	db 28, GROWTH
 	db 34, TOXIC
-	db 40, PETAL_DANCE
+	db 40, MEGA_DRAIN
 	db 48, SPORE
 	db 57, SOLARBEAM
 	db 0
