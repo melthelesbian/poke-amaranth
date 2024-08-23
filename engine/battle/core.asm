@@ -4637,7 +4637,9 @@ CriticalHitTest:
 	ld b, $ff                    ; cap at 255/256
 	jr .noFocusEnergyUsed
 .focusEnergyUsed
-	srl b
+	sla b                        ; [DEBUG] fix focus energy bug
+	jr nc, .noFocusEnergyUsed    ;
+	ld b, $ff                    ; cap at 255
 .noFocusEnergyUsed
 	ld hl, HighCriticalMoves     ; table of high critical hit moves
 .Loop
