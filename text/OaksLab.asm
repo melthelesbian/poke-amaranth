@@ -137,7 +137,7 @@ _OaksLabGivePokeballsExplanationText::
 
 	para "Just throw a #"
 	line "BALL at it and try"
-	line "to catch it!"
+	cont "to catch it!"
 
 	para "This won't always"
 	line "work, though."
@@ -338,7 +338,22 @@ _OaksLabOakThatWasMyDreamText::
 	para "This is a great"
 	line "undertaking in"
 	cont "#MON history!"
-	done
+
+	para "Oh! I almost"
+	line "forgot."
+
+	para "You can't get"
+	line "detailed data on"
+	cont "#MON just by"
+	cont "seeing them."
+
+	para "Take these and"
+	line "use them to catch"
+	cont "wild #MON!"
+
+	para "<PLAYER> got 5"
+	line "# BALLs!@"
+	text_end
 
 _OaksLabRivalLeaveItAllToMeText::
 	text "<RIVAL>: Alright"
