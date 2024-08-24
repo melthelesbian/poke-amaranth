@@ -56,7 +56,7 @@ ExclamationPointMoveSets:
 	db LICK
 	db WHIRLPOOL
 	db NIGHT_SLASH
-	db POISON_GAS
+	db VENOM_STRIKE
 	db LEECH_LIFE
 	db BUBBLE
 	db FLASH

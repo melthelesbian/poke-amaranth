@@ -9,8 +9,8 @@ NidoranMEvosMoves:
 	db 9, FURY_SWIPES
 	db 13, DOUBLE_KICK
 	db 17, FOCUS_ENERGY
-	db 22, POISON_GAS
-	db 28, BITE
+	db 22, BITE
+	db 28, VENOM_STRIKE
 	db 35, HEADBUTT
 	db 42, CONFUSE_RAY
 	db 50, SLUDGE

@@ -12,7 +12,7 @@ Moves:
 ; Characteristics of each move.
 	table_width MOVE_LENGTH, Moves
 	move POUND,        NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 35
-	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,       50,   FIGHTING,     100, 25 ; hight crit ratio
+	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,       50,   FIGHTING,     100, 25 ; high crit ratio
 	move DOUBLESLAP,   ATTACK_TWICE_EFFECT,        35,   NORMAL,       100, 20
 	move DRAGONBREATH, PARALYZE_SIDE_EFFECT2,      60,   DRAGON,       100, 20 ; (COMET_PUNCH)
 	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,       80,   NORMAL,       85,  20
@@ -61,7 +61,7 @@ Moves:
 	move SWEET_CRY,    ATTACK_DOWN_SIDE_EFFECT,    40,   FAIRY,        100, 15 ; (SUPERSONIC)
 	move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,      1,    NORMAL,       90,  20
 	move DISABLE,      DISABLE_EFFECT,             0,    MYSTERY,      55,  20
-	move ACID,         DEFENSE_DOWN_SIDE_EFFECT,   40,   POISON,       100, 30
+	move ACID,         BURN_SIDE_EFFECT1,          50,   POISON,       100, 30
 	move EMBER,        BURN_SIDE_EFFECT1,          40,   FIRE,         100, 25
 	move FLAMETHROWER, BURN_SIDE_EFFECT1,          95,   FIRE,         100, 15
 	move MIST,         MIST_EFFECT,                0,    MYSTERY,      100, 30
@@ -87,9 +87,9 @@ Moves:
 	move GROWTH,       SPECIAL_UP1_EFFECT,         0,    MYSTERY,      100, 40
 	move RAZOR_LEAF,   NO_ADDITIONAL_EFFECT,       70,   GRASS,        95,  25 ; high crit ratio
 	move SOLARBEAM,    CHARGE_EFFECT,              150,  GRASS,        100, 15
-	move POISONPOWDER, POISON_EFFECT,              0,    POISON,       75,  35
-	move STUN_SPORE,   PARALYZE_EFFECT,            0,    GRASS,        75,  30
-	move SLEEP_POWDER, SLEEP_EFFECT,               0,    GRASS,        75,  15
+	move POISON_CLOUD, POISON_EFFECT,              0,    POISON,       75,  30 ; (POISONPOWDER)
+	move STUN_CLOUD,   PARALYZE_EFFECT,            0,    GRASS,        75,  30 ; (STUN_SPORE)
+	move SLEEP_CLOUD,  SLEEP_EFFECT,               0,    GRASS,        75,  30 ; (SLEEP_POWDER)
 	move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  100,  GRASS,        100, 20
 	move STRING_SHOT,  PARALYZE_SIDE_EFFECT1,      25,   BUG,          95,  30
 	move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,      1,    DRAGON,       100, 15
@@ -102,7 +102,7 @@ Moves:
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       95,   GROUND,       100, 10
 	move FISSURE,      EXPLODE_EFFECT,             150,  GROUND,       100, 5
 	move DIG,          CHARGE_EFFECT,              75,   GROUND,       100, 15
-	move TOXIC,        POISON_EFFECT,              0,    POISON,       95,  10
+	move TOXIC,        POISON_EFFECT,              0,    POISON,       95,  15
 	move CONFUSION,    CONFUSION_SIDE_EFFECT,      40,   PSYCHIC_TYPE, 100, 25
 	move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,   95,   PSYCHIC_TYPE, 100, 10
 	move HYPNOSIS,     SLEEP_EFFECT,               0,    MYSTERY,      65,  20
@@ -133,8 +133,8 @@ Moves:
 	move SELFDESTRUCT, EXPLODE_EFFECT,             150,  NORMAL,       100, 5
 	move EGG_BOMB,     NO_ADDITIONAL_EFFECT,       100,  GRASS,        95,  10
 	move LICK,         PARALYZE_SIDE_EFFECT2,      25,   DARK,         100, 30
-	move SMOG,         POISON_SIDE_EFFECT2,        65,   POISON,       70,  20
-	move SLUDGE,       POISON_SIDE_EFFECT2,        90,   POISON,       100, 20
+	move SMOG,         POISON_SIDE_EFFECT2,        65,   POISON,       100, 25
+	move SLUDGE,       POISON_SIDE_EFFECT2,        90,   POISON,       100, 15
 	move BONE_CLUB,    FLINCH_SIDE_EFFECT1,        60,   GROUND,       100, 20
 	move FIRE_BLAST,   BURN_SIDE_EFFECT2,          120,  FIRE,         90,  5
 	move WATERFALL,    FLINCH_SIDE_EFFECT2,        80,   WATER,        90,  15
@@ -149,7 +149,7 @@ Moves:
 	move HI_JUMP_KICK, JUMP_KICK_EFFECT,           95,   FIGHTING,     100, 20
 	move GLARE,        PARALYZE_EFFECT,            0,    MYSTERY,      75,  30
 	move DREAM_EATER,  DREAM_EATER_EFFECT,         100,  GHOST,        100, 15
-	move POISON_GAS,   POISON_EFFECT,              0,    POISON,       85,  15
+	move VENOM_STRIKE, NO_ADDITIONAL_EFFECT,       70,   POISON,       100, 20 ; high crit ratio (POISON_GAS)
 	move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT, 25,   GRASS,        85,  20
 	move LEECH_LIFE,   DRAIN_HP_EFFECT,            60,   BUG,          95,  20
 	move DRAIN_KISS,   DRAIN_HP_EFFECT,            50,   FAIRY,        100, 20 ; (LOVELY_KISS)

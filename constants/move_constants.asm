@@ -82,9 +82,9 @@
 	const GROWTH       ; 74
 	const RAZOR_LEAF   ; 75
 	const SOLARBEAM    ; 76
-	const POISONPOWDER ; 77
-	const STUN_SPORE   ; 78
-	const SLEEP_POWDER ; 79
+	const POISON_CLOUD ; 77
+	const STUN_CLOUD   ; 78
+	const SLEEP_CLOUD  ; 79
 	const PETAL_DANCE  ; 80
 	const STRING_SHOT  ; 81
 	const DRAGON_RAGE  ; 82
@@ -144,7 +144,7 @@
 	const HI_JUMP_KICK ; 136
 	const GLARE        ; 137
 	const DREAM_EATER  ; 138
-	const POISON_GAS   ; 139
+	const VENOM_STRIKE ; 139
 	const BARRAGE      ; 140
 	const LEECH_LIFE   ; 141
 	const DRAIN_KISS   ; 142

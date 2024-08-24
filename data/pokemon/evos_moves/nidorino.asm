@@ -9,8 +9,8 @@ NidorinoEvosMoves:
 	db 9, FURY_SWIPES
 	db 13, DOUBLE_KICK
 	db 18, FOCUS_ENERGY
-	db 24, POISON_GAS
-	db 30, BITE
+	db 24, BITE
+	db 30, VENOM_STRIKE
 	db 37, HEADBUTT
 	db 44, CONFUSE_RAY
 	db 52, SLUDGE

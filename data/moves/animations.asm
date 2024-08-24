@@ -76,9 +76,9 @@ AttackAnimationPointers:
 	dw GrowthAnim
 	dw RazorLeafAnim
 	dw SolarBeamAnim
-	dw PoisonPowderAnim
-	dw StunSporeAnim
-	dw SleepPowderAnim
+	dw PoisonCloudAnim
+	dw StunCloudAnim
+	dw SleepCloudAnim
 	dw PetalDanceAnim
 	dw StringShotAnim
 	dw DragonRageAnim
@@ -138,7 +138,7 @@ AttackAnimationPointers:
 	dw HiJumpKickAnim
 	dw GlareAnim
 	dw DreamEaterAnim
-	dw PoisonGasAnim
+	dw VenomStrikeAnim
 	dw BarrageAnim
 	dw LeechLifeAnim
 	dw DrainKissAnim
@@ -441,6 +441,7 @@ TailWhipAnim:
 	battle_anim AMNESIA_ANIM, SE_RESET_MON_POSITION
 	db -1 ; end
 
+VenomStrikeAnim:
 PoisonStingAnim:
 	battle_anim POISON_STING_ANIM, SUBANIM_0_STAR, 0, 6
 	db -1 ; end
@@ -661,14 +662,17 @@ SolarBeamAnim:
 	battle_anim NO_MOVE_ANIM, SUBANIM_0_STAR_TWICE, 0, 6
 	db -1 ; end
 
+PoisonCloudAnim:
 PoisonPowderAnim:
 	battle_anim POISONPOWDER_ANIM, SUBANIM_0_CIRCLES_FALLING, 0, 6
 	db -1 ; end
 
+StunCloudAnim:
 StunSporeAnim:
 	battle_anim STUN_SPORE_ANIM, SUBANIM_0_CIRCLES_FALLING, 0, 6
 	db -1 ; end
 
+SleepCloudAnim:
 SleepPowderAnim:
 	battle_anim SLEEP_POWDER_ANIM, SUBANIM_0_CIRCLES_FALLING, 0, 6
 	db -1 ; end
