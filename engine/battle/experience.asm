@@ -150,6 +150,7 @@ GainExperience:
 	call PrintText
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
+	farcall AnimateEXPBar ; [INFO] credit to shinpokered
 	call LoadMonData
 	pop hl
 	ld bc, wPartyMon1Level - wPartyMon1Exp
@@ -160,6 +161,9 @@ GainExperience:
 	ld a, [hl] ; current level
 	cp d
 	jp z, .nextMon ; if level didn't change, go to next mon
+	push hl
+	farcall KeepEXPBarFull
+	pop hl
 	ld a, [wCurEnemyLevel]
 	push af
 	push hl
@@ -244,6 +248,7 @@ GainExperience:
 	call PrintText
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
+	farcall AnimateEXPBarAgain ; [INFO] credit to shinpokered
 	call LoadMonData
 	ld d, $1
 	callfar PrintStatsBox
