@@ -1,7 +1,7 @@
 _RedsHouse1FMomWakeUpText::
 	text "MOM: Right."
-	line "All boys leave"
-	cont "home some day."
+	line "All girls dream"
+	cont "of traveling."
 	cont "It said so on TV."
 
 	para "PROF.OAK, next"
@@ -23,11 +23,11 @@ _RedsHouse1FMomLookingGreatText::
 	cont "Take care now!"
 	done
 
-_RedsHouse1FTVStandByMeMovieText::
+_RedsHouse1FTVHackersMovieText::
 	text "There's a movie"
-	line "on TV. Four boys"
-	cont "are walking on"
-	cont "railroad tracks."
+	line "on TV. Hackers"
+	cont "are skating in"
+	cont "a big arcade."
 
 	para "I better go too."
 	done

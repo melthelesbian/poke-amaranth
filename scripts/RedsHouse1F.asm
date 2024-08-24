@@ -56,13 +56,13 @@ RedsHouse1FTVText:
 	cp SPRITE_FACING_UP
 	ld hl, .WrongSideText
 	jr nz, .got_text
-	ld hl, .StandByMeMovieText
+	ld hl, .HackersMovieText
 .got_text
 	call PrintText
 	jp TextScriptEnd
 
-.StandByMeMovieText:
-	text_far _RedsHouse1FTVStandByMeMovieText
+.HackersMovieText:
+	text_far _RedsHouse1FTVHackersMovieText
 	text_end
 
 .WrongSideText:
