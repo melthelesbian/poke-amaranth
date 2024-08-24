@@ -5,4 +5,5 @@ CaterpieEvosMoves:
 ; Learnset
 	db 1, TACKLE
 	db 1, STRING_SHOT
+	db 6, BUG_BITE
 	db 0
