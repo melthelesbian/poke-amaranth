@@ -133,7 +133,7 @@
 	const BONE_CLUB    ; 125
 	const FIRE_BLAST   ; 126
 	const WATERFALL    ; 127
-	const CLAMP        ; 128
+	const WHIRLPOOL    ; 128
 	const SWIFT        ; 129
 	const SKULL_BASH   ; 130
 	const SPIKE_CANNON ; 131

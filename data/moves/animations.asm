@@ -127,7 +127,7 @@ AttackAnimationPointers:
 	dw BoneClubAnim
 	dw FireBlastAnim
 	dw WaterfallAnim
-	dw ClampAnim
+	dw WhirlpoolAnim
 	dw SwiftAnim
 	dw SkullBashAnim
 	dw SpikeCannonAnim
@@ -963,6 +963,7 @@ FireBlastAnim:
 	battle_anim NO_MOVE_ANIM, SUBANIM_1_FLAME_COLUMN_2, 1, 6
 	db -1 ; end
 
+WhirlpoolAnim:
 WaterfallAnim:
 	battle_anim LEECH_SEED_ANIM, SE_SLIDE_MON_DOWN
 	battle_anim HYDRO_PUMP_ANIM, SUBANIM_0_WATER_COLUMNS, 0, 6
@@ -970,11 +971,11 @@ WaterfallAnim:
 	battle_anim NO_MOVE_ANIM, SE_SLIDE_MON_UP
 	db -1 ; end
 
-ClampAnim:
-	battle_anim CLAMP_ANIM, SUBANIM_0_SLICE_BOTH_SIDES, 0, 8
-	battle_anim CONSTRICT_ANIM, SUBANIM_0_BIND, 0, 6
-	battle_anim CONSTRICT_ANIM, SUBANIM_0_BIND, 0, 6
-	db -1 ; end
+; ClampAnim:
+; 	battle_anim CLAMP_ANIM, SUBANIM_0_SLICE_BOTH_SIDES, 0, 8
+; 	battle_anim CONSTRICT_ANIM, SUBANIM_0_BIND, 0, 6
+; 	battle_anim CONSTRICT_ANIM, SUBANIM_0_BIND, 0, 6
+; 	db -1 ; end
 
 SwiftAnim:
 	battle_anim SWIFT_ANIM, SUBANIM_1_STARS_SMALL_TOSS, 1, 3

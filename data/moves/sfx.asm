@@ -128,7 +128,7 @@ MoveSoundTable:
 	db SFX_BATTLE_32,          $00, $80 ; BONE_CLUB
 	db SFX_BATTLE_29,          $1f, $20 ; FIRE_BLAST
 	db SFX_BATTLE_25,          $2f, $80 ; WATERFALL
-	db SFX_BATTLE_0F,          $1f, $ff ; CLAMP
+	db SFX_BATTLE_0F,          $1f, $ff ; WHIRLPOOL
 	db SFX_BATTLE_2B,          $1f, $60 ; SWIFT
 	db SFX_BATTLE_26,          $1e, $20 ; SKULL_BASH
 	db SFX_BATTLE_26,          $1f, $18 ; SPIKE_CANNON

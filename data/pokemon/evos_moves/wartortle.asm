@@ -9,7 +9,7 @@ WartortleEvosMoves:
 	db 9, DEFENSE_CURL
 	db 12, TAIL_WHIP
 	db 15, MIST
-	db 20, CLAMP
+	db 20, WHIRLPOOL
 	db 25, BARRIER
 	db 30, HEADBUTT
 	db 37, WATERFALL

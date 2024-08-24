@@ -54,7 +54,7 @@ ExclamationPointMoveSets:
 	db DEFENSE_CURL
 	db METRONOME
 	db LICK
-	db CLAMP
+	db WHIRLPOOL
 	db NIGHT_SLASH
 	db POISON_GAS
 	db LEECH_LIFE

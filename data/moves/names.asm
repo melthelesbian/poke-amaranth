@@ -127,7 +127,7 @@ MoveNames::
 	li "BONE CLUB"
 	li "FIRE BLAST"
 	li "WATERFALL"
-	li "CLAMP"
+	li "WHIRLPOOL"
 	li "SWIFT"
 	li "SKULL BASH"
 	li "SPIKE CANNON"

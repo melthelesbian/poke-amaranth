@@ -9,7 +9,7 @@ SquirtleEvosMoves:
 	db 9, DEFENSE_CURL
 	db 12, TAIL_WHIP
 	db 15, MIST
-	db 19, CLAMP
+	db 19, WHIRLPOOL
 	db 23, BARRIER
 	db 28, HEADBUTT
 	db 34, WATERFALL
