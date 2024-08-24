@@ -13,8 +13,8 @@ BulbasaurEvosMoves:
 	db 15, ABSORB
 	db 18, SLEEP_CLOUD
 	db 21, RAZOR_LEAF
-	db 25, GROWTH
-	db 30, TOXIC
+	db 25, BODY_SLAM
+	db 30, GROWTH
 	db 37, MEGA_DRAIN
 	db 45, SPORE
 	db 54, SOLARBEAM

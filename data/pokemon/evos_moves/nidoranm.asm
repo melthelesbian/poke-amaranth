@@ -6,7 +6,7 @@ NidoranMEvosMoves:
 	db 1, TACKLE
 	db 1, GROWL
 	db 5, POISON_STING
-	db 9, FURY_SWIPES
+	db 9, HORN_ATTACK
 	db 13, DOUBLE_KICK
 	db 17, FOCUS_ENERGY
 	db 22, BITE

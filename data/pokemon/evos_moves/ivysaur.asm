@@ -13,8 +13,8 @@ IvysaurEvosMoves:
 	db 15, ABSORB
 	db 20, SLEEP_CLOUD
 	db 24, RAZOR_LEAF
-	db 28, GROWTH
-	db 34, TOXIC
+	db 28, BODY_SLAM
+	db 34, GROWTH
 	db 40, MEGA_DRAIN
 	db 48, SPORE
 	db 57, SOLARBEAM

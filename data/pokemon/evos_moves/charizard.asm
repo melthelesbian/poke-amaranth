@@ -12,6 +12,7 @@ CharizardEvosMoves:
 	db 21, FIRE_SPIN
 	db 26, HEADBUTT
 	db 30, FLAME_CHARGE
+	db 36, WING_ATTACK
 	db 36, DRAGON_RAGE
 	db 42, SLASH
 	db 48, AGILITY

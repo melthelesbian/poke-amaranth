@@ -12,9 +12,9 @@ VenusaurEvosMoves:
 	db 16, ABSORB
 	db 20, SLEEP_CLOUD
 	db 24, RAZOR_LEAF
-	db 28, GROWTH
+	db 28, BODY_SLAM
 	db 32, SLUDGE
-	db 40, TOXIC
+	db 40, GROWTH
 	db 48, MEGA_DRAIN
 	db 56, SPORE
 	db 65, SOLARBEAM

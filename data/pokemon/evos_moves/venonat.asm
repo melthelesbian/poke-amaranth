@@ -1,8 +1,18 @@
 VenonatEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 31, VENOMOTH
+	db EVOLVE_LEVEL, 24, VENOMOTH
 	db 0
 ; Learnset
 	db 1, BUG_BITE
 	db 1, LEER
+	db 5, TACKLE
+	db 8, POISON_STING
+	db 12, CONFUSION
+	db 16, POISON_CLOUD
+	db 21, DISABLE
+	db 26, LEECH_LIFE
+	db 32, DOUBLESLAP
+	db 39, HYPNOSIS
+	db 46, VENOM_STRIKE
+	db 54, BUG_BUZZ
 	db 0
