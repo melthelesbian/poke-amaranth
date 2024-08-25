@@ -4,7 +4,7 @@
 ; the fourth entry in the list.
 LoneMoves:
 	; pokemon index, move to give nth pokemon
-	db 1, BIDE
+	db 2, BIDE
 	db 1, BUBBLEBEAM
 	db 2, THUNDERBOLT
 	db 2, MEGA_DRAIN
