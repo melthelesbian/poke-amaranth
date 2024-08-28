@@ -15,8 +15,8 @@ Moves:
 	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,       50,   FIGHTING,     100, 25 ; high crit ratio
 	move DOUBLESLAP,   ATTACK_TWICE_EFFECT,        35,   NORMAL,       100, 20
 	move DRAGONBREATH, PARALYZE_SIDE_EFFECT2,      60,   DRAGON,       100, 20 ; (COMET_PUNCH)
-	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,       80,   NORMAL,       85,  20
-	move PAY_DAY,      PAY_DAY_EFFECT,             40,   DARK,         100, 20
+	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,       60,   NORMAL,       100, 20
+	move PAY_DAY,      PAY_DAY_EFFECT,             50,   DARK,         100, 20
 	move FIRE_PUNCH,   BURN_SIDE_EFFECT1,          75,   FIRE,         100, 15
 	move ICE_PUNCH,    FREEZE_SIDE_EFFECT,         75,   ICE,          100, 15
 	move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,      75,   ELECTRIC,     100, 20
@@ -46,9 +46,9 @@ Moves:
 	move TACKLE,       NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 35
 	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,      85,   NORMAL,       100, 15
 	move WRAP,         TRAPPING_EFFECT,            20,   NORMAL,       85,  20
-	move TAKE_DOWN,    RECOIL_EFFECT,              90,   NORMAL,       90,  20
+	move TAKE_DOWN,    RECOIL_EFFECT,              90,   NORMAL,       100, 20
 	move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100,  DRAGON,       100, 10
-	move FLARE_RUSH,   RECOIL_EFFECT,              75,   FIRE,         100, 15 ; (DOUBLE_EDGE)
+	move FLARE_RUSH,   RECOIL_EFFECT,              90,   FIRE,         100, 15 ; (DOUBLE_EDGE)
 	move TAIL_WHIP,    DEFENSE_DOWN_SIDE_EFFECT,   50,   NORMAL,       100, 25
 	move POISON_STING, POISON_SIDE_EFFECT1,        40,   POISON,       100, 35
 	move TWINEEDLE,    TWINEEDLE_EFFECT,           35,   BUG,          100, 20
@@ -57,17 +57,17 @@ Moves:
 	move BITE,         FLINCH_SIDE_EFFECT1,        60,   DARK,         100, 25
 	move GROWL,        ATTACK_DOWN1_EFFECT,        0,    MYSTERY,      100, 40
 	move FRIGHTEN,     SWITCH_AND_TELEPORT_EFFECT, 0,    MYSTERY,      100, 20 ; tweak move text? (ROAR)
-	move SING,         SLEEP_EFFECT,               0,    MYSTERY,      60,  15
+	move SING,         SLEEP_EFFECT,               0,    MYSTERY,      75,  15
 	move SWEET_CRY,    ATTACK_DOWN_SIDE_EFFECT,    40,   FAIRY,        100, 15 ; (SUPERSONIC)
 	move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,      1,    NORMAL,       90,  20
-	move DISABLE,      DISABLE_EFFECT,             0,    MYSTERY,      55,  20
+	move DISABLE,      DISABLE_EFFECT,             0,    MYSTERY,      75,  20
 	move ACID,         BURN_SIDE_EFFECT1,          50,   POISON,       100, 30
 	move EMBER,        BURN_SIDE_EFFECT1,          40,   FIRE,         100, 25
 	move FLAMETHROWER, BURN_SIDE_EFFECT1,          95,   FIRE,         100, 15
 	move MIST,         MIST_EFFECT,                0,    MYSTERY,      100, 30
 	move WATER_GUN,    NO_ADDITIONAL_EFFECT,       40,   WATER,        100, 30
 	move HYDRO_PUMP,   NO_ADDITIONAL_EFFECT,       120,  WATER,        90,  5
-	move SURF,         NO_ADDITIONAL_EFFECT,       95,   WATER,        100, 15
+	move SURF,         NO_ADDITIONAL_EFFECT,       90,   WATER,        100, 15
 	move ICE_BEAM,     FREEZE_SIDE_EFFECT,         95,   ICE,          100, 10
 	move BLIZZARD,     FREEZE_SIDE_EFFECT,         120,  ICE,          90,  5
 	move PSYBEAM,      CONFUSION_SIDE_EFFECT,      65,   PSYCHIC_TYPE, 100, 20
@@ -105,7 +105,7 @@ Moves:
 	move TOXIC,        POISON_EFFECT,              0,    POISON,       95,  15
 	move CONFUSION,    CONFUSION_SIDE_EFFECT,      40,   PSYCHIC_TYPE, 100, 25
 	move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,   95,   PSYCHIC_TYPE, 100, 10
-	move HYPNOSIS,     SLEEP_EFFECT,               0,    MYSTERY,      65,  20
+	move HYPNOSIS,     SLEEP_EFFECT,               0,    MYSTERY,      85,  20
 	move PREPARE,      ATTACK_UP1_EFFECT,          0,    MYSTERY,      100, 40 ; tweak move text? (MEDITATE)
 	move AGILITY,      SPEED_UP2_EFFECT,           0,    MYSTERY,      100, 30
 	move QUICK_ATTACK, NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 30
@@ -113,12 +113,12 @@ Moves:
 	move TELEPORT,     SWITCH_AND_TELEPORT_EFFECT, 0,    MYSTERY,      100, 20
 	move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,      0,    GHOST,        100, 15
 	move MIMIC,        MIMIC_EFFECT,               0,    MYSTERY,      100, 10
-	move SCREECH,      DEFENSE_DOWN2_EFFECT,       0,    MYSTERY,      85,  40
+	move SCREECH,      DEFENSE_DOWN2_EFFECT,       0,    MYSTERY,      100, 40
 	move DOUBLE_DASH,  ATTACK_TWICE_EFFECT,        35,   FAIRY,        100, 20 ; (DOUBLE_TEAM)
 	move RECOVER,      HEAL_EFFECT,                0,    MYSTERY,      100, 20
 	move SPARK,        PARALYZE_SIDE_EFFECT2,      65,   ELECTRIC,     100, 20 ; (HARDEN)
 	move MINIMIZE,     SPECIAL_UP2_EFFECT,         0,    MYSTERY,      100, 15
-	move SMOKESCREEN,  CONFUSION_EFFECT,           0,    MYSTERY,      65,  20
+	move SMOKESCREEN,  CONFUSION_EFFECT,           0,    MYSTERY,      75,  20
 	move CONFUSE_RAY,  CONFUSION_EFFECT,           0,    MYSTERY,      100, 10
 	move FLAME_CHARGE, CONFUSION_SIDE_EFFECT,      60,   FIRE,         100, 20 ; (WITHDRAW)
 	move DEFENSE_CURL, DEFENSE_UP1_EFFECT,         0,    MYSTERY,      100, 40
@@ -141,7 +141,7 @@ Moves:
 	move WHIRLPOOL,    TRAPPING_EFFECT,            25,   WATER,        75,  15 ; (CLAMP)
 	move SWIFT,        SWIFT_EFFECT,               60,   FAIRY,        100, 20
 	move SKULL_BASH,   CHARGE_EFFECT,              150,  ROCK,         100, 15
-	move SPIKE_CANNON, TWO_TO_FIVE_ATTACKS_EFFECT, 20,   ROCK,         100, 15
+	move SPIKE_CANNON, TWO_TO_FIVE_ATTACKS_EFFECT, 25,   ROCK,         100, 15
 	move NIGHT_SLASH,  NO_ADDITIONAL_EFFECT,       70,   DARK,         100, 15 ; high crit ratio (CONSTRICT)
 	move AMNESIA,      SPECIAL_UP2_EFFECT,         0,    MYSTERY,      100, 20
 	move KINESIS,      FLINCH_SIDE_EFFECT1,        50,   PSYCHIC_TYPE, 100, 15
@@ -158,7 +158,7 @@ Moves:
 	move BUBBLE,       TWO_TO_FIVE_ATTACKS_EFFECT, 15,   WATER,        90,  25
 	move DIZZY_PUNCH,  THRASH_PETAL_DANCE_EFFECT,  70,   NORMAL,       100, 10
 	move SPORE,        SLEEP_EFFECT,               0,    GRASS,        100, 15
-	move FLASH,        FLINCH_SIDE_EFFECT1,        40,   ELECTRIC,     100, 20
+	move FLASH,        CONFUSION_SIDE_EFFECT,      70,   ELECTRIC,     100, 20
 	move PSYWAVE,      SPECIAL_DAMAGE_EFFECT,      1,    PSYCHIC_TYPE, 80,  15
 	move SPLASH,       SPLASH_EFFECT,              0,    WATER,        100, 40
 	move POWDER_SNOW,  FREEZE_SIDE_EFFECT,         40,   ICE,          100, 25 ; (ACID_ARMOR)
