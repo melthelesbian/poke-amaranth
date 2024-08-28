@@ -356,3 +356,7 @@ INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/items/tm_prices.asm"
 INCLUDE "engine/overworld/auto_repel.asm"
+
+SECTION "Field Move Stuff", ROMX
+
+INCLUDE "engine/overworld/field_moves.asm"

@@ -46,6 +46,7 @@ UsedCut:
 	call Delay3
 	xor a
 	ldh [hWY], a
+UsedCut2::
 	ld hl, UsedCutText
 	call PrintText
 	call LoadScreenTilesFromBuffer2

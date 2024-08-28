@@ -15,7 +15,28 @@ GroundRoseText::
 
 BoulderText::
 	text_far _BoulderText
-	text_end
+	; expanded for Field Move hack
+	text_asm
+	ld a, [wObtainedBadges]
+	bit BIT_RAINBOWBADGE, a
+	jr z, .done
+
+	ld d, STRENGTH
+	farcall HasPartyMove
+	ld a, [wWhichTrade]
+	and a
+	jr nz, .done
+
+	ld a, [wWhichPokemon]
+	push af
+	call ManualTextScroll
+	pop af
+	ld [wWhichPokemon], a
+	call GetPartyMonName2
+	predef PrintStrengthText
+
+.done
+	jp TextScriptEnd
 
 MartSignText::
 	text_far _MartSignText
