@@ -11,7 +11,7 @@ BlastoiseEvosMoves:
 	db 20, WHIRLPOOL
 	db 25, BARRIER
 	db 30, HEADBUTT
-	db 36, VICEGRIP
+	db 36, CRUSH
 	db 42, WATERFALL
 	db 48, HEAVY_SMASH
 	db 55, AMNESIA

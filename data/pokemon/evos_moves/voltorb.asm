@@ -5,4 +5,13 @@ VoltorbEvosMoves:
 ; Learnset
 	db 1, TACKLE
 	db 1, THUNDERSHOCK
+	db 7, SCREECH
+	db 12, QUICK_ATTACK
+	db 17, SONICBOOM
+	db 23, SPARK
+	db 29, SELFDESTRUCT
+	db 36, HEAVY_SMASH
+	db 44, FOCUS_ENERGY
+	db 52, THUNDER
+	db 60, EXPLOSION
 	db 0

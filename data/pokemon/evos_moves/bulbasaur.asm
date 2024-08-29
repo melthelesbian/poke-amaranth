@@ -8,8 +8,8 @@ BulbasaurEvosMoves:
 	db 6, VINE_WHIP
 	db 8, LEECH_SEED
 	db 10, POISON_STING
+	db 12, POISON_CLOUD
 	db 13, STUN_CLOUD
-	db 13, POISON_CLOUD
 	db 15, ABSORB
 	db 18, SLEEP_CLOUD
 	db 21, RAZOR_LEAF

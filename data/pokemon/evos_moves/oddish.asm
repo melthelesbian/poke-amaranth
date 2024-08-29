@@ -5,4 +5,18 @@ OddishEvosMoves:
 ; Learnset
 	db 1, ABSORB
 	db 1, GROWTH
+	db 6, LEECH_SEED
+	db 10, ACID
+	db 14, VINE_WHIP
+	db 16, POISON_CLOUD
+	db 18, STUN_CLOUD
+	db 20, SMOG
+	db 22, SLEEP_CLOUD
+	db 26, MEGA_DRAIN
+	db 30, FEINT_ATTACK
+	db 35, SLUDGE
+	db 40, RAZOR_LEAF
+	db 46, NIGHT_SLASH
+	db 52, SPORE
+	db 58, PETAL_DANCE
 	db 0

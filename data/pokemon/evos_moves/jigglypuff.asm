@@ -12,7 +12,7 @@ JigglypuffEvosMoves:
 	db 26, DRAIN_KISS
 	db 32, BARRIER
 	db 38, BODY_SLAM
-	db 45, RECOVER
+	db 45, REST
 	db 52, MOONBLAST
 	db 60, HYPNOSIS
 	db 0

@@ -63,7 +63,7 @@ YoungsterData:
 	db 11, RATTATA, EKANS, 0
 	db 14, SPEAROW, 0
 ; Mt. Moon 1F
-	db 10, RATTATA, RATTATA, ZUBAT, 0
+	db 10, RATTATA, EKANS, ZUBAT, 0
 ; Route 24
 	db 14, RATTATA, EKANS, ZUBAT, 0
 ; Route 25
@@ -91,7 +91,7 @@ BugCatcherData:
 	db 11, CATERPIE, METAPOD, 0
 ; Mt. Moon 1F
 	db 11, WEEDLE, KAKUNA, 0
-	db 10, CATERPIE, METAPOD, CATERPIE, 0
+	db 10, CATERPIE, METAPOD, BUTTERFREE, 0
 ; Route 24
 	db 14, CATERPIE, WEEDLE, 0
 ; Route 6
@@ -235,7 +235,7 @@ SuperNerdData:
 
 HikerData:
 ; Mt. Moon 1F
-	db 10, GEODUDE, GEODUDE, ONIX, 0
+	db 10, GEODUDE, RHYHORN, ONIX, 0
 ; Route 25
 	db 15, MACHOP, GEODUDE, 0
 	db 13, GEODUDE, GEODUDE, MACHOP, GEODUDE, 0
