@@ -11,7 +11,7 @@ MoveSoundTable:
 	db SFX_BATTLE_0D,          $20, $80 ; ICE_PUNCH
 	db SFX_BATTLE_0D,          $00, $a0 ; THUNDERPUNCH
 	db SFX_DAMAGE,             $00, $80 ; SCRATCH
-	db SFX_BATTLE_0F,          $20, $40 ; VICEGRIP
+	db SFX_BATTLE_0F,          $20, $40 ; CRUSH
 	db SFX_BATTLE_0F,          $00, $80 ; GUILLOTINE
 	db SFX_BATTLE_0E,          $00, $a0 ; RAZOR_WIND
 	db SFX_NOT_VERY_EFFECTIVE, $10, $c0 ; SWORDS_DANCE

@@ -16,7 +16,7 @@
 	const ICE_PUNCH    ; 8
 	const THUNDERPUNCH ; 9
 	const SCRATCH      ; 10
-	const VICEGRIP     ; 11
+	const CRUSH        ; 11
 	const GUILLOTINE   ; 12
 	const RAZOR_WIND   ; 13
 	const SWORDS_DANCE ; 14

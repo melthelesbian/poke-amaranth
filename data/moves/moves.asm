@@ -21,7 +21,7 @@ Moves:
 	move ICE_PUNCH,    FREEZE_SIDE_EFFECT,         75,   ICE,          100, 15
 	move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,      75,   ELECTRIC,     100, 20
 	move SCRATCH,      NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 35
-	move VICEGRIP,     NO_ADDITIONAL_EFFECT,       50,   STEEL,        100, 30
+	move CRUSH,     NO_ADDITIONAL_EFFECT,       50,   STEEL,        100, 30
 	move GUILLOTINE,   CHARGE_EFFECT,              200,  STEEL,        95,  5  ; needs charge text
 	move RAZOR_WIND,   NO_ADDITIONAL_EFFECT,       95,   FLYING,       100, 15
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,          0,    MYSTERY,      100, 30

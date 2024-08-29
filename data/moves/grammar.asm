@@ -23,7 +23,7 @@ ExclamationPointMoveSets:
 ; set 3
 	db POUND
 	db SCRATCH
-	db VICEGRIP
+	db CRUSH
 	db WING_ATTACK
 	db FLY
 	db FEINT_ATTACK

@@ -10,7 +10,7 @@ AttackAnimationPointers:
 	dw IcePunchAnim
 	dw ThunderPunchAnim
 	dw ScratchAnim
-	dw VicegripAnim
+	dw CrushAnim
 	dw GuillotineAnim
 	dw RazorWindAnim
 	dw SwordsDanceAnim
@@ -282,6 +282,7 @@ ScratchAnim:
 	battle_anim SCRATCH_ANIM, SUBANIM_0_SCRATCHES, 0, 6
 	db -1 ; end
 
+CrushAnim:
 VicegripAnim:
 	battle_anim VICEGRIP_ANIM, SUBANIM_0_SLICE_BOTH_SIDES, 0, 8
 	db -1 ; end
