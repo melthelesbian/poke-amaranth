@@ -136,9 +136,9 @@ _CeruleanCityGuardText::
 	cont "with the ROCKETs!"
 	done
 
-_CeruleanCityCooltrainerF1SlowbroUseSonicboomText::
+_CeruleanCityCooltrainerF1SlowbroUseTailWhipText::
 	text "OK! SLOWBRO!"
-	line "Use SONICBOOM!"
+	line "Use TAIL WHIP!"
 	cont "Come on, SLOWBRO"
 	cont "pay attention!"
 	done

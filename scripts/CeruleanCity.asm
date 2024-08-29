@@ -381,7 +381,7 @@ CeruleanCityCooltrainerF1Text:
 	jp TextScriptEnd
 
 .SlowbroUseSonicboomText:
-	text_far _CeruleanCityCooltrainerF1SlowbroUseSonicboomText
+	text_far _CeruleanCityCooltrainerF1SlowbroUseTailWhipText
 	text_end
 
 .SlowbroPunchText:

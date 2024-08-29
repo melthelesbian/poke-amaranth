@@ -1,5 +1,6 @@
 PoliwhirlEvosMoves:
 ; Evolutions
+	db EVOLVE_TRADE, 1, POLIWRATH
 	db EVOLVE_ITEM, WATER_STONE, 35, POLIWRATH
 	db 0
 ; Learnset
