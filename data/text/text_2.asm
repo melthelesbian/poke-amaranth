@@ -1445,25 +1445,17 @@ _TurnedOnPC1Text::
 	prompt
 
 _AccessedBillsPCText::
-	text "Accessed BILL's"
-	line "PC."
-
-	para "Accessed #MON"
+	text "Accessed #MON"
 	line "Storage System."
 	prompt
 
 _AccessedSomeonesPCText::
-	text "Accessed someone's"
-	line "PC."
-
-	para "Accessed #MON"
+	text "Accessed #MON"
 	line "Storage System."
 	prompt
 
 _AccessedMyPCText::
-	text "Accessed my PC."
-
-	para "Accessed Item"
+	text "Accessed Item"
 	line "Storage System."
 	prompt
 
@@ -1549,8 +1541,8 @@ _SwitchOnText::
 	text "Switch on!"
 	prompt
 
-_WhatText::
-	text "What?"
+_SelectText::
+	text "SELECT."
 	done
 
 _DepositWhichMonText::
@@ -1667,14 +1659,11 @@ _GetDexRatedText::
 
 _ClosedOaksPCText::
 	text "Closed link to"
-	line "PROF.OAK's PC.@"
+	line "OAK's LAB.@"
 	text_end
 
 _AccessedOaksPCText::
-	text "Accessed PROF."
-	line "OAK's PC."
-
-	para "Accessed #DEX"
+	text "Accessed #DEX"
 	line "Rating System."
 	prompt
 

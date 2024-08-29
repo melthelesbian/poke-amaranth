@@ -38,14 +38,14 @@ _ItemUseBallText07::
 	text_ram wBoxMonNicks
 	text " was"
 	line "transferred to"
-	cont "BILL's PC!"
+	cont "the #MON box!"
 	prompt
 
 _ItemUseBallText08::
 	text_ram wBoxMonNicks
 	text " was"
 	line "transferred to"
-	cont "someone's PC!"
+	cont "the #MON box!"
 	prompt
 
 _ItemUseBallText06::

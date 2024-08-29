@@ -85,10 +85,10 @@ DisplayPCMainMenu::
 	ldh [hAutoBGTransferEnabled], a
 	ret
 
-SomeonesPCText:   db "SOMEONE's PC@"
-BillsPCText:      db "BILL's PC@"
-PlayersPCText:    db "'s PC@"
-OaksPCText:       db "PROF.OAK's PC@"
+SomeonesPCText:   db "#MON BOX@"
+BillsPCText:      db "#MON BOX@"
+PlayersPCText:    db "'s BOX@"
+OaksPCText:       db "OAK's LAB@"
 PKMNLeaguePCText: db "<PKMN>LEAGUE@"
 LogOffPCText:     db "LOG OFF@"
 
@@ -144,7 +144,7 @@ BillsPCMenu:
 	ld [hli], a ; wListScrollOffset
 	ld [hl], a ; wMenuWatchMovingOutOfBounds
 	ld [wPlayerMonNumber], a
-	ld hl, WhatText
+	ld hl, SelectText
 	call PrintText
 	hlcoord 9, 14
 	ld b, 2
@@ -456,8 +456,8 @@ SwitchOnText:
 	text_far _SwitchOnText
 	text_end
 
-WhatText:
-	text_far _WhatText
+SelectText:
+	text_far _SelectText
 	text_end
 
 DepositWhichMonText:
