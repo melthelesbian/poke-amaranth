@@ -136,6 +136,19 @@ _CeruleanCityGuardText::
 	cont "with the ROCKETs!"
 	done
 
+_CeruleanCityCooltrainerF3Text::
+	text "Be careful if"
+	line "you leave town."
+
+	para "The #MON on"
+	line "the road are very"
+	cont "strong."
+
+	para "You should face"
+	line "MISTY in the gym"
+	cont "before you go."
+	done
+
 _CeruleanCityCooltrainerF1SlowbroUseTailWhipText::
 	text "OK! SLOWBRO!"
 	line "Use TAIL WHIP!"

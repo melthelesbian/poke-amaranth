@@ -107,7 +107,7 @@ MapHeaderPointers::
 	dw SSAnne2FRooms_h
 	dw SSAnneB1FRooms_h
 	dw UndergroundCrossroads_h ; UNUSED_MAP_69
-	dw LancesRoom_h ; UNUSED_MAP_6A
+	dw CeruleanLesbianHouse_h ; CERULEAN_LESBIAN_HOUSE
 	dw LancesRoom_h ; UNUSED_MAP_6B
 	dw VictoryRoad1F_h
 	dw LancesRoom_h ; UNUSED_MAP_6D
