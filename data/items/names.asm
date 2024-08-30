@@ -77,7 +77,7 @@ ItemNames::
 	li "EXP.ALL"
 	li "OLD ROD"
 	li "GOOD ROD"
-	li "SUPER ROD"
+	li "FISHING ROD"
 	li "PP UP"
 	li "ETHER"
 	li "MAX ETHER"

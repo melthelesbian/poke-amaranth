@@ -77,7 +77,7 @@ ItemPrices::
 	bcd3 0     ; EXP_ALL
 	bcd3 0     ; OLD_ROD
 	bcd3 0     ; GOOD_ROD
-	bcd3 0     ; SUPER_ROD
+	bcd3 0     ; FISHING_ROD
 	bcd3 0     ; PP_UP
 	bcd3 0     ; ETHER
 	bcd3 0     ; MAX_ETHER

@@ -5,5 +5,5 @@ UsableItems_CloseMenu:
 	db POKE_FLUTE
 	db OLD_ROD
 	db GOOD_ROD
-	db SUPER_ROD
+	db FISHING_ROD
 	db -1 ; end

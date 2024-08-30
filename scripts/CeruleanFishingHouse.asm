@@ -1,11 +1,15 @@
-Route12SuperRodHouse_Script:
-	jp EnableAutoTextBoxDrawing
+CeruleanFishingHouse_Script:
+	ld a, TRUE
+	ld [wAutoTextBoxDrawingControl], a
+	dec a
+	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+	ret
 
-Route12SuperRodHouse_TextPointers:
+CeruleanFishingHouse_TextPointers:
 	def_text_pointers
-	dw_const Route12SuperRodHouseFishingGuruText, TEXT_ROUTE12SUPERRODHOUSE_FISHING_GURU
+	dw_const CeruleanFishingHouseFisherText, TEXT_CERULEANFISHINGHOUSE_FISHING_GURU
 
-Route12SuperRodHouseFishingGuruText:
+CeruleanFishingHouseFisherText:
 	text_asm
 	ld a, [wStatusFlags1]
 	bit BIT_GOT_FISHING_ROD, a
@@ -36,23 +40,23 @@ Route12SuperRodHouseFishingGuruText:
 	jp TextScriptEnd
 
 .DoYouLikeToFishText:
-	text_far _Route12SuperRodHouseFishingGuruDoYouLikeToFishText
+	text_far _CeruleanFishingHouseFishingGuruDoYouLikeToFishText
 	text_end
 
 .ReceivedSuperRodText:
-	text_far _Route12SuperRodHouseFishingGuruReceivedSuperRodText
+	text_far _CeruleanFishingHouseFishingGuruReceivedSuperRodText
 	sound_get_item_1
-	text_far _Route12SuperRodHouseFishingGuruFishingWayOfLifeText
+	text_far _CeruleanFishingHouseFishingGuruFishingWayOfLifeText
 	text_end
 
 .ThatsDisappointingText:
-	text_far _Route12SuperRodHouseFishingGuruThatsDisappointingText
+	text_far _CeruleanFishingHouseFishingGuruThatsDisappointingText
 	text_end
 
 .TryFishingText:
-	text_far _Route12SuperRodHouseFishingGuruTryFishingText
+	text_far _CeruleanFishingHouseFishingGuruTryFishingText
 	text_end
 
 .NoRoomText:
-	text_far _Route12SuperRodHouseFishingGuruNoRoomText
+	text_far _CeruleanFishingHouseFishingGuruNoRoomText
 	text_end

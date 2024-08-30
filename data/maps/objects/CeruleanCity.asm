@@ -23,8 +23,9 @@ CeruleanCity_Object:
 	warp_event 25, 25, CERULEAN_MART, 1
 	warp_event  4, 11, CERULEAN_CAVE_1F, 1
 	warp_event 27,  9, CERULEAN_TRASHED_HOUSE, 3
-	warp_event  9, 11, CERULEAN_BADGE_HOUSE, 2
-	warp_event  9,  9, CERULEAN_BADGE_HOUSE, 1
+	warp_event  9,  9, CERULEAN_FISHING_HOUSE, 1
+	warp_event  9, 11, CERULEAN_FISHING_HOUSE, 2
+	warp_event 15, 11, CERULEAN_BADGE_HOUSE, 1
 
 	def_bg_events
 	bg_event 23, 19, TEXT_CERULEANCITY_SIGN
