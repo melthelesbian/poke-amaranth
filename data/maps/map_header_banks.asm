@@ -190,7 +190,7 @@ MapHeaderBanks::
 	db BANK(Route16Gate1F_h)
 	db BANK(Route16Gate2F_h)
 	db BANK(Route16FlyHouse_h)
-	db BANK(Route12SuperRodHouse_h)
+	db BANK(Route12FishingGuruHouse_h)
 	db BANK(Route18Gate1F_h)
 	db BANK(Route18Gate2F_h)
 	db BANK(SeafoamIslands1F_h)

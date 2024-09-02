@@ -9,7 +9,7 @@ _CeruleanFishingHouseFishingGuruDoYouLikeToFishText::
 	line "fish?"
 	done
 
-_CeruleanFishingHouseFishingGuruReceivedSuperRodText::
+_CeruleanFishingHouseFishingGuruReceivedFishingRodText::
 	text "Grand! I like"
 	line "your style!"
 

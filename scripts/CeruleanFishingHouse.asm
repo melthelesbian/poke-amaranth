@@ -25,7 +25,7 @@ CeruleanFishingHouseFisherText:
 	jr nc, .bag_full
 	ld hl, wStatusFlags1
 	set BIT_GOT_FISHING_ROD, [hl]
-	ld hl, .ReceivedSuperRodText
+	ld hl, .ReceivedFishingRodText
 	jr .done
 .bag_full
 	ld hl, .NoRoomText
@@ -43,8 +43,8 @@ CeruleanFishingHouseFisherText:
 	text_far _CeruleanFishingHouseFishingGuruDoYouLikeToFishText
 	text_end
 
-.ReceivedSuperRodText:
-	text_far _CeruleanFishingHouseFishingGuruReceivedSuperRodText
+.ReceivedFishingRodText:
+	text_far _CeruleanFishingHouseFishingGuruReceivedFishingRodText
 	sound_get_item_1
 	text_far _CeruleanFishingHouseFishingGuruFishingWayOfLifeText
 	text_end

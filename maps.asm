@@ -700,7 +700,7 @@ INCLUDE "data/maps/objects/Route21.asm"
 Route21_Blocks: INCBIN "maps/Route21.blk"
 
 VermilionOldRodHouse_Blocks:
-Route12SuperRodHouse_Blocks:
+Route12FishingGuruHouse_Blocks:
 Daycare_Blocks: INCBIN "maps/Daycare.blk"
 
 FuchsiaGoodRodHouse_Blocks: INCBIN "maps/FuchsiaGoodRodHouse.blk"
@@ -736,9 +736,9 @@ INCLUDE "data/maps/headers/Daycare.asm"
 INCLUDE "scripts/Daycare.asm"
 INCLUDE "data/maps/objects/Daycare.asm"
 
-INCLUDE "data/maps/headers/Route12SuperRodHouse.asm"
-INCLUDE "scripts/Route12SuperRodHouse.asm"
-INCLUDE "data/maps/objects/Route12SuperRodHouse.asm"
+INCLUDE "data/maps/headers/Route12FishingGuruHouse.asm"
+INCLUDE "scripts/Route12FishingGuruHouse.asm"
+INCLUDE "data/maps/objects/Route12FishingGuruHouse.asm"
 
 INCLUDE "data/maps/headers/SilphCo8F.asm"
 INCLUDE "scripts/SilphCo8F.asm"

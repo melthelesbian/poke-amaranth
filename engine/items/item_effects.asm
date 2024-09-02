@@ -94,7 +94,7 @@ ItemUsePtrTable:
 	dw UnusableItem      ; EXP_ALL
 	dw ItemUseOldRod     ; OLD_ROD
 	dw ItemUseGoodRod    ; GOOD_ROD
-	dw ItemUseSuperRod   ; FISHING_ROD
+	dw ItemUseFishingRod ; FISHING_ROD
 	dw ItemUsePPUp       ; PP_UP
 	dw ItemUsePPRestore  ; ETHER
 	dw ItemUsePPRestore  ; MAX_ETHER
@@ -1858,10 +1858,10 @@ ItemUseGoodRod:
 
 INCLUDE "data/wild/good_rod.asm"
 
-ItemUseSuperRod:
+ItemUseFishingRod:
 	call FishingInit
 	jp c, ItemUseNotTime
-	call ReadSuperRodData
+	call ReadFishingRodData
 	ld a, e
 RodResponse:
 	ld [wRodResponse], a
@@ -2839,13 +2839,13 @@ IsNextTileShoreOrWater:
 
 INCLUDE "data/tilesets/water_tilesets.asm"
 
-ReadSuperRodData:
+ReadFishingRodData:
 ; return e = 2 if no fish on this map
 ; return e = 1 if a bite, bc = level,species
 ; return e = 0 if no bite
 	ld a, [wCurMap]
 	ld de, 3 ; each fishing group is three bytes wide
-	ld hl, SuperRodData
+	ld hl, FishingRodData
 	call IsInArray
 	jr c, .ReadFishingGroup
 	ld e, $2 ; $2 if no fishing groups found
@@ -2884,7 +2884,7 @@ ReadSuperRodData:
 	ld e, $1 ; $1 if there's a bite
 	ret
 
-INCLUDE "data/wild/super_rod.asm"
+INCLUDE "data/wild/fishing_rod.asm"
 
 ; reloads map view and processes sprite data
 ; for items that cause the overworld to be displayed
