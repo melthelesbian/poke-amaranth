@@ -703,7 +703,7 @@ VermilionFishingGuruHouse_Blocks:
 Route12FishingGuruHouse_Blocks:
 Daycare_Blocks: INCBIN "maps/Daycare.blk"
 
-FuchsiaGoodRodHouse_Blocks: INCBIN "maps/FuchsiaGoodRodHouse.blk"
+FuchsiaFishingGuruHouse_Blocks: INCBIN "maps/FuchsiaFishingGuruHouse.blk"
 
 
 SECTION "Maps 12", ROMX
@@ -728,9 +728,9 @@ INCLUDE "scripts/CeladonMart2F.asm"
 INCLUDE "data/maps/objects/CeladonMart2F.asm"
 CeladonMart2F_Blocks: INCBIN "maps/CeladonMart2F.blk"
 
-INCLUDE "data/maps/headers/FuchsiaGoodRodHouse.asm"
-INCLUDE "scripts/FuchsiaGoodRodHouse.asm"
-INCLUDE "data/maps/objects/FuchsiaGoodRodHouse.asm"
+INCLUDE "data/maps/headers/FuchsiaFishingGuruHouse.asm"
+INCLUDE "scripts/FuchsiaFishingGuruHouse.asm"
+INCLUDE "data/maps/objects/FuchsiaFishingGuruHouse.asm"
 
 INCLUDE "data/maps/headers/Daycare.asm"
 INCLUDE "scripts/Daycare.asm"

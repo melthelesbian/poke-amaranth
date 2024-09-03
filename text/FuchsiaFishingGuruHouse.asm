@@ -1,6 +1,6 @@
-_VermilionFishingGuruHouseFishingGuruWouldYouLikeShellderText::
+_FuchsiaFishingGuruHouseFishingGuruWouldYouLikeHorseaText::
 	text "I'm the FISHING"
-	line "GURU's twin"
+	line "GURU's older"
 	cont "brother!"
 
 	para "I simply Looove"
@@ -9,20 +9,20 @@ _VermilionFishingGuruHouseFishingGuruWouldYouLikeShellderText::
 	cont "too many."
 
 	para "Would you like a"
-	line "SHELLDER?"
+	line "HORSEA?"
 
 	para "I'll sell you"
-	line "one for ¥1,000."
+	line "one for ¥10,000."
 	done
 
-_VermilionFishingGuruHouseFishingGuruNoText::
+_FuchsiaFishingGuruHouseFishingGuruNoText::
 	text "Oh... That's so"
 	line "disappointing..."
 	done
 
-_VermilionFishingGuruHouseFishingGuruNoMoneyText::
+_FuchsiaFishingGuruHouseFishingGuruNoMoneyText::
 	text "Oh no!"
 
-	para "You don't have"
+	para "You have don't have"
 	line "enough money!"
 	done

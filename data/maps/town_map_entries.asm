@@ -91,7 +91,7 @@ InternalMapEntries:
 	internal_map FUCHSIA_MEETING_ROOM,           8, 13, FuchsiaCityName
 	internal_map SEAFOAM_ISLANDS_B4F,            5, 15, SeafoamIslandsName
 	internal_map VERMILION_FISHING_GURU_HOUSE,  10,  9, VermilionCityName
-	internal_map FUCHSIA_GOOD_ROD_HOUSE,         8, 13, FuchsiaCityName
+	internal_map FUCHSIA_FISHING_GURU_HOUSE,         8, 13, FuchsiaCityName
 	internal_map POKEMON_MANSION_1F,             2, 15, PokemonMansionName
 	internal_map CINNABAR_MART_COPY,             2, 15, CinnabarIslandName
 	internal_map INDIGO_PLATEAU_LOBBY,           0,  2, IndigoPlateauName

@@ -224,7 +224,7 @@ SECTION "Text 9", ROMX
 
 INCLUDE "text/FuchsiaGym_2.asm"
 INCLUDE "text/FuchsiaMeetingRoom.asm"
-INCLUDE "text/FuchsiaGoodRodHouse.asm"
+INCLUDE "text/FuchsiaFishingGuruHouse.asm"
 INCLUDE "text/PokemonMansion1F.asm"
 INCLUDE "text/CinnabarGym.asm"
 INCLUDE "text/CinnabarLab.asm"
