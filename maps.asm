@@ -699,7 +699,7 @@ INCLUDE "data/maps/headers/Route21.asm"
 INCLUDE "data/maps/objects/Route21.asm"
 Route21_Blocks: INCBIN "maps/Route21.blk"
 
-VermilionOldRodHouse_Blocks:
+VermilionFishingGuruHouse_Blocks:
 Route12FishingGuruHouse_Blocks:
 Daycare_Blocks: INCBIN "maps/Daycare.blk"
 
@@ -719,9 +719,9 @@ INCLUDE "scripts/Route17.asm"
 INCLUDE "scripts/Route19.asm"
 INCLUDE "scripts/Route21.asm"
 
-INCLUDE "data/maps/headers/VermilionOldRodHouse.asm"
-INCLUDE "scripts/VermilionOldRodHouse.asm"
-INCLUDE "data/maps/objects/VermilionOldRodHouse.asm"
+INCLUDE "data/maps/headers/VermilionFishingGuruHouse.asm"
+INCLUDE "scripts/VermilionFishingGuruHouse.asm"
+INCLUDE "data/maps/objects/VermilionFishingGuruHouse.asm"
 
 INCLUDE "data/maps/headers/CeladonMart2F.asm"
 INCLUDE "scripts/CeladonMart2F.asm"
