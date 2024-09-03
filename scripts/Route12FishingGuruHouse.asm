@@ -7,52 +7,55 @@ Route12FishingGuruHouse_TextPointers:
 
 Route12FishingGuruHouseFishingGuruText:
 	text_asm
-	ld a, [wStatusFlags1]
-	bit BIT_GOT_FISHING_ROD, a
-	jr nz, .got_item
-	ld hl, .DoYouLikeToFishText
+	ld hl, .WouldYouLikeStaryu
 	call PrintText
+	ld a, MONEY_BOX
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
 	call YesNoChoice
 	ld a, [wCurrentMenuItem]
 	and a
-	jr nz, .refused
-	lb bc, FISHING_ROD, 1
-	call GiveItem
-	jr nc, .bag_full
-	ld hl, wStatusFlags1
-	set BIT_GOT_FISHING_ROD, [hl]
-	ld hl, .ReceivedFishingRodText
+	jp nz, .choseNo
+	ldh [hMoney], a
+	ldh [hMoney + 2], a
+	ld a, $50
+	ldh [hMoney + 1], a
+	call HasEnoughMoney
+	jr nc, .enoughMoney
+	ld hl, .NoMoneyText
+	jr .printText
+.enoughMoney
+	lb bc, STARYU, 5
+	call GivePokemon
+	jr nc, .done
+	xor a
+	ld [wPriceTemp], a
+	ld [wPriceTemp + 2], a
+	ld a, $50
+	ld [wPriceTemp + 1], a
+	ld hl, wPriceTemp + 2
+	ld de, wPlayerMoney + 2
+	ld c, $3
+	predef SubBCDPredef
+	ld a, MONEY_BOX
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
 	jr .done
-.bag_full
-	ld hl, .NoRoomText
-	jr .done
-.refused
-	ld hl, .ThatsDisappointingText
-	jr .done
-.got_item
-	ld hl, .TryFishingText
-.done
+.choseNo
+	ld hl, .NoText
+.printText
 	call PrintText
+.done
 	jp TextScriptEnd
 
-.DoYouLikeToFishText:
-	text_far _Route12FishingGuruHouseFishingGuruDoYouLikeToFishText
+.WouldYouLikeStaryu
+	text_far _Route12FishingGuruHouseFishingGuruWouldYouLikeStaryuText
 	text_end
 
-.ReceivedFishingRodText:
-	text_far _Route12FishingGuruHouseFishingGuruReceivedFishingRodText
-	sound_get_item_1
-	text_far _Route12FishingGuruHouseFishingGuruFishingWayOfLifeText
+.NoText
+	text_far _Route12FishingGuruHouseFishingGuruNoText
 	text_end
 
-.ThatsDisappointingText:
-	text_far _Route12FishingGuruHouseFishingGuruThatsDisappointingText
-	text_end
-
-.TryFishingText:
-	text_far _Route12FishingGuruHouseFishingGuruTryFishingText
-	text_end
-
-.NoRoomText:
-	text_far _Route12FishingGuruHouseFishingGuruNoRoomText
+.NoMoneyText
+	text_far _Route12FishingGuruHouseFishingGuruNoMoneyText
 	text_end

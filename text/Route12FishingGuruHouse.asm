@@ -1,62 +1,28 @@
-_Route12FishingGuruHouseFishingGuruDoYouLikeToFishText::
+_Route12FishingGuruHouseFishingGuruWouldYouLikeStaryuText::
 	text "I'm the FISHING"
-	line "GURU's brother!"
+	line "GURU's younger"
+	cont "brother!"
 
 	para "I simply Looove"
-	line "fishing!"
+	line "fishing! But"
+	cont "now I've caught"
+	cont "too many."
 
-	para "Do you like to"
-	line "fish?"
+	para "Would you like a"
+	line "STARYU?"
+
+	para "I'll sell you"
+	line "one for ¥5,000."
 	done
 
-_Route12FishingGuruHouseFishingGuruReceivedFishingRodText::
-	text "Grand! I like"
-	line "your style!"
-
-	para "Take this and"
-	line "fish, young one!"
-
-	para "<PLAYER> received"
-	line "a @"
-	text_ram wStringBuffer
-	text "!@"
-	text_end
-
-_Route12FishingGuruHouseFishingGuruFishingWayOfLifeText::
-	text_start
-
-	para "Fishing is a way"
-	line "of life!"
-
-	para "From the seas to"
-	line "rivers, go out"
-	cont "and land the big"
-	cont "one!"
-	done
-
-_Route12FishingGuruHouseFishingGuruThatsDisappointingText::
+_Route12FishingGuruHouseFishingGuruNoText::
 	text "Oh... That's so"
 	line "disappointing..."
 	done
 
-_Route12FishingGuruHouseFishingGuruTryFishingText::
-	text "Hello there,"
-	line "<PLAYER>!"
-
-	para "Use the SUPER ROD"
-	line "in any water!"
-	cont "You can catch"
-	cont "different kinds"
-	cont "of #MON."
-
-	para "Try fishing"
-	line "wherever you can!"
-	done
-
-_Route12FishingGuruHouseFishingGuruNoRoomText::
+_Route12FishingGuruHouseFishingGuruNoMoneyText::
 	text "Oh no!"
 
-	para "I had a gift for"
-	line "you, but you have"
-	cont "no room for it!"
+	para "You don't have"
+	line "enough money!"
 	done
