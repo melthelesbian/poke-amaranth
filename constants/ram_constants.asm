@@ -41,8 +41,8 @@ DEF NUM_BADGES EQU const_value
 	const BIT_STRENGTH_ACTIVE           ; 0
 	const BIT_SURF_ALLOWED              ; 1
 	const_skip                          ; 2 ; unused
-	const BIT_GOT_OLD_ROD               ; 3
-	const BIT_GOT_GOOD_ROD              ; 4
+	const_skip                          ; 3 ; (BIT_GOT_OLD_ROD)
+	const_skip                          ; 4 ; (BIT_GOT_GOOD_ROD)
 	const BIT_GOT_FISHING_ROD           ; 5
 	const BIT_GAVE_SAFFRON_GUARDS_DRINK ; 6
 	const BIT_UNUSED_CARD_KEY           ; 7

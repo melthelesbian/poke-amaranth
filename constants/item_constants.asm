@@ -84,8 +84,8 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const POKE_FLUTE    ; $49
 	const LIFT_KEY      ; $4A
 	const EXP_ALL       ; $4B
-	const OLD_ROD       ; $4C
-	const GOOD_ROD      ; $4D
+	const UNUSED_4C     ; $4C (OLD_ROD)
+	const UNUSED_4D     ; $4D (GOOD_ROD)
 	const FISHING_ROD   ; $4E
 	const PP_UP         ; $4F
 	const ETHER         ; $50
