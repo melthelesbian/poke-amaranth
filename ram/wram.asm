@@ -1581,7 +1581,7 @@ wEvolutionOccurred:: db
 
 wVBlankSavedROMBank:: db
 
-	ds 1
+wTempLevel:: db ; stores level during exp calc
 
 wIsKeyItem:: db
 

@@ -159,6 +159,7 @@ GainExperience:
 	farcall CalcLevelFromExperience
 	pop hl
 	ld a, [hl] ; current level
+	ld [wTempLevel], a
 	cp d
 	jp z, .nextMon ; if level didn't change, go to next mon
 	push hl
@@ -258,7 +259,23 @@ GainExperience:
 	ld [wMonDataLocation], a
 	ld a, [wd0b5]
 	ld [wd11e], a
+; [INFO] fix for skipped level move learning bug
+; credit to Luna via Red++
+	ld a, [wCurEnemyLevel]
+	ld c, a
+	ld a, [wTempLevel]
+	ld b, a
+.levelLoop
+	inc b
+	ld a, b
+	ld [wCurEnemyLevel], a
+	push bc
 	predef LearnMoveFromLevelUp
+	pop bc
+	ld a, b
+	cp c
+	jr nz, .levelLoop
+; [INFO] end fix for skipped level move learning bug
 	ld hl, wCanEvolveFlags
 	ld a, [wWhichPokemon]
 	ld c, a
