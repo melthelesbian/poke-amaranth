@@ -4,5 +4,16 @@ JolteonEvosMoves:
 ; Learnset
 	db 1, TACKLE
 	db 1, GROWL
-	db 1, THUNDERSHOCK
+	db 5, THUNDERSHOCK
+	db 10, MUD_SLAP
+	db 14, QUICK_ATTACK
+	db 16, THUNDERSHOCK
+	db 18, THUNDER_WAVE
+	db 20, THUNDERSHOCK
+	db 22, TAIL_WHIP
+	db 27, SPARK
+	db 33, BITE
+	db 40, SPIKE_CANNON
+	db 48, BODY_SLAM
+	db 56, THUNDER
 	db 0

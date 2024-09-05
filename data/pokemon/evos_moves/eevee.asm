@@ -7,4 +7,14 @@ EeveeEvosMoves:
 ; Learnset
 	db 1, TACKLE
 	db 1, GROWL
+	db 5, SWEET_CRY
+	db 9, MUD_SLAP
+	db 13, QUICK_ATTACK
+	db 17, GLARE
+	db 21, TAIL_WHIP
+	db 25, SWIFT
+	db 30, BITE
+	db 36, SING
+	db 42, HEADBUTT
+	db 48, DOUBLE_DASH
 	db 0
