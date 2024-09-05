@@ -21,7 +21,7 @@ Moves:
 	move ICE_PUNCH,    FREEZE_SIDE_EFFECT,         75,   ICE,          100, 15
 	move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,      75,   ELECTRIC,     100, 20
 	move SCRATCH,      NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 35
-	move CRUSH,     NO_ADDITIONAL_EFFECT,       50,   STEEL,        100, 30
+	move CRUSH,        NO_ADDITIONAL_EFFECT,       50,   STEEL,        100, 30 ; (VICEGRIP)
 	move GUILLOTINE,   CHARGE_EFFECT,              200,  STEEL,        95,  5  ; needs charge text
 	move RAZOR_WIND,   NO_ADDITIONAL_EFFECT,       95,   FLYING,       100, 15
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,          0,    MYSTERY,      100, 30
@@ -44,11 +44,11 @@ Moves:
 	move FURY_CUT,     RAGE_EFFECT,                40,   BUG,          95,  20 ; (FURY_ATTACK)
 	move BUG_BUZZ,     SPECIAL_DOWN_SIDE_EFFECT,   90,   BUG,          100, 10 ; (HORN_DRILL)
 	move TACKLE,       NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 35
-	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,      85,   NORMAL,       100, 15
+	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,      90,   NORMAL,       100, 15
 	move WRAP,         TRAPPING_EFFECT,            20,   NORMAL,       85,  20
-	move TAKE_DOWN,    RECOIL_EFFECT,              90,   NORMAL,       100, 20
+	move TAKE_DOWN,    RECOIL_EFFECT,              120,  NORMAL,       100, 20
 	move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100,  DRAGON,       100, 10
-	move FLARE_RUSH,   RECOIL_EFFECT,              90,   FIRE,         100, 15 ; (DOUBLE_EDGE)
+	move FLARE_RUSH,   RECOIL_EFFECT,              120,  FIRE,         100, 15 ; (DOUBLE_EDGE)
 	move TAIL_WHIP,    DEFENSE_DOWN_SIDE_EFFECT,   50,   NORMAL,       100, 25
 	move POISON_STING, POISON_SIDE_EFFECT1,        40,   POISON,       100, 35
 	move TWINEEDLE,    TWINEEDLE_EFFECT,           35,   BUG,          100, 20
@@ -75,7 +75,7 @@ Moves:
 	move AURORA_BEAM,  ATTACK_DOWN_SIDE_EFFECT,    60,   ICE,          100, 20
 	move HYPER_BEAM,   HYPER_BEAM_EFFECT,          150,  NORMAL,       95,  5
 	move PECK,         FLINCH_SIDE_EFFECT1,        40,   FLYING,       100, 35
-	move DRILL_PECK,   NO_ADDITIONAL_EFFECT,       60,   FLYING,       90,  20 ; high crit ratio
+	move DRILL_PECK,   NO_ADDITIONAL_EFFECT,       60,   FLYING,       100, 20 ; high crit ratio
 	move SUBMISSION,   RECOIL_EFFECT,              90,   FIGHTING,     90,  25
 	move LOW_KICK,     ATTACK_DOWN_SIDE_EFFECT,    40,   FIGHTING,     90,  20
 	move COUNTER,      NO_ADDITIONAL_EFFECT,       1,    MYSTERY,      100, 20
@@ -109,7 +109,7 @@ Moves:
 	move PREPARE,      ATTACK_UP1_EFFECT,          0,    MYSTERY,      100, 40 ; tweak move text? (MEDITATE)
 	move AGILITY,      SPEED_UP2_EFFECT,           0,    MYSTERY,      100, 30
 	move QUICK_ATTACK, NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 30
-	move RAGE,         RAGE_EFFECT,                20,   NORMAL,       100, 20
+	move RAGE,         RAGE_EFFECT,                40,   NORMAL,       100, 20
 	move TELEPORT,     SWITCH_AND_TELEPORT_EFFECT, 0,    MYSTERY,      100, 20
 	move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,      0,    GHOST,        100, 15
 	move MIMIC,        MIMIC_EFFECT,               0,    MYSTERY,      100, 10
@@ -136,8 +136,8 @@ Moves:
 	move SMOG,         POISON_SIDE_EFFECT2,        65,   POISON,       100, 25
 	move SLUDGE,       POISON_SIDE_EFFECT2,        90,   POISON,       100, 15
 	move BONE_CLUB,    FLINCH_SIDE_EFFECT1,        60,   GROUND,       100, 20
-	move FIRE_BLAST,   BURN_SIDE_EFFECT2,          120,  FIRE,         90,  5
-	move WATERFALL,    FLINCH_SIDE_EFFECT2,        80,   WATER,        90,  15
+	move FIRE_BLAST,   BURN_SIDE_EFFECT2,          100,  FIRE,         90,  5
+	move WATERFALL,    FLINCH_SIDE_EFFECT2,        70,   WATER,        90,  15
 	move WHIRLPOOL,    TRAPPING_EFFECT,            25,   WATER,        75,  15 ; (CLAMP)
 	move SWIFT,        SWIFT_EFFECT,               60,   FAIRY,        100, 20
 	move SKULL_BASH,   CHARGE_EFFECT,              150,  ROCK,         100, 15
