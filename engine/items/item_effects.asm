@@ -79,7 +79,7 @@ ItemUsePtrTable:
 	dw ItemUseMedicine   ; FRESH_WATER
 	dw ItemUseMedicine   ; SODA_POP
 	dw ItemUseMedicine   ; LEMONADE
-	dw UnusableItem      ; S_S_TICKET
+	dw UnusableItem      ; UNUSED_3F (SS_TICKET)
 	dw UnusableItem      ; GOLD_TEETH
 	dw ItemUseXStat      ; X_ATTACK
 	dw ItemUseXStat      ; X_DEFEND

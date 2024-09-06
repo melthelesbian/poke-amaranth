@@ -62,7 +62,7 @@ ItemPrices::
 	bcd3 200   ; FRESH_WATER
 	bcd3 300   ; SODA_POP
 	bcd3 350   ; LEMONADE
-	bcd3 0     ; S_S_TICKET
+	bcd3 0     ; UNUSED_3F (SS_TICKET)
 	bcd3 0     ; GOLD_TEETH
 	bcd3 500   ; X_ATTACK
 	bcd3 550   ; X_DEFEND

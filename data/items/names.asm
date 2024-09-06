@@ -62,7 +62,7 @@ ItemNames::
 	li "FRESH WATER"
 	li "SODA POP"
 	li "LEMONADE"
-	li "S.S.TICKET"
+	li "UNUSED 3F" ; UNUSED_3F (SS_TICKET)
 	li "GOLD TEETH"
 	li "X ATTACK"
 	li "X DEFEND"

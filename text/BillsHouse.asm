@@ -55,10 +55,8 @@ _BillsHouseBillThankYouText::
 
 _SSTicketReceivedText::
 	text "<PLAYER> received"
-	line "an @"
-	text_ram wStringBuffer
-	text "!@"
-	text_end
+	line "an S.S. TICKET!"
+	done
 
 _SSTicketNoRoomText::
 	text "You've got too"

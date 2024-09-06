@@ -53,10 +53,7 @@ VermilionCityDefaultScript:
 	call DisplayTextID
 	CheckEvent EVENT_SS_ANNE_LEFT
 	jr nz, .ship_departed
-	ld b, S_S_TICKET
-	predef GetQuantityOfItemInBag
-	ld a, b
-	and a
+	CheckEvent EVENT_GOT_SS_TICKET
 	ret nz
 .ship_departed
 	ld a, D_UP
@@ -172,10 +169,7 @@ VermilionCitySailor1Text:
 .greet_player_and_check_ticket
 	ld hl, .DoYouHaveATicketText
 	call PrintText
-	ld b, S_S_TICKET
-	predef GetQuantityOfItemInBag
-	ld a, b
-	and a
+	CheckEvent EVENT_GOT_SS_TICKET
 	jr nz, .player_has_ticket
 	ld hl, .YouNeedATicketText
 	call PrintText

@@ -62,7 +62,7 @@ KeyItemFlags:
 	dbit FALSE ; FRESH_WATER
 	dbit FALSE ; SODA_POP
 	dbit FALSE ; LEMONADE
-	dbit TRUE  ; S_S_TICKET
+	dbit FALSE ; UNUSED_3F (SS_TICKET)
 	dbit TRUE  ; GOLD_TEETH
 	dbit FALSE ; X_ATTACK
 	dbit FALSE ; X_DEFEND

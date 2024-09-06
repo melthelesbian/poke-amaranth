@@ -165,9 +165,6 @@ BillsHouseBillSSTicketText:
 	jr nz, .got_ss_ticket
 	ld hl, .ThankYouText
 	call PrintText
-	lb bc, S_S_TICKET, 1
-	call GiveItem
-	jr nc, .bag_full
 	ld hl, .SSTicketReceivedText
 	call PrintText
 	SetEvent EVENT_GOT_SS_TICKET
@@ -181,9 +178,6 @@ BillsHouseBillSSTicketText:
 	ld hl, .WhyDontYouGoInsteadOfMeText
 	call PrintText
 	jr .text_script_end
-.bag_full
-	ld hl, .SSTicketNoRoomText
-	call PrintText
 .text_script_end
 	jp TextScriptEnd
 
