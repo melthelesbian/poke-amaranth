@@ -227,6 +227,11 @@ INCLUDE "data/maps/headers/UndergroundPathRoute8.asm"
 INCLUDE "scripts/UndergroundPathRoute8.asm"
 INCLUDE "data/maps/objects/UndergroundPathRoute8.asm"
 
+INCLUDE "data/maps/headers/MeditationCave.asm"
+INCLUDE "scripts/MeditationCave.asm"
+INCLUDE "data/maps/objects/MeditationCave.asm"
+MeditationCave_Blocks: INCBIN "maps/MeditationCave.blk"
+
 INCLUDE "data/maps/headers/PowerPlant.asm"
 INCLUDE "scripts/PowerPlant.asm"
 INCLUDE "data/maps/objects/PowerPlant.asm"

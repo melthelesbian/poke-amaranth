@@ -108,7 +108,7 @@ MapHeaderBanks::
 	db BANK(SSAnneB1FRooms_h)
 	db BANK(UndergroundCrossroads_h) ; UNUSED_MAP_69
 	db BANK(CeruleanLesbianHouse_h) ; CERULEAN_LESBIAN_HOUSE
-	db $1D ; UNUSED_MAP_6B
+	db BANK(MeditationCave_h) ; MEDITATION_CAVE (UNUSED_MAP_6B)
 	db BANK(VictoryRoad1F_h)
 	db $1D ; UNUSED_MAP_6D
 	db $1D ; UNUSED_MAP_6E

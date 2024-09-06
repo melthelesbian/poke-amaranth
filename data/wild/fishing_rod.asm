@@ -34,6 +34,7 @@ FishingRodData:
 	dbw CERULEAN_CAVE_2F,    .CeruleanCave2F
 	dbw CERULEAN_CAVE_B1F,   .CeruleanCaveB1F
 	dbw CERULEAN_CAVE_1F,    .CeruleanCave1F
+	dbw MEDITATION_CAVE,     .MeditationCave
 	db -1 ; end
 
 ; fishing groups
@@ -84,6 +85,7 @@ FishingRodData:
 .SafariZoneNorth:
 .SafariZoneWest:
 .SafariZoneCenter:
+.MeditationCave:
 	db 4
 	db 15, DRATINI
 	db 15, KRABBY

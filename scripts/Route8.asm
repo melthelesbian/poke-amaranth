@@ -25,6 +25,7 @@ Route8_TextPointers:
 	dw_const Route8Gambler2Text,        TEXT_ROUTE8_GAMBLER2
 	dw_const Route8CooltrainerF4Text,   TEXT_ROUTE8_COOLTRAINER_F4
 	dw_const Route8UndergroundSignText, TEXT_ROUTE8_UNDERGROUND_SIGN
+	dw_const Route8MeditationCaveSignText, TEXT_MEDITATION_CAVE_SIGN
 
 Route8TrainerHeaders:
 	def_trainers
@@ -212,4 +213,8 @@ Route8CooltrainerF4AfterBattleText:
 
 Route8UndergroundSignText:
 	text_far _Route8UndergroundSignText
+	text_end
+
+Route8MeditationCaveSignText:
+	text_far _Route8MeditationCaveSignText
 	text_end
