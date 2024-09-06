@@ -9,8 +9,8 @@ KoffingEvosMoves:
 	db 13, ACID
 	db 18, SMOKESCREEN
 	db 24, HEADBUTT
-	db 30, SELFDESTRUCT
-	db 36, SMOG
+	db 30, SMOG
+	db 36, SELFDESTRUCT
 	db 42, BARRIER
 	db 48, BODY_SLAM
 	db 55, SLUDGE

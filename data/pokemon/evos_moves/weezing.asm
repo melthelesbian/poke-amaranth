@@ -8,8 +8,8 @@ WeezingEvosMoves:
 	db 13, ACID
 	db 18, SMOKESCREEN
 	db 24, HEADBUTT
-	db 30, SELFDESTRUCT
-	db 37, SMOG
+	db 30, SMOG
+	db 37, SELFDESTRUCT
 	db 44, BARRIER
 	db 51, BODY_SLAM
 	db 58, SLUDGE
