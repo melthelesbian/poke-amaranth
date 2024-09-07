@@ -110,7 +110,7 @@ MapHeaderPointers::
 	dw CeruleanLesbianHouse_h ; CERULEAN_LESBIAN_HOUSE
 	dw MeditationCave_h ; MEDITATION_CAVE (UNUSED_MAP_6B)
 	dw VictoryRoad1F_h
-	dw LancesRoom_h ; UNUSED_MAP_6D
+	dw BugSanctuary_h ; BUG_SANCTUARY (UNUSED_MAP_6D)
 	dw MtMoonSquare_h ; MT_MOON_SQUARE (UNUSED_MAP_6E)
 	dw MtMoonSquareGiftShop_h ; MT_MOON_SQUARE_GIFT_SHOP (UNUSED_MAP_6F)
 	dw LancesRoom_h ; UNUSED_MAP_70

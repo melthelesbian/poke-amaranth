@@ -126,6 +126,7 @@ VermilionCity_TextPointers:
 	dw_const VermilionCityPokemonFanClubSignText, TEXT_VERMILIONCITY_POKEMON_FAN_CLUB_SIGN
 	dw_const VermilionCityGymSignText,            TEXT_VERMILIONCITY_GYM_SIGN
 	dw_const VermilionCityHarborSignText,         TEXT_VERMILIONCITY_HARBOR_SIGN
+	dw_const VermilionCityBugSanctuarySignText,   TEXT_VERMILIONCITY_BUG_SANCTUARY_SIGN
 
 VermilionCityBeautyText:
 	text_far _VermilionCityBeautyText
@@ -250,4 +251,8 @@ VermilionCityGymSignText:
 
 VermilionCityHarborSignText:
 	text_far _VermilionCityHarborSignText
+	text_end
+
+VermilionCityBugSanctuarySignText:
+	text_far _VermilionCityBugSanctuarySignText
 	text_end

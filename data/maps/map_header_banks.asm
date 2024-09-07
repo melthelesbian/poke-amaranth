@@ -110,7 +110,7 @@ MapHeaderBanks::
 	db BANK(CeruleanLesbianHouse_h) ; CERULEAN_LESBIAN_HOUSE
 	db BANK(MeditationCave_h) ; MEDITATION_CAVE (UNUSED_MAP_6B)
 	db BANK(VictoryRoad1F_h)
-	db $1D ; UNUSED_MAP_6D
+	db BANK(BugSanctuary_h) ; BUG_SANCTUARY (UNUSED_MAP_6D)
 	db BANK(MtMoonSquare_h) ; MT_MOON_SQUARE (UNUSED_MAP_6E)
 	db BANK(MtMoonSquareGiftShop_h) ; MT_MOON_SQUARE_GIFT_SHOP (UNUSED_MAP_6F)
 	db $1D ; UNUSED_MAP_70

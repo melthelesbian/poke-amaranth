@@ -101,10 +101,12 @@ _VermilionCityNoticeSignText::
 	cont "sleeping #MON."
 
 	para "Detour through"
-	line "ROCK TUNNEL to"
+	line "the UNDERGROUND"
+	cont "CROSSROADS to"
 	cont "LAVENDER TOWN."
 
-	para "VERMILION POLICE"
+	para "VERMILION DEPT."
+	line "of PUBLIC SAFETY"
 	done
 
 _VermilionCityPokemonFanClubSignText::
@@ -120,6 +122,11 @@ _VermilionCityGymSignText::
 
 	para "The Lightning "
 	line "American!"
+	done
+
+_VermilionCityBugSanctuarySignText::
+	text "BUG SANCTUARY"
+	line "LEADER: GEORGIA"
 	done
 
 _VermilionCityHarborSignText::

@@ -102,6 +102,9 @@ BugCatcherData:
 ; Route 9
 	db 19, BEEDRILL, BEEDRILL, 0
 	db 20, CATERPIE, WEEDLE, VENONAT, 0
+; Bug Sanctuary
+	db 21, VENONAT, BEEDRILL, 0
+	db 21, PARAS, BUTTERFREE, 0
 
 LassData:
 ; Route 3
@@ -131,6 +134,8 @@ LassData:
 ; Celadon Gym
 	db 23, BELLSPROUT, WEEPINBELL, 0
 	db 23, ODDISH, GLOOM, 0
+; Bug Sanctuary
+	db 20, PARAS, VENONAT, BUTTERFREE, 0
 
 SailorData:
 ; SS Anne Stern
@@ -200,6 +205,8 @@ JrTrainerFData:
 	db 29, BELLSPROUT, ODDISH, TANGELA, 0
 ; Route 20
 	db 30, TENTACOOL, HORSEA, SEEL, 0
+; Bug Sanctuary
+	db 22, VENONAT, BEEDRILL, BUTTERFREE, 0
 
 PokemaniacData:
 ; Route 10
@@ -402,6 +409,8 @@ BeautyData:
 	db 29, STARYU, STARYU, STARYU, 0
 ; Route 20
 	db 30, SEADRA, HORSEA, SEADRA, 0
+; Bug Sanctuary
+	db $FF, 20, PARASECT, 22, PINSIR, 22, SCYTHER, 23, VENOMOTH, 0
 
 PsychicData:
 ; Saffron Gym

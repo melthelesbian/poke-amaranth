@@ -927,6 +927,11 @@ INCLUDE "scripts/VermilionGym.asm"
 INCLUDE "data/maps/objects/VermilionGym.asm"
 VermilionGym_Blocks: INCBIN "maps/VermilionGym.blk"
 
+INCLUDE "data/maps/headers/BugSanctuary.asm"
+INCLUDE "scripts/BugSanctuary.asm"
+INCLUDE "data/maps/objects/BugSanctuary.asm"
+BugSanctuary_Blocks: INCBIN "maps/BugSanctuary.blk"
+
 INCLUDE "data/maps/headers/CopycatsHouse2F.asm"
 INCLUDE "scripts/CopycatsHouse2F.asm"
 INCLUDE "data/maps/objects/CopycatsHouse2F.asm"
