@@ -129,8 +129,8 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const MEDITATION_CAVE,               11, 12 ; $6B
 	map_const VICTORY_ROAD_1F,               10,  9 ; $6C
 	map_const UNUSED_MAP_6D,                  0,  0 ; $6D
-	map_const UNUSED_MAP_6E,                  0,  0 ; $6E
-	map_const UNUSED_MAP_6F,                  0,  0 ; $6F
+	map_const MT_MOON_SQUARE,                15,  9 ; $6E
+	map_const MT_MOON_SQUARE_GIFT_SHOP,       6,  4 ; $6F
 	map_const UNUSED_MAP_70,                  0,  0 ; $70
 	map_const LANCES_ROOM,                   13, 13 ; $71
 	map_const UNUSED_MAP_72,                  0,  0 ; $72

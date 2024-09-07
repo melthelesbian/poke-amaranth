@@ -569,6 +569,16 @@ INCLUDE "scripts/MtMoonB2F.asm"
 INCLUDE "data/maps/objects/MtMoonB2F.asm"
 MtMoonB2F_Blocks: INCBIN "maps/MtMoonB2F.blk"
 
+INCLUDE "data/maps/headers/MtMoonSquare.asm"
+INCLUDE "scripts/MtMoonSquare.asm"
+INCLUDE "data/maps/objects/MtMoonSquare.asm"
+MtMoonSquare_Blocks: INCBIN "maps/MtMoonSquare.blk"
+
+INCLUDE "data/maps/headers/MtMoonSquareGiftShop.asm"
+INCLUDE "scripts/MtMoonSquareGiftShop.asm"
+INCLUDE "data/maps/objects/MtMoonSquareGiftShop.asm"
+MtMoonSquareGiftShop_Blocks: INCBIN "maps/MtMoonSquareGiftShop.blk"
+
 INCLUDE "data/maps/headers/SafariZoneWest.asm"
 INCLUDE "scripts/SafariZoneWest.asm"
 INCLUDE "data/maps/objects/SafariZoneWest.asm"

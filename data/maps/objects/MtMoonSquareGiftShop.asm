@@ -1,0 +1,22 @@
+	object_const_def
+	const_export MTMOONSQUAREGIFTSHOP_CLERK
+
+MtMoonSquareGiftShop_Object:
+	db $0A ; border block
+
+	def_warp_events
+	warp_event 4, 7, LAST_MAP, 2
+	warp_event 5, 7, LAST_MAP, 2
+
+	def_bg_events
+	bg_event 5, 2, TEXT_MTMOONSQUAREGIFTSHOP_STONE_TAG
+	bg_event 6, 2, TEXT_MTMOONSQUAREGIFTSHOP_STONE_TAG
+	bg_event 4, 4, TEXT_MTMOONSQUAREGIFTSHOP_TELESCOPE_TAG
+	bg_event 5, 4, TEXT_MTMOONSQUAREGIFTSHOP_TELESCOPE_TAG
+	bg_event 6, 4, TEXT_MTMOONSQUAREGIFTSHOP_TELESCOPE_TAG
+	bg_event 7, 4, TEXT_MTMOONSQUAREGIFTSHOP_TELESCOPE_TAG
+
+	def_object_events
+	object_event 11, 4, SPRITE_CLERK, STAY, LEFT, TEXT_MTMOONSQUAREGIFTSHOP_CLERK
+
+	def_warps_to MT_MOON_SQUARE_GIFT_SHOP

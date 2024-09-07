@@ -44,6 +44,8 @@ TryDoWildEncounter:
 	ld a, [wCurMapTileset]
 	cp FOREST ; Viridian Forest/Safari Zone
 	jr z, .CantEncounter2
+	cp OVERWORLD ; Mt. Moon Square
+	jr z, .CantEncounter2
 	ld a, [wGrassRate]
 .CanEncounter
 ; compare encounter chance with a random number to determine if there will be an encounter
