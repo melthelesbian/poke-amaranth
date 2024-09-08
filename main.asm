@@ -192,6 +192,9 @@ INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
 INCLUDE "engine/battle/trainer_ai.asm"
 INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
 INCLUDE "gfx/trade.asm"
+
+SECTION "EVOS and MOVES", ROMX
+
 INCLUDE "engine/pokemon/evos_moves.asm"
 
 SECTION "Move Effects", ROMX

@@ -1,6 +1,6 @@
 	db DEX_CUBONE ; pokedex id
 
-	db  50,  50,  95,  35,  40
+	db  50,  50,  95,  35,  50
 	;   hp  atk  def  spd  spc
 
 	db GROUND, GHOST ; type
