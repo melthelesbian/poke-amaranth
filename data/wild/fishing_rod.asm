@@ -41,60 +41,78 @@ FishingRodData:
 ; fishing groups
 ; number of monsters, followed by level/monster pairs
 
-.Group1:
 .PalletTown:
+	db 2
+	db 3, TENTACOOL
+	db 4, MAGIKARP
+
 .ViridianCity
 	db 2
-	db 15, TENTACOOL
-	db 15, POLIWAG
+	db 5, MAGIKARP
+	db 7, POLIWAG
 
-.Group2:
 .Route22:
-	db 2
-	db 15, GOLDEEN
-	db 15, POLIWAG
+	db 3
+	db 5, MAGIKARP
+	db 6, GOLDEEN
+	db 7, POLIWAG
 
-.Group3:
+.MtMoonSquare:
+	db 3
+	db 5, STARYU
+	db 5, HORSEA
+	db 5, DRATINI
+
 .CeruleanCity:
 .Route4:
 .Route24:
 .Route25:
 .CeruleanGym:
 	db 3
-	db 15, PSYDUCK
-	db 15, GOLDEEN
-	db 15, KRABBY
+	db 8, POLIWAG
+	db 9, GOLDEEN
+	db 7, STARYU
 
-.Group4:
 .VermilionCity:
 .Route6:
 .Route11:
 .VermilionDock:
-	db 2
-	db 15, KRABBY
-	db 15, SHELLDER
+	db 3
+	db 9, SHELLDER
+	db 11, GOLDEEN
+	db 8, SLOWPOKE
 
-.Group5:
+.MeditationCave:
+	db 3,
+	db 15, HORSEA
+	db 19, PSYDUCK
+	db 16, SLOWPOKE
+
 .CeladonCity:
-.Route10:
-	db 2
-	db 23, POLIWHIRL
-	db 15, SLOWPOKE
+	db 4
+	db 20, GRIMER
+	db 21, GOLDEEN
+	db 23, SHELLDER
+	db 24, PSYDUCK
 
-.Group6:
+.Route10:
+	db 4
+	db 21, STARYU
+	db 23, HORSEA
+	db 22, PSYDUCK
+	db 24, SLOWPOKE
+
+; [TODO) Design fishing tables after route tables
 .SafariZoneEast:
 .SafariZoneNorth:
 .SafariZoneWest:
 .SafariZoneCenter:
-.MtMoonSquare:
-.MeditationCave:
 	db 4
 	db 15, DRATINI
 	db 15, KRABBY
 	db 15, PSYDUCK
 	db 15, SLOWPOKE
 
-.Group7:
 .Route12:
 .Route13:
 .Route17:
@@ -105,7 +123,6 @@ FishingRodData:
 	db 15, GOLDEEN
 	db 15, MAGIKARP
 
-.Group8:
 .CinnabarIsland:
 .Route19:
 .Route20:
@@ -118,7 +135,6 @@ FishingRodData:
 	db 15, SHELLDER
 	db 15, GOLDEEN
 
-.Group9:
 .Route23:
 .CeruleanCave2F:
 .CeruleanCaveB1F:
@@ -129,7 +145,6 @@ FishingRodData:
 	db 23, KINGLER
 	db 23, SEADRA
 
-.Group10:
 .FuchsiaCity:
 	db 4
 	db 23, SEAKING
