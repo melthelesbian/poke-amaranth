@@ -188,6 +188,7 @@ PewterCity_TextPointers:
 	dw_const PewterCitySuperNerd1Text,             TEXT_PEWTERCITY_SUPER_NERD1
 	dw_const PewterCitySuperNerd2Text,             TEXT_PEWTERCITY_SUPER_NERD2
 	dw_const PewterCityYoungsterText,              TEXT_PEWTERCITY_YOUNGSTER
+	dw_const PewterCityFossilRocketText,           TEXT_PEWTERCITY_FOSSILROCKET
 	dw_const PewterCityTrainerTipsText,            TEXT_PEWTERCITY_TRAINER_TIPS
 	dw_const PewterCityPoliceNoticeSignText,       TEXT_PEWTERCITY_POLICE_NOTICE_SIGN
 	dw_const MartSignText,                         TEXT_PEWTERCITY_MART_SIGN
@@ -306,6 +307,9 @@ PewterCityYoungsterText:
 PewterCityYoungsterGoTakeOnBrockText:
 	text_far _PewterCityYoungsterGoTakeOnBrockText
 	text_end
+
+PewterCityFossilRocketText:
+	script_mart DOME_FOSSIL, HELIX_FOSSIL, OLD_AMBER
 
 PewterCityTrainerTipsText:
 	text_far _PewterCityTrainerTipsText
