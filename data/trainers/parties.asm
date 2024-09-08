@@ -544,7 +544,7 @@ ScientistData:
 
 GiovanniData:
 ; Rocket Hideout B4F
-	db $FF, 25, ONIX, 24, RHYHORN, 29, KANGASKHAN, 0
+	db $FF, 25, ONIX, 27, NIDORINO, 32, KANGASKHAN, 0
 ; Silph Co. 11F
 	db $FF, 37, NIDORINO, 35, KANGASKHAN, 37, RHYHORN, 41, NIDOQUEEN, 0
 ; Viridian Gym
@@ -574,8 +574,8 @@ RocketData:
 	db 20, RATTATA, RATICATE, DROWZEE, 0
 	db 21, MACHOP, MACHOP, 0
 ; Rocket Hideout B4F
-	db 23, SANDSHREW, EKANS, SANDSLASH, 0
-	db 23, EKANS, SANDSHREW, ARBOK, 0
+	db 23, MEOWTH, EKANS, SANDSLASH, 0
+	db 23, EKANS, ZUBAT, ARBOK, 0
 	db 21, KOFFING, ZUBAT, 0
 ; Pokémon Tower 7F
 	db 25, ZUBAT, ZUBAT, GOLBAT, 0

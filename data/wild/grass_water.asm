@@ -199,10 +199,10 @@ WildDataPointers:
 	dw NothingWildMons
 	dw DiglettsCaveWildMons
 	dw VictoryRoad3FWildMons
-	dw NothingWildMons
-	dw NothingWildMons
-	dw NothingWildMons
-	dw NothingWildMons
+	dw NothingWildMons       ; Rocket Hideout B1F
+	dw RocketHideoutWildMons ; Rocket Hideout B2F
+	dw RocketHideoutWildMons ; Rocket Hideout B3F
+	dw NothingWildMons       ; Rocket Hideout B4F
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
@@ -291,6 +291,7 @@ INCLUDE "data/wild/maps/PokemonTower4F.asm"
 INCLUDE "data/wild/maps/PokemonTower5F.asm"
 INCLUDE "data/wild/maps/PokemonTower6F.asm"
 INCLUDE "data/wild/maps/PokemonTower7F.asm"
+INCLUDE "data/wild/maps/RocketHideout.asm"
 INCLUDE "data/wild/maps/Route13.asm"
 INCLUDE "data/wild/maps/Route14.asm"
 INCLUDE "data/wild/maps/Route15.asm"
