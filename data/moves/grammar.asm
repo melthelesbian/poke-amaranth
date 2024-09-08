@@ -64,7 +64,7 @@ ExclamationPointMoveSets:
 	db POWDER_SNOW
 	db FURY_SWIPES
 	db REST
-	db SHADOW_CLAW
+	db SHADOW_TEAR
 	db SLASH
 	db SUBSTITUTE
 	db 0 ; end set

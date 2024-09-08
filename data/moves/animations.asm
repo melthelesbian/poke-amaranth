@@ -158,7 +158,7 @@ AttackAnimationPointers:
 	dw RestAnim
 	dw RockSlideAnim
 	dw CrunchAnim
-	dw ShadowClawAnim
+	dw ShadowTearAnim
 	dw ConversionAnim
 	dw TriAttackAnim
 	dw SuperFangAnim
@@ -1167,7 +1167,7 @@ SuperFangAnim:
 	battle_anim NO_MOVE_ANIM, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
-ShadowClawAnim:
+ShadowTearAnim:
 NightSlashAnim:
 SlashAnim:
 	battle_anim SLASH_ANIM, SUBANIM_0_SCRATCHES, 0, 6

@@ -169,7 +169,7 @@ Moves:
 	move REST,         HEAL_EFFECT,                0,    MYSTERY,      100, 10
 	move ROCK_SLIDE,   NO_ADDITIONAL_EFFECT,       75,   ROCK,         95,  10
 	move CRUNCH,       DEFENSE_DOWN_SIDE_EFFECT,   80,   DARK,         90,  15 ; (HYPER_FANG)
-	move SHADOW_CLAW,  NO_ADDITIONAL_EFFECT,       70,   GHOST,        100, 15 ; high crit ratio (SHARPEN)
+	move SHADOW_TEAR,  NO_ADDITIONAL_EFFECT,       70,   GHOST,        100, 15 ; high crit ratio (SHARPEN)
 	move CONVERSION,   CONVERSION_EFFECT,          0,    MYSTERY,      100, 30
 	move TRI_ATTACK,   NO_ADDITIONAL_EFFECT,       80,   MYSTERY,      100, 10
 	move SUPER_FANG,   SUPER_FANG_EFFECT,          1,    DARK,         90,  10

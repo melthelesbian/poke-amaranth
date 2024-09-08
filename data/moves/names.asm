@@ -158,7 +158,7 @@ MoveNames::
 	li "REST"
 	li "ROCK SLIDE"
 	li "CRUNCH"
-	li "SHADOW CLAW"
+	li "SHADOW TEAR"
 	li "CONVERSION"
 	li "TRI ATTACK"
 	li "SUPER FANG"

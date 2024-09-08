@@ -164,7 +164,7 @@
 	const REST         ; 156
 	const ROCK_SLIDE   ; 157
 	const CRUNCH       ; 158
-	const SHADOW_CLAW  ; 159
+	const SHADOW_TEAR  ; 159
 	const CONVERSION   ; 160
 	const TRI_ATTACK   ; 161
 	const SUPER_FANG   ; 162

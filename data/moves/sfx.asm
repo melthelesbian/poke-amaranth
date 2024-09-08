@@ -159,7 +159,7 @@ MoveSoundTable:
 	db SFX_BATTLE_21,          $12, $10 ; REST
 	db SFX_BATTLE_36,          $f0, $20 ; ROCK_SLIDE
 	db SFX_BATTLE_1E,          $12, $ff ; CRUNCH
-	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; SHADOW_CLAW
+	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; SHADOW_TEAR
 	db SFX_BATTLE_33,          $f0, $10 ; CONVERSION
 	db SFX_BATTLE_29,          $f8, $ff ; TRI_ATTACK
 	db SFX_BATTLE_26,          $f0, $ff ; SUPER_FANG
