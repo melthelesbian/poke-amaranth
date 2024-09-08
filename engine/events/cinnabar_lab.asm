@@ -36,6 +36,8 @@ GiveFossilToCinnabarLab::
 	add hl, de
 	ld a, [hl]
 	ldh [hItemToRemoveID], a
+	cp ANCIENT_HAIR
+	jr z, .choseAncientHair
 	cp DOME_FOSSIL
 	jr z, .choseDomeFossil
 	cp HELIX_FOSSIL
@@ -47,6 +49,9 @@ GiveFossilToCinnabarLab::
 	jr .fossilSelected
 .choseDomeFossil
 	ld b, KABUTO
+	jr .fossilSelected
+.choseAncientHair
+	ld b, MEW
 .fossilSelected
 	ld [wFossilItem], a
 	ld a, b

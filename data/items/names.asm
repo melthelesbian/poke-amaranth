@@ -6,7 +6,7 @@ ItemNames::
 	li "POKé BALL"
 	li "TOWN MAP"
 	li "BICYCLE"
-	li "?????" ; SURFBOARD
+	li "SURFBOARD"
 	li "SAFARI BALL"
 	li "POKéDEX"
 	li "MOON STONE"
@@ -43,7 +43,7 @@ ItemNames::
 	li "DOME FOSSIL"
 	li "HELIX FOSSIL"
 	li "SECRET KEY"
-	li "?????" ; ITEM_2C
+	li "ANCIENT HAIR"
 	li "BIKE VOUCHER"
 	li "X ACCURACY"
 	li "LEAF STONE"

@@ -16,6 +16,7 @@ HiddenObjectMaps:
 	db LAVENDER_POKECENTER
 	db VERMILION_POKECENTER
 	db VERMILION_GYM
+	db VERMILION_DOCK
 	db CELADON_MANSION_2F
 	db CELADON_POKECENTER
 	db CELADON_GYM
@@ -104,6 +105,7 @@ HiddenObjectPointers:
 	dw LavenderPokecenterHiddenObjects
 	dw VermilionPokecenterHiddenObjects
 	dw VermilionGymHiddenObjects
+	dw VermilionDockHiddenObjects
 	dw CeladonMansion2HiddenObjects
 	dw CeladonPokecenterHiddenObjects
 	dw CeladonGymHiddenObjects
@@ -298,6 +300,10 @@ VermilionGymHiddenObjects:
 	hidden_object  9,  7, 12, GymTrashScript
 	hidden_object  9,  9, 13, GymTrashScript
 	hidden_object  9, 11, 14, GymTrashScript
+	db -1 ; end
+
+VermilionDockHiddenObjects:
+	hidden_object 20, 0, ANCIENT_HAIR, HiddenItems
 	db -1 ; end
 
 CeladonMansion2HiddenObjects:
