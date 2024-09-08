@@ -309,7 +309,27 @@ PewterCityYoungsterGoTakeOnBrockText:
 	text_end
 
 PewterCityFossilRocketText:
-	script_mart DOME_FOSSIL, HELIX_FOSSIL, OLD_AMBER
+	text_asm
+    ld hl, .GreetingText
+    call PrintText
+    ld hl, .MartList
+    call LoadItemList
+    ld a, PRICEDITEMLISTMENU
+    ld [wListMenuID], a
+    farcall DisplayPokemartDialogue_
+    jp TextScriptEnd
+
+.GreetingText
+    text "Got some fossils,"
+    line "take a look."
+    done
+
+.MartList
+    db 3
+    db DOME_FOSSIL
+    db HELIX_FOSSIL
+    db OLD_AMBER
+    db -1
 
 PewterCityTrainerTipsText:
 	text_far _PewterCityTrainerTipsText
