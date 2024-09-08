@@ -3,7 +3,7 @@
 	db  60,  75,  85, 115, 100
 	;   hp  atk  def  spd  spc
 
-	db WATER, PSYCHIC_TYPE ; type
+	db WATER, FAIRY ; type
 	db CR_HARD ; catch rate
 	db 207 ; base exp
 

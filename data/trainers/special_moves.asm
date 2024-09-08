@@ -6,7 +6,7 @@ LoneMoves:
 	; pokemon index, move to give nth pokemon
 	db 2, BIDE
 	db 1, BUBBLEBEAM
-	db 2, THUNDERBOLT
+	db 3, THUNDERBOLT
 	db 2, MEGA_DRAIN
 	db 3, TOXIC
 	db 3, PSYWAVE
