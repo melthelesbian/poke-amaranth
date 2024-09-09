@@ -3,7 +3,7 @@
 	db  35,  40, 100,  35,  90
 	;   hp  atk  def  spd  spc
 
-	db ROCK, WATER ; type
+	db WATER, ROCK ; type
 	db CR_HARD ; catch rate
 	db 120 ; base exp
 
