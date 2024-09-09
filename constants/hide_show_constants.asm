@@ -144,8 +144,7 @@ DEF SHOW EQU $15
 	const HS_ROCKET_HIDEOUT_B4F_ITEM_1     ; 84 X
 	const HS_ROCKET_HIDEOUT_B4F_ITEM_2     ; 85 X
 	const HS_ROCKET_HIDEOUT_B4F_ITEM_3     ; 86 X
-	const HS_ROCKET_HIDEOUT_B4F_ITEM_4     ; 87
-	const HS_ROCKET_HIDEOUT_B4F_ITEM_5     ; 88
+	const HS_ROCKET_HIDEOUT_B4F_ITEM_4     ; 87 [TODO) Deleted lift key.
 	const HS_SILPH_CO_2F_1                 ; 89 XXX never (de)activated?
 	const HS_SILPH_CO_2F_2                 ; 8A
 	const HS_SILPH_CO_2F_3                 ; 8B

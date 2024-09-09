@@ -90,7 +90,7 @@ ItemUsePtrTable:
 	dw ItemUseItemfinder ; ITEMFINDER
 	dw UnusableItem      ; SILPH_SCOPE
 	dw ItemUsePokeFlute  ; POKE_FLUTE
-	dw UnusableItem      ; LIFT_KEY
+	dw UnusableItem      ; UNUSED_4A (LIFT_KEY)
 	dw UnusableItem      ; EXP_ALL
 	dw UnusableItem      ; UNUSED_4C (OLD_ROD)
 	dw UnusableItem      ; UNUSED_4D (GOOD_ROD)

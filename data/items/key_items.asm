@@ -73,7 +73,7 @@ KeyItemFlags:
 	dbit TRUE  ; ITEMFINDER
 	dbit TRUE  ; SILPH_SCOPE
 	dbit TRUE  ; POKE_FLUTE
-	dbit TRUE  ; LIFT_KEY
+	dbit FALSE ; UNUSED_4A (LIFT_KEY)
 	dbit FALSE ; EXP_ALL
 	dbit TRUE  ; UNUSED_4C (OLD_ROD)
 	dbit TRUE  ; UNUSED_4D (GOOD_ROD)

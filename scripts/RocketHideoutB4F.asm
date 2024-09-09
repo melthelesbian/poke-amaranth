@@ -83,7 +83,6 @@ RocketHideoutB4F_TextPointers:
 	dw_const PickUpItemText,                              TEXT_ROCKETHIDEOUTB4F_TM_RAZOR_WIND
 	dw_const PickUpItemText,                              TEXT_ROCKETHIDEOUTB4F_IRON
 	dw_const PickUpItemText,                              TEXT_ROCKETHIDEOUTB4F_SILPH_SCOPE
-	dw_const PickUpItemText,                              TEXT_ROCKETHIDEOUTB4F_LIFT_KEY
 	dw_const RocketHideoutB4FGiovanniHopeWeMeetAgainText, TEXT_ROCKETHIDEOUTB4F_GIOVANNI_HOPE_WE_MEET_AGAIN
 
 RocketHideout4TrainerHeaders:
@@ -191,11 +190,6 @@ RocketHideoutB4FRocket2AfterBattleText:
 	ld hl, .Text
 	call PrintText
 	CheckAndSetEvent EVENT_ROCKET_DROPPED_LIFT_KEY
-	jr nz, .done
-	ld a, HS_ROCKET_HIDEOUT_B4F_ITEM_5
-	ld [wMissableObjectIndex], a
-	predef ShowObject
-.done
 	jp TextScriptEnd
 
 .Text:

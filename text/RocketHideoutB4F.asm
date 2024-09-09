@@ -71,4 +71,9 @@ _RocketHideoutB4FRocket2EndBattleText::
 _RocketHideoutB4FRocket2AfterBattleText::
 	text "Oh no! I dropped"
 	line "the LIFT KEY!"
+
+	para "..."
+
+	para "<PLAYER> found a"
+	line "LIFT KEY!"
 	done

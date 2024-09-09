@@ -144,7 +144,6 @@ DebugItemsList:
 	db TOWN_MAP, 1
 	db SECRET_KEY, 1
 	db CARD_KEY, 1
-	db LIFT_KEY, 1
 	db -1 ; end
 
 DebugUnusedList:

@@ -66,8 +66,7 @@ RocketHideoutElevator_TextPointers:
 
 RocketHideoutElevatorText:
 	text_asm
-	ld b, LIFT_KEY
-	call IsItemInBag
+	CheckEvent EVENT_ROCKET_DROPPED_LIFT_KEY
 	jr z, .no_key
 	call RocketHideoutElevatorScript
 	ld hl, RocketHideoutElevatorWarpMaps

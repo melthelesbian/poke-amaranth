@@ -73,7 +73,7 @@ ItemPrices::
 	bcd3 0     ; ITEMFINDER
 	bcd3 0     ; SILPH_SCOPE
 	bcd3 0     ; POKE_FLUTE
-	bcd3 0     ; LIFT_KEY
+	bcd3 0     ; UNUSED_4A (LIFT_KEY)
 	bcd3 0     ; EXP_ALL
 	bcd3 0     ; UNUSED_4C (OLD_ROD)
 	bcd3 0     ; UNUSED_4D (GOOD_ROD)
