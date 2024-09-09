@@ -76,9 +76,9 @@ ItemUsePtrTable:
 	dw UnusableItem      ; UNUSED_39 (MAX_REPEL)
 	dw UnusableItem      ; UNUSED_3A (DIRE_HIT)
 	dw UnusableItem      ; COIN
-	dw ItemUseMedicine   ; FRESH_WATER
-	dw ItemUseMedicine   ; SODA_POP
-	dw ItemUseMedicine   ; LEMONADE
+	dw ItemUseVitamin    ; FRESH_WATER
+	dw ItemUseVitamin    ; ICED_TEA
+	dw ItemUseVitamin    ; LEMONADE
 	dw UnusableItem      ; UNUSED_3F (SS_TICKET)
 	dw UnusableItem      ; GOLD_TEETH
 	dw UnusableItem      ; UNUSED_41 (X_ATTACK)
@@ -1074,20 +1074,20 @@ ItemUseMedicine:
 	jr .addHealAmount
 .notUsingSoftboiled2
 	ld a, [wCurItem]
-	cp SODA_POP
-	ld b, 60 ; Soda Pop heal amount
+	cp ICED_TEA
+	ld b, 50 ; Iced Tea heal amount
 	jr z, .addHealAmount
-	ld b, 80 ; Lemonade heal amount
+	ld b, 75 ; Lemonade heal amount
 	jr nc, .addHealAmount
 	cp FRESH_WATER
-	ld b, 50 ; Fresh Water heal amount
+	ld b, 25 ; Fresh Water heal amount
 	jr z, .addHealAmount
 	cp SUPER_POTION
 	ld b, 200 ; Hyper Potion heal amount
 	jr c, .addHealAmount
-	ld b, 50 ; Super Potion heal amount
+	ld b, 100 ; Super Potion heal amount
 	jr z, .addHealAmount
-	ld b, 20 ; Potion heal amount
+	ld b, 50 ; Potion heal amount
 .addHealAmount
 	pop de
 	pop hl

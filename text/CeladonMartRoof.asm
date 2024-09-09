@@ -33,10 +33,10 @@ _CeladonMartRoofLittleGirlTM13ExplanationText::
 	line "target sometimes!@"
 	text_end
 
-_CeladonMartRoofLittleGirlYaySodaPopText::
+_CeladonMartRoofLittleGirlYayIcedTeaText::
 	text "Yay!"
 
-	para "SODA POP!"
+	para "ICED TEA!"
 
 	para "Thank you!"
 

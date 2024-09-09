@@ -25,7 +25,7 @@ UsableItems_PartyMenu:
 	db REVIVE
 	db MAX_REVIVE
 	db FRESH_WATER
-	db SODA_POP
+	db ICED_TEA
 	db LEMONADE
 	db PP_UP
 	db ETHER

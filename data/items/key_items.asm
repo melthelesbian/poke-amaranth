@@ -60,7 +60,7 @@ KeyItemFlags:
 	dbit FALSE ; UNUSED_3A (DIRE_HIT)
 	dbit FALSE ; COIN
 	dbit FALSE ; FRESH_WATER
-	dbit FALSE ; SODA_POP
+	dbit FALSE ; ICED_TEA
 	dbit FALSE ; LEMONADE
 	dbit FALSE ; UNUSED_3F (SS_TICKET)
 	dbit TRUE  ; GOLD_TEETH

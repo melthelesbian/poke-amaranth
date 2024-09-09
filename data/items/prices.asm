@@ -17,9 +17,9 @@ ItemPrices::
 	bcd3 200   ; PARLYZ_HEAL
 	bcd3 3000  ; FULL_RESTORE
 	bcd3 2500  ; MAX_POTION
-	bcd3 1500  ; HYPER_POTION
-	bcd3 700   ; SUPER_POTION
-	bcd3 300   ; POTION
+	bcd3 1000  ; HYPER_POTION
+	bcd3 500   ; SUPER_POTION
+	bcd3 250   ; POTION
 	bcd3 0     ; BOULDERBADGE
 	bcd3 0     ; CASCADEBADGE
 	bcd3 0     ; THUNDERBADGE
@@ -59,9 +59,9 @@ ItemPrices::
 	bcd3 0     ; UNUSED_39 (MAX_REPEL)
 	bcd3 0     ; UNUSED_3A (DIRE_HIT)
 	bcd3 10    ; COIN
-	bcd3 200   ; FRESH_WATER
-	bcd3 300   ; SODA_POP
-	bcd3 350   ; LEMONADE
+	bcd3 100   ; FRESH_WATER
+	bcd3 200   ; ICED_TEA
+	bcd3 300   ; LEMONADE
 	bcd3 0     ; UNUSED_3F (SS_TICKET)
 	bcd3 0     ; GOLD_TEETH
 	bcd3 0     ; UNUSED_41 (X_ATTACK)

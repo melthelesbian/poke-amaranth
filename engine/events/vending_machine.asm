@@ -86,7 +86,7 @@ VendingMachineText1:
 
 DrinkText:
 	db   "FRESH WATER"
-	next "SODA POP"
+	next "ICED TEA"
 	next "LEMONADE"
 	next "CANCEL@"
 

@@ -69,7 +69,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const UNUSED_3A     ; $3A (DIRE_HIT)
 	const COIN          ; $3B
 	const FRESH_WATER   ; $3C
-	const SODA_POP      ; $3D
+	const ICED_TEA      ; $3D
 	const LEMONADE      ; $3E
 	const UNUSED_3F     ; $3F (SS_TICKET)
 	const GOLD_TEETH    ; $40

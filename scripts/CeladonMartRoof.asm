@@ -36,7 +36,7 @@ CeladonMartRoofScript_GetDrinksInBag:
 
 CeladonMartRoofDrinkList:
 	db FRESH_WATER
-	db SODA_POP
+	db ICED_TEA
 	db LEMONADE
 	db 0 ; end
 
@@ -82,8 +82,8 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	ldh [hItemToRemoveID], a
 	cp FRESH_WATER
 	jr z, .gaveFreshWater
-	cp SODA_POP
-	jr z, .gaveSodaPop
+	cp ICED_TEA
+	jr z, .gaveIcedTea
 ; gave Lemonade
 	CheckEvent EVENT_GOT_TM49
 	jr nz, .alreadyGaveDrink
@@ -97,10 +97,10 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	call PrintText
 	SetEvent EVENT_GOT_TM49
 	ret
-.gaveSodaPop
+.gaveIcedTea
 	CheckEvent EVENT_GOT_TM48
 	jr nz, .alreadyGaveDrink
-	ld hl, CeladonMartRoofLittleGirlYaySodaPopText
+	ld hl, CeladonMartRoofLittleGirlYayIcedTeaText
 	call PrintText
 	call RemoveItemByIDBank12
 	lb bc, TM_ROCK_SLIDE, 1
@@ -149,8 +149,8 @@ CeladonMartRoofLittleGirlReceivedTM13Text:
 	text_waitbutton
 	text_end
 
-CeladonMartRoofLittleGirlYaySodaPopText:
-	text_far _CeladonMartRoofLittleGirlYaySodaPopText
+CeladonMartRoofLittleGirlYayIcedTeaText:
+	text_far _CeladonMartRoofLittleGirlYayIcedTeaText
 	text_waitbutton
 	text_end
 

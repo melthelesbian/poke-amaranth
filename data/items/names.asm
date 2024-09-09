@@ -60,7 +60,7 @@ ItemNames::
 	li "UNUSED 3A" ; UNUSED_3A (DIRE_HIT)
 	li "COIN"
 	li "FRESH WATER"
-	li "SODA POP"
+	li "ICED TEA"
 	li "LEMONADE"
 	li "UNUSED 3F" ; UNUSED_3F (SS_TICKET)
 	li "GOLD TEETH"
