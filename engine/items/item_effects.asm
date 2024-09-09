@@ -72,8 +72,8 @@ ItemUsePtrTable:
 	dw ItemUseMedicine   ; REVIVE
 	dw ItemUseMedicine   ; MAX_REVIVE
 	dw ItemUseGuardSpec  ; GUARD_SPEC
-	dw ItemUseSuperRepel ; SUPER_REPEL
-	dw ItemUseMaxRepel   ; MAX_REPEL
+	dw UnusableItem      ; UNUSED_38 (SUPER_REPEL)
+	dw UnusableItem      ; UNUSED_39 (MAX_REPEL)
 	dw ItemUseDireHit    ; DIRE_HIT
 	dw UnusableItem      ; COIN
 	dw ItemUseMedicine   ; FRESH_WATER
@@ -1530,9 +1530,7 @@ ItemUseEscapeRope:
 INCLUDE "data/tilesets/escape_rope_tilesets.asm"
 
 ItemUseRepel:
-	ld b, 100
-
-ItemUseRepelCommon:
+	ld b, 250
 	ld a, [wIsInBattle]
 	and a
 	jp nz, ItemUseNotTime
@@ -1618,14 +1616,6 @@ ItemUseGuardSpec:
 	ld hl, wPlayerBattleStatus2
 	set PROTECTED_BY_MIST, [hl] ; Mist bit
 	jp PrintItemUseTextAndRemoveItem
-
-ItemUseSuperRepel:
-	ld b, 200
-	jp ItemUseRepelCommon
-
-ItemUseMaxRepel:
-	ld b, 250
-	jp ItemUseRepelCommon
 
 ItemUseDireHit:
 	ld a, [wIsInBattle]

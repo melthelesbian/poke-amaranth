@@ -29,7 +29,7 @@ ItemPrices::
 	bcd3 0     ; VOLCANOBADGE
 	bcd3 0     ; EARTHBADGE
 	bcd3 550   ; ESCAPE_ROPE
-	bcd3 350   ; REPEL
+	bcd3 500   ; REPEL
 	bcd3 10000 ; OLD_AMBER
 	bcd3 2000  ; FIRE_STONE
 	bcd3 2000  ; THUNDER_STONE
@@ -55,8 +55,8 @@ ItemPrices::
 	bcd3 1500  ; REVIVE
 	bcd3 4000  ; MAX_REVIVE
 	bcd3 700   ; GUARD_SPEC
-	bcd3 500   ; SUPER_REPEL
-	bcd3 700   ; MAX_REPEL
+	bcd3 0     ; UNUSED_38 (SUPER_REPEL)
+	bcd3 0     ; UNUSED_39 (MAX_REPEL)
 	bcd3 650   ; DIRE_HIT
 	bcd3 10    ; COIN
 	bcd3 200   ; FRESH_WATER
