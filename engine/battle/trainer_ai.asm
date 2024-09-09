@@ -326,30 +326,33 @@ JugglerAI:
 	ret nc
 	jp AISwitchIfEnoughMons
 
-BlackbeltAI:
-	cp 13 percent - 1
-	ret nc
-	jp AIUseXAttack
-
 GiovanniAI:
-	cp 25 percent + 1
-	ret nc
-	jp AIUseGuardSpec
+	; if his active mon has a status condition, use a full heal
+	ld a, [wEnemyMonStatus]
+	and a
+	ret z
+	jp AIUseFullHeal
 
 CooltrainerMAI:
 	cp 25 percent + 1
 	ret nc
-	jp AIUseXAttack
+	ld a, 10
+	call AICheckIfHPBelowFraction
+	jp c, AIUseSuperPotion
+	ld a, 5
+	call AICheckIfHPBelowFraction
+	ret nc
+	jp AISwitchIfEnoughMons
 
 CooltrainerFAI:
 	; The intended 25% chance to consider switching will not apply.
 	; Uncomment the line below to fix this.
 	cp 25 percent + 1
-	; ret nc
+	ret nc
 	ld a, 10
 	call AICheckIfHPBelowFraction
 	jp c, AIUseHyperPotion
-	ld a, 5
+	ld a, 15
 	call AICheckIfHPBelowFraction
 	ret nc
 	jp AISwitchIfEnoughMons
@@ -362,14 +365,18 @@ BrockAI:
 	jp AIUseFullHeal
 
 MistyAI:
-	cp 25 percent + 1
+	cp 50 percent + 1
 	ret nc
-	jp AIUseXDefend
+	ld a, 10
+	call AICheckIfHPBelowFraction
+	ret nc
+	jp AIUseSuperPotion
 
 LtSurgeAI:
-	cp 25 percent + 1
-	ret nc
-	jp AIUseXSpeed
+	ld a, [wEnemyMonStatus]
+	and a
+	ret z
+	jp AIUseFullHeal
 
 ErikaAI:
 	cp 50 percent + 1
@@ -380,9 +387,10 @@ ErikaAI:
 	jp AIUseSuperPotion
 
 KogaAI:
-	cp 25 percent + 1
-	ret nc
-	jp AIUseXAttack
+	ld a, [wEnemyMonStatus]
+	and a
+	ret z
+	jp AIUseFullHeal
 
 BlaineAI:
 	cp 25 percent + 1
@@ -422,9 +430,12 @@ LoreleiAI:
 	jp AIUseSuperPotion
 
 BrunoAI:
-	cp 25 percent + 1
+	cp 50 percent + 1
 	ret nc
-	jp AIUseXDefend
+	ld a, 5
+	call AICheckIfHPBelowFraction
+	ret nc
+	jp AIUseHyperPotion
 
 AgathaAI:
 	cp 8 percent
@@ -635,27 +646,6 @@ AICureStatus:
 	res 0, [hl]
 	ret
 
-AIUseXAccuracy: ; unused
-	call AIPlayRestoringSFX
-	ld hl, wEnemyBattleStatus2
-	set 0, [hl]
-	ld a, X_ACCURACY
-	jp AIPrintItemUse
-
-AIUseGuardSpec:
-	call AIPlayRestoringSFX
-	ld hl, wEnemyBattleStatus2
-	set 1, [hl]
-	ld a, GUARD_SPEC
-	jp AIPrintItemUse
-
-AIUseDireHit: ; unused
-	call AIPlayRestoringSFX
-	ld hl, wEnemyBattleStatus2
-	set 2, [hl]
-	ld a, DIRE_HIT
-	jp AIPrintItemUse
-
 AICheckIfHPBelowFraction:
 ; return carry if enemy trainer's current HP is below 1 / a of the maximum
 	ldh [hDivisor], a
@@ -681,48 +671,6 @@ AICheckIfHPBelowFraction:
 	ld a, e
 	sub c
 	ret
-
-AIUseXAttack:
-	ld b, $A
-	ld a, X_ATTACK
-	jr AIIncreaseStat
-
-AIUseXDefend:
-	ld b, $B
-	ld a, X_DEFEND
-	jr AIIncreaseStat
-
-AIUseXSpeed:
-	ld b, $C
-	ld a, X_SPEED
-	jr AIIncreaseStat
-
-AIUseXSpecial:
-	ld b, $D
-	ld a, X_SPECIAL
-	; fallthrough
-
-AIIncreaseStat:
-	ld [wAIItem], a
-	push bc
-	call AIPrintItemUse_
-	pop bc
-	ld hl, wEnemyMoveEffect
-	ld a, [hld]
-	push af
-	ld a, [hl]
-	push af
-	push hl
-	ld a, XSTATITEM_DUPLICATE_ANIM
-	ld [hli], a
-	ld [hl], b
-	callfar StatModifierUpEffect
-	pop hl
-	pop af
-	ld [hli], a
-	pop af
-	ld [hl], a
-	jp DecrementAICount
 
 AIPrintItemUse:
 	ld [wAIItem], a

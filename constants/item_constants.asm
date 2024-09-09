@@ -52,9 +52,9 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const DOME_FOSSIL   ; $29
 	const HELIX_FOSSIL  ; $2A
 	const SECRET_KEY    ; $2B
-	const ANCIENT_HAIR ; $2C
+	const ANCIENT_HAIR  ; $2C
 	const BIKE_VOUCHER  ; $2D
-	const X_ACCURACY    ; $2E
+	const UNUSED_2E     ; $2E
 	const LEAF_STONE    ; $2F
 	const CARD_KEY      ; $30
 	const NUGGET        ; $31
@@ -63,20 +63,20 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const FULL_HEAL     ; $34
 	const REVIVE        ; $35
 	const MAX_REVIVE    ; $36
-	const GUARD_SPEC    ; $37
+	const UNUSED_37     ; $37 (GUARD_SPEC)
 	const UNUSED_38     ; $38 (SUPER_REPEL)
 	const UNUSED_39     ; $39 (MAX_REPEL)
-	const DIRE_HIT      ; $3A
+	const UNUSED_3A     ; $3A (DIRE_HIT)
 	const COIN          ; $3B
 	const FRESH_WATER   ; $3C
 	const SODA_POP      ; $3D
 	const LEMONADE      ; $3E
 	const UNUSED_3F     ; $3F (SS_TICKET)
 	const GOLD_TEETH    ; $40
-	const X_ATTACK      ; $41
-	const X_DEFEND      ; $42
-	const X_SPEED       ; $43
-	const X_SPECIAL     ; $44
+	const UNUSED_41     ; $41
+	const UNUSED_42     ; $42
+	const UNUSED_43     ; $43
+	const UNUSED_44     ; $44
 	const COIN_CASE     ; $45
 	const OAKS_PARCEL   ; $46
 	const ITEMFINDER    ; $47
@@ -90,8 +90,8 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const PP_UP         ; $4F
 	const ETHER         ; $50
 	const MAX_ETHER     ; $51
-	const ELIXER        ; $52
-	const MAX_ELIXER    ; $53
+	const ELIXIR        ; $52
+	const MAX_ELIXIR    ; $53
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs

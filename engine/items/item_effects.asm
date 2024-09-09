@@ -62,7 +62,7 @@ ItemUsePtrTable:
 	dw UnusableItem      ; SECRET_KEY
 	dw UnusableItem      ; ANCIENT_HAIR
 	dw UnusableItem      ; BIKE_VOUCHER
-	dw ItemUseXAccuracy  ; X_ACCURACY
+	dw UnusableItem      ; UNUSED_2E (X_ACCURACY)
 	dw ItemUseEvoStone   ; LEAF_STONE
 	dw ItemUseCardKey    ; CARD_KEY
 	dw UnusableItem      ; NUGGET
@@ -71,20 +71,20 @@ ItemUsePtrTable:
 	dw ItemUseMedicine   ; FULL_HEAL
 	dw ItemUseMedicine   ; REVIVE
 	dw ItemUseMedicine   ; MAX_REVIVE
-	dw ItemUseGuardSpec  ; GUARD_SPEC
+	dw ItemUseGuardSpec  ; UNUSED_37 (GUARD_SPEC)
 	dw UnusableItem      ; UNUSED_38 (SUPER_REPEL)
 	dw UnusableItem      ; UNUSED_39 (MAX_REPEL)
-	dw ItemUseDireHit    ; DIRE_HIT
+	dw UnusableItem      ; UNUSED_3A (DIRE_HIT)
 	dw UnusableItem      ; COIN
 	dw ItemUseMedicine   ; FRESH_WATER
 	dw ItemUseMedicine   ; SODA_POP
 	dw ItemUseMedicine   ; LEMONADE
 	dw UnusableItem      ; UNUSED_3F (SS_TICKET)
 	dw UnusableItem      ; GOLD_TEETH
-	dw ItemUseXStat      ; X_ATTACK
-	dw ItemUseXStat      ; X_DEFEND
-	dw ItemUseXStat      ; X_SPEED
-	dw ItemUseXStat      ; X_SPECIAL
+	dw UnusableItem      ; UNUSED_41 (X_ATTACK)
+	dw UnusableItem      ; UNUSED_42 (X_DEFEND)
+	dw UnusableItem      ; UNUSED_43 (X_SPEED)
+	dw UnusableItem      ; UNUSED_44 (X_SPECIAL)
 	dw ItemUseCoinCase   ; COIN_CASE
 	dw ItemUseOaksParcel ; OAKS_PARCEL
 	dw ItemUseItemfinder ; ITEMFINDER
@@ -98,8 +98,8 @@ ItemUsePtrTable:
 	dw ItemUsePPUp       ; PP_UP
 	dw ItemUsePPRestore  ; ETHER
 	dw ItemUsePPRestore  ; MAX_ETHER
-	dw ItemUsePPRestore  ; ELIXER
-	dw ItemUsePPRestore  ; MAX_ELIXER
+	dw ItemUsePPRestore  ; ELIXIR
+	dw ItemUsePPRestore  ; MAX_ELIXIR
 
 ItemUseBall:
 
@@ -1538,15 +1538,6 @@ ItemUseRepel:
 	ld [wRepelRemainingSteps], a
 	jp PrintItemUseTextAndRemoveItem
 
-; handles X Accuracy item
-ItemUseXAccuracy:
-	ld a, [wIsInBattle]
-	and a
-	jp z, ItemUseNotTime
-	ld hl, wPlayerBattleStatus2
-	set USING_X_ACCURACY, [hl] ; X Accuracy bit
-	jp PrintItemUseTextAndRemoveItem
-
 ; This function is bugged and never works. It always jumps to ItemUseNotTime.
 ; The Card Key is handled in a different way.
 ItemUseCardKey:
@@ -1624,39 +1615,6 @@ ItemUseDireHit:
 	ld hl, wPlayerBattleStatus2
 	set GETTING_PUMPED, [hl] ; Focus Energy bit
 	jp PrintItemUseTextAndRemoveItem
-
-ItemUseXStat:
-	ld a, [wIsInBattle]
-	and a
-	jr nz, .inBattle
-	call ItemUseNotTime
-	ld a, 2
-	ld [wActionResultOrTookBattleTurn], a ; item not used
-	ret
-.inBattle
-	ld hl, wPlayerMoveNum
-	ld a, [hli]
-	push af ; save [wPlayerMoveNum]
-	ld a, [hl]
-	push af ; save [wPlayerMoveEffect]
-	push hl
-	ld a, [wCurItem]
-	sub X_ATTACK - ATTACK_UP1_EFFECT
-	ld [hl], a ; store player move effect
-	call PrintItemUseTextAndRemoveItem
-	ld a, XSTATITEM_ANIM ; X stat item animation ID
-	ld [wPlayerMoveNum], a
-	call LoadScreenTilesFromBuffer1 ; restore saved screen
-	call Delay3
-	xor a
-	ldh [hWhoseTurn], a ; set turn to player's turn
-	farcall StatModifierUpEffect ; do stat increase move
-	pop hl
-	pop af
-	ld [hld], a ; restore [wPlayerMoveEffect]
-	pop af
-	ld [hl], a ; restore [wPlayerMoveNum]
-	ret
 
 ItemUsePokeFlute:
 	ld a, [wIsInBattle]
@@ -1921,7 +1879,7 @@ ItemUsePPRestore:
 	jp .itemNotUsed
 .chooseMove
 	ld a, [wPPRestoreItem]
-	cp ELIXER
+	cp ELIXIR
 	jp nc, .useElixir ; if Elixir or Max Elixir
 	ld a, $02
 	ld [wMoveMenuType], a
@@ -2040,7 +1998,7 @@ ItemUsePPRestore:
 	ret z
 	jr .storeNewAmount
 .useElixir
-; decrement the item ID so that ELIXER becomes ETHER and MAX_ELIXER becomes MAX_ETHER
+; decrement the item ID so that ELIXIR becomes ETHER and MAX_ELIXIR becomes MAX_ETHER
 	ld hl, wPPRestoreItem
 	dec [hl]
 	dec [hl]

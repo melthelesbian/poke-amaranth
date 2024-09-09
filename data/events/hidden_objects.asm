@@ -433,7 +433,7 @@ IndigoPlateauHiddenObjects:
 
 Route25HiddenObjects:
 	hidden_object 38,  3, ETHER, HiddenItems
-	hidden_object 10,  1, ELIXER, HiddenItems
+	hidden_object 10,  1, ELIXIR, HiddenItems
 	db -1 ; end
 
 Route9HiddenObjects:
@@ -473,7 +473,7 @@ SaffronPokecenterHiddenObjects:
 	db -1 ; end
 
 PokemonTower5HiddenObjects:
-	hidden_object  4, 12, ELIXER, HiddenItems
+	hidden_object  4, 12, ELIXIR, HiddenItems
 	db -1 ; end
 
 Route13HiddenObjects:
@@ -490,7 +490,7 @@ SafariZoneWestHiddenObjects:
 	db -1 ; end
 
 SilphCo5FHiddenObjects:
-	hidden_object 12,  3, ELIXER, HiddenItems
+	hidden_object 12,  3, ELIXIR, HiddenItems
 	db -1 ; end
 
 SilphCo9FHiddenObjects:
@@ -510,7 +510,7 @@ CeruleanCave3HiddenObjects:
 	db -1 ; end
 
 PowerPlantHiddenObjects:
-	hidden_object 17, 16, MAX_ELIXER, HiddenItems
+	hidden_object 17, 16, MAX_ELIXIR, HiddenItems
 	hidden_object 12,  1, PP_UP, HiddenItems
 	db -1 ; end
 
@@ -554,7 +554,7 @@ VictoryRoad2HiddenObjects:
 	db -1 ; end
 
 Unused6FHiddenObjects:
-	hidden_object 14, 11, MAX_ELIXER, HiddenItems
+	hidden_object 14, 11, MAX_ELIXIR, HiddenItems
 	db -1 ; end
 
 BillsHouseHiddenObjects:
@@ -638,17 +638,17 @@ Route17HiddenObjects:
 	hidden_object  8,  45, FULL_RESTORE, HiddenItems
 	hidden_object 17,  72, PP_UP, HiddenItems
 	hidden_object  4,  91, MAX_REVIVE, HiddenItems
-	hidden_object  8, 121, MAX_ELIXER, HiddenItems
+	hidden_object  8, 121, MAX_ELIXIR, HiddenItems
 	db -1 ; end
 
 UndergroundPathNsHiddenObjects:
 	hidden_object  3,  4, FULL_RESTORE, HiddenItems
-	hidden_object  4, 34, X_SPECIAL, HiddenItems
+	hidden_object  4, 34, CALCIUM, HiddenItems
 	db -1 ; end
 
 UndergroundPathWeHiddenObjects:
 	hidden_object 12,  2, NUGGET, HiddenItems
-	hidden_object 21,  5, ELIXER, HiddenItems
+	hidden_object 21,  5, ELIXIR, HiddenItems
 	db -1 ; end
 
 CeladonCityHiddenObjects:
@@ -656,7 +656,7 @@ CeladonCityHiddenObjects:
 	db -1 ; end
 
 SeafoamIslands4HiddenObjects:
-	hidden_object  9, 16, MAX_ELIXER, HiddenItems
+	hidden_object  9, 16, MAX_ELIXIR, HiddenItems
 	db -1 ; end
 
 VermilionCityHiddenObjects:

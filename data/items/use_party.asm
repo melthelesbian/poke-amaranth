@@ -27,13 +27,9 @@ UsableItems_PartyMenu:
 	db FRESH_WATER
 	db SODA_POP
 	db LEMONADE
-	db X_ATTACK
-	db X_DEFEND
-	db X_SPEED
-	db X_SPECIAL
 	db PP_UP
 	db ETHER
 	db MAX_ETHER
-	db ELIXER
-	db MAX_ELIXER
+	db ELIXIR
+	db MAX_ELIXIR
 	db -1 ; end

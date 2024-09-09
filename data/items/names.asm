@@ -45,29 +45,29 @@ ItemNames::
 	li "SECRET KEY"
 	li "ANCIENT HAIR"
 	li "BIKE VOUCHER"
-	li "X ACCURACY"
+	li "UNUSED 2E" ; UNUSED_2E (X_ACCURACY)
 	li "LEAF STONE"
 	li "CARD KEY"
 	li "NUGGET"
-	li "PP UP" ; ITEM_32
+	li "ITEM 32" ; ITEM_32
 	li "POKé DOLL"
 	li "FULL HEAL"
 	li "REVIVE"
 	li "MAX REVIVE"
-	li "GUARD SPEC."
-	li "UNUSED 38"
-	li "UNUSED 39"
-	li "DIRE HIT"
+	li "UNUSED 37" ; UNUSED_37 (GUARD_SPEC)
+	li "UNUSED 38" ; UNUSED_38 (SUPER_REPEL)
+	li "UNUSED 39" ; UNUSED_39 (MAX_REPEL)
+	li "UNUSED 3A" ; UNUSED_3A (DIRE_HIT)
 	li "COIN"
 	li "FRESH WATER"
 	li "SODA POP"
 	li "LEMONADE"
 	li "UNUSED 3F" ; UNUSED_3F (SS_TICKET)
 	li "GOLD TEETH"
-	li "X ATTACK"
-	li "X DEFEND"
-	li "X SPEED"
-	li "X SPECIAL"
+	li "UNUSED 41" ; UNUSED_41 (X_ATTACK)
+	li "UNUSED 42" ; UNUSED_42 (X_DEFEND)
+	li "UNUSED 43" ; UNUSED_43 (X_SPEED)
+	li "UNUSED 44" ; UNUSED_44 (X_SPECIAL)
 	li "COIN CASE"
 	li "OAK's PARCEL"
 	li "ITEMFINDER"
@@ -81,8 +81,8 @@ ItemNames::
 	li "PP UP"
 	li "ETHER"
 	li "MAX ETHER"
-	li "ELIXER"
-	li "MAX ELIXER"
+	li "ELIXIR"
+	li "MAX ELIXIR"
 	assert_list_length NUM_ITEMS
 	li "B2F"
 	li "B1F"

@@ -85,7 +85,7 @@ DEF SPDSPCDV_TRAINER EQU $88
 
 ; wPlayerBattleStatus2 or wEnemyBattleStatus2 bit flags
 	const_def
-	const USING_X_ACCURACY    ; 0
+	const USING_X_ACCURACY    ; 0 (UNUSED, but vestigial code exists)
 	const PROTECTED_BY_MIST   ; 1
 	const GETTING_PUMPED      ; 2 ; Focus Energy
 	const_skip                ; 3 ; unused

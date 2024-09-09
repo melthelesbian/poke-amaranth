@@ -130,15 +130,10 @@ _CeladonCityDeptStoreSignText::
 _CeladonCityTrainerTips2Text::
 	text "TRAINER TIPS"
 
-	para "GUARD SPEC."
-	line "protects #MON"
-	cont "against SPECIAL"
-	cont "attacks such as"
-	cont "fire and water!"
-
-	para "Get your items at"
-	line "CELADON DEPT."
-	cont "STORE!"
+	para "A POKé FLUTE"
+	line "can wake #MON"
+	cont "up if you use it"
+	cont "during a battle!"
 	done
 
 _CeladonCityPrizeExchangeSignText::

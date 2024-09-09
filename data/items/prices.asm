@@ -30,7 +30,7 @@ ItemPrices::
 	bcd3 0     ; EARTHBADGE
 	bcd3 550   ; ESCAPE_ROPE
 	bcd3 500   ; REPEL
-	bcd3 10000 ; OLD_AMBER
+	bcd3 15000 ; OLD_AMBER
 	bcd3 2000  ; FIRE_STONE
 	bcd3 2000  ; THUNDER_STONE
 	bcd3 2000  ; WATER_STONE
@@ -45,7 +45,7 @@ ItemPrices::
 	bcd3 0     ; SECRET_KEY
 	bcd3 0     ; ITEM_2C
 	bcd3 0     ; BIKE_VOUCHER
-	bcd3 950   ; X_ACCURACY
+	bcd3 0     ; UNUSED 2E (X_ACCURACY)
 	bcd3 2000  ; LEAF_STONE
 	bcd3 0     ; CARD_KEY
 	bcd3 10000 ; NUGGET
@@ -54,20 +54,20 @@ ItemPrices::
 	bcd3 600   ; FULL_HEAL
 	bcd3 1500  ; REVIVE
 	bcd3 4000  ; MAX_REVIVE
-	bcd3 700   ; GUARD_SPEC
+	bcd3 0     ; UNUSED_37 (GUARD_SPEC)
 	bcd3 0     ; UNUSED_38 (SUPER_REPEL)
 	bcd3 0     ; UNUSED_39 (MAX_REPEL)
-	bcd3 650   ; DIRE_HIT
+	bcd3 0     ; UNUSED_3A (DIRE_HIT)
 	bcd3 10    ; COIN
 	bcd3 200   ; FRESH_WATER
 	bcd3 300   ; SODA_POP
 	bcd3 350   ; LEMONADE
 	bcd3 0     ; UNUSED_3F (SS_TICKET)
 	bcd3 0     ; GOLD_TEETH
-	bcd3 500   ; X_ATTACK
-	bcd3 550   ; X_DEFEND
-	bcd3 350   ; X_SPEED
-	bcd3 350   ; X_SPECIAL
+	bcd3 0     ; UNUSED_41 (X_ATTACK)
+	bcd3 0     ; UNUSED_42 (X_DEFEND)
+	bcd3 0     ; UNUSED_43 (X_SPEED)
+	bcd3 0     ; UNUSED_44 (X_SPECIAL)
 	bcd3 0     ; COIN_CASE
 	bcd3 0     ; OAKS_PARCEL
 	bcd3 0     ; ITEMFINDER
@@ -78,11 +78,11 @@ ItemPrices::
 	bcd3 0     ; UNUSED_4C (OLD_ROD)
 	bcd3 0     ; UNUSED_4D (GOOD_ROD)
 	bcd3 0     ; FISHING_ROD
-	bcd3 0     ; PP_UP
-	bcd3 0     ; ETHER
-	bcd3 0     ; MAX_ETHER
-	bcd3 0     ; ELIXER
-	bcd3 0     ; MAX_ELIXER
+	bcd3 9800  ; PP_UP
+	bcd3 5000  ; ETHER
+	bcd3 10000 ; MAX_ETHER
+	bcd3 7500  ; ELIXIR
+	bcd3 15000 ; MAX_ELIXIR
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F
