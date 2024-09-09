@@ -3318,8 +3318,7 @@ IsGhostBattle:
 	jr c, .next
 	cp POKEMON_TOWER_7F + 1
 	jr nc, .next
-	ld b, SILPH_SCOPE
-	call IsItemInBag
+	CheckEvent EVENT_BEAT_ROCKET_HIDEOUT_GIOVANNI
 	ret z
 .next
 	ld a, 1

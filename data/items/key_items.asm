@@ -71,7 +71,7 @@ KeyItemFlags:
 	dbit TRUE  ; COIN_CASE
 	dbit TRUE  ; OAKS_PARCEL
 	dbit TRUE  ; ITEMFINDER
-	dbit TRUE  ; SILPH_SCOPE
+	dbit FALSE ; UNUSED_48 (SILPH_SCOPE)
 	dbit TRUE  ; POKE_FLUTE
 	dbit FALSE ; UNUSED_4A (LIFT_KEY)
 	dbit FALSE ; EXP_ALL

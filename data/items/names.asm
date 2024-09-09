@@ -71,7 +71,7 @@ ItemNames::
 	li "COIN CASE"
 	li "OAK's PARCEL"
 	li "ITEMFINDER"
-	li "SILPH SCOPE"
+	li "UNUSED 48" ; UNUSED_48 (SILPH SCOPE)
 	li "POKé FLUTE"
 	li "LIFT KEY"
 	li "EXP.ALL"

@@ -24,6 +24,14 @@ _RocketHideoutB4FGiovanniHopeWeMeetAgainText::
 
 	para "I hope we meet"
 	line "again..."
+
+	para "..."
+
+	para "Giovanni left the"
+	line "SILPH SCOPE."
+
+	para "<PLAYER> grabbed"
+	line "the SILPH SCOPE!"
 	done
 
 _RocketHideoutB4FGiovanniBattleText::

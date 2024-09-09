@@ -80,7 +80,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const COIN_CASE     ; $45
 	const OAKS_PARCEL   ; $46
 	const ITEMFINDER    ; $47
-	const SILPH_SCOPE   ; $48
+	const UNUSED_48     ; $48 (SILPH_SCOPE)
 	const POKE_FLUTE    ; $49
 	const UNUSED_4A     ; $4A (LIFT_KEY)
 	const EXP_ALL       ; $4B

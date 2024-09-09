@@ -71,7 +71,7 @@ ItemPrices::
 	bcd3 0     ; COIN_CASE
 	bcd3 0     ; OAKS_PARCEL
 	bcd3 0     ; ITEMFINDER
-	bcd3 0     ; SILPH_SCOPE
+	bcd3 0     ; UNUSED_48 (SILPH_SCOPE)
 	bcd3 0     ; POKE_FLUTE
 	bcd3 0     ; UNUSED_4A (LIFT_KEY)
 	bcd3 0     ; EXP_ALL

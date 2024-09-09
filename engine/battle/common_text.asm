@@ -29,8 +29,7 @@ PrintBeginningBattleText:
 	call PrintText
 	jr .done
 .pokemonTower
-	ld b, SILPH_SCOPE
-	call IsItemInBag
+	CheckEvent EVENT_BEAT_ROCKET_HIDEOUT_GIOVANNI
 	ld a, [wEnemyMonSpecies2]
 	ld [wCurPartySpecies], a
 	cp RESTLESS_SOUL

@@ -88,7 +88,7 @@ ItemUsePtrTable:
 	dw ItemUseCoinCase   ; COIN_CASE
 	dw ItemUseOaksParcel ; OAKS_PARCEL
 	dw ItemUseItemfinder ; ITEMFINDER
-	dw UnusableItem      ; SILPH_SCOPE
+	dw UnusableItem      ; UNUSED_48 (SILPH_SCOPE)
 	dw ItemUsePokeFlute  ; POKE_FLUTE
 	dw UnusableItem      ; UNUSED_4A (LIFT_KEY)
 	dw UnusableItem      ; EXP_ALL
