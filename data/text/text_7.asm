@@ -107,8 +107,8 @@ _AfterTrade1Text::
 	done
 
 _WannaTrade2Text::
-	text "Hello there! Do"
-	line "you want to trade"
+	text "How are you?"
+	line "would you trade"
 
 	para "your @"
 	text_ram wInGameTradeGiveMonName

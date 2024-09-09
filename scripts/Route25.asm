@@ -200,8 +200,11 @@ Route25CooltrainerF2EndBattleText:
 	text_end
 
 Route25CooltrainerF2AfterBattleText:
-	text_far _Route25CooltrainerF2AfterBattleText
-	text_end
+	text_asm
+	ld a, TRADE_FOR_HOPE
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+	jp TextScriptEnd
 
 Route25Hiker1BattleText:
 	text_far _Route25Hiker1BattleText

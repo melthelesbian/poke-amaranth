@@ -8,6 +8,7 @@ PokemonTower1F_TextPointers:
 	dw_const PokemonTower1FBaldingGuyText,      TEXT_POKEMONTOWER1F_BALDING_GUY
 	dw_const PokemonTower1FGirlText,            TEXT_POKEMONTOWER1F_GIRL
 	dw_const PokemonTower1FChannelerText,       TEXT_POKEMONTOWER1F_CHANNELER
+	dw_const PokemonTower1FTraderText,          TEXT_POKEMONTOWER1F_TRADER
 
 PokemonTower1FReceptionistText:
 	text_far _PokemonTower1FReceptionistText
@@ -28,3 +29,11 @@ PokemonTower1FGirlText:
 PokemonTower1FChannelerText:
 	text_far _PokemonTower1FChannelerText
 	text_end
+
+PokemonTower1FTraderText:
+	text_far _PokemonTower1FTraderText
+	text_asm
+	ld a, TRADE_FOR_AURORA
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+	jp TextScriptEnd

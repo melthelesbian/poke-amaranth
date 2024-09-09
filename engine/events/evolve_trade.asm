@@ -1,4 +1,3 @@
-EvolveTradeMon:
 ; Verify the TradeMon's species name before
 ; attempting to initiate a trade evolution.
 
@@ -16,19 +15,24 @@ EvolveTradeMon:
 ; were used instead, where none can evolve.
 
 ; This was fixed in Yellow.
-
-	ld a, [wInGameTradeReceiveMonName]
-
-	; GRAVELER
-	cp "G"
+; [INFO] fixed my own self
+EvolveInGameTradeMon::
+	ld a, [wInGameTradeReceiveMonSpecies]
+	cp GRAVELER
 	jr z, .ok
-
-	; "SPECTRE" (HAUNTER)
-	cp "S"
-	ret nz
-	ld a, [wInGameTradeReceiveMonName + 1]
-	cp "P"
-	ret nz
+	cp HAUNTER
+	jr z, .ok
+	cp KADABRA
+	jr z, .ok
+	cp MACHOKE
+	jr z, .ok
+	cp NIDORINA
+	jr z, .ok
+	cp NIDORINO
+	jr z, .ok
+	cp POLIWHIRL
+	jr z, .ok
+	ret
 
 .ok
 	ld a, [wPartyCount]

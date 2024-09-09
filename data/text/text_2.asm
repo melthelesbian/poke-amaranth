@@ -277,6 +277,9 @@ _SaffronCityPokecenterGuyText2::
 _CeladonCityHotelText::
 	text "My sis brought me"
 	line "on this vacation!"
+
+	para "Why did she bring"
+	line "her girlfriend?"
 	done
 
 _BookcaseText::

@@ -9,13 +9,13 @@ _CeladonHotelGrannyText::
 _CeladonHotelBeautyText::
 	text "I'm on vacation"
 	line "with my brother"
-	cont "and boy friend."
+	cont "and girlfriend."
 
 	para "CELADON is such a"
 	line "pretty city!"
 	done
 
-_CeladonHotelSuperNerdText::
-	text "Why did she bring"
-	line "her brother?"
-	done
+_CeladonHotelGirlText::
+	text "My girlfriend is"
+	line "a big PONYTA fan."
+	prompt

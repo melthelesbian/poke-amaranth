@@ -3,5 +3,11 @@ UndergroundCrossroads_Script:
 
 UndergroundCrossroads_TextPointers:
 	def_text_pointers
+	dw_const UndergroundCrossroadsSailorText, TEXT_UNDERGROUNDCROSSROADS_SAILOR
 
-	text_end ; unused
+UndergroundCrossroadsSailorText:
+	text_asm
+	ld a, TRADE_FOR_CLAMPS
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+	jp TextScriptEnd

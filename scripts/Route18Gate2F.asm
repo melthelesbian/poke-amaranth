@@ -9,7 +9,7 @@ Route18Gate2F_TextPointers:
 
 Route18Gate2FYoungsterText:
 	text_asm
-	ld a, TRADE_FOR_MARC
+	ld a, TRADE_FOR_ALANA
 	ld [wWhichTrade], a
 	predef DoInGameTradeDialogue
 	jp TextScriptEnd

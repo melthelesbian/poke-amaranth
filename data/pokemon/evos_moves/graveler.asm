@@ -1,6 +1,6 @@
 GravelerEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 30, GOLEM
+	db EVOLVE_TRADE, 1, GOLEM
 	db EVOLVE_LEVEL, 40, GOLEM
 	db 0
 ; Learnset

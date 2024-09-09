@@ -1,5 +1,6 @@
 NidorinaEvosMoves:
 ; Evolutions
+	db EVOLVE_TRADE, 1, NIDOQUEEN
 	db EVOLVE_ITEM, MOON_STONE, 32, NIDOQUEEN
 	db 0
 ; Learnset

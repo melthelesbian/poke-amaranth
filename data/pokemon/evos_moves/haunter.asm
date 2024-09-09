@@ -1,6 +1,6 @@
 HaunterEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 30, GENGAR
+	db EVOLVE_TRADE, 1, GENGAR
 	db EVOLVE_LEVEL, 40, GENGAR
 	db 0
 ; Learnset

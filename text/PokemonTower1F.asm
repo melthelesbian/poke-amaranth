@@ -29,3 +29,8 @@ _PokemonTower1FChannelerText::
 	line "There are spirits"
 	cont "up to mischief!"
 	done
+
+_PokemonTower1FTraderText::
+	text "I'm afraid to go"
+	line "upstairs..."
+	prompt

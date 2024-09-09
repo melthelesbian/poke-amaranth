@@ -120,6 +120,10 @@ InGameTrade_DoTrade:
 	push af
 	ld a, [wCurEnemyLevel]
 	push af
+	ldh a, [hTileAnimations]
+	ld [wSavedTileAnimations], a
+	xor a
+	ldh [hTileAnimations], a
 	call LoadHpBarAndStatusTilePatterns
 	call InGameTrade_PrepareTradeData
 	predef InternalClockTradeAnim
@@ -137,8 +141,10 @@ InGameTrade_DoTrade:
 	ld [wMonDataLocation], a
 	call AddPartyMon
 	call InGameTrade_CopyDataToReceivedMon
-	callfar EvolveTradeMon
+	callfar EvolveInGameTradeMon
 	call ClearScreen
+	ld a, [wSavedTileAnimations]
+	ldh [hTileAnimations], a
 	call InGameTrade_RestoreScreen
 	farcall RedrawMapView
 	and a

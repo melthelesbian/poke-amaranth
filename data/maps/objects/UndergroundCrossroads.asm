@@ -1,3 +1,5 @@
+	object_const_def
+	const_export UNDERGROUNDCROSSROADS_SAILOR
 UndergroundCrossroads_Object:
     db $1 ; border block
 
@@ -10,5 +12,6 @@ UndergroundCrossroads_Object:
 	def_bg_events
 
 	def_object_events
+	object_event 15, 18, SPRITE_SAILOR, WALK, ANY_DIR, TEXT_UNDERGROUNDCROSSROADS_SAILOR
 
 	def_warps_to UNDERGROUND_CROSSROADS
