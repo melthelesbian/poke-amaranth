@@ -59,6 +59,10 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_PINKMON   ; $17
 	const PAL_YELLOWMON ; $18
 	const PAL_GREYMON   ; $19
+	const PAL_TREEMON   ;
+	const PAL_PORYMON   ; [TODO) shift values
+	const PAL_GEMMON    ;
+	const PAL_AMARANTH  ;
 	const PAL_SLOTS1    ; $1A
 	const PAL_SLOTS2    ; $1B
 	const PAL_SLOTS3    ; $1C
