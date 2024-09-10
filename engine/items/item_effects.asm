@@ -213,6 +213,16 @@ ItemUseBall:
 	cp b
 	jr c, .loop
 
+; Less than or equal to 150 is good enough for an Ultra Ball.
+	ld a, [hl]
+	cp ULTRA_BALL
+	jr z, .checkForAilments
+
+; If it's a Safari Ball and Rand1 is greater than 100, try again.
+	ld a, 100
+	cp b
+	jr c, .loop
+
 .checkForAilments
 ; Pokémon can be caught more easily with a status ailment.
 ; Depending on the status ailment, a certain value will be subtracted from
@@ -345,6 +355,9 @@ ItemUseBall:
 	jr z, .skip4
 	ld b, 150
 	cp ULTRA_BALL
+	jr z, .skip4
+	ld b, 100
+	cp SAFARI_BALL
 	jr z, .skip4
 
 .skip4
