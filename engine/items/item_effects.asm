@@ -71,7 +71,7 @@ ItemUsePtrTable:
 	dw ItemUseMedicine   ; FULL_HEAL
 	dw ItemUseMedicine   ; REVIVE
 	dw ItemUseMedicine   ; MAX_REVIVE
-	dw ItemUseGuardSpec  ; UNUSED_37 (GUARD_SPEC)
+	dw UnusableItem      ; UNUSED_37 (GUARD_SPEC)
 	dw UnusableItem      ; UNUSED_38 (SUPER_REPEL)
 	dw UnusableItem      ; UNUSED_39 (MAX_REPEL)
 	dw UnusableItem      ; UNUSED_3A (DIRE_HIT)
@@ -1598,22 +1598,6 @@ ItemUsePokeDoll:
 	jp nz, ItemUseNotTime
 	ld a, $01
 	ld [wEscapedFromBattle], a
-	jp PrintItemUseTextAndRemoveItem
-
-ItemUseGuardSpec:
-	ld a, [wIsInBattle]
-	and a
-	jp z, ItemUseNotTime
-	ld hl, wPlayerBattleStatus2
-	set PROTECTED_BY_MIST, [hl] ; Mist bit
-	jp PrintItemUseTextAndRemoveItem
-
-ItemUseDireHit:
-	ld a, [wIsInBattle]
-	and a
-	jp z, ItemUseNotTime
-	ld hl, wPlayerBattleStatus2
-	set GETTING_PUMPED, [hl] ; Focus Energy bit
 	jp PrintItemUseTextAndRemoveItem
 
 ItemUsePokeFlute:
