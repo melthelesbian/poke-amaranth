@@ -747,9 +747,7 @@ _VermilionGymTrashSuccessText3::
 _VermilionGymTrashFailText::
 	text "Nope! There's"
 	line "only trash here."
-	cont "Hey! The electric"
-	cont "locks were reset!@"
-	text_end
+	done
 
 _FoundHiddenItemText::
 	text "<PLAYER> found"
