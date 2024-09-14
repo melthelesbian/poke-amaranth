@@ -1,6 +1,6 @@
 DoduoEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 31, DODRIO
+	db EVOLVE_LEVEL, 33, DODRIO
 	db 0
 ; Learnset
 	db 1, SCRATCH
