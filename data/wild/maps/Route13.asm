@@ -1,29 +1,15 @@
 Route13WildMons:
 	def_grass_wildmons 20 ; encounter rate
-IF DEF(_RED)
-	db 24, ODDISH
-	db 25, PIDGEY
-	db 27, PIDGEY
-	db 24, VENONAT
-	db 22, ODDISH
-	db 26, VENONAT
-	db 26, ODDISH
-	db 25, DITTO
-	db 28, GLOOM
-	db 30, GLOOM
-ENDC
-IF DEF(_BLUE) || DEF(_AMARANTH)
-	db 24, BELLSPROUT
-	db 25, PIDGEY
-	db 27, PIDGEY
-	db 24, VENONAT
-	db 22, BELLSPROUT
-	db 26, VENONAT
-	db 26, BELLSPROUT
-	db 25, DITTO
-	db 28, WEEPINBELL
-	db 30, WEEPINBELL
-ENDC
+	db 32, PIDGEOTTO ; 20%
+	db 34, FEAROW    ; 20%
+	db 31, FARFETCHD ; 10%
+	db 33, FARFETCHD ; 10%
+	db 32, DODUO     ; 10%
+	db 35, DODRIO    ; 10%
+	db 34, SNORLAX   ; 5%
+	db 36, SNORLAX   ; 5%
+	db 34, CHANSEY   ; 5%
+	db 35, CHANSEY   ; 5%
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
