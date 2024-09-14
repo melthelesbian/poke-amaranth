@@ -186,6 +186,11 @@ ItemUseBall:
 	call Random
 	ld b, a
 
+; Be the very best
+	ldh a, [hJoyInput]
+	cp D_UP + B_BUTTON
+	jp z, .captured
+
 ; Get the item ID.
 	ld hl, wCurItem
 	ld a, [hl]
