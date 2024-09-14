@@ -207,7 +207,7 @@ MapHSPointers:
 	dw RocketHideoutB3FHS
 	dw RocketHideoutB4FHS
 	dw NoHS
-	dw NoHS
+	dw Route12FossilCaveHS
 	dw NoHS
 	dw NoHS
 	dw SilphCo2FHS
@@ -303,6 +303,8 @@ Route12HS:
 	db ROUTE_12, ROUTE12_SNORLAX,    SHOW
 	db ROUTE_12, ROUTE12_TM_PAY_DAY, SHOW
 	db ROUTE_12, ROUTE12_IRON,       SHOW
+Route12FossilCaveHS:
+	db ROUTE_12_FOSSIL_CAVE, ROUTE12FOSSILCAVE_FOSSIL, SHOW
 Route15HS:
 	db ROUTE_15, ROUTE15_TM_RAGE, SHOW
 Route16HS:

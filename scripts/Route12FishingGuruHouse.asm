@@ -3,7 +3,7 @@ Route12FishingGuruHouse_Script:
 
 Route12FishingGuruHouse_TextPointers:
 	def_text_pointers
-	dw_const Route12FishingGuruHouseFishingGuruText, TEXT_ROUTE12SUPERRODHOUSE_FISHING_GURU
+	dw_const Route12FishingGuruHouseFishingGuruText, TEXT_ROUTE12FISHINGGURUHOUSE_FISHING_GURU
 
 Route12FishingGuruHouseFishingGuruText:
 	text_asm

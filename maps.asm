@@ -755,6 +755,11 @@ INCLUDE "data/maps/headers/Route12FishingGuruHouse.asm"
 INCLUDE "scripts/Route12FishingGuruHouse.asm"
 INCLUDE "data/maps/objects/Route12FishingGuruHouse.asm"
 
+INCLUDE "data/maps/headers/Route12FossilCave.asm"
+INCLUDE "scripts/Route12FossilCave.asm"
+INCLUDE "data/maps/objects/Route12FossilCave.asm"
+Route12FossilCave_Blocks: INCBIN "maps/Route12FossilCave.blk"
+
 INCLUDE "data/maps/headers/SilphCo8F.asm"
 INCLUDE "scripts/SilphCo8F.asm"
 INCLUDE "data/maps/objects/SilphCo8F.asm"
