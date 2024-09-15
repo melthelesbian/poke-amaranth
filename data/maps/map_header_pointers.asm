@@ -113,7 +113,7 @@ MapHeaderPointers::
 	dw BugSanctuary_h ; BUG_SANCTUARY (UNUSED_MAP_6D)
 	dw MtMoonSquare_h ; MT_MOON_SQUARE (UNUSED_MAP_6E)
 	dw MtMoonSquareGiftShop_h ; MT_MOON_SQUARE_GIFT_SHOP (UNUSED_MAP_6F)
-	dw LancesRoom_h ; UNUSED_MAP_70
+	dw SurfHouse_h ; SURF_HOUSE
 	dw LancesRoom_h
 	dw LancesRoom_h ; UNUSED_MAP_72
 	dw LancesRoom_h ; UNUSED_MAP_73

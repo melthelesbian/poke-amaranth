@@ -113,7 +113,7 @@ MapHeaderBanks::
 	db BANK(BugSanctuary_h) ; BUG_SANCTUARY (UNUSED_MAP_6D)
 	db BANK(MtMoonSquare_h) ; MT_MOON_SQUARE (UNUSED_MAP_6E)
 	db BANK(MtMoonSquareGiftShop_h) ; MT_MOON_SQUARE_GIFT_SHOP (UNUSED_MAP_6F)
-	db $1D ; UNUSED_MAP_70
+	db BANK(SurfHouse_h) ; SURF_HOUSE
 	db BANK(LancesRoom_h)
 	db $1D ; UNUSED_MAP_72
 	db $1D ; UNUSED_MAP_73

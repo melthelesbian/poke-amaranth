@@ -579,6 +579,11 @@ INCLUDE "scripts/MtMoonSquareGiftShop.asm"
 INCLUDE "data/maps/objects/MtMoonSquareGiftShop.asm"
 MtMoonSquareGiftShop_Blocks: INCBIN "maps/MtMoonSquareGiftShop.blk"
 
+INCLUDE "data/maps/headers/SurfHouse.asm"
+INCLUDE "scripts/SurfHouse.asm"
+INCLUDE "data/maps/objects/SurfHouse.asm"
+SurfHouse_Blocks: INCBIN "maps/SurfHouse.blk"
+
 INCLUDE "data/maps/headers/SafariZoneWest.asm"
 INCLUDE "scripts/SafariZoneWest.asm"
 INCLUDE "data/maps/objects/SafariZoneWest.asm"

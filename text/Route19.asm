@@ -155,3 +155,8 @@ _Route19SignText::
 	line "FUCHSIA CITY -"
 	cont "SEAFOAM ISLANDS"
 	done
+
+_SurfHouseSignText::
+	text "SUMMER SURF HOUSE"
+	line "#MON WELCOME!"
+	done

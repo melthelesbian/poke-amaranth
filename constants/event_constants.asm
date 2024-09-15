@@ -428,7 +428,7 @@
 
 ; Route 19 events
 	const_next $4F0
-	const_skip
+	const EVENT_GOT_SURFBOARD
 	const EVENT_BEAT_ROUTE_19_TRAINER_0
 	const EVENT_BEAT_ROUTE_19_TRAINER_1
 	const EVENT_BEAT_ROUTE_19_TRAINER_2
