@@ -165,7 +165,7 @@ TryingToLearn:
 	ld a, [hl]
 	push af
 	push bc
-	call IsMoveHM
+	xor a ; [INFO] instead of call IsMoveHM, clears carry
 	pop bc
 	pop de
 	ld a, d
