@@ -225,7 +225,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const ROCKET_HIDEOUT_ELEVATOR,        3,  4 ; $CB
 	map_const ROUTE_12_FOSSIL_CAVE,           5,  4 ; $CC
 	map_const ROUTE_14_FAIRY_CAVE,            7,  4 ; $CD
-	map_const UNUSED_MAP_CE,                  0,  0 ; $CE
+	map_const ROUTE_15_HOUSE,                 5,  4 ; $CE
 	map_const SILPH_CO_2F,                   15,  9 ; $CF
 	map_const SILPH_CO_3F,                   15,  9 ; $D0
 	map_const SILPH_CO_4F,                   15,  9 ; $D1

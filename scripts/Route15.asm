@@ -27,6 +27,7 @@ Route15_TextPointers:
 	dw_const Route15CooltrainerF4Text, TEXT_ROUTE15_COOLTRAINER_F4
 	dw_const PickUpItemText,           TEXT_ROUTE15_TM_RAGE
 	dw_const Route15SignText,          TEXT_ROUTE15_SIGN
+	dw_const Route15HouseSignText,     TEXT_ROUTE15_HOUSE_SIGN
 
 Route15TrainerHeaders:
 	def_trainers
@@ -226,4 +227,8 @@ Route15CooltrainerF4AfterBattleText:
 
 Route15SignText:
 	text_far _Route15SignText
+	text_end
+
+Route15HouseSignText:
+	text_far _Route15HouseSignText
 	text_end

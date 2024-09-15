@@ -765,6 +765,11 @@ INCLUDE "scripts/Route14FairyCave.asm"
 INCLUDE "data/maps/objects/Route14FairyCave.asm"
 Route14FairyCave_Blocks: INCBIN "maps/Route14FairyCave.blk"
 
+INCLUDE "data/maps/headers/Route15House.asm"
+INCLUDE "scripts/Route15House.asm"
+INCLUDE "data/maps/objects/Route15House.asm"
+Route15House_Blocks: INCBIN "maps/Route15House.blk"
+
 INCLUDE "data/maps/headers/SilphCo8F.asm"
 INCLUDE "scripts/SilphCo8F.asm"
 INCLUDE "data/maps/objects/SilphCo8F.asm"

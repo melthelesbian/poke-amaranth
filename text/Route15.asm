@@ -170,3 +170,7 @@ _Route15SignText::
 	line "West to FUCHSIA"
 	cont "CITY"
 	done
+
+_Route15HouseSignText::
+	text "[TODO) Write Sign"
+	done

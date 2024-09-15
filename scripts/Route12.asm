@@ -87,7 +87,7 @@ Route12TrainerHeader1:
 Route12TrainerHeader2:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_2, 4, Route12CooltrainerMBattleText, Route12CooltrainerMEndBattleText, Route12CooltrainerMAfterBattleText
 Route12TrainerHeader3:
-	trainer EVENT_BEAT_ROUTE_12_TRAINER_3, 4, Route12SuperNerdBattleText, Route12SuperNerdEndBattleText, Route12SuperNerdAfterBattleText
+	trainer EVENT_BEAT_ROUTE_12_TRAINER_3, 3, Route12SuperNerdBattleText, Route12SuperNerdEndBattleText, Route12SuperNerdAfterBattleText
 Route12TrainerHeader4:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_4, 4, Route12Fisher3BattleText, Route12Fisher3EndBattleText, Route12Fisher3AfterBattleText
 Route12TrainerHeader5:
