@@ -14,6 +14,7 @@ FishingRodData:
 	dbw ROUTE_11,            .Route11
 	dbw ROUTE_12,            .Route12
 	dbw ROUTE_13,            .Route13
+	dbw ROUTE_16,            .Route16
 	dbw ROUTE_17,            .Route17
 	dbw ROUTE_18,            .Route18
 	dbw ROUTE_19,            .Route19
@@ -115,6 +116,7 @@ FishingRodData:
 
 .Route12:
 .Route13:
+.Route16:
 .Route17:
 .Route18:
 	db 4
