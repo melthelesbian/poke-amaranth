@@ -14,6 +14,7 @@ Route14_Object:
 	db $43 ; border block
 
 	def_warp_events
+	warp_event 6, 15, ROUTE_14_FAIRY_CAVE, 1
 
 	def_bg_events
 	bg_event 17, 13, TEXT_ROUTE14_SIGN

@@ -12,7 +12,7 @@ TrainerDataPointers:
 	dw BikerData
 	dw BurglarData
 	dw EngineerData
-	dw UnusedJugglerData
+	dw SweetheartData
 	dw FisherData
 	dw SwimmerData
 	dw CueBallData
@@ -317,8 +317,9 @@ EngineerData:
 	db 21, MAGNEMITE, 0
 	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0
 
-UnusedJugglerData:
-; none
+SweetheartData:
+; Bug Sanctuary
+	db $FF, 20, PARASECT, 22, PINSIR, 22, SCYTHER, 23, VENOMOTH, 0
 
 FisherData:
 ; SS Anne 2F Rooms
@@ -409,8 +410,7 @@ BeautyData:
 	db 29, STARYU, STARYU, STARYU, 0
 ; Route 20
 	db 30, SEADRA, HORSEA, SEADRA, 0
-; Bug Sanctuary
-	db $FF, 20, PARASECT, 22, PINSIR, 22, SCYTHER, 23, VENOMOTH, 0
+
 
 PsychicData:
 ; Saffron Gym

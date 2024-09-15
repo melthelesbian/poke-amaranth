@@ -19,7 +19,7 @@ TrainerPicAndMoneyPointers::
 	pic_money BikerPic,        20
 	pic_money BurglarPic,      90
 	pic_money EngineerPic,     50
-	pic_money JugglerPic,      35
+	pic_money SweetheartPic,   75
 	pic_money FisherPic,       35
 	pic_money SwimmerPic,       5
 	pic_money CueBallPic,      25

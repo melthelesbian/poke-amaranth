@@ -206,7 +206,7 @@ MapHeaderPointers::
 	dw RocketHideoutB4F_h
 	dw RocketHideoutElevator_h
 	dw Route12FossilCave_h ; ROUTE_12_FOSSIL_CAVE
-	dw RocketHideoutElevator_h ; UNUSED_MAP_CD
+	dw Route14FairyCave_h ; ROUTE_14_FAIRY_CAVE
 	dw RocketHideoutElevator_h ; UNUSED_MAP_CE
 	dw SilphCo2F_h
 	dw SilphCo3F_h

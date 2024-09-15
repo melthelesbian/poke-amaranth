@@ -49,8 +49,8 @@ ROMX $4
 	"Battle Engine 1"
 ROMX $5
 	"NPC Sprites 2"
-	"Battle Engine 2"
 ROMX $6
+	"Battle Engine 2"
 	"Maps 1"
 	"Play Time"
 	"Maps 2"

@@ -206,7 +206,7 @@ MapHeaderBanks::
 	db BANK(RocketHideoutB4F_h)
 	db BANK(RocketHideoutElevator_h)
 	db BANK(Route12FossilCave_h) ; ROUTE_12_FOSSIL_CAVE
-	db $01 ; UNUSED_MAP_CD
+	db BANK(Route14FairyCave_h) ; ROUTE_14_FAIRY_CAVE
 	db $01 ; UNUSED_MAP_CE
 	db BANK(SilphCo2F_h)
 	db BANK(SilphCo3F_h)
