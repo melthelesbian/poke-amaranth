@@ -14,6 +14,7 @@ FishingRodData:
 	dbw ROUTE_11,            .Route11
 	dbw ROUTE_12,            .Route12
 	dbw ROUTE_13,            .Route13
+	dbw ROUTE_14_FAIRY_CAVE, .Route14FairyCave
 	dbw ROUTE_16,            .Route16
 	dbw ROUTE_17,            .Route17
 	dbw ROUTE_18,            .Route18
@@ -102,6 +103,13 @@ FishingRodData:
 	db 23, HORSEA
 	db 22, PSYDUCK
 	db 24, SLOWPOKE
+
+.Route14FairyCave:
+	db 4
+	db 30, STARYU
+	db 30, HORSEA
+	db 35, STARMIE
+	db 35, SEADRA
 
 ; [TODO) Design fishing tables after route tables
 .SafariZoneEast:
