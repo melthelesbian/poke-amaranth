@@ -204,7 +204,7 @@ WildDataPointers:
 	dw RocketHideoutWildMons ; Rocket Hideout B3F
 	dw NothingWildMons       ; Rocket Hideout B4F
 	dw NothingWildMons
-	dw NothingWildMons
+	dw Route12FossilCaveWildMons ; Route 12 Fossil Cave
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
@@ -325,3 +325,4 @@ INCLUDE "data/wild/maps/VictoryRoad1F.asm"
 INCLUDE "data/wild/maps/DiglettsCave.asm"
 INCLUDE "data/wild/maps/MtMoonSquare.asm"
 INCLUDE "data/wild/maps/MeditationCave.asm"
+INCLUDE "data/wild/maps/Route12FossilCave.asm"
