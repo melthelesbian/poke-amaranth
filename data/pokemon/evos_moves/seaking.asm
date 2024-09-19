@@ -1,6 +1,5 @@
 SeakingEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 33, SEAKING
 	db 0
 ; Learnset
 	db 1, TACKLE
