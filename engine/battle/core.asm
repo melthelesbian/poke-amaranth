@@ -2887,25 +2887,37 @@ PrintMenuItem:
 	ld a, [hl]
 	and $3f
 	ld [wBattleMenuCurrentPP], a
-; print TYPE/<type> and <curPP>/<maxPP>
-	hlcoord 1, 9
-	ld de, TypeText
-	call PlaceString
-	hlcoord 7, 11
+; print <type>, BP, and <curPP>/<maxPP>
+	hlcoord 6, 11
 	ld [hl], "/"
-	hlcoord 5, 9
-	ld [hl], "/"
-	hlcoord 5, 11
+	; PP
+	hlcoord 1, 11
+	ld [hl], "P"
+	hlcoord 2, 11
+	ld [hl], "P"
+	; current PP
+	hlcoord 4, 11
 	ld de, wBattleMenuCurrentPP
 	lb bc, 1, 2
 	call PrintNumber
-	hlcoord 8, 11
+	; max PP
+	hlcoord 7, 11
 	ld de, wMaxPP
 	lb bc, 1, 2
 	call PrintNumber
+	; type
 	call GetCurrentMove
-	hlcoord 2, 10
+	hlcoord 1, 9
 	predef PrintMoveType
+	hlcoord 1, 10
+	; BP
+	ld [hl], "B"
+	hlcoord 2, 10
+	ld [hl], "P"
+	hlcoord 4, 10
+	ld de, wPlayerMovePower
+	lb bc, LEFT_ALIGN | 1, 3
+	call PrintNumber
 .moveDisabled
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
