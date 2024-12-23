@@ -166,6 +166,7 @@ wSerialPartyMonsPatchList:: ds 200
 wSerialEnemyMonsPatchList:: ds 200
 ENDU
 
+	ds 80
 
 SECTION "Overworld Map", WRAM0
 
@@ -231,8 +232,6 @@ wPlayerMonNumber:: db
 ; the address of the menu cursor's current location within wTileMap
 wMenuCursorLocation:: dw
 
-	ds 2
-
 ; how many times should HandleMenuInput poll the joypad state before it returns?
 wMenuJoypadPollCount:: db
 
@@ -250,8 +249,6 @@ wListScrollOffset:: db
 wMenuWatchMovingOutOfBounds:: db
 
 wTradeCenterPointerTableIndex:: db
-
-	ds 1
 
 ; destination pointer for text output
 ; this variable is written to, but is never read from
@@ -305,8 +302,6 @@ wMenuWrappingEnabled:: db
 ; whether to check for 180-degree turn (0 = don't, 1 = do)
 wCheckFor180DegreeTurn:: db
 
-	ds 1
-
 wMissableObjectIndex:: db
 
 wPredefID:: db
@@ -316,16 +311,12 @@ wPredefBC:: dw
 
 wTrainerHeaderFlagBit:: db
 
-	ds 1
-
 ; which NPC movement script pointer is being used
 ; 0 if an NPC movement script is not running
 wNPCMovementScriptPointerTableNum:: db
 
 ; ROM bank of current NPC movement script
 wNPCMovementScriptBank:: db
-
-	ds 2
 
 ; This union spans 180 bytes.
 UNION
@@ -558,8 +549,6 @@ wEngagedTrainerClass:: db
 wEngagedTrainerSet:: db
 ENDU
 
-	ds 1
-
 wNPCMovementDirections2Index::
 wUnusedLinkMenuByte::
 ; number of items in wFilteredBagItems list
@@ -575,8 +564,6 @@ wUnusedOverrideSimulatedJoypadStatesIndex:: db
 ; mask indicating which real button presses can override simulated ones
 ; XXX is it ever not 0?
 wOverrideSimulatedJoypadStatesMask:: db
-
-	ds 1
 
 ; This union spans 30 bytes.
 UNION
@@ -846,8 +833,6 @@ wRightGBMonSpecies:: db
 
 wMiscFlags:: db
 
-	ds 9
-
 ; This has overlapping related uses.
 ; When the player tries to use an item or use certain field moves, 0 is stored
 ; when the attempt fails and 1 is stored when the attempt succeeds.
@@ -998,14 +983,10 @@ wSpriteIndex:: db
 ; movement byte 2 of current sprite
 wCurSpriteMovement2:: db
 
-	ds 2
-
 ; sprite offset of sprite being controlled by NPC movement script
 wNPCMovementScriptSpriteOffset:: db
 
 wScriptedNPCWalkCounter:: db
-
-	ds 1
 
 wGBC:: db
 
@@ -1030,8 +1011,6 @@ wEnemyHPBarColor:: db
 wPartyMenuHPBarColors:: ds PARTY_LENGTH
 
 wStatusScreenHPBarColor:: db
-
-	ds 7
 
 wCopyingSGBTileData::
 wWhichPartyMenuHPBar::
@@ -1173,14 +1152,8 @@ wEnemyMonBaseExp:: db
 wBattleMonNick:: ds NAME_LENGTH
 wBattleMon:: battle_struct wBattleMon
 
-
 wTrainerClass:: db
-
-	ds 1
-
 wTrainerPicPointer:: dw
-
-	ds 1
 
 UNION
 wTempMoveNameBuffer:: ds 14
@@ -1190,14 +1163,10 @@ NEXTU
 wLearnMoveMonName:: ds NAME_LENGTH
 ENDU
 
-	ds 2
-
 ; money received after battle = base money × level of last enemy mon
 wTrainerBaseMoney:: dw ; BCD
 
 wMissableObjectCounter:: db
-
-	ds 1
 
 ; 13 bytes for the letters of the opposing trainer
 ; the name is terminated with $50 with possible
@@ -1274,8 +1243,6 @@ wPlayerToxicCounter:: db
 ; low nibble: disable turns left
 wPlayerDisabledMove:: db
 
-	ds 1
-
 ; when the enemy is attacking multiple times, the number of attacks left
 wEnemyNumAttacksLeft:: db
 
@@ -1286,8 +1253,6 @@ wEnemyToxicCounter:: db
 ; high nibble: which move is disabled (1-4)
 ; low nibble: disable turns left
 wEnemyDisabledMove:: db
-
-	ds 1
 
 UNION
 ; the amount of damage accumulated by the player while biding
@@ -1300,8 +1265,6 @@ NEXTU
 ; number of hits by player in attacks like Double Slap, etc.
 wPlayerNumHits:: db
 ENDU
-
-	ds 2
 
 ; non-zero when an item or move that allows escape from battle was used
 wEscapedFromBattle:: db
@@ -1328,8 +1291,6 @@ wTempTilesetNumTiles:: db
 ; used by the pokemart code to save the existing value of wListScrollOffset
 ; so that it can be restored when the player is done with the pokemart NPC
 wSavedListScrollOffset:: db
-
-	ds 2
 
 ; base coordinates of frame block
 wBaseCoordX:: db
@@ -1392,10 +1353,7 @@ ENDU
 
 wEndBattleWinTextPointer:: dw
 wEndBattleLoseTextPointer:: dw
-	ds 2
 wEndBattleTextRomBank:: db
-
-	ds 1
 
 ; the address _of the address_ of the current subanimation entry
 wSubAnimAddrPtr:: dw
@@ -1411,8 +1369,6 @@ NEXTU
 ; or zero it.
 wSlotMachineAllowMatchesCounter:: db
 ENDU
-
-	ds 2
 
 wOutwardSpiralTileMapPointer:: db
 
@@ -1510,17 +1466,12 @@ wMonHBackSprite:: dw
 wMonHMoves:: ds NUM_MOVES
 wMonHGrowthRate:: db
 wMonHLearnset:: flag_array NUM_TMS + NUM_HMS
-	ds 1
 wMonHeaderEnd::
 
 ; saved at the start of a battle and then written back at the end of the battle
 wSavedTileAnimations:: db
 
-	ds 2
-
 wDamage:: dw
-
-	ds 2
 
 wRepelRemainingSteps:: db
 
@@ -1624,8 +1575,6 @@ wSavedSpriteScreenX:: db
 wSavedSpriteMapY:: db
 wSavedSpriteMapX:: db
 
-	ds 5
-
 wWhichPrize:: db
 
 ; counts downward each frame
@@ -1641,8 +1590,6 @@ wNumberOfNoRandomBattleStepsLeft:: db
 wPrize1:: db
 wPrize2:: db
 wPrize3:: db
-
-	ds 1
 
 UNION
 wSerialRandomNumberListBlock:: ds $11
@@ -1667,8 +1614,6 @@ wSerialPlayerDataBlock:: ; ds $1a8
 wPseudoItemID:: db
 
 wUnusedAlreadyOwnedFlag:: db
-
-	ds 2
 
 wEvoStoneItemID:: db
 
@@ -1728,8 +1673,6 @@ wOptions:: db
 
 wObtainedBadges:: flag_array NUM_BADGES
 
-	ds 1
-
 wLetterPrintingDelayFlags:: db
 
 wPlayerID:: dw
@@ -1778,8 +1721,6 @@ wSpriteSet:: ds 11
 wSpriteSetID:: db
 
 wObjectDataPointerTemp:: dw
-
-	ds 2
 
 ; the tile shown outside the boundaries of the map
 wMapBackgroundTile:: db
@@ -1848,8 +1789,6 @@ wTilesetTalkingOverTiles:: ds 3
 
 wGrassTile:: db
 
-	ds 4
-
 wNumBoxItems:: db
 ; item, quantity
 wBoxItems:: ds PC_ITEM_CAPACITY * 2 + 1
@@ -1857,8 +1796,6 @@ wBoxItems:: ds PC_ITEM_CAPACITY * 2 + 1
 ; bits 0-6: box number
 ; bit 7: whether the player has changed boxes before
 wCurrentBoxNum:: db
-
-	ds 1
 
 ; number of HOF teams
 wNumHoFTeams:: db
@@ -1870,8 +1807,6 @@ wPlayerCoins:: dw ; BCD
 ; bit array of missable objects. set = removed
 wMissableObjectFlags:: flag_array $100
 wMissableObjectFlagsEnd::
-
-	ds 7
 
 ; saved copy of SPRITESTATEDATA1_IMAGEINDEX (used for sprite facing/anim)
 wSavedSpriteImageIndex:: db

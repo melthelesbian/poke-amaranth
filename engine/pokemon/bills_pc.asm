@@ -146,9 +146,9 @@ BillsPCMenu:
 	ld [wPlayerMonNumber], a
 	ld hl, SelectText
 	call PrintText
-	hlcoord 9, 14
+	hlcoord 12, 14
 	ld b, 2
-	ld c, 9
+	ld c, 6
 	call TextBoxBorder
 	ld a, [wCurrentBoxNum]
 	and $7f
@@ -164,7 +164,7 @@ BillsPCMenu:
 	add "1"
 .next
 	ldcoord_a 18, 16
-	hlcoord 10, 16
+	hlcoord 13, 16
 	ld de, BoxNoPCText
 	call PlaceString
 	ld a, 1
@@ -347,7 +347,7 @@ BillsPCMenuText:
 	db "@"
 
 BoxNoPCText:
-	db "BOX No.@"
+	db "BOX @"
 
 KnowsHMMove::
 ; returns whether mon with party index [wWhichPokemon] knows an HM move

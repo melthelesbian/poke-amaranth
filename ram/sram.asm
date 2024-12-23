@@ -36,15 +36,15 @@ ENDM
 
 SECTION "Saved Boxes 1", SRAM
 
-; sBox1 - sBox6
-	boxes 6
+; sBox1 - sBox5
+	boxes 5
 sBank2AllBoxesChecksum:: db
 sBank2IndividualBoxChecksums:: ds 6
 
 SECTION "Saved Boxes 2", SRAM
 
-; sBox7 - sBox12
-	boxes 6
+; sBox6 - sBox10
+	boxes 5
 sBank3AllBoxesChecksum:: db
 sBank3IndividualBoxChecksums:: ds 6
 
