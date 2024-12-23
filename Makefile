@@ -49,13 +49,13 @@ RGBLINK ?= $(RGBDS)rgblink
 .SECONDARY:
 .PHONY: all amaranth red blue blue_debug clean tidy compare tools
 
-all: $(roms)
 amaranth:   amaranth.gbc
 red:        amaranth_red.gbc
 blue:       amaranth_blue.gbc
 blue_debug: amaranth_blue_debug.gbc
 red_vc:     amaranth_red.patch
 blue_vc:    amaranth_blue.patch
+all: $(roms) $(patches)
 
 clean: tidy
 	find gfx \
