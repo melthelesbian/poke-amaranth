@@ -166,7 +166,7 @@ wSerialPartyMonsPatchList:: ds 200
 wSerialEnemyMonsPatchList:: ds 200
 ENDU
 
-	ds 80
+	ds 80 ; [WARN] THIS IS IMPORTANT I DO NOT KNOW WHY, DO NOT DELETE
 
 SECTION "Overworld Map", WRAM0
 
