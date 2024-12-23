@@ -229,3 +229,18 @@ ENDC
 	line "your friend and"
 	cont "come again!"
 	done
+
+_SortItemsText::
+	text "Would you like to"
+	next "sort items?"
+	done
+
+_SortComplete::
+	text "Sorting is"
+	next "complete!"
+	prompt
+
+_NothingToSort::
+	text "There are no items"
+	next "to sort."
+	prompt

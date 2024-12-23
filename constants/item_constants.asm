@@ -68,8 +68,8 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const UNUSED_39     ; $39 (MAX_REPEL)
 	const UNUSED_3A     ; $3A (DIRE_HIT)
 	const COIN          ; $3B
-	const FRESH_WATER   ; $3C
-	const ICED_TEA      ; $3D
+	const FRESH_WATER   ; $3C 
+	const ICED_TEA      ; $3D (SODA_POP)
 	const LEMONADE      ; $3E
 	const UNUSED_3F     ; $3F (SS_TICKET)
 	const GOLD_TEETH    ; $40
@@ -132,6 +132,7 @@ MACRO add_hm
 ; - HM##_MOVE: alias for the move id, equal to the value of \1
 	const HM_\1
 	DEF HM_VALUE = __tmhm_value__ - NUM_TMS
+	DEF HM_{02d:HM_VALUE} EQU const_value - 1
 	DEF HM{02d:HM_VALUE}_MOVE EQU \1
 	add_tmnum \1
 ENDM
@@ -152,6 +153,7 @@ MACRO add_tm
 ; - \1_TMNUM: the learnable TM/HM flag, starting at 1
 ; - TM##_MOVE: alias for the move id, equal to the value of \1
 	const TM_\1
+	DEF TM_{02d:__tmhm_value__} EQU const_value - 1
 	DEF TM{02d:__tmhm_value__}_MOVE EQU \1
 	add_tmnum \1
 ENDM
