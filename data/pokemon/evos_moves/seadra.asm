@@ -1,5 +1,6 @@
 SeadraEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, HORSEA
 	db 0
 ; Learnset
 	db 1, BUBBLE

@@ -50,8 +50,25 @@ CinnabarLabMetronomeRoomScientist1Text:
 	text_end
 
 CinnabarLabMetronomeRoomScientist2Text:
-	text_far _CinnabarLabMetronomeRoomScientist2Text
-	text_end
+	text_asm
+	ld hl, .GreetingText
+	call PrintText
+	ld hl, .MartList
+	call LoadItemList
+	ld a, PRICEDITEMLISTMENU
+	ld [wListMenuID], a
+	farcall DisplayPokemartDialogue_
+	jp TextScriptEnd
+
+.GreetingText
+	text "Want to buy my"
+	line "new invention?"
+	done
+
+.MartList
+	db 1
+	db DEVO_SPRAY
+	db -1
 
 CinnabarLabMetronomeRoomPCText:
 	text_far _CinnabarLabMetronomeRoomPCText

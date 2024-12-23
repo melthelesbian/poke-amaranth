@@ -2,6 +2,7 @@ HaunterEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, GENGAR
 	db EVOLVE_LEVEL, 40, GENGAR
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, GASTLY
 	db 0
 ; Learnset
 	db 1, ASTONISH

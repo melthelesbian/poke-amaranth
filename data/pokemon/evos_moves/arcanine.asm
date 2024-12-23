@@ -1,5 +1,6 @@
 ArcanineEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, GROWLITHE
 	db 0
 ; Learnset
 	db 1, LICK

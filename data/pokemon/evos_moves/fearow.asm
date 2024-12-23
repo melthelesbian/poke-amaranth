@@ -1,5 +1,6 @@
 FearowEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, SPEAROW
 	db 0
 ; Learnset
 	db 1, PECK

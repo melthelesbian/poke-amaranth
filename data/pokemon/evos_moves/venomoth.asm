@@ -1,5 +1,6 @@
 VenomothEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, VENONAT
 	db 0
 ; Learnset
 	db 1, BUG_BITE

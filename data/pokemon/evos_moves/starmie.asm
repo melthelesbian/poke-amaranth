@@ -1,5 +1,6 @@
 StarmieEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, STARYU
 	db 0
 ; Learnset
 	db  1, SCREECH

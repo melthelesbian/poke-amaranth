@@ -1,5 +1,6 @@
 VaporeonEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, EEVEE
 	db 0
 ; Learnset
 	db 1, TACKLE

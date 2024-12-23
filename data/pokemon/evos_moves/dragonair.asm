@@ -1,6 +1,7 @@
 DragonairEvosMoves:
 ; Evolutions
 	db EVOLVE_LEVEL, 55, DRAGONITE
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, DRATINI
 	db 0
 ; Learnset
 	db 1, TACKLE

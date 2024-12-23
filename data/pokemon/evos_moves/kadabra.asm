@@ -2,6 +2,7 @@ KadabraEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE,  1, ALAKAZAM
 	db EVOLVE_LEVEL, 48, ALAKAZAM
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, ABRA
 	db 0
 ; Learnset
 	db  1, TELEPORT

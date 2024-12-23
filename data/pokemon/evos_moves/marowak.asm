@@ -1,5 +1,6 @@
 MarowakEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, CUBONE
 	db 0
 ; Learnset
 	db 1, POUND

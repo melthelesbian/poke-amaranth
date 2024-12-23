@@ -1,5 +1,6 @@
 RhydonEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, RHYHORN
 	db 0
 ; Learnset
 	db 1, HORN_ATTACK

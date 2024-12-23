@@ -1,6 +1,7 @@
 IvysaurEvosMoves:
 ; Evolutions
 	db EVOLVE_LEVEL, 32, VENUSAUR
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, BULBASAUR
 	db 0
 ; Learnset
 	db 1, TACKLE

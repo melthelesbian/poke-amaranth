@@ -1,6 +1,7 @@
 CharmeleonEvosMoves:
 ; Evolutions
 	db EVOLVE_LEVEL, 36, CHARIZARD
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, CHARMANDER
 	db 0
 ; Learnset
 	db 1, SCRATCH

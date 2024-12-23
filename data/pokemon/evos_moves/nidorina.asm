@@ -2,6 +2,7 @@ NidorinaEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, NIDOQUEEN
 	db EVOLVE_ITEM, MOON_STONE, 32, NIDOQUEEN
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, NIDORAN_F
 	db 0
 ; Learnset
 	db 1, SCRATCH

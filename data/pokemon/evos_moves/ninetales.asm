@@ -1,5 +1,6 @@
 NinetalesEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, VULPIX
 	db 0
 ; Learnset
 	db 1, TACKLE

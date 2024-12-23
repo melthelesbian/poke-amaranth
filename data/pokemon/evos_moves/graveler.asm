@@ -2,6 +2,7 @@ GravelerEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, GOLEM
 	db EVOLVE_LEVEL, 40, GOLEM
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, GEODUDE
 	db 0
 ; Learnset
 	db 1, TACKLE

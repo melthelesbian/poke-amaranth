@@ -1,6 +1,7 @@
 PidgeottoEvosMoves:
 ; Evolutions
 	db EVOLVE_LEVEL, 36, PIDGEOT
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, PIDGEY
 	db 0
 ; Learnset
 	db 1, TACKLE

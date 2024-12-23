@@ -1,5 +1,6 @@
 PidgeotEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, PIDGEOTTO
 	db 0
 
 ; Learnset

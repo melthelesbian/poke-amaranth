@@ -1,5 +1,6 @@
 MukEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, GRIMER
 	db 0
 ; Learnset
 	db 1, POUND

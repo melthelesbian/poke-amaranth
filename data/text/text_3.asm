@@ -34,7 +34,7 @@ _ChooseABoxText::
 
 _EvolvedText::
 	text_ram wStringBuffer
-	text " evolved"
+	text " changed"
 	done
 
 _IntoText::
@@ -55,7 +55,7 @@ _IsEvolvingText::
 	text "What? @"
 	text_ram wStringBuffer
 	text_start
-	line "is evolving!"
+	line "is changing!"
 	done
 
 _FellAsleepText::

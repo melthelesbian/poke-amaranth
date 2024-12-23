@@ -1,5 +1,6 @@
 DugtrioEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, DIGLETT
 	db 0
 ; Learnset
 	db 1, MUD_SLAP

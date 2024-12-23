@@ -1,5 +1,6 @@
 ArbokEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, EKANS
 	db 0
 ; Learnset
 	db 1, POISON_STING

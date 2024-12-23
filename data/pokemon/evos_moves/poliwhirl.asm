@@ -2,6 +2,7 @@ PoliwhirlEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, POLIWRATH
 	db EVOLVE_ITEM, WATER_STONE, 35, POLIWRATH
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, POLIWAG
 	db 0
 ; Learnset
 	db 1, BUBBLE

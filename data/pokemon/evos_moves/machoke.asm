@@ -2,6 +2,7 @@ MachokeEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, MACHAMP
 	db EVOLVE_LEVEL, 48, MACHAMP
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, MACHOP
 	db 0
 ; Learnset
 	db 1, POUND

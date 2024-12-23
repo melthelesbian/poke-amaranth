@@ -1,6 +1,7 @@
 WartortleEvosMoves:
 ; Evolutions
 	db EVOLVE_LEVEL, 36, BLASTOISE
+	db EVOLVE_ITEM, DEVO_SPRAY, 1, SQUIRTLE
 	db 0
 ; Learnset
 	db 1, POUND

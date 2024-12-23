@@ -49,7 +49,7 @@ ItemPrices::
 	bcd3 2000  ; LEAF_STONE
 	bcd3 0     ; CARD_KEY
 	bcd3 10000 ; NUGGET
-	bcd3 9800  ; ITEM_32
+	bcd3 1000  ; DEVO_SPRAY (ITEM_32)
 	bcd3 1000  ; POKE_DOLL
 	bcd3 600   ; FULL_HEAL
 	bcd3 1500  ; REVIVE
