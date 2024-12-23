@@ -156,7 +156,7 @@ wTileMap:: ds SCREEN_WIDTH * SCREEN_HEIGHT
 UNION
 ; buffer for temporarily saving and restoring current screen's tiles
 ; (e.g. if menus are drawn on top)
-wTileMapBackup:: ds SCREEN_WIDTH * SCREEN_HEIGHT
+wTileMapBackup:: ds (SCREEN_WIDTH + 4) * (SCREEN_HEIGHT + 2)
 
 NEXTU
 ; list of indexes to patch with SERIAL_NO_DATA_BYTE after transfer
@@ -164,9 +164,11 @@ wSerialPartyMonsPatchList:: ds 200
 
 ; list of indexes to patch with SERIAL_NO_DATA_BYTE after transfer
 wSerialEnemyMonsPatchList:: ds 200
+
+	ds 80 
 ENDU
 
-	ds 80 ; [WARN] THIS IS IMPORTANT I DO NOT KNOW WHY, DO NOT DELETE
+	
 
 SECTION "Overworld Map", WRAM0
 
