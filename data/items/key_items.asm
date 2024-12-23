@@ -4,7 +4,7 @@ KeyItemFlags:
 	dbit FALSE ; ULTRA_BALL
 	dbit FALSE ; GREAT_BALL
 	dbit FALSE ; POKE_BALL
-	dbit TRUE  ; TOWN_MAP
+	dbit TRUE  ; UNUSED_05 (TOWN_MAP)
 	dbit TRUE  ; BICYCLE
 	dbit TRUE  ; SURFBOARD
 	dbit TRUE  ; SAFARI_BALL
@@ -42,7 +42,7 @@ KeyItemFlags:
 	dbit FALSE ; RARE_CANDY
 	dbit FALSE ; DOME_FOSSIL
 	dbit FALSE ; HELIX_FOSSIL
-	dbit TRUE  ; SECRET_KEY
+	dbit TRUE  ; UNUSED_2B (SECRET_KEY)
 	dbit TRUE  ; ANCIENT_HAIR
 	dbit TRUE  ; BIKE_VOUCHER
 	dbit FALSE ; UNUSED_2E (X_ACCURACY)

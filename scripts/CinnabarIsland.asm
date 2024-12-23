@@ -14,32 +14,6 @@ CinnabarIsland_ScriptPointers:
 	dw_const CinnabarIslandPlayerMovingScript, SCRIPT_CINNABARISLAND_PLAYER_MOVING
 
 CinnabarIslandDefaultScript:
-	ld b, SECRET_KEY
-	call IsItemInBag
-	ret nz
-	ld a, [wYCoord]
-	cp 4
-	ret nz
-	ld a, [wXCoord]
-	cp 18
-	ret nz
-	ld a, PLAYER_DIR_UP
-	ld [wPlayerMovingDirection], a
-	ld a, TEXT_CINNABARISLAND_DOOR_IS_LOCKED
-	ldh [hSpriteIndexOrTextID], a
-	call DisplayTextID
-	xor a
-	ldh [hJoyHeld], a
-	ld a, $1
-	ld [wSimulatedJoypadStatesIndex], a
-	ld a, D_DOWN
-	ld [wSimulatedJoypadStatesEnd], a
-	call StartSimulatingJoypadStates
-	xor a
-	ld [wSpritePlayerStateData1FacingDirection], a
-	ld [wJoyIgnore], a
-	ld a, SCRIPT_CINNABARISLAND_PLAYER_MOVING
-	ld [wCinnabarIslandCurScript], a
 	ret
 
 CinnabarIslandPlayerMovingScript:

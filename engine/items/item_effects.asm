@@ -59,7 +59,7 @@ ItemUsePtrTable:
 	dw ItemUseVitamin    ; RARE_CANDY
 	dw UnusableItem      ; DOME_FOSSIL
 	dw UnusableItem      ; HELIX_FOSSIL
-	dw UnusableItem      ; SECRET_KEY
+	dw UnusableItem      ; UNUSED_2B (SECRET_KEY)
 	dw UnusableItem      ; ANCIENT_HAIR
 	dw UnusableItem      ; BIKE_VOUCHER
 	dw UnusableItem      ; UNUSED_2E (X_ACCURACY)

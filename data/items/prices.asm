@@ -42,8 +42,8 @@ ItemPrices::
 	bcd3 4800  ; RARE_CANDY
 	bcd3 10000 ; DOME_FOSSIL
 	bcd3 10000 ; HELIX_FOSSIL
-	bcd3 0     ; SECRET_KEY
-	bcd3 0     ; ITEM_2C
+	bcd3 0     ; UNUSED_2B (SECRET_KEY)
+	bcd3 0     ; ANCIENT_HAIR
 	bcd3 0     ; BIKE_VOUCHER
 	bcd3 0     ; UNUSED 2E (X_ACCURACY)
 	bcd3 2000  ; LEAF_STONE

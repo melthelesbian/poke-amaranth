@@ -11,7 +11,7 @@
 	const ULTRA_BALL    ; $02
 	const GREAT_BALL    ; $03
 	const POKE_BALL     ; $04
-	const TOWN_MAP      ; $05
+	const UNUSED_05     ; $05 (TOWN_MAP)
 	const BICYCLE       ; $06
 	const SURFBOARD     ; $07
 	const SAFARI_BALL   ; $08
@@ -51,7 +51,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const RARE_CANDY    ; $28
 	const DOME_FOSSIL   ; $29
 	const HELIX_FOSSIL  ; $2A
-	const SECRET_KEY    ; $2B
+	const UNUSED_2B     ; $2B (SECRET_KEY)
 	const ANCIENT_HAIR  ; $2C
 	const BIKE_VOUCHER  ; $2D
 	const UNUSED_2E     ; $2E
