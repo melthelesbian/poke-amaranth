@@ -71,6 +71,7 @@ DontAbandonLearning:
 	ld de, wBattleMonPP
 	ld bc, NUM_MOVES
 	call CopyData
+	call LoadScreenTilesFromBuffer1
 	jp PrintLearnedMove
 
 AbandonLearning:
@@ -86,6 +87,7 @@ AbandonLearning:
 	jp nz, DontAbandonLearning
 	ld hl, DidNotLearnText
 	call PrintText
+	call LoadScreenTilesFromBuffer1
 	ld b, 0
 	ret
 
@@ -152,9 +154,6 @@ TryingToLearn:
 	call HandleMenuInput
 	ld hl, hUILayoutFlags
 	res 1, [hl]
-	push af
-	call LoadScreenTilesFromBuffer1
-	pop af
 	pop hl
 	bit BIT_B_BUTTON, a
 	jr nz, .cancel
@@ -202,6 +201,7 @@ ShowMoveInfo:
 	hlcoord 0, 0
 	lb bc, 5, 18
 	call TextBoxBorder
+	call HidePartySprites
 	; show the move's name on the top
 	hlcoord 1, 1
 	ld de, wStringBuffer
@@ -296,6 +296,19 @@ ConvertPercentages:
     and 1
     add a, h
     ret
+
+; [INFO] bugfix for luna's move learning info screen also credit to luna
+HidePartySprites:
+	ld a, 160
+	ld hl, wShadowOAM
+	ld de, 4
+	ld b, 4 * 4
+.loop
+	ld [hl], a
+	add hl, de
+	dec b
+	jr nz, .loop
+	ret
 
 LearnedMove1Text:
 	text_far _LearnedMove1Text

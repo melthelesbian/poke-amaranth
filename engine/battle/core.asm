@@ -2887,10 +2887,10 @@ PrintMenuItem:
 	ld a, [hl]
 	and $3f
 	ld [wBattleMenuCurrentPP], a
-; print <type>, BP, and <curPP>/<maxPP>
+; print move info
 	hlcoord 6, 11
 	ld [hl], "/"
-	; PP
+.printPP
 	hlcoord 1, 11
 	ld de, PPText
 	call PlaceString
@@ -2904,19 +2904,29 @@ PrintMenuItem:
 	ld de, wMaxPP
 	lb bc, 1, 2
 	call PrintNumber
-	; type
+.printType
 	call GetCurrentMove
 	hlcoord 1, 8
 	predef PrintMoveType
-	; PWR
+.printPower
 	hlcoord 1, 9
 	ld de, PowerText
 	call PlaceString
 	hlcoord 5, 9
 	ld de, wPlayerMovePower
+	ld a, [wPlayerMovePower]
+	cp 1
+	jr z, .noMovePower
+	and a
+	jr z, .noMovePower
 	lb bc, LEFT_ALIGN | 1, 3
 	call PrintNumber
+	jr .printAccuracy
+.noMovePower
+	ld de, NoMovePowerText
+	call PlaceString
 	; ACC
+.printAccuracy
 	hlcoord 1, 10
 	ld de, AccuracyText
 	call PlaceString
@@ -2934,6 +2944,9 @@ PrintMenuItem:
 
 PowerText:
 	db "PWR@"
+
+NoMovePowerText:
+	db "---@s"
 
 AccuracyText:
 	db "ACC@"
