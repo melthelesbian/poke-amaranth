@@ -73,9 +73,6 @@ wAudioSavedROMBank:: db
 wFrequencyModifier:: db
 wTempoModifier:: db
 
-	ds 13
-
-
 SECTION "Sprite State Data", WRAM0
 
 wSpriteDataStart::
@@ -168,8 +165,6 @@ wSerialPartyMonsPatchList:: ds 200
 ; list of indexes to patch with SERIAL_NO_DATA_BYTE after transfer
 wSerialEnemyMonsPatchList:: ds 200
 ENDU
-
-	ds 80
 
 
 SECTION "Overworld Map", WRAM0
@@ -494,7 +489,6 @@ wLowHealthAlarmDisabled:: db
 
 wPlayerMonMinimized:: db
 
-	ds 13
 
 ; number of hits by enemy in attacks like Double Slap, etc.
 wEnemyNumHits:: ; db
@@ -1799,8 +1793,6 @@ wWarpEntries:: ds 32 * 4 ; Y, X, warp ID, map ID
 ; if $ff, the player's coordinates are not updated when entering the map
 wDestinationWarpID:: db
 
-	ds 128
-
 ; number of signs in the current map (up to 16)
 wNumSigns:: db
 
@@ -1890,19 +1882,14 @@ wSavedSpriteImageIndex:: db
 ; terminated with $FF
 wMissableObjectList:: ds 16 * 2 + 1
 
-	ds 1
-
 wGameProgressFlags::
 wOaksLabCurScript:: db
 wPalletTownCurScript:: db
-	ds 1
 wBluesHouseCurScript:: db
 wViridianCityCurScript:: db
-	ds 2
 wPewterCityCurScript:: db
 wRoute3CurScript:: db
 wRoute4CurScript:: db
-	ds 1
 wViridianGymCurScript:: db
 wPewterGymCurScript:: db
 wCeruleanGymCurScript:: db
@@ -1919,12 +1906,10 @@ wMtMoonB2FCurScript:: db
 wSSAnne1FRoomsCurScript:: db
 wSSAnne2FRoomsCurScript:: db
 wRoute22CurScript:: db
-	ds 1
 wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 7
 wSSAnneBowCurScript:: db
 wViridianForestCurScript:: db
 wMuseum1FCurScript:: db
@@ -1936,7 +1921,6 @@ wRoute21CurScript:: db
 wSafariZoneGateCurScript:: db
 wRockTunnelB1FCurScript:: db
 wRockTunnel1FCurScript:: db
-	ds 1
 wRoute11CurScript:: db
 wRoute12CurScript:: db
 wRoute15CurScript:: db
@@ -1955,19 +1939,15 @@ wRocketHideoutB1FCurScript:: db
 wRocketHideoutB2FCurScript:: db
 wRocketHideoutB3FCurScript:: db
 wRocketHideoutB4FCurScript:: db
-	ds 1
 wRoute6GateCurScript:: db
 wRoute8GateCurScript:: db
-	ds 1
 wCinnabarIslandCurScript:: db
 wPokemonMansion1FCurScript:: db
-	ds 1
 wPokemonMansion2FCurScript:: db
 wPokemonMansion3FCurScript:: db
 wPokemonMansionB1FCurScript:: db
 wVictoryRoad2FCurScript:: db
 wVictoryRoad3FCurScript:: db
-	ds 1
 wFightingDojoCurScript:: db
 wSilphCo2FCurScript:: db
 wSilphCo3FCurScript:: db
@@ -1986,13 +1966,10 @@ wCeruleanCaveB1FCurScript:: db
 wVictoryRoad1FCurScript:: db
 wBugSanctuaryCurScript:: db
 wLancesRoomCurScript:: db
-	ds 4
 wSilphCo10FCurScript:: db
 wSilphCo11FCurScript:: db
-	ds 1
 wFuchsiaGymCurScript:: db
 wSaffronGymCurScript:: db
-	ds 1
 wCinnabarGymCurScript:: db
 wGameCornerCurScript:: db
 wRoute16Gate1FCurScript:: db
@@ -2000,16 +1977,12 @@ wBillsHouseCurScript:: db
 wRoute5GateCurScript:: db
 wPowerPlantCurScript:: ; overload
 wRoute7GateCurScript:: db
-	ds 1
 wSSAnne2FCurScript:: db
 wSeafoamIslandsB3FCurScript:: db
 wRoute23CurScript:: db
 wSeafoamIslandsB4FCurScript:: db
 wRoute18Gate1FCurScript:: db
-	ds 78
 wGameProgressFlagsEnd::
-
-	ds 56
 
 wObtainedHiddenItemsFlags:: flag_array MAX_HIDDEN_ITEMS
 
@@ -2019,8 +1992,6 @@ wObtainedHiddenCoinsFlags:: flag_array MAX_HIDDEN_COINS
 ; $01 = biking
 ; $02 = surfing
 wWalkBikeSurfState:: db
-
-	ds 10
 
 wTownVisitedFlag:: flag_array NUM_CITY_MAPS
 
@@ -2032,16 +2003,12 @@ wFossilItem:: db
 ; mon that will result from the item
 wFossilMon:: db
 
-	ds 2
-
 ; trainer classes start at OPP_ID_OFFSET
 wEnemyMonOrTrainerClass:: db
 
 wPlayerJumpingYScreenCoordsIndex:: db
 
 wRivalStarter:: db
-
-	ds 1
 
 wPlayerStarter:: db
 
@@ -2068,46 +2035,30 @@ wWhichDungeonWarp:: db
 
 wUnusedCardKeyGateID:: db
 
-	ds 8
-
 wStatusFlags1:: db
-	ds 1
 wBeatGymFlags:: db ; redundant because it matches wObtainedBadges
-	ds 1
 wStatusFlags2:: db
 wCableClubDestinationMap::
 wStatusFlags3:: db
 wStatusFlags4:: db
-	ds 1
 wStatusFlags5:: db
-	ds 1
 wStatusFlags6:: db
 wStatusFlags7:: db
 wElite4Flags:: db
-	ds 1
 wMovementFlags:: db
 
 wCompletedInGameTradeFlags:: dw
 
-	ds 2
-
 wWarpedFromWhichWarp:: db
 wWarpedFromWhichMap:: db
-
-	ds 2
 
 wCardKeyDoorY:: db
 wCardKeyDoorX:: db
 
-	ds 2
-
 wFirstLockTrashCanIndex:: db
 wSecondLockTrashCanIndex:: db
 
-	ds 2
-
 wEventFlags:: flag_array NUM_EVENTS
-
 
 UNION
 wGrassRate:: db
@@ -2154,8 +2105,6 @@ ENDU
 
 wTrainerHeaderPtr:: dw
 
-	ds 6
-
 ; the trainer the player must face after getting a wrong answer in the Cinnabar
 ; gym quiz
 wOpponentAfterWrongAnswer:: db
@@ -2163,8 +2112,6 @@ wOpponentAfterWrongAnswer:: db
 ; index of current map script, mostly used as index for function pointer array
 ; mostly copied from map-specific map script pointer and written back later
 wCurMapScript:: db
-
-	ds 7
 
 wPlayTimeHours:: db
 wPlayTimeMaxed:: db
@@ -2176,7 +2123,6 @@ wSafariZoneGameOver:: db
 
 wNumSafariBalls:: db
 
-
 ; 0 if no pokemon is in the daycare
 ; 1 if pokemon is in the daycare
 wDayCareInUse:: db
@@ -2187,7 +2133,6 @@ wDayCareMonOT::   ds NAME_LENGTH
 wDayCareMon:: box_struct wDayCareMon
 
 wMainDataEnd::
-
 
 SECTION "Current Box Data", WRAM0
 
