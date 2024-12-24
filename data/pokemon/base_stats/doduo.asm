@@ -20,4 +20,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(DoduoPicFront)
+	assert BANK(DoduoPicFront) == BANK(DoduoPicBack)
