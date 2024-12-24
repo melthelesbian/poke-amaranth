@@ -10,11 +10,11 @@ ItemPrices::
 	bcd3 1000  ; SAFARI_BALL
 	bcd3 0     ; POKEDEX
 	bcd3 2000  ; MOON_STONE
-	bcd3 100   ; ANTIDOTE
-	bcd3 250   ; BURN_HEAL
-	bcd3 250   ; ICE_HEAL
-	bcd3 200   ; AWAKENING
-	bcd3 200   ; PARLYZ_HEAL
+	bcd3 0     ; UNUSED_0B (ANTIDOTE)
+	bcd3 0     ; UNUSED_0C (BURN_HEAL)
+	bcd3 0     ; UNUSED_0D (ICE_HEAL)
+	bcd3 0     ; UNUSED_0E (AWAKENING)
+	bcd3 0     ; UNUSED_0F (PARLYZ_HEAL)
 	bcd3 3000  ; FULL_RESTORE
 	bcd3 2500  ; MAX_POTION
 	bcd3 1000  ; HYPER_POTION
@@ -51,7 +51,7 @@ ItemPrices::
 	bcd3 10000 ; NUGGET
 	bcd3 1000  ; DEVO_SPRAY (ITEM_32)
 	bcd3 1000  ; POKE_DOLL
-	bcd3 600   ; FULL_HEAL
+	bcd3 500   ; PANACEA
 	bcd3 1500  ; REVIVE
 	bcd3 4000  ; MAX_REVIVE
 	bcd3 0     ; UNUSED_37 (GUARD_SPEC)

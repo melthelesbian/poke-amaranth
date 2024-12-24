@@ -21,8 +21,8 @@ _ViridianMartClerkParcelQuestText::
 	text_end
 
 _ViridianMartYoungsterText::
-	text "This shop sells"
-	line "many ANTIDOTEs."
+	text "This shop seems"
+	line "almost empty."
 	done
 
 _ViridianMartCooltrainerMText::

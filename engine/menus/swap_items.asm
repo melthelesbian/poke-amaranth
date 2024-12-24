@@ -282,12 +282,7 @@ ItemSortList::
 	db REVIVE
 	db MAX_REVIVE
 	; Status
-	db ANTIDOTE
-	db BURN_HEAL
-	db ICE_HEAL
-	db AWAKENING
-	db PARLYZ_HEAL
-	db FULL_HEAL
+	db PANACEA
 	db POKE_FLUTE
 	; PP
 	db ETHER

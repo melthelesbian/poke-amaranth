@@ -1,11 +1,6 @@
 ; items which bring up the party menu when used
 UsableItems_PartyMenu:
 	db MOON_STONE
-	db ANTIDOTE
-	db BURN_HEAL
-	db ICE_HEAL
-	db AWAKENING
-	db PARLYZ_HEAL
 	db FULL_RESTORE
 	db MAX_POTION
 	db HYPER_POTION
@@ -21,7 +16,7 @@ UsableItems_PartyMenu:
 	db CALCIUM
 	db RARE_CANDY
 	db LEAF_STONE
-	db FULL_HEAL
+	db PANACEA
 	db REVIVE
 	db MAX_REVIVE
 	db FRESH_WATER

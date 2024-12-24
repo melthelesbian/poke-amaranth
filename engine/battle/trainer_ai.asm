@@ -327,11 +327,11 @@ JugglerAI:
 	jp AISwitchIfEnoughMons
 
 GiovanniAI:
-	; if his active mon has a status condition, use a full heal
+	; if his active mon has a status condition, use a panacea
 	ld a, [wEnemyMonStatus]
 	and a
 	ret z
-	jp AIUseFullHeal
+	jp AIUsePanacea
 
 CooltrainerMAI:
 	cp 25 percent + 1
@@ -358,11 +358,11 @@ CooltrainerFAI:
 	jp AISwitchIfEnoughMons
 
 BrockAI:
-; if his active monster has a status condition, use a full heal
+; if his active monster has a status condition, use a panacea
 	ld a, [wEnemyMonStatus]
 	and a
 	ret z
-	jp AIUseFullHeal
+	jp AIUsePanacea
 
 MistyAI:
 	cp 50 percent + 1
@@ -376,7 +376,7 @@ LtSurgeAI:
 	ld a, [wEnemyMonStatus]
 	and a
 	ret z
-	jp AIUseFullHeal
+	jp AIUsePanacea
 
 ErikaAI:
 	cp 50 percent + 1
@@ -390,7 +390,7 @@ KogaAI:
 	ld a, [wEnemyMonStatus]
 	and a
 	ret z
-	jp AIUseFullHeal
+	jp AIUsePanacea
 
 BlaineAI:
 	cp 25 percent + 1
@@ -627,10 +627,10 @@ AIBattleWithdrawText:
 	text_far _AIBattleWithdrawText
 	text_end
 
-AIUseFullHeal:
+AIUsePanacea:
 	call AIPlayRestoringSFX
 	call AICureStatus
-	ld a, FULL_HEAL
+	ld a, PANACEA
 	jp AIPrintItemUse
 
 AICureStatus:

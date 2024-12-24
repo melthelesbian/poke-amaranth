@@ -660,7 +660,7 @@ _ViridianBlackboardSleepText::
 	line "asleep even after"
 	cont "battles."
 
-	para "Use AWAKENING to"
+	para "Use a PANACEA to"
 	line "wake them up!"
 	prompt
 
@@ -672,7 +672,7 @@ _ViridianBlackboardPoisonText::
 	para "Poison lingers"
 	line "after battles."
 
-	para "Use an ANTIDOTE"
+	para "Use a PANACEA"
 	line "to cure poison!"
 	prompt
 
@@ -684,7 +684,7 @@ _ViridianBlackboardPrlzText::
 	para "Paralysis remains"
 	line "after battles."
 
-	para "Use PARLYZ HEAL"
+	para "Use a PANACEA"
 	line "for treatment!"
 	prompt
 
@@ -697,7 +697,7 @@ _ViridianBlackboardBurnText::
 	para "Burns remain"
 	line "after battles."
 
-	para "Use BURN HEAL to"
+	para "Use a PANACEA to"
 	line "cure a burn!"
 	prompt
 
@@ -1390,40 +1390,10 @@ _PotionText::
 	text "!"
 	done
 
-_AntidoteText::
-	text_ram wNameBuffer
-	text " was"
-	line "cured of poison!"
-	done
-
-_ParlyzHealText::
-	text_ram wNameBuffer
-	text "'s"
-	line "rid of paralysis!"
-	done
-
-_BurnHealText::
-	text_ram wNameBuffer
-	text "'s"
-	line "burn was healed!"
-	done
-
-_IceHealText::
-	text_ram wNameBuffer
-	text " was"
-	line "defrosted!"
-	done
-
-_AwakeningText::
+_PanaceaText::
 	text_ram wNameBuffer
 	text_start
-	line "woke up!"
-	done
-
-_FullHealText::
-	text_ram wNameBuffer
-	text "'s"
-	line "health returned!"
+	line "was cured!"
 	done
 
 _ReviveText::

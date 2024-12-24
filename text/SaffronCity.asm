@@ -112,13 +112,9 @@ _SaffronCityGymSignText::
 _SaffronCityTrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "FULL HEAL cures"
+	para "PANACEA cures"
 	line "all ailments like"
 	cont "sleep and burns."
-
-	para "It costs a bit"
-	line "more, but it's"
-	cont "more convenient."
 	done
 
 _SaffronCityTrainerTips2Text::

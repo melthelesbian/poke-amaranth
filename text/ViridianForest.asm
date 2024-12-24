@@ -80,9 +80,9 @@ _ViridianForestTrainerTips1Text::
 	cont "grassy areas!"
 	done
 
-_ViridianForestUseAntidoteSignText::
+_ViridianForestUsePanaceaSignText::
 	text "For poison, use"
-	line "ANTIDOTE! Get it"
+	line "PANACEA! Get it"
 	cont "at #MON MARTs!"
 	done
 

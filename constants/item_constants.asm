@@ -17,11 +17,11 @@
 	const SAFARI_BALL   ; $08
 	const POKEDEX       ; $09
 	const MOON_STONE    ; $0A
-	const ANTIDOTE      ; $0B
-	const BURN_HEAL     ; $0C
-	const ICE_HEAL      ; $0D
-	const AWAKENING     ; $0E
-	const PARLYZ_HEAL   ; $0F
+	const UNUSED_0B     ; $0B (ANTIDOTE)
+	const UNUSED_0C     ; $0C (BURN_HEAL)
+	const UNUSED_0D     ; $0D (ICE_HEAL)
+	const UNUSED_0E     ; $0E (AWAKENING)
+	const UNUSED_0F     ; $0F (PARLYZ_HEAL)
 	const FULL_RESTORE  ; $10
 	const MAX_POTION    ; $11
 	const HYPER_POTION  ; $12
@@ -60,7 +60,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const NUGGET        ; $31
 	const DEVO_SPRAY    ; $32 (ITEM_32)
 	const POKE_DOLL     ; $33
-	const FULL_HEAL     ; $34
+	const PANACEA     ; $34
 	const REVIVE        ; $35
 	const MAX_REVIVE    ; $36
 	const UNUSED_37     ; $37 (GUARD_SPEC)

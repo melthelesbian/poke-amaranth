@@ -72,13 +72,8 @@ DEF CHOSE_SECOND_ITEM EQU 2
 ; PartyMenuItemUseMessagePointers indexes (see engine/menus/party_menu.asm)
 	const_next $F0
 DEF FIRST_PARTY_MENU_TEXT_ID EQU const_value
-	const ANTIDOTE_MSG         ; $F0
-	const BURN_HEAL_MSG        ; $F1
-	const ICE_HEAL_MSG         ; $F2
-	const AWAKENING_MSG        ; $F3
-	const PARALYZ_HEAL_MSG     ; $F4
 	const POTION_MSG           ; $F5
-	const FULL_HEAL_MSG        ; $F6
+	const PANACEA_MSG        ; $F6
 	const REVIVE_MSG           ; $F7
 	const RARE_CANDY_MSG       ; $F8
 

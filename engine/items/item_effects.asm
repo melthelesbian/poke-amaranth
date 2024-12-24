@@ -27,11 +27,11 @@ ItemUsePtrTable:
 	dw ItemUseBall       ; SAFARI_BALL
 	dw ItemUsePokedex    ; POKEDEX
 	dw ItemUseEvoStone   ; MOON_STONE
-	dw ItemUseMedicine   ; ANTIDOTE
-	dw ItemUseMedicine   ; BURN_HEAL
-	dw ItemUseMedicine   ; ICE_HEAL
-	dw ItemUseMedicine   ; AWAKENING
-	dw ItemUseMedicine   ; PARLYZ_HEAL
+	dw UnusableItem      ; UNUSED_0B (ANTIDOTE)
+	dw UnusableItem      ; UNUSED_0C (BURN_HEAL)
+	dw UnusableItem      ; UNUSED_0D (ICE_HEAL)
+	dw UnusableItem      ; UNUSED_0E (AWAKENING)
+	dw UnusableItem      ; UNUSED_0F (PARLYZ_HEAL)
 	dw ItemUseMedicine   ; FULL_RESTORE
 	dw ItemUseMedicine   ; MAX_POTION
 	dw ItemUseMedicine   ; HYPER_POTION
@@ -68,7 +68,7 @@ ItemUsePtrTable:
 	dw UnusableItem      ; NUGGET
 	dw ItemUseEvoStone   ; DEVO_SPRAY (ITEM_32)
 	dw ItemUsePokeDoll   ; POKE_DOLL
-	dw ItemUseMedicine   ; FULL_HEAL
+	dw ItemUseMedicine   ; PANACEA
 	dw ItemUseMedicine   ; REVIVE
 	dw ItemUseMedicine   ; MAX_REVIVE
 	dw UnusableItem      ; UNUSED_37 (GUARD_SPEC)
@@ -876,8 +876,8 @@ ItemUseMedicine:
 	ld a, [wCurItem]
 	cp REVIVE
 	jr nc, .healHP ; if it's a Revive or Max Revive
-	cp FULL_HEAL
-	jr z, .cureStatusAilment ; if it's a Full Heal
+	cp PANACEA
+	jr z, .cureStatusAilment ; if it's a panacea
 	cp HP_UP
 	jp nc, .useVitamin ; if it's a vitamin or Rare Candy
 	cp FULL_RESTORE
@@ -887,22 +887,7 @@ ItemUseMedicine:
 	ld bc, wPartyMon1Status - wPartyMon1
 	add hl, bc ; hl now points to status
 	ld a, [wCurItem]
-	lb bc, ANTIDOTE_MSG, 1 << PSN
-	cp ANTIDOTE
-	jr z, .checkMonStatus
-	lb bc, BURN_HEAL_MSG, 1 << BRN
-	cp BURN_HEAL
-	jr z, .checkMonStatus
-	lb bc, ICE_HEAL_MSG, 1 << FRZ
-	cp ICE_HEAL
-	jr z, .checkMonStatus
-	lb bc, AWAKENING_MSG, SLP_MASK
-	cp AWAKENING
-	jr z, .checkMonStatus
-	lb bc, PARALYZ_HEAL_MSG, 1 << PAR
-	cp PARLYZ_HEAL
-	jr z, .checkMonStatus
-	lb bc, FULL_HEAL_MSG, $ff ; Full Heal
+	lb bc, PANACEA_MSG, $ff ; panacea
 .checkMonStatus
 	ld a, [hl] ; pokemon's status
 	and c ; does the pokemon have a status ailment the item can cure?
@@ -1000,7 +985,7 @@ ItemUseMedicine:
 	ld a, [hld] ; status ailment
 	and a ; does the pokemon have a status ailment?
 	jp z, .healingItemNoEffect
-	ld a, FULL_HEAL
+	ld a, PANACEA
 	ld [wCurItem], a
 	dec hl
 	dec hl
@@ -1215,7 +1200,7 @@ ItemUseMedicine:
 	ld a, [wCurItem]
 	cp FULL_RESTORE
 	jr c, .playStatusAilmentCuringSound
-	cp FULL_HEAL
+	cp PANACEA
 	jr z, .playStatusAilmentCuringSound
 	ld a, SFX_HEAL_HP
 	call PlaySoundWaitForCurrent

@@ -19,12 +19,12 @@ ViridianForest_TextPointers:
 	dw_const ViridianForestYoungster2Text,      TEXT_VIRIDIANFOREST_YOUNGSTER2
 	dw_const ViridianForestYoungster3Text,      TEXT_VIRIDIANFOREST_YOUNGSTER3
 	dw_const ViridianForestYoungster4Text,      TEXT_VIRIDIANFOREST_YOUNGSTER4
-	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_ANTIDOTE
+	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_PANACEA
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POKE_BALL
 	dw_const ViridianForestYoungster5Text,      TEXT_VIRIDIANFOREST_YOUNGSTER5
 	dw_const ViridianForestTrainerTips1Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS1
-	dw_const ViridianForestUseAntidoteSignText, TEXT_VIRIDIANFOREST_USE_ANTIDOTE_SIGN
+	dw_const ViridianForestUsePanaceaSignText, TEXT_VIRIDIANFOREST_USE_PANACEA_SIGN
 	dw_const ViridianForestTrainerTips2Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS2
 	dw_const ViridianForestTrainerTips3Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS3
 	dw_const ViridianForestTrainerTips4Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS4
@@ -106,8 +106,8 @@ ViridianForestTrainerTips1Text:
 	text_far _ViridianForestTrainerTips1Text
 	text_end
 
-ViridianForestUseAntidoteSignText:
-	text_far _ViridianForestUseAntidoteSignText
+ViridianForestUsePanaceaSignText:
+	text_far _ViridianForestUsePanaceaSignText
 	text_end
 
 ViridianForestTrainerTips2Text:
