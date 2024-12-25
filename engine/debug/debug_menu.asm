@@ -60,10 +60,10 @@ IF DEF(_DEBUG)
 	jp StartNewGameDebug
 
 DebugBattlePlayerName:
-	db "Tom@"
+	db "AMARA@"
 
 DebugBattleRivalName:
-	db "Juerry@"
+	db "TONY@"
 
 DebugMenuOptions:
 	db   "FIGHT"
@@ -96,18 +96,20 @@ TestBattle: ; unreferenced except in _DEBUG
 	dec a
 	ld [hl], a
 
-	; Give the player a level 20 Rhydon.
-	ld a, RHYDON
+	DEF TEST_MON EQU ZUBAT
+
+	; Give the player a level 50 Pokémon.
+	ld a, TEST_MON
 	ld [wCurPartySpecies], a
-	ld a, 20
+	ld a, 50
 	ld [wCurEnemyLevel], a
 	xor a
 	ld [wMonDataLocation], a
 	ld [wCurMap], a
 	call AddPartyMon
 
-	; Fight against a level 20 Rhydon.
-	ld a, RHYDON
+	; Fight against a level 50 Pokémon.
+	ld a, TEST_MON
 	ld [wCurOpponent], a
 
 	predef InitOpponent

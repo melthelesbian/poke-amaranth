@@ -70,115 +70,120 @@ ROMX $8
 	"Music 2"
 ROMX $9
 	"Pics 1"
-	"Battle Engine 3"
 ROMX $A
 	"Pics 2"
-	"Battle Engine 4"
 ROMX $B
 	"Pics 3"
-	"Battle Engine 5"
 ROMX $C
 	"Pics 4"
-	"Battle Engine 6"
 ROMX $D
 	"Pics 5"
 ROMX $E
-	"Slot Machines"
-	"Battle Engine 7"
+	"Pics 6"
 ROMX $F
-	"Battle Core"
+	"Battle Engine 3"
+	"Battle Engine 4"
+	"Battle Engine 5"
+	"Battle Engine 6"
+	"Battle Engine 7"
 ROMX $10
-	"bank10"
+	"Battle Core"
 ROMX $11
+	"bank10"
+	"Slot Machines"
+ROMX $12
 	"Maps 5"
 	"Pokédex Rating"
 	"Maps 6"
 	"Hidden Objects Core"
-ROMX $12
+ROMX $13
 	"Maps 7"
 	"Screen Effects"
 	"Maps 8"
-ROMX $13
-	"Pics 6"
+ROMX $14
 	"Maps 9"
 	"Predefs"
-ROMX $14
+ROMX $15
 	"Maps 10"
 	"Battle Engine 8"
 	"Hidden Objects 2"
-ROMX $15
+ROMX $16
 	"Maps 11"
 	"Battle Engine 9"
 	"Maps 12"
 	"Diploma"
 	"Trainer Sight"
-ROMX $16
+ROMX $17
 	"Maps 13"
 	"Battle Engine 10"
 	"Maps 14"
 	"Saffron Guards"
-ROMX $17
+ROMX $18
 	"Maps 15"
 	"Starter Dex"
 	"Maps 16"
 	"Hidden Objects 3"
-ROMX $18
+ROMX $19
 	"Maps 17"
 	"Cinnabar Lab Fossils"
 	"Maps 18"
 	"Hidden Objects 4"
-ROMX $19
-	"Tilesets 1"
 ROMX $1A
+	"Tilesets 1"
+ROMX $1B
 	"Battle Engine 11"
 	"Tilesets 2"
-ROMX $1B
-	"Tilesets 3"
 ROMX $1C
-	"bank1C"
+	"Tilesets 3"
 ROMX $1D
+	"bank1C"
+ROMX $1E
 	"Maps 19"
 	"Itemfinder 1"
 	"Maps 20"
 	"Vending Machine"
 	"Maps 21"
 	"Itemfinder 2"
-ROMX $1E
-	"bank1E"
 ROMX $1F
+	"bank1E"
+ROMX $20
 	"Sound Effect Headers 3"
 	"Music Headers 3"
 	"Sound Effects 3"
 	"Audio Engine 3"
 	"Music 3"
-ROMX $20
-	"Text 1"
 ROMX $21
-	"Text 2"
+	"Text 1"
 ROMX $22
-	"Text 3"
+	"Text 2"
 ROMX $23
-	"Text 4"
+	"Text 3"
 ROMX $24
-	"Text 5"
+	"Text 4"
 ROMX $25
-	"Text 6"
+	"Text 5"
 ROMX $26
-	"Text 7"
+	"Text 6"
 ROMX $27
-	"Text 8"
+	"Text 7"
 ROMX $28
-	"Text 9"
+	"Text 8"
 ROMX $29
-	"Text 10"
+	"Text 9"
 ROMX $2A
-	"Text 11"
+	"Text 10"
 ROMX $2B
-	"Pokédex Text"
+	"Text 11"
 ROMX $2C
-	"Move Names"
+	"Pokédex Text"
 ROMX $2D
+	"Move Names"
+ROMX $2E
 	"Tilesets 4"
+ROMX $2F
+	"Pics 7"
+ROMX $30
+	"Trainer Pics"
 WRAM0
 	"Audio RAM"
 	org $c100

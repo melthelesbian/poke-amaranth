@@ -195,9 +195,11 @@ HoFLoadPlayerPics:
 	ld de, LeafPicBack
 	ld a, BANK(LeafPicBack)
 	call UncompressSpriteFromDE
-	predef ScaleSpriteByTwo
+	ld a, $66 ; [INFO] this gets bitwise &'d in LoadUncompressedSpriteData
 	ld de, vBackPic
-	call InterlaceMergeSpriteBuffers
+	push de
+	jp LoadUncompressedBackSprite
+	nop
 	ld c, $1
 
 HoFLoadMonPlayerPicTileIDs:
