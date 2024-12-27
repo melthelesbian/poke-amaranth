@@ -45,7 +45,7 @@ Moves:
 	move BUG_BUZZ,     SPECIAL_DOWN_SIDE_EFFECT,   90,   BUG,          100, 10 ; (HORN_DRILL)
 	move TACKLE,       NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 35
 	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,      90,   NORMAL,       100, 15
-	move WRAP,         TRAPPING_EFFECT,            20,   NORMAL,       85,  20
+	move WRAP,         TRAPPING_EFFECT,            2,   NORMAL,       85,  20
 	move TAKE_DOWN,    RECOIL_EFFECT,              120,  NORMAL,       100, 20
 	move THRASH,       THRASH_PETAL_DANCE_EFFECT,  100,  DRAGON,       100, 10
 	move FLARE_RUSH,   RECOIL_EFFECT,              120,  FIRE,         100, 15 ; (DOUBLE_EDGE)
