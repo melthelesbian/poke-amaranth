@@ -1,11 +1,25 @@
 ChoosePlayerName:
 	call OakSpeechSlidePicRight
-	ld de, DefaultNamesPlayer
+	; [INFO] check player style
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cute
+	; load cute names
+	ld de, DefaultNamesPlayerCool
 	call DisplayIntroNameTextBox
 	ld a, [wCurrentMenuItem]
 	and a
 	jr z, .customName
-	ld hl, DefaultNamesPlayerList
+	ld hl, DefaultNamesPlayerCoolList
+	jr .gotName
+.cute
+	ld de, DefaultNamesPlayerCute
+	call DisplayIntroNameTextBox
+	ld a, [wCurrentMenuItem]
+	and a
+	jr z, .customName
+	ld hl, DefaultNamesPlayerCuteList
+.gotName
 	call GetDefaultName
 	ld de, wPlayerName
 	call OakSpeechSlidePicLeft
@@ -20,7 +34,16 @@ ChoosePlayerName:
 	jr z, .customName
 	call ClearScreen
 	call Delay3
+	; [INFO] check player style
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cute2
+	ld de, RedPicFront
+	jr .displayPic
+.cute2
 	ld de, LeafPicFront
+.displayPic
+	ASSERT BANK(RedPicFront) == BANK(LeafPicFront)
 	ld b, BANK(LeafPicFront)
 	call IntroDisplayPicCenteredOrUpperRight
 .done

@@ -8,7 +8,7 @@ _SaffronGateGuardGeeImThirstyText::
 	done
 
 _SaffronGateGuardImParchedText::
-	text "Whoa, boy!"
+	text "Whoa, bud!"
 	line "I'm parched!"
 	cont "..."
 	cont "Huh? I can have"

@@ -323,6 +323,10 @@ FossilAerodactylPic::  INCBIN "gfx/pokemon/front/fossilaerodactyl.pic"
 FossilKabutopsPic::    INCBIN "gfx/pokemon/front/fossilkabutops.pic"
 GhostPic::             INCBIN "gfx/battle/ghost.pic"
 
+LeafPicBack::   INCBIN "gfx/player/leafb.pic"
+RedPicBack::    INCBIN "gfx/player/redb.pic"
+OldManPicBack:: INCBIN "gfx/battle/oldmanb.pic"
+
 
 SECTION "Trainer Pics", ROMX
 
@@ -373,6 +377,3 @@ LoreleiPic::       INCBIN "gfx/trainers/lorelei.pic"
 ChannelerPic::     INCBIN "gfx/trainers/channeler.pic"
 AgathaPic::        INCBIN "gfx/trainers/agatha.pic"
 LancePic::         INCBIN "gfx/trainers/lance.pic"
-
-LeafPicBack::  INCBIN "gfx/player/leafb.pic"
-OldManPicBack::    INCBIN "gfx/battle/oldmanb.pic"

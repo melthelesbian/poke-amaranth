@@ -88,8 +88,8 @@ _CeladonGymTM21NoRoomText::
 _CeladonGymBattleText2::
 	text "Hey!"
 
-	para "You are not"
-	line "allowed in here!"
+	para "What are you"
+	line "doing in here?"
 	done
 
 _CeladonGymEndBattleText2::
@@ -124,8 +124,9 @@ _CeladonGymAfterBattleText3::
 	done
 
 _CeladonGymBattleText4::
-	text "Aren't you the"
-	line "peeping Tom?"
+	text "I'm so sick of"
+	line "that peeping"
+	cont "Tom!"
 	done
 
 _CeladonGymEndBattleText4::
@@ -134,9 +135,10 @@ _CeladonGymEndBattleText4::
 	prompt
 
 _CeladonGymAfterBattleText4::
-	text "Oh, you weren't"
-	line "peeping? We get a"
-	cont "lot of gawkers!"
+	text "We get a lot of"
+	line "gawkers! Sorry"
+	cont "I took it out"
+	cont "on you."
 	done
 
 _CeladonGymBattleText5::

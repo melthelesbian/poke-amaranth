@@ -2,7 +2,7 @@
 
 ## SPRITE CREDITS
 
-[Vortyne's PureRGB](https://github.com/Vortyne/pureRGB/) for the following Pokémon Backsprites:
+[Vortyne's PureRGB](https://github.com/Vortyne/pureRGB/) for the 48x48 Red backsprite and the following Pokémon Backsprites:
 
 * Arcanine
 * Articuno

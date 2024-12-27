@@ -1712,6 +1712,12 @@ _OakSpeechText3::
 	cont "awaits! Let's go!"
 	done
 
+_CuteCoolText::
+	text "Is your style"
+	line "CUTE, or is it"
+	cont "more COOL?"
+	done
+
 _DoYouWantToNicknameText::
 	text "Do you want to"
 	line "give a nickname"

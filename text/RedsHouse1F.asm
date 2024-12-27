@@ -1,6 +1,6 @@
 _RedsHouse1FMomWakeUpText::
 	text "MOM: Right."
-	line "All girls dream"
+	line "Everyone dreams"
 	cont "of traveling."
 	cont "It said so on TV."
 

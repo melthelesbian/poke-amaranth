@@ -178,7 +178,7 @@ _SilphCo7FRivalVictoryText::
 
 	para "You're not good"
 	line "enough to play"
-	cont "with us big boys!"
+	cont "with us!"
 	prompt
 
 _SilphCo7FRivalGoodLuckToYouText::

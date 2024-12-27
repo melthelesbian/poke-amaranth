@@ -33,7 +33,7 @@ _BillsHouseBillNoYouGottaHelpText::
 	cont "in deep trouble!"
 
 	para "What do you say,"
-	line "chief? Please?"
+	line "buddy? Please?"
 	cont "OK? All right!"
 	prompt
 

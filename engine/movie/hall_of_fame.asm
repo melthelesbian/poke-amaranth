@@ -183,7 +183,16 @@ HoFMonInfoText:
 	next "TYPE2/@"
 
 HoFLoadPlayerPics:
+	; [INFO] check player style
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cuteFront
+	ld de, RedPicFront
+	jr .continueFront
+.cuteFront
 	ld de, LeafPicFront
+.continueFront
+	ASSERT BANK(RedPicFront) == BANK(LeafPicFront)
 	ld a, BANK(LeafPicFront)
 	call UncompressSpriteFromDE
 	ld hl, sSpriteBuffer1
@@ -192,7 +201,16 @@ HoFLoadPlayerPics:
 	call CopyData
 	ld de, vFrontPic
 	call InterlaceMergeSpriteBuffers
+	; [INFO] check player style
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cuteBack
+	ld de, RedPicBack
+	jr .continueBack
+.cuteBack
 	ld de, LeafPicBack
+.continueBack
+	ASSERT BANK(RedPicBack) == BANK(LeafPicBack)
 	ld a, BANK(LeafPicBack)
 	call UncompressSpriteFromDE
 	ld a, $66 ; [INFO] this gets bitwise &'d in LoadUncompressedSpriteData

@@ -64,6 +64,13 @@ OakSpeech:
 	ld a, [wStatusFlags6]
 	bit BIT_DEBUG_MODE, a
 	jp nz, .skipSpeech
+	; [INFO] adapted from player gender tutorial
+	ld hl, CuteCoolText  
+  	call PrintText     ; show this text
+  	call CuteCoolChoice ; added routine at the end of this file
+   	ld a, [wCurrentMenuItem]
+   	ld [wPlayerStyle], a ; store player's style. 00 for cool, 01 for cute
+   	call ClearScreen ; clear the screen before resuming normal intro
 	ld de, ProfOakPic
 	lb bc, BANK(ProfOakPic), $00
 	call IntroDisplayPicCenteredOrUpperRight
@@ -72,7 +79,7 @@ OakSpeech:
 	call PrintText
 	call GBFadeOutToWhite
 	call ClearScreen
-	ld a, NIDORINO
+	ld a, RATTATA
 	ld [wd0b5], a
 	ld [wCurPartySpecies], a
 	call GetMonHeader
@@ -83,7 +90,16 @@ OakSpeech:
 	call PrintText
 	call GBFadeOutToWhite
 	call ClearScreen
+	; [INFO] check player style
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cute1
+	ld de, RedPicFront
+	jr .displayPlayerPic1
+.cute1
 	ld de, LeafPicFront
+.displayPlayerPic1
+	ASSERT BANK(RedPicFront) == BANK(LeafPicFront)
 	lb bc, BANK(LeafPicFront), $00
 	call IntroDisplayPicCenteredOrUpperRight
 	call MovePicLeft
@@ -102,7 +118,16 @@ OakSpeech:
 .skipSpeech
 	call GBFadeOutToWhite
 	call ClearScreen
+	; [INFO] check player gender
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cute2
+	ld de, RedPicFront
+	jr .displayPlayerPic2
+.cute2
 	ld de, LeafPicFront
+.displayPlayerPic2
+	ASSERT BANK(RedPicFront) == BANK(LeafPicFront)
 	lb bc, BANK(LeafPicFront), $00
 	call IntroDisplayPicCenteredOrUpperRight
 	call GBFadeInFromWhite
@@ -121,9 +146,18 @@ OakSpeech:
 	ld [MBC1RomBank], a
 	ld c, 4
 	call DelayFrames
+	; [INFO] check player style
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cute3
+	ld de, RedSprite
+	jr .displayPlayerSprite
+.cute3
 	ld de, LeafSprite
-	ld hl, vSprites
+.displayPlayerSprite
+	ASSERT BANK(RedSprite) == BANK(LeafSprite)
 	lb bc, BANK(LeafSprite), $0C
+	ld hl, vSprites
 	call CopyVideoData
 	ld de, ShrinkPic1
 	lb bc, BANK(ShrinkPic1), $00
@@ -166,7 +200,7 @@ OakSpeechText1:
 OakSpeechText2:
 	text_far _OakSpeechText2A
 	; BUG: The cry played does not match the sprite displayed.
-	sound_cry_nidorina
+	sound_cry_rattata
 	text_far _OakSpeechText2B
 	text_end
 IntroducePlayerText:
@@ -177,6 +211,9 @@ IntroduceRivalText:
 	text_end
 OakSpeechText3:
 	text_far _OakSpeechText3
+	text_end
+CuteCoolText:
+	text_far _CuteCoolText
 	text_end
 
 FadeInIntroPic:
@@ -240,3 +277,22 @@ IntroDisplayPicCenteredOrUpperRight:
 	xor a
 	ldh [hStartTileID], a
 	predef_jump CopyUncompressedPicToTilemap
+
+; displays cool/cute choice
+CuteCoolChoice::
+	call SaveScreenTilesToBuffer1
+	call InitCuteCoolTextBoxParameters
+	jr DisplayCuteCoolChoice
+
+InitCuteCoolTextBoxParameters::
+	ld a, CUTE_COOL_MENU
+	ld [wTwoOptionMenuID], a
+	coord hl, 13, 7 
+	ld bc, $80e
+	ret
+	
+DisplayCuteCoolChoice::
+	ld a, $14
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
+	jp LoadScreenTilesFromBuffer1

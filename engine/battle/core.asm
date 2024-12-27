@@ -6396,11 +6396,19 @@ SwapPlayerAndEnemyLevels:
 LoadPlayerBackPic:
 	ld a, [wBattleType]
 	dec a ; is it the old man tutorial?
-	ld de, LeafPicBack
 	jr nz, .next
 	ld de, OldManPicBack
 .next
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cute
+	ld de, RedPicBack
+	jr .continueLoading
+.cute
+	ld de, LeafPicBack
+.continueLoading
 	ld a, BANK(LeafPicBack)
+	ASSERT BANK(RedPicBack) == BANK(LeafPicBack)
 	ASSERT BANK(LeafPicBack) == BANK(OldManPicBack)
 	call UncompressSpriteFromDE
 	call LoadBackSpriteUnzoomed

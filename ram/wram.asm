@@ -1623,7 +1623,7 @@ wEvoStoneItemID:: db
 wSavedNPCMovementDirections2Index:: db
 
 wPlayerName:: ds NAME_LENGTH
-
+wPlayerStyle:: db
 
 SECTION "Party Data", WRAM0
 

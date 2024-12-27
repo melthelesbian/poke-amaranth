@@ -1994,7 +1994,15 @@ RunMapScript::
 	ret
 
 LoadWalkingPlayerSpriteGraphics::
+	; [INFO] check player style
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cute
+	ld de, RedSprite
+	jr .continue
+.cute
 	ld de, LeafSprite
+.continue
 	ld hl, vNPCSprites
 	jr LoadPlayerSpriteGraphicsCommon
 
@@ -2004,12 +2012,22 @@ LoadSurfingPlayerSpriteGraphics::
 	jr LoadPlayerSpriteGraphicsCommon
 
 LoadBikePlayerSpriteGraphics::
+	; [INFO] check player style
+	ld a, [wPlayerStyle]
+	and a
+	jr z, .cute
+	ld de, RedBikeSprite
+	jr .continue
+.cute
 	ld de, LeafBikeSprite
+.continue
 	ld hl, vNPCSprites
 
 LoadPlayerSpriteGraphicsCommon::
 	push de
 	push hl
+	; [DEBUG] this probably should check the style but they should be in the same bank
+	ASSERT BANK(RedSprite) == BANK(LeafSprite)
 	lb bc, BANK(LeafSprite), $0c
 	call CopyVideoData
 	pop hl
@@ -2021,6 +2039,7 @@ LoadPlayerSpriteGraphicsCommon::
 	inc d
 .noCarry
 	set 3, h
+	ASSERT BANK(RedSprite) == BANK(LeafSprite)
 	lb bc, BANK(LeafSprite), $0c
 	jp CopyVideoData
 
