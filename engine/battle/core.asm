@@ -2919,7 +2919,7 @@ PrintMenuItem:
 	jr z, .noMovePower
 	and a
 	jr z, .noMovePower
-	lb bc, LEFT_ALIGN | 1, 3
+	lb bc, 1, 3
 	call PrintNumber
 	jr .printAccuracy
 .noMovePower
@@ -2930,13 +2930,238 @@ PrintMenuItem:
 	hlcoord 1, 10
 	ld de, AccuracyText
 	call PlaceString
+	ld a, [wPlayerMoveEffect]
+	cp SWIFT_EFFECT
+	jr z, .infAccuracy
 	; convert accuracy
 	ld a, [wPlayerMoveAccuracy]
 	farcall ConvertPercentagesBattle
 	ld de, wBuffer
 	hlcoord 5, 10
-	lb bc, LEFT_ALIGN | 1, 3
+	lb bc, 1, 3
 	call PrintNumber
+	hlcoord 8, 10
+	ld [hl], "%"
+	jr .printHighCrit
+.infAccuracy
+	hlcoord 5, 10
+	ld [hl], "<INF>"
+.printHighCrit
+	ld a, [wPlayerSelectedMove]
+	ld b, a
+	ld hl, HighCriticalMoves
+.hcLoop
+	ld a, [hli] ; read move from table
+	cp b
+	jr z, .highCritMove
+	inc a
+	jr nz, .hcLoop
+	jr .statusEffect
+.highCritMove
+	hlcoord 9, 8
+	ld [hl], "<CH>"
+	jp .moveDisabled
+.statusEffect
+	ld a, [wPlayerMoveEffect]
+.noAdditionalEffect
+	cp NO_ADDITIONAL_EFFECT
+	jp z, .moveDisabled
+.checkPSN
+	cp POISON_EFFECT
+	jr z, .printPSN
+	cp POISON_SIDE_EFFECT1
+	jr z, .printPSN
+	cp POISON_SIDE_EFFECT2
+	jr z, .printPSN
+	jr .checkSLP
+.printPSN
+	hlcoord 9, 8
+	ld [hl], "<PSN>"
+	jp .moveDisabled
+.checkSLP
+	cp SLEEP_EFFECT
+	jr z, .printSLP
+	jr .checkCNF
+.printSLP
+	hlcoord 9, 8
+	ld [hl], "<SLP>"
+	jp .moveDisabled
+.checkCNF
+	cp CONFUSION_EFFECT
+	jr z, .printCNF
+	cp CONFUSION_SIDE_EFFECT
+	jr z, .printCNF
+	jr .checkFRZ
+.printCNF
+	hlcoord 9, 8
+	ld [hl], "<CNF>"
+	jp .moveDisabled
+.checkFRZ
+	cp FREEZE_SIDE_EFFECT
+	jr z, .printFRZ
+	jr .checkBRN
+.printFRZ
+	hlcoord 9, 8
+	ld [hl], "<FRZ>"
+	jp .moveDisabled
+.checkBRN
+	cp BURN_SIDE_EFFECT1
+	jr z, .printBRN
+	cp BURN_SIDE_EFFECT2
+	jr z, .printBRN
+	jr .checkPAR
+.printBRN
+	hlcoord 9, 8
+	ld [hl], "<BRN>"
+	jp .moveDisabled
+.checkPAR
+	cp PARALYZE_EFFECT
+	jr z, .printPAR
+	cp PARALYZE_SIDE_EFFECT1
+	jr z, .printPAR
+	cp PARALYZE_SIDE_EFFECT2
+	jr z, .printPAR
+	jr .checkStatChangeMoves
+.printPAR
+	hlcoord 9, 8
+	ld [hl], "<PAR>"
+	jp .moveDisabled
+.checkStatChangeMoves
+	cp ATTACK_UP1_EFFECT
+	jr z, .printStatUp1
+	cp DEFENSE_UP1_EFFECT
+	jr z, .printStatUp1
+	cp SPEED_UP1_EFFECT
+	jr z, .printStatUp1
+	cp SPECIAL_UP1_EFFECT
+	jr z, .printStatUp1
+	cp ATTACK_UP2_EFFECT
+	jr z, .printStatUp2
+	cp DEFENSE_UP2_EFFECT
+	jr z, .printStatUp2
+	cp SPEED_UP2_EFFECT
+	jr z, .printStatUp2
+	cp SPECIAL_UP2_EFFECT
+	jr z, .printStatUp2
+	cp ATTACK_DOWN1_EFFECT
+	jr z, .printStatDown1
+	cp ATTACK_DOWN_SIDE_EFFECT
+	jr z, .printStatDown1
+	cp DEFENSE_DOWN1_EFFECT
+	jr z, .printStatDown1
+	cp DEFENSE_DOWN_SIDE_EFFECT
+	jr z, .printStatDown1
+	cp SPEED_DOWN1_EFFECT
+	jr z, .printStatDown1
+	cp SPEED_DOWN_SIDE_EFFECT
+	jr z, .printStatDown1
+	cp SPECIAL_DOWN1_EFFECT
+	jr z, .printStatDown1
+	cp SPECIAL_DOWN_SIDE_EFFECT
+	jr z, .printStatDown1
+	cp ATTACK_DOWN2_EFFECT
+	jr z, .printStatDown2
+	cp DEFENSE_DOWN2_EFFECT
+	jr z, .printStatDown2
+	cp SPEED_DOWN2_EFFECT
+	jr z, .printStatDown2
+	cp SPECIAL_DOWN2_EFFECT
+	jr z, .printStatDown2
+	jr .checkHeal
+.printStatUp1
+	hlcoord 9, 8
+	ld [hl], "<U1>"
+	jp .moveDisabled
+.printStatUp2
+	hlcoord 9, 8
+	ld [hl], "<U2>"
+	jp .moveDisabled
+.printStatDown1
+	hlcoord 9, 8
+	ld [hl], "<D1>"
+	jp .moveDisabled
+.printStatDown2
+	hlcoord 9, 8
+	ld [hl], "<D2>"
+	jp .moveDisabled
+.checkHeal
+	cp HEAL_EFFECT
+	jr z, .printHeal
+	cp DRAIN_HP_EFFECT
+	jr z, .printHeal
+	cp LEECH_SEED_EFFECT
+	jr z, .printHeal
+	jr .checkRecoil
+.printHeal
+	hlcoord 9, 8
+	ld [hl], "<HEART>"
+	jp .moveDisabled
+.checkRecoil
+	cp RECOIL_EFFECT
+	jr z, .printRecoil
+	jr .checkFlinch
+.printRecoil
+	hlcoord 9, 8
+	ld [hl], "<BOUNCE>"
+	jp .moveDisabled
+.checkFlinch
+	cp FLINCH_SIDE_EFFECT1
+	jr z, .printFlinch
+	cp FLINCH_SIDE_EFFECT2
+	jr z, .printFlinch
+	jr .checkMultiTurn
+.printFlinch
+	hlcoord 9, 8
+	ld [hl], "<PAIN>"
+	jp .moveDisabled
+.checkMultiTurn
+	cp CHARGE_EFFECT
+	jr z, .printMultiTurn
+	cp FLY_EFFECT
+	jr z, .printMultiTurn
+	jr .checkMultiHit
+.printMultiTurn
+	hlcoord 9, 8
+	ld [hl], "<CLOCK>"
+	jp .moveDisabled
+.checkMultiHit
+	cp ATTACK_TWICE_EFFECT
+	jr z, .printMultiHit1
+	cp TWO_TO_FIVE_ATTACKS_EFFECT
+	jr z, .printMultiHit2
+	cp TWINEEDLE_EFFECT
+	jr z, .printMultiHit1
+	jr .checkTrapping
+.printMultiHit1
+	hlcoord 8, 9
+	ld [hl], "+"
+	jp .moveDisabled
+.printMultiHit2
+	hlcoord 8, 9
+	ld [hl], "×"
+	jp .moveDisabled
+.checkTrapping
+	cp TRAPPING_EFFECT
+	jr z, .printTrapping
+	jr .checkRage
+.printTrapping
+	hlcoord 9, 8
+	ld [hl], "<SPIRAL>"
+	jp .moveDisabled
+.checkRage
+	cp RAGE_EFFECT
+	jr z, .printRage
+	cp THRASH_PETAL_DANCE_EFFECT
+	jr z, .printRage
+	jr .printUnique
+.printRage
+	hlcoord 9, 8
+	ld [hl], "<ANGRY>"
+	jp .moveDisabled
+; [INFO] default to unique effect
+.printUnique
+	hlcoord 9, 8
+	ld [hl], "<6STAR>"
 .moveDisabled
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
@@ -4645,8 +4870,6 @@ JumpToOHKOMoveEffect:
 	ld a, [wMoveMissed]
 	dec a
 	ret
-
-INCLUDE "data/battle/unused_critical_hit_moves.asm"
 
 ; determines if attack is a critical hit
 ; Azure Heights claims "the fastest pokémon (who are, not coincidentally,

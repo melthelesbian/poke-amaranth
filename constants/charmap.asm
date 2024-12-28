@@ -157,6 +157,28 @@
 	charmap "'t",        $be
 	charmap "'v",        $bf
 
+	charmap "<ANGRY>",   $cd
+	charmap "<SPIRAL>",  $ce
+	charmap "<CLOCK>",   $cf
+
+	charmap "<BOUNCE>",  $d0
+	charmap "<PAIN>",    $d1
+	charmap "<HEART>",   $d2
+	charmap "<INF>",     $d3
+	charmap "<U1>",      $d4
+	charmap "<U2>",      $d5
+	charmap "<D1>",      $d6
+	charmap "<D2>",      $d7
+	charmap "<PSN>",     $d8
+	charmap "<SLP>",     $d9
+	charmap "<CNF>",     $da
+	charmap "<FRZ>",     $db
+	charmap "<BRN>",     $dc
+	charmap "<PAR>",     $dd
+	charmap "<CH>",      $de
+	charmap "<6STAR>",   $df
+
+
 	charmap "'",         $e0
 	charmap "<PK>",      $e1
 	charmap "<MN>",      $e2
@@ -169,10 +191,8 @@
 	charmap "!",         $e7
 	charmap ".",         $e8
 
-	charmap "ァ",         $e9 ; katakana small a, unused
-	charmap "ゥ",         $ea ; katakana small u, unused
-	charmap "ェ",         $eb ; katakana small e, unused
-
+	charmap "%",         $e9
+	charmap "+",         $ea
 	charmap "▷",         $ec
 	charmap "▶",         $ed
 	charmap "▼",         $ee
