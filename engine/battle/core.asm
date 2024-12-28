@@ -2972,108 +2972,42 @@ PrintMenuItem:
 	jp z, .finished
 	cp SPLASH_EFFECT
 	jp z, .finished
-.checkPSN
-	cp POISON_EFFECT
-	jr z, .printPSN
-	cp POISON_SIDE_EFFECT1
-	jr z, .printPSN
-	cp POISON_SIDE_EFFECT2
-	jr z, .printPSN
-	jr .checkSLP
+.processMoveEffectPrintHandlers
+	ld hl, MoveEffectPrintHandlers
+	ld de, 3
+	call IsInArray
+	jr c, .found
+	jp .printUnique
+.found
+	inc hl
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	jp hl
 .printPSN
 	hlcoord 9, 8
 	ld [hl], "<PSN>"
 	jp .finished
-.checkSLP
-	cp SLEEP_EFFECT
-	jr z, .printSLP
-	jr .checkCNF
 .printSLP
 	hlcoord 9, 8
 	ld [hl], "<SLP>"
 	jp .finished
-.checkCNF
-	cp CONFUSION_EFFECT
-	jr z, .printCNF
-	cp CONFUSION_SIDE_EFFECT
-	jr z, .printCNF
-	jr .checkFRZ
 .printCNF
 	hlcoord 9, 8
 	ld [hl], "<CNF>"
 	jp .finished
-.checkFRZ
-	cp FREEZE_SIDE_EFFECT
-	jr z, .printFRZ
-	jr .checkBRN
 .printFRZ
 	hlcoord 9, 8
 	ld [hl], "<FRZ>"
 	jp .finished
-.checkBRN
-	cp BURN_SIDE_EFFECT1
-	jr z, .printBRN
-	cp BURN_SIDE_EFFECT2
-	jr z, .printBRN
-	jr .checkPAR
 .printBRN
 	hlcoord 9, 8
 	ld [hl], "<BRN>"
 	jp .finished
-.checkPAR
-	cp PARALYZE_EFFECT
-	jr z, .printPAR
-	cp PARALYZE_SIDE_EFFECT1
-	jr z, .printPAR
-	cp PARALYZE_SIDE_EFFECT2
-	jr z, .printPAR
-	jr .checkStatChangeMoves
 .printPAR
 	hlcoord 9, 8
 	ld [hl], "<PAR>"
 	jp .finished
-.checkStatChangeMoves
-	cp ATTACK_UP1_EFFECT
-	jr z, .printStatUp1
-	cp DEFENSE_UP1_EFFECT
-	jr z, .printStatUp1
-	cp SPEED_UP1_EFFECT
-	jr z, .printStatUp1
-	cp SPECIAL_UP1_EFFECT
-	jr z, .printStatUp1
-	cp ATTACK_UP2_EFFECT
-	jr z, .printStatUp2
-	cp DEFENSE_UP2_EFFECT
-	jr z, .printStatUp2
-	cp SPEED_UP2_EFFECT
-	jr z, .printStatUp2
-	cp SPECIAL_UP2_EFFECT
-	jr z, .printStatUp2
-	cp ATTACK_DOWN1_EFFECT
-	jr z, .printStatDown1
-	cp ATTACK_DOWN_SIDE_EFFECT
-	jr z, .printStatDown1
-	cp DEFENSE_DOWN1_EFFECT
-	jr z, .printStatDown1
-	cp DEFENSE_DOWN_SIDE_EFFECT
-	jr z, .printStatDown1
-	cp SPEED_DOWN1_EFFECT
-	jr z, .printStatDown1
-	cp SPEED_DOWN_SIDE_EFFECT
-	jr z, .printStatDown1
-	cp SPECIAL_DOWN1_EFFECT
-	jr z, .printStatDown1
-	cp SPECIAL_DOWN_SIDE_EFFECT
-	jr z, .printStatDown1
-	cp ATTACK_DOWN2_EFFECT
-	jr z, .printStatDown2
-	cp DEFENSE_DOWN2_EFFECT
-	jr z, .printStatDown2
-	cp SPEED_DOWN2_EFFECT
-	jr z, .printStatDown2
-	cp SPECIAL_DOWN2_EFFECT
-	jr z, .printStatDown2
-	jr .checkHeal
 .printStatUp1
 	hlcoord 9, 8
 	ld [hl], "<U1>"
@@ -3090,54 +3024,22 @@ PrintMenuItem:
 	hlcoord 9, 8
 	ld [hl], "<D2>"
 	jp .finished
-.checkHeal
-	cp HEAL_EFFECT
-	jr z, .printHeal
-	cp DRAIN_HP_EFFECT
-	jr z, .printHeal
-	cp LEECH_SEED_EFFECT
-	jr z, .printHeal
-	jr .checkRecoil
 .printHeal
 	hlcoord 9, 8
 	ld [hl], "<HEART>"
 	jp .finished
-.checkRecoil
-	cp RECOIL_EFFECT
-	jr z, .printRecoil
-	jr .checkFlinch
 .printRecoil
 	hlcoord 9, 8
 	ld [hl], "<BOUNCE>"
 	jp .finished
-.checkFlinch
-	cp FLINCH_SIDE_EFFECT1
-	jr z, .printFlinch
-	cp FLINCH_SIDE_EFFECT2
-	jr z, .printFlinch
-	jr .checkMultiTurn
 .printFlinch
 	hlcoord 9, 8
 	ld [hl], "<PAIN>"
 	jp .finished
-.checkMultiTurn
-	cp CHARGE_EFFECT
-	jr z, .printMultiTurn
-	cp FLY_EFFECT
-	jr z, .printMultiTurn
-	jr .checkMultiHit
 .printMultiTurn
 	hlcoord 9, 8
 	ld [hl], "<CLOCK>"
 	jp .finished
-.checkMultiHit
-	cp ATTACK_TWICE_EFFECT
-	jr z, .printMultiHit1
-	cp TWO_TO_FIVE_ATTACKS_EFFECT
-	jr z, .printMultiHit2
-	cp TWINEEDLE_EFFECT
-	jr z, .printMultiHit1
-	jr .checkTrapping
 .printMultiHit1
 	hlcoord 8, 9
 	ld [hl], "+"
@@ -3146,20 +3048,10 @@ PrintMenuItem:
 	hlcoord 8, 9
 	ld [hl], "×"
 	jp .finished
-.checkTrapping
-	cp TRAPPING_EFFECT
-	jr z, .printTrapping
-	jr .checkRage
 .printTrapping
 	hlcoord 9, 8
 	ld [hl], "<SPIRAL>"
 	jp .finished
-.checkRage
-	cp RAGE_EFFECT
-	jr z, .printRage
-	cp THRASH_PETAL_DANCE_EFFECT
-	jr z, .printRage
-	jr .printUnique
 .printRage
 	hlcoord 9, 8
 	ld [hl], "<ANGRY>"
@@ -3190,6 +3082,55 @@ DisabledText:
 
 TypeText:
 	db "TYPE@"
+
+MoveEffectPrintHandlers:
+	dbw POISON_EFFECT, PrintMenuItem.printPSN
+	dbw POISON_SIDE_EFFECT1, PrintMenuItem.printPSN
+	dbw POISON_SIDE_EFFECT2, PrintMenuItem.printPSN
+	dbw SLEEP_EFFECT, PrintMenuItem.printSLP
+	dbw CONFUSION_EFFECT, PrintMenuItem.printCNF
+	dbw CONFUSION_SIDE_EFFECT, PrintMenuItem.printCNF
+	dbw FREEZE_SIDE_EFFECT, PrintMenuItem.printFRZ
+	dbw BURN_SIDE_EFFECT1, PrintMenuItem.printBRN
+	dbw BURN_SIDE_EFFECT2, PrintMenuItem.printBRN
+	dbw PARALYZE_EFFECT, PrintMenuItem.printPAR
+	dbw PARALYZE_SIDE_EFFECT1, PrintMenuItem.printPAR
+	dbw PARALYZE_SIDE_EFFECT2, PrintMenuItem.printPAR
+	dbw ATTACK_UP1_EFFECT, PrintMenuItem.printStatUp1
+	dbw DEFENSE_UP1_EFFECT, PrintMenuItem.printStatUp1
+	dbw SPEED_UP1_EFFECT, PrintMenuItem.printStatUp1
+	dbw SPECIAL_UP1_EFFECT, PrintMenuItem.printStatUp1
+	dbw ATTACK_UP2_EFFECT, PrintMenuItem.printStatUp2
+	dbw DEFENSE_UP2_EFFECT, PrintMenuItem.printStatUp2
+	dbw SPEED_UP2_EFFECT, PrintMenuItem.printStatUp2
+	dbw SPECIAL_UP2_EFFECT, PrintMenuItem.printStatUp2
+	dbw ATTACK_DOWN1_EFFECT, PrintMenuItem.printStatDown1
+	dbw ATTACK_DOWN_SIDE_EFFECT, PrintMenuItem.printStatDown1
+	dbw DEFENSE_DOWN1_EFFECT, PrintMenuItem.printStatDown1
+	dbw DEFENSE_DOWN_SIDE_EFFECT, PrintMenuItem.printStatDown1
+	dbw SPEED_DOWN1_EFFECT, PrintMenuItem.printStatDown1
+	dbw SPEED_DOWN_SIDE_EFFECT, PrintMenuItem.printStatDown1
+	dbw SPECIAL_DOWN1_EFFECT, PrintMenuItem.printStatDown1
+	dbw SPECIAL_DOWN_SIDE_EFFECT, PrintMenuItem.printStatDown1
+	dbw ATTACK_DOWN2_EFFECT, PrintMenuItem.printStatDown2
+	dbw DEFENSE_DOWN2_EFFECT, PrintMenuItem.printStatDown2
+	dbw SPEED_DOWN2_EFFECT, PrintMenuItem.printStatDown2
+	dbw SPECIAL_DOWN2_EFFECT, PrintMenuItem.printStatDown2
+	dbw HEAL_EFFECT, PrintMenuItem.printHeal
+	dbw DRAIN_HP_EFFECT, PrintMenuItem.printHeal
+	dbw LEECH_SEED_EFFECT, PrintMenuItem.printHeal
+	dbw RECOIL_EFFECT, PrintMenuItem.printRecoil
+	dbw FLINCH_SIDE_EFFECT1, PrintMenuItem.printFlinch
+	dbw FLINCH_SIDE_EFFECT2, PrintMenuItem.printFlinch
+	dbw CHARGE_EFFECT, PrintMenuItem.printMultiTurn
+	dbw FLY_EFFECT, PrintMenuItem.printMultiTurn
+	dbw ATTACK_TWICE_EFFECT, PrintMenuItem.printMultiHit1
+	dbw TWO_TO_FIVE_ATTACKS_EFFECT, PrintMenuItem.printMultiHit2
+	dbw TWINEEDLE_EFFECT, PrintMenuItem.printMultiHit1
+	dbw TRAPPING_EFFECT, PrintMenuItem.printTrapping
+	dbw RAGE_EFFECT, PrintMenuItem.printRage
+	dbw THRASH_PETAL_DANCE_EFFECT, PrintMenuItem.printRage
+	db -1
 
 SelectEnemyMove:
 	ld a, [wLinkState]
