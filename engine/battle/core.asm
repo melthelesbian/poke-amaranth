@@ -2859,7 +2859,7 @@ PrintMenuItem:
 	hlcoord 1, 10
 	ld de, DisabledText
 	call PlaceString
-	jp .moveDisabled
+	jp .finished
 .notDisabled
 	ld hl, wCurrentMenuItem
 	dec [hl]
@@ -2914,11 +2914,15 @@ PrintMenuItem:
 	call PlaceString
 	hlcoord 5, 9
 	ld de, wPlayerMovePower
+	ld a, [wPlayerMoveEffect]
+	cp SPLASH_EFFECT
+	jr z, .hasMovePower
 	ld a, [wPlayerMovePower]
 	cp 1
 	jr z, .noMovePower
 	and a
 	jr z, .noMovePower
+.hasMovePower
 	lb bc, 1, 3
 	call PrintNumber
 	jr .printAccuracy
@@ -2960,12 +2964,14 @@ PrintMenuItem:
 .highCritMove
 	hlcoord 9, 8
 	ld [hl], "<CH>"
-	jp .moveDisabled
+	jp .finished
 .statusEffect
 	ld a, [wPlayerMoveEffect]
 .noAdditionalEffect
 	cp NO_ADDITIONAL_EFFECT
-	jp z, .moveDisabled
+	jp z, .finished
+	cp SPLASH_EFFECT
+	jp z, .finished
 .checkPSN
 	cp POISON_EFFECT
 	jr z, .printPSN
@@ -2977,7 +2983,7 @@ PrintMenuItem:
 .printPSN
 	hlcoord 9, 8
 	ld [hl], "<PSN>"
-	jp .moveDisabled
+	jp .finished
 .checkSLP
 	cp SLEEP_EFFECT
 	jr z, .printSLP
@@ -2985,7 +2991,7 @@ PrintMenuItem:
 .printSLP
 	hlcoord 9, 8
 	ld [hl], "<SLP>"
-	jp .moveDisabled
+	jp .finished
 .checkCNF
 	cp CONFUSION_EFFECT
 	jr z, .printCNF
@@ -2995,7 +3001,7 @@ PrintMenuItem:
 .printCNF
 	hlcoord 9, 8
 	ld [hl], "<CNF>"
-	jp .moveDisabled
+	jp .finished
 .checkFRZ
 	cp FREEZE_SIDE_EFFECT
 	jr z, .printFRZ
@@ -3003,7 +3009,7 @@ PrintMenuItem:
 .printFRZ
 	hlcoord 9, 8
 	ld [hl], "<FRZ>"
-	jp .moveDisabled
+	jp .finished
 .checkBRN
 	cp BURN_SIDE_EFFECT1
 	jr z, .printBRN
@@ -3013,7 +3019,7 @@ PrintMenuItem:
 .printBRN
 	hlcoord 9, 8
 	ld [hl], "<BRN>"
-	jp .moveDisabled
+	jp .finished
 .checkPAR
 	cp PARALYZE_EFFECT
 	jr z, .printPAR
@@ -3025,7 +3031,7 @@ PrintMenuItem:
 .printPAR
 	hlcoord 9, 8
 	ld [hl], "<PAR>"
-	jp .moveDisabled
+	jp .finished
 .checkStatChangeMoves
 	cp ATTACK_UP1_EFFECT
 	jr z, .printStatUp1
@@ -3071,19 +3077,19 @@ PrintMenuItem:
 .printStatUp1
 	hlcoord 9, 8
 	ld [hl], "<U1>"
-	jp .moveDisabled
+	jp .finished
 .printStatUp2
 	hlcoord 9, 8
 	ld [hl], "<U2>"
-	jp .moveDisabled
+	jp .finished
 .printStatDown1
 	hlcoord 9, 8
 	ld [hl], "<D1>"
-	jp .moveDisabled
+	jp .finished
 .printStatDown2
 	hlcoord 9, 8
 	ld [hl], "<D2>"
-	jp .moveDisabled
+	jp .finished
 .checkHeal
 	cp HEAL_EFFECT
 	jr z, .printHeal
@@ -3095,7 +3101,7 @@ PrintMenuItem:
 .printHeal
 	hlcoord 9, 8
 	ld [hl], "<HEART>"
-	jp .moveDisabled
+	jp .finished
 .checkRecoil
 	cp RECOIL_EFFECT
 	jr z, .printRecoil
@@ -3103,7 +3109,7 @@ PrintMenuItem:
 .printRecoil
 	hlcoord 9, 8
 	ld [hl], "<BOUNCE>"
-	jp .moveDisabled
+	jp .finished
 .checkFlinch
 	cp FLINCH_SIDE_EFFECT1
 	jr z, .printFlinch
@@ -3113,7 +3119,7 @@ PrintMenuItem:
 .printFlinch
 	hlcoord 9, 8
 	ld [hl], "<PAIN>"
-	jp .moveDisabled
+	jp .finished
 .checkMultiTurn
 	cp CHARGE_EFFECT
 	jr z, .printMultiTurn
@@ -3123,7 +3129,7 @@ PrintMenuItem:
 .printMultiTurn
 	hlcoord 9, 8
 	ld [hl], "<CLOCK>"
-	jp .moveDisabled
+	jp .finished
 .checkMultiHit
 	cp ATTACK_TWICE_EFFECT
 	jr z, .printMultiHit1
@@ -3135,11 +3141,11 @@ PrintMenuItem:
 .printMultiHit1
 	hlcoord 8, 9
 	ld [hl], "+"
-	jp .moveDisabled
+	jp .finished
 .printMultiHit2
 	hlcoord 8, 9
 	ld [hl], "×"
-	jp .moveDisabled
+	jp .finished
 .checkTrapping
 	cp TRAPPING_EFFECT
 	jr z, .printTrapping
@@ -3147,7 +3153,7 @@ PrintMenuItem:
 .printTrapping
 	hlcoord 9, 8
 	ld [hl], "<SPIRAL>"
-	jp .moveDisabled
+	jp .finished
 .checkRage
 	cp RAGE_EFFECT
 	jr z, .printRage
@@ -3157,12 +3163,12 @@ PrintMenuItem:
 .printRage
 	hlcoord 9, 8
 	ld [hl], "<ANGRY>"
-	jp .moveDisabled
+	jp .finished
 ; [INFO] default to unique effect
 .printUnique
 	hlcoord 9, 8
 	ld [hl], "<6STAR>"
-.moveDisabled
+.finished
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
 	jp Delay3
