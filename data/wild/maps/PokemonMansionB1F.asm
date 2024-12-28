@@ -1,29 +1,15 @@
 PokemonMansionB1FWildMons:
 	def_grass_wildmons 10 ; encounter rate
-IF DEF(_RED)
-	db 33, KOFFING
-	db 31, KOFFING
-	db 35, GROWLITHE
-	db 32, PONYTA
-	db 31, KOFFING
-	db 40, WEEZING
-	db 34, PONYTA
-	db 35, GRIMER
-	db 42, WEEZING
-	db 42, MUK
-ENDC
-IF DEF(_BLUE) || DEF(_AMARANTH)
-	db 33, GRIMER
-	db 31, GRIMER
-	db 35, VULPIX
-	db 32, PONYTA
-	db 31, GRIMER
-	db 40, MUK
-	db 34, PONYTA
-	db 35, KOFFING
-	db 38, MAGMAR
-	db 42, WEEZING
-ENDC
+	db 44, DITTO     ; 20%
+	db 44, MAGMAR    ; 20%
+	db 45, DITTO     ; 10%
+	db 45, MAGMAR    ; 10%
+	db 46, GROWLITHE ; 10%
+	db 46, VULPIX    ; 10%
+	db 46, DITTO     ; 5%
+	db 46, MAGMAR    ; 5%
+	db 47, ARCANINE  ; 5%
+	db 47, NINETALES ; 5%
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
