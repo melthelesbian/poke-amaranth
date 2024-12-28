@@ -3083,53 +3083,57 @@ DisabledText:
 TypeText:
 	db "TYPE@"
 
+MACRO me_print_handler
+	dbw \1, PrintMenuItem.\2
+ENDM
+
 MoveEffectPrintHandlers:
-	dbw POISON_EFFECT, PrintMenuItem.printPSN
-	dbw POISON_SIDE_EFFECT1, PrintMenuItem.printPSN
-	dbw POISON_SIDE_EFFECT2, PrintMenuItem.printPSN
-	dbw SLEEP_EFFECT, PrintMenuItem.printSLP
-	dbw CONFUSION_EFFECT, PrintMenuItem.printCNF
-	dbw CONFUSION_SIDE_EFFECT, PrintMenuItem.printCNF
-	dbw FREEZE_SIDE_EFFECT, PrintMenuItem.printFRZ
-	dbw BURN_SIDE_EFFECT1, PrintMenuItem.printBRN
-	dbw BURN_SIDE_EFFECT2, PrintMenuItem.printBRN
-	dbw PARALYZE_EFFECT, PrintMenuItem.printPAR
-	dbw PARALYZE_SIDE_EFFECT1, PrintMenuItem.printPAR
-	dbw PARALYZE_SIDE_EFFECT2, PrintMenuItem.printPAR
-	dbw ATTACK_UP1_EFFECT, PrintMenuItem.printStatUp1
-	dbw DEFENSE_UP1_EFFECT, PrintMenuItem.printStatUp1
-	dbw SPEED_UP1_EFFECT, PrintMenuItem.printStatUp1
-	dbw SPECIAL_UP1_EFFECT, PrintMenuItem.printStatUp1
-	dbw ATTACK_UP2_EFFECT, PrintMenuItem.printStatUp2
-	dbw DEFENSE_UP2_EFFECT, PrintMenuItem.printStatUp2
-	dbw SPEED_UP2_EFFECT, PrintMenuItem.printStatUp2
-	dbw SPECIAL_UP2_EFFECT, PrintMenuItem.printStatUp2
-	dbw ATTACK_DOWN1_EFFECT, PrintMenuItem.printStatDown1
-	dbw ATTACK_DOWN_SIDE_EFFECT, PrintMenuItem.printStatDown1
-	dbw DEFENSE_DOWN1_EFFECT, PrintMenuItem.printStatDown1
-	dbw DEFENSE_DOWN_SIDE_EFFECT, PrintMenuItem.printStatDown1
-	dbw SPEED_DOWN1_EFFECT, PrintMenuItem.printStatDown1
-	dbw SPEED_DOWN_SIDE_EFFECT, PrintMenuItem.printStatDown1
-	dbw SPECIAL_DOWN1_EFFECT, PrintMenuItem.printStatDown1
-	dbw SPECIAL_DOWN_SIDE_EFFECT, PrintMenuItem.printStatDown1
-	dbw ATTACK_DOWN2_EFFECT, PrintMenuItem.printStatDown2
-	dbw DEFENSE_DOWN2_EFFECT, PrintMenuItem.printStatDown2
-	dbw SPEED_DOWN2_EFFECT, PrintMenuItem.printStatDown2
-	dbw SPECIAL_DOWN2_EFFECT, PrintMenuItem.printStatDown2
-	dbw HEAL_EFFECT, PrintMenuItem.printHeal
-	dbw DRAIN_HP_EFFECT, PrintMenuItem.printHeal
-	dbw LEECH_SEED_EFFECT, PrintMenuItem.printHeal
-	dbw RECOIL_EFFECT, PrintMenuItem.printRecoil
-	dbw FLINCH_SIDE_EFFECT1, PrintMenuItem.printFlinch
-	dbw FLINCH_SIDE_EFFECT2, PrintMenuItem.printFlinch
-	dbw CHARGE_EFFECT, PrintMenuItem.printMultiTurn
-	dbw FLY_EFFECT, PrintMenuItem.printMultiTurn
-	dbw ATTACK_TWICE_EFFECT, PrintMenuItem.printMultiHit1
-	dbw TWO_TO_FIVE_ATTACKS_EFFECT, PrintMenuItem.printMultiHit2
-	dbw TWINEEDLE_EFFECT, PrintMenuItem.printMultiHit1
-	dbw TRAPPING_EFFECT, PrintMenuItem.printTrapping
-	dbw RAGE_EFFECT, PrintMenuItem.printRage
-	dbw THRASH_PETAL_DANCE_EFFECT, PrintMenuItem.printRage
+	me_print_handler POISON_EFFECT             , printPSN
+	me_print_handler POISON_SIDE_EFFECT1       , printPSN
+	me_print_handler POISON_SIDE_EFFECT2       , printPSN
+	me_print_handler SLEEP_EFFECT              , printSLP
+	me_print_handler CONFUSION_EFFECT          , printCNF
+	me_print_handler CONFUSION_SIDE_EFFECT     , printCNF
+	me_print_handler FREEZE_SIDE_EFFECT        , printFRZ
+	me_print_handler BURN_SIDE_EFFECT1         , printBRN
+	me_print_handler BURN_SIDE_EFFECT2         , printBRN
+	me_print_handler PARALYZE_EFFECT           , printPAR
+	me_print_handler PARALYZE_SIDE_EFFECT1     , printPAR
+	me_print_handler PARALYZE_SIDE_EFFECT2     , printPAR
+	me_print_handler ATTACK_UP1_EFFECT         , printStatUp1
+	me_print_handler DEFENSE_UP1_EFFECT        , printStatUp1
+	me_print_handler SPEED_UP1_EFFECT          , printStatUp1
+	me_print_handler SPECIAL_UP1_EFFECT        , printStatUp1
+	me_print_handler ATTACK_UP2_EFFECT         , printStatUp2
+	me_print_handler DEFENSE_UP2_EFFECT        , printStatUp2
+	me_print_handler SPEED_UP2_EFFECT          , printStatUp2
+	me_print_handler SPECIAL_UP2_EFFECT        , printStatUp2
+	me_print_handler ATTACK_DOWN1_EFFECT       , printStatDown1
+	me_print_handler ATTACK_DOWN_SIDE_EFFECT   , printStatDown1
+	me_print_handler DEFENSE_DOWN1_EFFECT      , printStatDown1
+	me_print_handler DEFENSE_DOWN_SIDE_EFFECT  , printStatDown1
+	me_print_handler SPEED_DOWN1_EFFECT        , printStatDown1
+	me_print_handler SPEED_DOWN_SIDE_EFFECT    , printStatDown1
+	me_print_handler SPECIAL_DOWN1_EFFECT      , printStatDown1
+	me_print_handler SPECIAL_DOWN_SIDE_EFFECT  , printStatDown1
+	me_print_handler ATTACK_DOWN2_EFFECT       , printStatDown2
+	me_print_handler DEFENSE_DOWN2_EFFECT      , printStatDown2
+	me_print_handler SPEED_DOWN2_EFFECT        , printStatDown2
+	me_print_handler SPECIAL_DOWN2_EFFECT      , printStatDown2
+	me_print_handler HEAL_EFFECT               , printHeal
+	me_print_handler DRAIN_HP_EFFECT           , printHeal
+	me_print_handler LEECH_SEED_EFFECT         , printHeal
+	me_print_handler RECOIL_EFFECT             , printRecoil
+	me_print_handler FLINCH_SIDE_EFFECT1       , printFlinch
+	me_print_handler FLINCH_SIDE_EFFECT2       , printFlinch
+	me_print_handler CHARGE_EFFECT             , printMultiTurn
+	me_print_handler FLY_EFFECT                , printMultiTurn
+	me_print_handler ATTACK_TWICE_EFFECT       , printMultiHit1
+	me_print_handler TWO_TO_FIVE_ATTACKS_EFFECT, printMultiHit2
+	me_print_handler TWINEEDLE_EFFECT          , printMultiHit1
+	me_print_handler TRAPPING_EFFECT           , printTrapping
+	me_print_handler RAGE_EFFECT               , printRage
+	me_print_handler THRASH_PETAL_DANCE_EFFECT , printRage
 	db -1
 
 SelectEnemyMove:
