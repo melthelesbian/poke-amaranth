@@ -176,7 +176,7 @@
 	charmap "<BRN>",     $dc
 	charmap "<PAR>",     $dd
 	charmap "<CH>",      $de
-	charmap "<6STAR>",   $df
+	charmap "<SPARKLE>", $df
 
 
 	charmap "'",         $e0

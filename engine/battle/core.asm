@@ -3167,7 +3167,7 @@ PrintMenuItem:
 ; [INFO] default to unique effect
 .printUnique
 	hlcoord 9, 8
-	ld [hl], "<6STAR>"
+	ld [hl], "<SPARKLE>"
 .finished
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
