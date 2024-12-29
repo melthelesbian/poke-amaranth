@@ -19,12 +19,13 @@ ViridianForest_TextPointers:
 	dw_const ViridianForestYoungster2Text,      TEXT_VIRIDIANFOREST_YOUNGSTER2
 	dw_const ViridianForestYoungster3Text,      TEXT_VIRIDIANFOREST_YOUNGSTER3
 	dw_const ViridianForestYoungster4Text,      TEXT_VIRIDIANFOREST_YOUNGSTER4
+	dw_const ViridianForestSweetheartText,      TEXT_VIRIDIANFOREST_SWEETHEART
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_PANACEA
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POKE_BALL
 	dw_const ViridianForestYoungster5Text,      TEXT_VIRIDIANFOREST_YOUNGSTER5
 	dw_const ViridianForestTrainerTips1Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS1
-	dw_const ViridianForestUsePanaceaSignText, TEXT_VIRIDIANFOREST_USE_PANACEA_SIGN
+	dw_const ViridianForestUsePanaceaSignText,  TEXT_VIRIDIANFOREST_USE_PANACEA_SIGN
 	dw_const ViridianForestTrainerTips2Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS2
 	dw_const ViridianForestTrainerTips3Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS3
 	dw_const ViridianForestTrainerTips4Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS4
@@ -38,6 +39,8 @@ ViridianForestTrainerHeader1:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1, 4, ViridianForestYoungster3BattleText, ViridianForestYoungster3EndBattleText, ViridianForestYoungster3AfterBattleText
 ViridianForestTrainerHeader2:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2, 1, ViridianForestYoungster4BattleText, ViridianForestYoungster4EndBattleText, ViridianForestYoungster4AfterBattleText
+ViridianForestTrainerHeader3: 
+	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3, 2, ViridianForestSweetheartBattleText, ViridianForestSweetheartEndBattleText, ViridianForestSweetheartAfterBattleText
 	db -1 ; end
 
 ViridianForestYoungster1Text:
@@ -59,6 +62,12 @@ ViridianForestYoungster3Text:
 ViridianForestYoungster4Text:
 	text_asm
 	ld hl, ViridianForestTrainerHeader2
+	call TalkToTrainer
+	jp TextScriptEnd
+
+ViridianForestSweetheartText:
+	text_asm
+	ld hl, ViridianForestTrainerHeader3
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -96,6 +105,18 @@ ViridianForestYoungster4EndBattleText:
 
 ViridianForestYoungster4AfterBattleText:
 	text_far _ViridianForestYoungster4AfterBattleText
+	text_end
+
+ViridianForestSweetheartBattleText:
+	text_far _ViridianForestSweetheartBattleText
+	text_end
+
+ViridianForestSweetheartEndBattleText:
+	text_far _ViridianForestSweetheartEndBattleText
+	text_end
+
+ViridianForestSweetheartAfterBattleText:
+	text_far _ViridianForestSweetheartAfterBattleText
 	text_end
 
 ViridianForestYoungster5Text:

@@ -82,9 +82,9 @@ YoungsterData:
 
 BugCatcherData:
 ; Viridian Forest
-	db 6, WEEDLE, CATERPIE, 0
-	db 7, WEEDLE, KAKUNA, WEEDLE, 0
-	db 9, WEEDLE, 0
+	db 6, CATERPIE, METAPOD, 0
+	db 6, WEEDLE, KAKUNA, 0
+	db 9, BEEDRILL, 0
 ; Route 3
 	db 10, CATERPIE, WEEDLE, VENONAT, 0
 	db 9, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0
@@ -318,6 +318,8 @@ EngineerData:
 	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0
 
 SweetheartData:
+; Viridian Forest
+	db 8, VULPIX, BUTTERFREE, 0
 ; Bug Sanctuary
 	db $FF, 20, PARASECT, 22, PINSIR, 22, SCYTHER, 23, VENOMOTH, 0
 

@@ -62,6 +62,26 @@ _ViridianForestYoungster4AfterBattleText::
 	cont "dropped!"
 	done
 
+_ViridianForestSweetheartBattleText::
+	text "The forest is"
+	line "beautiful!"
+
+	para "But that doesn't"
+	line "mean I won't"
+	cont "fight you!"
+	done
+
+_ViridianForestSweetheartEndBattleText::
+	text "I"
+	line "lost..."
+	prompt
+
+_ViridianForestSweetheartAfterBattleText::
+	text "Don't forget to"
+	line "stop and enjoy"
+	cont "the forest."
+	done
+
 _ViridianForestYoungster5Text::
 	text "I ran out of #"
 	line "BALLs to catch"
