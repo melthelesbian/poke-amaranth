@@ -5,7 +5,7 @@
 
 	db BUG, BUG ; type
 	db CR_EASY ; catch rate
-	db 72 ; base exp
+	db EXP_YIELD_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/metapod.pic", 0, 1 ; sprite dimensions
 	dw MetapodPicFront, MetapodPicBack

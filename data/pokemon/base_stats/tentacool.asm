@@ -5,7 +5,7 @@
 
 	db WATER, POISON ; type
 	db CR_EASY ; catch rate
-	db 105 ; base exp
+	db EXP_YIELD_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/tentacool.pic", 0, 1 ; sprite dimensions
 	dw TentacoolPicFront, TentacoolPicBack

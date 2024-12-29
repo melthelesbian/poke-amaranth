@@ -5,7 +5,7 @@
 
 	db POISON, FLYING ; type
 	db CR_TRIVIAL ; catch rate
-	db 54 ; base exp
+	db EXP_YIELD_VERY_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/zubat.pic", 0, 1 ; sprite dimensions
 	dw ZubatPicFront, ZubatPicBack

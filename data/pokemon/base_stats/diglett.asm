@@ -5,7 +5,7 @@
 
 	db GROUND, GROUND ; type
 	db CR_VERY_EASY ; catch rate
-	db 81 ; base exp
+	db EXP_YIELD_VERY_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/diglett.pic", 0, 1 ; sprite dimensions
 	dw DiglettPicFront, DiglettPicBack

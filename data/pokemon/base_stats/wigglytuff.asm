@@ -5,7 +5,7 @@
 
 	db NORMAL, FAIRY ; type
 	db CR_HARD ; catch rate
-	db 109 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/wigglytuff.pic", 0, 1 ; sprite dimensions
 	dw WigglytuffPicFront, WigglytuffPicBack

@@ -5,7 +5,7 @@
 
 	db WATER, PSYCHIC_TYPE ; type
 	db CR_EASY ; catch rate
-	db 80 ; base exp
+	db EXP_YIELD_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/psyduck.pic", 0, 1 ; sprite dimensions
 	dw PsyduckPicFront, PsyduckPicBack

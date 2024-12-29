@@ -5,7 +5,7 @@
 
 	db BUG, FAIRY ; type
 	db CR_HARD ; catch rate
-	db 160 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/butterfree.pic", 0, 1 ; sprite dimensions
 	dw ButterfreePicFront, ButterfreePicBack

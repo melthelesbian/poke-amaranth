@@ -5,7 +5,7 @@
 
 	db NORMAL, NORMAL ; type
 	db CR_NORMAL ; catch rate
-	db 96 ; base exp
+	db EXP_YIELD_NORMAL ; base exp
 
 	INCBIN "gfx/pokemon/front/doduo.pic", 0, 1 ; sprite dimensions
 	dw DoduoPicFront, DoduoPicBack

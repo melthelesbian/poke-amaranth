@@ -5,7 +5,7 @@
 
 	db NORMAL, MYSTERY ; type
 	db CR_HARD ; catch rate
-	db 130 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/porygon.pic", 0, 1 ; sprite dimensions
 	dw PorygonPicFront, PorygonPicBack

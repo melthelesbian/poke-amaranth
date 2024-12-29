@@ -5,7 +5,7 @@
 
 	db FIRE, DARK ; type
 	db CR_HARD ; catch rate
-	db 213 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/arcanine.pic", 0, 1 ; sprite dimensions
 	dw ArcaninePicFront, ArcaninePicBack

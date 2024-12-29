@@ -5,7 +5,7 @@
 
 	db DRAGON, DRAGON ; type
 	db CR_HARD ; catch rate
-	db 67 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/dratini.pic", 0, 1 ; sprite dimensions
 	dw DratiniPicFront, DratiniPicBack

@@ -5,7 +5,7 @@
 
 	db ELECTRIC, STEEL ; type
 	db CR_EASY ; catch rate
-	db 103 ; base exp
+	db EXP_YIELD_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/voltorb.pic", 0, 1 ; sprite dimensions
 	dw VoltorbPicFront, VoltorbPicBack

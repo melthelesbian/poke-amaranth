@@ -5,7 +5,7 @@
 
 	db FIRE, FIRE ; type
 	db CR_EASY ; catch rate
-	db 91 ; base exp
+	db EXP_YIELD_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/growlithe.pic", 0, 1 ; sprite dimensions
 	dw GrowlithePicFront, GrowlithePicBack

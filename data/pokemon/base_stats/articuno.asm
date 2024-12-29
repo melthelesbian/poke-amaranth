@@ -5,7 +5,7 @@
 
 	db ICE, FLYING ; type
 	db CR_CHALLENGING ; catch rate
-	db 215 ; base exp
+	db EXP_YIELD_VERY_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/articuno.pic", 0, 1 ; sprite dimensions
 	dw ArticunoPicFront, ArticunoPicBack

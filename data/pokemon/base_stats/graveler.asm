@@ -5,7 +5,7 @@
 
 	db ROCK, GROUND ; type
 	db CR_NORMAL ; catch rate
-	db 134 ; base exp
+	db EXP_YIELD_NORMAL ; base exp
 
 	INCBIN "gfx/pokemon/front/graveler.pic", 0, 1 ; sprite dimensions
 	dw GravelerPicFront, GravelerPicBack

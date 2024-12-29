@@ -5,7 +5,7 @@
 
 	db FIRE, FLYING ; type
 	db CR_CHALLENGING ; catch rate
-	db 217 ; base exp
+	db EXP_YIELD_VERY_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/moltres.pic", 0, 1 ; sprite dimensions
 	dw MoltresPicFront, MoltresPicBack

@@ -5,7 +5,7 @@
 
 	db ROCK, ROCK ; type
 	db CR_HARD ; catch rate
-	db 108 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/onix.pic", 0, 1 ; sprite dimensions
 	dw OnixPicFront, OnixPicBack

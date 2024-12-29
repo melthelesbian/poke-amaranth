@@ -5,7 +5,7 @@
 
 	db FLYING, DARK ; type
 	db CR_NORMAL ; catch rate
-	db 94 ; base exp
+	db EXP_YIELD_NORMAL ; base exp
 
 	INCBIN "gfx/pokemon/front/farfetchd.pic", 0, 1 ; sprite dimensions
 	dw FarfetchdPicFront, FarfetchdPicBack

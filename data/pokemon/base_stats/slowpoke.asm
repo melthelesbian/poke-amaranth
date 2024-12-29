@@ -5,7 +5,7 @@
 
 	db WATER, NORMAL ; type
 	db CR_EASY ; catch rate
-	db 99 ; base exp
+	db EXP_YIELD_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/slowpoke.pic", 0, 1 ; sprite dimensions
 	dw SlowpokePicFront, SlowpokePicBack

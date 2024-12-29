@@ -5,7 +5,7 @@
 
 	db GRASS, POISON ; type
 	db CR_NORMAL ; catch rate
-	db 64 ; base exp
+	db EXP_YIELD_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/bulbasaur.pic", 0, 1 ; sprite dimensions
 	dw BulbasaurPicFront, BulbasaurPicBack

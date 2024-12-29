@@ -5,7 +5,7 @@
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db CR_VERY_HARD ; catch rate
-	db 186 ; base exp
+	db EXP_YIELD_VERY_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/alakazam.pic", 0, 1 ; sprite dimensions
 	dw AlakazamPicFront, AlakazamPicBack

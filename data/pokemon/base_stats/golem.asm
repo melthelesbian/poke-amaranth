@@ -5,7 +5,7 @@
 
 	db ROCK, GROUND ; type
 	db CR_VERY_HARD ; catch rate
-	db 177 ; base exp
+	db EXP_YIELD_VERY_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/golem.pic", 0, 1 ; sprite dimensions
 	dw GolemPicFront, GolemPicBack

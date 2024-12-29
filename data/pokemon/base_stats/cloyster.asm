@@ -5,7 +5,7 @@
 
 	db WATER, ICE ; type
 	db CR_HARD ; catch rate
-	db 203 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/cloyster.pic", 0, 1 ; sprite dimensions
 	dw CloysterPicFront, CloysterPicBack

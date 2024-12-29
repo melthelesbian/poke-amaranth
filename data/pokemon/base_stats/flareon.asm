@@ -5,7 +5,7 @@
 
 	db FIRE, FIRE ; type
 	db CR_HARD ; catch rate
-	db 198 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/flareon.pic", 0, 1 ; sprite dimensions
 	dw FlareonPicFront, FlareonPicBack

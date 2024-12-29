@@ -5,7 +5,7 @@
 
 	db BUG, ROCK ; type
 	db CR_HARD ; catch rate
-	db 119 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/kabuto.pic", 0, 1 ; sprite dimensions
 	dw KabutoPicFront, KabutoPicBack

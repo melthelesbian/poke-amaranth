@@ -5,7 +5,7 @@
 
 	db NORMAL, NORMAL ; type
 	db CR_HARD ; catch rate
-	db 211 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/tauros.pic", 0, 1 ; sprite dimensions
 	dw TaurosPicFront, TaurosPicBack

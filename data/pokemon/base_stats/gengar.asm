@@ -5,7 +5,7 @@
 
 	db GHOST, DARK ; type
 	db CR_VERY_HARD ; catch rate
-	db 190 ; base exp
+	db EXP_YIELD_VERY_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/gengar.pic", 0, 1 ; sprite dimensions
 	dw GengarPicFront, GengarPicBack

@@ -5,7 +5,7 @@
 
 	db PSYCHIC_TYPE, FAIRY ; type
 	db CR_HARD ; catch rate
-	db 136 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/mr.mime.pic", 0, 1 ; sprite dimensions
 	dw MrMimePicFront, MrMimePicBack

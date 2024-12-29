@@ -5,7 +5,7 @@
 
 	db BUG, POISON ; type
 	db CR_EASY ; catch rate
-	db 71 ; base exp
+	db EXP_YIELD_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/kakuna.pic", 0, 1 ; sprite dimensions
 	dw KakunaPicFront, KakunaPicBack

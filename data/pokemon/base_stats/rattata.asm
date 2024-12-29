@@ -5,7 +5,7 @@
 
 	db NORMAL, DARK ; type
 	db CR_TRIVIAL ; catch rate
-	db 57 ; base exp
+	db EXP_YIELD_VERY_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/rattata.pic", 0, 1 ; sprite dimensions
 	dw RattataPicFront, RattataPicBack

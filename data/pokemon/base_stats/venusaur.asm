@@ -5,7 +5,7 @@
 
 	db GRASS, POISON ; type
 	db CR_VERY_HARD ; catch rate
-	db 208 ; base exp
+	db EXP_YIELD_VERY_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/venusaur.pic", 0, 1 ; sprite dimensions
 	dw VenusaurPicFront, VenusaurPicBack

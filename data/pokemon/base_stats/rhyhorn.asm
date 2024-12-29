@@ -5,7 +5,7 @@
 
 	db ROCK, ROCK ; type
 	db CR_NORMAL ; catch rate
-	db 135 ; base exp
+	db EXP_YIELD_NORMAL ; base exp
 
 	INCBIN "gfx/pokemon/front/rhyhorn.pic", 0, 1 ; sprite dimensions
 	dw RhyhornPicFront, RhyhornPicBack

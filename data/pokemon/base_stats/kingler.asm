@@ -5,7 +5,7 @@
 
 	db WATER, STEEL ; type
 	db CR_HARD ; catch rate
-	db 206 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/kingler.pic", 0, 1 ; sprite dimensions
 	dw KinglerPicFront, KinglerPicBack

@@ -5,7 +5,7 @@
 
 	db WATER, FIGHTING ; type
 	db CR_HARD ; catch rate
-	db 185 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/poliwrath.pic", 0, 1 ; sprite dimensions
 	dw PoliwrathPicFront, PoliwrathPicBack

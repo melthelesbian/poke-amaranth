@@ -5,7 +5,7 @@
 
 	db NORMAL, GROUND ; type
 	db CR_NORMAL ; catch rate
-	db 117 ; base exp
+	db EXP_YIELD_NORMAL ; base exp
 
 	INCBIN "gfx/pokemon/front/nidorina.pic", 0, 1 ; sprite dimensions
 	dw NidorinaPicFront, NidorinaPicBack

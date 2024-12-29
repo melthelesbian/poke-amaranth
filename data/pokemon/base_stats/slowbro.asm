@@ -5,7 +5,7 @@
 
 	db WATER, NORMAL ; type
 	db CR_HARD ; catch rate
-	db 164 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/slowbro.pic", 0, 1 ; sprite dimensions
 	dw SlowbroPicFront, SlowbroPicBack

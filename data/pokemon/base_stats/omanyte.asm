@@ -5,7 +5,7 @@
 
 	db WATER, ROCK ; type
 	db CR_HARD ; catch rate
-	db 120 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/omanyte.pic", 0, 1 ; sprite dimensions
 	dw OmanytePicFront, OmanytePicBack

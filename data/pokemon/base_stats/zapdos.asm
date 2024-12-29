@@ -5,7 +5,7 @@
 
 	db ELECTRIC, FLYING ; type
 	db CR_CHALLENGING ; catch rate
-	db 216 ; base exp
+	db EXP_YIELD_VERY_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/zapdos.pic", 0, 1 ; sprite dimensions
 	dw ZapdosPicFront, ZapdosPicBack

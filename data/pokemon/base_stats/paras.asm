@@ -5,7 +5,7 @@
 
 	db BUG, GRASS ; type
 	db CR_EASY ; catch rate
-	db 70 ; base exp
+	db EXP_YIELD_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/paras.pic", 0, 1 ; sprite dimensions
 	dw ParasPicFront, ParasPicBack

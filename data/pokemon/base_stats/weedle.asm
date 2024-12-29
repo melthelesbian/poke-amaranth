@@ -5,7 +5,7 @@
 
 	db BUG, POISON ; type
 	db CR_TRIVIAL ; catch rate
-	db 52 ; base exp
+	db EXP_YIELD_VERY_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/weedle.pic", 0, 1 ; sprite dimensions
 	dw WeedlePicFront, WeedlePicBack

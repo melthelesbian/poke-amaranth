@@ -5,7 +5,7 @@
 
 	db NORMAL, NORMAL ; type
 	db CR_HARD ; catch rate
-	db 61 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/ditto.pic", 0, 1 ; sprite dimensions
 	dw DittoPicFront, DittoPicBack

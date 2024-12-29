@@ -5,7 +5,7 @@
 
 	db POISON, POISON ; type
 	db CR_HARD ; catch rate
-	db 173 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/weezing.pic", 0, 1 ; sprite dimensions
 	dw WeezingPicFront, WeezingPicBack

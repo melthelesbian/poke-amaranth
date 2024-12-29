@@ -5,7 +5,7 @@
 
 	db GHOST, POISON ; type
 	db CR_HARD ; catch rate
-	db 126 ; base exp
+	db EXP_YIELD_HIGH ; base exp
 
 	INCBIN "gfx/pokemon/front/haunter.pic", 0, 1 ; sprite dimensions
 	dw HaunterPicFront, HaunterPicBack

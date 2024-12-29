@@ -5,7 +5,7 @@
 
 	db BUG, BUG ; type
 	db CR_TRIVIAL ; catch rate
-	db 53 ; base exp
+	db EXP_YIELD_VERY_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/caterpie.pic", 0, 1 ; sprite dimensions
 	dw CaterpiePicFront, CaterpiePicBack
