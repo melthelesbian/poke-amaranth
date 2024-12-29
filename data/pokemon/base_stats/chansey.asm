@@ -1,6 +1,6 @@
 	db DEX_CHANSEY ; pokedex id
 
-	db 250,   5,  25,  50, 105
+	db 255,  10,  10,  50, 105
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, FAIRY ; type

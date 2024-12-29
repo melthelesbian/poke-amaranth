@@ -1,6 +1,6 @@
 	db DEX_SPEAROW ; pokedex id
 
-	db  40,  60,  30,  70,  31
+	db  40,  60,  30,  70,  30
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, FLYING ; type

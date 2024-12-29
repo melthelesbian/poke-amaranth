@@ -1,7 +1,7 @@
 	db DEX_LICKITUNG ; pokedex id
 
-	db  90,  55,  75,  30,  60
-	;   hp  atk  def  spd  spc
+	db  100,  70,  85,  40,  75
+	;    hp  atk  def  spd  spc
 
 	db NORMAL, NORMAL ; type
 	db CR_HARD ; catch rate

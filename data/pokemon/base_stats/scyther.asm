@@ -1,6 +1,6 @@
 	db DEX_SCYTHER ; pokedex id
 
-	db  70, 110,  80, 105,  55
+	db  70, 120,  90, 105,  80
 	;   hp  atk  def  spd  spc
 
 	db BUG, DARK ; type

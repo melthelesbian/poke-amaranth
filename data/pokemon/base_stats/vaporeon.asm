@@ -1,7 +1,7 @@
 	db DEX_VAPOREON ; pokedex id
 
-	db 130,  65,  60,  65, 110
-	;   hp  atk  def  spd  spc
+	db  125,  60,  65,  75, 125
+	;    hp  atk  def  spd  spc
 
 	db WATER, WATER ; type
 	db CR_HARD ; catch rate

@@ -1,6 +1,6 @@
 	db DEX_MEOWTH ; pokedex id
 
-	db  40,  45,  35,  90,  40
+	db  50,  45,  55,  90,  50
 	;   hp  atk  def  spd  spc
 
 	db DARK, DARK ; type

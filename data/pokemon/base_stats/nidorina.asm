@@ -1,6 +1,6 @@
 	db DEX_NIDORINA ; pokedex id
 
-	db  70,  62,  67,  56,  55
+	db  70,  65,  70,  60,  55
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, GROUND ; type

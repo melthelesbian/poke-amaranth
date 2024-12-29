@@ -1,6 +1,6 @@
 	db DEX_SLOWBRO ; pokedex id
 
-	db  95,  75, 110,  30,  80
+	db  95,  90, 110,  30, 100
 	;   hp  atk  def  spd  spc
 
 	db WATER, NORMAL ; type

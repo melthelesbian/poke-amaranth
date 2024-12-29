@@ -1,6 +1,6 @@
 	db DEX_PERSIAN ; pokedex id
 
-	db  65,  70,  60, 115,  65
+	db  65,  70,  60, 115,  75
 	;   hp  atk  def  spd  spc
 
 	db DARK, DARK ; type
