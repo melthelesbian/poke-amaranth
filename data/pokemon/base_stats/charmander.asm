@@ -5,7 +5,7 @@
 
 	db FIRE, FIRE ; type
 	db CR_NORMAL ; catch rate
-	db EXP_YIELD_LOW ; base exp
+	db EXP_YIELD_VERY_LOW ; base exp
 
 	INCBIN "gfx/pokemon/front/charmander.pic", 0, 1 ; sprite dimensions
 	dw CharmanderPicFront, CharmanderPicBack
