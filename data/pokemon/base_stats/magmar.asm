@@ -1,9 +1,9 @@
 	db DEX_MAGMAR ; pokedex id
 
-	db  70,  95,  70,  95, 100
+	db  70,  95,  50,  95, 100
 	;   hp  atk  def  spd  spc
 
-	db FIRE, FIRE ; type
+	db FIRE, FIGHTING ; type
 	db CR_HARD ; catch rate
 	db EXP_YIELD_HIGH ; base exp
 

@@ -76,7 +76,7 @@ Moves:
 	move HYPER_BEAM,   HYPER_BEAM_EFFECT,          150,  NORMAL,       95,  5
 	move PECK,         FLINCH_SIDE_EFFECT1,        40,   FLYING,       100, 35
 	move DRILL_PECK,   NO_ADDITIONAL_EFFECT,       60,   FLYING,       100, 20 ; high crit ratio
-	move SUBMISSION,   RECOIL_EFFECT,              90,   FIGHTING,     90,  25
+	move SUBMISSION,   RECOIL_EFFECT,             120,   FIGHTING,     90,  25
 	move LOW_KICK,     ATTACK_DOWN_SIDE_EFFECT,    40,   FIGHTING,     90,  20
 	move COUNTER,      NO_ADDITIONAL_EFFECT,       1,    MYSTERY,      100, 20
 	move SEISMIC_TOSS, SPECIAL_DAMAGE_EFFECT,      1,    FIGHTING,     100, 20
