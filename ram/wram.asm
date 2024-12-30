@@ -365,13 +365,15 @@ wSlotMachineSevenAndBarModeChance:: db
 	ds 2
 ; ROM back to return to when the player is done with the slot machine
 wSlotMachineSavedROMBank:: db
+wMoveBuffer::
 	ds 166
 wLuckySlotHiddenObjectIndex:: db
 
 NEXTU
 ; values between 0-6. Shake screen horizontally, shake screen vertically, blink Pokemon...
 wAnimationType:: db
-	ds 29
+wMoveListCounter:: db
+	ds 28
 wAnimPalette:: db
 
 NEXTU
@@ -1441,8 +1443,9 @@ wSpriteDecodeTable0Ptr:: dw
 ; pointer to differential decoding table (assuming initial value 1)
 wSpriteDecodeTable1Ptr:: dw
 
-wd0b5:: db ; used as a temp storage area for Pokemon Species, and other Pokemon/Battle related things
-
+wd0b5::
+wCurSpecies::
+wNameListIndex:: db ; used as a temp storage area for Pokemon Species, and other Pokemon/Battle related things
 wNameListType:: db
 
 wPredefBank:: db
@@ -1513,6 +1516,7 @@ wMaxPP::
 wCalculateWhoseStats::
 wTypeEffectiveness::
 wMoveType::
+wPokedexNum::
 wNumSetBits::
 ; used as a Pokemon and Item storage value. Also used as an output value for CountSetBits
 wd11e::

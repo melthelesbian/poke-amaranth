@@ -135,7 +135,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	call PrintText
 	pop hl
 	ld a, [hl]
-	ld [wd0b5], a
+	ld [wNameListIndex], a
 	ld [wLoadedMonSpecies], a
 	ld [wEvoNewSpecies], a
 	ld a, MONSTER_NAME
@@ -155,7 +155,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	call RenameEvolvedMon
 	ld a, [wd11e]
 	push af
-	ld a, [wd0b5]
+	ld a, [wNameListIndex]
 	ld [wd11e], a
 	predef IndexToPokedex
 	ld a, [wd11e]
@@ -165,7 +165,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	call AddNTimes
 	ld de, wMonHeader
 	call CopyData
-	ld a, [wd0b5]
+	ld a, [wNameListIndex]
 	ld [wMonHIndex], a
 	pop af
 	ld [wd11e], a
@@ -203,7 +203,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	dec hl
 	pop bc
 	call CopyData
-	ld a, [wd0b5]
+	ld a, [wNameListIndex]
 	ld [wd11e], a
 	xor a
 	ld [wMonDataLocation], a
@@ -260,13 +260,13 @@ Evolution_PartyMonLoop: ; loop over party mons
 RenameEvolvedMon:
 ; Renames the mon to its new, evolved form's standard name unless it had a
 ; nickname, in which case the nickname is kept.
-	ld a, [wd0b5]
+	ld a, [wNameListIndex]
 	push af
 	ld a, [wMonHIndex]
-	ld [wd0b5], a
+	ld [wNameListIndex], a
 	call GetName
 	pop af
-	ld [wd0b5], a
+	ld [wNameListIndex], a
 	ld hl, wNameBuffer
 	ld de, wStringBuffer
 .compareNamesLoop
@@ -509,5 +509,80 @@ WriteMonMoves_ShiftMoveData:
 
 Evolution_FlagAction:
 	predef_jump FlagActionPredef
+
+PrepareLevelUpMoveList::
+; Loads relearnable move list to wMoveBuffer.
+; Input: party mon index = [wWhichPokemon]
+	; Get mon id.
+	ld a, [wWhichPokemon]
+	ld [wNameListIndex], a	;joenote - put mon id into wram for potential later usage of GetMonHeader
+	ld de, wMoveBuffer ; de = moves list
+	ld c, 0 ; c = count of relearnable moves
+	;joenote - start checking for level-0 moves
+	xor a
+	ld b, a	;b will act as a counter, as there can only be up to 4 level-0 moves
+	call GetMonHeader ;mon id already stored earlier in wNameListIndex
+	ld hl, wMonHMoves
+.loop2
+	ld a, b	;get the current loop counter into a
+	cp $4
+	jr nc, .done2	;if gone through 4 moves already, reached the end of the list. move to done2.
+	ld a, [hl]	;load move
+	and a
+	jr z, .done2	;if move has id 0, list has reached the end early. move to done2.
+	; Add move to the list, and update the running count.
+	ld a, 1
+	ld [de], a
+	inc de
+	ld a, [hl]	;load move
+	ld [de], a
+	inc de
+	inc c
+	inc hl	;increment to the next level-0 move
+	inc b	;increment the loop counter
+	jr .loop2
+.done2
+	
+	push bc
+	; Get pointer to evos moves data.
+	ld a, [wWhichPokemon]
+	dec a
+	ld c, a
+	ld b, 0
+	ld hl, EvosMovesPointerTable
+	add hl, bc
+	add hl, bc
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a  ; hl = pointer to evos moves data for our mon
+	pop bc
+	; Skip over evolution data.
+.skipEvoEntriesLoop
+	ld a, [hli]
+	and a
+	jr nz, .skipEvoEntriesLoop
+	; Write list of relearnable moves, while keeping count along the way.
+	ld b, 100 ;  b = mon's level
+.loop
+	ld a, [hli]
+	and a
+	jr z, .done
+	cp b
+	jr c, .addMove
+	jr nz, .done
+.addMove
+	ld [de], a
+	inc de
+	ld a, [hli] ; move id
+	; Add move to the list, and update the running count.
+	ld [de], a
+	inc de
+	inc c
+	jr .loop
+.done
+	ld a, c
+	ld [wMoveListCounter], a ; number of moves in the list
+.debug
+	ret
 
 INCLUDE "data/pokemon/evos_moves.asm"
