@@ -10,6 +10,7 @@ TypeNames:
 	dw .Steel
 	dw .Bug
 	dw .Dark
+	dw .Dragon
 
 REPT UNUSED_TYPES_END - UNUSED_TYPES
 	dw .Normal
@@ -23,7 +24,6 @@ ENDR
 	dw .Ice
 	dw .Ghost
 	dw .Fairy
-	dw .Dragon
 	dw .Mystery
 
 	assert_table_length NUM_TYPES
@@ -37,6 +37,7 @@ ENDR
 .Steel:    db "STEEL@"
 .Bug:      db "BUG@"
 .Dark:     db "DARK@"
+.Dragon:   db "DRAGON@"
 .Fire:     db "FIRE@"
 .Water:    db "WATER@"
 .Grass:    db "GRASS@"
@@ -45,6 +46,5 @@ ENDR
 .Ice:      db "ICE@"
 .Ghost:    db "GHOST@"
 .Fairy:    db "FAIRY@"
-.Dragon:   db "DRAGON@"
 .Mystery:  db "MYSTERY@"
 
