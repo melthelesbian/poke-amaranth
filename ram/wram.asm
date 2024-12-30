@@ -365,8 +365,9 @@ wSlotMachineSevenAndBarModeChance:: db
 	ds 2
 ; ROM back to return to when the player is done with the slot machine
 wSlotMachineSavedROMBank:: db
+wSum:: dw
 wMoveBuffer::
-	ds 166
+	ds 164
 wLuckySlotHiddenObjectIndex:: db
 
 NEXTU

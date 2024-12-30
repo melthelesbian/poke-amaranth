@@ -111,13 +111,7 @@ HandlePokedexSideMenu:
 	dec a
 	jr z, .choseArea
 	dec a
-	vc_patch Forbid_printing_Pokedex
-IF DEF (_YELLOW_VC)
-	jr z, .handleMenuInput
-ELSE
-	jr z, .chosePrint
-ENDC
-	vc_patch_end
+	jr z, .choseMove
 .choseQuit
 	ld b, 1
 .exitSideMenu
@@ -169,7 +163,7 @@ ENDC
 	ld b, 0
 	jr .exitSideMenu
 
-.chosePrint
+.choseMove
 	ld a, 1
 	ld [wMoveListCounter], a
 	call ShowPokedexDataInternal
@@ -457,6 +451,7 @@ ShowPokedexDataInternal:
 	pop af
 	ld [wPokedexNum], a
 	call DrawDexEntryOnScreen
+	jp z, .displaySeenBottomInfo
 	call c, Pokedex_PrintFlavorTextAtRow11
 	jr .waitForButtonPress
 .PrintMoves
@@ -481,6 +476,9 @@ ShowPokedexDataInternal:
 	ld a, $77 ; max volume
 	ldh [rNR50], a
 	ret
+.displaySeenBottomInfo
+	call PrintMonTypes ; PureRGBnote: ADDED: for pokemon you have seen but not caught it displays just their types on the bottom
+	jr .waitForButtonPress
 
 HeightWeightText:
 	db   "HT  ?′??″"
@@ -596,6 +594,7 @@ DrawDexEntryOnScreen:
 
 	ld a, c
 	and a
+
 	ret z ; if the pokemon has not been owned, don't print the height, weight, or description
 
 	inc de ; de = address of feet (height)
@@ -659,8 +658,104 @@ Pokedex_PrintFlavorTextAtBC:
 	ld a, %10
 	ldh [hClearLetterPrintingDelayFlags], a
 	call TextCommandProcessor ; print pokedex description text
+;;;;;;;;;; PureRGBnote: ADDED: pokedex will display the pokemon's types and their base stats on a new third page.
+	CheckEvent EVENT_GOT_POKEDEX
+	jp z, .clearLetterPrintingFlags ; don't display this new third page if we're showing the starters before getting the pokedex.
+	ld hl, DexPromptText
+	call TextCommandProcessor
+	hlcoord 1, 10
+	lb bc, 7, 18
+	call ClearScreenArea
+	call PrintMonTypes
+	; print mon base stats
+	hlcoord 9, 10
+	ld de, BaseStatsText
+	call PlaceString
+	hlcoord 12, 11
+	ld de, HPText
+	call PlaceString
+	ld de, wMonHBaseHP
+	hlcoord 15, 11
+	lb bc, 1, 3
+	call PrintNumber 
+	hlcoord 11, 12
+	ld de, AtkText
+	call PlaceString
+	ld de, wMonHBaseAttack
+	hlcoord 15, 12
+	lb bc, 1, 3
+	call PrintNumber 
+	hlcoord 11, 13
+	ld de, DefText
+	call PlaceString
+	ld de, wMonHBaseDefense
+	hlcoord 15, 13
+	lb bc, 1, 3
+	call PrintNumber
+	hlcoord 11, 14
+	ld de, SpdText
+	call PlaceString
+	ld de, wMonHBaseSpeed
+	hlcoord 15, 14
+	lb bc, 1, 3
+	call PrintNumber
+	hlcoord 11, 15
+	ld de, SpcText
+	call PlaceString
+	ld de, wMonHBaseSpecial
+	hlcoord 15, 15
+	lb bc, 1, 3
+	call PrintNumber 
+	hlcoord 9, 16
+	ld de, TotalText
+	call PlaceString
+	; calculate the base stat total to print it
+	ld b, 0
+	ld a, [wMonHBaseHP]
+	ld hl, 0
+	ld c, a
+	add hl, bc
+	ld a, [wMonHBaseAttack]
+	ld c, a
+	add hl, bc
+	ld a, [wMonHBaseDefense]
+	ld c, a
+	add hl, bc
+	ld a, [wMonHBaseSpeed]
+	ld c, a
+	add hl, bc
+	ld a, [wMonHBaseSpecial]
+	ld c, a
+	add hl, bc
+	ld a, h
+	ld [wSum], a
+	ld a, l
+	ld [wSum+1], a
+	ld de, wSum
+	hlcoord 15, 16
+	lb bc, 2, 3
+	call PrintNumber
+.clearLetterPrintingFlags
+;;;;;;;;;;
 	xor a
 	ldh [hClearLetterPrintingDelayFlags], a
+	ret
+
+PrintMonTypes:
+	hlcoord 1, 11
+	ld de, DexType1Text
+	call PlaceString
+	hlcoord 2, 12
+	predef PrintMonType
+	ld a, [wMonHType1]
+	ld b, a
+	ld a, [wMonHType2]
+	cp b
+	jr z, .done ; don't print TYPE2/ if the pokemon has 1 type only.
+	hlcoord 1, 13
+	ld de, DexType2Text
+	call PlaceString
+.done
 	ret
 
 	
@@ -888,6 +983,37 @@ LevelUpMovesText:
 
 TMHMMovesText:
 	db   "TM/HM MOVES:@"
+
+DexPromptText:
+	text_promptbutton
+	text_end
+
+DexType1Text:
+	db "TYPE1/@"
+
+DexType2Text:
+	db "TYPE2/@"
+
+BaseStatsText:
+	db "BASE STATS@"
+
+HPText:
+	db "HP@"
+
+AtkText:
+	db "ATK@"
+
+DefText:
+	db "DEF@"
+
+SpdText:
+	db "SPD@"
+
+SpcText:
+	db "SPC@"
+
+TotalText:
+	db "TOTAL@"
 
 ; draws a line of tiles
 ; INPUT:
