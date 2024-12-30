@@ -57,7 +57,7 @@ Moves:
 	move BITE,         FLINCH_SIDE_EFFECT1,        60,   DARK,         100, 25
 	move GROWL,        ATTACK_DOWN1_EFFECT,        0,    MYSTERY,      100, 40
 	move FRIGHTEN,     SWITCH_AND_TELEPORT_EFFECT, 0,    MYSTERY,      100, 20 ; tweak move text? (ROAR)
-	move SING,         SLEEP_EFFECT,               0,    MYSTERY,      75,  15
+	move SING,         SLEEP_EFFECT,               0,    MYSTERY,      75,  20
 	move SWEET_CRY,    ATTACK_DOWN_SIDE_EFFECT,    40,   FAIRY,        100, 15 ; (SUPERSONIC)
 	move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,      1,    NORMAL,       90,  20
 	move DISABLE,      DISABLE_EFFECT,             0,    MYSTERY,      75,  20
@@ -89,7 +89,7 @@ Moves:
 	move SOLARBEAM,    CHARGE_EFFECT,              150,  GRASS,        100, 15
 	move POISON_CLOUD, POISON_EFFECT,              0,    POISON,       75,  30 ; (POISONPOWDER)
 	move STUN_CLOUD,   PARALYZE_EFFECT,            0,    GRASS,        75,  30 ; (STUN_SPORE)
-	move SLEEP_CLOUD,  SLEEP_EFFECT,               0,    GRASS,        75,  30 ; (SLEEP_POWDER)
+	move SLEEP_CLOUD,  SLEEP_EFFECT,               0,    GRASS,        80,  20 ; (SLEEP_POWDER)
 	move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  100,  GRASS,        100, 20
 	move STRING_SHOT,  PARALYZE_SIDE_EFFECT1,      25,   BUG,          95,  30
 	move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,      1,    DRAGON,       100, 15
@@ -105,7 +105,7 @@ Moves:
 	move TOXIC,        POISON_EFFECT,              0,    POISON,       95,  15
 	move CONFUSION,    CONFUSION_SIDE_EFFECT,      40,   PSYCHIC_TYPE, 100, 25
 	move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,   95,   PSYCHIC_TYPE, 100, 10
-	move HYPNOSIS,     SLEEP_EFFECT,               0,    MYSTERY,      85,  20
+	move HYPNOSIS,     SLEEP_EFFECT,               0,    MYSTERY,      90,  20
 	move PREPARE,      ATTACK_UP1_EFFECT,          0,    MYSTERY,      100, 40 ; tweak move text? (MEDITATE)
 	move AGILITY,      SPEED_UP2_EFFECT,           0,    MYSTERY,      100, 30
 	move QUICK_ATTACK, NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 30
