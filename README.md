@@ -13,7 +13,7 @@ Pokémon Amaranth is a reimagining of the first generation of Pokémon, with the
 * In-battle caught icon & exp bar
 * More detailed move information display during battle.
 * Move detail popup while learning a new move.
-* View learnsets, types and base stats in the Pokédex.
+* View learnsets, types, evolution methods and base stats in the Pokédex.
 * Prompt to use additional `REPEL` when the used one wears off.
 * Individualized per-pokémon palettes in SGB mode.
 * Modest improvement to the effectiveness of the `EXP ALL` 
