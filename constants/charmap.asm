@@ -193,13 +193,14 @@
 
 	charmap "%",         $e9
 	charmap "+",         $ea
+	charmap "<LVL>",     $eb
 	charmap "▷",         $ec
 	charmap "▶",         $ed
 	charmap "▼",         $ee
 	charmap "♂",         $ef
 	charmap "¥",         $f0
 	charmap "×",         $f1
-	charmap "<DOT>",     $f2 ; decimal point; same as "." in English
+	charmap "*",         $f2 ; asterisk
 	charmap "/",         $f3
 	charmap ",",         $f4
 	charmap "♀",         $f5

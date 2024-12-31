@@ -575,7 +575,7 @@ DrawDexEntryOnScreen:
 	hlcoord 2, 8
 	ld a, "№"
 	ld [hli], a
-	ld a, "<DOT>"
+	ld a, "."
 	ld [hli], a
 	ld de, wPokedexNum
 	lb bc, LEADING_ZEROES | 1, 3
@@ -657,7 +657,7 @@ DrawDexEntryOnScreen:
 	inc hl
 	ld a, [hli]
 	ld [hld], a ; make space for the decimal point by moving the last digit forward one tile
-	ld [hl], "<DOT>" ; decimal point tile
+	ld [hl], "." ; decimal point tile
 	pop af
 	ldh [hDexWeight + 1], a ; restore original value of [hDexWeight + 1]
 	pop af
@@ -799,7 +799,7 @@ Pokedex_PrintStatsText:
 	cp EVOLVE_TRADE
 	jr z, .printTradeText
 	cp EVOLVE_ITEM
-	jr z, .itemIdByte
+	jr z, .printItemText
 .printLevelText
 	push de
 	push bc
@@ -824,18 +824,30 @@ Pokedex_PrintStatsText:
 	pop bc
 	pop de
 	jr .itemIdByte
+.printItemText
+	push de
+	push bc
+	ld de, EvolveItemText
+	hlcoord 1, 11
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH ; * 3
+	call AddNTimes
+	call PlaceString
+	pop bc
+	pop de
+	jr .itemIdByte
 .itemIdByte
 	inc de
 	ld a, [de]
 	cp $FF
 	jr z, .levelByte
 	cp DEVO_SPRAY
-	jr z, .levelByte
+	jr z, .clearBullet
 	push de
 	push bc
 	ld [wd11e], a 
 	call GetItemName
-	hlcoord 1, 11	
+	hlcoord 2, 11	
 	ldh a, [hEvoCounter]
 	ld bc, SCREEN_WIDTH ; * 3
 	call AddNTimes
@@ -844,6 +856,17 @@ Pokedex_PrintStatsText:
 	pop de
 	ld a, [wWhichPokemon]
 	ld [wd11e], a
+	jr .levelByte
+.clearBullet
+	push de
+	push bc
+	hlcoord 1, 11
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH ; * 3
+	call AddNTimes
+	ld [hl], " "
+	pop bc
+	pop de
 .levelByte
 	inc de
 	ld a, [de]
@@ -856,7 +879,7 @@ Pokedex_PrintStatsText:
 	ldh a, [hEvoCounter]
 	ld bc, SCREEN_WIDTH ; * 3
 	call AddNTimes
-	lb bc, 1, 3
+	lb bc, LEFT_ALIGN | 1, 3
 	call PrintNumber
 	pop bc
 	pop de
@@ -864,7 +887,7 @@ Pokedex_PrintStatsText:
 	push de
 	push bc
 	ld de, EvolveLVLText
-	hlcoord 14, 11
+	hlcoord 15, 11
 	ldh a, [hEvoCounter]
 	ld bc, SCREEN_WIDTH ; * 3
 	call AddNTimes
@@ -889,13 +912,16 @@ Pokedex_PrintStatsText:
 	ret
 
 EvolveLevelText:
-	db "LEVEL-UP@"
+	db "*LEVEL-UP@"
 
 EvolveTradeText:
-	db "TRADE@"
+	db "*TRADE@"
+
+EvolveItemText:
+	db "*@"
 
 EvolveLVLText:
-	db "L:@"
+	db "<LVL>@"
 
 Pokedex_PrintMovesText:
 	ld a, [wd11e]
