@@ -111,7 +111,7 @@ ViridianSchoolBlackboard::
 	ld hl, wStatusFlags5
 	set BIT_NO_TEXT_DELAY, [hl]
 	hlcoord 0, 0
-	lb bc, 6, 10
+	lb bc, 6, 11
 	call TextBoxBorder
 	hlcoord 1, 2
 	ld de, StatusAilmentText1
@@ -185,13 +185,13 @@ ViridianSchoolBlackboardText2:
 	text_end
 
 StatusAilmentText1:
-	db   " SLP"
-	next " PSN"
-	next " PAR@"
+	db   " SLP<SLP>"
+	next " PSN<PSN>"
+	next " PAR<PAR>@"
 
 StatusAilmentText2:
-	db   " BRN"
-	next " FRZ"
+	db   " BRN<BRN>"
+	next " FRZ<FRZ>"
 	next " QUIT@"
 
 	db "@" ; unused
