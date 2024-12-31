@@ -786,7 +786,7 @@ Pokedex_PrintStatsText:
 	ld [wCurPartySpecies], a
 	farcall PrepareEvolutionData
 	ld de, wPokedexDataBuffer
-	xor a
+	ld a, 1
 	ldh [hEvoCounter], a
 .loopEvolutionData
 	ld a, [wMoveListCounter] 
@@ -849,6 +849,7 @@ Pokedex_PrintStatsText:
 	ld a, [de]
 	cp 1
 	jr z, .targetByte
+	
 	push de
 	push bc
 	hlcoord 16, 11
@@ -859,6 +860,18 @@ Pokedex_PrintStatsText:
 	call PrintNumber
 	pop bc
 	pop de
+
+	push de
+	push bc
+	ld de, EvolveLVLText
+	hlcoord 14, 11
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH ; * 3
+	call AddNTimes
+	call PlaceString
+	pop bc
+	pop de
+
 	jr .targetByte
 .targetByte
 	inc de
@@ -880,6 +893,9 @@ EvolveLevelText:
 
 EvolveTradeText:
 	db "TRADE@"
+
+EvolveLVLText:
+	db "L:@"
 
 Pokedex_PrintMovesText:
 	ld a, [wd11e]
