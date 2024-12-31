@@ -829,6 +829,8 @@ Pokedex_PrintStatsText:
 	ld a, [de]
 	cp $FF
 	jr z, .levelByte
+	cp DEVO_SPRAY
+	jr z, .levelByte
 	push de
 	push bc
 	ld [wd11e], a 
