@@ -107,11 +107,11 @@ HandlePokedexSideMenu:
 	and a
 	jr z, .choseData
 	dec a
-	jr z, .choseCry
-	dec a
-	jr z, .choseArea
+	jr z, .choseStat
 	dec a
 	jr z, .choseMove
+	dec a
+	jr z, .choseArea
 .choseQuit
 	ld b, 1
 .exitSideMenu
@@ -151,24 +151,28 @@ HandlePokedexSideMenu:
 	ld b, 0
 	jr .exitSideMenu
 
-; play pokemon cry
-.choseCry
-	ld a, [wPokedexNum]
-	call GetCryData
-	call PlaySound
-	jr .handleMenuInput
-
-.choseArea
-	predef LoadTownMap_Nest ; display pokemon areas
+.choseStat
+	ld a, 2
+	ld [wPokedexModeSelect], a
+	ld a, 0
+	ld [wMoveListCounter], a
+	call ShowPokedexDataInternal
 	ld b, 0
 	jr .exitSideMenu
 
 .choseMove
 	ld a, 1
+	ld [wPokedexModeSelect], a
 	ld [wMoveListCounter], a
 	call ShowPokedexDataInternal
 	ld b, 0
 	jr .exitSideMenu
+	
+.choseArea
+	predef LoadTownMap_Nest ; display pokemon areas
+	ld b, 0
+	jr .exitSideMenu
+
 
 ; handles the list of pokemon on the left of the pokedex screen
 ; sets carry flag if player presses A, unsets carry flag if player presses B
@@ -333,9 +337,9 @@ PokedexContentsText:
 
 PokedexMenuItemsText:
 	db   "DATA"
-	next "CRY"
-	next "AREA"
+	next "STAT"
 	next "MOVE"
+	next "AREA"
 	next "QUIT@"
 
 Pokedex_PlacePokemonList:
@@ -445,9 +449,12 @@ ShowPokedexDataInternal:
 	push af
 	ld b, SET_PAL_POKEDEX
 	call RunPaletteCommand
-	ld a, [wMoveListCounter] ; using this as a temp variable
-	cp 0
-	jr nz, .PrintMoves
+	ld a, [wPokedexModeSelect] ; using this as a temp variable
+	cp 1
+	jr z, .PrintMoves
+	cp 2
+	jr z, .PrintStats
+.PrintDescription
 	pop af
 	ld [wPokedexNum], a
 	call DrawDexEntryOnScreen
@@ -458,7 +465,15 @@ ShowPokedexDataInternal:
 	pop af
 	ld [wd11e], a
 	call DrawDexEntryOnScreen
+	jp z, .displaySeenBottomInfo
 	call c, Pokedex_PrintMovesText
+	jr .waitForButtonPress
+.PrintStats
+	pop af
+	ld [wd11e], a
+	call DrawDexEntryOnScreen
+	jp z, .displaySeenBottomInfo
+	call c, Pokedex_PrintStatsText
 .waitForButtonPress
 	call JoypadLowSensitivity
 	ldh a, [hJoy5]
@@ -658,11 +673,32 @@ Pokedex_PrintFlavorTextAtBC:
 	ld a, %10
 	ldh [hClearLetterPrintingDelayFlags], a
 	call TextCommandProcessor ; print pokedex description text
+	xor a
+	ldh [hClearLetterPrintingDelayFlags], a
+	ret
+
+PrintMonTypes:
+	hlcoord 1, 11
+	ld de, DexType1Text
+	call PlaceString
+	hlcoord 2, 12
+	predef PrintMonType
+	ld a, [wMonHType1]
+	ld b, a
+	ld a, [wMonHType2]
+	cp b
+	jr z, .done ; don't print TYPE2/ if the pokemon has 1 type only.
+	hlcoord 1, 13
+	ld de, DexType2Text
+	call PlaceString
+.done
+	ret
+
+	
+Pokedex_PrintStatsText:
 ;;;;;;;;;; PureRGBnote: ADDED: pokedex will display the pokemon's types and their base stats on a new third page.
 	CheckEvent EVENT_GOT_POKEDEX
 	jp z, .clearLetterPrintingFlags ; don't display this new third page if we're showing the starters before getting the pokedex.
-	ld hl, DexPromptText
-	call TextCommandProcessor
 	hlcoord 1, 10
 	lb bc, 7, 18
 	call ClearScreenArea
@@ -741,24 +777,6 @@ Pokedex_PrintFlavorTextAtBC:
 	ldh [hClearLetterPrintingDelayFlags], a
 	ret
 
-PrintMonTypes:
-	hlcoord 1, 11
-	ld de, DexType1Text
-	call PlaceString
-	hlcoord 2, 12
-	predef PrintMonType
-	ld a, [wMonHType1]
-	ld b, a
-	ld a, [wMonHType2]
-	cp b
-	jr z, .done ; don't print TYPE2/ if the pokemon has 1 type only.
-	hlcoord 1, 13
-	ld de, DexType2Text
-	call PlaceString
-.done
-	ret
-
-	
 Pokedex_PrintMovesText:
 	ld a, [wd11e]
 	ld [wWhichPokemon], a
