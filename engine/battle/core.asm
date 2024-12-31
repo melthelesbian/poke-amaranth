@@ -1818,11 +1818,16 @@ DrawPlayerHUDAndHPBar:
 	ld de, wLoadedMonLevel
 	ld bc, wBattleMonPP - wBattleMonLevel
 	call CopyData
-	hlcoord 14, 8
+	hlcoord 13, 8
 	push hl
 	inc hl
 	ld de, wLoadedMonStatus
 	call PrintStatusConditionNotFainted
+	pop hl
+	push hl
+	inc hl
+	ld de, wPlayerBattleStatus1
+	call PrintStatusConfusion
 	pop hl
 	jr nz, .doNotPrintLevel
 	call PrintLevel

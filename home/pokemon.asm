@@ -324,6 +324,10 @@ PrintStatusCondition::
 	and a
 	ret
 
+PrintStatusConfusion::
+	homecall_sf PrintConfusion
+	ret
+
 PrintStatusConditionNotFainted::
 	homecall_sf PrintStatusAilment
 	ret

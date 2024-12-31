@@ -1,3 +1,16 @@
+PrintConfusion::
+	ld a, [de]
+	bit CONFUSED, a
+	ret z
+	ld a, "C"
+	ld [hli], a
+	ld a, "N"
+	ld [hli], a
+	ld a, "F"
+	ld [hli], a
+	ld [hl], "<CNF>"
+	ret
+
 PrintStatusAilment::
 	ld a, [de]
 	bit PSN, a
@@ -14,33 +27,43 @@ PrintStatusAilment::
 	ld [hli], a
 	ld a, "L"
 	ld [hli], a
-	ld [hl], "P"
+	ld a, "P"
+	ld [hli], a
+	ld [hl], "<SLP>"
 	ret
 .psn
 	ld a, "P"
 	ld [hli], a
 	ld a, "S"
 	ld [hli], a
-	ld [hl], "N"
+	ld a, "N"
+	ld [hli], a
+	ld [hl], "<PSN>"
 	ret
 .brn
 	ld a, "B"
 	ld [hli], a
 	ld a, "R"
 	ld [hli], a
-	ld [hl], "N"
+	ld a, "N"
+	ld [hli], a
+	ld [hl], "<BRN>"
 	ret
 .frz
 	ld a, "F"
 	ld [hli], a
 	ld a, "R"
 	ld [hli], a
-	ld [hl], "Z"
+	ld a, "Z"
+	ld [hli], a
+	ld [hl], "<FRZ>"
 	ret
 .par
 	ld a, "P"
 	ld [hli], a
 	ld a, "A"
 	ld [hli], a
-	ld [hl], "R"
+	ld a, "R"
+	ld [hli], a
+	ld [hl], "<PAR>"
 	ret
