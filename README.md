@@ -27,8 +27,8 @@ Pokémon Amaranth is a reimagining of the first generation of Pokémon, with the
 * You get the equivalent of the Super Rod early in the game at the house of a new Fishing Guru. Take it and fish, young one!
 * Many items have been combined or removed, taking up fewer bag slots, which means less work for you.
 * Removed `EVASION` raising and `ACCURACY` lowering moves, alongside general buffs across the board to speed up combat and make it hit harder.
-* All `HM` moves have been buffed and should be good additions to the right Pokémon.
-* Curated selection of front & back sprites combining some of the best sprites from RG, RBY, GSC, Spaceworld '97, and some other talented artists (see [CREDITS](CREDITS.md))
+* `HM` moves have been changed and any should be good additions to the right Pokémon.
+* Curated selection of front & back sprites combining some of the best sprites from RG, RBY, GSC, Spaceworld '97, and some other talented artists (see [CREDITS](docs/CREDITS.md))
 * Most Pokémon lines can be acquired before reaching Fuchsia City. Keep an eye out for new in-game trades, and remember to explore for hidden and optional areas if you want to find your favorite.
 * New Item: De-Evolution Spray (`DEVO_SPRAY` for short) does just what it says, whether you're trying to fill in a spot in your Pokédex, learn a move early, or just regret evolving one of your 'mons, you have options now.
 
@@ -43,4 +43,4 @@ I really did try to keep these to a minimum, but the following changes were more
 
 ## Acknowledgements
 
-See [CREDITS](CREDITS.md) and [pret's original README](PRET.md)
+See [CREDITS](docs/CREDITS.md) and [pret's original README](docs/PRET.md)

@@ -10,7 +10,7 @@ It builds the following ROMs:
 - dmgapae0.e69.patch `sha1: 0fb5f743696adfe1dbb2e062111f08f9bc5a293a`
 - dmgapee0.e68.patch `sha1: ed4be94dc29c64271942c87f2157bca9ca1019c7`
 
-To set up the repository, see [**INSTALL.md**](INSTALL.md).
+To set up the repository, see [**INSTALL.md**](docs/INSTALL.md).
 
 
 ## See also
