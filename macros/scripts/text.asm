@@ -1,5 +1,6 @@
 DEF text   EQUS "db TX_START,"    ; Start writing text.
 DEF next   EQUS "db \"<NEXT>\","  ; Move a line down.
+DEF feed   EQUS "db \"<LF>\","    ; Line Feed (new line, no skip)
 DEF line   EQUS "db \"<LINE>\","  ; Start writing at the bottom line.
 DEF para   EQUS "db \"<PARA>\","  ; Start a new paragraph.
 DEF cont   EQUS "db \"<CONT>\","  ; Scroll to the next line.

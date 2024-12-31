@@ -199,22 +199,22 @@ ShowMoveInfo:
 	call FarCopyData
 	; add a pop-up with the new move's info
 	hlcoord 0, 0
-	lb bc, 5, 18
+	lb bc, 2, 18
 	call TextBoxBorder
 	call HidePartySprites
 	; show the move's name on the top
-	hlcoord 1, 1
+	hlcoord 2, 0
 	ld de, wStringBuffer
 	call PlaceString
 	; move info labels
-	hlcoord 1, 3
+	hlcoord 1, 1
 	ld de, MoveInfoLabels
 	call PlaceString
 	; place the move's type
-	hlcoord 7, 3
+	hlcoord 1, 1
 	predef PrintBufferedMoveType
 	; place the move's power
-	hlcoord 6, 5
+	hlcoord 6, 2
 	ld de, wBuffer + 2
 	ld a, [de]
 	cp 1
@@ -235,10 +235,190 @@ ShowMoveInfo:
 	call ConvertPercentages
 	ld [wBuffer + 6], a ; after the actual move data
 	ld de, wBuffer + 6
-	hlcoord 15, 5
+	hlcoord 15, 2
+	lb bc, 1, 3
+	call PrintNumber
+.printPP
+	ld a, [wBuffer + 5]
+	ld de, wBuffer + 5
+	hlcoord 14, 1
 	lb bc, LEFT_ALIGN | 1, 3
 	call PrintNumber
+; move effect icons
+	call PrintMoveEffectIcons
 	ret
+
+MACRO lme_print_handler
+	dbw \1, PrintMoveEffectIcons.\2
+ENDM
+
+LearnMoveEffectPrintHandlers:
+	lme_print_handler POISON_EFFECT             , printPSN
+	lme_print_handler POISON_SIDE_EFFECT1       , printPSN
+	lme_print_handler POISON_SIDE_EFFECT2       , printPSN
+	lme_print_handler SLEEP_EFFECT              , printSLP
+	lme_print_handler CONFUSION_EFFECT          , printCNF
+	lme_print_handler CONFUSION_SIDE_EFFECT     , printCNF
+	lme_print_handler FREEZE_SIDE_EFFECT        , printFRZ
+	lme_print_handler BURN_SIDE_EFFECT1         , printBRN
+	lme_print_handler BURN_SIDE_EFFECT2         , printBRN
+	lme_print_handler PARALYZE_EFFECT           , printPAR
+	lme_print_handler PARALYZE_SIDE_EFFECT1     , printPAR
+	lme_print_handler PARALYZE_SIDE_EFFECT2     , printPAR
+	lme_print_handler ATTACK_UP1_EFFECT         , printStatUp1
+	lme_print_handler DEFENSE_UP1_EFFECT        , printStatUp1
+	lme_print_handler SPEED_UP1_EFFECT          , printStatUp1
+	lme_print_handler SPECIAL_UP1_EFFECT        , printStatUp1
+	lme_print_handler ATTACK_UP2_EFFECT         , printStatUp2
+	lme_print_handler DEFENSE_UP2_EFFECT        , printStatUp2
+	lme_print_handler SPEED_UP2_EFFECT          , printStatUp2
+	lme_print_handler SPECIAL_UP2_EFFECT        , printStatUp2
+	lme_print_handler ATTACK_DOWN1_EFFECT       , printStatDown1
+	lme_print_handler ATTACK_DOWN_SIDE_EFFECT   , printStatDown1
+	lme_print_handler DEFENSE_DOWN1_EFFECT      , printStatDown1
+	lme_print_handler DEFENSE_DOWN_SIDE_EFFECT  , printStatDown1
+	lme_print_handler SPEED_DOWN1_EFFECT        , printStatDown1
+	lme_print_handler SPEED_DOWN_SIDE_EFFECT    , printStatDown1
+	lme_print_handler SPECIAL_DOWN1_EFFECT      , printStatDown1
+	lme_print_handler SPECIAL_DOWN_SIDE_EFFECT  , printStatDown1
+	lme_print_handler ATTACK_DOWN2_EFFECT       , printStatDown2
+	lme_print_handler DEFENSE_DOWN2_EFFECT      , printStatDown2
+	lme_print_handler SPEED_DOWN2_EFFECT        , printStatDown2
+	lme_print_handler SPECIAL_DOWN2_EFFECT      , printStatDown2
+	lme_print_handler HEAL_EFFECT               , printHeal
+	lme_print_handler DRAIN_HP_EFFECT           , printHeal
+	lme_print_handler LEECH_SEED_EFFECT         , printHeal
+	lme_print_handler RECOIL_EFFECT             , printRecoil
+	lme_print_handler FLINCH_SIDE_EFFECT1       , printFlinch
+	lme_print_handler FLINCH_SIDE_EFFECT2       , printFlinch
+	lme_print_handler CHARGE_EFFECT             , printMultiTurn
+	lme_print_handler FLY_EFFECT                , printMultiTurn
+	lme_print_handler ATTACK_TWICE_EFFECT       , printMultiHit1
+	lme_print_handler TWO_TO_FIVE_ATTACKS_EFFECT, printMultiHit2
+	lme_print_handler TWINEEDLE_EFFECT          , printMultiHit1
+	lme_print_handler TRAPPING_EFFECT           , printTrapping
+	lme_print_handler RAGE_EFFECT               , printRage
+	lme_print_handler THRASH_PETAL_DANCE_EFFECT , printRage
+	db -1
+	
+
+MoveEffectHighCritical: INCLUDE "data/battle/critical_hit_moves.asm"
+
+
+PrintMoveEffectIcons:
+.printHighCrit
+	ld a, [wd11e]
+	ld b, a
+	ld hl, MoveEffectHighCritical
+.hcLoop
+	ld a, [hli] ; read move from table
+	cp b
+	jr z, .highCritMove
+	inc a
+	jr nz, .hcLoop
+	jr .statusEffect
+.highCritMove
+	hlcoord 18, 1
+	ld [hl], "<CH>"
+	jp .finished
+.statusEffect
+	ld a, [wBuffer + 1]
+.noAdditionalEffect
+	cp NO_ADDITIONAL_EFFECT
+	jp z, .finished
+	cp SPLASH_EFFECT
+	jp z, .finished
+.processMoveEffectPrintHandlers
+	ld hl, LearnMoveEffectPrintHandlers
+	ld de, 3
+	call IsInArray
+	jr c, .found
+	jp .printUnique
+.found
+	inc hl
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	jp hl
+.printPSN
+	hlcoord 18, 1
+	ld [hl], "<PSN>"
+	jp .finished
+.printSLP
+	hlcoord 18, 1
+	ld [hl], "<SLP>"
+	jp .finished
+.printCNF
+	hlcoord 18, 1
+	ld [hl], "<CNF>"
+	jp .finished
+.printFRZ
+	hlcoord 18, 1
+	ld [hl], "<FRZ>"
+	jp .finished
+.printBRN
+	hlcoord 18, 1
+	ld [hl], "<BRN>"
+	jp .finished
+.printPAR
+	hlcoord 18, 1
+	ld [hl], "<PAR>"
+	jp .finished
+.printStatUp1
+	hlcoord 18, 1
+	ld [hl], "<U1>"
+	jp .finished
+.printStatUp2
+	hlcoord 18, 1
+	ld [hl], "<U2>"
+	jp .finished
+.printStatDown1
+	hlcoord 18, 1
+	ld [hl], "<D1>"
+	jp .finished
+.printStatDown2
+	hlcoord 18, 1
+	ld [hl], "<D2>"
+	jp .finished
+.printHeal
+	hlcoord 18, 1
+	ld [hl], "<HEART>"
+	jp .finished
+.printRecoil
+	hlcoord 18, 1
+	ld [hl], "<BOUNCE>"
+	jp .finished
+.printFlinch
+	hlcoord 18, 1
+	ld [hl], "<PAIN>"
+	jp .finished
+.printMultiTurn
+	hlcoord 18, 1
+	ld [hl], "<CLOCK>"
+	jp .finished
+.printMultiHit1
+	hlcoord 8, 2
+	ld [hl], "+"
+	jp .finished
+.printMultiHit2
+	hlcoord 8, 2
+	ld [hl], "×"
+	jp .finished
+.printTrapping
+	hlcoord 18, 1
+	ld [hl], "<SPIRAL>"
+	jp .finished
+.printRage
+	hlcoord 18, 1
+	ld [hl], "<ANGRY>"
+	jp .finished
+; [INFO] default to unique effect
+.printUnique
+	hlcoord 18, 1
+	ld [hl], "<SPARKLE>"
+.finished
+	ret
+
 
 ; [info] Luna fixed this for me, I do not know why it works	
 ConvertPercentagesBattle::
@@ -353,8 +533,8 @@ HMCantDeleteText:
 	text_end
 
 MoveInfoLabels:
-	db   "TYPE:"
-	next "PWR:     ACC:"
+	db   "         PP:"
+	feed "PWR:     ACC:    %"
 	db "@"
 
 NullMoveInfoLabel:
