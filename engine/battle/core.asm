@@ -1824,6 +1824,7 @@ DrawPlayerHUDAndHPBar:
 	ld de, wLoadedMonStatus
 	call PrintStatusConditionNotFainted
 	pop hl
+	jr nz, .doNotPrintLevel
 	push hl
 	inc hl
 	ld de, wPlayerBattleStatus1
