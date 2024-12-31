@@ -771,11 +771,113 @@ Pokedex_PrintStatsText:
 	hlcoord 15, 16
 	lb bc, 2, 3
 	call PrintNumber
+; print evolution data
+	ld hl, DexPromptText
+	call TextCommandProcessor
+	hlcoord 1, 10
+	lb bc, 7, 18
+	call ClearScreenArea
+	hlcoord 5, 10
+	ld de, EvolutionsText
+	call PlaceString
+; load pokemon data
+	ld a, [wd11e]
+	ld [wWhichPokemon], a
+	ld [wCurPartySpecies], a
+	farcall PrepareEvolutionData
+	ld de, wPokedexDataBuffer
+	xor a
+	ldh [hEvoCounter], a
+.loopEvolutionData
+	ld a, [wMoveListCounter] 
+	ld c, a ; loop counter
+	cp 0
+	jp z, .clearLetterPrintingFlags
+	ld a, [de]
+	cp EVOLVE_LEVEL
+	jr z, .printLevelText
+	cp EVOLVE_TRADE
+	jr z, .printTradeText
+	cp EVOLVE_ITEM
+	jr z, .itemIdByte
+.printLevelText
+	push de
+	push bc
+	ld de, EvolveLevelText
+	hlcoord 1, 11
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH ; * 3
+	call AddNTimes
+	call PlaceString
+	pop bc
+	pop de
+	jr .itemIdByte
+.printTradeText
+	push de
+	push bc
+	ld de, EvolveTradeText
+	hlcoord 1, 11
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH ; * 3
+	call AddNTimes
+	call PlaceString
+	pop bc
+	pop de
+	jr .itemIdByte
+.itemIdByte
+	inc de
+	ld a, [de]
+	cp $FF
+	jr z, .levelByte
+	push de
+	push bc
+	ld [wd11e], a 
+	call GetItemName
+	hlcoord 1, 11	
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH ; * 3
+	call AddNTimes
+	call PlaceString
+	pop bc
+	pop de
+	ld a, [wWhichPokemon]
+	ld [wd11e], a
+.levelByte
+	inc de
+	ld a, [de]
+	cp 1
+	jr z, .targetByte
+	push de
+	push bc
+	hlcoord 16, 11
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH ; * 3
+	call AddNTimes
+	lb bc, 1, 3
+	call PrintNumber
+	pop bc
+	pop de
+	jr .targetByte
+.targetByte
+	inc de
+	dec c
+	ld a, c
+	ld [wMoveListCounter], a
+	ld hl, hEvoCounter
+	inc [hl]
+	inc de
+	jp .loopEvolutionData
 .clearLetterPrintingFlags
 ;;;;;;;;;;
 	xor a
 	ldh [hClearLetterPrintingDelayFlags], a
 	ret
+
+EvolveLevelText:
+	db "LEVEL-UP@"
+
+EvolveTradeText:
+	db "TRADE@"
 
 Pokedex_PrintMovesText:
 	ld a, [wd11e]
@@ -1014,6 +1116,9 @@ DexType2Text:
 
 BaseStatsText:
 	db "BASE STATS@"
+
+EvolutionsText:
+	db "EVOLUTIONS@"
 
 HPText:
 	db "HP@"

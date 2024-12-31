@@ -510,6 +510,65 @@ WriteMonMoves_ShiftMoveData:
 Evolution_FlagAction:
 	predef_jump FlagActionPredef
 
+
+PrepareEvolutionData::
+	ld a, [wWhichPokemon]
+	ld a, [wNameListIndex]
+	ld de, wPokedexDataBuffer
+	ld c, 0 ; c = count of evolution methods
+	xor a
+	push bc
+	; Get pointer to evos moves data.
+	ld a, [wWhichPokemon]
+	dec a
+	ld c, a
+	ld b, 0
+	ld hl, EvosMovesPointerTable
+	add hl, bc
+	add hl, bc
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a  ; hl = pointer to evos moves data for our mon
+	pop bc
+.loopEvoData
+	ld a, [hli]
+	cp 0
+	jp z, .done
+	cp EVOLVE_ITEM
+	jp z, .loadItemData
+.loadLevelUpTradeData
+	ld [de], a
+	inc de
+	ld a, $FF ; no item
+	ld [de], a
+	inc de
+	ld a, [hli] ; level
+	ld [de], a
+	inc de
+	ld a, [hli]
+	ld [de], a
+	inc c
+	inc de
+	jr .loopEvoData
+.loadItemData
+	ld [de], a
+	inc de
+	ld a, [hli]; item
+	ld [de], a
+	inc de
+	ld a, [hli] ; level
+	ld [de], a
+	inc de
+	ld a, [hli]
+	ld [de], a
+	inc c
+	inc de
+	jr .loopEvoData
+.done
+	ld a, c
+	ld [wMoveListCounter], a
+	ret 
+
 PrepareLevelUpMoveList::
 ; Loads relearnable move list to wMoveBuffer.
 ; Input: party mon index = [wWhichPokemon]

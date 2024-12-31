@@ -366,6 +366,7 @@ wSlotMachineSevenAndBarModeChance:: db
 ; ROM back to return to when the player is done with the slot machine
 wSlotMachineSavedROMBank:: db
 wSum:: dw
+wPokedexDataBuffer::
 wMoveBuffer::
 	ds 164
 wLuckySlotHiddenObjectIndex:: db

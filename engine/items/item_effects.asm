@@ -561,6 +561,8 @@ ItemUseBall:
 	call ClearSprites
 	ld a, [wEnemyMonSpecies]
 	ld [wd11e], a
+	xor a
+	ld [wPokedexModeSelect], a
 	predef ShowPokedexData
 
 .skipShowingPokedexData
