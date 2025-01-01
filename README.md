@@ -41,6 +41,18 @@ I really did try to keep these to a minimum, but the following changes were more
 * Fixed the bug causing permanent invulnerability if a digging or flying Pokémon was interrupted by paralysis or confusion before concluding their attack, this isn't deliberately exploitable in a fun way and could cause serious gameplay issues.
 * Altered the sleep mechanics to allow attacking on the turn which you wake up. It was impossible to balance the sleep moves without this change, especially in light of the removal of accuracy-lowering moves, sleep is still powerful, but not entirely game-breaking.
 
+## Gallery
+
+![pokémon amaranth title screen](docs/title-screen.png) 
+![improved move infobox](docs/move-infobox.png) 
+![town map on start menu](docs/town-map.png) ![show move info on learn attempt](docs/learn-moves.png)
+![item sorting](docs/item-sorting.png)
+![base stats in dex](docs/base-stats.png) 
+![evolution methods in dex](docs/evolution-methods.png) 
+![learnsets in dex](docs/learnsets.png)
+![sweetheart trainer](docs/sweetheart.png)
+![auto repel](docs/auto-repel.png)
+
 ## Acknowledgements
 
 See [CREDITS](docs/CREDITS.md) and [pret's original README](docs/PRET.md)
