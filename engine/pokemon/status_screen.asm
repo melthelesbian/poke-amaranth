@@ -389,7 +389,7 @@ StatusScreen2:
 	cp $4
 	jr nz, .PrintPP
 .PPDone
-	hlcoord 9, 3
+	hlcoord 8, 3
 	ld de, StatusScreenExpText
 	call PlaceString
 	ld a, [wLoadedMonLevel]
@@ -419,6 +419,9 @@ StatusScreen2:
 	call StatusScreen_ClearName
 	hlcoord 9, 1
 	call StatusScreen_ClearName
+	; clear 's' 
+	hlcoord 8, 6
+	ld [hl], " "
 	ld a, [wMonHIndex]
 	ld [wd11e], a
 	call GetMonName
