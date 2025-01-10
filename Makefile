@@ -19,7 +19,9 @@ rom_obj := \
 	gfx/tilesets.o
 
 amaranth_obj            := $(rom_obj:.o=_amrnth.o)
+amaranth_debug_obj      := $(rom_obj:.o=_amrnth_debug.o)
 amaranth_red_obj        := $(rom_obj:.o=_amrnth_red.o)
+amaranth_red_debug_obj  := $(rom_obj:.o=_amrnth_red_debug.o)
 amaranth_blue_obj       := $(rom_obj:.o=_amrnth_blue.o)
 amaranth_blue_debug_obj := $(rom_obj:.o=_amrnth_blue_debug.o)
 amaranth_red_vc_obj     := $(rom_obj:.o=_amrnth_red_vc.o)
@@ -49,12 +51,14 @@ RGBLINK ?= $(RGBDS)rgblink
 .SECONDARY:
 .PHONY: all amaranth red blue blue_debug clean tidy compare tools
 
-amaranth:   amaranth.gbc
-red:        amaranth_red.gbc
-blue:       amaranth_blue.gbc
-blue_debug: amaranth_blue_debug.gbc
-red_vc:     amaranth_red.patch
-blue_vc:    amaranth_blue.patch
+amaranth:       amaranth.gbc
+amaranth_debug: amaranth_debug.gbc
+red:            amaranth_red.gbc
+red_debug:      amaranth_red_debug.gbc
+blue:           amaranth_blue.gbc
+blue_debug:     amaranth_blue_debug.gbc
+red_vc:         amaranth_red.patch
+blue_vc:        amaranth_blue.patch
 all: $(roms) $(patches)
 
 clean: tidy
@@ -78,6 +82,8 @@ tidy:
 	      $(amaranth_blue_obj) \
 	      $(amaranth_red_vc_obj) \
 	      $(amaranth_blue_vc_obj) \
+		  $(amaranth_debug_obj) \
+		  $(amaranth_red_debug_obj) \
 	      $(amaranth_blue_debug_obj) \
 	      rgbdscheck.o
 	$(MAKE) clean -C tools/
@@ -96,7 +102,9 @@ RGBASMFLAGS += -E
 endif
 
 $(amaranth_obj):            RGBASMFLAGS += -D _AMARANTH
+$(amaranth_debug_obj):      RGBASMFLAGS += -D _AMARANTH -D _DEBUG
 $(amaranth_red_obj):        RGBASMFLAGS += -D _RED
+$(amaranth_red_debug_obj):  RGBASMFLAGS += -D _RED -D _DEBUG
 $(amaranth_blue_obj):       RGBASMFLAGS += -D _BLUE
 $(amaranth_blue_debug_obj): RGBASMFLAGS += -D _BLUE -D _DEBUG
 $(amaranth_red_vc_obj):     RGBASMFLAGS += -D _RED -D _RED_VC
@@ -125,7 +133,9 @@ endef
 
 # Dependencies for objects (drop _red and _blue from asm file basenames)
 $(foreach obj, $(amaranth_obj), $(eval $(call DEP,$(obj),$(obj:_amrnth.o=.asm))))
+$(foreach obj, $(amaranth_debug_obj), $(eval $(call DEP,$(obj),$(obj:_amrnth_debug.o=.asm))))
 $(foreach obj, $(amaranth_red_obj), $(eval $(call DEP,$(obj),$(obj:_amrnth_red.o=.asm))))
+$(foreach obj, $(amaranth_red_debug_obj), $(eval $(call DEP,$(obj),$(obj:_amrnth_red_debug.o=.asm))))
 $(foreach obj, $(amaranth_blue_obj), $(eval $(call DEP,$(obj),$(obj:_amrnth_blue.o=.asm))))
 $(foreach obj, $(amaranth_blue_debug_obj), $(eval $(call DEP,$(obj),$(obj:_amrnth_blue_debug.o=.asm))))
 $(foreach obj, $(amaranth_red_vc_obj), $(eval $(call DEP,$(obj),$(obj:_amrnth_red_vc.o=.asm))))
@@ -141,14 +151,18 @@ endif
 %.asm: ;
 
 amaranth_pad            = 0x00
+amaranth_debug_pad      = 0x00
 amaranth_red_pad        = 0x00
+amaranth_red_debug_pad  = 0xff
 amaranth_blue_pad       = 0x00
 amaranth_red_vc_pad     = 0x00
 amaranth_blue_vc_pad    = 0x00
 amaranth_blue_debug_pad = 0xff
 
 amaranth_opt            = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "AMARANTH 25"
+amaranth_debug_opt      = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "AMARANTH 25"
 amaranth_red_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON RED"
+amaranth_red_debug_opt  = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON RED"
 amaranth_blue_opt       = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON BLUE"
 amaranth_blue_debug_opt = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON BLUE"
 amaranth_red_vc_opt     = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON RED"
