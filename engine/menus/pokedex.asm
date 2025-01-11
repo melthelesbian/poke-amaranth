@@ -145,8 +145,9 @@ HandlePokedexSideMenu:
 	jr .exitSideMenu
 
 .choseData
-	ld a, 0
+	xor a
 	ld [wMoveListCounter], a
+	ld [wPokedexModeSelect], a
 	call ShowPokedexDataInternal
 	ld b, 0
 	jr .exitSideMenu
@@ -937,7 +938,7 @@ Pokedex_PrintMovesText:
 	push de
 	push bc
 	ld de, LevelUpMovesText
-	hlcoord 1, 11
+	hlcoord 1, 10
 	call PlaceString
 	pop bc
 	pop de
@@ -1062,7 +1063,7 @@ Pokedex_PrintMovesText:
 .PrintTMMovesLoop
 	push de
 	ld de, TMHMMovesText
-	hlcoord 1, 11
+	hlcoord 1, 10
 	call PlaceString
 	pop de
 	ld a, [de]
