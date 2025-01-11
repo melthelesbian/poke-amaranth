@@ -22,7 +22,7 @@
 	charmap "<TARGET>",  $59
 	charmap "<USER>",    $5a
 	charmap "<PC>",      $5b ; "PC"
-	charmap "<TM>",      $5c ; "TM"
+	charmap "<TMCHAR>",         $5c ; "TM"
 	charmap "<TRAINER>", $5d ; "TRAINER"
 	charmap "<ROCKET>",  $5e ; "ROCKET"
 	charmap "<DEXEND>",  $5f
@@ -158,6 +158,11 @@
 	charmap "'t",        $be
 	charmap "'v",        $bf
 
+
+	charmap "<TM>",      $c9
+	charmap "<HM>",      $ca
+	                    ;$cb
+	                    ;$cc
 	charmap "<ANGRY>",   $cd
 	charmap "<SPIRAL>",  $ce
 	charmap "<CLOCK>",   $cf

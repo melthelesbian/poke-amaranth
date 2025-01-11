@@ -1068,6 +1068,10 @@ Pokedex_PrintMovesText:
 	hlcoord 1, 10
 	lb bc, 7, 18
 	call ClearScreenArea
+	; clear move buffer
+	ld hl, wMoveBuffer
+	ld bc, 164
+	call FillMemory
 .tmMoveset
 	; print header and loading text
 	push de
@@ -1093,59 +1097,43 @@ Pokedex_PrintMovesText:
 	hlcoord 1, 10
 	call PlaceString
 	pop de
+	xor a
+	ldh [hMoveCounter], a
 	ld a, [de]
+	ld [wd11e], a
 .first
 	cp 0
 	jp z, .done2
-	push de
-	ld [wd11e], a
-	call GetMoveName
-	hlcoord 2, 12
-	call PlaceString
-	pop de
+	call PrintTMHMMoveLine
 	inc de
 	ld a, [de]
+	ld [wd11e], a
 .second
 	cp 0
 	jp z, .done2
-	push de
-	ld [wd11e], a
-	call GetMoveName
-	hlcoord 2, 13
-	call PlaceString
-	pop de
+	call PrintTMHMMoveLine
 	inc de
 	ld a, [de]
+	ld [wd11e], a
 .third
 	cp 0
 	jp z, .done2
-	push de
+	call PrintTMHMMoveLine
+	inc de
+	ld a, [de]
 	ld [wd11e], a
-	call GetMoveName
-	hlcoord 2, 14
-	call PlaceString
-	pop de
 .fourth
-	inc de
-	ld a, [de]
 	cp 0
 	jp z, .done2
-	push de
-	ld [wd11e], a
-	call GetMoveName
-	hlcoord 2, 15
-	call PlaceString
-	pop de
+	call PrintTMHMMoveLine
 	inc de
 	ld a, [de]
+	ld [wd11e], a
+.fifth
 	cp 0
 	jp z, .done2
-	push de
-	ld [wd11e], a
-	call GetMoveName
-	hlcoord 2, 16
-	call PlaceString
-	pop de
+	call PrintTMHMMoveLine
+.tmsDone
 	inc de
 	; wait for button press
 	push de
@@ -1159,11 +1147,85 @@ Pokedex_PrintMovesText:
 .done2
 	ret
 
+ClearMoveBuffer:
+	xor a
+
+PrintTMHMMoveLine:
+	; print TM/HM symbol
+	push de
+	push bc
+	ld a, [wd11e] ; tm number
+	cp 51
+	jr z, .gotHM
+	jr nc, .gotHM
+	ld de, TMSymbolText
+	jr .printSymbol
+.gotHM
+	ld de, HMSymbolText
+.printSymbol
+	hlcoord 1, 12
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH
+	call AddNTimes
+	call PlaceString
+	pop bc
+	pop de
+	; print TM/HM number
+	push bc
+	hlcoord 2, 12
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH
+	call AddNTimes
+	ld a, [wd11e]
+	cp 51
+	jr z, .printHMNumber
+	jr nc, .printHMNumber
+.printTMNumber
+	lb bc, LEADING_ZEROES | 1, 2
+	call PrintNumber
+	jr .donePrinting
+.printHMNumber
+	sub a, 50
+	ld [de], a
+	lb bc, LEADING_ZEROES | 1, 2
+	call PrintNumber
+	add a, 50
+	ld [de], a
+.donePrinting
+	pop bc
+	; print move name
+	inc de
+	inc de
+	ld a, [de]
+	push de
+	push bc
+	ld [wd11e], a
+	call GetMoveName
+	hlcoord 5, 12
+	ldh a, [hEvoCounter]
+	ld bc, SCREEN_WIDTH
+	call AddNTimes
+	call PlaceString
+	pop bc
+	pop de
+
+	push hl
+	ld hl, hEvoCounter
+	inc [hl]
+	pop hl
+	ret
+
 LevelUpMovesText:
 	db   "LEVEL-UP MOVES:@"
 
 TMHMMovesText:
 	db   "TM/HM MOVES:@"
+
+TMSymbolText:
+	db   "<TM>@"
+
+HMSymbolText:
+	db   "<HM>@"
 
 LoadingText:
 	db   "LOADING...@"
