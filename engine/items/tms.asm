@@ -42,6 +42,9 @@ TMToMove:
 GetTMMoves:
 	ld de, wMoveBuffer
 	ld hl, TechnicalMachines
+	xor a
+	ld b, a
+	inc b
 .findTMLoop
 	ld a, [hli]
 	cp -1
@@ -59,10 +62,14 @@ GetTMMoves:
 	pop de
 	jr z, .cantLearn
 .canLearn
+	ld a, b
+	ld [de], a
+	inc de
 	ld a, [wMoveNum]
 	ld [de], a
 	inc de
 .cantLearn
+	inc b
 	jr .findTMLoop
 .done
 	ld a, 0 ; terminator
