@@ -943,10 +943,12 @@ Pokedex_PrintMovesText:
 	pop bc
 	pop de
 	push bc
-	ld a, [de]
 	hlcoord 1, 12
-	lb bc, 1, 3
-	call PrintNumber ; print number of seen pokemon
+	ld [hl], "<LVL>"
+	ld a, [de]
+	hlcoord 2, 12
+	lb bc, LEFT_ALIGN | 1, 3
+	call PrintNumber ; print move level
 	inc de
 	inc de
 	ld a, [de]
@@ -962,11 +964,13 @@ Pokedex_PrintMovesText:
 	cp b
 	jp z, .done
 	push bc
+	hlcoord 1, 13
+	ld [hl], "<LVL>"
 	inc de
 	ld a, [de]
-	hlcoord 1, 13
-	lb bc, 1, 3
-	call PrintNumber ; print number of seen pokemon
+	hlcoord 2, 13
+	lb bc, LEFT_ALIGN | 1, 3
+	call PrintNumber ; print move level
 	inc de
 	inc de
 	ld a, [de]
@@ -982,11 +986,13 @@ Pokedex_PrintMovesText:
 	cp b
 	jp z, .done
 	push bc
+	hlcoord 1, 14
+	ld [hl], "<LVL>"
 	inc de
 	ld a, [de]
-	hlcoord 1, 14
-	lb bc, 1, 3
-	call PrintNumber ; print number of seen pokemon
+	hlcoord 2, 14
+	lb bc, LEFT_ALIGN | 1, 3
+	call PrintNumber ; print move level
 	inc de
 	inc de
 	ld a, [de]
@@ -1002,11 +1008,13 @@ Pokedex_PrintMovesText:
 	cp b
 	jr z, .done
 	push bc
+	hlcoord 1, 15
+	ld [hl], "<LVL>"
 	inc de
 	ld a, [de]
-	hlcoord 1, 15
-	lb bc, 1, 3
-	call PrintNumber ; print number of seen pokemon
+	hlcoord 2, 15
+	lb bc, LEFT_ALIGN | 1, 3
+	call PrintNumber ; print move level
 	inc de
 	inc de
 	ld a, [de]
@@ -1022,11 +1030,13 @@ Pokedex_PrintMovesText:
 	cp b
 	jr z, .done
 	push bc
+	hlcoord 1, 16
+	ld [hl], "<LVL>"
 	inc de
 	ld a, [de]
-	hlcoord 1, 16
-	lb bc, 1, 3
-	call PrintNumber ; print number of seen pokemon
+	hlcoord 2, 16
+	lb bc, LEFT_ALIGN | 1, 3
+	call PrintNumber ; print move level
 	inc de
 	inc de
 	ld a, [de]
@@ -1044,7 +1054,8 @@ Pokedex_PrintMovesText:
 	inc de
 	push de
 	push bc
-	call NewPageButtonPressCheck
+	ld hl, DexPromptText
+	call TextCommandProcessor
 	hlcoord 1, 10
 	lb bc, 7, 18
 	call ClearScreenArea
@@ -1052,14 +1063,30 @@ Pokedex_PrintMovesText:
 	pop de
 	jp .PrintLevelUpMovesLoop
 .done
-	call NewPageButtonPressCheck
+	ld hl, DexPromptText
+	call TextCommandProcessor
 	hlcoord 1, 10
 	lb bc, 7, 18
 	call ClearScreenArea
 .tmMoveset
+	; print header and loading text
+	push de
+	ld de, TMHMMovesText
+	hlcoord 1, 10
+	call PlaceString
+	ld de, LoadingText
+	hlcoord 2, 12
+	call PlaceString
+	pop de
+	; start fetching moves
 	farcall GetTMMoves
 	ld de, wMoveBuffer
 	ld a, [de]
+	push de
+	hlcoord 1, 10
+	lb bc, 7, 18
+	call ClearScreenArea
+	pop de
 .PrintTMMovesLoop
 	push de
 	ld de, TMHMMovesText
@@ -1122,7 +1149,8 @@ Pokedex_PrintMovesText:
 	inc de
 	; wait for button press
 	push de
-	call NewPageButtonPressCheck
+	ld hl, DexPromptText
+	call TextCommandProcessor
 	hlcoord 1, 10
 	lb bc, 7, 18
 	call ClearScreenArea
@@ -1130,24 +1158,15 @@ Pokedex_PrintMovesText:
 	jp .PrintTMMovesLoop
 .done2
 	ret
-NewPageButtonPressCheck:
-.waitForButtonPressLetGo
-	call Joypad
-	ldh a, [hJoyHeld]
-	and A_BUTTON | B_BUTTON
-	jr nz, .waitForButtonPressLetGo
-.waitForButtonPress
-	call Joypad
-	ldh a, [hJoyHeld]
-	and A_BUTTON | B_BUTTON
-	jr z, .waitForButtonPress
-	ret
 
 LevelUpMovesText:
-	db   "LEVEL UP MOVES:@"
+	db   "LEVEL-UP MOVES:@"
 
 TMHMMovesText:
 	db   "TM/HM MOVES:@"
+
+LoadingText:
+	db   "LOADING...@"
 
 DexPromptText:
 	text_promptbutton
