@@ -8,8 +8,7 @@ CharmeleonEvosMoves:
 	db 1, LEER
 	db 6, EMBER
 	db 8, SMOKESCREEN
-	db 10, FURY_SWIPES
-	db 13, TAIL_WHIP
+	db 11, TAIL_WHIP
 	db 15, FRIGHTEN
 	db 21, FIRE_SPIN
 	db 26, HEADBUTT
