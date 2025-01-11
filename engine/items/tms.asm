@@ -40,35 +40,33 @@ TMToMove:
 	ret
 
 GetTMMoves:
-	ld de, wMoveBuffer ; reusing from move relearner for tmhm move list
-	ld a, 0
-	ld b, a ; current move ID / counter
-.findTMloop
-	inc b
-	ld a, b
-	cp NUM_ATTACKS ; done if looked at all moves
+	ld de, wMoveBuffer
+	ld hl, TechnicalMachines
+.findTMLoop
+	ld a, [hli]
+	cp -1
 	jr z, .done
-	ld a, b
 	ld [wMoveNum], a
-	ld [wd11e], a
+	; check if can learn
 	push de
 	push bc
+	push hl
 	predef CanLearnTM
 	ld a, c
-	and a ; can the pokemon learn the move?
+	and a
+	pop hl
 	pop bc
 	pop de
 	jr z, .cantLearn
 .canLearn
-	ld a, b
-	ld [de], a ; add move ID to list of learnable moves
+	ld a, [wMoveNum]
+	ld [de], a
 	inc de
 .cantLearn
-	ld a, b
-	jr .findTMloop
+	jr .findTMLoop
 .done
 	ld a, 0 ; terminator
 	ld [de], a
-	ret
+	ret 
 
 INCLUDE "data/moves/tmhm_moves.asm"
