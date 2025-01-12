@@ -159,8 +159,8 @@
 	charmap "'v",        $bf
 
 
-	charmap "<TM>",      $c9
-	charmap "<HM>",      $ca
+	                    ;$c9
+	                    ;$ca
 	                    ;$cb
 	                    ;$cc
 	charmap "<ANGRY>",   $cd

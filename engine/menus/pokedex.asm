@@ -1172,7 +1172,7 @@ PrintTMHMMoveLine:
 	pop de
 	; print TM/HM number
 	push bc
-	hlcoord 2, 12
+	hlcoord 3, 12
 	ldh a, [hEvoCounter]
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
@@ -1201,7 +1201,7 @@ PrintTMHMMoveLine:
 	push bc
 	ld [wd11e], a
 	call GetMoveName
-	hlcoord 5, 12
+	hlcoord 6, 12
 	ldh a, [hEvoCounter]
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
@@ -1222,10 +1222,10 @@ TMHMMovesText:
 	db   "TM/HM MOVES:@"
 
 TMSymbolText:
-	db   "<TM>@"
+	db   "TM@"
 
 HMSymbolText:
-	db   "<HM>@"
+	db   "HM@"
 
 LoadingText:
 	db   "LOADING...@"
