@@ -1,6 +1,8 @@
 roms := \
 	amaranth.gbc \
+	amaranth_debug.gbc \
 	amaranth_red.gbc \
+	amaranth_red_debug.gbc \
 	amaranth_blue.gbc \
 	amaranth_blue_debug.gbc
 patches := \
