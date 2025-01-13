@@ -14,10 +14,9 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,           BODY_SLAM,    TAKE_DOWN,      \
-	     RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   FISSURE,      \
-	     DIG,          MIMIC,          BIDE,         FIRE_BLAST,   \
-	     SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+	tmhm	HEADBUTT,   DOUBLE_KICK, CRUNCH,      EARTHQUAKE, BIDE,       \
+			SKULL_BASH, REST,        HEAVY_SMASH, ROCK_SLIDE, SUBSTITUTE, \
+			                                      STRENGTH
 	; end
 
 	db BANK(RhyhornPicFront)

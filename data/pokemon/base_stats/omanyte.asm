@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      BUBBLEBEAM,   \
-	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         MIMIC,        \
-	       REFLECT,      BIDE,         REST,         SUBSTITUTE,   \
-	     SURF
+	tmhm	SWORDS_DANCE, TOXIC,      BUBBLEBEAM, ICE_BEAM,     LIGHT_SCREEN, \
+			REFLECT,      MEGA_DRAIN, WATERFALL,  DIG,          MIMIC,        \
+			BIDE,         SLUDGE,     SKULL_BASH, VENOM_STRIKE, REST,         \
+			HEAVY_SMASH,  ROCK_SLIDE, SUBSTITUTE,                             \
+			                          SURF,       STRENGTH
 	; end
 
 	db BANK(OmanytePicFront)

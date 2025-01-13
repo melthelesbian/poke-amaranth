@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,      \
-	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         \
-	     MIMIC,          BIDE,         REST,         SUBSTITUTE,   \
-	     CUT,          SURF,         STRENGTH
+	tmhm	SWORDS_DANCE, ICE_PUNCH,    BUBBLEBEAM, ICE_BEAM,    CRUNCH,   \
+			WATERFALL,    FOCUS_ENERGY, DIG,        MIMIC,       BIDE,     \
+			SWIFT,        SKULL_BASH,   REST,       HEAVY_SMASH, FURY_CUT, \
+			SUBSTITUTE,                                                    \
+			CUT,                        SURF,       STRENGTH 
 	; end
 
 	db BANK(KrabbyPicFront)

@@ -14,9 +14,10 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   ICY_WIND,    TOXIC,        TAKE_DOWN,      \
-	     RAGE,         MIMIC,          REFLECT,      BIDE,         \
-	     SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   FLY
+	tmhm	RAZOR_WIND,  SWORDS_DANCE, HEADBUTT,   AGILITY, FOCUS_ENERGY, \
+			DOUBLE_DASH, BIDE,         FLARE_RUSH, SWIFT,   REST,         \
+			SUBSTITUTE,                                                   \
+			             FLY
 	; end
 
 	db BANK(PidgeyPicFront)

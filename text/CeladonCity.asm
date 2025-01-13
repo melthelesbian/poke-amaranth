@@ -48,13 +48,10 @@ _CeladonCityGramps3ReceivedTM41Text::
 
 _CeladonCityGramps3TM41ExplanationText::
 	text "TM41 teaches"
-	line "SOFTBOILED!"
+	line "HYPNOSIS!"
 
-	para "Only one #MON"
-	line "can use it!"
-
-	para "That #MON is"
-	line "CHANSEY!"
+	para "It puts #MON"
+	line "to sleep!"
 	done
 
 _CeladonCityGramps3TM41NoRoomText::

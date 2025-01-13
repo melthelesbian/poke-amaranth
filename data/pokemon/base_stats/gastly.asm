@@ -14,9 +14,11 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        RAGE,         MEGA_DRAIN,   THUNDERBOLT,  THUNDER,      \
-	     PSYCHIC_M,    MIMIC,          BIDE,         SELFDESTRUCT, \
-	     DREAM_EATER,  REST,         PSYWAVE,      EXPLOSION,    SUBSTITUTE
+	tmhm	TELEPORT,     TOXIC,        THUNDER_WAVE, AGILITY,     CRUNCH,      \
+			THUNDERBOLT,  FOCUS_ENERGY, PSYCHIC_M,    PSYWAVE,     MIMIC,       \
+			SHADOW_TEAR,  BIDE,         SLUDGE,       HYPNOSIS,    DREAM_EATER, \
+			VENOM_STRIKE, REST,         PAY_DAY,      HEAVY_SMASH, SUBSTITUTE,  \
+			              FLY,                                     FLASH
 	; end
 
 	db BANK(GastlyPicFront)

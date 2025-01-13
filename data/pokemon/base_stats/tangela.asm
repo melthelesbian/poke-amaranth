@@ -14,10 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,      \
-	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    MIMIC,        \
-	       BIDE,         SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     CUT
+	tmhm	SWORDS_DANCE, HEADBUTT, TOXIC,      RAZOR_LEAF,  DOUBLE_KICK,  \
+			HYPER_BEAM,   AGILITY,  MEGA_DRAIN, SOLARBEAM,   FOCUS_ENERGY, \
+			DIG,          PSYWAVE,  MIMIC,      DOUBLE_DASH, BIDE,         \
+			SWIFT,        REST,     PAY_DAY,    HEAVY_SMASH, FURY_CUT,     \
+			SUBSTITUTE,                                                    \
+			CUT,                    SURF
 	; end
 
 	db BANK(TangelaPicFront)

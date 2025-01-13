@@ -14,11 +14,11 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      BUBBLEBEAM,   \
-	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         \
-	     DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      MIMIC,          \
-	     REFLECT,      BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         \
-	     SUBSTITUTE,   SURF,         STRENGTH
+	tmhm	RAZOR_WIND, SWORDS_DANCE, HEADBUTT,    BUBBLEBEAM,  ICE_BEAM,     \
+			HYPER_BEAM, AGILITY,      SUBMISSION,  CRUNCH,      DRAGONBREATH, \
+			WATERFALL,  FOCUS_ENERGY, MIMIC,       DOUBLE_DASH, BIDE,         \
+			SWIFT,      SKULL_BASH,   HEAVY_SMASH, SUBSTITUTE,                \
+			            FLY,          SURF,        STRENGTH,    FLASH
 	; end
 
 	db BANK(GyaradosPicFront)

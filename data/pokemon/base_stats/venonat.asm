@@ -14,9 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,      RAGE,         MEGA_DRAIN,   \
-	     SOLARBEAM,    PSYCHIC_M,    MIMIC,          REFLECT,      \
-	     BIDE,         REST,         PSYWAVE,      SUBSTITUTE
+	tmhm	SWORDS_DANCE, HEADBUTT,     TOXIC,       AGILITY,     CRUNCH,       \
+			MEGA_DRAIN,   FOCUS_ENERGY, PSYCHIC_M,   PSYWAVE,     MIMIC,        \
+			DOUBLE_DASH,  SHADOW_TEAR,  BIDE,        SLUDGE,      BUG_BUZZ,     \
+			SWIFT,        SKULL_BASH,   HYPNOSIS,    DREAM_EATER, VENOM_STRIKE, \
+			REST,         PAY_DAY,      HEAVY_SMASH, FURY_CUT,    SUBSTITUTE,   \
+			CUT,                                                  FLASH
 	; end
 
 	db BANK(VenonatPicFront)

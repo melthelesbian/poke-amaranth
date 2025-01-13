@@ -14,7 +14,7 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm
+	tmhm	TELEPORT, TOXIC, MIMIC, SUBSTITUTE
 	; end
 
 	db BANK(DittoPicFront)

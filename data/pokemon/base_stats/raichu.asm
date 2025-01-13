@@ -14,11 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       HYPER_BEAM,   PAY_DAY,      SUBMISSION,   SEISMIC_TOSS, \
-	     RAGE,         THUNDERBOLT,  THUNDER,      MIMIC,        DOUBLE_DASH,  \
-	     REFLECT,      BIDE,         SWIFT,        SKULL_BASH,   REST,         \
-	     THUNDER_WAVE, SUBSTITUTE,   FLASH
+	tmhm	MEGA_PUNCH,   HEADBUTT,     THUNDERPUNCH, DOUBLE_KICK, THUNDER_WAVE, \
+			HYPER_BEAM,   LIGHT_SCREEN, REFLECT,      AGILITY,     THUNDERBOLT,  \
+			FOCUS_ENERGY, DIG,          PSYWAVE,      MIMIC,       DOUBLE_DASH,  \
+			BIDE,         SWIFT,        SKULL_BASH,   REST,        PAY_DAY,      \
+			HEAVY_SMASH,  SUBSTITUTE,                                            \
+			                            SURF,         STRENGTH,    FLASH
 	; end
 
 	db BANK(RaichuPicFront)

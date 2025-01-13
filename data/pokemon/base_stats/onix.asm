@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      RAGE,         \
-	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,          \
-	     BIDE,         SELFDESTRUCT, SKULL_BASH,   REST,         EXPLOSION,    \
-	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+	tmhm	SWORDS_DANCE, HEADBUTT,   HYPER_BEAM,  AGILITY,     CRUNCH,    \
+			DRAGONBREATH, EARTHQUAKE, DIG,         BIDE,       SKULL_BASH, \
+			HYPNOSIS,     REST,       HEAVY_SMASH, ROCK_SLIDE, FURY_CUT,   \
+			SUBSTITUTE,                                                    \
+			CUT,                                   STRENGTH
 	; end
 
 	db BANK(OnixPicFront)

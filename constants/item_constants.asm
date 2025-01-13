@@ -116,7 +116,7 @@ DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 ; HMs are defined before TMs, so the actual number of TM definitions
 ; is not yet available. The TM quantity is hard-coded here and must
 ; match the actual number below.
-DEF NUM_TMS EQU 50
+DEF NUM_TMS EQU 51
 
 DEF __tmhm_value__ = NUM_TMS + 1
 
@@ -138,11 +138,11 @@ MACRO add_hm
 ENDM
 
 DEF HM01 EQU const_value
-	add_hm CUT          ; $C4
-	add_hm FLY          ; $C5
-	add_hm SURF         ; $C6
-	add_hm STRENGTH     ; $C7
-	add_hm FLASH        ; $C8
+	add_hm  CUT
+	add_hm  FLY
+	add_hm  SURF
+	add_hm  STRENGTH
+	add_hm  FLASH
 DEF NUM_HMS EQU const_value - HM01
 
 DEF __tmhm_value__ = 1
@@ -159,56 +159,57 @@ MACRO add_tm
 ENDM
 
 DEF TM01 EQU const_value
-	add_tm MEGA_PUNCH   ; $C9
-	add_tm RAZOR_WIND   ; $CA
-	add_tm SWORDS_DANCE ; $CB
-	add_tm ICY_WIND    ; $CC
-	add_tm MOONBLAST    ; $CD
-	add_tm TOXIC        ; $CE
-	add_tm BUG_BUZZ   ; $CF
-	add_tm BODY_SLAM    ; $D0
-	add_tm TAKE_DOWN    ; $D1
-	add_tm FLARE_RUSH  ; $D2
-	add_tm BUBBLEBEAM   ; $D3
-	add_tm WATER_GUN    ; $D4
-	add_tm ICE_BEAM     ; $D5
-	add_tm BLIZZARD     ; $D6
-	add_tm HYPER_BEAM   ; $D7
-	add_tm PAY_DAY      ; $D8
-	add_tm SUBMISSION   ; $D9
-	add_tm COUNTER      ; $DA
-	add_tm SEISMIC_TOSS ; $DB
-	add_tm RAGE         ; $DC
-	add_tm MEGA_DRAIN   ; $DD
-	add_tm SOLARBEAM    ; $DE
-	add_tm DRAGON_RAGE  ; $DF
-	add_tm THUNDERBOLT  ; $E0
-	add_tm THUNDER      ; $E1
-	add_tm EARTHQUAKE   ; $E2
-	add_tm FISSURE      ; $E3
-	add_tm DIG          ; $E4
-	add_tm PSYCHIC_M    ; $E5
-	add_tm TELEPORT     ; $E6
-	add_tm MIMIC        ; $E7
-	add_tm DOUBLE_DASH  ; $E8
-	add_tm REFLECT      ; $E9
-	add_tm BIDE         ; $EA
-	add_tm METRONOME    ; $EB
-	add_tm SELFDESTRUCT ; $EC
-	add_tm EGG_BOMB     ; $ED
-	add_tm FIRE_BLAST   ; $EE
-	add_tm SWIFT        ; $EF
-	add_tm SKULL_BASH   ; $F0
-	add_tm SOFTBOILED   ; $F1
-	add_tm DREAM_EATER  ; $F2
-	add_tm SKY_ATTACK   ; $F3
-	add_tm REST         ; $F4
-	add_tm THUNDER_WAVE ; $F5
-	add_tm PSYWAVE      ; $F6
-	add_tm EXPLOSION    ; $F7
-	add_tm ROCK_SLIDE   ; $F8
-	add_tm TRI_ATTACK   ; $F9
-	add_tm SUBSTITUTE   ; $FA
+	add_tm  MEGA_PUNCH
+	add_tm  RAZOR_WIND
+	add_tm  SWORDS_DANCE
+	add_tm  HEADBUTT
+	add_tm  TELEPORT
+	add_tm  TOXIC
+	add_tm  FIRE_PUNCH
+	add_tm  ICE_PUNCH
+	add_tm  THUNDERPUNCH
+	add_tm  RAZOR_LEAF
+	add_tm  BUBBLEBEAM
+	add_tm  DOUBLE_KICK
+	add_tm  ICE_BEAM
+	add_tm  THUNDER_WAVE
+	add_tm  HYPER_BEAM
+	add_tm  LIGHT_SCREEN
+	add_tm  REFLECT
+	add_tm  AGILITY
+	add_tm  SUBMISSION
+	add_tm  CRUNCH
+	add_tm  MEGA_DRAIN
+	add_tm  SOLARBEAM
+	add_tm  DRAGONBREATH
+	add_tm  THUNDERBOLT
+	add_tm  WATERFALL
+	add_tm  EARTHQUAKE
+	add_tm  FOCUS_ENERGY
+	add_tm  DIG
+	add_tm  PSYCHIC_M
+	add_tm  PSYWAVE
+	add_tm  MIMIC
+	add_tm  DOUBLE_DASH
+	add_tm  SHADOW_TEAR
+	add_tm  BIDE
+	add_tm  FLAMETHROWER
+	add_tm  SLUDGE
+	add_tm  BUG_BUZZ
+	add_tm  FLARE_RUSH
+	add_tm  SWIFT
+	add_tm  SKULL_BASH
+	add_tm  HYPNOSIS
+	add_tm  DREAM_EATER
+	add_tm  VENOM_STRIKE
+	add_tm  REST
+	add_tm  MOONBLAST
+	add_tm  PAY_DAY
+	add_tm  HEAVY_SMASH
+	add_tm  ROCK_SLIDE
+	add_tm  FURY_CUT
+	add_tm  SUBSTITUTE
+	add_tm  METRONOME
 ASSERT NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the number of add_tm definitions"
 
 DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS

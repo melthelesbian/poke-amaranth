@@ -14,12 +14,11 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,           BODY_SLAM,    TAKE_DOWN,      \
-	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   \
-	     RAGE,         SOLARBEAM,    DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      \
-	     PSYCHIC_M,    MIMIC,          REFLECT,      BIDE,         \
-	     SKULL_BASH,   REST,         PSYWAVE,      SUBSTITUTE,   SURF,         \
-	     STRENGTH
+	tmhm	BUBBLEBEAM,   ICE_BEAM,    HYPER_BEAM, LIGHT_SCREEN, REFLECT,     \
+			DRAGONBREATH, THUNDERBOLT, WATERFALL,  MIMIC,        DOUBLE_DASH, \
+			BIDE,         SWIFT,       SKULL_BASH, HYPNOSIS,     REST,        \
+			MOONBLAST,    HEAVY_SMASH, SUBSTITUTE,                            \
+			                           SURF,       STRENGTH,     FLASH
 	; end
 
 	db BANK(LaprasPicFront)

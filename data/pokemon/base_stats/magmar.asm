@@ -14,11 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     FLARE_RUSH,  HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         PSYCHIC_M,    TELEPORT,     MIMIC,          \
-	     BIDE,         METRONOME,    FIRE_BLAST,   SKULL_BASH,   REST,         \
-	     PSYWAVE,      SUBSTITUTE,   STRENGTH
+	tmhm	MEGA_PUNCH, HEADBUTT,     TOXIC,      FIRE_PUNCH,   DOUBLE_KICK, \
+			HYPER_BEAM, AGILITY,      SUBMISSION, FOCUS_ENERGY, MIMIC,       \
+			BIDE,       FLAMETHROWER, SLUDGE,     FLARE_RUSH,   SWIFT,       \
+			SKULL_BASH, REST,         ROCK_SLIDE, SUBSTITUTE,                \
+			                                      STRENGTH
 	; end
 
 	db BANK(MagmarPicFront)

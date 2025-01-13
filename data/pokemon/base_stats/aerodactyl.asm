@@ -14,9 +14,10 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm  RAZOR_WIND, TOXIC, TAKE_DOWN, HYPER_BEAM, RAGE, DRAGON_RAGE, \
-	      MIMIC, REFLECT, BIDE, FIRE_BLAST, SWIFT, SKY_ATTACK, \
-	      REST, SUBSTITUTE, FLY
+	tmhm	RAZOR_WIND,   HEADBUTT,     HYPER_BEAM, AGILITY,      CRUNCH,     \
+			DRAGONBREATH, FOCUS_ENERGY, BIDE,       FLAMETHROWER, SKULL_BASH, \
+			REST,         ROCK_SLIDE,   FURY_CUT,   SUBSTITUTE,               \
+			CUT,          FLY,                      STRENGTH
 	; end
 
 	db BANK(AerodactylPicFront)

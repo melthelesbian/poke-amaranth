@@ -1155,7 +1155,7 @@ PrintTMHMMoveLine:
 	push de
 	push bc
 	ld a, [wd11e] ; tm number
-	cp 51
+	cp NUM_TMS + 1
 	jr z, .gotHM
 	jr nc, .gotHM
 	ld de, TMSymbolText
@@ -1177,7 +1177,7 @@ PrintTMHMMoveLine:
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
 	ld a, [wd11e]
-	cp 51
+	cp NUM_TMS + 1
 	jr z, .printHMNumber
 	jr nc, .printHMNumber
 .printTMNumber
@@ -1185,11 +1185,11 @@ PrintTMHMMoveLine:
 	call PrintNumber
 	jr .donePrinting
 .printHMNumber
-	sub a, 50
+	sub a, NUM_TMS
 	ld [de], a
 	lb bc, LEADING_ZEROES | 1, 2
 	call PrintNumber
-	add a, 50
+	add a, NUM_TMS
 	ld [de], a
 .donePrinting
 	pop bc

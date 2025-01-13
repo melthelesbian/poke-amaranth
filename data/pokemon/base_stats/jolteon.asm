@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      HYPER_BEAM,   \
-	     RAGE,         THUNDERBOLT,  THUNDER,      MIMIC,          \
-	     REFLECT,      BIDE,         SWIFT,        SKULL_BASH,   REST,         \
-	     THUNDER_WAVE, SUBSTITUTE,   FLASH
+	tmhm	SWORDS_DANCE, HEADBUTT,    DOUBLE_KICK, THUNDER_WAVE, HYPER_BEAM, \
+			AGILITY,      CRUNCH,      THUNDERBOLT, FOCUS_ENERGY, DIG,        \
+			MIMIC,        DOUBLE_DASH, BIDE,        SWIFT,        SKULL_BASH, \
+			REST,         SUBSTITUTE,                                         \
+			                                        STRENGTH,     FLASH
 	; end
 
 	db BANK(JolteonPicFront)

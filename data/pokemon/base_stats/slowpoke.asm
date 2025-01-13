@@ -14,12 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      BUBBLEBEAM,   \
-	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     PAY_DAY,      RAGE,         \
-	     EARTHQUAKE,   FISSURE,      DIG,          PSYCHIC_M,    TELEPORT,     \
-	     MIMIC,          REFLECT,      BIDE,         FIRE_BLAST,   \
-	     SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, PSYWAVE,      \
-	     TRI_ATTACK,   SUBSTITUTE,   SURF,         STRENGTH,     FLASH
+	tmhm	MEGA_PUNCH,  HEADBUTT,   BUBBLEBEAM,   ICE_BEAM,   LIGHT_SCREEN, \
+			REFLECT,     WATERFALL,  FOCUS_ENERGY, DIG,        PSYCHIC_M,    \
+			PSYWAVE,     MIMIC,      BIDE,         SKULL_BASH, HYPNOSIS,     \
+			DREAM_EATER, REST,       MOONBLAST,    PAY_DAY,    HEAVY_SMASH,  \
+			ROCK_SLIDE,  SUBSTITUTE,                                        \
+			                         SURF,         STRENGTH,   FLASH
 	; end
 
 	db BANK(SlowpokePicFront)

@@ -14,10 +14,11 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   ICY_WIND,    TOXIC,        TAKE_DOWN,  \
-	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   \
-	     RAGE,         MIMIC,          REFLECT,      BIDE,         \
-	     SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   FLY
+	tmhm	RAZOR_WIND,   SWORDS_DANCE, HEADBUTT,    ICE_BEAM,     HYPER_BEAM, \
+			LIGHT_SCREEN, REFLECT,      AGILITY,     FOCUS_ENERGY, MIMIC,      \
+			DOUBLE_DASH,  BIDE,         SWIFT,       SKULL_BASH,   HYPNOSIS,   \
+			REST,         MOONBLAST,    HEAVY_SMASH, SUBSTITUTE,               \
+			              FLY,          SURF,                     FLASH
 	; end
 
 	db BANK(ArticunoPicFront)

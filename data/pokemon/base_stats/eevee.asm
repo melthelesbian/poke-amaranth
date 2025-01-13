@@ -14,9 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      RAGE,         \
-	     MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE
+	tmhm	SWORDS_DANCE, HEADBUTT, DOUBLE_KICK,  THUNDER_WAVE, HYPER_BEAM, \
+			AGILITY,      CRUNCH,   FOCUS_ENERGY, DIG,          MIMIC,      \
+			DOUBLE_DASH,  BIDE,     SWIFT,        SKULL_BASH,   REST,       \
+			MOONBLAST,    PAY_DAY,  HEAVY_SMASH,  SUBSTITUTE,   METRONOME,  \
+			                        SURF,         STRENGTH,     FLASH
 	; end
 
 	db BANK(EeveePicFront)

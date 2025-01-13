@@ -14,11 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,      \
-	     SUBMISSION,   SEISMIC_TOSS, RAGE,         EARTHQUAKE,   FISSURE,      \
-	     DIG,          MIMIC,          BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   CUT,          \
-	     STRENGTH
+	tmhm	SWORDS_DANCE, HEADBUTT,   DOUBLE_KICK,  AGILITY,    SUBMISSION, \
+			CRUNCH,       EARTHQUAKE, FOCUS_ENERGY, DIG,        MIMIC,      \
+			DOUBLE_DASH,  BIDE,       SWIFT,        SKULL_BASH, REST,       \
+			PAY_DAY,      ROCK_SLIDE, FURY_CUT,     SUBSTITUTE,             \
+			CUT,                                    STRENGTH
+
 	; end
 
 	db BANK(SandshrewPicFront)

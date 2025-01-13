@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   SWORDS_DANCE,     TOXIC,        BODY_SLAM,    \
-	     TAKE_DOWN,      RAGE,         MIMIC,        DOUBLE_DASH,  \
-	     REFLECT,      BIDE,         SWIFT,        SKULL_BASH,   REST,         \
-	     SUBSTITUTE,   CUT,          FLY
+	tmhm	RAZOR_WIND,  SWORDS_DANCE, HEADBUTT, RAZOR_LEAF,   DOUBLE_KICK,  \
+			AGILITY,     SUBMISSION,   CRUNCH,   FOCUS_ENERGY, MIMIC,        \
+			DOUBLE_DASH, SHADOW_TEAR,  BIDE,     SWIFT,        VENOM_STRIKE, \
+			REST,        PAY_DAY,      FURY_CUT, SUBSTITUTE,   METRONOME,    \
+			CUT,         FLY,          SURF,     STRENGTH
 	; end
 
 	db BANK(FarfetchdPicFront)

@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      BUBBLEBEAM,   \
-	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         MIMIC,        \
-	       REFLECT,      BIDE,         REST,         SUBSTITUTE,   \
-	     SURF
+	tmhm	SWORDS_DANCE, TOXIC,        BUBBLEBEAM, AGILITY,      CRUNCH,      \
+			MEGA_DRAIN,   FOCUS_ENERGY, DIG,        MIMIC,        BIDE,        \
+			BUG_BUZZ,     SWIFT,        SKULL_BASH, VENOM_STRIKE, HEAVY_SMASH, \
+			ROCK_SLIDE,   FURY_CUT,     SUBSTITUTE,                            \
+			CUT,                        SURF
 	; end
 
 	db BANK(KabutoPicFront)

@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,           BODY_SLAM,    TAKE_DOWN,      \
-	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     PAY_DAY,      \
-	     RAGE,         MIMIC,          BIDE,         SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   SURF,         STRENGTH
+	tmhm	HEADBUTT,    BUBBLEBEAM,   ICE_BEAM,  AGILITY,    CRUNCH, \
+			WATERFALL,   FOCUS_ENERGY, PSYCHIC_M, PSYWAVE,    MIMIC,  \
+			DOUBLE_DASH, BIDE,         SWIFT,     SKULL_BASH, REST,   \
+			MOONBLAST,   HEAVY_SMASH,                                 \
+			                           SURF,                  FLASH
 	; end
 
 	db BANK(SeelPicFront)

@@ -43,7 +43,7 @@ VictoryRoad1F_TextPointers:
 	def_text_pointers
 	dw_const VictoryRoad1FCooltrainerFText, TEXT_VICTORYROAD1F_COOLTRAINER_F
 	dw_const VictoryRoad1FCooltrainerMText, TEXT_VICTORYROAD1F_COOLTRAINER_M
-	dw_const PickUpItemText,                TEXT_VICTORYROAD1F_TM_SKY_ATTACK
+	dw_const PickUpItemText,                TEXT_VICTORYROAD1F_TM_CRUNCH
 	dw_const PickUpItemText,                TEXT_VICTORYROAD1F_RARE_CANDY
 	dw_const BoulderText,                   TEXT_VICTORYROAD1F_BOULDER1
 	dw_const BoulderText,                   TEXT_VICTORYROAD1F_BOULDER2

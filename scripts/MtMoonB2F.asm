@@ -164,7 +164,7 @@ MtMoonB2F_TextPointers:
 	dw_const MtMoonB2FRocket4Text,                 TEXT_MTMOONB2F_ROCKET4
 	dw_const MtMoonB2FDomeFossilText,              TEXT_MTMOONB2F_DOME_FOSSIL
 	dw_const MtMoonB2FHelixFossilText,             TEXT_MTMOONB2F_HELIX_FOSSIL
-	dw_const PickUpItemText,                       TEXT_MTMOONB2F_HP_UP
+	dw_const PickUpItemText,                       TEXT_MTMOONB2F_TM_ROCK_SLIDE
 	dw_const PickUpItemText,                       TEXT_MTMOONB2F_TM_MEGA_PUNCH
 	dw_const MtMoonB2FSuperNerdThenThisIsMineText, TEXT_MTMOONB2F_SUPER_NERD_THEN_THIS_IS_MINE
 

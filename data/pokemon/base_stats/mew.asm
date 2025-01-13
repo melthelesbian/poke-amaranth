@@ -14,18 +14,18 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   RAZOR_WIND,   SWORDS_DANCE, ICY_WIND,    MOONBLAST,    \
-	     TOXIC,        BUG_BUZZ,   BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  \
-	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   \
-	     PAY_DAY,      SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     MEGA_DRAIN,   SOLARBEAM,    DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      \
-	     EARTHQUAKE,   FISSURE,      DIG,          PSYCHIC_M,    TELEPORT,     \
-	     MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         METRONOME,    \
-	     SELFDESTRUCT, EGG_BOMB,     FIRE_BLAST,   SWIFT,        SKULL_BASH,   \
-	     SOFTBOILED,   DREAM_EATER,  SKY_ATTACK,   REST,         THUNDER_WAVE, \
-	     PSYWAVE,      EXPLOSION,    ROCK_SLIDE,   TRI_ATTACK,   SUBSTITUTE,   \
+	tmhm MEGA_PUNCH,   RAZOR_WIND,   SWORDS_DANCE, HEADBUTT,     TELEPORT,     \
+	     TOXIC,        FIRE_PUNCH,   ICE_PUNCH,    THUNDERPUNCH, RAZOR_LEAF,   \
+	     BUBBLEBEAM,   DOUBLE_KICK,  ICE_BEAM,     THUNDER_WAVE, HYPER_BEAM,   \
+	     LIGHT_SCREEN, REFLECT,      AGILITY,      SUBMISSION,   CRUNCH,       \
+	     MEGA_DRAIN,   SOLARBEAM,    DRAGONBREATH, THUNDERBOLT,  WATERFALL,    \
+	     EARTHQUAKE,   FOCUS_ENERGY, DIG,          PSYCHIC_M,    PSYWAVE,      \
+	     MIMIC,        DOUBLE_DASH,  SHADOW_TEAR,  BIDE,         FLAMETHROWER, \
+	     SLUDGE,       BUG_BUZZ,     FLARE_RUSH,   SWIFT,        SKULL_BASH,   \
+	     HYPNOSIS,     DREAM_EATER,  VENOM_STRIKE, REST,         MOONBLAST,    \
+	     PAY_DAY,      HEAVY_SMASH,  ROCK_SLIDE,   FURY_CUT,     SUBSTITUTE,   \
+		 METRONOME,                                                            \
 	     CUT,          FLY,          SURF,         STRENGTH,     FLASH,        \
-	     UNUSED
 	; end
 
 	db BANK(MewPicFront)

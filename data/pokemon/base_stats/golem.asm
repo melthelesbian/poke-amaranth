@@ -14,11 +14,11 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        \
-	       BIDE,         METRONOME,    SELFDESTRUCT, FIRE_BLAST,   \
-	     REST,         EXPLOSION,    ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+	tmhm 	MEGA_PUNCH, HEADBUTT,   FIRE_PUNCH, ICE_PUNCH,  THUNDERPUNCH, \
+			HYPER_BEAM, SUBMISSION, CRUNCH,     EARTHQUAKE, DIG,          \
+			MIMIC,      BIDE,       SKULL_BASH, REST,       HEAVY_SMASH,  \
+			ROCK_SLIDE, SUBSTITUTE,                                       \
+			                                    STRENGTH
 	; end
 
 	db BANK(GolemPicFront)

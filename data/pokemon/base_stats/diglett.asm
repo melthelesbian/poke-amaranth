@@ -14,9 +14,10 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      RAGE,         \
-	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_DASH,  \
-	     BIDE,         REST,         ROCK_SLIDE,   SUBSTITUTE
+	tmhm	SWORDS_DANCE, HEADBUTT,   TELEPORT,    AGILITY,    EARTHQUAKE, \
+			FOCUS_ENERGY, DIG,        DOUBLE_DASH, BIDE,       SWIFT,      \
+			SKULL_BASH,   ROCK_SLIDE, FURY_CUT,    SUBSTITUTE,             \
+			CUT,                                   STRENGTH
 	; end
 
 	db BANK(DiglettPicFront)

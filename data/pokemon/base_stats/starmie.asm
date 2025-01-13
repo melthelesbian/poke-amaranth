@@ -14,12 +14,12 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,      BUBBLEBEAM,   WATER_GUN,    \
-	     ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         THUNDERBOLT,  \
-	     THUNDER,      PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_DASH,  \
-	     REFLECT,      BIDE,         SWIFT,        SKULL_BASH,   REST,         \
-	     THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   SURF,         \
-	     FLASH
+	tmhm	RAZOR_WIND,   TELEPORT,     BUBBLEBEAM,  ICE_BEAM,   HYPER_BEAM,  \
+			LIGHT_SCREEN, REFLECT,      AGILITY,     MEGA_DRAIN, THUNDERBOLT, \
+			WATERFALL,    FOCUS_ENERGY, PSYCHIC_M,   PSYWAVE,    MIMIC,       \
+			DOUBLE_DASH,  BIDE,         BUG_BUZZ,    SWIFT,      HYPNOSIS,    \
+			REST,         MOONBLAST,    HEAVY_SMASH, SUBSTITUTE,              \
+			                            SURF,                    FLASH
 	; end
 
 	db BANK(StarmiePicFront)

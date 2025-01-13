@@ -14,10 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      BUBBLEBEAM,   \
-	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         \
-	     MIMIC,          REFLECT,      BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   SURF
+	tmhm 	SWORDS_DANCE, HEADBUTT,   TOXIC,        BUBBLEBEAM, DOUBLE_KICK, \
+			ICE_BEAM,     HYPER_BEAM, LIGHT_SCREEN, REFLECT,    AGILITY,     \
+			CRUNCH,       WATERFALL,  FOCUS_ENERGY, DIG,        MIMIC,       \
+			DOUBLE_DASH,  BIDE,       SWIFT,        SKULL_BASH, REST,        \
+			SUBSTITUTE,                                                      \
+			                          SURF,         STRENGTH,   FLASH
 	; end
 
 	db BANK(VaporeonPicFront)

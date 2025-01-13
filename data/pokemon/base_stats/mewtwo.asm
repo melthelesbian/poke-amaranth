@@ -14,14 +14,13 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
-	     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         SOLARBEAM,    THUNDERBOLT,  THUNDER,      PSYCHIC_M,    \
-	     TELEPORT,     MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         \
-	     METRONOME,    SELFDESTRUCT, FIRE_BLAST,   SKULL_BASH,   REST,         \
-	     THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   STRENGTH,     \
-	     FLASH
+	tmhm	MEGA_PUNCH,  HEADBUTT,     TELEPORT,    TOXIC,        FIRE_PUNCH, \
+			ICE_PUNCH,   THUNDERPUNCH, DOUBLE_KICK, THUNDER_WAVE, HYPER_BEAM, \
+			AGILITY,     SUBMISSION,   CRUNCH,      FOCUS_ENERGY, PSYCHIC_M,  \
+			PSYWAVE,     MIMIC,        SHADOW_TEAR, BIDE,         FLARE_RUSH, \
+			SWIFT,       SKULL_BASH,   HYPNOSIS,    REST,         PAY_DAY,    \
+			HEAVY_SMASH, SUBSTITUTE,                                          \
+			STRENGTH,                                             FLASH
 	; end
 
 	db BANK(MewtwoPicFront)

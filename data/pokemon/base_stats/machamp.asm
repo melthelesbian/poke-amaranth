@@ -14,11 +14,10 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        \
-	       BIDE,         METRONOME,    FIRE_BLAST,   SKULL_BASH,   \
-	     REST,         ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+	tmhm	MEGA_PUNCH, FIRE_PUNCH, ICE_PUNCH,  THUNDERPUNCH, DOUBLE_KICK, \
+			HYPER_BEAM, AGILITY,    SUBMISSION, FOCUS_ENERGY, BIDE,        \
+			SWIFT,      REST,       PAY_DAY,    SUBSTITUTE,                \
+			                                    STRENGTH
 	; end
 
 	db BANK(MachampPicFront)

@@ -14,10 +14,11 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,      BUBBLEBEAM,   \
-	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         MEGA_DRAIN,   \
-	     MIMIC,          REFLECT,      BIDE,         SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   CUT,          SURF
+	tmhm	TOXIC,  ICE_PUNCH, BUBBLEBEAM,   ICE_BEAM,     THUNDER_WAVE, \
+			CRUNCH, WATERFALL, FOCUS_ENERGY, PSYCHIC_M,    PSYWAVE,      \
+			MIMIC,  BIDE,      SLUDGE,       VENOM_STRIKE, REST,         \
+			SUBSTITUTE,                                                  \
+			                   SURF,         STRENGTH
 	; end
 
 	db BANK(TentacoolPicFront)

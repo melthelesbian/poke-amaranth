@@ -14,13 +14,14 @@
 	db GROWTH_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MOONBLAST,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
-	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     SOLARBEAM,    THUNDERBOLT,  THUNDER,      PSYCHIC_M,    TELEPORT,     \
-	     MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         FIRE_BLAST,   \
-	     SKULL_BASH,   REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   \
-	     SUBSTITUTE,   STRENGTH,     FLASH
+	tmhm 	MEGA_PUNCH, HEADBUTT,  FIRE_PUNCH,   ICE_PUNCH,   THUNDERPUNCH, \
+			BUBBLEBEAM, ICE_BEAM,  THUNDER_WAVE, HYPER_BEAM,  LIGHT_SCREEN, \
+			REFLECT,    CRUNCH,    MEGA_DRAIN,   THUNDERBOLT, FOCUS_ENERGY, \
+			DIG,        PSYCHIC_M, PSYWAVE,      MIMIC,       DOUBLE_DASH,  \
+			BIDE,       SWIFT,     SKULL_BASH,   HYPNOSIS,    DREAM_EATER,  \
+			REST,       MOONBLAST, PAY_DAY,      HEAVY_SMASH, FURY_CUT,     \
+			SUBSTITUTE,                                                     \
+			CUT,                   SURF,         STRENGTH,    FLASH
 	; end
 
 	db BANK(WigglytuffPicFront)

@@ -14,10 +14,11 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,      RAGE,         PSYCHIC_M,    \
-	     TELEPORT,     MIMIC,          REFLECT,      BIDE,         \
-	     SELFDESTRUCT, EGG_BOMB,     REST,         PSYWAVE,      EXPLOSION,    \
-	     SUBSTITUTE
+	tmhm	SWORDS_DANCE, HEADBUTT,   TELEPORT,   TOXIC,     RAZOR_LEAF,   \
+			LIGHT_SCREEN, REFLECT,    MEGA_DRAIN, SOLARBEAM, FOCUS_ENERGY, \
+			PSYCHIC_M,    PSYWAVE,    MIMIC,      BIDE,      HYPNOSIS,     \
+			REST,         SUBSTITUTE,                                      \
+			                                                 FLASH
 	; end
 
 	db BANK(ExeggcutePicFront)

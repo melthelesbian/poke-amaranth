@@ -14,11 +14,11 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,           BODY_SLAM,    TAKE_DOWN,      \
-	     ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         THUNDERBOLT,  \
-	     THUNDER,      EARTHQUAKE,   FISSURE,      MIMIC,          \
-	     BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     STRENGTH
+	tmhm	HEADBUTT,    DOUBLE_KICK, THUNDER_WAVE, HYPER_BEAM,  AGILITY, \
+			SUBMISSION,  EARTHQUAKE,  FOCUS_ENERGY, DOUBLE_DASH, BIDE,    \
+			FLARE_RUSH,  SWIFT,       SKULL_BASH,   REST,        PAY_DAY, \
+			HEAVY_SMASH, SUBSTITUTE,                                      \
+			                                        STRENGTH
 	; end
 
 	db BANK(TaurosPicFront)

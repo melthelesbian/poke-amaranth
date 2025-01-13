@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,      HYPER_BEAM,   RAGE,         \
-	     THUNDERBOLT,  THUNDER,      TELEPORT,     MIMIC,          \
-	     REFLECT,      BIDE,         SWIFT,        REST,         THUNDER_WAVE, \
-	     SUBSTITUTE,   FLASH
+	tmhm	TELEPORT,  THUNDER_WAVE, HYPER_BEAM, LIGHT_SCREEN, REFLECT,      \
+			CRUNCH,    MEGA_DRAIN,   SOLARBEAM,  THUNDERBOLT,  FOCUS_ENERGY, \
+			MIMIC,     BIDE,         SWIFT,      HYPNOSIS,     REST,         \
+			MOONBLAST, HEAVY_SMASH,  SUBSTITUTE,                             \
+			CUT,                                               FLASH
 	; end
 
 	db BANK(MagnetonPicFront)

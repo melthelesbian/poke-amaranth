@@ -14,10 +14,11 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,      \
-	     HYPER_BEAM,   SUBMISSION,   SEISMIC_TOSS, RAGE,         MIMIC,        \
-	       BIDE,         REST,         SUBSTITUTE,   CUT,          \
-	     STRENGTH
+	tmhm	SWORDS_DANCE, HEADBUTT,   HYPER_BEAM,   AGILITY,    SUBMISSION, \
+			CRUNCH,       MEGA_DRAIN, FOCUS_ENERGY, DIG,        MIMIC,      \
+			BIDE,         BUG_BUZZ,   SWIFT,        SKULL_BASH, REST,       \
+			HEAVY_SMASH,  FURY_CUT,   SUBSTITUTE,                           \
+			CUT,                                    STRENGTH
 	; end
 
 	db BANK(PinsirPicFront)

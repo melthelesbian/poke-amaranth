@@ -65,10 +65,10 @@ PokemonMansionB1F_TextPointers:
 	dw_const PokemonMansionB1FScientistText, TEXT_POKEMONMANSIONB1F_SCIENTIST
 	dw_const PickUpItemText,                 TEXT_POKEMONMANSIONB1F_RARE_CANDY
 	dw_const PickUpItemText,                 TEXT_POKEMONMANSIONB1F_FULL_RESTORE
-	dw_const PickUpItemText,                 TEXT_POKEMONMANSIONB1F_TM_BLIZZARD
+	dw_const PickUpItemText,                 TEXT_POKEMONMANSIONB1F_TM_WATERFALL
 	dw_const PickUpItemText,                 TEXT_POKEMONMANSIONB1F_TM_SOLARBEAM
 	dw_const PokemonMansionB1FDiaryText,     TEXT_POKEMONMANSIONB1F_DIARY
-	dw_const PickUpItemText,                 TEXT_POKEMONMANSIONB1F_OLD_AMBER
+	dw_const PickUpItemText,                 TEXT_POKEMONMANSIONB1F_TM_ICE_BEAM
 	dw_const PokemonMansion2FSwitchText,     TEXT_POKEMONMANSIONB1F_SWITCH ; This switch uses the text script from the 2F.
 
 Mansion4TrainerHeaders:

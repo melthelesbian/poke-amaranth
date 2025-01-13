@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,      \
-	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    DIG,          \
-	     MIMIC,          REFLECT,      BIDE,         SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   CUT
+	tmhm	SWORDS_DANCE, TOXIC,      RAZOR_LEAF,   HYPER_BEAM, CRUNCH,     \
+			MEGA_DRAIN,   SOLARBEAM,  FOCUS_ENERGY, DIG,        MIMIC,      \
+			BIDE,         BUG_BUZZ,   VENOM_STRIKE, REST,       ROCK_SLIDE, \
+			FURY_CUT,     SUBSTITUTE,                                       \
+			CUT,                                    STRENGTH
 	; end
 
 	db BANK(ParasectPicFront)

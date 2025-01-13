@@ -14,9 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  HYPER_BEAM,   \
-	     RAGE,         MIMIC,          REFLECT,      BIDE,         \
-	     FIRE_BLAST,   SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE
+	tmhm	SWORDS_DANCE, HEADBUTT,     DOUBLE_KICK, HYPER_BEAM, AGILITY,     \
+			CRUNCH,       FOCUS_ENERGY, DIG,         MIMIC,      DOUBLE_DASH, \
+			BIDE,         FLAMETHROWER, FLARE_RUSH,  SWIFT,      SKULL_BASH,  \
+			REST,         SUBSTITUTE,                                         \
+			                                         STRENGTH,   FLASH
 	; end
 
 	db BANK(FlareonPicFront)

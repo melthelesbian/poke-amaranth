@@ -14,10 +14,13 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   ICY_WIND,    TOXIC,        TAKE_DOWN,      \
-	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    PSYCHIC_M,    \
-	     TELEPORT,     MIMIC,          REFLECT,      BIDE,         \
-	     SWIFT,        REST,         PSYWAVE,      SUBSTITUTE
+	tmhm	RAZOR_WIND,   SWORDS_DANCE, HEADBUTT,     TOXIC,        HYPER_BEAM,  \
+			AGILITY,      CRUNCH,       MEGA_DRAIN,   FOCUS_ENERGY, PSYCHIC_M,   \
+			PSYWAVE,      MIMIC,        DOUBLE_DASH,  SHADOW_TEAR,  BIDE,        \
+			SLUDGE,       BUG_BUZZ,     SWIFT,        SKULL_BASH,   HYPNOSIS,    \
+			DREAM_EATER,  VENOM_STRIKE, REST,         PAY_DAY,      HEAVY_SMASH, \
+			FURY_CUT,     SUBSTITUTE,                                            \
+			CUT,          FLY,                                     FLASH
 	; end
 
 	db BANK(VenomothPicFront)

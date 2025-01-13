@@ -14,10 +14,10 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,      BUBBLEBEAM,   WATER_GUN,    \
-	     ICE_BEAM,     BLIZZARD,     RAGE,         TELEPORT,     MIMIC,        \
-	       REFLECT,      BIDE,         SELFDESTRUCT, SWIFT,        \
-	     REST,         EXPLOSION,    TRI_ATTACK,   SUBSTITUTE,   SURF
+	tmhm	TOXIC,    BUBBLEBEAM, ICE_BEAM,    LIGHT_SCREEN, REFLECT,    \
+			CRUNCH,   WATERFALL,  MIMIC,       BIDE,         SWIFT,      \
+			HYPNOSIS, REST,       HEAVY_SMASH, ROCK_SLIDE,   SUBSTITUTE, \
+			                      SURF,        STRENGTH
 	; end
 
 	db BANK(ShellderPicFront)

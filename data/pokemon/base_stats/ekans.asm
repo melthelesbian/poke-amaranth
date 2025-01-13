@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,      RAGE,         \
-	     MEGA_DRAIN,   EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        \
-	       BIDE,         SKULL_BASH,   REST,         ROCK_SLIDE,   \
-	     SUBSTITUTE,   STRENGTH
+	tmhm 	SWORDS_DANCE, HEADBUTT,   TOXIC,        AGILITY, CRUNCH,      \
+			FOCUS_ENERGY, DIG,        SHADOW_TEAR,  BIDE,    SLUDGE,      \
+			SWIFT,        SKULL_BASH, VENOM_STRIKE, REST,    HEAVY_SMASH, \
+			SUBSTITUTE,                                                   \
+			CUT,                                    STRENGTH
 	; end
 
 	db BANK(EkansPicFront)

@@ -14,9 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,      HYPER_BEAM,   \
-	     RAGE,         MIMIC,          BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   CUT, FLY
+	tmhm	SWORDS_DANCE, TOXIC,        RAZOR_LEAF, HYPER_BEAM,   AGILITY, \
+			CRUNCH,       FOCUS_ENERGY, MIMIC,      DOUBLE_DASH,  BIDE,    \
+			BUG_BUZZ,     SWIFT,        SKULL_BASH, VENOM_STRIKE, REST,    \
+			HEAVY_SMASH,  FURY_CUT,     SUBSTITUTE,                        \
+			CUT,          FLY,                      STRENGTH
 	; end
 
 	db BANK(ScytherPicFront)

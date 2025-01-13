@@ -14,14 +14,11 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
-	     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         SOLARBEAM,    THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
-	     FISSURE,      PSYCHIC_M,    MIMIC,          REFLECT,      \
-	     BIDE,         METRONOME,    SELFDESTRUCT, FIRE_BLAST,   SKULL_BASH,   \
-	     REST,         PSYWAVE,      ROCK_SLIDE,   SUBSTITUTE,   SURF,         \
-	     STRENGTH
+	tmhm	MEGA_PUNCH, HEADBUTT,    FIRE_PUNCH, ICE_PUNCH,  THUNDERPUNCH, \
+			BUBBLEBEAM, HYPER_BEAM,  SUBMISSION, CRUNCH,     EARTHQUAKE,   \
+			DIG,        MIMIC,       BIDE,       SKULL_BASH, REST,         \
+			PAY_DAY,    HEAVY_SMASH, SUBSTITUTE,                           \
+			SURF,       STRENGTH
 	; end
 
 	db BANK(SnorlaxPicFront)

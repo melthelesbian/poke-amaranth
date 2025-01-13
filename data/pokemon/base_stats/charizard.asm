@@ -14,12 +14,12 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   SWORDS_DANCE,     TOXIC,        BODY_SLAM,    \
-	     TAKE_DOWN,    FLARE_RUSH,  HYPER_BEAM,   SUBMISSION,   COUNTER,      \
-	     SEISMIC_TOSS, RAGE,         DRAGON_RAGE,  EARTHQUAKE,   FISSURE,      \
-	     DIG,          MIMIC,          REFLECT,      BIDE,         \
-	     FIRE_BLAST,   SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     CUT,          FLY,          STRENGTH
+	tmhm	MEGA_PUNCH,   RAZOR_WIND,   SWORDS_DANCE, HEADBUTT,    FIRE_PUNCH, \
+			ICE_PUNCH,    THUNDERPUNCH, HYPER_BEAM,   AGILITY,     SUBMISSION, \
+			CRUNCH,       DRAGONBREATH, FOCUS_ENERGY, DOUBLE_DASH, BIDE,       \
+			FLAMETHROWER, FLARE_RUSH,   SWIFT,        SKULL_BASH,  REST,       \
+			HEAVY_SMASH,  SUBSTITUTE,                                          \
+			CUT,          FLY,                        STRENGTH
 	; end
 
 	db BANK(CharizardPicFront)

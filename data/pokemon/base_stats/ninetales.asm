@@ -14,10 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    FLARE_RUSH,  HYPER_BEAM,   \
-	     RAGE,         DIG,          MIMIC,        DOUBLE_DASH,  REFLECT,      \
-	     BIDE,         FIRE_BLAST,   SWIFT,        SKULL_BASH,   REST,         \
-	     SUBSTITUTE
+	tmhm	RAZOR_WIND,   SWORDS_DANCE, TELEPORT,   DOUBLE_KICK,  HYPER_BEAM, \
+			AGILITY,      CRUNCH,       SOLARBEAM,  FOCUS_ENERGY, DIG,        \
+			PSYCHIC_M,    PSYWAVE,      MIMIC,      DOUBLE_DASH,  BIDE,       \
+			FLAMETHROWER, FLARE_RUSH,   SWIFT,      SKULL_BASH,   HYPNOSIS,   \
+			REST,         MOONBLAST,    SUBSTITUTE,                           \
+			                                        STRENGTH,     FLASH
 	; end
 
 	db BANK(NinetalesPicFront)

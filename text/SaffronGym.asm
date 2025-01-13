@@ -55,21 +55,21 @@ _SaffronGymSabrinaMarshBadgeInfoText::
 	line "this TM with you!"
 	done
 
-_SaffronGymSabrinaReceivedTM46Text::
+_SaffronGymSabrinaReceivedTM30Text::
 	text "<PLAYER> received"
-	line "TM46!@"
+	line "TM30!@"
 	text_end
 
-_TM46ExplanationText::
+_TM30ExplanationText::
 	text_start
 
-	para "TM46 is PSYWAVE!"
+	para "TM30 is PSYWAVE!"
 	line "It uses powerful"
 	cont "psychic waves to"
 	cont "inflict damage!"
 	done
 
-_SaffronGymSabrinaTM46NoRoomText::
+_SaffronGymSabrinaTM30NoRoomText::
 	text "Your pack is full"
 	line "of other items!"
 	done

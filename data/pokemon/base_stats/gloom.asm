@@ -14,9 +14,12 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,      RAGE,         \
-	     MEGA_DRAIN,   SOLARBEAM,    MIMIC,          REFLECT,      \
-	     BIDE,         REST,         SUBSTITUTE,   CUT
+	tmhm	MEGA_PUNCH,   SWORDS_DANCE, HEADBUTT, TOXIC,       RAZOR_LEAF, \
+			LIGHT_SCREEN, REFLECT,      CRUNCH,   MEGA_DRAIN,  SOLARBEAM,  \
+			FOCUS_ENERGY, DIG,          BIDE,     SLUDGE,      HYPNOSIS,   \
+			VENOM_STRIKE, REST,         PAY_DAY,  HEAVY_SMASH, FURY_CUT,   \
+			SUBSTITUTE,                                                    \
+			CUT,                                  STRENGTH,    FLASH
 	; end
 
 	db BANK(GloomPicFront)

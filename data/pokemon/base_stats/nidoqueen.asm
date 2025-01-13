@@ -14,13 +14,12 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,           BODY_SLAM,    \
-	     TAKE_DOWN,      BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     \
-	     BLIZZARD,     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
-	     SEISMIC_TOSS, RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
-	     FISSURE,      MIMIC,          REFLECT,      BIDE,         \
-	     FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
-	     SURF,         STRENGTH
+	tmhm	MEGA_PUNCH,   SWORDS_DANCE, HEADBUTT,    FIRE_PUNCH,   ICE_PUNCH,  \
+			THUNDERPUNCH, DOUBLE_KICK,  HYPER_BEAM,  DRAGONBREATH, EARTHQUAKE, \
+			FOCUS_ENERGY, DIG,          DOUBLE_DASH, BIDE,         SWIFT,      \
+			SKULL_BASH,   REST,         MOONBLAST,   HEAVY_SMASH,  ROCK_SLIDE, \
+			SUBSTITUTE,                                                        \
+			                            SURF,        STRENGTH
 	; end
 
 	db BANK(NidoqueenPicFront)

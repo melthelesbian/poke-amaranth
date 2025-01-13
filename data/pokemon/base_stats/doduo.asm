@@ -14,9 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm ICY_WIND,    TOXIC,        BODY_SLAM,    TAKE_DOWN,      \
-	     RAGE,         MIMIC,        DOUBLE_DASH,  REFLECT,      BIDE,         \
-	     SKULL_BASH,   SKY_ATTACK,   REST,         TRI_ATTACK,   SUBSTITUTE
+	tmhm	SWORDS_DANCE, HEADBUTT,     DOUBLE_KICK, AGILITY,  SUBMISSION,  \
+			CRUNCH,       FOCUS_ENERGY, DIG,         MIMIC,    DOUBLE_DASH, \
+			SHADOW_TEAR,  BIDE,         FLARE_RUSH,  SWIFT,    SKULL_BASH,  \
+			HYPNOSIS,     REST,         ROCK_SLIDE,  FURY_CUT, SUBSTITUTE,  \
+			CUT,                                     STRENGTH
 
 	; end
 

@@ -14,12 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
-	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,          \
-	     BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     STRENGTH
+	tmhm	MEGA_PUNCH, SWORDS_DANCE, HEADBUTT,     TELEPORT,    FIRE_PUNCH,  \
+			ICE_PUNCH,  THUNDERPUNCH, DOUBLE_KICK,  HYPER_BEAM,  SUBMISSION,  \
+			CRUNCH,     EARTHQUAKE,   FOCUS_ENERGY, DIG,         SHADOW_TEAR, \
+			BIDE,       SKULL_BASH,   HYPNOSIS,     DREAM_EATER, REST,        \
+			PAY_DAY,    ROCK_SLIDE,   SUBSTITUTE,   METRONOME,                \
+			                                        STRENGTH
 	; end
 
 	db BANK(MarowakPicFront)

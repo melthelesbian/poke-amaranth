@@ -14,10 +14,10 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    HYPER_BEAM,   RAGE,         THUNDERBOLT,  \
-	     THUNDER,      TELEPORT,     MIMIC,          REFLECT,      \
-	     BIDE,         SELFDESTRUCT, SWIFT,        SKULL_BASH,   REST,         \
-	     THUNDER_WAVE, EXPLOSION,    SUBSTITUTE,   FLASH
+	tmhm	HEADBUTT,   TELEPORT,    THUNDER_WAVE, HYPER_BEAM,  AGILITY,    \
+			SOLARBEAM,  THUNDERBOLT, FOCUS_ENERGY, DOUBLE_DASH, BIDE,       \
+			FLARE_RUSH, SWIFT,       SKULL_BASH,   HEAVY_SMASH, SUBSTITUTE, \
+			CUT,                                   STRENGTH,    FLASH
 	; end
 
 	db BANK(ElectrodePicFront)

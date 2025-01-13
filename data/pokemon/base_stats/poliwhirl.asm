@@ -14,12 +14,11 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
-	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         EARTHQUAKE,   \
-	     FISSURE,      PSYCHIC_M,    MIMIC,          BIDE,         \
-	     METRONOME,    SKULL_BASH,   REST,         PSYWAVE,      SUBSTITUTE,   \
-	     SURF,         STRENGTH
+	tmhm	MEGA_PUNCH, SWORDS_DANCE, HEADBUTT,    ICE_PUNCH,   BUBBLEBEAM,   \
+			ICE_BEAM,   AGILITY,      SUBMISSION,  WATERFALL,   FOCUS_ENERGY, \
+			DIG,        MIMIC,        DOUBLE_DASH, BIDE,        SWIFT,        \
+			HYPNOSIS,   DREAM_EATER,  REST,        HEAVY_SMASH, SUBSTITUTE,   \
+			                          SURF,        STRENGTH,    FLASH
 	; end
 
 	db BANK(PoliwhirlPicFront)

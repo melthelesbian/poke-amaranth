@@ -14,12 +14,13 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         MEGA_DRAIN,   THUNDERBOLT,  THUNDER,      PSYCHIC_M,    \
-	     MIMIC,          BIDE,         METRONOME,    SELFDESTRUCT, \
-	     SKULL_BASH,   DREAM_EATER,  REST,         PSYWAVE,      EXPLOSION,    \
-	     SUBSTITUTE,   STRENGTH
+	tmhm	MEGA_PUNCH,   TELEPORT,     TOXIC,      FIRE_PUNCH, ICE_PUNCH,   \
+			THUNDERPUNCH, THUNDER_WAVE, HYPER_BEAM, AGILITY,    CRUNCH,      \
+			THUNDERBOLT,  FOCUS_ENERGY, PSYCHIC_M,  PSYWAVE,    MIMIC,       \
+			SHADOW_TEAR,  BIDE,         SLUDGE,     SKULL_BASH, HYPNOSIS,    \
+			DREAM_EATER,  VENOM_STRIKE, REST,       PAY_DAY,    HEAVY_SMASH, \
+			SUBSTITUTE,                                                      \
+			FLY, STRENGTH, FLASH
 	; end
 
 	db BANK(GengarPicFront)

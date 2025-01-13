@@ -14,10 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     MIMIC,        DOUBLE_DASH,  BIDE,         METRONOME,    SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   STRENGTH
+	tmhm	MEGA_PUNCH,  SWORDS_DANCE, HEADBUTT,     TELEPORT,    FIRE_PUNCH,  \
+			ICE_PUNCH,   THUNDERPUNCH, DOUBLE_KICK,  HYPER_BEAM,  AGILITY,     \
+			SUBMISSION,  CRUNCH,       FOCUS_ENERGY, MIMIC,       DOUBLE_DASH, \
+			BIDE,        SWIFT,        VENOM_STRIKE, REST,        PAY_DAY,     \
+			HEAVY_SMASH, FURY_CUT,     SUBSTITUTE,                             \
+			                                         STRENGTH
 	; end
 
 	db BANK(HitmonchanPicFront)

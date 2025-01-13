@@ -14,10 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,           TAKE_DOWN,      BUBBLEBEAM,   \
-	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         MIMIC,        \
-	       BIDE,         SWIFT,        SKULL_BASH,   REST,         \
-	     SUBSTITUTE,   SURF
+	tmhm	HEADBUTT,    BUBBLEBEAM,  ICE_BEAM,   THUNDER_WAVE, AGILITY,     \
+			CRUNCH,      THUNDERBOLT, WATERFALL,  FOCUS_ENERGY, MIMIC,       \
+			DOUBLE_DASH, SWIFT,       SKULL_BASH, REST,         HEAVY_SMASH, \
+			SUBSTITUTE,                                                      \
+			                          SURF,                     FLASH
 	; end
 
 	db BANK(GoldeenPicFront)

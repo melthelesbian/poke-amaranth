@@ -14,10 +14,11 @@
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   ICY_WIND,    TOXIC,        TAKE_DOWN,    FLARE_RUSH,  \
-	     HYPER_BEAM,   RAGE,         MIMIC,          REFLECT,      \
-	     BIDE,         FIRE_BLAST,   SWIFT,        SKY_ATTACK,   REST,         \
-	     SUBSTITUTE,   FLY
+	tmhm	RAZOR_WIND, SWORDS_DANCE, HEADBUTT,     HYPER_BEAM, AGILITY,     \
+			CRUNCH,     SOLARBEAM,    FOCUS_ENERGY, MIMIC,      DOUBLE_DASH, \
+			BIDE,       FLAMETHROWER, FLARE_RUSH,   SWIFT,      SKULL_BASH,  \
+			REST,       HEAVY_SMASH,  FURY_CUT,     SUBSTITUTE,              \
+			            FLY,                        STRENGTH,   FLASH
 	; end
 
 	db BANK(MoltresPicFront)

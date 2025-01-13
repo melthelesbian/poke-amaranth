@@ -14,12 +14,13 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         PSYCHIC_M,    TELEPORT,     MIMIC,          \
-	     REFLECT,      BIDE,         METRONOME,    SKULL_BASH,   DREAM_EATER,  \
-	     REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   \
-	     FLASH
+	tmhm	MEGA_PUNCH,  HEADBUTT,     TELEPORT,     TOXIC,       FIRE_PUNCH,  \
+			ICE_PUNCH,   THUNDERPUNCH, THUNDER_WAVE, HYPER_BEAM,  SUBMISSION,  \
+			CRUNCH,      DIG,          PSYCHIC_M,    PSYWAVE,     MIMIC,       \
+			BIDE,        SLUDGE,       SWIFT,        SKULL_BASH,  HYPNOSIS,    \
+			DREAM_EATER, REST,         MOONBLAST,    PAY_DAY,     SUBSTITUTE,  \
+			METRONOME,                                                         \
+			                                         STRENGTH,    FLASH
 	; end
 
 	db BANK(HypnoPicFront)

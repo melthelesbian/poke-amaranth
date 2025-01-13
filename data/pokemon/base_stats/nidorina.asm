@@ -14,10 +14,10 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,           BODY_SLAM,    TAKE_DOWN,      \
-	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         \
-	     THUNDERBOLT,  THUNDER,      MIMIC,          REFLECT,      \
-	     BIDE,         SKULL_BASH,   REST,         SUBSTITUTE
+	tmhm	SWORDS_DANCE, HEADBUTT,    DOUBLE_KICK, EARTHQUAKE, FOCUS_ENERGY, \
+			DIG,          DOUBLE_DASH, BIDE,        SWIFT,      REST,         \
+			MOONBLAST,    ROCK_SLIDE,  SUBSTITUTE,                            \
+			                           SURF
 	; end
 
 	db BANK(NidorinaPicFront)

@@ -14,12 +14,11 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm        MEGA_PUNCH,   TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	            HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	            RAGE,         DIG,          PSYCHIC_M,    TELEPORT,     MIMIC,        \
-	            REFLECT,      BIDE,         METRONOME,    SKULL_BASH,   \
-	            REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   \
-	            FLASH
+	tmhm	MEGA_PUNCH,   HEADBUTT,     TELEPORT,     FIRE_PUNCH, ICE_PUNCH, \
+			THUNDERPUNCH, THUNDER_WAVE, LIGHT_SCREEN, REFLECT,    PSYCHIC_M, \
+			PSYWAVE,      MIMIC,        BIDE,         SWIFT,      REST,      \
+			SUBSTITUTE,   METRONOME,                                         \
+			                                                      FLASH
 	; end
 
 	db BANK(AlakazamPicFront)

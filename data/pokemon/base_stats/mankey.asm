@@ -14,11 +14,12 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,       TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	       PAY_DAY,      SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         THUNDERBOLT,  THUNDER,      DIG,          MIMIC,        \
-	       BIDE,         METRONOME,    SWIFT,        SKULL_BASH,   \
-	     REST,         ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+	tmhm	MEGA_PUNCH,   SWORDS_DANCE, HEADBUTT,   FIRE_PUNCH,  ICE_PUNCH,   \
+			THUNDERPUNCH, DOUBLE_KICK,  AGILITY,    SUBMISSION,  CRUNCH,      \
+			EARTHQUAKE,   DIG,          MIMIC,      DOUBLE_DASH, BIDE,        \
+			FLARE_RUSH,   SWIFT,        SKULL_BASH, PAY_DAY,     HEAVY_SMASH, \
+			ROCK_SLIDE,   FURY_CUT,     SUBSTITUTE,                           \
+			CUT,                                    STRENGTH
 	; end
 
 	db BANK(MankeyPicFront)

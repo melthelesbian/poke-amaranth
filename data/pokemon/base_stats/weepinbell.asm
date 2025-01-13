@@ -14,9 +14,10 @@
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,      RAGE,         \
-	     MEGA_DRAIN,   SOLARBEAM,    MIMIC,          REFLECT,      \
-	     BIDE,         REST,         SUBSTITUTE,   CUT
+	tmhm	HEADBUTT,   TOXIC,        RAZOR_LEAF, LIGHT_SCREEN, REFLECT,    \
+			MEGA_DRAIN, SOLARBEAM,    EARTHQUAKE, FOCUS_ENERGY, BIDE,       \
+			SLUDGE,     VENOM_STRIKE, REST,       FURY_CUT,     SUBSTITUTE, \
+			CUT,                                                FLASH
 	; end
 
 	db BANK(WeepinbellPicFront)
