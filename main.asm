@@ -5,8 +5,6 @@ INCLUDE "engine/events/black_out.asm"
 INCLUDE "engine/battle/safari_zone.asm"
 INCLUDE "engine/movie/title.asm"
 INCLUDE "engine/pokemon/load_mon_data.asm"
-INCLUDE "data/items/prices.asm"
-INCLUDE "data/items/names.asm"
 INCLUDE "engine/gfx/sprite_oam.asm"
 INCLUDE "engine/gfx/oam_dma.asm"
 INCLUDE "engine/link/print_waiting_text.asm"
@@ -35,6 +33,10 @@ INCLUDE "engine/menus/players_pc.asm"
 INCLUDE "engine/pokemon/remove_mon.asm"
 INCLUDE "engine/events/display_pokedex.asm"
 
+SECTION "item names and prices", ROMX
+
+INCLUDE "data/items/prices.asm"
+INCLUDE "data/items/names.asm"
 
 SECTION "bank3", ROMX
 

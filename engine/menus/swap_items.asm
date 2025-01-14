@@ -322,6 +322,12 @@ ItemSortList::
 	db CARD_KEY
 	db GOLD_TEETH
 	db OAKS_PARCEL
+	; HMs
+	db HM_01
+	db HM_02
+	db HM_03
+	db HM_04
+	db HM_05
 	; TMs
 	db TM_01
 	db TM_02
@@ -373,10 +379,5 @@ ItemSortList::
 	db TM_48
 	db TM_49
 	db TM_50
-	; HMs
-	db HM_01
-	db HM_02
-	db HM_03
-	db HM_04
-	db HM_05
+	db TM_51
 	db -1 ; end

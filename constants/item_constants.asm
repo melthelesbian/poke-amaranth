@@ -111,8 +111,6 @@ DEF NUM_ITEMS EQU const_value - 1
 	const FLOOR_B4F     ; $61
 DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 
-	const_next $C4
-
 ; HMs are defined before TMs, so the actual number of TM definitions
 ; is not yet available. The TM quantity is hard-coded here and must
 ; match the actual number below.
