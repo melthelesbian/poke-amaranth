@@ -3134,6 +3134,7 @@ MoveEffectPrintHandlers:
 	me_print_handler FLINCH_SIDE_EFFECT2       , printFlinch
 	me_print_handler CHARGE_EFFECT             , printMultiTurn
 	me_print_handler FLY_EFFECT                , printMultiTurn
+	me_print_handler HYPER_BEAM_EFFECT         , printMultiTurn
 	me_print_handler ATTACK_TWICE_EFFECT       , printMultiHit1
 	me_print_handler TWO_TO_FIVE_ATTACKS_EFFECT, printMultiHit2
 	me_print_handler TWINEEDLE_EFFECT          , printMultiHit1
