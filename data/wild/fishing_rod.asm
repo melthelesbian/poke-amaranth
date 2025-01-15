@@ -85,7 +85,8 @@ FishingRodData:
 	db 8, SLOWPOKE
 
 .MeditationCave:
-	db 3,
+	db 4,
+	db 10, MAGIKARP
 	db 15, HORSEA
 	db 19, PSYDUCK
 	db 16, SLOWPOKE
@@ -118,7 +119,7 @@ FishingRodData:
 .SafariZoneCenter:
 	db 4
 	db 15, DRATINI
-	db 15, KRABBY
+	db 15, LAPRAS
 	db 15, PSYDUCK
 	db 15, SLOWPOKE
 
