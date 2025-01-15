@@ -262,8 +262,8 @@ _HitWithRecoilText::
 	prompt
 
 _ConvertedTypeText::
-	text "Converted type to"
-	line "<TARGET>'s!"
+	text "<TARGET>'s"
+	line "type was copied!"
 	prompt
 
 _StatusChangesEliminatedText::
