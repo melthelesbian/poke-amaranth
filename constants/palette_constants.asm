@@ -72,156 +72,156 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_CAVE      ; $23
 	const PAL_GAMEFREAK ; $24
 	; POKEMON PALETTES
-	const PAL_MISSINGNO  ; 0
-	const PAL_BULBASAUR  ; 1
-	const PAL_IVYSAUR    ; 2
-	const PAL_VENUSAUR   ; 3
-	const PAL_CHARMANDER ; 4
-	const PAL_CHARMELEON ; 5
-	const PAL_CHARIZARD  ; 6
-	const PAL_SQUIRTLE   ; 7
-	const PAL_WARTORTLE  ; 8
-	const PAL_BLASTOISE  ; 9
-	const PAL_CATERPIE   ; 10
-	const PAL_METAPOD    ; 11
-	const PAL_BUTTERFREE ; 12
-	const PAL_WEEDLE     ; 13
-	const PAL_KAKUNA     ; 14
-	const PAL_BEEDRILL   ; 15
-	const PAL_PIDGEY     ; 16
-	const PAL_PIDGEOTTO  ; 17
-	const PAL_PIDGEOT    ; 18
-	const PAL_RATTATA    ; 19
-	const PAL_RATICATE   ; 20
-	const PAL_SPEAROW    ; 21
-	const PAL_FEAROW     ; 22
-	const PAL_EKANS      ; 23
-	const PAL_ARBOK      ; 24
-	const PAL_PIKACHU    ; 25
-	const PAL_RAICHU     ; 26
-	const PAL_SANDSHREW  ; 27
-	const PAL_SANDSLASH  ; 28
-	const PAL_NIDORAN_F  ; 29
-	const PAL_NIDORINA   ; 30
-	const PAL_NIDOQUEEN  ; 31
-	const PAL_NIDORAN_M  ; 32
-	const PAL_NIDORINO   ; 33
-	const PAL_NIDOKING   ; 34
-	const PAL_CLEFAIRY   ; 35
-	const PAL_CLEFABLE   ; 36
-	const PAL_VULPIX     ; 37
-	const PAL_NINETALES  ; 38
-	const PAL_JIGGLYPUFF ; 39
-	const PAL_WIGGLYTUFF ; 40
-	const PAL_ZUBAT      ; 41
-	const PAL_GOLBAT     ; 42
-	const PAL_ODDISH     ; 43
-	const PAL_GLOOM      ; 44
-	const PAL_VILEPLUME  ; 45
-	const PAL_PARAS      ; 46
-	const PAL_PARASECT   ; 47
-	const PAL_VENONAT    ; 48
-	const PAL_VENOMOTH   ; 49
-	const PAL_DIGLETT    ; 50
-	const PAL_DUGTRIO    ; 51
-	const PAL_MEOWTH     ; 52
-	const PAL_PERSIAN    ; 53
-	const PAL_PSYDUCK    ; 54
-	const PAL_GOLDUCK    ; 55
-	const PAL_MANKEY     ; 56
-	const PAL_PRIMEAPE   ; 57
-	const PAL_GROWLITHE  ; 58
-	const PAL_ARCANINE   ; 59
-	const PAL_POLIWAG    ; 60
-	const PAL_POLIWHIRL  ; 61
-	const PAL_POLIWRATH  ; 62
-	const PAL_ABRA       ; 63
-	const PAL_KADABRA    ; 64
-	const PAL_ALAKAZAM   ; 65
-	const PAL_MACHOP     ; 66
-	const PAL_MACHOKE    ; 67
-	const PAL_MACHAMP    ; 68
-	const PAL_BELLSPROUT ; 69
-	const PAL_WEEPINBELL ; 70
-	const PAL_VICTREEBEL ; 71
-	const PAL_TENTACOOL  ; 72
-	const PAL_TENTACRUEL ; 73
-	const PAL_GEODUDE    ; 74
-	const PAL_GRAVELER   ; 75
-	const PAL_GOLEM      ; 76
-	const PAL_PONYTA     ; 77
-	const PAL_RAPIDASH   ; 78
-	const PAL_SLOWPOKE   ; 79
-	const PAL_SLOWBRO    ; 80
-	const PAL_MAGNEMITE  ; 81
-	const PAL_MAGNETON   ; 82
-	const PAL_FARFETCHD  ; 83
-	const PAL_DODUO      ; 84
-	const PAL_DODRIO     ; 85
-	const PAL_SEEL       ; 86
-	const PAL_DEWGONG    ; 87
-	const PAL_GRIMER     ; 88
-	const PAL_MUK        ; 89
-	const PAL_SHELLDER   ; 90
-	const PAL_CLOYSTER   ; 91
-	const PAL_GASTLY     ; 92
-	const PAL_HAUNTER    ; 93
-	const PAL_GENGAR     ; 94
-	const PAL_ONIX       ; 95
-	const PAL_DROWZEE    ; 96
-	const PAL_HYPNO      ; 97
-	const PAL_KRABBY     ; 98
-	const PAL_KINGLER    ; 99
-	const PAL_VOLTORB    ; 100
-	const PAL_ELECTRODE  ; 101
-	const PAL_EXEGGCUTE  ; 102
-	const PAL_EXEGGUTOR  ; 103
-	const PAL_CUBONE     ; 104
-	const PAL_MAROWAK    ; 105
-	const PAL_HITMONLEE  ; 106
-	const PAL_HITMONCHAN ; 107
-	const PAL_LICKITUNG  ; 108
-	const PAL_KOFFING    ; 109
-	const PAL_WEEZING    ; 110
-	const PAL_RHYHORN    ; 111
-	const PAL_RHYDON     ; 112
-	const PAL_CHANSEY    ; 113
-	const PAL_TANGELA    ; 114
-	const PAL_KANGASKHAN ; 115
-	const PAL_HORSEA     ; 116
-	const PAL_SEADRA     ; 117
-	const PAL_GOLDEEN    ; 118
-	const PAL_SEAKING    ; 119
-	const PAL_STARYU     ; 120
-	const PAL_STARMIE    ; 121
-	const PAL_MR_MIME    ; 122
-	const PAL_SCYTHER    ; 123
-	const PAL_JYNX       ; 124
-	const PAL_ELECTABUZZ ; 125
-	const PAL_MAGMAR     ; 126
-	const PAL_PINSIR     ; 127
-	const PAL_TAUROS     ; 128
-	const PAL_MAGIKARP   ; 129
-	const PAL_GYARADOS   ; 130
-	const PAL_LAPRAS     ; 131
-	const PAL_DITTO      ; 132
-	const PAL_EEVEE      ; 133
-	const PAL_VAPOREON   ; 134
-	const PAL_JOLTEON    ; 135
-	const PAL_FLAREON    ; 136
-	const PAL_PORYGON    ; 137
-	const PAL_OMANYTE    ; 138
-	const PAL_OMASTAR    ; 139
-	const PAL_KABUTO     ; 140
-	const PAL_KABUTOPS   ; 141
-	const PAL_AERODACTYL ; 142
-	const PAL_SNORLAX    ; 143
-	const PAL_ARTICUNO   ; 144
-	const PAL_ZAPDOS     ; 145
-	const PAL_MOLTRES    ; 146
-	const PAL_DRATINI    ; 147
-	const PAL_DRAGONAIR  ; 148
-	const PAL_DRAGONITE  ; 149
-	const PAL_MEWTWO     ; 150
-	const PAL_MEW        ; 151
+	const PAL_MISSINGNO
+	const PAL_BULBASAUR
+	const PAL_IVYSAUR
+	const PAL_VENUSAUR
+	const PAL_CHARMANDER
+	const PAL_CHARMELEON
+	const PAL_CHARIZARD
+	const PAL_SQUIRTLE
+	const PAL_WARTORTLE
+	const PAL_BLASTOISE
+	const PAL_RATTATA
+	const PAL_RATICATE
+	const PAL_PIDGEY
+	const PAL_PIDGEOTTO
+	const PAL_PIDGEOT
+	const PAL_SPEAROW
+	const PAL_FEAROW
+	const PAL_EXEGGCUTE
+	const PAL_EXEGGUTOR
+	const PAL_NIDORAN_F
+	const PAL_NIDORINA
+	const PAL_NIDOQUEEN
+	const PAL_NIDORAN_M
+	const PAL_NIDORINO
+	const PAL_NIDOKING
+	const PAL_MEOWTH
+	const PAL_PERSIAN
+	const PAL_PSYDUCK
+	const PAL_GOLDUCK
+	const PAL_MANKEY
+	const PAL_PRIMEAPE
+	const PAL_VENONAT
+	const PAL_VENOMOTH
+	const PAL_GROWLITHE
+	const PAL_ARCANINE
+	const PAL_CATERPIE
+	const PAL_METAPOD
+	const PAL_BUTTERFREE
+	const PAL_WEEDLE
+	const PAL_KAKUNA
+	const PAL_BEEDRILL
+	const PAL_PIKACHU
+	const PAL_RAICHU
+	const PAL_VULPIX
+	const PAL_NINETALES
+	const PAL_JIGGLYPUFF
+	const PAL_WIGGLYTUFF
+	const PAL_ZUBAT
+	const PAL_GOLBAT
+	const PAL_GEODUDE
+	const PAL_GRAVELER
+	const PAL_GOLEM
+	const PAL_PARAS
+	const PAL_PARASECT
+	const PAL_CLEFAIRY
+	const PAL_CLEFABLE
+	const PAL_RHYHORN
+	const PAL_RHYDON
+	const PAL_SANDSHREW
+	const PAL_SANDSLASH
+	const PAL_POLIWAG
+	const PAL_POLIWHIRL
+	const PAL_POLIWRATH
+	const PAL_EKANS
+	const PAL_ARBOK
+	const PAL_FARFETCHD
+	const PAL_ODDISH
+	const PAL_GLOOM
+	const PAL_VILEPLUME
+	const PAL_BELLSPROUT
+	const PAL_WEEPINBELL
+	const PAL_VICTREEBEL
+	const PAL_EEVEE
+	const PAL_VAPOREON
+	const PAL_JOLTEON
+	const PAL_FLAREON
+	const PAL_ABRA
+	const PAL_KADABRA
+	const PAL_ALAKAZAM
+	const PAL_GOLDEEN
+	const PAL_SEAKING
+	const PAL_STARYU
+	const PAL_STARMIE
+	const PAL_SLOWPOKE
+	const PAL_SLOWBRO
+	const PAL_TANGELA
+	const PAL_LICKITUNG
+	const PAL_SHELLDER
+	const PAL_CLOYSTER
+	const PAL_PONYTA
+	const PAL_RAPIDASH
+	const PAL_DROWZEE
+	const PAL_HYPNO
+	const PAL_DODUO
+	const PAL_DODRIO
+	const PAL_MAGNEMITE
+	const PAL_MAGNETON
+	const PAL_DIGLETT
+	const PAL_DUGTRIO
+	const PAL_TAUROS
+	const PAL_MACHOP
+	const PAL_MACHOKE
+	const PAL_MACHAMP
+	const PAL_HITMONLEE
+	const PAL_HITMONCHAN
+	const PAL_MR_MIME
+	const PAL_MAGIKARP
+	const PAL_GYARADOS
+	const PAL_GRIMER
+	const PAL_MUK
+	const PAL_KOFFING
+	const PAL_WEEZING
+	const PAL_PORYGON
+	const PAL_GASTLY
+	const PAL_HAUNTER
+	const PAL_GENGAR
+	const PAL_CUBONE
+	const PAL_MAROWAK
+	const PAL_CHANSEY
+	const PAL_VOLTORB
+	const PAL_ELECTRODE
+	const PAL_PINSIR
+	const PAL_SCYTHER
+	const PAL_DITTO
+	const PAL_HORSEA
+	const PAL_SEADRA
+	const PAL_ONIX
+	const PAL_KANGASKHAN
+	const PAL_ELECTABUZZ
+	const PAL_SNORLAX
+	const PAL_TENTACOOL
+	const PAL_TENTACRUEL
+	const PAL_KRABBY
+	const PAL_KINGLER
+	const PAL_LAPRAS
+	const PAL_JYNX
+	const PAL_SEEL
+	const PAL_DEWGONG
+	const PAL_MAGMAR
+	const PAL_OMANYTE
+	const PAL_OMASTAR
+	const PAL_KABUTO
+	const PAL_KABUTOPS
+	const PAL_AERODACTYL
+	const PAL_DRATINI
+	const PAL_DRAGONAIR
+	const PAL_DRAGONITE
+	const PAL_ARTICUNO
+	const PAL_ZAPDOS
+	const PAL_MOLTRES
+	const PAL_MEWTWO
+	const PAL_MEW
 DEF NUM_SGB_PALS EQU const_value
