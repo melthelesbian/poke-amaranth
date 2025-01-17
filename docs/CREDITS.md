@@ -46,4 +46,6 @@ I couldn't have made this hack without the help of [Luna](https://github.com/Jus
 * Tangela (edited)
 * Weezing
 
-[Red++](https://github.com/JustRegularLuna/rpp-backup) for the Leaf trainer sprites, and many of the GSC Pokémon backsprites were also sourced from here, to save work on converting them to greyscale.
+### Additional Sprite Credits
+
+Some official sprites were taken from Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup) and dannye's [pokered-gbc](https://github.com/dannye/pokered-gbc)
