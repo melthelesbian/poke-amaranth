@@ -940,117 +940,28 @@ Pokedex_PrintMovesText:
 	ld de, LevelUpMovesText
 	hlcoord 1, 10
 	call PlaceString
+	xor a
+	ldh [hMoveCounter], a
 	pop bc
 	pop de
-	push bc
-	hlcoord 1, 12
-	ld [hl], "<LVL>"
-	ld a, [de]
-	hlcoord 2, 12
-	lb bc, LEFT_ALIGN | 1, 3
-	call PrintNumber ; print move level
-	inc de
-	inc de
-	ld a, [de]
-	push de
-	ld [wd11e], a
-	call GetMoveName
-	hlcoord 5, 12
-	call PlaceString
-	pop de
-	pop bc
-	inc b
-	ld a, [wMoveListCounter]
-	cp b
-	jp z, .done
-	push bc
-	hlcoord 1, 13
-	ld [hl], "<LVL>"
-	inc de
-	ld a, [de]
-	hlcoord 2, 13
-	lb bc, LEFT_ALIGN | 1, 3
-	call PrintNumber ; print move level
-	inc de
-	inc de
-	ld a, [de]
-	push de
-	ld [wd11e], a
-	call GetMoveName
-	hlcoord 5, 13
-	call PlaceString
-	pop de
-	pop bc
-	inc b
-	ld a, [wMoveListCounter]
-	cp b
-	jp z, .done
-	push bc
-	hlcoord 1, 14
-	ld [hl], "<LVL>"
-	inc de
-	ld a, [de]
-	hlcoord 2, 14
-	lb bc, LEFT_ALIGN | 1, 3
-	call PrintNumber ; print move level
-	inc de
-	inc de
-	ld a, [de]
-	push de
-	ld [wd11e], a
-	call GetMoveName
-	hlcoord 5, 14
-	call PlaceString
-	pop de
-	pop bc
-	inc b
-	ld a, [wMoveListCounter]
-	cp b
+.firstLevelUpLine
+	call PrintLevelUpMoveLine
 	jr z, .done
-	push bc
-	hlcoord 1, 15
-	ld [hl], "<LVL>"
+.secondLevelUpLine
 	inc de
-	ld a, [de]
-	hlcoord 2, 15
-	lb bc, LEFT_ALIGN | 1, 3
-	call PrintNumber ; print move level
-	inc de
-	inc de
-	ld a, [de]
-	push de
-	ld [wd11e], a
-	call GetMoveName
-	hlcoord 5, 15
-	call PlaceString
-	pop de
-	pop bc
-	inc b
-	ld a, [wMoveListCounter]
-	cp b
+	call PrintLevelUpMoveLine
 	jr z, .done
-	push bc
-	hlcoord 1, 16
-	ld [hl], "<LVL>"
+.thirdLevelUpLine
 	inc de
-	ld a, [de]
-	hlcoord 2, 16
-	lb bc, LEFT_ALIGN | 1, 3
-	call PrintNumber ; print move level
-	inc de
-	inc de
-	ld a, [de]
-	push de
-	ld [wd11e], a
-	call GetMoveName
-	hlcoord 5, 16
-	call PlaceString
-	pop de
-	pop bc
-	inc b
-	ld a, [wMoveListCounter]
-	cp b
+	call PrintLevelUpMoveLine
 	jr z, .done
+.fourthLevelUpLine
+	inc de
+	call PrintLevelUpMoveLine
+	jr z, .done
+.fifthLevelUpLine
+	inc de
+	call PrintLevelUpMoveLine
 	inc de
 	push de
 	push bc
@@ -1101,35 +1012,35 @@ Pokedex_PrintMovesText:
 	ldh [hMoveCounter], a
 	ld a, [de]
 	ld [wd11e], a
-.first
+.firstTMLine
 	cp 0
 	jp z, .done2
 	call PrintTMHMMoveLine
 	inc de
 	ld a, [de]
 	ld [wd11e], a
-.second
+.secondTMLine
 	cp 0
 	jp z, .done2
 	call PrintTMHMMoveLine
 	inc de
 	ld a, [de]
 	ld [wd11e], a
-.third
+.thirdTMLine
 	cp 0
 	jp z, .done2
 	call PrintTMHMMoveLine
 	inc de
 	ld a, [de]
 	ld [wd11e], a
-.fourth
+.fourthTMLine
 	cp 0
 	jp z, .done2
 	call PrintTMHMMoveLine
 	inc de
 	ld a, [de]
 	ld [wd11e], a
-.fifth
+.fifthTMLine
 	cp 0
 	jp z, .done2
 	call PrintTMHMMoveLine
@@ -1150,6 +1061,58 @@ Pokedex_PrintMovesText:
 ClearMoveBuffer:
 	xor a
 
+PrintLevelUpMoveLine:
+	push bc
+	ld a, [de]
+	cp 1
+	jp z, .printStartingMove
+	push de
+	hlcoord 2, 12
+	ldh a, [hMoveCounter]
+	ld bc, SCREEN_WIDTH
+	call AddNTimes
+	lb bc, LEFT_ALIGN | 1, 3
+	call PrintNumber ; print move level
+	pop de
+	hlcoord 1, 12
+	ldh a, [hMoveCounter]
+	ld bc, SCREEN_WIDTH
+	call AddNTimes
+	ld [hl], "<LVL>"
+	jr .printMoveName
+.printStartingMove
+	push de
+	ld de, StartingMoveText
+	hlcoord 1, 12
+	ld bc, SCREEN_WIDTH
+	ldh a, [hMoveCounter]
+	call AddNTimes
+	call PlaceString
+	pop de
+.printMoveName
+	inc de
+	ld a, [de]
+	push de
+	ld [wd11e], a
+	call GetMoveName
+	hlcoord 5, 12
+	ldh a, [hMoveCounter]
+	ld bc, SCREEN_WIDTH
+	call AddNTimes
+	call PlaceString
+	pop de
+	pop bc
+
+	push hl
+	ld hl, hMoveCounter
+	inc [hl]
+	pop hl
+
+	inc b
+	ld a, [wMoveListCounter]
+	cp b
+	ret
+
 PrintTMHMMoveLine:
 	; print TM/HM symbol
 	push de
@@ -1164,7 +1127,7 @@ PrintTMHMMoveLine:
 	ld de, HMSymbolText
 .printSymbol
 	hlcoord 1, 12
-	ldh a, [hEvoCounter]
+	ldh a, [hMoveCounter]
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
 	call PlaceString
@@ -1173,7 +1136,7 @@ PrintTMHMMoveLine:
 	; print TM/HM number
 	push bc
 	hlcoord 3, 12
-	ldh a, [hEvoCounter]
+	ldh a, [hMoveCounter]
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
 	ld a, [wd11e]
@@ -1202,7 +1165,7 @@ PrintTMHMMoveLine:
 	ld [wd11e], a
 	call GetMoveName
 	hlcoord 6, 12
-	ldh a, [hEvoCounter]
+	ldh a, [hMoveCounter]
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
 	call PlaceString
@@ -1210,7 +1173,7 @@ PrintTMHMMoveLine:
 	pop de
 
 	push hl
-	ld hl, hEvoCounter
+	ld hl, hMoveCounter
 	inc [hl]
 	pop hl
 	ret
@@ -1229,6 +1192,9 @@ HMSymbolText:
 
 LoadingText:
 	db   "LOADING...@"
+
+StartingMoveText:
+	db   "---@"
 
 DexPromptText:
 	text_promptbutton
