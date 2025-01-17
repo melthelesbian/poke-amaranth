@@ -681,14 +681,14 @@ NinetalesDexEntry:
 	text_end
 
 PikachuDexEntry:
-	db "LIL SHOCK@"
+	db "MOUSE@"
 	db 1,4
 	dw 130
 	text_far _PikachuDexEntry
 	text_end
 
 RaichuDexEntry:
-	db "BIG SHOCK@"
+	db "BIG MOUSE@"
 	db 2,7
 	dw 660
 	text_far _RaichuDexEntry
