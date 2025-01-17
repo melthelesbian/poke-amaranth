@@ -15,11 +15,14 @@ I couldn't have made this hack without the help of [Luna](https://github.com/Jus
     * [Trainer Style Selection](https://github.com/pret/pokered/wiki/Adding-Gender-Selection-(original-tutorial-done-by-Mateo))
     * [Reporting Dual-Type Move Effectiveness](https://github.com/pret/pokered/wiki/%5BARCHIVED%5D-Bugs-and-Glitches#dual-type-move-effectiveness-may-be-misreported)
     * [Lt. Surge's Gym Trash Bug](https://github.com/pret/pokered/wiki/%5BARCHIVED%5D-Bugs-and-Glitches#lt-surges-gym-trash-cans-do-not-use-the-proper-trash-cans-for-the-locks)
-* [PureRGB](https://github.com/Vortyne/pureRGB/) and [Kanto Expansion Pack](https://github.com/PlagueVonKarma/kep-hack) for base stats in the Pokédex
-* [Yellow Legacy](https://github.com/cRz-Shadows/Pokemon_Yellow_Legacy/) for learnsets in the Pokédex
-* [Shin Pokémon Red](https://github.com/jojobear13/shinpokered) for the caught icon & exp bar code
-* [Red++](https://github.com/JustRegularLuna/rpp-backup) for field moves on overworld, auto repel, and a fix for the move learning bug when you level up more than once.
-* [Ancient Johto](https://github.com/JustRegularLuna/ancient-johto) for the move learning info popup.
+* Base Stats in the Pokédex adapted from Vortyne's [PureRGB](https://github.com/Vortyne/pureRGB/) and PlagueVonKarma's [Kanto Expansion Pack](https://github.com/PlagueVonKarma/kep-hack)
+* Learnsets in the Pokédex adapted from the implementation by CrZ-Shadows in [Yellow Legacy](https://github.com/cRz-Shadows/Pokemon_Yellow_Legacy/)
+* Exp Bar code adapted from [Shin Pokémon Red](https://github.com/jojobear13/shinpokered), which utilized the original by dannye in [Pokémon Red Gen II](https://github.com/dannye/pokered-gen-II)
+* Caught Icon adapted from jojobear13's [Shin Pokémon Red](https://github.com/jojobear13/shinpokered)
+* Field moves in the overworld adapted from the implementation by Luna in [Red++](https://github.com/JustRegularLuna/rpp-backup), based on a proof of concept originally by Yenatch.
+* Automatic Repel copied from the implementation in Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup), which was adapted from [Pokémon Maize](https://github.com/huderlem/maize) by ShantyTown
+* Fix for the move learning bug when you level up more than once from Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup)
+* Move information display during move learning adapted from Luna's [Ancient Johto](https://github.com/JustRegularLuna/ancient-johto)
 
 ## SPRITE CREDITS
 
