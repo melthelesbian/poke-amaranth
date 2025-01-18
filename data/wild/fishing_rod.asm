@@ -112,17 +112,17 @@ FishingRodData:
 	db 35, STARMIE
 	db 35, SEADRA
 
-; [TODO) Design fishing tables after route tables
 .SafariZoneEast:
 .SafariZoneNorth:
 .SafariZoneWest:
 .SafariZoneCenter:
 	db 4
-	db 15, DRATINI
-	db 15, LAPRAS
-	db 15, PSYDUCK
-	db 15, SLOWPOKE
+	db 5, DRATINI
+	db 5, LAPRAS
+	db 5, HORSEA
+	db 5, STARYU
 
+; [TODO) Design fishing tables after route tables
 .Route12:
 .Route13:
 .Route16:
