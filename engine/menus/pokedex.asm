@@ -946,22 +946,38 @@ Pokedex_PrintMovesText:
 	pop de
 .firstLevelUpLine
 	call PrintLevelUpMoveLine
+	inc b
+	ld a, [wMoveListCounter]
+	cp b
 	jr z, .done
 .secondLevelUpLine
 	inc de
 	call PrintLevelUpMoveLine
+	inc b
+	ld a, [wMoveListCounter]
+	cp b
 	jr z, .done
 .thirdLevelUpLine
 	inc de
 	call PrintLevelUpMoveLine
+	inc b
+	ld a, [wMoveListCounter]
+	cp b
 	jr z, .done
 .fourthLevelUpLine
 	inc de
 	call PrintLevelUpMoveLine
+	inc b
+	ld a, [wMoveListCounter]
+	cp b
 	jr z, .done
 .fifthLevelUpLine
 	inc de
 	call PrintLevelUpMoveLine
+	inc b
+	ld a, [wMoveListCounter]
+	cp b
+	jr z, .done
 	inc de
 	push de
 	push bc
@@ -1046,6 +1062,9 @@ Pokedex_PrintMovesText:
 	call PrintTMHMMoveLine
 .tmsDone
 	inc de
+	ld a, [de]
+	cp 0
+	jr z, .done2
 	; wait for button press
 	push de
 	ld hl, DexPromptText
@@ -1107,10 +1126,6 @@ PrintLevelUpMoveLine:
 	ld hl, hMoveCounter
 	inc [hl]
 	pop hl
-
-	inc b
-	ld a, [wMoveListCounter]
-	cp b
 	ret
 
 PrintTMHMMoveLine:
