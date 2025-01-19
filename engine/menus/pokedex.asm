@@ -112,8 +112,8 @@ HandlePokedexSideMenu:
 	jr z, .choseMove
 	dec a
 	jr z, .choseArea
-.choseQuit
-	ld b, 1
+	dec a
+	jr z, .choseCry
 .exitSideMenu
 	pop af
 	ld [wDexMaxSeenMon], a
@@ -174,6 +174,12 @@ HandlePokedexSideMenu:
 	ld b, 0
 	jr .exitSideMenu
 
+; play pokemon cry
+.choseCry
+	ld a, [wPokedexNum]
+	call GetCryData
+	call PlaySound
+	jp .handleMenuInput
 
 ; handles the list of pokemon on the left of the pokedex screen
 ; sets carry flag if player presses A, unsets carry flag if player presses B
@@ -341,7 +347,7 @@ PokedexMenuItemsText:
 	next "STAT"
 	next "MOVE"
 	next "AREA"
-	next "QUIT@"
+	next "CRY@"
 
 Pokedex_PlacePokemonList:
 	xor a
