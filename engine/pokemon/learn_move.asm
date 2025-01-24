@@ -87,11 +87,11 @@ AbandonLearning:
 	jp nz, DontAbandonLearning
 	ld hl, DidNotLearnText
 	call PrintText
-	call LoadScreenTilesFromBuffer1
 	ld b, 0
 	ret
 
 PrintLearnedMove:
+	call LoadScreenTilesFromBuffer1
 	ld hl, LearnedMove1Text
 	call PrintText
 	ld b, 1
