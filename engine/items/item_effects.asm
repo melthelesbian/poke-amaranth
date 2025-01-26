@@ -563,7 +563,11 @@ ItemUseBall:
 	ld [wd11e], a
 	xor a
 	ld [wPokedexModeSelect], a
+	ld a, [wWhichPokemon]
+	push af
 	predef ShowPokedexData
+	pop af
+	ld [wWhichPokemon], a
 
 .skipShowingPokedexData
 	ld a, [wPartyCount]
