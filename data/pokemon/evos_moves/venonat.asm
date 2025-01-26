@@ -12,7 +12,7 @@ VenonatEvosMoves:
 	db 21, DISABLE
 	db 26, LEECH_LIFE
 	db 32, DOUBLESLAP
-	db 39, HYPNOSIS
+	db 39, CONFUSE_RAY
 	db 46, VENOM_STRIKE
 	db 54, BUG_BUZZ
 	db 0

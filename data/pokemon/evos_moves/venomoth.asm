@@ -12,8 +12,8 @@ VenomothEvosMoves:
 	db 21, DISABLE
 	db 24, GUST
 	db 27, LEECH_LIFE
-	db 33, TAKE_DOWN
-	db 40, HYPNOSIS
+	db 33, HYPNOSIS
+	db 40, PSYCHIC_M
 	db 48, RAZOR_WIND
 	db 56, BUG_BUZZ
 	db 0
