@@ -60,10 +60,10 @@ TrainerDataPointers:
 
 YoungsterData:
 ; Route 3
-	db 11, RATTATA, EKANS, 0
+	db 11, RATTATA, MANKEY, 0
 	db 14, SPEAROW, 0
 ; Mt. Moon 1F
-	db 10, RATTATA, EKANS, ZUBAT, 0
+	db 10, RATTATA, PARAS, ZUBAT, 0
 ; Route 24
 	db 14, RATTATA, EKANS, ZUBAT, 0
 ; Route 25
@@ -86,12 +86,12 @@ BugCatcherData:
 	db 6, WEEDLE, KAKUNA, 0
 	db 9, BEEDRILL, 0
 ; Route 3
-	db 10, CATERPIE, WEEDLE, VENONAT, 0
+	db 8, CATERPIE, WEEDLE, VENONAT, 0
 	db 9, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0
-	db 11, CATERPIE, METAPOD, 0
+	db 11, VENONAT, BUTTERFREE, 0
 ; Mt. Moon 1F
-	db 11, WEEDLE, KAKUNA, 0
-	db 10, CATERPIE, METAPOD, BUTTERFREE, 0
+	db 11, VENONAT, BEEDRILL, 0
+	db $FF, 6, CATERPIE, 8, METAPOD, 12, BUTTERFREE, 0
 ; Route 24
 	db 14, CATERPIE, WEEDLE, 0
 ; Route 6
@@ -108,11 +108,11 @@ BugCatcherData:
 
 LassData:
 ; Route 3
-	db 9, PIDGEY, MEOWTH, 0
+	db 9, PIDGEY, MEOWTH, VULPIX, 0
 	db 10, NIDORAN_F, NIDORAN_M, 0
 	db 14, JIGGLYPUFF, 0
 ; Route 4
-	db 13, VENONAT, PARAS, MEOWTH, 0
+	db 12, POLIWAG, PARAS, FARFETCHD, 0
 ; Mt. Moon 1F
 	db 11, ODDISH, BELLSPROUT, 0
 	db 14, CLEFAIRY, 0
@@ -223,9 +223,9 @@ PokemaniacData:
 
 SuperNerdData:
 ; Mt. Moon 1F
-	db 11, MAGNEMITE, VOLTORB, 0
+	db 12, EXEGGCUTE, PSYDUCK, GROWLITHE, 0
 ; Mt. Moon B2F
-	db 12, GRIMER, VOLTORB, KOFFING, 0
+	db 13, MAGNEMITE, VOLTORB, 0
 ; Route 8
 	db 20, VOLTORB, KOFFING, VOLTORB, MAGNEMITE, 0
 	db 22, GRIMER, MUK, GRIMER, 0
@@ -242,7 +242,7 @@ SuperNerdData:
 
 HikerData:
 ; Mt. Moon 1F
-	db 10, GEODUDE, RHYHORN, ONIX, 0
+	db 9, GEODUDE, RHYHORN, ONIX, 0
 ; Route 25
 	db 15, MACHOP, GEODUDE, 0
 	db 13, GEODUDE, GEODUDE, MACHOP, GEODUDE, 0
@@ -319,7 +319,7 @@ EngineerData:
 
 SweetheartData:
 ; Viridian Forest
-	db 8, VULPIX, BUTTERFREE, 0
+	db 8, PIKACHU, BUTTERFREE, 0
 ; Bug Sanctuary
 	db $FF, 20, PARASECT, 22, PINSIR, 22, SCYTHER, 23, VENOMOTH, 0
 
@@ -555,8 +555,8 @@ GiovanniData:
 RocketData:
 ; Mt. Moon B2F
 	db 13, RATTATA, ZUBAT, 0
-	db 11, SANDSHREW, RATTATA, ZUBAT, 0
-	db 12, ZUBAT, EKANS, 0
+	db 11, SANDSHREW, MEOWTH, ZUBAT, 0
+	db 12, KOFFING, EKANS, 0
 	db 16, RATICATE, 0
 ; Cerulean City
 	db 17, MACHOP, DROWZEE, 0
