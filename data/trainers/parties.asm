@@ -148,7 +148,7 @@ SailorData:
 	db 20, HORSEA, STARYU, TENTACOOL, 0
 	db 23, MACHOP, 0
 ; Vermilion Gym
-	db 22, PIKACHU, JOLTEON, 0
+	db 22, PIKACHU, ELECTABUZZ, 0
 
 JrTrainerMData:
 ; Pewter Gym
@@ -423,7 +423,7 @@ PsychicData:
 
 RockerData:
 ; Vermilion Gym
-	db 21, VOLTORB, MAGNEMITE, PIKACHU, 0
+	db 23, VOLTORB, MAGNEMITE, PIKACHU, 0
 ; Route 12
 	db 29, VOLTORB, ELECTRODE, 0
 
@@ -658,7 +658,7 @@ MistyData:
 	db $FF, 18, GOLDEEN, 19, PSYDUCK, 20, STARYU, 21, STARMIE, 0
 
 LtSurgeData:
-	db $FF, 22, VOLTORB, 22, MAGNEMITE, 24, ELECTABUZZ, 25, RAICHU, 0
+	db $FF, 24, VOLTORB, 24, MAGNEMITE, 25, ELECTABUZZ, 26, RAICHU, 0
 
 ErikaData:
 	db $FF, 29, VICTREEBEL, 24, TANGELA, 29, VILEPLUME, 0
@@ -677,7 +677,7 @@ GentlemanData:
 	db 18, ARCANINE, NINETALES, 0
 	db 16, NIDOKING, NIDOQUEEN, 0
 ; SS Anne 2F Rooms/Vermilion Gym
-	db 19, RAICHU, 0
+	db 19, JOLTEON, 0
 ; Unused
 	db 48, PRIMEAPE, 0
 ; SS Anne 2F Rooms
