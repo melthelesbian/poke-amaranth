@@ -43,15 +43,16 @@ I really did try to keep these to a minimum, but the following changes were more
 
 ## Gallery
 
-![pokémon amaranth title screen](docs/title-screen.png) 
-![improved move infobox](docs/move-infobox.png) 
-![town map on start menu](docs/town-map.png) ![show move info on learn attempt](docs/learn-moves.png)
-![item sorting](docs/item-sorting.png)
-![base stats in dex](docs/base-stats.png) 
-![evolution methods in dex](docs/evolution-methods.png) 
-![learnsets in dex](docs/learnsets.png)
-![sweetheart trainer](docs/sweetheart.png)
-![auto repel](docs/auto-repel.png)
+![pokémon amaranth title screen](docs/gallery/title-screen.png) 
+![improved move infobox](docs/gallery/move-infobox.png) 
+![town map on start menu](docs/gallery/town-map.png) 
+![show move info on learn attempt](docs/gallery/learn-moves.png)
+![item sorting](docs/gallery/item-sorting.png)
+![base stats in dex](docs/gallery/base-stats.png) 
+![evolution methods in dex](docs/gallery/evolution-methods.png) 
+![learnsets in dex](docs/gallery/learnsets.png)
+![sweetheart trainer](docs/gallery/sweetheart.png)
+![auto repel](docs/gallery/auto-repel.png)
 
 ## Acknowledgements
 
