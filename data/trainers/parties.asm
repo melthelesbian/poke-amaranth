@@ -546,7 +546,7 @@ ScientistData:
 
 GiovanniData:
 ; Rocket Hideout B4F
-	db $FF, 25, ONIX, 27, NIDORINO, 32, KANGASKHAN, 0
+	db $FF, 28, NIDORINO, 30, RHYHORN, 34, KANGASKHAN, 0
 ; Silph Co. 11F
 	db $FF, 37, NIDORINO, 35, KANGASKHAN, 37, RHYHORN, 41, NIDOQUEEN, 0
 ; Viridian Gym
