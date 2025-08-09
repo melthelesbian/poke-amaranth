@@ -154,6 +154,6 @@ ItemNames::
 	li "<TM>47 HVY SMASH"
 	li "<TM>48 ROCKSLIDE"
 	li "<TM>49 FURY CUT"
-	li "<TM>50 SUBSTITUTE"
+	li "<TM>50 SUBST."
 	li "<TM>51 METRONOME"
 	assert_list_length NUM_ITEMS + NUM_FLOORS + NUM_HMS + NUM_TMS
