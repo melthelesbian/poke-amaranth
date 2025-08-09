@@ -580,9 +580,9 @@ RocketData:
 	db 22, ARBOK, GRIMER, RATICATE, 0
 	db 23, DROWZEE, GOLBAT, 0
 ; Pokémon Tower 7F
-	db 25, ZUBAT, ZUBAT, GOLBAT, 0
-	db 26, KOFFING, DROWZEE, 0
-	db 23, ZUBAT, RATTATA, RATICATE, ZUBAT, 0
+	db 27, GRIMER, SANDSLASH, GOLBAT, 0
+	db 28, DROWZEE, ARBOK, 0
+	db 26, MEOWTH, KOFFING, RATICATE, 0
 ; Unused
 	db 26, DROWZEE, KOFFING, 0
 ; Silph Co. 2F
@@ -716,33 +716,33 @@ ChannelerData:
 	db 23, GASTLY, GASTLY, 0
 	db 24, GASTLY, 0
 ; Pokémon Tower 3F
-	db 23, GASTLY, 0
 	db 24, GASTLY, 0
+	db 24, DROWZEE, HAUNTER, 0
 ; Unused
 	db 24, HAUNTER, 0
 ; Pokémon Tower 3F
-	db 22, GASTLY, 0
+	db 23, CUBONE, 0
 ; Pokémon Tower 4F
-	db 24, GASTLY, 0
-	db 23, GASTLY, GASTLY, 0
+	db 25, HAUNTER, 0
+	db 24, GASTLY, CUBONE, DROWZEE, 0
 ; Unused
 	db 24, GASTLY, 0
 ; Pokémon Tower 4F
-	db 22, GASTLY, 0
+	db 25, DROWZEE, HAUNTER, 0
 ; Unused
 	db 24, GASTLY, 0
 ; Pokémon Tower 5F
-	db 23, HAUNTER, 0
+	db 26, HYPNO, 0
 ; Unused
 	db 24, GASTLY, 0
 ; Pokémon Tower 5F
-	db 22, GASTLY, 0
-	db 24, GASTLY, 0
-	db 22, HAUNTER, 0
+	db 25, GASTLY, CUBONE, 0
+	db 26, HAUNTER, 0
+	db 26, CUBONE, HYPNO, 0
 ; Pokémon Tower 6F
-	db 22, GASTLY, GASTLY, GASTLY, 0
-	db 24, GASTLY, 0
-	db 24, GASTLY, 0
+	db 27, GASTLY, DROWZEE, HAUNTER, 0
+	db 27, HAUNTER, 0
+	db 28, CUBONE, HYPNO, 0
 ; Saffron Gym
 	db 34, GASTLY, HAUNTER, 0
 	db 38, HAUNTER, 0
