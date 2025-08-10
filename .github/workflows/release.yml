@@ -1,0 +1,75 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read RGBDS version
+        id: rgbds_version
+        run: |
+          echo "version=$(cat .rgbds-version | tr -d '\n' | tr -d '\r')" >> $GITHUB_OUTPUT
+
+      - name: Checkout rgbds
+        uses: actions/checkout@v4
+        with:
+          path: rgbds
+          ref: refs/tags/v${{ steps.rgbds_version.outputs.version }}
+          repository: gbdev/rgbds
+
+      - name: Install rgbds
+        working-directory: rgbds
+        run: |
+          sudo apt-get install -yq libpng-dev
+          sudo make install
+
+      - name: Remove rgbds
+        run: |
+          rm -rf rgbds
+
+      - name: Build base ROM from pokered branch
+        run: |
+          git fetch origin pokered:pokered
+          git checkout pokered
+          make
+          cp pokered.gbc ../base_pokered.gbc
+          git checkout $GITHUB_REF_NAME
+
+      - name: Build amaranth and debug ROMs
+        run: |
+          make clean
+          make amaranth.gbc
+          make amaranth_debug.gbc
+
+      - name: Download and set up Flips
+        run: |
+          wget -O flips.zip https://github.com/Alcaro/Flips/releases/download/v198/flips-linux.zip
+          unzip flips.zip -d flips
+          chmod +x flips/flips
+
+      - name: Generate BPS patches
+        run: |
+          ./flips/flips --create --bps ../base_pokered.gbc amaranth.gbc amaranth.bps
+          ./flips/flips --create --bps ../base_pokered.gbc amaranth_debug.gbc amaranth_debug.bps
+
+      - name: Upload release assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            amaranth.bps
+            amaranth.map
+            amaranth.sym
+            amaranth_debug.bps
+            amaranth_debug.map
+            amaranth_debug.sym
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
