@@ -2,7 +2,7 @@
 
 ## Core Tasks
 
-- [ ] Update trainer party design
+- [X] Update trainer party design
 - [ ] Add more SWEETHEART trainer encounters
 - [ ] Update trainer AI Flags for balance
 - [ ] Ensure all TMs can be acquired once for free 
