@@ -1,6 +1,6 @@
 GloomEvosMoves:
 ; Evolutions
-	db EVOLVE_ITEM, LEAF_STONE, 32, VILEPLUME
+	db EVOLVE_ITEM, LEAF_STONE, 30, VILEPLUME
 	db EVOLVE_ITEM, DEVO_SPRAY, 1, ODDISH
 	db 0
 ; Learnset

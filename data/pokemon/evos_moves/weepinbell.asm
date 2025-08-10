@@ -1,6 +1,6 @@
 WeepinbellEvosMoves:
 ; Evolutions
-	db EVOLVE_ITEM, LEAF_STONE, 32, VICTREEBEL
+	db EVOLVE_ITEM, LEAF_STONE, 30, VICTREEBEL
 	db EVOLVE_ITEM, DEVO_SPRAY, 1, BELLSPROUT
 	db 0
 ; Learnset
