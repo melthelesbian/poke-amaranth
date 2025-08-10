@@ -11,7 +11,7 @@ LoneMoves:
 	db 3, TOXIC
 	db 3, PSYWAVE
 	db 3, FIRE_BLAST
-	db 4, FISSURE
+	db 4, EARTHQUAKE
 
 ; unique moves for elite 4
 ; all trainers in this class are given this move automatically
@@ -20,6 +20,6 @@ TeamMoves:
 	; trainer, move
 	db LORELEI, BLIZZARD
 	db BRUNO,   FISSURE
-	db AGATHA,  TOXIC
-	db LANCE,   BARRIER
+	db AGATHA,  CRUNCH
+	db LANCE,   THRASH
 	db -1 ; end
