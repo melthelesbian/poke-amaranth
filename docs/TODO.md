@@ -11,7 +11,7 @@
 - [ ] Test focus energy & sleep status
 - [ ] Remove CARD KEY
 - [ ] Move balance pass (Power/Accuracy/PP)
-- [ ] Set up CI / release infrastructure
+- [x] Set up CI / release infrastructure
 - [ ] Check for dialogue inconsistencies
 - [ ] Ensure new locations are populated (Fairy Cave, Meditation Cave, Route 15 House, etc.)
 - [ ] Improve Pokédex area function to show fishing and surf encounters
