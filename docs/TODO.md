@@ -2,14 +2,14 @@
 
 ## Core Tasks
 
-- [X] Update trainer party design
+- [x] Update trainer party design
 - [ ] Add more SWEETHEART trainer encounters
-- [ ] Update trainer AI Flags for balance
+- [x] Update trainer AI Flags for balance
 - [ ] Ensure all TMs can be acquired once for free 
 - [ ] Ensure all TMs can be re-acquired indefinitely
 - [x] Test TM item names fit the display
 - [ ] Test focus energy & sleep status
-- [ ] Remove CARD KEY
+- [x] Remove CARD KEY
 - [ ] Move balance pass (Power/Accuracy/PP)
 - [x] Set up CI / release infrastructure
 - [ ] Check for dialogue inconsistencies
