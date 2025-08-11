@@ -56,7 +56,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const BIKE_VOUCHER  ; $2D
 	const UNUSED_2E     ; $2E
 	const LEAF_STONE    ; $2F
-	const CARD_KEY      ; $30
+	const UNUSED_30     ; $30 (CARD_KEY)
 	const NUGGET        ; $31
 	const DEVO_SPRAY    ; $32 (ITEM_32)
 	const POKE_DOLL     ; $33

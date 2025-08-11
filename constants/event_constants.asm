@@ -699,7 +699,7 @@
 	const EVENT_SILPH_CO_11_UNLOCKED_DOOR
 	const_skip 4
 	const EVENT_GOT_MASTER_BALL
-	const_skip
+	const EVENT_GOT_CARD_KEY
 	const EVENT_BEAT_SILPH_CO_GIOVANNI
 
 ; Pokémon Mansion events

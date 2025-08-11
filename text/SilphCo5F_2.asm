@@ -53,3 +53,8 @@ _SilphCo5FPokemonReport3Text::
 	line "only when traded"
 	cont "by link-cable."
 	done
+
+_SilphCo5FCardKeyText::
+	text "<PLAYER> found"
+	line "a CARD KEY!@"
+	text_end

@@ -45,9 +45,9 @@ ItemPrices::
 	bcd3 0     ; UNUSED_2B (SECRET_KEY)
 	bcd3 0     ; ANCIENT_HAIR
 	bcd3 0     ; BIKE_VOUCHER
-	bcd3 0     ; UNUSED 2E (X_ACCURACY)
+	bcd3 0     ; UNUSED_2E (X_ACCURACY)
 	bcd3 2000  ; LEAF_STONE
-	bcd3 0     ; CARD_KEY
+	bcd3 0     ; UNUSED_30 (CARD_KEY)
 	bcd3 10000 ; NUGGET
 	bcd3 1000  ; DEVO_SPRAY (ITEM_32)
 	bcd3 1000  ; POKE_DOLL

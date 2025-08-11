@@ -22,8 +22,7 @@ PrintCardKeyText:
 	cp $5e
 	ret nz
 .cardKeyDoorInFrontOfPlayer
-	ld b, CARD_KEY
-	call IsItemInBag
+	CheckEvent EVENT_GOT_CARD_KEY
 	jr z, .noCardKey
 	call GetCoordsInFrontOfPlayer
 	push de

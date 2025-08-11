@@ -80,7 +80,7 @@ SilphCo5F_TextPointers:
 	dw_const SilphCo5FRocket2Text,        TEXT_SILPHCO5F_ROCKET2
 	dw_const PickUpItemText,              TEXT_SILPHCO5F_TM_HEAVY_SMASH
 	dw_const PickUpItemText,              TEXT_SILPHCO5F_PROTEIN
-	dw_const PickUpItemText,              TEXT_SILPHCO5F_CARD_KEY
+	dw_const SilphCo5FCardKeyText,        TEXT_SILPHCO5F_CARD_KEY
 	dw_const SilphCo5FPokemonReport1Text, TEXT_SILPHCO5F_POKEMON_REPORT1
 	dw_const SilphCo5FPokemonReport2Text, TEXT_SILPHCO5F_POKEMON_REPORT2
 	dw_const SilphCo5FPokemonReport3Text, TEXT_SILPHCO5F_POKEMON_REPORT3
@@ -182,6 +182,41 @@ SilphCo5FRocket2EndBattleText:
 
 SilphCo5FRocket2AfterBattleText:
 	text_far _SilphCo5FRocket2AfterBattleText
+	text_end
+
+SilphCo5FCardKeyText:
+	text_asm
+	call EnableAutoTextBoxDrawing
+	
+	; Hide the card key object
+	ldh a, [hSpriteIndexOrTextID]
+	ld b, a
+	ld hl, wMissableObjectList
+.missableObjectsListLoop
+	ld a, [hli]
+	cp $ff
+	jr z, .showText ; not in missable objects list, just show text
+	cp b
+	jr z, .isMissable
+	inc hl
+	jr .missableObjectsListLoop
+
+.isMissable
+	ld a, [hl]
+	ld [wMissableObjectIndex], a
+	predef HideObject
+
+.showText
+	ld hl, .CardKeyText
+	call PrintText
+	SetEvent EVENT_GOT_CARD_KEY
+	ld a, 1
+	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+	jp TextScriptEnd
+
+.CardKeyText:
+	text_far _SilphCo5FCardKeyText
+	sound_get_key_item
 	text_end
 
 SilphCo5FPokemonReport1Text:

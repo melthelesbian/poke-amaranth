@@ -319,7 +319,6 @@ ItemSortList::
 	; Key Items With No Use
 	db EXP_ALL
 	db BIKE_VOUCHER
-	db CARD_KEY
 	db GOLD_TEETH
 	db OAKS_PARCEL
 	; HMs
