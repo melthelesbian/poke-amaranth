@@ -4936,11 +4936,9 @@ HandleCounterMove:
 ; check if the move the target last selected was Normal or Fighting type
 	inc de
 	ld a, [de]
-	and a ; normal type
-	jr z, .counterableType
-	cp FIGHTING
-	jr z, .counterableType
-; if the move wasn't Normal or Fighting type, miss
+	cp MYSTERY
+	jr nz, .counterableType
+; if the move was mystery type, miss
 	xor a
 	ret
 .counterableType
