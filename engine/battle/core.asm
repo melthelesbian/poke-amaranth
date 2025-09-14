@@ -5297,7 +5297,7 @@ HandleBuildingRage:
 	ld l, c
 	ld [hl], $00 ; null move number
 	inc hl
-	ld [hl], ATTACK_UP1_EFFECT
+	ld [hl], ATTACK_UP2_EFFECT
 	push hl
 	ld hl, BuildingRageText
 	call PrintText
