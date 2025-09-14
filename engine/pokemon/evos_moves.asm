@@ -155,18 +155,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	call RenameEvolvedMon
 	ld a, [wd11e]
 	push af
-	ld a, [wNameListIndex]
-	ld [wd11e], a
-	predef IndexToPokedex
-	ld a, [wd11e]
-	dec a
-	ld hl, BaseStats
-	ld bc, BASE_DATA_SIZE
-	call AddNTimes
-	ld de, wMonHeader
-	call CopyData
-	ld a, [wNameListIndex]
-	ld [wMonHIndex], a
+	call GetMonHeader
 	pop af
 	ld [wd11e], a
 	ld hl, wLoadedMonHPExp - 1
