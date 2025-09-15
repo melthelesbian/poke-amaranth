@@ -199,6 +199,11 @@ SECTION "EVOS and MOVES", ROMX
 
 INCLUDE "engine/pokemon/evos_moves.asm"
 
+SECTION "MOVE DESCRIPTIONS", ROMX
+
+INCLUDE "engine/pokemon/move_descriptions.asm"
+INCLUDE "data/moves/descriptions.asm"
+
 SECTION "Move Effects", ROMX
 
 INCLUDE "engine/battle/move_effects/heal.asm"

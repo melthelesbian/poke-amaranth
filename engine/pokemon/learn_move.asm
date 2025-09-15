@@ -199,7 +199,7 @@ ShowMoveInfo:
 	call FarCopyData
 	; add a pop-up with the new move's info
 	hlcoord 0, 0
-	lb bc, 2, 18
+	lb bc, 5, 18
 	call TextBoxBorder
 	call HidePartySprites
 	; show the move's name on the top
@@ -244,8 +244,10 @@ ShowMoveInfo:
 	hlcoord 14, 1
 	lb bc, LEFT_ALIGN | 1, 3
 	call PrintNumber
-; move effect icons
+	; move effect icons
 	call PrintMoveEffectIcons
+	; move descriptions
+	farcall PrintMoveDescription
 	ret
 
 MACRO lme_print_handler

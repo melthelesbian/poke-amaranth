@@ -22,7 +22,7 @@ I couldn't have made this hack without the help of [Luna](https://github.com/Jus
 * Field moves in the overworld adapted from the implementation by Luna in [Red++](https://github.com/JustRegularLuna/rpp-backup), based on a proof of concept originally by Yenatch.
 * Automatic Repel copied from the implementation in Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup), which was adapted from [Pokémon Maize](https://github.com/huderlem/maize) by ShantyTown
 * Fix for the move learning bug when you level up more than once from Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup)
-* Move information display during move learning adapted from Luna's [Ancient Johto](https://github.com/JustRegularLuna/ancient-johto)
+* Move information and description display during move learning adapted from Luna's [Ancient Johto](https://github.com/JustRegularLuna/ancient-johto)
 
 ## SPRITE CREDITS
 
