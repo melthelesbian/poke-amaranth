@@ -17,6 +17,11 @@
 - [ ] Improve Pokédex area function to show fishing and surf encounters
 - [ ] Consider changes to gift items & pokemon
 
+## Known Bugs
+- [x] Display issue when declining to learn a move
+- [x] Text bugs with TM items
+- [x] Bad warp in Cerulean house near bike shop
+
 ## Possible Tasks
 
 - [ ] Add move descriptions

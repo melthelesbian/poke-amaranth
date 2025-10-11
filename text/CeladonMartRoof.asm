@@ -22,11 +22,7 @@ _CeladonMartRoofLittleGirlReceivedTM08Text::
 	text_end
 
 _CeladonMartRoofLittleGirlTM08ExplanationText::
-	text_start
-
-	para "@"
-	text_ram wStringBuffer
-	text " contains"
+	text "TM08 contains"
 	line "ICE PUNCH!"
 
 	para "It can freeze the"
@@ -52,11 +48,7 @@ _CeladonMartRoofLittleGirlReceivedTM07Text::
 	text_end
 
 _CeladonMartRoofLittleGirlTM07ExplanationText::
-	text_start
-
-	para "@"
-	text_ram wStringBuffer
-	text " contains"
+	text "TM07 contains"
 	line "FIRE PUNCH!"
 
 	para "It can burn the"
@@ -76,7 +68,9 @@ _CeladonMartRoofLittleGirlYayLemonadeText::
 
 _CeladonMartRoofLittleGirlReceivedTM09Text::
 	text "<PLAYER> received"
-	line "TM09!@"
+	line "@"
+	text_ram wStringBuffer
+	text "!@"
 	text_end
 
 _CeladonMartRoofLittleGirlTM09ExplanationText::
