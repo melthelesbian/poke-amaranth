@@ -24,7 +24,7 @@
 
 ## Possible Tasks
 
-- [ ] Add move descriptions
+- [x] Add move descriptions
 - [ ] Add move relearner
 - [ ] Add move dex
 - [ ] Add postgame encounters
