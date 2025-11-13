@@ -1630,7 +1630,6 @@ wEvoStoneItemID:: db
 wSavedNPCMovementDirections2Index:: db
 
 wPlayerName:: ds NAME_LENGTH
-wPlayerStyle:: db
 
 SECTION "Party Data", WRAM0
 
@@ -1686,6 +1685,7 @@ wObtainedBadges:: flag_array NUM_BADGES
 wLetterPrintingDelayFlags:: db
 
 wPlayerID:: dw
+wPlayerStyle:: db
 
 wMapMusicSoundID:: db
 wMapMusicROMBank:: db
