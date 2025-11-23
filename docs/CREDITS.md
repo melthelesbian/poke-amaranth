@@ -15,9 +15,9 @@ I couldn't have made this hack without the help of [Luna](https://github.com/Jus
     * [Trainer Style Selection](https://github.com/pret/pokered/wiki/Adding-Gender-Selection-(original-tutorial-done-by-Mateo))
     * [Reporting Dual-Type Move Effectiveness](https://github.com/pret/pokered/wiki/%5BARCHIVED%5D-Bugs-and-Glitches#dual-type-move-effectiveness-may-be-misreported)
     * [Lt. Surge's Gym Trash Bug](https://github.com/pret/pokered/wiki/%5BARCHIVED%5D-Bugs-and-Glitches#lt-surges-gym-trash-cans-do-not-use-the-proper-trash-cans-for-the-locks)
-* Base Stats in the Pokédex adapted from Vortyne's [PureRGB](https://github.com/Vortyne/pureRGB/) and PlagueVonKarma's [Kanto Expansion Pack](https://github.com/PlagueVonKarma/kep-hack)
+* Base Stats in the Pokédex adapted from Vortyne's [PureRGB](https://github.com/Vortyne/pureRGB/) and [Kanto Expansion Pack](https://github.com/ShiraTheMogul/kep-hack)
 * Learnsets in the Pokédex adapted from the implementation by CrZ-Shadows in [Yellow Legacy](https://github.com/cRz-Shadows/Pokemon_Yellow_Legacy/)
-* Exp Bar code adapted from [Shin Pokémon Red](https://github.com/jojobear13/shinpokered), which utilized the original by dannye in [Pokémon Red Gen II](https://github.com/dannye/pokered-gen-II)
+* Exp Bar code adapted from [Shin Pokémon Red](https://github.com/jojobear13/shinpokered), which utilized the original by dannye in [pokered-gen-2-gfx](https://github.com/dannye/pokered-gen-2-gfx)
 * Caught Icon adapted from jojobear13's [Shin Pokémon Red](https://github.com/jojobear13/shinpokered)
 * Field moves in the overworld adapted from the implementation by Luna in [Red++](https://github.com/JustRegularLuna/rpp-backup), based on a proof of concept originally by Yenatch.
 * Automatic Repel copied from the implementation in Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup), which was adapted from [Pokémon Maize](https://github.com/huderlem/maize) by ShantyTown
@@ -26,7 +26,9 @@ I couldn't have made this hack without the help of [Luna](https://github.com/Jus
 
 ## SPRITE CREDITS
 
-[PureRGB](https://github.com/Vortyne/pureRGB/) for the 48x48 Red backsprite and the following Pokémon Backsprites (sprites marked as edited were edited by me, and I am to blame if they've been ruined):
+### Pokémon Sprite Credits
+
+Vortyne's [PureRGB](https://github.com/Vortyne/pureRGB/) for the following Pokémon Backsprites (sprites marked as edited were edited by me, and I am to blame if they've been ruined):
 
 * Arcanine
 * Articuno
@@ -46,6 +48,19 @@ I couldn't have made this hack without the help of [Luna](https://github.com/Jus
 * Tangela (edited)
 * Weezing
 
-### Additional Sprite Credits
+All other front and back sprites were from official sources, or tweaked by me.
 
-Some official sprites were taken from Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup) and dannye's [pokered-gbc](https://github.com/dannye/pokered-gbc)
+### Trainer Sprite Credits
+
+* Vortyne's [PureRGB](https://github.com/Vortyne/pureRGB/) for the [48x48 Red backsprite](https://github.com/Vortyne/pureRGB/blob/master/gfx/player/redb_big.png)
+* dannye's [pokered-gen-2-gfx](https://github.com/dannye/pokered-gen-2-gfx) for the [48x48 old man backsprite](https://github.com/dannye/pokered-gen-2-gfx/blob/master/gfx/battle/oldmanb.png)
+* Luna's [Red++](https://) for the following: 
+    * [leaf trainer back](https://github.com/JustRegularLuna/rpp-backup/blob/master/pic/trainer/leafb.png) sprite
+    * [leaf trainer front](https://github.com/JustRegularLuna/rpp-backup/blob/master/pic/trainer/leaf.png) sprite
+    * [leaf OW walking](https://github.com/JustRegularLuna/rpp-backup/blob/master/gfx/sprites/leaf.png) sprite
+    * [leaf OW cycling](https://github.com/JustRegularLuna/rpp-backup/blob/master/gfx/sprites/leafcycling.png) sprite
+    * leaf OW fishing [back](https://github.com/JustRegularLuna/rpp-backup/blob/master/gfx/leaf_fishing_tile_back.png), [side](https://github.com/JustRegularLuna/rpp-backup/blob/master/gfx/leaf_fishing_tile_side.png), and [front](https://github.com/JustRegularLuna/rpp-backup/blob/master/gfx/leaf_fishing_tile_front.png) sprites
+
+## Playtesting
+
+Thanks to mr._kat, lalafell, and jojosmeeps for early playtesting and bug reports.
