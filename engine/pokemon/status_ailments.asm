@@ -2,13 +2,13 @@ PrintConfusion::
 	ld a, [de]
 	bit CONFUSED, a
 	ret z
-	ld a, "C"
+	ld a, 'C'
 	ld [hli], a
-	ld a, "N"
+	ld a, 'N'
 	ld [hli], a
-	ld a, "F"
+	ld a, 'F'
 	ld [hli], a
-	ld [hl], "<CNF>"
+	ld [hl], '<CNF>'
 	ret
 
 PrintStatusAilment::
@@ -23,47 +23,47 @@ PrintStatusAilment::
 	jr nz, .par
 	and SLP_MASK
 	ret z
-	ld a, "S"
+	ld a, 'S'
 	ld [hli], a
-	ld a, "L"
+	ld a, 'L'
 	ld [hli], a
-	ld a, "P"
+	ld a, 'P'
 	ld [hli], a
-	ld [hl], "<SLP>"
+	ld [hl], '<SLP>'
 	ret
 .psn
-	ld a, "P"
+	ld a, 'P'
 	ld [hli], a
-	ld a, "S"
+	ld a, 'S'
 	ld [hli], a
-	ld a, "N"
+	ld a, 'N'
 	ld [hli], a
-	ld [hl], "<PSN>"
+	ld [hl], '<PSN>'
 	ret
 .brn
-	ld a, "B"
+	ld a, 'B'
 	ld [hli], a
-	ld a, "R"
+	ld a, 'R'
 	ld [hli], a
-	ld a, "N"
+	ld a, 'N'
 	ld [hli], a
-	ld [hl], "<BRN>"
+	ld [hl], '<BRN>'
 	ret
 .frz
-	ld a, "F"
+	ld a, 'F'
 	ld [hli], a
-	ld a, "R"
+	ld a, 'R'
 	ld [hli], a
-	ld a, "Z"
+	ld a, 'Z'
 	ld [hli], a
-	ld [hl], "<FRZ>"
+	ld [hl], '<FRZ>'
 	ret
 .par
-	ld a, "P"
+	ld a, 'P'
 	ld [hli], a
-	ld a, "A"
+	ld a, 'A'
 	ld [hli], a
-	ld a, "R"
+	ld a, 'R'
 	ld [hli], a
-	ld [hl], "<PAR>"
+	ld [hl], '<PAR>'
 	ret

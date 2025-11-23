@@ -331,7 +331,7 @@ PrintMoveEffectIcons:
 	jr .statusEffect
 .highCritMove
 	hlcoord 18, 1
-	ld [hl], "<CH>"
+	ld [hl], '<CH>'
 	jp .finished
 .statusEffect
 	ld a, [wBuffer + 1]
@@ -354,80 +354,80 @@ PrintMoveEffectIcons:
 	jp hl
 .printPSN
 	hlcoord 18, 1
-	ld [hl], "<PSN>"
+	ld [hl], '<PSN>'
 	jp .finished
 .printSLP
 	hlcoord 18, 1
-	ld [hl], "<SLP>"
+	ld [hl], '<SLP>'
 	jp .finished
 .printCNF
 	hlcoord 18, 1
-	ld [hl], "<CNF>"
+	ld [hl], '<CNF>'
 	jp .finished
 .printFRZ
 	hlcoord 18, 1
-	ld [hl], "<FRZ>"
+	ld [hl], '<FRZ>'
 	jp .finished
 .printBRN
 	hlcoord 18, 1
-	ld [hl], "<BRN>"
+	ld [hl], '<BRN>'
 	jp .finished
 .printPAR
 	hlcoord 18, 1
-	ld [hl], "<PAR>"
+	ld [hl], '<PAR>'
 	jp .finished
 .printStatUp1
 	hlcoord 18, 1
-	ld [hl], "<U1>"
+	ld [hl], '<U1>'
 	jp .finished
 .printStatUp2
 	hlcoord 18, 1
-	ld [hl], "<U2>"
+	ld [hl], '<U2>'
 	jp .finished
 .printStatDown1
 	hlcoord 18, 1
-	ld [hl], "<D1>"
+	ld [hl], '<D1>'
 	jp .finished
 .printStatDown2
 	hlcoord 18, 1
-	ld [hl], "<D2>"
+	ld [hl], '<D2>'
 	jp .finished
 .printHeal
 	hlcoord 18, 1
-	ld [hl], "<HEART>"
+	ld [hl], '<HEART>'
 	jp .finished
 .printRecoil
 	hlcoord 18, 1
-	ld [hl], "<BOUNCE>"
+	ld [hl], '<BOUNCE>'
 	jp .finished
 .printFlinch
 	hlcoord 18, 1
-	ld [hl], "<PAIN>"
+	ld [hl], '<PAIN>'
 	jp .finished
 .printMultiTurn
 	hlcoord 18, 1
-	ld [hl], "<CLOCK>"
+	ld [hl], '<CLOCK>'
 	jp .finished
 .printMultiHit1
 	hlcoord 8, 2
-	ld [hl], "+"
+	ld [hl], '+'
 	jp .finished
 .printMultiHit2
 	hlcoord 8, 2
-	ld [hl], "×"
+	ld [hl], '×'
 	jp .finished
 .printTrapping
 	hlcoord 18, 1
-	ld [hl], "<SPIRAL>"
+	ld [hl], '<SPIRAL>'
 	jp .finished
 .printRage
 	hlcoord 18, 1
-	ld [hl], "<ANGRY>"
+	ld [hl], '<ANGRY>'
 	jp .finished
 ; [INFO] default to unique effect
 .printUnique
 	hlcoord 18, 1
-	ld [hl], "<SPARKLE>"
+	ld [hl], '<SPARKLE>'
 .finished
 	ret
 

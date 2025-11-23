@@ -20,7 +20,7 @@ SlidePlayerAndEnemySilhouettesOnScreen:
 	ld hl, vBGMap0
 	ld bc, BG_MAP_WIDTH * BG_MAP_HEIGHT
 .clearBackgroundLoop
-	ld a, " "
+	ld a, ' '
 	ld [hli], a
 	dec bc
 	ld a, b
@@ -1997,11 +1997,11 @@ CenterMonName:
 .loop
 	inc de
 	ld a, [de]
-	cp "@"
+	cp '@'
 	jr z, .done
 	inc de
 	ld a, [de]
-	cp "@"
+	cp '@'
 	jr z, .done
 	dec hl
 	dec b
@@ -2048,15 +2048,15 @@ DisplayBattleMenu::
 	call CopyData
 ; the following simulates the keystrokes by drawing menus on screen
 	hlcoord 9, 14
-	ld [hl], "▶"
+	ld [hl], '▶'
 	ld c, 80
 	call DelayFrames
-	ld [hl], " "
+	ld [hl], ' '
 	hlcoord 9, 16
-	ld [hl], "▶"
+	ld [hl], '▶'
 	ld c, 50
 	call DelayFrames
-	ld [hl], "▷"
+	ld [hl], '▷'
 	ld a, $2 ; select the "ITEM" menu
 	jp .upperLeftMenuItemWasNotSelected
 .oldManName
@@ -2074,7 +2074,7 @@ DisplayBattleMenu::
 .leftColumn ; put cursor in left column of menu
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
-	ld a, " "
+	ld a, ' '
 	jr z, .safariLeftColumn
 ; put cursor in left column for normal battle menu (i.e. when it's not a Safari battle)
 	ldcoord_a 15, 14 ; clear upper cursor position in right column
@@ -2107,7 +2107,7 @@ DisplayBattleMenu::
 .rightColumn ; put cursor in right column of menu
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
-	ld a, " "
+	ld a, ' '
 	jr z, .safariRightColumn
 ; put cursor in right column for normal battle menu (i.e. when it's not a Safari battle)
 	ldcoord_a 9, 14 ; clear upper cursor position in left column
@@ -2340,7 +2340,7 @@ PartyMenuOrRockOrRun:
 .partyMonDeselected
 	hlcoord 11, 11
 	ld bc, 6 * SCREEN_WIDTH + 9
-	ld a, " "
+	ld a, ' '
 	call FillMemory
 	xor a ; NORMAL_PARTY_MENU
 	ld [wPartyMenuTypeOrMessageID], a
@@ -2507,9 +2507,9 @@ MoveSelectionMenu:
 	   ; so it is necessary to put the di ei block to not cause tearing
 	call TextBoxBorder
 	hlcoord 4, 12
-	ld [hl], "─"
+	ld [hl], '─'
 	hlcoord 10, 12
-	ld [hl], "┘"
+	ld [hl], '┘'
 	ei
 	hlcoord 6, 13
 	call .writemoves
@@ -2615,7 +2615,7 @@ SelectMenuItem:
 	dec a
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
-	ld [hl], "▷"
+	ld [hl], '▷'
 .select
 	ld hl, hUILayoutFlags
 	set 1, [hl]
@@ -2895,7 +2895,7 @@ PrintMenuItem:
 	ld [wBattleMenuCurrentPP], a
 ; print move info
 	hlcoord 6, 11
-	ld [hl], "/"
+	ld [hl], '/'
 .printPP
 	hlcoord 1, 11
 	ld de, PPText
@@ -2951,11 +2951,11 @@ PrintMenuItem:
 	lb bc, 1, 3
 	call PrintNumber
 	hlcoord 8, 10
-	ld [hl], "%"
+	ld [hl], '%'
 	jr .printHighCrit
 .infAccuracy
 	hlcoord 5, 10
-	ld [hl], "<INF>"
+	ld [hl], '<INF>'
 .printHighCrit
 	ld a, [wPlayerSelectedMove]
 	ld b, a
@@ -2969,7 +2969,7 @@ PrintMenuItem:
 	jr .statusEffect
 .highCritMove
 	hlcoord 9, 8
-	ld [hl], "<CH>"
+	ld [hl], '<CH>'
 	jp .finished
 .statusEffect
 	ld a, [wPlayerMoveEffect]
@@ -2992,80 +2992,80 @@ PrintMenuItem:
 	jp hl
 .printPSN
 	hlcoord 9, 8
-	ld [hl], "<PSN>"
+	ld [hl], '<PSN>'
 	jp .finished
 .printSLP
 	hlcoord 9, 8
-	ld [hl], "<SLP>"
+	ld [hl], '<SLP>'
 	jp .finished
 .printCNF
 	hlcoord 9, 8
-	ld [hl], "<CNF>"
+	ld [hl], '<CNF>'
 	jp .finished
 .printFRZ
 	hlcoord 9, 8
-	ld [hl], "<FRZ>"
+	ld [hl], '<FRZ>'
 	jp .finished
 .printBRN
 	hlcoord 9, 8
-	ld [hl], "<BRN>"
+	ld [hl], '<BRN>'
 	jp .finished
 .printPAR
 	hlcoord 9, 8
-	ld [hl], "<PAR>"
+	ld [hl], '<PAR>'
 	jp .finished
 .printStatUp1
 	hlcoord 9, 8
-	ld [hl], "<U1>"
+	ld [hl], '<U1>'
 	jp .finished
 .printStatUp2
 	hlcoord 9, 8
-	ld [hl], "<U2>"
+	ld [hl], '<U2>'
 	jp .finished
 .printStatDown1
 	hlcoord 9, 8
-	ld [hl], "<D1>"
+	ld [hl], '<D1>'
 	jp .finished
 .printStatDown2
 	hlcoord 9, 8
-	ld [hl], "<D2>"
+	ld [hl], '<D2>'
 	jp .finished
 .printHeal
 	hlcoord 9, 8
-	ld [hl], "<HEART>"
+	ld [hl], '<HEART>'
 	jp .finished
 .printRecoil
 	hlcoord 9, 8
-	ld [hl], "<BOUNCE>"
+	ld [hl], '<BOUNCE>'
 	jp .finished
 .printFlinch
 	hlcoord 9, 8
-	ld [hl], "<PAIN>"
+	ld [hl], '<PAIN>'
 	jp .finished
 .printMultiTurn
 	hlcoord 9, 8
-	ld [hl], "<CLOCK>"
+	ld [hl], '<CLOCK>'
 	jp .finished
 .printMultiHit1
 	hlcoord 8, 9
-	ld [hl], "+"
+	ld [hl], '+'
 	jp .finished
 .printMultiHit2
 	hlcoord 8, 9
-	ld [hl], "×"
+	ld [hl], '×'
 	jp .finished
 .printTrapping
 	hlcoord 9, 8
-	ld [hl], "<SPIRAL>"
+	ld [hl], '<SPIRAL>'
 	jp .finished
 .printRage
 	hlcoord 9, 8
-	ld [hl], "<ANGRY>"
+	ld [hl], '<ANGRY>'
 	jp .finished
 ; [INFO] default to unique effect
 .printUnique
 	hlcoord 9, 8
-	ld [hl], "<SPARKLE>"
+	ld [hl], '<SPARKLE>'
 .finished
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
@@ -7098,17 +7098,17 @@ InitWildBattle:
 	ld [hli], a   ; write front sprite pointer
 	ld [hl], b
 	ld hl, wEnemyMonNick  ; set name to "GHOST"
-	ld a, "G"
+	ld a, 'G'
 	ld [hli], a
-	ld a, "H"
+	ld a, 'H'
 	ld [hli], a
-	ld a, "O"
+	ld a, 'O'
 	ld [hli], a
-	ld a, "S"
+	ld a, 'S'
 	ld [hli], a
-	ld a, "T"
+	ld a, 'T'
 	ld [hli], a
-	ld [hl], "@"
+	ld [hl], '@'
 	ld a, [wCurPartySpecies]
 	push af
 	ld a, MON_GHOST

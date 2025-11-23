@@ -359,7 +359,7 @@ DrawPlayerCharacter:
 ClearBothBGMaps:
 	ld hl, vBGMap0
 	ld bc, $400 * 2
-	ld a, " "
+	ld a, ' '
 	jp FillMemory
 
 LoadTitleMonSprite:

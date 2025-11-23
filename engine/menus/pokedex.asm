@@ -130,7 +130,7 @@ HandlePokedexSideMenu:
 	push bc
 	hlcoord 0, 3
 	ld de, 20
-	lb bc, " ", 13
+	lb bc, ' ', 13
 	call DrawTileLine ; cover up the menu cursor in the pokemon list
 	pop bc
 	ret
@@ -139,7 +139,7 @@ HandlePokedexSideMenu:
 	push bc
 	hlcoord 15, 8
 	ld de, 20
-	lb bc, " ", 9
+	lb bc, ' ', 9
 	call DrawTileLine ; cover up the menu cursor in the side menu
 	pop bc
 	jr .exitSideMenu
@@ -264,7 +264,7 @@ Pokedex_DrawInterface:
 	ldh [hAutoBGTransferEnabled], a
 ; draw the horizontal line separating the seen and owned amounts from the menu
 	hlcoord 15, 6
-	ld a, "─"
+	ld a, '─'
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
@@ -386,7 +386,7 @@ Pokedex_PlacePokemonList:
 	ld hl, wPokedexOwned
 	call IsPokemonBitSet
 	pop hl
-	ld a, " "
+	ld a, ' '
 	jr z, .writeTile
 	ld a, $72 ; pokeball tile
 .writeTile
@@ -580,9 +580,9 @@ DrawDexEntryOnScreen:
 	call IndexToPokedex
 
 	hlcoord 2, 8
-	ld a, "№"
+	ld a, '№'
 	ld [hli], a
-	ld a, "."
+	ld a, '.'
 	ld [hli], a
 	ld de, wPokedexNum
 	lb bc, LEADING_ZEROES | 1, 3
@@ -624,14 +624,14 @@ DrawDexEntryOnScreen:
 	hlcoord 12, 6
 	lb bc, 1, 2
 	call PrintNumber ; print feet (height)
-	ld a, "′"
+	ld a, '′'
 	ld [hl], a
 	inc de
 	inc de ; de = address of inches (height)
 	hlcoord 15, 6
 	lb bc, LEADING_ZEROES | 1, 2
 	call PrintNumber ; print inches (height)
-	ld a, "″"
+	ld a, '″'
 	ld [hl], a
 ; now print the weight (note that weight is stored in tenths of pounds internally)
 	inc de
@@ -659,12 +659,12 @@ DrawDexEntryOnScreen:
 	ldh a, [hDexWeight]
 	sbc 0
 	jr nc, .next
-	ld [hl], "0" ; if the weight is less than 10, put a 0 before the decimal point
+	ld [hl], '0' ; if the weight is less than 10, put a 0 before the decimal point
 .next
 	inc hl
 	ld a, [hli]
 	ld [hld], a ; make space for the decimal point by moving the last digit forward one tile
-	ld [hl], "." ; decimal point tile
+	ld [hl], '.' ; decimal point tile
 	pop af
 	ldh [hDexWeight + 1], a ; restore original value of [hDexWeight + 1]
 	pop af
@@ -871,7 +871,7 @@ Pokedex_PrintStatsText:
 	ldh a, [hEvoCounter]
 	ld bc, SCREEN_WIDTH ; * 3
 	call AddNTimes
-	ld [hl], " "
+	ld [hl], ' '
 	pop bc
 	pop de
 .levelByte
@@ -1103,7 +1103,7 @@ PrintLevelUpMoveLine:
 	ldh a, [hMoveCounter]
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
-	ld [hl], "<LVL>"
+	ld [hl], '<LVL>'
 	jr .printMoveName
 .printStartingMove
 	push de
