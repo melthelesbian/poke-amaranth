@@ -6585,6 +6585,7 @@ LoadPlayerBackPic:
 	dec a ; is it the old man tutorial?
 	jr nz, .next
 	ld de, OldManPicBack
+	jr .continueLoading
 .next
 	ld a, [wPlayerStyle]
 	and a

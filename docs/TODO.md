@@ -21,7 +21,7 @@
 - [x] Display issue when declining to learn a move
 - [x] Text bugs with TM items
 - [x] Bad warp in Cerulean house near bike shop
-- [ ] Old Man sprite does not load during catch tutorial
+- [x] Old Man sprite does not load during catch tutorial
 
 ## Possible Tasks
 
