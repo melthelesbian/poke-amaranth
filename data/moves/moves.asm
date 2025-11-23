@@ -159,7 +159,7 @@ Moves:
 	move DIZZY_PUNCH,  THRASH_PETAL_DANCE_EFFECT,  70,   NORMAL,       100, 10
 	move SPORE,        SLEEP_EFFECT,               0,    GRASS,        100, 15
 	move FLASH,        CONFUSION_SIDE_EFFECT,      70,   ELECTRIC,     100, 20
-	move PSYWAVE,      SPECIAL_DAMAGE_EFFECT,      1,    PSYCHIC_TYPE, 80,  15
+	move PSYWAVE,      SPECIAL_DAMAGE_EFFECT,      1,    PSYCHIC_TYPE, 100, 15
 	move SPLASH,       SPLASH_EFFECT,              0,    WATER,        100, 40
 	move POWDER_SNOW,  FREEZE_SIDE_EFFECT,         40,   ICE,          100, 25 ; (ACID_ARMOR)
 	move CRABHAMMER,   NO_ADDITIONAL_EFFECT,       90,   STEEL,        95,  10 ; high crit ratio

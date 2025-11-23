@@ -5015,14 +5015,20 @@ ApplyAttackToEnemyPokemon:
 ; Psywave
 	ld a, [hl]
 	ld b, a
-	srl a
 	add b
-	ld b, a ; b = level * 1.5
+	ld b, a ; b = level * 2
 ; loop until a random number in the range [1, b) is found
 .loop
 	call BattleRandom
 	and a
 	jr z, .loop
+	push af
+	ld a, [hl]
+	srl a
+	ld c, a
+	pop af
+	cp c
+	jp c, .loop
 	cp b
 	jr nc, .loop
 	ld b, a
