@@ -2765,6 +2765,15 @@ FindWildLocationsOfMon:
 	ld a, [hli]
 	and a
 	call nz, CheckMapForMon ; water
+
+	; fishing
+	push hl
+	push bc
+	ld a, c
+	call CheckFishingForMon
+	pop bc
+	pop hl
+
 	pop hl
 	inc hl
 	inc hl
@@ -2785,6 +2794,8 @@ CheckMapForMon:
 	ld a, c
 	ld [de], a
 	inc de
+	inc hl
+	ret
 .nextEntry
 	inc hl
 	inc hl
@@ -2792,3 +2803,54 @@ CheckMapForMon:
 	jr nz, .loop
 	dec hl
 	ret
+
+
+; inputs:
+; 	[wd11e] = species to check for
+; 	a = map id to check
+;	de = pointer to wBuffer
+; outputs:
+;	[de] = map id if species found
+;	de = incremented if species found
+CheckFishingForMon:
+	ld hl, FishingRodData ; table correlating map id -> fishing group pointer
+	ld b, a ; store map id in b
+.findMap
+	ld a, [hli]
+	cp -1
+	jr z, .doneFishingCheck ; reached end of fishing data
+	cp b
+	jr z, .mapFound
+	; skip pointer to fishing group
+	inc hl
+	inc hl
+	jr .findMap ; if no match, check next entry
+.mapFound
+	; read fishing group address
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+
+	ld c, [hl] ; count of mons in group
+	inc hl ; point to data
+
+.checkSpecies
+	inc hl ; skip level
+
+	push bc
+	ld a, [hli] ; species
+	ld b, a 
+	ld a, [wd11e]
+	cp b
+	pop bc
+	jr z, .foundSpecies
+	dec c
+	jr nz, .checkSpecies
+	ret
+.foundSpecies
+	ld a, b ; map id
+	ld [de], a
+	inc de
+.doneFishingCheck
+	ret
+

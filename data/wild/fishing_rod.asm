@@ -25,8 +25,8 @@ FishingRodData:
 	dbw ROUTE_23,            .Route23
 	dbw ROUTE_24,            .Route24
 	dbw ROUTE_25,            .Route25
-	dbw CERULEAN_GYM,        .CeruleanCity
-	dbw VERMILION_DOCK,      .VermilionCity
+	dbw CERULEAN_GYM,        .CeruleanGym
+	dbw VERMILION_DOCK,      .VermilionDock
 	dbw SEAFOAM_ISLANDS_B3F, .SeafoamIslandsB3F
 	dbw SEAFOAM_ISLANDS_B4F, .SeafoamIslandsB4F
 	dbw SAFARI_ZONE_EAST,    .SafariZoneEast

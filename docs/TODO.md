@@ -14,7 +14,7 @@
 - [x] Set up CI / release infrastructure
 - [ ] Check for dialogue inconsistencies
 - [ ] Ensure new locations are populated (Fairy Cave, Meditation Cave, Route 15 House, etc.)
-- [ ] Improve Pokédex area function to show fishing and surf encounters
+- [x] Improve Pokédex area function to show fishing and surf encounters
 - [ ] Consider changes to gift items & pokemon
 - [ ] Item descriptions
 
