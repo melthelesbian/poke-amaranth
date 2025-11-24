@@ -43,7 +43,6 @@ MoveScreen:
 	ld a, [wWhichPokemon]
 	call GetPartyMonName
 	hlcoord 4, 0
-	ld de, wNameBuffer
 	call PlaceString
 
 ; Set up menu cursor position
@@ -79,8 +78,9 @@ MoveScreen:
 	ld a, [hl]
 	ld [wMoveNum], a
     ld [wd11e], a
-	farcall PrintMoveScreenDescription
 	
+	farcall PrintMoveScreenDescription
+
     ; read move data into buffer
     ld a, [wMoveNum]
 	dec a

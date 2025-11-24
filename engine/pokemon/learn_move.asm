@@ -256,7 +256,7 @@ ShowMoveInfo:
 	; move effect icons
 	call PrintMoveEffectIcons
 	; move descriptions
-	farcall PrintMoveDescription
+	farcall PrintLearnMoveDescription
 	ret
 
 MACRO lme_print_handler
