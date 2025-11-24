@@ -256,6 +256,7 @@ ShowMoveInfo:
 	; move effect icons
 	call PrintMoveEffectIcons
 	; move descriptions
+	hlcoord 1, 4
 	farcall PrintMoveDescription
 	ret
 
