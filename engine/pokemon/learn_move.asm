@@ -256,7 +256,6 @@ ShowMoveInfo:
 	; move effect icons
 	call PrintMoveEffectIcons
 	; move descriptions
-	hlcoord 1, 4
 	farcall PrintMoveDescription
 	ret
 
@@ -437,7 +436,7 @@ PrintMoveEffectIcons:
 ConvertPercentagesBattle::
 	ld a, [wPlayerMoveAccuracy]
 	call ConvertPercentages
-	ld [wBuffer], a
+	ld [wBuffer + 6], a
 	ret
 
 ; This converts values out of 256 into a value
