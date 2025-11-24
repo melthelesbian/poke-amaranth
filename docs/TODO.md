@@ -16,6 +16,7 @@
 - [ ] Ensure new locations are populated (Fairy Cave, Meditation Cave, Route 15 House, etc.)
 - [ ] Improve Pokédex area function to show fishing and surf encounters
 - [ ] Consider changes to gift items & pokemon
+- [ ] Item descriptions
 
 ## Known Bugs
 - [x] Display issue when declining to learn a move
@@ -27,7 +28,8 @@
 
 - [x] Add move descriptions
 - [ ] Add move relearner
-- [ ] Add move dex
+- [ ] Add move deleter
+- [x] ~~Add move dex~~ Move info screen
 - [ ] Add postgame encounters
 - [ ] Set up RED/BLUE version differences
 - [ ] Test trade & battle functionality
