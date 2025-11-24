@@ -25,7 +25,7 @@ MoveScreen:
 	hlcoord 0, 0
 	lb bc, 9, 18
 	call TextBoxBorder
-	
+
 	ld bc, NUM_MOVES + 1
 	ld hl, wMoves
 	call FillMemory
@@ -38,6 +38,14 @@ MoveScreen:
 	ld de, wMovesString
 	call PlaceString
 	
+	; print the Pokemon's nickname
+	ld hl, wPartyMonNicks
+	ld a, [wWhichPokemon]
+	call GetPartyMonName
+	hlcoord 4, 0
+	ld de, wNameBuffer
+	call PlaceString
+
 ; Set up menu cursor position
 	ld a, 2  ; Y position (row 2)
 	ld [wTopMenuItemY], a
