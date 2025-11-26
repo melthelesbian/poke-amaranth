@@ -47,7 +47,7 @@ ItemNames::
 	li "BIKE VOUCHER"
 	li "UNUSED 2E" ; UNUSED_2E (X_ACCURACY)
 	li "LEAF STONE"
-	li "CARD KEY"
+	li "UNUSED 30" ; UNUSED_30 (CARD_KEY)
 	li "NUGGET"
 	li "DEVO SPRAY" ; (ITEM_32)
 	li "POKé DOLL"
@@ -73,10 +73,10 @@ ItemNames::
 	li "ITEMFINDER"
 	li "UNUSED 48" ; UNUSED_48 (SILPH SCOPE)
 	li "POKé FLUTE"
-	li "LIFT KEY"
+	li "UNUSED 4A" ; UNUSED_4A (LIFT_KEY)
 	li "EXP.ALL"
-	li "OLD ROD"
-	li "GOOD ROD"
+	li "UNUSED 4C" ; UNUSED_4C (OLD_ROD)
+	li "UNUSED 4D" ; UNUSED_4D (GOOD_ROD)
 	li "FISHING ROD"
 	li "PP UP"
 	li "ETHER"
