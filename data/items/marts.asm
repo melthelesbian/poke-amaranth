@@ -52,6 +52,9 @@ FuchsiaMartTMVendorText::
 CinnabarMartClerkText::
 	script_mart ULTRA_BALL, GREAT_BALL, HYPER_POTION, REPEL, ESCAPE_ROPE, PANACEA, REVIVE
 
+CinnabarMartTMVendorText::
+	script_mart TM_ICE_BEAM, TM_HYPER_BEAM, TM_SOLARBEAM, TM_DRAGONBREATH, TM_SHADOW_TEAR
+
 SaffronMartClerkText::
 	script_mart GREAT_BALL, HYPER_POTION, REPEL, ESCAPE_ROPE, PANACEA, REVIVE
 

@@ -4,6 +4,7 @@ CinnabarMart_Script:
 CinnabarMart_TextPointers:
 	def_text_pointers
 	dw_const CinnabarMartClerkText,        TEXT_CINNABARMART_CLERK
+	dw_const CinnabarMartTMVendorText,     TEXT_CINNABARMART_TM_VENDOR
 	dw_const CinnabarMartSilphWorkerFText, TEXT_CINNABARMART_SILPH_WORKER_F
 	dw_const CinnabarMartScientistText,    TEXT_CINNABARMART_SCIENTIST
 
