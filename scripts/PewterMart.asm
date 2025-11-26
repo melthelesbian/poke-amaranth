@@ -7,6 +7,7 @@ PewterMart_Script:
 PewterMart_TextPointers:
 	def_text_pointers
 	dw_const PewterMartClerkText,     TEXT_PEWTERMART_CLERK
+	dw_const PewterMartTMVendorText,  TEXT_PEWTERMART_TM_VENDOR
 	dw_const PewterMartYoungsterText, TEXT_PEWTERMART_YOUNGSTER
 	dw_const PewterMartSuperNerdText, TEXT_PEWTERMART_SUPER_NERD
 

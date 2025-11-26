@@ -7,6 +7,9 @@ ViridianMartClerkText::
 PewterMartClerkText::
 	script_mart POKE_BALL, POTION, ESCAPE_ROPE, REPEL, PANACEA
 
+PewterMartTMVendorText::
+	script_mart TM_DOUBLE_KICK, TM_PAY_DAY, TM_ROCK_SLIDE, TM_FURY_CUT
+
 CeruleanMartClerkText::
 	script_mart POKE_BALL, POTION, REPEL, PANACEA
 
