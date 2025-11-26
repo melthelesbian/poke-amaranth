@@ -7,7 +7,9 @@ MrPsychicsHouse_TextPointers:
 
 MrPsychicsHouseMrPsychicText:
 	text_asm
-	CheckEvent EVENT_GOT_TM29
+	; CheckEvent EVENT_GOT_TM29
+	ld b, TM_PSYCHIC_M
+	call IsItemInBag
 	jr nz, .got_item
 	ld hl, .YouWantedThisText
 	call PrintText
@@ -16,7 +18,7 @@ MrPsychicsHouseMrPsychicText:
 	jr nc, .bag_full
 	ld hl, .ReceivedTM29Text
 	call PrintText
-	SetEvent EVENT_GOT_TM29
+	; SetEvent EVENT_GOT_TM29
 	jr .done
 .bag_full
 	ld hl, .TM29NoRoomText
