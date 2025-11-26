@@ -46,6 +46,9 @@ CeladonMart5FClerk2Text::
 FuchsiaMartClerkText::
 	script_mart ULTRA_BALL, GREAT_BALL, SUPER_POTION, REVIVE, PANACEA, REPEL
 
+FuchsiaMartTMVendorText::
+	script_mart TM_FIRE_PUNCH, TM_ICE_PUNCH, TM_THUNDERPUNCH, TM_MIMIC, TM_SKULL_BASH
+
 CinnabarMartClerkText::
 	script_mart ULTRA_BALL, GREAT_BALL, HYPER_POTION, REPEL, ESCAPE_ROPE, PANACEA, REVIVE
 
