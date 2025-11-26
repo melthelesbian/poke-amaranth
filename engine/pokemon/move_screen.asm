@@ -79,8 +79,6 @@ MoveScreen:
 	ld [wMoveNum], a
     ld [wd11e], a
 	
-	farcall PrintMoveScreenDescription
-
     ; read move data into buffer
     ld a, [wMoveNum]
 	dec a
@@ -132,6 +130,7 @@ MoveScreen:
 	
 	; move effect icons
 	call PrintMoveScreenEffectIcons
+	farcall PrintMoveScreenDescription
 
 	jp .menuLoop
     ret

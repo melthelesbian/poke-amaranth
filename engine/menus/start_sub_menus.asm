@@ -356,14 +356,14 @@ StartMenu_Item::
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
 	ld hl, wTopMenuItemY
-	ld a, 11
+	ld a, 9
 	ld [hli], a ; top menu item Y
 	ld a, 14
 	ld [hli], a ; top menu item X
 	xor a
 	ld [hli], a ; current menu item ID
 	inc hl
-	inc a ; a = 1
+	ld a, 2 ; a = 2
 	ld [hli], a ; max menu item ID
 	ld a, A_BUTTON | B_BUTTON
 	ld [hli], a ; menu watched keys
@@ -391,9 +391,18 @@ StartMenu_Item::
 .notBicycle2
 	ld a, [wCurrentMenuItem]
 	and a
+	jr nz, .checkInfoOrToss
+	; wCurrentMenuItem is 0, so USE was selected
+	jr .useItem
+.checkInfoOrToss
+	cp 1
 	jr nz, .tossItem
+	; wCurrentMenuItem is 1, so INFO was selected
+	jr .infoItem
+.useItem
 ; use item
-	ld [wPseudoItemID], a ; a must be 0 due to above conditional jump
+	xor a
+	ld [wPseudoItemID], a
 	ld a, [wCurItem]
 	cp HM01
 	jr nc, .useItem_partyMenu
@@ -431,6 +440,9 @@ StartMenu_Item::
 .partyMenuNotDisplayed
 	pop af
 	ld [wUpdateSpritesEnabled], a
+	jp ItemMenuLoop
+.infoItem
+	farcall DisplayItemDescription
 	jp ItemMenuLoop
 .tossItem
 	call IsKeyItem

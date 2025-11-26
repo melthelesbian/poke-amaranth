@@ -37,6 +37,10 @@ SECTION "item names and prices", ROMX
 
 INCLUDE "data/items/prices.asm"
 INCLUDE "data/items/names.asm"
+INCLUDE "engine/items/item_descriptions.asm"
+INCLUDE "data/items/descriptions.asm"
+INCLUDE "engine/pokemon/move_descriptions.asm"
+INCLUDE "data/moves/descriptions.asm"
 
 SECTION "bank3", ROMX
 
@@ -92,10 +96,6 @@ INCLUDE "engine/menus/start_sub_menus.asm"
 INCLUDE "engine/items/tms.asm"
 INCLUDE "engine/battle/end_of_battle.asm"
 INCLUDE "engine/battle/wild_encounters.asm"
-INCLUDE "engine/battle/move_effects/recoil.asm"
-INCLUDE "engine/battle/move_effects/conversion.asm"
-INCLUDE "engine/battle/move_effects/haze.asm"
-INCLUDE "engine/battle/move_effects/drain_hp.asm"
 INCLUDE "engine/battle/get_trainer_name.asm"
 INCLUDE "engine/math/random.asm"
 
@@ -107,6 +107,10 @@ INCLUDE "engine/overworld/map_sprites.asm"
 INCLUDE "engine/overworld/emotion_bubbles.asm"
 INCLUDE "engine/events/evolve_trade.asm"
 INCLUDE "engine/battle/move_effects/substitute.asm"
+INCLUDE "engine/battle/move_effects/recoil.asm"
+INCLUDE "engine/battle/move_effects/conversion.asm"
+INCLUDE "engine/battle/move_effects/haze.asm"
+INCLUDE "engine/battle/move_effects/drain_hp.asm"
 INCLUDE "engine/menus/pc.asm"
 
 
@@ -202,8 +206,6 @@ INCLUDE "engine/pokemon/evos_moves.asm"
 
 SECTION "MOVE DESCRIPTIONS", ROMX
 
-INCLUDE "engine/pokemon/move_descriptions.asm"
-INCLUDE "data/moves/descriptions.asm"
 
 SECTION "Move Effects", ROMX
 
