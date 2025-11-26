@@ -74,7 +74,7 @@ KeyItemFlags:
 	dbit FALSE ; UNUSED_48 (SILPH_SCOPE)
 	dbit TRUE  ; POKE_FLUTE
 	dbit FALSE ; UNUSED_4A (LIFT_KEY)
-	dbit FALSE ; EXP_ALL
+	dbit TRUE  ; EXP_ALL
 	dbit TRUE  ; UNUSED_4C (OLD_ROD)
 	dbit TRUE  ; UNUSED_4D (GOOD_ROD)
 	dbit TRUE  ; FISHING_ROD

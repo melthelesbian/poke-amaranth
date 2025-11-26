@@ -1,19 +1,17 @@
-_Route15Gate2FOaksAideExpAllText::
-	text "EXP.ALL gives"
-	line "EXP points to all"
-	cont "the #MON with"
-	cont "you, even if they"
-	cont "don't fight."
+_Route15Gate2FOaksAideItemfinderText::
+	text "There are items on"
+	line "the ground that"
+	cont "can't be seen."
 
-	para "It does, however,"
-	line "reduce the amount"
-	cont "of EXP for each"
-	cont "#MON."
+	para "ITEMFINDER will"
+	line "detect an item"
+	cont "close to you."
 
-	para "If you don't need"
-	line "it, you should "
-	cont "store it via PC."
+	para "It can't pinpoint"
+	line "it, so you have"
+	cont "to look yourself!"
 	done
+
 
 _Route15Gate2FBinocularsText::
 	text "Looked into the"

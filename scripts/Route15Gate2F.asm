@@ -8,11 +8,11 @@ Route15Gate2F_TextPointers:
 
 Route15Gate2FOaksAideText:
 	text_asm
-	CheckEvent EVENT_GOT_EXP_ALL
+	CheckEvent EVENT_GOT_ITEMFINDER
 	jr nz, .got_item
 	ld a, 50
 	ldh [hOaksAideRequirement], a
-	ld a, EXP_ALL
+	ld a, ITEMFINDER
 	ldh [hOaksAideRewardItem], a
 	ld [wd11e], a
 	call GetItemName
@@ -24,15 +24,15 @@ Route15Gate2FOaksAideText:
 	ldh a, [hOaksAideResult]
 	cp OAKS_AIDE_GOT_ITEM
 	jr nz, .no_item
-	SetEvent EVENT_GOT_EXP_ALL
+	SetEvent EVENT_GOT_ITEMFINDER
 .got_item
-	ld hl, .ExpAllText
+	ld hl, .ItemfinderText
 	call PrintText
 .no_item
 	jp TextScriptEnd
 
-.ExpAllText:
-	text_far _Route15Gate2FOaksAideExpAllText
+.ItemfinderText:
+	text_far _Route15Gate2FOaksAideItemfinderText
 	text_end
 
 Route15Gate2FBinocularsText:

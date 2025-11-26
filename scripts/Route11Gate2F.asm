@@ -18,11 +18,11 @@ Route11Gate2FScriptEnd:
 
 Route11Gate2FOaksAideText:
 	text_asm
-	CheckEvent EVENT_GOT_ITEMFINDER, 1
+	CheckEvent EVENT_GOT_EXP_ALL, 1
 	jr c, .got_item
 	ld a, 30
 	ldh [hOaksAideRequirement], a
-	ld a, ITEMFINDER
+	ld a, EXP_ALL
 	ldh [hOaksAideRewardItem], a
 	ld [wd11e], a
 	call GetItemName
@@ -35,15 +35,15 @@ Route11Gate2FOaksAideText:
 	ldh a, [hOaksAideResult]
 	dec a ; OAKS_AIDE_GOT_ITEM?
 	jr nz, .no_item
-	SetEvent EVENT_GOT_ITEMFINDER
+	SetEvent EVENT_GOT_EXP_ALL
 .got_item
-	ld hl, .ItemfinderDescriptionText
+	ld hl, .ExpAllDescriptionText
 	call PrintText
 .no_item
 	jr Route11Gate2FScriptEnd
 
-.ItemfinderDescriptionText:
-	text_far _Route11Gate2FOaksAideItemfinderDescriptionText
+.ExpAllDescriptionText:
+	text_far _Route11Gate2FOaksAideExpAllDescriptionText
 	text_end
 
 Route11Gate2FLeftBinocularsText:

@@ -330,7 +330,7 @@
 	const EVENT_BEAT_ROUTE_11_TRAINER_8
 	const EVENT_BEAT_ROUTE_11_TRAINER_9
 	const_skip 4
-	const EVENT_GOT_ITEMFINDER
+	const EVENT_GOT_EXP_ALL
 
 ; Route 12 events
 	const_next $480
@@ -377,7 +377,7 @@
 
 ; Route 15 events
 	const_next $4B0
-	const EVENT_GOT_EXP_ALL
+	const EVENT_GOT_ITEMFINDER
 	const EVENT_BEAT_ROUTE_15_TRAINER_0
 	const EVENT_BEAT_ROUTE_15_TRAINER_1
 	const EVENT_BEAT_ROUTE_15_TRAINER_2
