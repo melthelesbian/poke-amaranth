@@ -19,6 +19,9 @@ CeruleanMartTMVendorText::
 VermilionMartClerkText::
 	script_mart POKE_BALL, SUPER_POTION, REPEL, PANACEA
 
+VermilionMartTMVendorText::
+	script_mart TM_SWORDS_DANCE, TM_AGILITY, TM_DIG, TM_REST
+
 LavenderMartClerkText::
 	script_mart GREAT_BALL, SUPER_POTION, REVIVE, ESCAPE_ROPE, REPEL, PANACEA
 

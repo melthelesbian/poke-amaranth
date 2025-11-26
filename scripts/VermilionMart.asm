@@ -4,6 +4,7 @@ VermilionMart_Script:
 VermilionMart_TextPointers:
 	def_text_pointers
 	dw_const VermilionMartClerkText,        TEXT_VERMILIONMART_CLERK
+	dw_const VermilionMartTMVendorText,	    TEXT_VERMILIONMART_TM_VENDOR
 	dw_const VermilionMartCooltrainerMText, TEXT_VERMILIONMART_COOLTRAINER_M
 	dw_const VermilionMartCooltrainerFText, TEXT_VERMILIONMART_COOLTRAINER_F
 
