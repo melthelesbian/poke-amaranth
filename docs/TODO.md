@@ -5,19 +5,22 @@
 - [x] Update trainer party design
 - [ ] Add more SWEETHEART trainer encounters
 - [x] Update trainer AI Flags for balance
-- [ ] Ensure all TMs can be acquired once for free 
+- [ ] Ensure all TMs can be acquired once for free
 - [x] Ensure all TMs can be re-acquired indefinitely
 - [x] Test TM item names fit the display
-- [ ] Test focus energy & sleep status
 - [x] Remove CARD KEY
 - [ ] Move balance pass (Power/Accuracy/PP)
 - [ ] TM Price balance pass
 - [x] Set up CI / release infrastructure
-- [ ] Check for dialogue inconsistencies
 - [ ] Ensure new locations are populated (Fairy Cave, Meditation Cave, Route 15 House, etc.)
 - [x] Improve Pokédex area function to show fishing and surf encounters
-- [ ] Consider changes to gift items & pokemon
-- [ ] Item descriptions
+- [x] Consider changes to gift items & pokemon
+- [x] Add item descriptions
+
+## Testing Tasks
+- [ ] Test focus energy & sleep status
+- [ ] Check for dialogue inconsistencies
+- [ ] Test trade & battle functionality
 
 ## Known Bugs
 - [x] Display issue when declining to learn a move
@@ -32,5 +35,4 @@
 - [ ] Add move deleter
 - [x] ~~Add move dex~~ Move info screen
 - [ ] Add postgame encounters
-- [ ] Set up RED/BLUE version differences
-- [ ] Test trade & battle functionality
+- [ ] ~~Set up RED/BLUE version differences~~
