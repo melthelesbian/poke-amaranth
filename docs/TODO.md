@@ -6,11 +6,12 @@
 - [ ] Add more SWEETHEART trainer encounters
 - [x] Update trainer AI Flags for balance
 - [ ] Ensure all TMs can be acquired once for free 
-- [ ] Ensure all TMs can be re-acquired indefinitely
+- [x] Ensure all TMs can be re-acquired indefinitely
 - [x] Test TM item names fit the display
 - [ ] Test focus energy & sleep status
 - [x] Remove CARD KEY
 - [ ] Move balance pass (Power/Accuracy/PP)
+- [ ] TM Price balance pass
 - [x] Set up CI / release infrastructure
 - [ ] Check for dialogue inconsistencies
 - [ ] Ensure new locations are populated (Fairy Cave, Meditation Cave, Route 15 House, etc.)
