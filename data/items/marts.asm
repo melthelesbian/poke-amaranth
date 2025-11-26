@@ -25,6 +25,9 @@ VermilionMartTMVendorText::
 LavenderMartClerkText::
 	script_mart GREAT_BALL, SUPER_POTION, REVIVE, ESCAPE_ROPE, REPEL, PANACEA
 
+LavenderMartTMVendorText::
+	script_mart TM_CRUNCH, TM_FOCUS_ENERGY, TM_SLUDGE, TM_HYPNOSIS, TM_DREAM_EATER
+
 CeladonMart2FClerk1Text::
 	script_mart GREAT_BALL, SUPER_POTION, REVIVE, REPEL, PANACEA
 

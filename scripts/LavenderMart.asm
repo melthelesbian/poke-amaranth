@@ -4,6 +4,7 @@ LavenderMart_Script:
 LavenderMart_TextPointers:
 	def_text_pointers
 	dw_const LavenderMartClerkText,        TEXT_LAVENDERMART_CLERK
+	dw_const LavenderMartTMVendorText,     TEXT_LAVENDERMART_TM_VENDOR
 	dw_const LavenderMartBaldingGuyText,   TEXT_LAVENDERMART_BALDING_GUY
 	dw_const LavenderMartCooltrainerMText, TEXT_LAVENDERMART_COOLTRAINER_M
 
