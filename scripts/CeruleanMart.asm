@@ -4,6 +4,7 @@ CeruleanMart_Script:
 CeruleanMart_TextPointers:
 	def_text_pointers
 	dw_const CeruleanMartClerkText,        TEXT_CERULEANMART_CLERK
+	dw_const CeruleanMartTMVendorText,     TEXT_CERULEANMART_TM_VENDOR
 	dw_const CeruleanMartCooltrainerMText, TEXT_CERULEANMART_COOLTRAINER_M
 	dw_const CeruleanMartCooltrainerFText, TEXT_CERULEANMART_COOLTRAINER_F
 

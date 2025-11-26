@@ -13,6 +13,9 @@ PewterMartTMVendorText::
 CeruleanMartClerkText::
 	script_mart POKE_BALL, POTION, REPEL, PANACEA
 
+CeruleanMartTMVendorText::
+	script_mart TM_HEADBUTT, TM_TELEPORT, TM_RAZOR_LEAF, TM_THUNDER_WAVE
+
 VermilionMartClerkText::
 	script_mart POKE_BALL, SUPER_POTION, REPEL, PANACEA
 
