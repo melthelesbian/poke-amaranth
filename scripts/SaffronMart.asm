@@ -4,6 +4,7 @@ SaffronMart_Script:
 SaffronMart_TextPointers:
 	def_text_pointers
 	dw_const SaffronMartClerkText,        TEXT_SAFFRONMART_CLERK
+	dw_const SaffronMartTMVendorText,     TEXT_SAFFRONMART_TM_VENDOR
 	dw_const SaffronMartSuperNerdText,    TEXT_SAFFRONMART_SUPER_NERD
 	dw_const SaffronMartCooltrainerFText, TEXT_SAFFRONMART_COOLTRAINER_F
 

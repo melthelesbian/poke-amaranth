@@ -1,5 +1,6 @@
 	object_const_def
 	const_export SAFFRONMART_CLERK
+	const_export SAFFRONMART_TM_VENDOR
 	const_export SAFFRONMART_SUPER_NERD
 	const_export SAFFRONMART_COOLTRAINER_F
 
@@ -14,6 +15,7 @@ SaffronMart_Object:
 
 	def_object_events
 	object_event  0,  5, SPRITE_CLERK, STAY, RIGHT, TEXT_SAFFRONMART_CLERK
+	object_event  0,  6, SPRITE_GYM_GUIDE, STAY, DOWN, TEXT_SAFFRONMART_TM_VENDOR
 	object_event  4,  2, SPRITE_SUPER_NERD, STAY, NONE, TEXT_SAFFRONMART_SUPER_NERD
 	object_event  6,  5, SPRITE_COOLTRAINER_F, WALK, ANY_DIR, TEXT_SAFFRONMART_COOLTRAINER_F
 

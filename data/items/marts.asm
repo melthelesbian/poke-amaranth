@@ -52,5 +52,8 @@ CinnabarMartClerkText::
 SaffronMartClerkText::
 	script_mart GREAT_BALL, HYPER_POTION, REPEL, ESCAPE_ROPE, PANACEA, REVIVE
 
+SaffronMartTMVendorText::
+	script_mart TM_MEGA_DRAIN, TM_WATERFALL, TM_FLARE_RUSH, TM_SWIFT, TM_VENOM_STRIKE
+
 IndigoPlateauLobbyClerkText::
 	script_mart ULTRA_BALL, GREAT_BALL, FULL_RESTORE, MAX_POTION, PANACEA, REVIVE, REPEL
