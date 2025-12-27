@@ -41,6 +41,7 @@ NameRatersHouseCheckMonOTScript:
 NameRatersHouse_TextPointers:
 	def_text_pointers
 	dw_const NameRatersHouseNameRaterText, TEXT_NAMERATERSHOUSE_NAME_RATER
+	dw_const NameRatersHouseMoveDeleterText, TEXT_NAMERATERSHOUSE_MOVE_DELETER
 
 NameRatersHouseNameRaterText:
 	text_asm
@@ -106,4 +107,8 @@ NameRatersHouseNameRaterText:
 
 .ATrulyImpeccableNameText:
 	text_far _NameRatersHouseNameRaterATrulyImpeccableNameText
+	text_end
+
+NameRatersHouseMoveDeleterText:
+	text_far MoveDeleterText
 	text_end

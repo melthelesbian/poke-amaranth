@@ -204,7 +204,9 @@ SECTION "EVOS and MOVES", ROMX
 
 INCLUDE "engine/pokemon/evos_moves.asm"
 
-SECTION "MOVE DESCRIPTIONS", ROMX
+SECTION "Relearner and Deleter", ROMX
+
+INCLUDE "engine/pokemon/move_deleter.asm"
 
 
 SECTION "Move Effects", ROMX
