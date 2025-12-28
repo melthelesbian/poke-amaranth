@@ -18,11 +18,12 @@
 - [x] Add more SWEETHEART trainer encounters
 - [x] Ensure all TMs can be acquired once for free
 - [x] Ensure new locations are populated (Fairy Cave, Meditation Cave, Route 15 House, etc.)
-- [ ] Move balance pass (Power/Accuracy/PP)
-- [ ] TM Price balance pass
+- [x] Basic move balance pass (Power/Accuracy/PP)
+- [x] Basic TM Price balance pass
 
 ## Testing Tasks
 - [ ] Test focus energy & sleep status
+- [ ] Test charge moves
 - [ ] Check for dialogue inconsistencies
 - [ ] Test trade & battle functionality
 
