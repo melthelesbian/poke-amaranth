@@ -24,6 +24,7 @@ I couldn't have made this hack without the help of [Luna](https://github.com/Jus
 * Automatic Repel copied from the implementation in Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup), which was adapted from [Pokémon Maize](https://github.com/huderlem/maize) by ShantyTown
 * Fix for the move learning bug when you level up more than once from Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup)
 * Move information and description display during move learning adapted from Luna's [Ancient Johto](https://github.com/JustRegularLuna/ancient-johto)
+* Move Relearner & Deleter adapted from code originally from Luna's [Red++](https://github.com/JustRegularLuna/rpp-backup) and the specific implementation by CrZ-Shadows in [Yellow Legacy](https://github.com/cRz-Shadows/Pokemon_Yellow_Legacy/)
 
 ## SPRITE CREDITS
 
