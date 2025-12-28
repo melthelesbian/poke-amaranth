@@ -1,55 +1,55 @@
 TechnicalMachinePrices:
 ; In thousands (nybbles).
 	nybble_array TechnicalMachinePrices
-	nybble 3 ; TM01
-	nybble 2 ; TM02
-	nybble 2 ; TM03
-	nybble 1 ; TM04
-	nybble 3 ; TM05
-	nybble 4 ; TM06
-	nybble 2 ; TM07
-	nybble 4 ; TM08
-	nybble 3 ; TM09
-	nybble 4 ; TM10
-	nybble 2 ; TM11
-	nybble 1 ; TM12
-	nybble 4 ; TM13
-	nybble 5 ; TM14
-	nybble 5 ; TM15
-	nybble 5 ; TM16
-	nybble 3 ; TM17
-	nybble 2 ; TM18
-	nybble 3 ; TM19
-	nybble 2 ; TM20
-	nybble 5 ; TM21
-	nybble 5 ; TM22
-	nybble 5 ; TM23
-	nybble 2 ; TM24
-	nybble 5 ; TM25
-	nybble 4 ; TM26
-	nybble 5 ; TM27
-	nybble 2 ; TM28
-	nybble 4 ; TM29
-	nybble 1 ; TM30
-	nybble 2 ; TM31
-	nybble 1 ; TM32
-	nybble 1 ; TM33
-	nybble 2 ; TM34
-	nybble 5 ; TM35
-	nybble 2 ; TM36
-	nybble 2 ; TM37
-	nybble 5 ; TM38
-	nybble 2 ; TM39
-	nybble 4 ; TM40
-	nybble 2 ; TM41
-	nybble 2 ; TM42
-	nybble 5 ; TM43
-	nybble 2 ; TM44
-	nybble 2 ; TM45
-	nybble 4 ; TM46
-	nybble 3 ; TM47
-	nybble 4 ; TM48
-	nybble 4 ; TM49
-	nybble 2 ; TM50
-	nybble 4 ; TM51
+	nybble 2 ; TM01 MEGAPUNCH
+	nybble 3 ; TM02	RAZORWIND
+	nybble 2 ; TM03	SW. DANCE
+	nybble 2 ; TM04	HEADBUTT
+	nybble 1 ; TM05	TELEPORT
+	nybble 5 ; TM06	TOXIC
+	nybble 3 ; TM07	F-PUNCH
+	nybble 3 ; TM08	I-PUNCH
+	nybble 3 ; TM09	T-PUNCH
+	nybble 4 ; TM10	RAZORLEAF
+	nybble 2 ; TM11	BUBBLBEAM
+	nybble 2 ; TM12	DBL KICK
+	nybble 7 ; TM13	ICE BEAM
+	nybble 2 ; TM14	T-WAVE
+	nybble 5 ; TM15	HYPERBEAM
+	nybble 3 ; TM16	L. SCREEN
+	nybble 3 ; TM17	REFLECT
+	nybble 3 ; TM18	AGILITY
+	nybble 5 ; TM19	SUBMISSON
+	nybble 5 ; TM20	CRUNCH
+	nybble 5 ; TM21	MEGADRAIN
+	nybble 6 ; TM22	SOLARBEAM
+	nybble 5 ; TM23	D. BREATH
+	nybble 7 ; TM24	T-BOLT
+	nybble 4 ; TM25	WATERFALL
+	nybble 8 ; TM26	E-QUAKE
+	nybble 1 ; TM27	F. ENERGY
+	nybble 2 ; TM28	DIG
+	nybble 5 ; TM29	PSYCHIC
+	nybble 2 ; TM30	PSYWAVE
+	nybble 1 ; TM31	MIMIC
+	nybble 3 ; TM32	DBL DASH
+	nybble 5 ; TM33	SHDW TEAR
+	nybble 2 ; TM34	BIDE
+	nybble 7 ; TM35	FLAMETHRW
+	nybble 4 ; TM36	SLUDGE
+	nybble 5 ; TM37	BUG BUZZ
+	nybble 4 ; TM38	FLARERUSH
+	nybble 3 ; TM39	SWIFT
+	nybble 5 ; TM40	SKULLBASH
+	nybble 5 ; TM41	HYPNOSIS
+	nybble 3 ; TM42	DRM EATER
+	nybble 5 ; TM43	V. STRIKE
+	nybble 3 ; TM44	REST
+	nybble 6 ; TM45	MOONBLAST
+	nybble 1 ; TM46	PAY DAY
+	nybble 3 ; TM47	HVY SMASH
+	nybble 3 ; TM48	ROCKSLIDE
+	nybble 2 ; TM49	FURY CUT
+	nybble 1 ; TM50	SUBST.
+	nybble 5 ; TM51	METRONOME
 	end_nybble_array NUM_TMS
