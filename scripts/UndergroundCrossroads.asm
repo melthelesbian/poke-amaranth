@@ -4,7 +4,7 @@ UndergroundCrossroads_Script:
 UndergroundCrossroads_TextPointers:
 	def_text_pointers
 	dw_const UndergroundCrossroadsSailorText, TEXT_UNDERGROUNDCROSSROADS_SAILOR
-	dw_const UndergroundCrossroadsYoungsterText, TEXT_UNDERGROUNDCROSSROADS_YOUNGSTER
+	dw_const UndergroundCrossroadsLittleGirlText, TEXT_UNDERGROUNDCROSSROADS_LITTLE_GIRL
 
 UndergroundCrossroadsSailorText:
 	text_asm
@@ -13,9 +13,9 @@ UndergroundCrossroadsSailorText:
 	predef DoInGameTradeDialogue
 	jp TextScriptEnd
 
-UndergroundCrossroadsYoungsterText:
+UndergroundCrossroadsLittleGirlText:
 	text_asm
-	ld a, TRADE_FOR_SWISH
+	ld a, TRADE_FOR_SWIRLS
 	ld [wWhichTrade], a
 	predef DoInGameTradeDialogue
 	jp TextScriptEnd
