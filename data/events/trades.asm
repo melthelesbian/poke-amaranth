@@ -15,6 +15,7 @@ TradeMons:
 	db POLIWHIRL,  JYNX,      TRADE_DIALOGSET_EVOLUTION, "LOLA@@@@@@@" ; Route 2
 	db HAUNTER,    LAPRAS,    TRADE_DIALOGSET_EVOLUTION, "AURORA@@@@@" ; Pokemon Tower 1F
 	db SHELLDER,   KRABBY,    TRADE_DIALOGSET_HAPPY,     "CLAMPS@@@@@" ; Underground Crossroads
+	db GLOOM,      POLIWHIRL, TRADE_DIALOGSET_EVOLUTION, "SWISH@@@@@@" ; Underground Crossroads
 	db NIDORINA,   NIDORINO,  TRADE_DIALOGSET_EVOLUTION, "ROYAL@@@@@@" ; Route 5 Underground
 	db PRIMEAPE,   MACHOKE,   TRADE_DIALOGSET_CASUAL,    "DORIS@@@@@@" ; Cinnabar Lab
 	db MUK,        HAUNTER,   TRADE_DIALOGSET_HAPPY,     "SPECTRE@@@@" ; Cinnabar Lab
