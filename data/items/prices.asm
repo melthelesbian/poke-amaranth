@@ -9,7 +9,7 @@ ItemPrices::
 	bcd3 0     ; SURFBOARD
 	bcd3 1000  ; SAFARI_BALL
 	bcd3 0     ; POKEDEX
-	bcd3 2000  ; MOON_STONE
+	bcd3 4000  ; MOON_STONE
 	bcd3 0     ; UNUSED_0B (ANTIDOTE)
 	bcd3 0     ; UNUSED_0C (BURN_HEAL)
 	bcd3 0     ; UNUSED_0D (ICE_HEAL)
