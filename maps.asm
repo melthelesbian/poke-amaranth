@@ -1273,3 +1273,9 @@ INCLUDE "data/maps/headers/AgathasRoom.asm"
 INCLUDE "scripts/AgathasRoom.asm"
 INCLUDE "data/maps/objects/AgathasRoom.asm"
 AgathasRoom_Blocks: INCBIN "maps/AgathasRoom.blk"
+
+SECTION "Maps 22", ROMX
+INCLUDE "data/maps/headers/MoveManiacHouse.asm"
+INCLUDE "data/maps/objects/MoveManiacHouse.asm"
+INCLUDE "scripts/MoveManiacHouse.asm"
+MoveManiacHouse_Blocks: INCBIN "maps/MoveManiacHouse.blk"
