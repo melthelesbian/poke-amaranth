@@ -139,6 +139,20 @@ _Route3CooltrainerF3AfterBattleText::
 	line "foot of MT.MOON."
 	done
 
+_Route3SweetheartBattleText::
+	text "Look at all the"
+	line "flowers!"
+	done
+
+_Route3SweetheartEndBattleText::
+	text "Aww..."
+	prompt
+
+_Route3SweetheartAfterBattleText::
+	text "It's beautiful out"
+	line "here. Isn't it?"
+	done
+
 _Route3SignText::
 	text "ROUTE 3"
 	line "MT.MOON AHEAD"

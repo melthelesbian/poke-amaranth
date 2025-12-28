@@ -52,6 +52,7 @@ Route25_TextPointers:
 	dw_const Route25Hiker1Text,        TEXT_ROUTE25_HIKER1
 	dw_const Route25Hiker2Text,        TEXT_ROUTE25_HIKER2
 	dw_const Route25Hiker3Text,        TEXT_ROUTE25_HIKER3
+	dw_const Route25SweetheartText,    TEXT_ROUTE25_SWEETHEART
 	dw_const PickUpItemText,           TEXT_ROUTE25_TM_HEADBUTT
 	dw_const Route25BillSignText,      TEXT_ROUTE25_BILL_SIGN
 
@@ -75,6 +76,8 @@ Route25TrainerHeader7:
 	trainer EVENT_BEAT_ROUTE_25_TRAINER_7, 2, Route25Hiker2BattleText, Route25Hiker2EndBattleText, Route25Hiker2AfterBattleText
 Route25TrainerHeader8:
 	trainer EVENT_BEAT_ROUTE_25_TRAINER_8, 2, Route25Hiker3BattleText, Route25Hiker3EndBattleText, Route25Hiker3AfterBattleText
+Route25TrainerHeader9:
+	trainer EVENT_BEAT_ROUTE_25_TRAINER_9, 0, Route25SweetheartBattleText, Route25SweetheartEndBattleText, Route25SweetheartAfterBattleText
 	db -1 ; end
 
 Route25Youngster1Text:
@@ -128,6 +131,12 @@ Route25Hiker2Text:
 Route25Hiker3Text:
 	text_asm
 	ld hl, Route25TrainerHeader8
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route25SweetheartText:
+	text_asm
+	ld hl, Route25TrainerHeader9
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -240,6 +249,18 @@ Route25Hiker3EndBattleText:
 
 Route25Hiker3AfterBattleText:
 	text_far _Route25Hiker3AfterBattleText
+	text_end
+
+Route25SweetheartBattleText:
+	text_far _Route25SweetheartBattleText
+	text_end
+
+Route25SweetheartEndBattleText:
+	text_far _Route25SweetheartEndBattleText
+	text_end
+
+Route25SweetheartAfterBattleText:
+	text_far _Route25SweetheartAfterBattleText
 	text_end
 
 Route25BillSignText:

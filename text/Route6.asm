@@ -90,6 +90,21 @@ _Route6Youngster2AfterBattleText::
 	cont "just bad?"
 	done
 
+_Route6SweetheartBattleText::
+	text "#MON are cool!"
+	line "don't you think?"
+	done
+
+_Route6SweetheartEndBattleText::
+	text "Hey!"
+	line "You're not bad!"
+	prompt
+
+_Route6SweetheartAfterBattleText::
+	text "FAIRY #MON are"
+	line "my favorite!"
+	done
+
 _Route6UndergroundPathSignText::
 	text "UNDERGROUND PATH"
 	line "CERULEAN CITY -"

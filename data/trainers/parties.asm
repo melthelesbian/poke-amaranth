@@ -320,10 +320,26 @@ EngineerData:
 SweetheartData:
 ; Viridian Forest
 	db 8, PIKACHU, BUTTERFREE, 0
+; Route 3
+	db 12, JIGGLYPUFF, VULPIX, 0
+; Route 24
+	db 16, FARFETCHD, PIKACHU, PONYTA, 0
+; Route 25
+	db 17, GOLDEEN, PSYDUCK, CLEFAIRY, 0
+; Route 6
+	db 20, BUTTERFREE, CHANSEY, 0
 ; Bug Sanctuary
 	db $FF, 20, PARASECT, 22, PINSIR, 22, SCYTHER, 23, VENOMOTH, 0
+; Route 8
+	db 25, LICKITUNG, SLOWBRO, HORSEA, 0
+; Route 9
+	db 22, KANGASKHAN, CLEFABLE, 0
+; Route 12
+	db 29, HORSEA, SEAKING, SEADRA, 0
 ; Route 14 Fairy Cave
 	db 35, STARMIE, NINETALES, 0
+; Victory Road 3F
+	db 50, JOLTEON, FLAREON, VAPOREON, VILEPLUME, CHANSEY, 0
 
 FisherData:
 ; SS Anne 2F Rooms

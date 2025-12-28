@@ -147,6 +147,23 @@ _Route8CooltrainerF4AfterBattleText::
 	cont "to a MOON STONE."
 	done
 
+_Route8SweetheartBattleText::
+	text "Would I like to"
+	line "battle? Yes!"
+	done
+
+_Route8SweetheartEndBattleText::
+	text "Oh no!"
+	prompt
+
+_Route8SweetheartAfterBattleText::
+	text "My #MON aren't"
+	line "strong enough."
+
+	para "I really love them"
+	line "anyway though!"
+	done
+
 _Route8UndergroundSignText::
 	text "UNDERGROUND PATH"
 	line "CELADON CITY -"

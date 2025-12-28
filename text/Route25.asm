@@ -150,6 +150,22 @@ _Route25Hiker3AfterBattleText::
 	cont "CERULEAN CITY."
 	done
 
+_Route25SweetheartBattleText::
+	text "Do you like water"
+	line "#MON?"
+	done
+
+_Route25SweetheartEndBattleText::
+	text "Oh..."
+	line "That was..."
+	cont "totally fabulous!"
+	prompt
+
+_Route25SweetheartAfterBattleText::
+	text "The view here is"
+	line "just wonderful."
+	done
+
 _Route25BillSignText::
 	text "SEA COTTAGE"
 	line "BILL lives here!"

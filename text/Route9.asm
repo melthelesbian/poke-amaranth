@@ -150,6 +150,25 @@ _Route9Youngster2AfterBattleText::
 	cont "bug me!"
 	done
 
+_Route9SweetheartBattleText::
+	text "It's so crowded"
+	line "today!"
+	done
+
+_Route9SweetheartEndBattleText::
+	text "My"
+	line "poor #MON..."
+	prompt
+
+_Route9SweetheartAfterBattleText::
+	text "Take good care of"
+	line "your #MON."
+
+	para "Please?"
+
+	para "Pretty please?"
+	done
+
 _Route9SignText::
 	text "ROUTE 9"
 	line "CERULEAN CITY-"

@@ -61,3 +61,24 @@ _VictoryRoad3FCooltrainerF2AfterBattleText::
 	line "battles, you get"
 	cont "stronger!"
 	done
+
+_VictoryRoad3FSweetheartBattleText::
+	text "I'm getting ready"
+	line "for the big show!"
+	
+	para "Please don't hold"
+	line "back, now!"
+	done
+
+_VictoryRoad3FSweetheartEndBattleText::
+	text "Thank"
+	line "you so much!"
+	prompt
+
+_VictoryRoad3FSweetheartAfterBattleText::
+	text "My #MON and I"
+	line "will keep trying."
+	
+	para "We'll get to the"
+	line "hall of fame!"
+	done

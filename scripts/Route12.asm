@@ -71,6 +71,7 @@ Route12_TextPointers:
 	dw_const Route12Fisher3Text,           TEXT_ROUTE12_FISHER3
 	dw_const Route12Fisher4Text,           TEXT_ROUTE12_FISHER4
 	dw_const Route12Fisher5Text,           TEXT_ROUTE12_FISHER5
+	dw_const Route12SweetheartText,        TEXT_ROUTE12_SWEETHEART
 	dw_const PickUpItemText,               TEXT_ROUTE12_TM_PAY_DAY
 	dw_const PickUpItemText,               TEXT_ROUTE12_IRON
 	dw_const Route12SignText,              TEXT_ROUTE12_SIGN
@@ -94,6 +95,8 @@ Route12TrainerHeader5:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_5, 4, Route12Fisher4BattleText, Route12Fisher4EndBattleText, Route12Fisher4AfterBattleText
 Route12TrainerHeader6:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_6, 1, Route12Fisher5BattleText, Route12Fisher5EndBattleText, Route12Fisher5AfterBattleText
+Route12TrainerHeader7:
+	trainer EVENT_BEAT_ROUTE_12_TRAINER_7, 3, Route12SweetheartBattleText, Route12SweetheartEndBattleText, Route12SweetheartAfterBattleText
 	db -1 ; end
 
 Route12SnorlaxText:
@@ -232,6 +235,24 @@ Route12Fisher5EndBattleText:
 
 Route12Fisher5AfterBattleText:
 	text_far _Route12Fisher5AfterBattleText
+	text_end
+
+Route12SweetheartText:
+	text_asm
+	ld hl, Route12TrainerHeader7
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route12SweetheartBattleText:
+	text_far _Route12SweetheartBattleText
+	text_end
+
+Route12SweetheartEndBattleText:
+	text_far _Route12SweetheartEndBattleText
+	text_end
+
+Route12SweetheartAfterBattleText:
+	text_far _Route12SweetheartAfterBattleText
 	text_end
 
 Route12SignText:

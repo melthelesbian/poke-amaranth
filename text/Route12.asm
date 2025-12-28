@@ -129,6 +129,25 @@ _Route12Fisher5AfterBattleText::
 	cont "they're so weak!"
 	done
 
+_Route12SweetheartBattleText::
+	text "The power of the"
+	line "sea is with me!"
+	done
+
+_Route12SweetheartEndBattleText::
+	text "What?"
+	line "How could I lose?"
+	prompt
+
+_Route12SweetheartAfterBattleText::
+	text "I guess I need to"
+	line "train more."
+
+	para "I'll be worthy of"
+	line "the power of the"
+	cont "sea someday!"
+	done
+
 _Route12SignText::
 	text "ROUTE 12 "
 	line "North to LAVENDER"

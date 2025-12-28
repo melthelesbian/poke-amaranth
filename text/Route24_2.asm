@@ -88,3 +88,21 @@ _Route24Youngster2AfterBattleText::
 	text "I did my best, I"
 	line "have no regrets!"
 	done
+
+_Route24SweetheartBattleText::
+	text "Let's have a nice"
+	line "little battle!"
+	done
+
+_Route24SweetheartEndBattleText::
+	text "Wow!"
+	line "You're so good!"
+	prompt
+
+_Route24SweetheartAfterBattleText::
+	text "#MON, nature,"
+	line "and battling."
+
+	para "There's nothing I"
+	line "like better!"
+	done

@@ -24,6 +24,7 @@ Route9_TextPointers:
 	dw_const Route9Youngster1Text,    TEXT_ROUTE9_YOUNGSTER1
 	dw_const Route9Hiker3Text,        TEXT_ROUTE9_HIKER3
 	dw_const Route9Youngster2Text,    TEXT_ROUTE9_YOUNGSTER2
+	dw_const Route9SweetheartText,    TEXT_ROUTE9_SWEETHEART
 	dw_const PickUpItemText,          TEXT_ROUTE9_TM_TELEPORT
 	dw_const Route9SignText,          TEXT_ROUTE9_SIGN
 
@@ -47,6 +48,8 @@ Route9TrainerHeader7:
 	trainer EVENT_BEAT_ROUTE_9_TRAINER_7, 2, Route9Hiker3BattleText, Route9Hiker3EndBattleText, Route9Hiker3AfterBattleText
 Route9TrainerHeader8:
 	trainer EVENT_BEAT_ROUTE_9_TRAINER_8, 2, Route9Youngster2BattleText, Route9Youngster2EndBattleText, Route9Youngster2AfterBattleText
+Route9TrainerHeader9:
+	trainer EVENT_BEAT_ROUTE_9_TRAINER_9, 2, Route9SweetheartBattleText, Route9SweetheartEndBattleText, Route9SweetheartAfterBattleText
 	db -1 ; end
 
 Route9CooltrainerF1Text:
@@ -92,6 +95,11 @@ Route9Hiker3Text:
 Route9Youngster2Text:
 	text_asm
 	ld hl, Route9TrainerHeader8
+	jr Route9TalkToTrainer
+
+Route9SweetheartText:
+	text_asm
+	ld hl, Route9TrainerHeader9
 Route9TalkToTrainer:
 	call TalkToTrainer
 	jp TextScriptEnd
@@ -202,6 +210,18 @@ Route9Youngster2EndBattleText:
 
 Route9Youngster2AfterBattleText:
 	text_far _Route9Youngster2AfterBattleText
+	text_end
+
+Route9SweetheartBattleText:
+	text_far _Route9SweetheartBattleText
+	text_end
+
+Route9SweetheartEndBattleText:
+	text_far _Route9SweetheartEndBattleText
+	text_end
+
+Route9SweetheartAfterBattleText:
+	text_far _Route9SweetheartAfterBattleText
 	text_end
 
 Route9SignText:

@@ -19,7 +19,7 @@ TrainerPicAndMoneyPointers::
 	pic_money BikerPic,        20
 	pic_money BurglarPic,      90
 	pic_money EngineerPic,     50
-	pic_money SweetheartPic,   75
+	pic_money SweetheartPic,   95
 	pic_money FisherPic,       35
 	pic_money SwimmerPic,       5
 	pic_money CueBallPic,      25
@@ -47,7 +47,7 @@ TrainerPicAndMoneyPointers::
 	pic_money KogaPic,         150
 	pic_money BlainePic,       150
 	pic_money SabrinaPic,      150
-	pic_money GentlemanPic,    70
+	pic_money GentlemanPic,    125
 	pic_money Rival2Pic,       150
 	pic_money Rival3Pic,       250
 	pic_money LoreleiPic,      200

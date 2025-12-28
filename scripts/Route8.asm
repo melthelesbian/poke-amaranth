@@ -24,6 +24,7 @@ Route8_TextPointers:
 	dw_const Route8CooltrainerF3Text,   TEXT_ROUTE8_COOLTRAINER_F3
 	dw_const Route8Gambler2Text,        TEXT_ROUTE8_GAMBLER2
 	dw_const Route8CooltrainerF4Text,   TEXT_ROUTE8_COOLTRAINER_F4
+	dw_const Route8SweetheartText,      TEXT_ROUTE8_SWEETHEART
 	dw_const Route8UndergroundSignText, TEXT_ROUTE8_UNDERGROUND_SIGN
 	dw_const Route8MeditationCaveSignText, TEXT_MEDITATION_CAVE_SIGN
 
@@ -47,6 +48,8 @@ Route8TrainerHeader7:
 	trainer EVENT_BEAT_ROUTE_8_TRAINER_7, 2, Route8Gambler2BattleText, Route8Gambler2EndBattleText, Route8Gambler2AfterBattleText
 Route8TrainerHeader8:
 	trainer EVENT_BEAT_ROUTE_8_TRAINER_8, 4, Route8CooltrainerF4BattleText, Route8CooltrainerF4EndBattleText, Route8CooltrainerF4AfterBattleText
+Route8TrainerHeader9:
+	trainer EVENT_BEAT_ROUTE_8_TRAINER_9, 2, Route8SweetheartBattleText, Route8SweetheartEndBattleText, Route8SweetheartAfterBattleText
 	db -1 ; end
 
 Route8SuperNerd1Text:
@@ -209,6 +212,24 @@ Route8CooltrainerF4EndBattleText:
 
 Route8CooltrainerF4AfterBattleText:
 	text_far _Route8CooltrainerF4AfterBattleText
+	text_end
+
+Route8SweetheartText:
+	text_asm
+	ld hl, Route8TrainerHeader9
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route8SweetheartBattleText:
+	text_far _Route8SweetheartBattleText
+	text_end
+
+Route8SweetheartEndBattleText:
+	text_far _Route8SweetheartEndBattleText
+	text_end
+
+Route8SweetheartAfterBattleText:
+	text_far _Route8SweetheartAfterBattleText
 	text_end
 
 Route8UndergroundSignText:

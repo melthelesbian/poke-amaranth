@@ -24,6 +24,7 @@ Route3_TextPointers:
 	dw_const Route3Youngster4Text,    TEXT_ROUTE3_YOUNGSTER4
 	dw_const Route3Youngster5Text,    TEXT_ROUTE3_YOUNGSTER5
 	dw_const Route3CooltrainerF3Text, TEXT_ROUTE3_COOLTRAINER_F3
+	dw_const Route3SweetheartText,    TEXT_ROUTE3_SWEETHEART
 	dw_const Route3SignText,          TEXT_ROUTE3_SIGN
 
 Route3TrainerHeaders:
@@ -44,6 +45,8 @@ Route3TrainerHeader6:
 	trainer EVENT_BEAT_ROUTE_3_TRAINER_6, 3, Route3Youngster5BattleText, Route3Youngster5EndBattleText, Route3Youngster5AfterBattleText
 Route3TrainerHeader7:
 	trainer EVENT_BEAT_ROUTE_3_TRAINER_7, 2, Route3CooltrainerF3BattleText, Route3CooltrainerF3EndBattleText, Route3CooltrainerF3AfterBattleText
+Route3TrainerHeader8:
+	trainer EVENT_BEAT_ROUTE_3_TRAINER_8, 2, Route3SweetheartBattleText, Route3SweetheartEndBattleText, Route3SweetheartAfterBattleText
 	db -1 ; end
 
 Route3SuperNerdText:
@@ -192,6 +195,24 @@ Route3CooltrainerF3EndBattleText:
 
 Route3CooltrainerF3AfterBattleText:
 	text_far _Route3CooltrainerF3AfterBattleText
+	text_end
+
+Route3SweetheartText:
+	text_asm
+	ld hl, Route3TrainerHeader8
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route3SweetheartBattleText:
+	text_far _Route3SweetheartBattleText
+	text_end
+
+Route3SweetheartEndBattleText:
+	text_far _Route3SweetheartEndBattleText
+	text_end
+
+Route3SweetheartAfterBattleText:
+	text_far _Route3SweetheartAfterBattleText
 	text_end
 
 Route3SignText:

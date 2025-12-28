@@ -8,6 +8,7 @@
 	const_export ROUTE3_YOUNGSTER4
 	const_export ROUTE3_YOUNGSTER5
 	const_export ROUTE3_COOLTRAINER_F3
+	const_export ROUTE3_SWEETHEART
 
 Route3_Object:
 	db $2c ; border block
@@ -15,7 +16,7 @@ Route3_Object:
 	def_warp_events
 
 	def_bg_events
-	bg_event 59,  9, 10 ; Route3SignText
+	bg_event 59,  9, TEXT_ROUTE3_SIGN ; Route3SignText
 
 	def_object_events
 	object_event 57, 11, SPRITE_SUPER_NERD, STAY, NONE, TEXT_ROUTE3_SUPER_NERD
@@ -27,5 +28,6 @@ Route3_Object:
 	object_event 22,  9, SPRITE_YOUNGSTER, STAY, LEFT, TEXT_ROUTE3_YOUNGSTER4, OPP_YOUNGSTER, 2
 	object_event 24,  6, SPRITE_YOUNGSTER, STAY, RIGHT, TEXT_ROUTE3_YOUNGSTER5, OPP_BUG_CATCHER, 6
 	object_event 33, 10, SPRITE_COOLTRAINER_F, STAY, UP, TEXT_ROUTE3_COOLTRAINER_F3, OPP_LASS, 3
+	object_event 46, 11, SPRITE_FAIRY_GIRL, STAY, ANY_DIR, TEXT_ROUTE3_SWEETHEART, OPP_SWEETHEART, 2
 
 	def_warps_to ROUTE_3

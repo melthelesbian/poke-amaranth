@@ -81,6 +81,7 @@ VictoryRoad3F_TextPointers:
 	dw_const VictoryRoad3FCooltrainerF1Text, TEXT_VICTORYROAD3F_COOLTRAINER_F1
 	dw_const VictoryRoad3FCooltrainerM2Text, TEXT_VICTORYROAD3F_COOLTRAINER_M2
 	dw_const VictoryRoad3FCooltrainerF2Text, TEXT_VICTORYROAD3F_COOLTRAINER_F2
+	dw_const VictoryRoad3FSweetheartText,    TEXT_VICTORYROAD3F_SWEETHEART
 	dw_const PickUpItemText,                 TEXT_VICTORYROAD3F_MAX_REVIVE
 	dw_const PickUpItemText,                 TEXT_VICTORYROAD3F_TM_SHADOW_TEAR
 	dw_const BoulderText,                    TEXT_VICTORYROAD3F_BOULDER1
@@ -98,6 +99,8 @@ VictoryRoad3TrainerHeader2:
 	trainer EVENT_BEAT_VICTORY_ROAD_3_TRAINER_2, 4, VictoryRoad3FCooltrainerM2BattleText, VictoryRoad3FCooltrainerM2EndBattleText, VictoryRoad3FCooltrainerM2AfterBattleText
 VictoryRoad3TrainerHeader3:
 	trainer EVENT_BEAT_VICTORY_ROAD_3_TRAINER_3, 4, VictoryRoad3FCooltrainerF2BattleText, VictoryRoad3FCooltrainerF2EndBattleText, VictoryRoad3FCooltrainerF2AfterBattleText
+VictoryRoad3TrainerHeader4:
+	trainer EVENT_BEAT_VICTORY_ROAD_3_TRAINER_4, 4, VictoryRoad3FSweetheartBattleText, VictoryRoad3FSweetheartEndBattleText, VictoryRoad3FSweetheartAfterBattleText
 	db -1 ; end
 
 VictoryRoad3FCooltrainerM1Text:
@@ -124,6 +127,12 @@ VictoryRoad3FCooltrainerF2Text:
 	call TalkToTrainer
 	jp TextScriptEnd
 
+VictoryRoad3FSweetheartText:
+	text_asm
+	ld hl, VictoryRoad3TrainerHeader4
+	call TalkToTrainer
+	jp TextScriptEnd
+	
 VictoryRoad3FCooltrainerM1BattleText:
 	text_far _VictoryRoad3FCooltrainerM1BattleText
 	text_end
@@ -170,4 +179,16 @@ VictoryRoad3FCooltrainerF2EndBattleText:
 
 VictoryRoad3FCooltrainerF2AfterBattleText:
 	text_far _VictoryRoad3FCooltrainerF2AfterBattleText
+	text_end
+
+VictoryRoad3FSweetheartBattleText:
+	text_far _VictoryRoad3FSweetheartBattleText
+	text_end
+
+VictoryRoad3FSweetheartEndBattleText:
+	text_far _VictoryRoad3FSweetheartEndBattleText
+	text_end
+
+VictoryRoad3FSweetheartAfterBattleText:
+	text_far _VictoryRoad3FSweetheartAfterBattleText
 	text_end

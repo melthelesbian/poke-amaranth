@@ -86,6 +86,7 @@ Route24_TextPointers:
 	dw_const Route24Youngster1Text,    TEXT_ROUTE24_YOUNGSTER1
 	dw_const Route24CooltrainerF2Text, TEXT_ROUTE24_COOLTRAINER_F2
 	dw_const Route24Youngster2Text,    TEXT_ROUTE24_YOUNGSTER2
+	dw_const Route24SweetheartText,    TEXT_ROUTE24_SWEETHEART
 	dw_const PickUpItemText,           TEXT_ROUTE24_TM_THUNDER_WAVE
 
 Route24TrainerHeaders:
@@ -102,6 +103,8 @@ Route24TrainerHeader4:
 	trainer EVENT_BEAT_ROUTE_24_TRAINER_4, 1, Route24CooltrainerF2BattleText, Route24CooltrainerF2EndBattleText, Route24CooltrainerF2AfterBattleText
 Route24TrainerHeader5:
 	trainer EVENT_BEAT_ROUTE_24_TRAINER_5, 1, Route24Youngster2BattleText, Route24Youngster2EndBattleText, Route24Youngster2AfterBattleText
+Route24TrainerHeader6:
+	trainer EVENT_BEAT_ROUTE_24_TRAINER_6, 1, Route24SweetheartBattleText, Route24SweetheartEndBattleText, Route24SweetheartAfterBattleText
 	db -1 ; end
 
 Route24CooltrainerM1Text:
@@ -209,6 +212,12 @@ Route24Youngster2Text:
 	call TalkToTrainer
 	jp TextScriptEnd
 
+Route24SweetheartText:
+	text_asm
+	ld hl, Route24TrainerHeader6
+	call TalkToTrainer
+	jp TextScriptEnd
+
 Route24CooltrainerM2BattleText:
 	text_far _Route24CooltrainerM2BattleText
 	text_end
@@ -279,4 +288,16 @@ Route24Youngster2EndBattleText:
 
 Route24Youngster2AfterBattleText:
 	text_far _Route24Youngster2AfterBattleText
+	text_end
+
+Route24SweetheartBattleText:
+	text_far _Route24SweetheartBattleText
+	text_end
+
+Route24SweetheartEndBattleText:
+	text_far _Route24SweetheartEndBattleText
+	text_end
+
+Route24SweetheartAfterBattleText:
+	text_far _Route24SweetheartAfterBattleText
 	text_end
