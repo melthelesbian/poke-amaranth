@@ -130,6 +130,7 @@ DEF SHOW EQU $15
 	const HS_SS_ANNE_B1F_ROOMS_ITEM_1      ; 75 X
 	const HS_SS_ANNE_B1F_ROOMS_ITEM_2      ; 76 X
 	const HS_SS_ANNE_B1F_ROOMS_ITEM_3      ; 77 X
+	const HS_MEDITATION_CAVE_ITEM          ; [TODO) shift values
 	const HS_VICTORY_ROAD_3F_ITEM_1        ; 78 X
 	const HS_VICTORY_ROAD_3F_ITEM_2        ; 79 X
 	const HS_VICTORY_ROAD_3F_BOULDER       ; 7A

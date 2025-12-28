@@ -1,3 +1,6 @@
+    object_const_def
+    const_export MEDITATIONCAVE_TM_HYPER_BEAM
+
 MeditationCave_Object:
     db $3 ; border block
 
@@ -8,5 +11,6 @@ MeditationCave_Object:
     def_bg_events
 
 	def_object_events
+    object_event 4, 9, SPRITE_POKE_BALL, STAY, NONE, TEXT_MEDITATIONCAVE_TM_HYPER_BEAM, TM_HYPER_BEAM
 
 	def_warps_to MEDITATION_CAVE
