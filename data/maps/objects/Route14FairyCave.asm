@@ -1,5 +1,6 @@
     object_const_def
     const_export ROUTE14FAIRYCAVE_SWEETHEART
+    const_export ROUTE14FAIRYCAVE_TM_DOUBLE_DASH
 
 Route14FairyCave_Object:
     db $3 ; border block
@@ -11,6 +12,7 @@ Route14FairyCave_Object:
     def_bg_events
 
     def_object_events
-	object_event 10,  1, SPRITE_FAIRY_GIRL, STAY, NONE, TEXT_ROUTE14FAIRYCAVE_SWEETHEART, OPP_SWEETHEART, 1
+	object_event 10,  1, SPRITE_FAIRY_GIRL, STAY, NONE, TEXT_ROUTE14FAIRYCAVE_SWEETHEART, OPP_SWEETHEART, 3 ; TODO: re-align
+    object_event  2,  2, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE14FAIRYCAVE_TM_DOUBLE_DASH, TM_DOUBLE_DASH
 
     def_warps_to ROUTE_14_FAIRY_CAVE

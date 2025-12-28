@@ -1860,6 +1860,7 @@ wViridianForestCurScript:: db
 wMuseum1FCurScript:: db
 wRoute13CurScript:: db
 wRoute14CurScript:: db
+wRoute14FairyCaveCurScript:: db
 wRoute17CurScript:: db
 wRoute19CurScript:: db
 wRoute21CurScript:: db

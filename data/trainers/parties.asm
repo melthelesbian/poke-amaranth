@@ -322,6 +322,8 @@ SweetheartData:
 	db 8, PIKACHU, BUTTERFREE, 0
 ; Bug Sanctuary
 	db $FF, 20, PARASECT, 22, PINSIR, 22, SCYTHER, 23, VENOMOTH, 0
+; Route 14 Fairy Cave
+	db 35, STARMIE, NINETALES, 0
 
 FisherData:
 ; SS Anne 2F Rooms
