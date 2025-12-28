@@ -201,7 +201,7 @@ Route25CooltrainerF2EndBattleText:
 
 Route25CooltrainerF2AfterBattleText:
 	text_asm
-	ld a, TRADE_FOR_HOPE
+	ld a, TRADE_FOR_DRIPPY
 	ld [wWhichTrade], a
 	predef DoInGameTradeDialogue
 	jp TextScriptEnd

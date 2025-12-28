@@ -7,8 +7,9 @@ TradeMons:
 	; Japanese Red and Green used TRADE_DIALOGSET_CASUAL, and had
 	; the same species as English Red and Blue.
 	db NIDORINO,   NIDORINA,  TRADE_DIALOGSET_EVOLUTION, "NINA@@@@@@@" ; Route 11
+	db DITTO,      CHANSEY,   TRADE_DIALOGSET_HAPPY,     "HOPE@@@@@@@" ; Route 15
 	db MR_MIME,    KADABRA,   TRADE_DIALOGSET_CASUAL,    "ALANA@@@@@@" ; Route 18
-	db CLEFAIRY,   CHANSEY,   TRADE_DIALOGSET_CASUAL,    "HOPE@@@@@@@" ; Route 25
+	db CLEFAIRY,   GLOOM,     TRADE_DIALOGSET_CASUAL,    "DRIPPY@@@@@" ; Route 25
 	db PONYTA,     SEEL,      TRADE_DIALOGSET_HAPPY,     "SAILOR@@@@@" ; Celadon Hotel
 	db SPEAROW,    FARFETCHD, TRADE_DIALOGSET_HAPPY,     "DUX@@@@@@@@" ; Vermilion City
 	db SLOWPOKE,   MAGMAR,    TRADE_DIALOGSET_CASUAL,    "MAGMARC@@@@" ; Cerulean City
