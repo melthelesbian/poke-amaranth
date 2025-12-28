@@ -18,7 +18,7 @@ TM11,TM11 BUBBLBEAM,BUBBLEBEAM,Cerulean Gym,Gym Leader,Indigo Plateau Mart
 TM12,TM12 DBL KICK,DOUBLE KICK,Mt Moon 1F,Overworld,Pewter Mart
 TM13,TM13 ICE BEAM,ICE BEAM,Pokemon Mansion B1F,Overworld,Cinnabar Mart
 TM14,TM14 T-WAVE,THUNDER WAVE,Route 24,Overworld,Cerulean Mart
-TM15,TM15 HYPERBEAM,HYPER BEAM,,,"Game Corner Prize, Cinnabar Mart"
+TM15,TM15 HYPERBEAM,HYPER BEAM,Meditation Cave,Overworld,"Game Corner Prize, Cinnabar Mart"
 TM16,TM16 L. SCREEN,LIGHT SCREEN,Safari Zone East,Overworld,Celadon Mart 2F
 TM17,TM17 REFLECT,REFLECT,Power Plant,Overworld,Celadon Mart 2F
 TM18,TM18 AGILITY,AGILITY,Power Plant,Overworld,Vermilion Mart
@@ -26,7 +26,7 @@ TM19,TM19 SUBMISSON,SUBMISSION,Victory Road 2F,Overworld,Celadon Mart 2F
 TM20,TM20 CRUNCH,CRUNCH,Victory Road 1F,Overworld,Lavender Mart
 TM21,TM21 MEGADRAIN,MEGA DRAIN,Celadon Gym,Gym Leader,Indigo Plateau Mart
 TM22,TM22 SOLARBEAM,SOLARBEAM,Pokemon Mansion B1F,Overworld,Saffron Mart
-TM23,TM23 D. BREATH,DRAGONBREATH,,,"Game Corner Prize, Cinnabar Mart"
+TM23,TM23 D. BREATH,DRAGONBREATH,Safari Zone West,Overworld,"Game Corner Prize, Cinnabar Mart"
 TM24,TM24 T-BOLT,THUNDERBOLT,Vermilion Gym,Gym Leader,Indigo Plateau Mart
 TM25,TM25 WATERFALL,WATERFALL,Pokemon Mansion B1F,Overworld,Saffron Mart
 TM26,TM26 E-QUAKE,EARTHQUAKE,Viridian Gym,Gym Leader,Indigo Plateau Mart
@@ -35,7 +35,7 @@ TM28,TM28 DIG,DIG,Cerulean City,NPC Gift,Vermilion Mart
 TM29,TM29 PSYCHIC,PSYCHIC,Mr Psychic's House,NPC Gift,NPC Gift (if TM not in bag)
 TM30,TM30 PSYWAVE,PSYWAVE,Saffron Gym,Gym Leader,Indigo Plateau Mart
 TM31,TM31 MIMIC,MIMIC,Copycat's House 2F,NPC Gift,Fuchsia Mart
-TM32,TM32 DBL DASH,DOUBLE DASH,Safari Zone West,Overworld,Celadon Mart 2F
+TM32,TM32 DBL DASH,DOUBLE DASH,,,Celadon Mart 2F
 TM33,TM33 SHDW TEAR,SHADOW TEAR,Victory Road 3F,Overworld,Cinnabar Mart
 TM34,TM34 BIDE,BIDE,Pewter Gym,Gym Leader,Indigo Plateau Mart
 TM35,TM35 FLAMETHRW,FLAMETHROWER,Cinnabar Gym,Gym Leader,Indigo Plateau Mart
