@@ -7,6 +7,7 @@ CeladonMansion3F_TextPointers:
 	dw_const CeladonMansion3FGraphicArtistText,  TEXT_CELADONMANSION3F_GRAPHIC_ARTIST
 	dw_const CeladonMansion3FWriterText,         TEXT_CELADONMANSION3F_WRITER
 	dw_const CeladonMansion3FGameDesignerText,   TEXT_CELADONMANSION3F_GAME_DESIGNER
+	dw_const CeladonMansion3FRomHackerText,      TEXT_CELADONMANSION3F_ROM_HACKER
 	dw_const CeladonMansion3FGameProgramPCText,  TEXT_CELADONMANSION3F_GAME_PROGRAM_PC
 	dw_const CeladonMansion3FPlayingGamePCText,  TEXT_CELADONMANSION3F_PLAYING_GAME_PC
 	dw_const CeladonMansion3FGameScriptPCText,   TEXT_CELADONMANSION3F_GAME_SCRIPT_PC
@@ -52,6 +53,10 @@ CeladonMansion3FGameDesignerText:
 	ld a, TRUE
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	jp TextScriptEnd
+
+CeladonMansion3FRomHackerText:
+	text_far _CeladonMansion3FRomHackerText
+	text_end
 
 CeladonMansion3FGameProgramPCText:
 	text_far _CeladonMansion3FGameProgramPCText

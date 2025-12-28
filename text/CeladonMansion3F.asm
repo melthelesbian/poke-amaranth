@@ -42,6 +42,13 @@ _CeladonMansion3FGameDesignerCompletedDexText::
 	cont "...@"
 	text_end
 
+_CeladonMansion3FRomHackerText::
+	text "Shhh! I'm the rom"
+	line "hacker, MELODY!"
+	cont "I hope you're"
+	cont "having fun!"
+	done
+
 _CeladonMansion3FGameProgramPCText::
 	text "It's the game"
 	line "program! Messing"
