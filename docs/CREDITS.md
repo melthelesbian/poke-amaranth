@@ -63,6 +63,10 @@ All other front and back sprites were from official sources, or tweaked by me.
     * [leaf OW cycling](https://github.com/JustRegularLuna/rpp-backup/blob/master/gfx/sprites/leafcycling.png) sprite
     * leaf OW fishing [back](https://github.com/JustRegularLuna/rpp-backup/blob/master/gfx/leaf_fishing_tile_back.png), [side](https://github.com/JustRegularLuna/rpp-backup/blob/master/gfx/leaf_fishing_tile_side.png), and [front](https://github.com/JustRegularLuna/rpp-backup/blob/master/gfx/leaf_fishing_tile_front.png) sprites
 
-## Playtesting
+## Other Credits
 
+### Playtesting
 Thanks to mr._kat, lalafell, and jojosmeeps for early playtesting and bug reports.
+
+### Miscellaneous
+* [Aadit M Shah](https://github.com/aaditmshah) for the [Pokémon type chart](https://github.com/aaditmshah/typechart) software

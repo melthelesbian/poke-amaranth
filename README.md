@@ -41,6 +41,16 @@ I really did try to keep these to a minimum, but the following changes were more
 * Fixed the bug causing permanent invulnerability if a digging or flying Pokémon was interrupted by paralysis or confusion before concluding their attack, this isn't deliberately exploitable in a fun way and could cause serious gameplay issues.
 * Altered the sleep mechanics to allow attacking on the turn which you wake up. It was impossible to balance the sleep moves without this change, especially in light of the removal of accuracy-lowering moves, sleep is still powerful, but not entirely game-breaking.
 
+## Type Chart Changes
+
+The type chart is identical to the Gen 6+ type chart with the following exceptions (all restorations of original Gen I type chart behavior)
+
+* `BUG` is `SUPER EFFECTIVE` against `POISON`
+* `POISON` is `SUPER EFFECTIVE` against `BUG`
+* `FIRE` no longer resists `ICE`
+
+See the [Pokémon Amaranth Type Chart](https://aadit.codes/typechart/#AAAAAA4A696FAAB66EB66AEAE6AAD6A3AA6A9E69D9E66A6DAFAAE6EAB995CBDAAE96B5A3BB6B89EAEA9EEAB6A6AAAFA6A869AE79E9B5BAB67BAA62AAAAEB9AAAAAAAAE4AAA6AEB9995BAAAEA79AADAAAF6) for a visual reference.
+
 ## Gallery
 
 ![pokémon amaranth title screen](docs/gallery/title-screen.png) 
