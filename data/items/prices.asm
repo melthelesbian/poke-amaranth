@@ -1,9 +1,9 @@
 ItemPrices::
 	table_width 3, ItemPrices
 	bcd3 0     ; MASTER_BALL
-	bcd3 1200  ; ULTRA_BALL
-	bcd3 600   ; GREAT_BALL
-	bcd3 200   ; POKE_BALL
+	bcd3 900   ; ULTRA_BALL
+	bcd3 450   ; GREAT_BALL
+	bcd3 150   ; POKE_BALL
 	bcd3 0     ; TOWN_MAP
 	bcd3 0     ; BICYCLE
 	bcd3 0     ; SURFBOARD
@@ -28,7 +28,7 @@ ItemPrices::
 	bcd3 0     ; MARSHBADGE
 	bcd3 0     ; VOLCANOBADGE
 	bcd3 0     ; EARTHBADGE
-	bcd3 550   ; ESCAPE_ROPE
+	bcd3 275   ; ESCAPE_ROPE
 	bcd3 500   ; REPEL
 	bcd3 15000 ; OLD_AMBER
 	bcd3 2000  ; FIRE_STONE

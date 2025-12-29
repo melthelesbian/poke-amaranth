@@ -38,9 +38,9 @@ Moves:
 	move MOONBLAST,    SPECIAL_DOWN_SIDE_EFFECT,   95,   FAIRY,        100, 10 ; (MEGA_KICK)
 	move JUMP_KICK,    JUMP_KICK_EFFECT,           65,   FIGHTING,     95,  25
 	move ROLLING_KICK, FLINCH_SIDE_EFFECT2,        60,   FIGHTING,     85,  15
-	move MUD_SLAP,     NO_ADDITIONAL_EFFECT,       40,   GROUND,       100, 25 ; (SAND_ATTACK)
+	move MUD_SLAP,     CONFUSION_SIDE_EFFECT,      40,   GROUND,       100, 25 ; (SAND_ATTACK)
 	move HEADBUTT,     FLINCH_SIDE_EFFECT2,        70,   NORMAL,       100, 15
-	move HORN_ATTACK,  NO_ADDITIONAL_EFFECT,       40,   ROCK,         100, 35
+	move HORN_ATTACK,  NO_ADDITIONAL_EFFECT,       40,   ROCK,         100, 30
 	move FURY_CUT,     RAGE_EFFECT,                40,   BUG,          95,  20 ; (FURY_ATTACK)
 	move BUG_BUZZ,     SPECIAL_DOWN_SIDE_EFFECT,   90,   BUG,          100, 10 ; (HORN_DRILL)
 	move TACKLE,       NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 35
@@ -58,7 +58,7 @@ Moves:
 	move GROWL,        ATTACK_DOWN1_EFFECT,        0,    MYSTERY,      100, 40
 	move FRIGHTEN,     SWITCH_AND_TELEPORT_EFFECT, 0,    MYSTERY,      100, 20 ; tweak move text? (ROAR)
 	move SING,         SLEEP_EFFECT,               0,    MYSTERY,      75,  20
-	move SWEET_CRY,    ATTACK_DOWN_SIDE_EFFECT,    40,   FAIRY,        100, 15 ; (SUPERSONIC)
+	move SWEET_CRY,    ATTACK_DOWN_SIDE_EFFECT,    40,   FAIRY,        100, 25 ; (SUPERSONIC)
 	move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,      1,    NORMAL,       90,  20
 	move DISABLE,      DISABLE_EFFECT,             0,    MYSTERY,      75,  20
 	move ACID,         BURN_SIDE_EFFECT1,          50,   POISON,       100, 30
