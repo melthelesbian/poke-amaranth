@@ -54,7 +54,7 @@ ItemPrices::
 	bcd3 500   ; PANACEA
 	bcd3 1500  ; REVIVE
 	bcd3 4000  ; MAX_REVIVE
-	bcd3 0     ; UNUSED_37 (GUARD_SPEC)
+	bcd3 0     ; TEA_SHIPMENT (GUARD_SPEC)
 	bcd3 0     ; UNUSED_38 (SUPER_REPEL)
 	bcd3 0     ; UNUSED_39 (MAX_REPEL)
 	bcd3 0     ; UNUSED_3A (DIRE_HIT)

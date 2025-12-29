@@ -147,7 +147,8 @@
 	const EVENT_GOT_20_COINS_2
 	const_skip 2
 	const EVENT_1BF ; ???
-	const_skip 32
+	const_skip 31
+	const EVENT_GOT_TEA_SHIPMENT
 	const EVENT_GOT_COIN_CASE
 
 ; Fuchsia City events

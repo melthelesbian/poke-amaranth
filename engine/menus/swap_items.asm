@@ -318,9 +318,10 @@ ItemSortList::
 	db SAFARI_ROCK
 	; Key Items With No Use
 	db EXP_ALL
-	db BIKE_VOUCHER
-	db GOLD_TEETH
 	db OAKS_PARCEL
+	db BIKE_VOUCHER
+	db TEA_SHIPMENT
+	db GOLD_TEETH
 	; HMs
 	db HM_01
 	db HM_02

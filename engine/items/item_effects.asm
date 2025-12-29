@@ -71,7 +71,7 @@ ItemUsePtrTable:
 	dw ItemUseMedicine   ; PANACEA
 	dw ItemUseMedicine   ; REVIVE
 	dw ItemUseMedicine   ; MAX_REVIVE
-	dw UnusableItem      ; UNUSED_37 (GUARD_SPEC)
+	dw UnusableItem      ; TEA_SHIPMENT (GUARD_SPEC)
 	dw UnusableItem      ; UNUSED_38 (SUPER_REPEL)
 	dw UnusableItem      ; UNUSED_39 (MAX_REPEL)
 	dw UnusableItem      ; UNUSED_3A (DIRE_HIT)

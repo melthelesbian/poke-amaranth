@@ -3,6 +3,10 @@ _SaffronGateGuardGeeImThirstyText::
 	line "Gee, I'm thirsty,"
 	cont "though!"
 
+	para "I hope we get that"
+	line "TEA SHIPMENT from"
+	cont "CELADON soon."
+
 	para "Oh wait there,"
 	line "the road's closed."
 	done
@@ -11,8 +15,8 @@ _SaffronGateGuardImParchedText::
 	text "Whoa, bud!"
 	line "I'm parched!"
 	cont "..."
-	cont "Huh? I can have"
-	cont "this drink?"
+	cont "Huh? Is that our"
+	cont "TEA SHIPMENT?"
 	cont "Gee, thanks!@"
 	text_end
 

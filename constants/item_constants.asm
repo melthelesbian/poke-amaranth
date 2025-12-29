@@ -63,7 +63,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const PANACEA     ; $34
 	const REVIVE        ; $35
 	const MAX_REVIVE    ; $36
-	const UNUSED_37     ; $37 (GUARD_SPEC)
+	const TEA_SHIPMENT     ; $37 (GUARD_SPEC)
 	const UNUSED_38     ; $38 (SUPER_REPEL)
 	const UNUSED_39     ; $39 (MAX_REPEL)
 	const UNUSED_3A     ; $3A (DIRE_HIT)

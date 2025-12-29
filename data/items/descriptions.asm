@@ -54,7 +54,7 @@ ItemDescriptions:
 	dw PanaceaDescription
 	dw ReviveDescription
 	dw MaxReviveDescription
-	dw NoItemDescription ; UNUSED_37 (GUARD_SPEC)
+	dw TeaShipmentDescription ; TEA_SHIPMENT (GUARD_SPEC)
 	dw NoItemDescription ; UNUSED_38 (SUPER_REPEL)
 	dw NoItemDescription ; UNUSED_39 (MAX_REPEL)
 	dw NoItemDescription ; UNUSED_3A (DIRE_HIT)
@@ -301,6 +301,10 @@ ReviveDescription:
 MaxReviveDescription:
     db "Revive a #MON"
     feed "to full HP.@"
+
+TeaShipmentDescription:
+	db "A case of bottled"
+	feed "homemade tea.@"
 
 FreshWaterDescription:
     db "Restores 25 HP of"
