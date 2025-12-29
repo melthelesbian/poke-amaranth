@@ -3,7 +3,6 @@ TypeEffects:
     db NORMAL,       ROCK,         NOT_VERY_EFFECTIVE
     db NORMAL,       GHOST,        NO_EFFECT
 	db NORMAL,       STEEL,        NOT_VERY_EFFECTIVE
-    db NORMAL,       FAIRY,        SUPER_EFFECTIVE    ; + 2x FAIRY
 
 	db FIRE,         FIRE,         NOT_VERY_EFFECTIVE
 	db FIRE,         WATER,        NOT_VERY_EFFECTIVE
@@ -17,10 +16,8 @@ TypeEffects:
 	db WATER,        FIRE,         SUPER_EFFECTIVE
 	db WATER,        WATER,        NOT_VERY_EFFECTIVE
 	db WATER,        GRASS,        NOT_VERY_EFFECTIVE
-    db WATER,        ICE,          SUPER_EFFECTIVE    ; + 2x ICE
 	db WATER,        GROUND,       SUPER_EFFECTIVE
 	db WATER,        ROCK,         SUPER_EFFECTIVE
-    db WATER,        STEEL,        NOT_VERY_EFFECTIVE ; + 1/2x STEEL
 	db WATER,        DRAGON,       NOT_VERY_EFFECTIVE
 
 	db GRASS,        FIRE,         NOT_VERY_EFFECTIVE
@@ -39,16 +36,14 @@ TypeEffects:
 	db ELECTRIC,     ELECTRIC,     NOT_VERY_EFFECTIVE
 	db ELECTRIC,     GROUND,       NO_EFFECT
 	db ELECTRIC,     FLYING,       SUPER_EFFECTIVE
-    db ELECTRIC,     STEEL,        SUPER_EFFECTIVE    ; + 2x STEEL
     db ELECTRIC,     DRAGON,       NOT_VERY_EFFECTIVE
 
-	; db ICE,          FIRE,         NOT_VERY_EFFECTIVE ; - 1/2x FIRE (gen 1)
-	db ICE,          WATER,        SUPER_EFFECTIVE    ; - 1/2x WATER, + 2x WATER
+	; db ICE,          FIRE,         NOT_VERY_EFFECTIVE ; - 1/2x FIRE (gen 1 restoration)
+	db ICE,          WATER,        NOT_VERY_EFFECTIVE
 	db ICE,          GRASS,        SUPER_EFFECTIVE
 	db ICE,          ICE,          NOT_VERY_EFFECTIVE
 	db ICE,          GROUND,       SUPER_EFFECTIVE
 	db ICE,          FLYING,       SUPER_EFFECTIVE
-    db ICE,          ROCK,         SUPER_EFFECTIVE    ; + 2x ROCK
 	db ICE,          STEEL,        NOT_VERY_EFFECTIVE
 	db ICE,          DRAGON,       SUPER_EFFECTIVE
 
@@ -64,12 +59,10 @@ TypeEffects:
 	db FIGHTING,     STEEL,        SUPER_EFFECTIVE
 	db FIGHTING,     FAIRY,        NOT_VERY_EFFECTIVE
 	
-    db POISON,       NORMAL,       SUPER_EFFECTIVE    ; + 2x NORMAL
 	db POISON,       GRASS,        SUPER_EFFECTIVE
-    db POISON,       FIGHTING,     SUPER_EFFECTIVE    ; + 2x FIGHTING
 	db POISON,       POISON,       NOT_VERY_EFFECTIVE
 	db POISON,       GROUND,       NOT_VERY_EFFECTIVE
-    db POISON,       BUG,          SUPER_EFFECTIVE    ; + 2x BUG (gen 1)
+	db POISON,       BUG,          SUPER_EFFECTIVE    ; + 2x BUG (gen 1 restoration)
 	db POISON,       ROCK,         NOT_VERY_EFFECTIVE
 	db POISON,       GHOST,        NOT_VERY_EFFECTIVE
 	db POISON,       STEEL,        NO_EFFECT
@@ -94,14 +87,13 @@ TypeEffects:
 	db PSYCHIC_TYPE, FIGHTING,     SUPER_EFFECTIVE
 	db PSYCHIC_TYPE, POISON,       SUPER_EFFECTIVE
 	db PSYCHIC_TYPE, PSYCHIC_TYPE, NOT_VERY_EFFECTIVE
-    db PSYCHIC_TYPE, GHOST,        NOT_VERY_EFFECTIVE ; + 1/2x GHOST
 	db PSYCHIC_TYPE, DARK,         NO_EFFECT
-	db PSYCHIC_TYPE, STEEL,        SUPER_EFFECTIVE    ; - 1/2x STEEL, + 2x STEEL
+	db PSYCHIC_TYPE, STEEL,        NOT_VERY_EFFECTIVE
 
 	db BUG,          FIRE,         NOT_VERY_EFFECTIVE
 	db BUG,          GRASS,        SUPER_EFFECTIVE
     db BUG,          FIGHTING,     NOT_VERY_EFFECTIVE
-	db BUG,          POISON,       SUPER_EFFECTIVE    ; + 2x POISON (gen 1)
+	db BUG,          POISON,       SUPER_EFFECTIVE    ; - 1/2x POISON, + 2x POISON (gen 1 restoration)
 	db BUG,          FLYING,       NOT_VERY_EFFECTIVE
 	db BUG,          PSYCHIC_TYPE, SUPER_EFFECTIVE
 	db BUG,          GHOST,        NOT_VERY_EFFECTIVE
@@ -118,7 +110,6 @@ TypeEffects:
 	db ROCK,         STEEL,        NOT_VERY_EFFECTIVE
 
     db GHOST,        NORMAL,       NO_EFFECT
-    db GHOST,        FIGHTING,     SUPER_EFFECTIVE    ; + 2x FIGHTING
 	db GHOST,        PSYCHIC_TYPE, SUPER_EFFECTIVE
     db GHOST,        GHOST,        SUPER_EFFECTIVE
 	db GHOST,        DARK,         NOT_VERY_EFFECTIVE
@@ -131,14 +122,12 @@ TypeEffects:
 
 	db STEEL,        FIRE,         NOT_VERY_EFFECTIVE
 	db STEEL,        WATER,        NOT_VERY_EFFECTIVE
-    db STEEL,        GRASS,        SUPER_EFFECTIVE    ; + 2x GRASS
 	db STEEL,        ELECTRIC,     NOT_VERY_EFFECTIVE
 	db STEEL,        ICE,          SUPER_EFFECTIVE
 	db STEEL,        ROCK,         SUPER_EFFECTIVE
 	db STEEL,        STEEL,        NOT_VERY_EFFECTIVE
 	db STEEL,        FAIRY,        SUPER_EFFECTIVE
 
-    db FAIRY,        NORMAL,       SUPER_EFFECTIVE    ; + 2x NORMAL
 	db FAIRY,        FIRE,         NOT_VERY_EFFECTIVE
 	db FAIRY,        FIGHTING,     SUPER_EFFECTIVE
 	db FAIRY,        POISON,       NOT_VERY_EFFECTIVE
