@@ -21,12 +21,6 @@
 - [x] Basic move balance pass (Power/Accuracy/PP)
 - [x] Basic TM Price balance pass
 
-## Testing Tasks
-- [ ] Test focus energy & sleep status
-- [ ] Test charge moves
-- [ ] Check for dialogue inconsistencies
-- [ ] Test trade & battle functionality
-
 ## Known Bugs
 - [x] Display issue when declining to learn a move
 - [x] Text bugs with TM items
