@@ -51,7 +51,7 @@ OakSpeech:
 	call PrepareOakSpeech
 	predef InitPlayerData2
 	ld hl, wNumBoxItems
-	ld a, POTION
+	ld a, FRESH_WATER
 	ld [wCurItem], a
 	ld a, 1
 	ld [wItemQuantity], a
