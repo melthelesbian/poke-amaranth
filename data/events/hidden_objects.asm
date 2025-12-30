@@ -417,7 +417,7 @@ RockTunnelPokecenterHiddenObjects:
 	db -1 ; end
 
 ViridianForestHiddenObjects:
-	hidden_object  1, 18, POTION, HiddenItems
+	hidden_object  1, 18, FRESH_WATER, HiddenItems
 	hidden_object 16, 42, PANACEA, HiddenItems
 	db -1 ; end
 
@@ -562,7 +562,7 @@ BillsHouseHiddenObjects:
 	db -1 ; end
 
 ViridianCityHiddenObjects:
-	hidden_object 14,  4, POTION, HiddenItems
+	hidden_object 14,  4, FRESH_WATER, HiddenItems
 	db -1 ; end
 
 SafariZoneRestHouse2HiddenObjects:

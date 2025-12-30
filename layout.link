@@ -145,7 +145,6 @@ ROMX $1F
 	"Maps 21"
 	"Itemfinder 1"
 	"Itemfinder 2"
-	"Vending Machine"
 ROMX $20
 	"Sound Effect Headers 3"
 	"Music Headers 3"

@@ -19,6 +19,8 @@ BookshelfTileIDs:
 	bookshelf_tile MART,         $55, PokemonStuffText
 	bookshelf_tile MART,         $17, CheapCandyText
 	bookshelf_tile MART,         $1D, CheapCandyText
+	bookshelf_tile MART,         $3E, VendingMachineHOText
+	bookshelf_tile MART,         $3F, VendingMachineHOText
 	bookshelf_tile POKECENTER,   $54, PokemonStuffText
 	bookshelf_tile POKECENTER,   $55, PokemonStuffText
 	bookshelf_tile LOBBY,        $50, PokemonStuffText

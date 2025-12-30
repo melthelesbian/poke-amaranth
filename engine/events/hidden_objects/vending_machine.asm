@@ -1,0 +1,2 @@
+VendingMachineHOText::
+	script_vending_machine

@@ -71,3 +71,4 @@ TextPredefs::
 	add_tx_pre ElevatorText                         ; 41
 	add_tx_pre PokemonStuffText                     ; 42
 	add_tx_pre CheapCandyText                       ; 43
+	add_tx_pre VendingMachineHOText                 ; 44

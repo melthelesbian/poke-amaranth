@@ -21,7 +21,7 @@ ViridianForest_TextPointers:
 	dw_const ViridianForestYoungster4Text,      TEXT_VIRIDIANFOREST_YOUNGSTER4
 	dw_const ViridianForestSweetheartText,      TEXT_VIRIDIANFOREST_SWEETHEART
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_PANACEA
-	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION
+	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_FRESH_WATER
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POKE_BALL
 	dw_const ViridianForestYoungster5Text,      TEXT_VIRIDIANFOREST_YOUNGSTER5
 	dw_const ViridianForestTrainerTips1Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS1

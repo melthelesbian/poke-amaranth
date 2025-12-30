@@ -921,6 +921,19 @@ ItemUseMedicine:
 	predef DoubleOrHalveSelectedStats
 	jp .doneHealing
 .healHP
+	; check healing item type
+	ld a, [wIsInBattle]
+	and a
+	jr z, .startHealing
+	ld a, [wCurItem]
+	cp FRESH_WATER
+    jp z, ItemUseNotTime
+    cp ICED_TEA
+    jp z, ItemUseNotTime
+    cp LEMONADE
+    jp z, ItemUseNotTime
+; fall through for battle healing items
+.startHealing
 	inc hl ; hl = address of current HP
 	ld a, [hli]
 	ld b, a
