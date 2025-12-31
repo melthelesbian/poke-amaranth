@@ -62,7 +62,7 @@ Moves:
 	move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,      1,    NORMAL,       90,  20
 	move DISABLE,      DISABLE_EFFECT,             0,    MYSTERY,      75,  20
 	move ACID,         BURN_SIDE_EFFECT1,          50,   POISON,       100, 30
-	move EMBER,        BURN_SIDE_EFFECT1,          40,   FIRE,         100, 25
+	move EMBER,        BURN_SIDE_EFFECT1,          40,   FIRE,         100, 30
 	move FLAMETHROWER, BURN_SIDE_EFFECT1,          95,   FIRE,         100, 15
 	move MIST,         MIST_EFFECT,                0,    MYSTERY,      100, 30
 	move WATER_GUN,    NO_ADDITIONAL_EFFECT,       40,   WATER,        100, 30

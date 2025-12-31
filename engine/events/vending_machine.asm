@@ -91,9 +91,9 @@ DrinkText:
 	next "CANCEL@"
 
 DrinkPriceText:
-	db   "¥200"
+	db   "¥100"
+	next "¥200"
 	next "¥300"
-	next "¥350"
 	next "@"
 
 VendingMachineText4:
