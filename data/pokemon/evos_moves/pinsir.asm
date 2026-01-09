@@ -9,7 +9,7 @@ PinsirEvosMoves:
 	db 18, RAGE
 	db 24, COUNTER
 	db 30, LEECH_LIFE
-	db 37, HEAVY_SMASH
+	db 37, GUILLOTINE
 	db 45, HEADBUTT
 	db 54, PREPARE
 	db 64, BUG_BUZZ
