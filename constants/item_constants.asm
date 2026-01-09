@@ -51,7 +51,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const RARE_CANDY    ; $28
 	const DOME_FOSSIL   ; $29
 	const HELIX_FOSSIL  ; $2A
-	const UNUSED_2B     ; $2B (SECRET_KEY)
+	const CHEAP_CANDY   ; $2B (SECRET_KEY)
 	const ANCIENT_HAIR  ; $2C
 	const BIKE_VOUCHER  ; $2D
 	const UNUSED_2E     ; $2E

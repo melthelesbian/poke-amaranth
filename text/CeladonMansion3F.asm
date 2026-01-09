@@ -34,6 +34,12 @@ _CeladonMansion3FGameDesignerText::
 	line "come tell me!"
 	done
 
+_CeladonMansion3FGameDesignerCheatedText::
+	text "You cheated a bit"
+	line "but I'll forgive"
+	cont "you..."
+	prompt
+
 _CeladonMansion3FGameDesignerCompletedDexText::
 	text "Wow! Excellent!"
 	line "You completed"

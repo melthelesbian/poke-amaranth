@@ -18,7 +18,7 @@ CheapCandyText::
     ld hl, .notEnoughMoneyText
     jr .printText
 .hasEnoughMoney
-    lb bc, RARE_CANDY, 10
+    lb bc, CHEAP_CANDY, 10
     call GiveItem
     jr nc, .bagFull
     ; [INFO] Deduct player funds
@@ -46,8 +46,8 @@ CheapCandyText::
     jp TextScriptEnd
 
 .buyPrompt
-    text "It's only ¥10 for"
-    line "10 candy."
+    text "It's ¥10 for 10"
+    line "CHEAP CANDY."
 
     para "Would you like to"
     line "buy some?"

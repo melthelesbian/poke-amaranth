@@ -59,7 +59,7 @@ ItemUsePtrTable:
 	dw ItemUseVitamin    ; RARE_CANDY
 	dw UnusableItem      ; DOME_FOSSIL
 	dw UnusableItem      ; HELIX_FOSSIL
-	dw UnusableItem      ; UNUSED_2B (SECRET_KEY)
+	dw ItemUseVitamin    ; CHEAP_CANDY (SECRET_KEY)
 	dw UnusableItem      ; ANCIENT_HAIR
 	dw UnusableItem      ; BIKE_VOUCHER
 	dw UnusableItem      ; UNUSED_2E (X_ACCURACY)
@@ -1292,6 +1292,8 @@ ItemUseMedicine:
 	ld a, [wCurItem]
 	cp RARE_CANDY
 	jp z, .useRareCandy
+	cp CHEAP_CANDY
+	jp z, .useCheapCandy
 	push hl
 	sub HP_UP
 	add a
@@ -1351,6 +1353,10 @@ ItemUseMedicine:
 	add hl, bc ; hl now points to LSB of experience
 	ld b, 1
 	jp CalcStats ; recalculate stats
+.useCheapCandy
+	push hl
+	SetEvent EVENT_USED_CHEAP_CANDY
+	pop hl
 .useRareCandy
 	push hl
 	ld bc, wPartyMon1Level - wPartyMon1

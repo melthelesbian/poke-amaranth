@@ -291,6 +291,7 @@ ItemSortList::
 	db MAX_ELIXIR
 	; Permanent Raises
 	db RARE_CANDY
+	db CHEAP_CANDY
 	db HP_UP
 	db PROTEIN
 	db IRON

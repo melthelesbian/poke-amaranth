@@ -42,7 +42,7 @@ ItemDescriptions:
 	dw RareCandyDescription
 	dw DomeFossilDescription
 	dw HelixFossilDescription
-	dw NoItemDescription ; UNUSED_2B (SECRET_KEY)
+	dw CheapCandyDescription ; CHEAP_CANDY (SECRET_KEY)
 	dw AncientHairDescription
 	dw BikeVoucherDescription
 	dw NoItemDescription ; UNUSED_2E (X_ACCURACY)
@@ -264,6 +264,10 @@ CalciumDescription:
 RareCandyDescription:
     db "Raises a #MON's"
     feed "level by one.@"
+
+CheapCandyDescription:
+	db "CHEAT to raise a"
+	feed "#MON's level.@"
 
 DomeFossilDescription:
 HelixFossilDescription:

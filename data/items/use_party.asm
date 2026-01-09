@@ -15,6 +15,7 @@ UsableItems_PartyMenu:
 	db CARBOS
 	db CALCIUM
 	db RARE_CANDY
+	db CHEAP_CANDY
 	db LEAF_STONE
 	db PANACEA
 	db REVIVE

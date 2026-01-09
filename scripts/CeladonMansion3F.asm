@@ -27,6 +27,11 @@ CeladonMansion3FWriterText:
 
 CeladonMansion3FGameDesignerText:
 	text_asm
+	CheckEvent EVENT_USED_CHEAP_CANDY
+	jr z, .noCheating
+	ld hl, .CheatedText
+	call PrintText
+.noCheating
 	ld hl, wPokedexOwned
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
@@ -43,6 +48,10 @@ CeladonMansion3FGameDesignerText:
 
 .Text:
 	text_far _CeladonMansion3FGameDesignerText
+	text_end
+
+.CheatedText:
+	text_far _CeladonMansion3FGameDesignerCheatedText
 	text_end
 
 .CompletedDexText:
