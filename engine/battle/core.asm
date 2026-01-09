@@ -2946,7 +2946,7 @@ PrintMenuItem:
 	; convert accuracy
 	ld a, [wPlayerMoveAccuracy]
 	farcall ConvertPercentagesBattle
-	ld de, wBuffer
+	ld de, wBuffer + 6
 	hlcoord 5, 10
 	lb bc, 1, 3
 	call PrintNumber

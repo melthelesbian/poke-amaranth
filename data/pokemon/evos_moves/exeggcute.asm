@@ -16,3 +16,4 @@ ExeggcuteEvosMoves:
 	db 43, GROWTH
 	db 50, EGG_BOMB
 	db 58, SOLARBEAM
+	db 0
