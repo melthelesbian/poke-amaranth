@@ -41,7 +41,7 @@ CeladonMart5FClerk1Text::
 	script_mart PP_UP, ETHER, MAX_ETHER, ELIXIR, MAX_ELIXIR
 
 CeladonMart5FClerk2Text::
-	script_mart HP_UP, PROTEIN, IRON, CARBOS, CALCIUM
+	script_mart HP_UP, PROTEIN, IRON, CARBOS, CALCIUM, RARE_CANDY
 
 FuchsiaMartClerkText::
 	script_mart ULTRA_BALL, GREAT_BALL, SUPER_POTION, REVIVE, PANACEA, REPEL
