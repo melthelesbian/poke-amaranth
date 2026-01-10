@@ -50,7 +50,12 @@ DisplayListMenuID::
 	ld [wTopMenuItemY], a
 	ld a, 5
 	ld [wTopMenuItemX], a
+	ld a, [wIsInBattle]
+	and a
 	ld a, A_BUTTON | B_BUTTON | SELECT | START
+	jr z, .watchedKeys
+	ld a, A_BUTTON | B_BUTTON | SELECT
+.watchedKeys
 	ld [wMenuWatchedKeys], a
 	ld c, 10
 	call DelayFrames
