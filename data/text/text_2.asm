@@ -710,7 +710,7 @@ _ViridianBlackboardFrozenText::
 	line "even after the"
 	cont "battle ends."
 
-	para "Use ICE HEAL to"
+	para "Use a PANACEA to"
 	line "thaw out #MON!"
 	prompt
 
