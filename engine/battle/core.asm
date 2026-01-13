@@ -1901,6 +1901,8 @@ DrawEnemyHUDAndHPBar:
 	inc hl
 	ld de, wEnemyMonStatus
 	call PrintStatusConditionNotFainted
+	ld de, wEnemyBattleStatus1
+	call PrintStatusConfusion
 	pop hl
 	jr nz, .skipPrintLevel ; if the mon has a status condition, skip printing the level
 	ld a, [wEnemyMonLevel]
