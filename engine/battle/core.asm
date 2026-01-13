@@ -1901,6 +1901,10 @@ DrawEnemyHUDAndHPBar:
 	inc hl
 	ld de, wEnemyMonStatus
 	call PrintStatusConditionNotFainted
+	pop hl
+	jr nz, .skipPrintLevel
+	push hl
+	inc hl
 	ld de, wEnemyBattleStatus1
 	call PrintStatusConfusion
 	pop hl
