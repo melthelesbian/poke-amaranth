@@ -127,7 +127,7 @@ MainMenu:
 InitOptions:
 	ld a, 1 << BIT_FAST_TEXT_DELAY
 	ld [wLetterPrintingDelayFlags], a
-	ld a, TEXT_DELAY_MEDIUM
+	ld a, TEXT_DELAY_FAST
 	ld [wOptions], a
 	ret
 
@@ -595,7 +595,7 @@ DisplayOptionMenu:
 
 TextSpeedOptionText:
 	db   "TEXT SPEED"
-	next " FAST  MEDIUM SLOW@"
+	next " FAST  MEDIUM INST@"
 
 BattleAnimationOptionText:
 	db   "BATTLE ANIMATION"
@@ -690,10 +690,10 @@ SetCursorPositionsFromOptions:
 ; 00: X coordinate of menu cursor
 ; 01: delay after printing a letter (in frames)
 TextSpeedOptionData:
-	db 14, TEXT_DELAY_SLOW
+	db 14, TEXT_DELAY_INSTANT
 	db  7, TEXT_DELAY_MEDIUM
 	db  1, TEXT_DELAY_FAST
-	db  7, -1 ; end (default X coordinate)
+	db  1, -1 ; end (default X coordinate)
 
 CheckForPlayerNameInSRAM:
 ; Check if the player name data in SRAM has a string terminator character

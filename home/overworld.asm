@@ -263,7 +263,7 @@ OverworldLoopLessDelay::
 	jp c, OverworldLoop
 
 .noCollision
-	ld a, $08
+	ld a, WALK_COUNTER_FRAMES ; [INFO] Base walking speed
 	ld [wWalkCounter], a
 	jr .moveAhead2
 
@@ -1472,7 +1472,7 @@ AdvancePlayerSprite::
 	ld [wXCoord], a
 .afterUpdateMapCoords
 	ld a, [wWalkCounter] ; walking animation counter
-	cp $07
+	cp WALK_COUNTER_FIRST_FRAME ; [INFO] first frame
 	jp nz, .scrollBackgroundAndSprites
 ; if this is the first iteration of the animation
 	ld a, c
@@ -1620,6 +1620,8 @@ AdvancePlayerSprite::
 	ld a, [wSpritePlayerStateData1XStepVector]
 	ld c, a
 	sla b
+	sla b ; [INFO] doubled for base move speed 
+	sla c ; [INFO] doubled for base move speed
 	sla c
 	ldh a, [hSCY]
 	add b
