@@ -31,3 +31,5 @@
 
 - [ ] ~~Set up RED/BLUE version differences~~ (not currently planned)
 - [ ] Add postgame encounters
+- [ ] Instant text
+- [ ] Base movement increase
