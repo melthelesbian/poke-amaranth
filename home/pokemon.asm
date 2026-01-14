@@ -332,6 +332,10 @@ PrintStatusConditionNotFainted::
 	homecall_sf PrintStatusAilment
 	ret
 
+PrintStatusConditionIcon::
+	homecall_sf PrintStatusIcon
+	ret
+
 ; function to print pokemon level, leaving off the ":L" if the level is at least 100
 ; INPUT:
 ; hl = destination address

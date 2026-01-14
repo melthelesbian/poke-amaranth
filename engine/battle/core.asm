@@ -1818,19 +1818,38 @@ DrawPlayerHUDAndHPBar:
 	ld de, wLoadedMonLevel
 	ld bc, wBattleMonPP - wBattleMonLevel
 	call CopyData
-	hlcoord 13, 8
+	ld a, 1
+	ld [wPrintLevel], a
+	hlcoord 10, 8
+	push hl
+	inc hl
+	ld de, wLoadedMonStatus
+	call PrintStatusConditionIcon
+	jr z, .didNotPrintConditionIcon
+	xor a
+	ld [wPrintLevel], a
+.didNotPrintConditionIcon
+	pop hl
+	hlcoord 12, 8
 	push hl
 	inc hl
 	ld de, wLoadedMonStatus
 	call PrintStatusConditionNotFainted
+	jr z, .didNotPrintStatusCondition
+	xor a
+	ld [wPrintLevel], a
+.didNotPrintStatusCondition
 	pop hl
-	jr nz, .doNotPrintLevel
 	push hl
 	inc hl
 	ld de, wPlayerBattleStatus1
 	call PrintStatusConfusion
 	pop hl
 	jr nz, .doNotPrintLevel
+	ld a, [wPrintLevel]
+	or a
+	jr z, .doNotPrintLevel
+	hlcoord 13, 8
 	call PrintLevel
 .doNotPrintLevel
 	ld a, [wLoadedMonSpecies]
@@ -1896,21 +1915,37 @@ DrawEnemyHUDAndHPBar:
 	hlcoord 1, 0
 	call CenterMonName
 	call PlaceString
+	ld a, 1
+	ld [wPrintLevel], a
+	hlcoord 2, 1
+	push hl
+	ld de, wEnemyMonStatus
+	call PrintStatusConditionIcon
+	jr z, .didNotPrintConditionIcon
+	xor a
+	ld [wPrintLevel], a
+.didNotPrintConditionIcon
+	pop hl
 	hlcoord 4, 1
 	push hl
-	inc hl
 	ld de, wEnemyMonStatus
 	call PrintStatusConditionNotFainted
+	jr z, .didNotPrintStatusCondition
+	xor a
+	ld [wPrintLevel], a
+.didNotPrintStatusCondition
 	pop hl
-	jr nz, .skipPrintLevel
 	push hl
-	inc hl
 	ld de, wEnemyBattleStatus1
 	call PrintStatusConfusion
 	pop hl
 	jr nz, .skipPrintLevel ; if the mon has a status condition, skip printing the level
 	ld a, [wEnemyMonLevel]
 	ld [wLoadedMonLevel], a
+	ld a, [wPrintLevel]
+	or a
+	jr z, .skipPrintLevel
+	hlcoord 4, 1
 	call PrintLevel
 .skipPrintLevel
 	ld hl, wEnemyMonHP

@@ -29,7 +29,7 @@ PrintStatusAilment::
 	ld [hli], a
 	ld a, 'P'
 	ld [hli], a
-	ld [hl], '<SLP>'
+	; ld [hl], '<SLP>'
 	ret
 .psn
 	ld a, 'P'
@@ -38,7 +38,7 @@ PrintStatusAilment::
 	ld [hli], a
 	ld a, 'N'
 	ld [hli], a
-	ld [hl], '<PSN>'
+	; ld [hl], '<PSN>'
 	ret
 .brn
 	ld a, 'B'
@@ -47,7 +47,7 @@ PrintStatusAilment::
 	ld [hli], a
 	ld a, 'N'
 	ld [hli], a
-	ld [hl], '<BRN>'
+	; ld [hl], '<BRN>'
 	ret
 .frz
 	ld a, 'F'
@@ -56,7 +56,7 @@ PrintStatusAilment::
 	ld [hli], a
 	ld a, 'Z'
 	ld [hli], a
-	ld [hl], '<FRZ>'
+	; ld [hl], '<FRZ>'
 	ret
 .par
 	ld a, 'P'
@@ -65,5 +65,32 @@ PrintStatusAilment::
 	ld [hli], a
 	ld a, 'R'
 	ld [hli], a
+	; ld [hl], '<PAR>'
+	ret
+
+PrintStatusIcon::
+	ld a, [de]
+	bit PSN, a
+	jr nz, .psn
+	bit BRN, a
+	jr nz, .brn
+	bit FRZ, a
+	jr nz, .frz
+	bit PAR, a
+	jr nz, .par
+	and SLP_MASK
+	ret z
+	ld [hl], '<SLP>'
+	ret
+.psn
+	ld [hl], '<PSN>'
+	ret
+.brn
+	ld [hl], '<BRN>'
+	ret
+.frz
+	ld [hl], '<FRZ>'
+	ret
+.par
 	ld [hl], '<PAR>'
 	ret
