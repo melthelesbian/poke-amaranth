@@ -1049,7 +1049,8 @@ wItemList:: ds 16
 wListPointer:: dw
 
 ; used to store pointers, but never read
-wPrintLevel:: dw
+wPrintStatusFlags:: db
+wPrintLevel:: db
 ; wUnusedNamePointer:: dw
 
 wItemPrices:: dw

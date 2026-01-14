@@ -1818,34 +1818,44 @@ DrawPlayerHUDAndHPBar:
 	ld de, wLoadedMonLevel
 	ld bc, wBattleMonPP - wBattleMonLevel
 	call CopyData
+	xor a
+	ld [wPrintStatusFlags], a
 	ld a, 1
 	ld [wPrintLevel], a
-	hlcoord 10, 8
+	hlcoord 13, 8
 	push hl
-	inc hl
-	ld de, wLoadedMonStatus
-	call PrintStatusConditionIcon
-	jr z, .didNotPrintConditionIcon
-	xor a
-	ld [wPrintLevel], a
-.didNotPrintConditionIcon
-	pop hl
-	hlcoord 12, 8
-	push hl
-	inc hl
 	ld de, wLoadedMonStatus
 	call PrintStatusConditionNotFainted
 	jr z, .didNotPrintStatusCondition
+	ld a, [wPrintStatusFlags]
+	set BIT_PRINTED_PERMANENT, a
+	ld [wPrintStatusFlags], a
 	xor a
 	ld [wPrintLevel], a
 .didNotPrintStatusCondition
 	pop hl
 	push hl
-	inc hl
 	ld de, wPlayerBattleStatus1
 	call PrintStatusConfusion
+	jr z, .didNotPrintConfusion
+	ld a, [wPrintStatusFlags]
+	set BIT_PRINTED_VOLATILE, a
+	ld [wPrintStatusFlags], a
+	xor a
+	ld [wPrintLevel], a
+.didNotPrintConfusion
 	pop hl
-	jr nz, .doNotPrintLevel
+	push hl
+	ld a, [wPrintStatusFlags]
+	bit BIT_PRINTED_PERMANENT, a
+	jr z, .skipPrintConditionIcon
+	bit BIT_PRINTED_VOLATILE, a
+	jr z, .skipPrintConditionIcon
+	ld de, wLoadedMonStatus
+	hlcoord 11, 8
+	call PrintStatusConditionIcon
+.skipPrintConditionIcon
+	pop hl
 	ld a, [wPrintLevel]
 	or a
 	jr z, .doNotPrintLevel
@@ -1915,22 +1925,19 @@ DrawEnemyHUDAndHPBar:
 	hlcoord 1, 0
 	call CenterMonName
 	call PlaceString
+	; [INFO] start status printing code
+	xor a
+	ld [wPrintStatusFlags], a
 	ld a, 1
 	ld [wPrintLevel], a
-	hlcoord 2, 1
-	push hl
-	ld de, wEnemyMonStatus
-	call PrintStatusConditionIcon
-	jr z, .didNotPrintConditionIcon
-	xor a
-	ld [wPrintLevel], a
-.didNotPrintConditionIcon
-	pop hl
 	hlcoord 4, 1
 	push hl
 	ld de, wEnemyMonStatus
 	call PrintStatusConditionNotFainted
 	jr z, .didNotPrintStatusCondition
+	ld a, [wPrintStatusFlags]
+	set BIT_PRINTED_PERMANENT, a
+	ld [wPrintStatusFlags], a
 	xor a
 	ld [wPrintLevel], a
 .didNotPrintStatusCondition
@@ -1938,13 +1945,30 @@ DrawEnemyHUDAndHPBar:
 	push hl
 	ld de, wEnemyBattleStatus1
 	call PrintStatusConfusion
+	jr z, .didNotPrintConfusion
+	ld a, [wPrintStatusFlags]
+	set BIT_PRINTED_VOLATILE, a
+	ld [wPrintStatusFlags], a
+	xor a
+	ld [wPrintLevel], a
+.didNotPrintConfusion
 	pop hl
-	jr nz, .skipPrintLevel ; if the mon has a status condition, skip printing the level
-	ld a, [wEnemyMonLevel]
-	ld [wLoadedMonLevel], a
+	push hl
+	ld a, [wPrintStatusFlags]
+	bit BIT_PRINTED_PERMANENT, a
+	jr z, .skipPrintConditionIcon
+	bit BIT_PRINTED_VOLATILE, a
+	jr z, .skipPrintConditionIcon
+	ld de, wEnemyMonStatus
+	hlcoord 2, 1
+	call PrintStatusConditionIcon
+.skipPrintConditionIcon
+	pop hl
 	ld a, [wPrintLevel]
 	or a
 	jr z, .skipPrintLevel
+	ld a, [wEnemyMonLevel]
+	ld [wLoadedMonLevel], a
 	hlcoord 4, 1
 	call PrintLevel
 .skipPrintLevel

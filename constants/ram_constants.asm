@@ -117,3 +117,8 @@ DEF NUM_BADGES EQU const_value
 	const_skip 3               ; 3-5 ; unused
 	const BIT_LEDGE_OR_FISHING ; 6
 	const BIT_SPINNING         ; 7
+
+; wPrintStatusFlags
+	const_def
+	const BIT_PRINTED_PERMANENT ; 0
+	const BIT_PRINTED_VOLATILE  ; 1
