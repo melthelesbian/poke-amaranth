@@ -13,7 +13,7 @@ DefaultNamesPlayerCoolList:
 
 DefaultNamesRivalList:
 	db "NEW NAME@"
-	db "TONY@"
+	db "ANTHONY@"
 	db "BLUE@"
 	db "GARY@"
 ENDC

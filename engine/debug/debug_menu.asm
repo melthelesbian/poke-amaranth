@@ -63,7 +63,7 @@ DebugBattlePlayerName:
 	db "AMARA@"
 
 DebugBattleRivalName:
-	db "TONY@"
+	db "ANTHONY@"
 
 DebugMenuOptions:
 	db   "FIGHT"

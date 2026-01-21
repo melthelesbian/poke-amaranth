@@ -15,7 +15,7 @@ DefaultNamesPlayerCool:
 
 DefaultNamesRival:
 	db "NEW NAME"
-	next "TONY"
+	next "ANTHONY"
 	next "BLUE"
 	next "GARY"
 	db   "@"
