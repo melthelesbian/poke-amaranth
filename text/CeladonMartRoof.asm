@@ -124,7 +124,7 @@ _CeladonMartRoofCurrentFloorSignText::
 	done
 
 _VendingMachineText1::
-	text "A vending machine!"
+	text "A drinks machine!"
 	line "Here's the menu!"
 	prompt
 
