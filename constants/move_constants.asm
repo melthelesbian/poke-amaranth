@@ -120,7 +120,7 @@
 	const DEFENSE_CURL ; 111
 	const BARRIER      ; 112
 	const LIGHT_SCREEN ; 113
-	const HAZE         ; 114
+	const STAR_JAB     ; 114
 	const REFLECT      ; 115
 	const FOCUS_ENERGY ; 116
 	const BIDE         ; 117

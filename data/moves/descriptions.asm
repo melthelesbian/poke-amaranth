@@ -113,7 +113,7 @@ MoveDescriptions:
 	dw DefenseCurlDescription
 	dw BarrierDescription
 	dw LightScreenDescription
-	dw HazeDescription
+	dw StarJabDescription
 	dw ReflectDescription
 	dw FocusEnergyDescription
 	dw BideDescription
@@ -619,9 +619,9 @@ LightScreenDescription:
 	db "Doubles SPC when"
 	feed "hit by SPC moves.@"
 
-HazeDescription:
-	db "Reset stat-change"
-	feed "effects.@"
+StarJabDescription:
+	db "A high-power jab"
+	feed "attack!@"
 
 ReflectDescription:
 	db "Doubles DEF when"

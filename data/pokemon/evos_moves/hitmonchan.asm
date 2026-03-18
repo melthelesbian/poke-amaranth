@@ -14,5 +14,5 @@ HitmonchanEvosMoves:
 	db 40, ICE_PUNCH
 	db 47, AMNESIA
 	db 55, DIZZY_PUNCH
-	db 64, SWORDS_DANCE
+	db 64, STAR_JAB
 	db 0

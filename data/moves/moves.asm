@@ -124,7 +124,7 @@ Moves:
 	move DEFENSE_CURL, DEFENSE_UP1_EFFECT,         0,    MYSTERY,      100, 40
 	move BARRIER,      DEFENSE_UP2_EFFECT,         0,    MYSTERY,      100, 30
 	move LIGHT_SCREEN, LIGHT_SCREEN_EFFECT,        0,    MYSTERY,      100, 30
-	move HAZE,         HAZE_EFFECT,                0,    MYSTERY,      100, 30
+	move STAR_JAB,     NO_ADDITIONAL_EFFECT,       100,  FIGHTING,     100, 15 ; (HAZE)
 	move REFLECT,      REFLECT_EFFECT,             0,    MYSTERY,      100, 20
 	move FOCUS_ENERGY, FOCUS_ENERGY_EFFECT,        0,    MYSTERY,      100, 30
 	move BIDE,         BIDE_EFFECT,                0,    NORMAL,       100, 10

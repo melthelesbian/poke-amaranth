@@ -113,7 +113,7 @@ AttackAnimationPointers:
 	dw DefenseCurlAnim
 	dw BarrierAnim
 	dw LightScreenAnim
-	dw HazeAnim
+	dw StarJabAnim
 	dw ReflectAnim
 	dw FocusEnergyAnim
 	dw BideAnim
@@ -247,11 +247,12 @@ DoubleSlapAnim:
 	db -1 ; end
 
 
-; CometPunchAnim:
+; StarJabAnim:
 ; 	battle_anim COMET_PUNCH_ANIM, SUBANIM_0_STAR_THRICE, 0, 4
 ; 	battle_anim COMET_PUNCH_ANIM, SUBANIM_0_STAR_THRICE, 0, 4
 ; 	db -1 ; end
 
+StarJabAnim:
 MegaPunchAnim:
 	battle_anim MEGA_PUNCH_ANIM, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end

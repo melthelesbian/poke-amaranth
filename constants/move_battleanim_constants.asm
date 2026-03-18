@@ -115,7 +115,7 @@
 	const DEFENSE_CURL_ANIM ; 6f
 	const BARRIER_ANIM      ; 70
 	const LIGHT_SCREEN_ANIM ; 71
-	const HAZE_ANIM         ; 72
+	const STAR_JAB_ANIM     ; 72
 	const REFLECT_ANIM      ; 73
 	const FOCUS_ENERGY_ANIM ; 74
 	const BIDE_ANIM         ; 75

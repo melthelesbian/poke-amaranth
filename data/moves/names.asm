@@ -113,7 +113,7 @@ MoveNames::
 	li "DEFENSE CURL"
 	li "BARRIER"
 	li "LIGHT SCREEN"
-	li "HAZE"
+	li "STAR JAB"
 	li "REFLECT"
 	li "FOCUS ENERGY"
 	li "BIDE"

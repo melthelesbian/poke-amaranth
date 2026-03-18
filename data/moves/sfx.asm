@@ -114,7 +114,7 @@ MoveSoundTable:
 	db SFX_BATTLE_32,          $40, $c0 ; DEFENSE_CURL
 	db SFX_BATTLE_0E,          $20, $20 ; BARRIER
 	db SFX_BATTLE_0E,          $f0, $10 ; LIGHT_SCREEN
-	db SFX_BATTLE_0F,          $f8, $10 ; HAZE
+	db SFX_BATTLE_0D,          $f8, $10 ; STAR_JAB
 	db SFX_NOT_VERY_EFFECTIVE, $f0, $10 ; REFLECT
 	db SFX_BATTLE_25,          $00, $80 ; FOCUS_ENERGY
 	db SFX_BATTLE_18,          $00, $c0 ; BIDE
