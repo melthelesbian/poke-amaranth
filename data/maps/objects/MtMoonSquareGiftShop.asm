@@ -1,5 +1,6 @@
 	object_const_def
 	const_export MTMOONSQUAREGIFTSHOP_CLERK
+	const_export MTMOONSQUAREGIFTSHOP_NURSE
 
 MtMoonSquareGiftShop_Object:
 	db $0A ; border block
@@ -18,5 +19,6 @@ MtMoonSquareGiftShop_Object:
 
 	def_object_events
 	object_event 11, 4, SPRITE_CLERK, STAY, LEFT, TEXT_MTMOONSQUAREGIFTSHOP_CLERK
+	object_event 11, 5, SPRITE_NURSE, STAY, LEFT, TEXT_MTMOONSQUAREGIFTSHOP_NURSE
 
 	def_warps_to MT_MOON_SQUARE_GIFT_SHOP
