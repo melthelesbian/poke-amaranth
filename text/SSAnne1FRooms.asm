@@ -96,10 +96,18 @@ _SSAnne1FRoomsGirl2Text::
 	line "around the world."
 	done
 
-_SSAnne1FRoomsGentleman3Text::
-	text "Ssh! I'm a GLOBAL"
-	line "POLICE agent!"
+_SSAnne1FRoomsNurse_BeforeHealText::
+	text "You look tired."
+	line "Please, rest here"
+	cont "for a bit."
+	prompt
 
-	para "I'm on the trail"
-	line "of TEAM ROCKET!"
+_SSAnne1FRoomsNurse_AfterHealText::
+	text "Your #MON are"
+	line "looking great!"
+
+	para "Did you rest well?"
+	line "Come back anytime"
+	cont "if you need to"
+	cont "take a break."
 	done

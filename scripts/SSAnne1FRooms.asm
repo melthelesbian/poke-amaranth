@@ -25,7 +25,7 @@ SSAnne1FRooms_TextPointers:
 	dw_const SSAnne1FRoomsWigglytuffText,    TEXT_SSANNE1FROOMS_WIGGLYTUFF
 	dw_const SSAnne1FRoomsGirl2Text,         TEXT_SSANNE1FROOMS_GIRL2
 	dw_const PickUpItemText,                 TEXT_SSANNE1FROOMS_TM_SUBSTITUTE
-	dw_const SSAnne1FRoomsGentleman3Text,    TEXT_SSANNE1FROOMS_GENTLEMAN3
+	dw_const SSAnne1FRoomsNurseText,         TEXT_SSANNE1FROOMS_NURSE
 
 SSAnne8TrainerHeaders:
 	def_trainers
@@ -134,6 +134,40 @@ SSAnne1FRoomsGirl2Text:
 	text_far _SSAnne1FRoomsGirl2Text
 	text_end
 
-SSAnne1FRoomsGentleman3Text:
-	text_far _SSAnne1FRoomsGentleman3Text
+SSAnne1FRoomsNurseText:
+	text_asm
+	ld hl, SSAnne1FRoomsNurse_BeforeHealText
+	call PrintText
+	call GBFadeOutToBlack
+	call ReloadMapData
+	predef HealParty
+	ld a, [wAudioROMBank]
+	cp BANK("Audio Engine 3")
+	ld [wAudioSavedROMBank], a
+	jr nz, .not_audio_engine_3
+	ld a, SFX_STOP_ALL_MUSIC
+	ld [wNewSoundID], a
+	call PlaySound
+	ld a, BANK(Music_PkmnHealed)
+	ld [wAudioROMBank], a
+.not_audio_engine_3
+	ld a, MUSIC_PKMN_HEALED
+	ld [wNewSoundID], a
+	call PlaySound
+.loop
+	ld a, [wChannelSoundIDs]
+	cp MUSIC_PKMN_HEALED
+	jr z, .loop
+	call PlayDefaultMusic
+	call GBFadeInFromBlack
+	ld hl, SSAnne1FRoomsNurse_AfterHealText
+	call PrintText
+	jp TextScriptEnd
+
+SSAnne1FRoomsNurse_BeforeHealText:
+	text_far _SSAnne1FRoomsNurse_BeforeHealText
+	text_end
+
+SSAnne1FRoomsNurse_AfterHealText:
+	text_far _SSAnne1FRoomsNurse_AfterHealText
 	text_end
