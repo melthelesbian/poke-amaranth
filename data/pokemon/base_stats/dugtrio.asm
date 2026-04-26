@@ -16,7 +16,7 @@
 	; tm/hm learnset
 	tmhm	SWORDS_DANCE, HEADBUTT,     TELEPORT,   HYPER_BEAM,  AGILITY,    \
 			EARTHQUAKE,   FOCUS_ENERGY, DIG,        DOUBLE_DASH, BIDE,       \
-			SWIFT,        SKULL_BASH,   ROCK_SLIDE, FURY_CUT,    SUBSTITUTE, \
+			SWIFT,        SKULL_BASH,   ROCK_SLIDE, TWIN_SLICE,    SUBSTITUTE, \
 			CUT,                                    STRENGTH
 	; end
 

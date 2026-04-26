@@ -11,7 +11,7 @@ SandslashEvosMoves:
 	db 17, GLARE
 	db 21, DIG
 	db 27, SLASH
-	db 34, FURY_CUT
+	db 34, TWIN_SLICE
 	db 41, FOCUS_ENERGY
 	db 48, EARTHQUAKE
 	db 0

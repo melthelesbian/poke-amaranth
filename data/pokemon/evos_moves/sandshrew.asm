@@ -11,7 +11,7 @@ SandshrewEvosMoves:
 	db 17, GLARE
 	db 21, DIG
 	db 26, SLASH
-	db 32, FURY_CUT
+	db 32, TWIN_SLICE
 	db 39, FOCUS_ENERGY
 	db 46, EARTHQUAKE
 	db 0

@@ -8,7 +8,7 @@ KabutoEvosMoves:
 	db 6, BUBBLE
 	db 10, ABSORB
 	db 14, FURY_SWIPES
-	db 18, FURY_CUT
+	db 18, TWIN_SLICE
 	db 23, WHIRLPOOL
 	db 28, LEECH_LIFE
 	db 34, SLASH

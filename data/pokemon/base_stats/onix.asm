@@ -16,7 +16,7 @@
 	; tm/hm learnset
 	tmhm	SWORDS_DANCE, HEADBUTT,   HYPER_BEAM,  AGILITY,     CRUNCH,    \
 			DRAGONBREATH, EARTHQUAKE, DIG,         BIDE,       SKULL_BASH, \
-			HYPNOSIS,     REST,       HEAVY_SMASH, ROCK_SLIDE, FURY_CUT,   \
+			HYPNOSIS,     REST,       HEAVY_SMASH, ROCK_SLIDE, TWIN_SLICE,   \
 			SUBSTITUTE,                                                    \
 			CUT,                                   STRENGTH
 	; end

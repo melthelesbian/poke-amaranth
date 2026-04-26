@@ -30,7 +30,7 @@ AttackAnimationPointers:
 	dw MudSlapAnim
 	dw HeadbuttAnim
 	dw HornAttackAnim
-	dw FuryCutAnim
+	dw TwinSliceAnim
 	dw BugBuzzAnim
 	dw TackleAnim
 	dw BodySlamAnim
@@ -302,7 +302,7 @@ SwordsDanceAnim:
 	battle_anim SWORDS_DANCE_ANIM, SUBANIM_1_SWORDS_CIRCLING, 1, 6
 	db -1 ; end
 
-FuryCutAnim:
+TwinSliceAnim:
 CutAnim:
 	battle_anim CUT_ANIM, SE_DARK_SCREEN_FLASH
 	battle_anim NO_MOVE_ANIM, SUBANIM_0_SLICE, 0, 4

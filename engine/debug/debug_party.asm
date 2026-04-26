@@ -189,7 +189,7 @@ DebugItemsList:
 	db TM_PAY_DAY, 1
 	db TM_HEAVY_SMASH, 1
 	db TM_ROCK_SLIDE, 1
-	db TM_FURY_CUT, 1
+	db TM_TWIN_SLICE, 1
 	db TM_SUBSTITUTE, 1
 	db TM_METRONOME, 1
 	db HM_CUT, 1

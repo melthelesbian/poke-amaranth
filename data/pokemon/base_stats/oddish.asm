@@ -17,7 +17,7 @@
 	tmhm	SWORDS_DANCE, HEADBUTT,   TOXIC,      RAZOR_LEAF,   LIGHT_SCREEN, \
 			REFLECT,      MEGA_DRAIN, SOLARBEAM,  FOCUS_ENERGY, DIG,          \
 			BIDE,         SLUDGE,     HYPNOSIS,   VENOM_STRIKE, REST,         \
-			PAY_DAY,      FURY_CUT,   SUBSTITUTE,                             \
+			PAY_DAY,      TWIN_SLICE,   SUBSTITUTE,                             \
 			CUT,                                  STRENGTH,     FLASH
 	; end
 

@@ -19,7 +19,7 @@
 			PSYWAVE,      MIMIC,        DOUBLE_DASH,  SHADOW_TEAR,  BIDE,        \
 			SLUDGE,       BUG_BUZZ,     SWIFT,        SKULL_BASH,   HYPNOSIS,    \
 			DREAM_EATER,  VENOM_STRIKE, REST,         PAY_DAY,      HEAVY_SMASH, \
-			FURY_CUT,     SUBSTITUTE,                                            \
+			TWIN_SLICE,     SUBSTITUTE,                                            \
 			CUT,          FLY,                                     FLASH
 	; end
 

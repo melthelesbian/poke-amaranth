@@ -18,7 +18,7 @@
 			HYPER_BEAM, LIGHT_SCREEN, REFLECT,  CRUNCH,   MEGA_DRAIN,  \
 			SOLARBEAM,  FOCUS_ENERGY, DIG,      BIDE,     SLUDGE,      \
 			HYPNOSIS,   VENOM_STRIKE, REST,     PAY_DAY,  HEAVY_SMASH, \
-			FURY_CUT,   SUBSTITUTE,                                    \
+			TWIN_SLICE,   SUBSTITUTE,                                    \
 			CUT,                                STRENGTH, FLASH
 	; end
 

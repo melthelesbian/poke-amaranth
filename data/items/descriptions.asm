@@ -150,7 +150,7 @@ ItemDescriptions:
 	dw PayDayDescription
 	dw HeavySmashDescription
 	dw RockSlideDescription
-	dw FuryCutDescription
+	dw TwinSliceDescription
 	dw SubstituteDescription
 	dw MetronomeDescription
 

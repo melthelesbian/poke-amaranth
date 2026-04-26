@@ -205,7 +205,7 @@ DEF TM01 EQU const_value
 	add_tm  PAY_DAY
 	add_tm  HEAVY_SMASH
 	add_tm  ROCK_SLIDE
-	add_tm  FURY_CUT
+	add_tm  TWIN_SLICE
 	add_tm  SUBSTITUTE
 	add_tm  METRONOME
 ASSERT NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the number of add_tm definitions"

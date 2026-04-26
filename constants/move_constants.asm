@@ -37,7 +37,7 @@
 	const MUD_SLAP     ; 28
 	const HEADBUTT     ; 29
 	const HORN_ATTACK  ; 30
-	const FURY_CUT     ; 31
+	const TWIN_SLICE     ; 31
 	const BUG_BUZZ     ; 32
 	const TACKLE       ; 33
 	const BODY_SLAM    ; 34

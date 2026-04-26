@@ -17,7 +17,7 @@
 	tmhm	SWORDS_DANCE, HEADBUTT,    TOXIC,      RAZOR_LEAF,   CRUNCH,       \
 			MEGA_DRAIN,   SOLARBEAM,   EARTHQUAKE, FOCUS_ENERGY, DIG,          \
 			BIDE,         SLUDGE,      SKULL_BASH, HYPNOSIS,     VENOM_STRIKE, \
-			REST,         HEAVY_SMASH, FURY_CUT,   SUBSTITUTE,                 \
+			REST,         HEAVY_SMASH, TWIN_SLICE,   SUBSTITUTE,                 \
 			CUT,                                   STRENGTH
 	; end
 

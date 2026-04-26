@@ -16,7 +16,7 @@
 	; tm/hm learnset
 	tmhm	RAZOR_WIND,   HEADBUTT,     HYPER_BEAM, AGILITY,      CRUNCH,     \
 			DRAGONBREATH, FOCUS_ENERGY, BIDE,       FLAMETHROWER, SKULL_BASH, \
-			REST,         ROCK_SLIDE,   FURY_CUT,   SUBSTITUTE,               \
+			REST,         ROCK_SLIDE,   TWIN_SLICE,   SUBSTITUTE,               \
 			CUT,          FLY,                      STRENGTH
 	; end
 

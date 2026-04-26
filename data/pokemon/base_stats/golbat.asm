@@ -17,7 +17,7 @@
 	tmhm	RAZOR_WIND,   SWORDS_DANCE, HEADBUTT,     TOXIC,      HYPER_BEAM,  \
 			AGILITY,      CRUNCH,       FOCUS_ENERGY, MIMIC,      DOUBLE_DASH, \
 			BIDE,         SLUDGE,       SWIFT,        SKULL_BASH, HYPNOSIS,    \
-			VENOM_STRIKE, REST,         PAY_DAY,      FURY_CUT,   SUBSTITUTE,  \
+			VENOM_STRIKE, REST,         PAY_DAY,      TWIN_SLICE,   SUBSTITUTE,  \
 			CUT,          FLY,                                    FLASH
 	; end
 

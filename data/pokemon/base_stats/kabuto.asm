@@ -17,7 +17,7 @@
 	tmhm	SWORDS_DANCE, TOXIC,        BUBBLEBEAM, AGILITY,      CRUNCH,      \
 			MEGA_DRAIN,   FOCUS_ENERGY, DIG,        MIMIC,        BIDE,        \
 			BUG_BUZZ,     SWIFT,        SKULL_BASH, VENOM_STRIKE, HEAVY_SMASH, \
-			ROCK_SLIDE,   FURY_CUT,     SUBSTITUTE,                            \
+			ROCK_SLIDE,   TWIN_SLICE,     SUBSTITUTE,                            \
 			CUT,                        SURF
 	; end
 

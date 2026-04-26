@@ -41,7 +41,7 @@ Moves:
 	move MUD_SLAP,     CONFUSION_SIDE_EFFECT,      40,   GROUND,       100, 25 ; (SAND_ATTACK)
 	move HEADBUTT,     FLINCH_SIDE_EFFECT2,        70,   NORMAL,       100, 15
 	move HORN_ATTACK,  NO_ADDITIONAL_EFFECT,       40,   ROCK,         100, 30
-	move FURY_CUT,     RAGE_EFFECT,                40,   BUG,          95,  20 ; (FURY_ATTACK)
+	move TWIN_SLICE,   ATTACK_TWICE_EFFECT,        35,   BUG,          100, 20 ; (FURY_ATTACK)
 	move BUG_BUZZ,     SPECIAL_DOWN_SIDE_EFFECT,   90,   BUG,          100, 10 ; (HORN_DRILL)
 	move TACKLE,       NO_ADDITIONAL_EFFECT,       40,   NORMAL,       100, 35
 	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,      90,   NORMAL,       100, 15

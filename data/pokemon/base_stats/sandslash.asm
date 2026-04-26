@@ -17,7 +17,7 @@
 	tmhm	SWORDS_DANCE, HEADBUTT,    DOUBLE_KICK, HYPER_BEAM,   AGILITY,    \
 			SUBMISSION,   CRUNCH,      EARTHQUAKE,  FOCUS_ENERGY, DIG,        \
 			MIMIC,        DOUBLE_DASH, BIDE,        SWIFT,        SKULL_BASH, \
-			REST,         PAY_DAY,     HEAVY_SMASH, ROCK_SLIDE,   FURY_CUT,   \
+			REST,         PAY_DAY,     HEAVY_SMASH, ROCK_SLIDE,   TWIN_SLICE,   \
 			SUBSTITUTE,                                                       \
 			CUT,                                    STRENGTH
 	; end

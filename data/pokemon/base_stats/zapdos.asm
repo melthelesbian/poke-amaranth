@@ -17,7 +17,7 @@
 	tmhm	RAZOR_WIND,   SWORDS_DANCE, HEADBUTT,    THUNDER_WAVE, HYPER_BEAM,  \
 			LIGHT_SCREEN, REFLECT,      AGILITY,     CRUNCH,       THUNDERBOLT, \
 			FOCUS_ENERGY, MIMIC,        DOUBLE_DASH, BIDE,         SWIFT,       \
-			SKULL_BASH,   REST,         HEAVY_SMASH, FURY_CUT,     SUBSTITUTE,  \
+			SKULL_BASH,   REST,         HEAVY_SMASH, TWIN_SLICE,     SUBSTITUTE,  \
 			              FLY,                       STRENGTH,     FLASH
 	; end
 

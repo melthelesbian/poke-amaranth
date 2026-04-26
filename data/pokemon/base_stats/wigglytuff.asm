@@ -19,7 +19,7 @@
 			REFLECT,    CRUNCH,    MEGA_DRAIN,   THUNDERBOLT, FOCUS_ENERGY, \
 			DIG,        PSYCHIC_M, PSYWAVE,      MIMIC,       DOUBLE_DASH,  \
 			BIDE,       SWIFT,     SKULL_BASH,   HYPNOSIS,    DREAM_EATER,  \
-			REST,       MOONBLAST, PAY_DAY,      HEAVY_SMASH, FURY_CUT,     \
+			REST,       MOONBLAST, PAY_DAY,      HEAVY_SMASH, TWIN_SLICE,     \
 			SUBSTITUTE,                                                     \
 			CUT,                   SURF,         STRENGTH,    FLASH
 	; end

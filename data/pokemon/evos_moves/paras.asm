@@ -10,7 +10,7 @@ ParasEvosMoves:
 	db 14, FURY_SWIPES
 	db 17, STUN_CLOUD
 	db 18, POISON_CLOUD
-	db 22, FURY_CUT
+	db 22, TWIN_SLICE
 	db 26, SLEEP_CLOUD
 	db 30, MEGA_DRAIN
 	db 35, SLASH

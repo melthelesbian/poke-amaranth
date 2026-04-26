@@ -17,7 +17,7 @@
 	tmhm	RAZOR_WIND,  SWORDS_DANCE, TOXIC,      HYPER_BEAM,   AGILITY, \
 			CRUNCH,      FOCUS_ENERGY, DIG,        DOUBLE_DASH,  BIDE,    \
 			SLUDGE,      BUG_BUZZ,     SWIFT,      VENOM_STRIKE, REST,    \
-			HEAVY_SMASH, FURY_CUT,     SUBSTITUTE,                        \
+			HEAVY_SMASH, TWIN_SLICE,     SUBSTITUTE,                        \
 			CUT,         FLY
 	; end
 

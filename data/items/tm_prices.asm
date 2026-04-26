@@ -49,7 +49,7 @@ TechnicalMachinePrices:
 	nybble 1 ; TM46	PAY DAY
 	nybble 3 ; TM47	HVY SMASH
 	nybble 3 ; TM48	ROCKSLIDE
-	nybble 2 ; TM49	FURY CUT
+	nybble 2 ; TM49	TWIN SLICE
 	nybble 1 ; TM50	SUBST.
 	nybble 5 ; TM51	METRONOME
 	end_nybble_array NUM_TMS

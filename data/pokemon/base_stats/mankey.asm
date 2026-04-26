@@ -18,7 +18,7 @@
 			THUNDERPUNCH, DOUBLE_KICK,  AGILITY,    SUBMISSION,  CRUNCH,      \
 			EARTHQUAKE,   DIG,          MIMIC,      DOUBLE_DASH, BIDE,        \
 			FLARE_RUSH,   SWIFT,        SKULL_BASH, PAY_DAY,     HEAVY_SMASH, \
-			ROCK_SLIDE,   FURY_CUT,     SUBSTITUTE,                           \
+			ROCK_SLIDE,   TWIN_SLICE,     SUBSTITUTE,                           \
 			CUT,                                    STRENGTH
 	; end
 

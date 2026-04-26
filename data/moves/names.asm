@@ -30,7 +30,7 @@ MoveNames::
 	li "MUD SLAP"
 	li "HEADBUTT"
 	li "HORN ATTACK"
-	li "FURY CUT"
+	li "TWIN SLICE"
 	li "BUG BUZZ"
 	li "TACKLE"
 	li "BODY SLAM"

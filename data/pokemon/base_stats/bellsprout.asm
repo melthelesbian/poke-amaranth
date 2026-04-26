@@ -16,7 +16,7 @@
 	; tm/hm learnset
 	tmhm	HEADBUTT,     TOXIC,        RAZOR_LEAF,   LIGHT_SCREEN, REFLECT,    \
 			MEGA_DRAIN,   SOLARBEAM,    EARTHQUAKE,   FOCUS_ENERGY, BIDE,       \
-			SLUDGE,       VENOM_STRIKE, REST,         FURY_CUT,     SUBSTITUTE, \
+			SLUDGE,       VENOM_STRIKE, REST,         TWIN_SLICE,     SUBSTITUTE, \
 			CUT,                                                    FLASH
 	; end
 

@@ -17,7 +17,7 @@
 	tmhm	SWORDS_DANCE, HEADBUTT,   HYPER_BEAM,   AGILITY,    SUBMISSION, \
 			CRUNCH,       MEGA_DRAIN, FOCUS_ENERGY, DIG,        MIMIC,      \
 			BIDE,         BUG_BUZZ,   SWIFT,        SKULL_BASH, REST,       \
-			HEAVY_SMASH,  FURY_CUT,   SUBSTITUTE,                           \
+			HEAVY_SMASH,  TWIN_SLICE,   SUBSTITUTE,                           \
 			CUT,                                    STRENGTH
 	; end
 

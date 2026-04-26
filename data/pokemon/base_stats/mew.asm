@@ -23,7 +23,7 @@
 	     MIMIC,        DOUBLE_DASH,  SHADOW_TEAR,  BIDE,         FLAMETHROWER, \
 	     SLUDGE,       BUG_BUZZ,     FLARE_RUSH,   SWIFT,        SKULL_BASH,   \
 	     HYPNOSIS,     DREAM_EATER,  VENOM_STRIKE, REST,         MOONBLAST,    \
-	     PAY_DAY,      HEAVY_SMASH,  ROCK_SLIDE,   FURY_CUT,     SUBSTITUTE,   \
+	     PAY_DAY,      HEAVY_SMASH,  ROCK_SLIDE,   TWIN_SLICE,     SUBSTITUTE,   \
 		 METRONOME,                                                            \
 	     CUT,          FLY,          SURF,         STRENGTH,     FLASH,        \
 	; end

@@ -8,7 +8,7 @@ ScytherEvosMoves:
 	db 12, FEINT_ATTACK
 	db 18, FURY_SWIPES
 	db 24, AGILITY
-	db 30, FURY_CUT
+	db 30, TWIN_SLICE
 	db 37, SLASH
 	db 45, NIGHT_SLASH
 	db 54, SWORDS_DANCE

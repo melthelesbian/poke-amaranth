@@ -17,7 +17,7 @@
 	tmhm 	RAZOR_WIND,   HEADBUTT,    TOXIC,       AGILITY,     CRUNCH,       \
 			FOCUS_ENERGY, MIMIC,       DOUBLE_DASH, SHADOW_TEAR, BIDE,         \
 			SLUDGE,       FLARE_RUSH,  SWIFT,       SKULL_BASH,  VENOM_STRIKE, \
-			REST,         HEAVY_SMASH, FURY_CUT,    SUBSTITUTE,                \
+			REST,         HEAVY_SMASH, TWIN_SLICE,    SUBSTITUTE,                \
 			CUT,          FLY
 	; end
 

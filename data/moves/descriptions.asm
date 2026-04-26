@@ -30,7 +30,7 @@ MoveDescriptions:
 	dw MudSlapDescription
 	dw HeadbuttDescription
 	dw HornAttackDescription
-	dw FuryCutDescription
+	dw TwinSliceDescription
 	dw BugBuzzDescription
 	dw TackleDescription
 	dw BodySlamDescription
@@ -287,9 +287,9 @@ HornAttackDescription:
 	db "A sturdy horn that"
 	feed "bludgeons the foe.@"
 
-FuryCutDescription:
-	db "If a foe strikes,"
-	feed "sharply raise ATK.@"
+TwinSliceDescription:
+	db "Slices the foe."
+	feed "Hits twice.@"
 
 BugBuzzDescription:
 	db "A painful buzzing."

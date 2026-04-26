@@ -16,7 +16,7 @@
 	; tm/hm learnset
 	tmhm	SWORDS_DANCE, ICE_PUNCH,    BUBBLEBEAM, ICE_BEAM,    CRUNCH,   \
 			WATERFALL,    FOCUS_ENERGY, DIG,        MIMIC,       BIDE,     \
-			SWIFT,        SKULL_BASH,   REST,       HEAVY_SMASH, FURY_CUT, \
+			SWIFT,        SKULL_BASH,   REST,       HEAVY_SMASH, TWIN_SLICE, \
 			SUBSTITUTE,                                                    \
 			CUT,                        SURF,       STRENGTH 
 	; end

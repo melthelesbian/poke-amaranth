@@ -18,7 +18,7 @@
 			MEGA_DRAIN,   FOCUS_ENERGY, PSYCHIC_M,   PSYWAVE,     MIMIC,        \
 			DOUBLE_DASH,  SHADOW_TEAR,  BIDE,        SLUDGE,      BUG_BUZZ,     \
 			SWIFT,        SKULL_BASH,   HYPNOSIS,    DREAM_EATER, VENOM_STRIKE, \
-			REST,         PAY_DAY,      HEAVY_SMASH, FURY_CUT,    SUBSTITUTE,   \
+			REST,         PAY_DAY,      HEAVY_SMASH, TWIN_SLICE,    SUBSTITUTE,   \
 			CUT,                                                  FLASH
 	; end
 
