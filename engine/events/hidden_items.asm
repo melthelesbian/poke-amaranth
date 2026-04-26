@@ -18,6 +18,7 @@ HiddenItems:
 	call GetItemName
 	tx_pre_jump FoundHiddenItemText
 .nope
+	predef GetTileAndCoordsInFrontOfPlayer
 	predef TryFieldMove
 	ret
 
