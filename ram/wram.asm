@@ -1173,7 +1173,7 @@ wLearnMoveMonName:: ds NAME_LENGTH
 ENDU
 
 ; money received after battle = base money × level of last enemy mon
-wTrainerBaseMoney:: dw ; BCD
+wTrainerBaseMoney:: ds 3 ; BCD3
 
 wMissableObjectCounter:: db
 

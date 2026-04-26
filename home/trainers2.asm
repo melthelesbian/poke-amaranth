@@ -8,7 +8,7 @@ GetTrainerInformation::
 	ld a, [wTrainerClass]
 	dec a
 	ld hl, TrainerPicAndMoneyPointers
-	ld bc, $4 ; [INFO] Trainer Pic & Money Table Width
+	ld bc, 5 ; [INFO] Trainer Pic & Money Table Width
 	call AddNTimes
 	ld de, wTrainerPicPointer
 	ld a, [hli]
@@ -17,6 +17,9 @@ GetTrainerInformation::
 	ld a, [hli]
 	ld [de], a
 	ld de, wTrainerBaseMoney
+	ld a, [hli]
+	ld [de], a
+	inc de
 	ld a, [hli]
 	ld [de], a
 	inc de
