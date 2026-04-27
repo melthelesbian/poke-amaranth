@@ -48,7 +48,7 @@ _StoppedEvolvingText::
 	text "Huh? @"
 	text_ram wStringBuffer
 	text_start
-	line "stopped evolving!"
+	line "stopped changing!"
 	prompt
 
 _IsEvolvingText::
