@@ -22,7 +22,9 @@ _CeladonMartRoofLittleGirlReceivedTM08Text::
 	text_end
 
 _CeladonMartRoofLittleGirlTM08ExplanationText::
-	text "TM08 contains"
+	text_start
+
+	para "TM08 contains"
 	line "ICE PUNCH!"
 
 	para "It can freeze the"
@@ -48,7 +50,9 @@ _CeladonMartRoofLittleGirlReceivedTM07Text::
 	text_end
 
 _CeladonMartRoofLittleGirlTM07ExplanationText::
-	text "TM07 contains"
+	text_start 
+	
+	para "TM07 contains"
 	line "FIRE PUNCH!"
 
 	para "It can burn the"
