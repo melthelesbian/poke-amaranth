@@ -53,6 +53,7 @@ HiddenItemCoords:
 	hidden_item UNDERGROUND_PATH_WEST_EAST,    21,   5
 	hidden_item CELADON_CITY,                  48,  15
 	hidden_item ROUTE_25,                      10,   1
+	hidden_item ROUTE_25,                       0,  11
 	hidden_item MT_MOON_B2F,                   33,   9
 	hidden_item SEAFOAM_ISLANDS_B3F,            9,  16
 	hidden_item VERMILION_CITY,                14,  11

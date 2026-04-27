@@ -434,6 +434,7 @@ IndigoPlateauHiddenObjects:
 Route25HiddenObjects:
 	hidden_object 38,  3, ETHER, HiddenItems
 	hidden_object 10,  1, ELIXIR, HiddenItems
+	hidden_object  0, 11, ANCIENT_HAIR, HiddenItems
 	db -1 ; end
 
 Route9HiddenObjects:
