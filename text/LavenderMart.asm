@@ -12,6 +12,10 @@ _LavenderMartBaldingGuyText::
 
 	para "Do you know where"
 	line "I can get them?"
+
+	para "What do you mean"
+	line "they don't make"
+	cont "them anymore?"
 	done
 
 _LavenderMartCooltrainerMReviveText::

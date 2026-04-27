@@ -84,15 +84,7 @@ _CeladonCityRocket2Text::
 	done
 
 _CeladonCityTrainerTips1Text::
-	text "TRAINER TIPS"
-
-	para "X ACCURACY boosts"
-	line "the accuracy of"
-	cont "techniques!"
-
-	para "DIRE HIT jacks up"
-	line "the likelihood of"
-	cont "critical hits!"
+	text "DON'T PANIC!"
 
 	para "Get your items at"
 	line "CELADON DEPT."

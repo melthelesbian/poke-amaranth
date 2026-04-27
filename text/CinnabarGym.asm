@@ -10,7 +10,7 @@ _CinnabarGymBlainePreBattleText::
 	cont "all challengers!"
 
 	para "Hah! You better"
-	line "have BURN HEAL!"
+	line "be ready to BURN!"
 	done
 
 _CinnabarGymBlaineReceivedVolcanoBadgeText::
@@ -203,7 +203,7 @@ _CinnabarGymGymGuideChampInMakingText::
 	line "with water!"
 
 	para "You better take"
-	line "some BURN HEALs!"
+	line "some PANACEA!"
 	done
 
 _CinnabarGymGymGuideBeatBlaineText::

@@ -1,10 +1,9 @@
 _CeladonMart2FMiddleAgedManText::
-	text "SUPER REPEL keeps"
-	line "weak #MON at"
-	cont "bay..."
+	text "I saw SUPER REPEL"
+	line "was discontinued."
 
-	para "Hmm, it's a more"
-	line "powerful REPEL!"
+	para "REPEL was upgraded"
+	line "to last longer!"
 	done
 
 _CeladonMart2FGirlText::

@@ -1,7 +1,7 @@
 _SaffronMartSuperNerdText::
-	text "MAX REPEL lasts"
-	line "longer than SUPER"
-	cont "REPEL for keeping"
+	text "REPEL is as good"
+	line "as MAX REPEL"
+	cont "was for keeping"
 	cont "weaker #MON"
 	cont "away!"
 	done
