@@ -199,7 +199,7 @@ WildDataPointers:
 	dw NothingWildMons
 	dw DiglettsCaveWildMons
 	dw VictoryRoad3FWildMons
-	dw NothingWildMons       ; Rocket Hideout B1F
+	dw RocketHideoutWildMons ; Rocket Hideout B1F
 	dw RocketHideoutWildMons ; Rocket Hideout B2F
 	dw RocketHideoutWildMons ; Rocket Hideout B3F
 	dw NothingWildMons       ; Rocket Hideout B4F
