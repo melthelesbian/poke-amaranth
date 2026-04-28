@@ -15,3 +15,9 @@ CeruleanMartCooltrainerMText:
 CeruleanMartCooltrainerFText:
 	text_far _CeruleanMartCooltrainerFText
 	text_end
+
+CeruleanMartClerkText:
+	script_mart POKE_BALL, POTION, REPEL, PANACEA
+
+CeruleanMartTMVendorText:
+	script_mart TM_HEADBUTT, TM_TELEPORT, TM_RAZOR_LEAF, TM_THUNDER_WAVE

@@ -20,3 +20,9 @@ CeladonMart5FSailorText:
 CeladonMart5FCurrentFloorSignText:
 	text_far _CeladonMart5FCurrentFloorSignText
 	text_end
+
+CeladonMart5FClerk1Text:
+	script_mart PP_UP, ETHER, MAX_ETHER, ELIXIR, MAX_ELIXIR
+
+CeladonMart5FClerk2Text:
+	script_mart HP_UP, PROTEIN, IRON, CARBOS, CALCIUM, RARE_CANDY

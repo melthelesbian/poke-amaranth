@@ -15,3 +15,9 @@ FuchsiaMartMiddleAgedManText:
 FuchsiaMartCooltrainerFText:
 	text_far _FuchsiaMartCooltrainerFText
 	text_end
+
+FuchsiaMartClerkText:
+	script_mart ULTRA_BALL, GREAT_BALL, SUPER_POTION, REVIVE, PANACEA, REPEL
+
+FuchsiaMartTMVendorText:
+	script_mart TM_FIRE_PUNCH, TM_ICE_PUNCH, TM_THUNDERPUNCH, TM_MIMIC, TM_SKULL_BASH

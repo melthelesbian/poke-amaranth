@@ -36,3 +36,9 @@ IndigoPlateauLobbyCooltrainerFText:
 
 IndigoPlateauLobbyLinkReceptionistText:
 	script_cable_club_receptionist
+
+IndigoPlateauLobbyClerkText:
+	script_mart ULTRA_BALL, GREAT_BALL, FULL_RESTORE, MAX_POTION, PANACEA, REVIVE, REPEL
+
+IndigoPlateauLobbyTMVendorText:
+	script_mart TM_BIDE, TM_BUBBLEBEAM, TM_THUNDERBOLT, TM_MEGA_DRAIN, TM_TOXIC, TM_PSYWAVE, TM_FLAMETHROWER, TM_EARTHQUAKE

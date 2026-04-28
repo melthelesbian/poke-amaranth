@@ -15,3 +15,10 @@ SaffronMartSuperNerdText:
 SaffronMartCooltrainerFText:
 	text_far _SaffronMartCooltrainerFText
 	text_end
+
+SaffronMartClerkText:
+	script_mart GREAT_BALL, HYPER_POTION, REPEL, ESCAPE_ROPE, PANACEA, REVIVE
+
+SaffronMartTMVendorText:
+	script_mart TM_SOLARBEAM, TM_WATERFALL, TM_FLARE_RUSH, TM_SWIFT, TM_SUBSTITUTE
+	

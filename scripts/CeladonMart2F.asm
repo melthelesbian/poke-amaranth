@@ -20,3 +20,9 @@ CeladonMart2FGirlText:
 CeladonMart2FCurrentFloorSignText:
 	text_far _CeladonMart2FCurrentFloorSignText
 	text_end
+
+CeladonMart2FClerk1Text:
+	script_mart GREAT_BALL, SUPER_POTION, REVIVE, REPEL, PANACEA
+
+CeladonMart2FClerk2Text:
+	script_mart TM_DOUBLE_DASH, TM_LIGHT_SCREEN, TM_REFLECT, TM_RAZOR_WIND, TM_BUG_BUZZ, TM_MEGA_PUNCH, TM_MOONBLAST, TM_HEAVY_SMASH, TM_SUBMISSION

@@ -15,3 +15,9 @@ VermilionMartCooltrainerMText:
 VermilionMartCooltrainerFText:
 	text_far _VermilionMartCooltrainerFText
 	text_end
+
+VermilionMartClerkText:
+	script_mart POKE_BALL, SUPER_POTION, REPEL, PANACEA
+
+VermilionMartTMVendorText:
+	script_mart TM_SWORDS_DANCE, TM_AGILITY, TM_DIG, TM_REST
