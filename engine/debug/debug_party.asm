@@ -18,17 +18,11 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; always using this character while I was debugging the program."
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
 	db EXEGGUTOR, 90
-IF DEF(_DEBUG)
 	db MEW, 5
-ELSE
-	db MEW, 20
-ENDC
 	db JOLTEON, 56
-	db DUGTRIO, 56
-	db ARTICUNO, 57
-IF DEF(_DEBUG)
+	db NIDORINA, 16
+	db FARFETCHD, 57
 	db PIKACHU, 5
-ENDC
 	db -1 ; end
 
 PrepareNewGameDebug: ; dummy except in _DEBUG
@@ -74,11 +68,11 @@ IF DEF(_DEBUG)
 	ld a, 15
 	ld [hl], a
 
-	; Articuno gets Fly.
-	ld hl, wPartyMon5Moves
+	; Farfetch'd gets Fly.
+	ld hl, wPartyMon5Moves + 1
 	ld a, FLY
 	ld [hl], a
-	ld hl, wPartyMon5PP
+	ld hl, wPartyMon5PP + 1
 	ld a, 15
 	ld [hl], a
 
@@ -141,6 +135,11 @@ DebugItemsList:
 	db ESCAPE_ROPE, 99
 	db RARE_CANDY, 99
 	db MASTER_BALL, 99
+	db LEAF_STONE, 99
+	db FIRE_STONE, 99
+	db THUNDER_STONE, 99
+	db WATER_STONE, 99
+	db MOON_STONE, 99
 	db TM_MEGA_PUNCH, 1
 	db TM_RAZOR_WIND, 1
 	db TM_SWORDS_DANCE, 1
