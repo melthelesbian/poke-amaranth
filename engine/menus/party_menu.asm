@@ -140,21 +140,20 @@ RedrawPartyMenu_::
 	ld a, [hli]
 	and a ; reached terminator?
 	jr z, .placeEvolutionStoneString ; if so, place the "NOT ABLE" string
-	inc hl
-	inc hl
 	cp EVOLVE_ITEM
-	jr nz, .checkEvolutionsLoop
+	jr nz, .skipEvolutionData
 ; if it's a stone evolution entry
-	dec hl
-	dec hl
-	ld b, [hl]
+	ld a, [hli]
+	ld b, a
 	ld a, [wEvoStoneItemID] ; the stone the player used
-	inc hl
-	inc hl
-	inc hl
 	cp b ; does the player's stone match this evolution entry's stone?
-	jr nz, .checkEvolutionsLoop
+	jr nz, .skipEvolutionData
 ; if it does match
+	ld a, [hli] ; minimum level requirement
+	ld b, a
+	ld a, [wLoadedMonLevel]
+	cp b
+	jr c, .placeEvolutionStoneLevel
 	ld de, .ableToEvolveText
 .placeEvolutionStoneString
 	ld bc, 20 + 9 ; down 1 row and right 9 columns
@@ -164,6 +163,34 @@ RedrawPartyMenu_::
 	call PlaceString
 	pop hl
 	jr .printLevel
+	;	Skip the remaining level and species bytes for this evolution entry.
+.skipEvolutionData
+	inc hl
+	inc hl
+	jr .checkEvolutionsLoop
+.placeEvolutionStoneLevel
+	ld a, b
+	ld [wd11e], a
+	ld bc, 20 + 9 ; down 1 row and right 9 columns
+	pop hl
+	push hl
+	add hl, bc
+.placeAtLevelText
+	ld de, .atLevelText
+	call PlaceString
+	ld h, b
+	ld l, c
+	ld a, '<LV>'
+	ld [hli], a
+.printEvolutionStoneLevel
+	ld de, wd11e
+	ld b, 1 | LEFT_ALIGN
+	ld c, 3
+	call PrintNumber
+	pop hl
+	jp .printLevel
+.atLevelText
+	db "REQ. @"
 .ableToEvolveText
 	db "ABLE@"
 .notAbleToEvolveText
