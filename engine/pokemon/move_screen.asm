@@ -214,7 +214,7 @@ PrintMoveScreenEffectIcons:
 	jr nz, .hcLoop
 	jr .statusEffect
 .highCritMove
-	hlcoord 18, 1
+	hlcoord 18, 12
 	ld [hl], '<CH>'
 	jp .finished
 .statusEffect
