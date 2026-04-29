@@ -11,6 +11,7 @@ I couldn't have made this hack without the help of [Luna](https://github.com/Jus
     * [Making the DEBUG functions more useful](https://github.com/pret/pokered/wiki/Making-the-Debug-Fight-Function-use-moves-other-than-Pound)
     * [Automatic Item Sorting](https://github.com/pret/pokered/wiki/Add-Item-Sorting-In-Bag)
     * [Increasing Money Won from Trainer Battles](https://github.com/pret/pokered/wiki/Increase-the-total-amount-of-money-that-can-be-won-from-trainer-battles)
+    * [Add or Subtract 10 with Left and Right Buttons in Item Menus](https://github.com/pret/pokered/wiki/Quantity-Menus:-Add-or-Subtract-10-with-Left-and-Right-Buttons)
     * [Running Shoes](https://github.com/pret/pokered/wiki/Running-Shoes)
     * [Trainer Style Selection](https://github.com/pret/pokered/wiki/Adding-Gender-Selection-(original-tutorial-done-by-Mateo))
     * [Reporting Dual-Type Move Effectiveness](https://github.com/pret/pokered/wiki/%5BARCHIVED%5D-Bugs-and-Glitches#dual-type-move-effectiveness-may-be-misreported)
