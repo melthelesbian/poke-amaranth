@@ -106,6 +106,7 @@ PlayerPCDeposit:
 	ld a, ITEMLISTMENU
 	ld [wListMenuID], a
 	call DisplayListMenuID
+	jp nz, .sortItems
 	jp c, PlayerPCMenu
 	call IsKeyItem
 	ld a, 1
@@ -136,6 +137,9 @@ PlayerPCDeposit:
 	ld hl, ItemWasStoredText
 	call PrintText
 	jp .loop
+.sortItems
+	callfar SortItems
+	jp .loop
 
 PlayerPCWithdraw:
 	xor a
@@ -160,6 +164,7 @@ PlayerPCWithdraw:
 	ld a, ITEMLISTMENU
 	ld [wListMenuID], a
 	call DisplayListMenuID
+	jp nz, .sortItems
 	jp c, PlayerPCMenu
 	call IsKeyItem
 	ld a, 1
@@ -190,6 +195,9 @@ PlayerPCWithdraw:
 	ld hl, WithdrewItemText
 	call PrintText
 	jp .loop
+.sortItems
+	callfar SortItems
+	jp .loop
 
 PlayerPCToss:
 	xor a
@@ -216,6 +224,7 @@ PlayerPCToss:
 	push hl
 	call DisplayListMenuID
 	pop hl
+	jp nz, .sortItems
 	jp c, PlayerPCMenu
 	push hl
 	call IsKeyItem
@@ -238,6 +247,9 @@ PlayerPCToss:
 	jp z, .loop
 .next
 	call TossItem ; disallows tossing key items
+	jp .loop
+.sortItems
+	callfar SortItems
 	jp .loop
 
 PlayersPCMenuEntries:
