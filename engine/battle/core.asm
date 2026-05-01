@@ -832,6 +832,22 @@ FaintEnemyPokemon:
 ; half of the total stat exp and normal exp will divided evenly amongst every party member
 	ld a, TRUE
 	ld [wBoostExpByExpAll], a
+; refresh enemy mon stats
+	push hl
+	push de
+	ld a, [wEnemyMonSpecies]
+	ld [wd0b5], a
+	call GetMonHeader
+	ld hl, wMonHBaseEXP
+	ld de, wEnemyMonBaseExp
+	ld a, [hl]
+	ld [de], a
+	ld hl, wMonHBaseStats
+	ld de, wEnemyMonBaseStats
+	ld bc, NUM_STATS
+	call CopyData
+	pop de
+	pop hl
 	ld a, [wPartyCount]
 	ld b, 0
 .gainExpFlagsLoop
