@@ -142,5 +142,14 @@
         "cyberspace"
       ]
     ]
-  }
+  },
+  "pokedex_number": 112,
+  "display_name": "PORYGON",
+  "cry": {
+    "base": "SFX_CRY_25",
+    "pitch": "$AA",
+    "length": "$FF"
+  },
+  "palette": "PAL_PORYGON",
+  "icon": "ICON_MON"
 }

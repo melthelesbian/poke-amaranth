@@ -123,5 +123,14 @@
         "bolts"
       ]
     ]
-  }
+  },
+  "pokedex_number": 74,
+  "display_name": "JOLTEON",
+  "cry": {
+    "base": "SFX_CRY_1A",
+    "pitch": "$3D",
+    "length": "$80"
+  },
+  "palette": "PAL_JOLTEON",
+  "icon": "ICON_QUADRUPED"
 }

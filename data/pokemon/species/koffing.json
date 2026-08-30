@@ -119,5 +119,14 @@
         "without warning"
       ]
     ]
-  }
+  },
+  "pokedex_number": 110,
+  "display_name": "KOFFING",
+  "cry": {
+    "base": "SFX_CRY_12",
+    "pitch": "$E6",
+    "length": "$DD"
+  },
+  "palette": "PAL_KOFFING",
+  "icon": "ICON_MON"
 }

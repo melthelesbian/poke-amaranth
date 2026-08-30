@@ -138,5 +138,14 @@
         "core as a gem"
       ]
     ]
-  }
+  },
+  "pokedex_number": 82,
+  "display_name": "STARMIE",
+  "cry": {
+    "base": "SFX_CRY_1E",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_STARMIE",
+  "icon": "ICON_HELIX"
 }

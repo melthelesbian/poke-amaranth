@@ -126,5 +126,14 @@
         "fickle meanness"
       ]
     ]
-  }
+  },
+  "pokedex_number": 26,
+  "display_name": "PERSIAN",
+  "cry": {
+    "base": "SFX_CRY_19",
+    "pitch": "$99",
+    "length": "$FF"
+  },
+  "palette": "PAL_PERSIAN",
+  "icon": "ICON_MON"
 }

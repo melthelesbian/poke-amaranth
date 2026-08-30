@@ -138,5 +138,14 @@
         "of poison it has"
       ]
     ]
-  }
+  },
+  "pokedex_number": 32,
+  "display_name": "VENOMOTH",
+  "cry": {
+    "base": "SFX_CRY_1A",
+    "pitch": "$29",
+    "length": "$80"
+  },
+  "palette": "PAL_VENOMOTH",
+  "icon": "ICON_BUG"
 }

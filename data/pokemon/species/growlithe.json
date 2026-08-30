@@ -128,5 +128,14 @@
         "its space"
       ]
     ]
-  }
+  },
+  "pokedex_number": 33,
+  "display_name": "GROWLITHE",
+  "cry": {
+    "base": "SFX_CRY_1F",
+    "pitch": "$20",
+    "length": "$40"
+  },
+  "palette": "PAL_GROWLITHE",
+  "icon": "ICON_QUADRUPED"
 }

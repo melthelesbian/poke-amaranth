@@ -111,5 +111,14 @@
         "blinding sand"
       ]
     ]
-  }
+  },
+  "pokedex_number": 12,
+  "display_name": "PIDGEY",
+  "cry": {
+    "base": "SFX_CRY_0E",
+    "pitch": "$DF",
+    "length": "$04"
+  },
+  "palette": "PAL_PIDGEY",
+  "icon": "ICON_BIRD"
 }

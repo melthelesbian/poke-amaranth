@@ -117,5 +117,14 @@
         "smaller horns"
       ]
     ]
-  }
+  },
+  "pokedex_number": 19,
+  "display_name": "NIDORAN\u2640",
+  "cry": {
+    "base": "SFX_CRY_01",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_NIDORAN_F",
+  "icon": "ICON_MON"
 }

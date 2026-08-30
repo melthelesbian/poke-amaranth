@@ -1,9 +1,9 @@
 ; pokemon ids
 ; indexes for:
-; - MonsterNames (see data/pokemon/names.asm)
+; - MonsterNames (see data/pokemon/names.gen.asm)
 ; - EvosMovesPointerTable (see data/pokemon/evos_moves.asm)
-; - CryData (see data/pokemon/cries.asm)
-; - PokedexOrder (see data/pokemon/dex_order.asm)
+; - CryData (see data/pokemon/cries.gen.asm)
+; - PokedexOrder (see data/pokemon/dex_order.gen.asm)
 ; - PokedexEntryPointers (see data/pokemon/dex_entries.asm)
 	const_def
 	const NO_MON             ; $00

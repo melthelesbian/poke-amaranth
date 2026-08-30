@@ -132,5 +132,14 @@
         "EXEGGCUTE"
       ]
     ]
-  }
+  },
+  "pokedex_number": 18,
+  "display_name": "EXEGGUTOR",
+  "cry": {
+    "base": "SFX_CRY_0D",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_EXEGGUTOR",
+  "icon": "ICON_GRASS"
 }

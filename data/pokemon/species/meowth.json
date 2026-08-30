@@ -124,5 +124,14 @@
         "loose change"
       ]
     ]
-  }
+  },
+  "pokedex_number": 25,
+  "display_name": "MEOWTH",
+  "cry": {
+    "base": "SFX_CRY_19",
+    "pitch": "$77",
+    "length": "$10"
+  },
+  "palette": "PAL_MEOWTH",
+  "icon": "ICON_MON"
 }

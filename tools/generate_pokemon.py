@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extract and generate Pokémon base-stat records."""
+"""Extract and generate Pokémon data records."""
 
 import json
 import re
@@ -13,8 +13,31 @@ SPECIES = ROOT / "data/pokemon/species"
 EVOS_MOVES = ROOT / "data/pokemon/evos_moves"
 DEX_ENTRIES = ROOT / "data/pokemon/dex_entries"
 DEX_TEXT = ROOT / "data/pokemon/dex_text"
+POKEMON_CONSTANTS = ROOT / "constants/pokemon_constants.asm"
 SPRITE_DECLARATIONS = (ROOT / "gfx/pics.asm", ROOT / "data/pokemon/mew.asm")
 EXPECTED_COUNT = 151
+SPECIAL_CRIES = {
+    30: ("SFX_CRY_00", "$00", "$00"), 31: ("SFX_CRY_00", "$00", "$00"),
+    49: ("SFX_CRY_00", "$00", "$00"), 51: ("SFX_CRY_00", "$00", "$00"),
+    55: ("SFX_CRY_00", "$00", "$00"), 60: ("SFX_CRY_00", "$00", "$00"),
+    61: ("SFX_CRY_00", "$00", "$00"), 62: ("SFX_CRY_00", "$00", "$00"),
+    66: ("SFX_CRY_00", "$80", "$10"), 67: ("SFX_CRY_00", "$00", "$00"),
+    68: ("SFX_CRY_1D", "$E0", "$80"), 78: ("SFX_CRY_22", "$FF", "$40"),
+    79: ("SFX_CRY_00", "$00", "$00"), 80: ("SFX_CRY_0E", "$E0", "$60"),
+    85: ("SFX_CRY_00", "$00", "$00"), 86: ("SFX_CRY_00", "$00", "$00"),
+    93: ("SFX_CRY_0F", "$40", "$C0"), 94: ("SFX_CRY_0F", "$20", "$C0"),
+    114: ("SFX_CRY_00", "$00", "$00"), 120: ("SFX_CRY_00", "$00", "$00"),
+    121: ("SFX_CRY_00", "$00", "$00"), 126: ("SFX_CRY_11", "$20", "$10"),
+    133: ("SFX_CRY_00", "$00", "$00"), 134: ("SFX_CRY_00", "$00", "$00"),
+    136: ("SFX_CRY_0F", "$40", "$80"), 139: ("SFX_CRY_00", "$00", "$00"),
+    145: ("SFX_CRY_00", "$00", "$00"), 155: ("SFX_CRY_00", "$00", "$00"),
+    158: ("SFX_CRY_00", "$00", "$00"), 159: ("SFX_CRY_00", "$00", "$00"),
+    160: ("SFX_CRY_00", "$00", "$00"), 161: ("SFX_CRY_00", "$00", "$00"),
+    171: ("SFX_CRY_00", "$00", "$00"), 173: ("SFX_CRY_00", "$00", "$00"),
+    174: ("SFX_CRY_00", "$00", "$00"), 180: ("SFX_CRY_1D", "$00", "$80"),
+    181: ("SFX_CRY_00", "$00", "$00"), 182: ("SFX_CRY_00", "$00", "$00"),
+    183: ("SFX_CRY_00", "$00", "$00"),
+}
 REQUIRED_FIELDS = (
     "id",
     "asm_name",
@@ -29,6 +52,11 @@ REQUIRED_FIELDS = (
     "evolutions",
     "learnset",
     "pokedex",
+    "pokedex_number",
+    "display_name",
+    "cry",
+    "palette",
+    "icon",
 )
 STAT_FIELDS = ("hp", "attack", "defense", "speed", "special")
 ALLOWED_FIELDS = set(REQUIRED_FIELDS)
@@ -68,6 +96,18 @@ def evo_move_blocks():
                 fail(f"{path}: duplicate evolution/learnset label {label}")
             blocks[label] = text[match.end():end]
     return blocks
+
+
+def internal_species_order():
+    order = []
+    for line in POKEMON_CONSTANTS.read_text().splitlines():
+        if re.match(r"^\s*const_skip\s*(?:;.*)?$", line):
+            order.append(None)
+        else:
+            match = re.match(r"^\s*const\s+([A-Za-z0-9_]+)\s*(?:;.*)?$", line)
+            if match:
+                order.append(match.group(1))
+    return order
 
 
 def dex_entry_blocks():
@@ -315,6 +355,17 @@ def validate_record(filename, record, seen_ids, seen_asm):
     description = pokedex["description"]
     if not isinstance(description, list) or len(description) != 2 or any(not isinstance(page, list) or len(page) != 3 or any(not isinstance(line, str) or not line for line in page) for page in description):
         fail(f"{prefix} pokedex description must contain two pages of three non-empty lines")
+    number = record["pokedex_number"]
+    if type(number) is not int or not 1 <= number <= EXPECTED_COUNT:
+        fail(f"{prefix} pokedex_number must be an integer from 1 to {EXPECTED_COUNT}")
+    if not isinstance(record["display_name"], str) or not record["display_name"] or len(record["display_name"]) > 10:
+        fail(f"{prefix} display_name must contain 1 to 10 characters")
+    cry = record["cry"]
+    if not isinstance(cry, dict) or set(cry) != {"base", "pitch", "length"} or any(not isinstance(value, str) or not value for value in cry.values()):
+        fail(f"{prefix} cry must contain base, pitch, and length symbols")
+    for field in ("palette", "icon"):
+        if not isinstance(record[field], str) or not record[field]:
+            fail(f"{prefix} {field} must be a non-empty symbol")
 
 
 def load_json_records():
@@ -333,15 +384,14 @@ def load_json_records():
             fail(f"{path}: top-level JSON value must be an object")
         validate_record(path.name, record, seen_ids, seen_asm)
         records.append((path.stem, record))
+    numbers = sorted(record["pokedex_number"] for _, record in records)
+    if numbers != list(range(1, EXPECTED_COUNT + 1)):
+        fail(f"Pokédex numbers must cover exactly 1 to {EXPECTED_COUNT}")
     return records
 
 
 def extract():
-    records = load_records()
-    SPECIES.mkdir(parents=True, exist_ok=True)
-    for filename, record in records:
-        (SPECIES / f"{filename}.json").write_text(json.dumps(record, indent=2) + "\n")
-    print(f"extracted {len(records)} species records")
+    fail("extract is no longer supported; species JSON is the canonical source")
 
 
 def asm_line_moves(moves):
@@ -401,6 +451,80 @@ def generate_dex_text(record):
     return "\n".join(lines)
 
 
+def generate_names(records):
+    by_name = {record["id"]: record for _, record in records}
+    lines = ["MonsterNames::", "\ttable_width NAME_LENGTH - 1, MonsterNames"]
+    for species in internal_species_order()[1:]:
+        record = by_name.get(species)
+        value = record["display_name"].ljust(10, "@") if record else "MISSINGNO."
+        lines.append(f'\tdb "{value}"')
+    lines.append("\tassert_table_length NUM_POKEMON_INDEXES")
+    return "\n".join(lines) + "\n"
+
+
+def generate_cries(records):
+    by_name = {record["id"]: record for _, record in records}
+    lines = [
+        "MACRO mon_cry",
+        "\tdb (\\1 - CRY_SFX_START) / 3",
+        "\tdb \\2, \\3",
+        "ENDM",
+        "",
+        "CryData::",
+        "\ttable_width 3, CryData",
+        "\t; base cry, pitch, length",
+    ]
+    for index, species in enumerate(internal_species_order()[1:]):
+        record = by_name.get(species) if species else None
+        if record:
+            cry = record["cry"]
+            lines.append(f'\tmon_cry {cry["base"]}, {cry["pitch"]}, {cry["length"]} ; {record["asm_name"]}')
+        else:
+            if index not in SPECIAL_CRIES:
+                fail(f"missing special cry data for internal Pokémon index {index + 1}")
+            base, pitch, length = SPECIAL_CRIES[index]
+            lines.append(f"\tmon_cry {base.strip()}, {pitch.strip()}, {length.strip()} ; MissingNo.")
+    lines.append("\tassert_table_length NUM_POKEMON_INDEXES")
+    return "\n".join(lines) + "\n"
+
+
+def generate_palettes(records):
+    ordered = sorted((record for _, record in records), key=lambda item: item["pokedex_number"])
+    lines = ["MonsterPalettes:", "\ttable_width 1, MonsterPalettes", "\tdb PAL_MISSINGNO"]
+    lines.extend(f"\tdb {record['palette']} ; {record['asm_name']}" for record in ordered)
+    lines.append("\tassert_table_length NUM_POKEMON + 1")
+    return "\n".join(lines) + "\n"
+
+
+def generate_icons(records):
+    ordered = sorted((record for _, record in records), key=lambda item: item["pokedex_number"])
+    lines = ["MonPartyData:", "\tnybble_array MonPartyData"]
+    lines.extend(f"\tnybble {record['icon']} ; {record['asm_name']}" for record in ordered)
+    lines.append("\tend_nybble_array NUM_POKEMON")
+    return "\n".join(lines) + "\n"
+
+
+def generate_pokedex_constants(records):
+    ordered = sorted((record for _, record in records), key=lambda item: item["pokedex_number"])
+    lines = [
+        "; Generated from data/pokemon/species/*.json.",
+        "\tconst_def 1",
+    ]
+    lines.extend(f"\tconst DEX_{record['id']} ; {record['pokedex_number']}" for record in ordered)
+    lines.append("DEF NUM_POKEMON EQU const_value - 1")
+    return "\n".join(lines) + "\n"
+
+
+def generate_dex_order(records):
+    by_name = {record["id"]: record for _, record in records}
+    lines = ["PokedexOrder:", "\ttable_width 1, PokedexOrder"]
+    for species in internal_species_order()[1:]:
+        record = by_name.get(species)
+        lines.append(f"\tdb DEX_{record['id']} ; {record['asm_name']}" if record else "\tdb 0 ; MISSINGNO.")
+    lines.append("\tassert_table_length NUM_POKEMON_INDEXES")
+    return "\n".join(lines) + "\n"
+
+
 def generate(filename, record):
     asm = [
         f"\tdb DEX_{record['id']} ; pokedex id",
@@ -442,6 +566,12 @@ def generate_all():
         (EVOS_MOVES / f"{filename}.gen.asm").write_text(generate_evos_moves(record))
         (DEX_ENTRIES / f"{filename}.gen.asm").write_text(generate_dex_entry(record))
         (DEX_TEXT / f"{filename}.gen.asm").write_text(generate_dex_text(record))
+    (ROOT / "data/pokemon/names.gen.asm").write_text(generate_names(records))
+    (ROOT / "data/pokemon/cries.gen.asm").write_text(generate_cries(records))
+    (ROOT / "data/pokemon/palettes.gen.asm").write_text(generate_palettes(records))
+    (ROOT / "data/pokemon/menu_icons.gen.asm").write_text(generate_icons(records))
+    (ROOT / "constants/pokedex_constants.gen.asm").write_text(generate_pokedex_constants(records))
+    (ROOT / "data/pokemon/dex_order.gen.asm").write_text(generate_dex_order(records))
     print(f"generated {len(records)} species records")
 
 

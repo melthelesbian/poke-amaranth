@@ -122,5 +122,14 @@
         "similar moves"
       ]
     ]
-  }
+  },
+  "pokedex_number": 95,
+  "display_name": "MAGNEMITE",
+  "cry": {
+    "base": "SFX_CRY_1C",
+    "pitch": "$80",
+    "length": "$60"
+  },
+  "palette": "PAL_MAGNEMITE",
+  "icon": "ICON_BALL"
 }

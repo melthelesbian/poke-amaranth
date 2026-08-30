@@ -109,5 +109,14 @@
         "more slothful"
       ]
     ]
-  }
+  },
+  "pokedex_number": 129,
+  "display_name": "SNORLAX",
+  "cry": {
+    "base": "SFX_CRY_05",
+    "pitch": "$55",
+    "length": "$01"
+  },
+  "palette": "PAL_SNORLAX",
+  "icon": "ICON_MON"
 }

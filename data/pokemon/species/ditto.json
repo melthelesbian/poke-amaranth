@@ -77,5 +77,14 @@
         "of the enemy"
       ]
     ]
-  }
+  },
+  "pokedex_number": 123,
+  "display_name": "DITTO",
+  "cry": {
+    "base": "SFX_CRY_0E",
+    "pitch": "$FF",
+    "length": "$FF"
+  },
+  "palette": "PAL_DITTO",
+  "icon": "ICON_MON"
 }

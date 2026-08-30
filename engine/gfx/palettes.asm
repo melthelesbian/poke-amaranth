@@ -634,7 +634,7 @@ CopySGBBorderTiles:
 
 INCLUDE "data/sgb/sgb_packets.asm"
 
-INCLUDE "data/pokemon/palettes.asm"
+INCLUDE "data/pokemon/palettes.gen.asm"
 
 INCLUDE "data/sgb/sgb_palettes.asm"
 

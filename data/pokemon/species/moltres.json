@@ -119,5 +119,14 @@
         "flash of flames"
       ]
     ]
-  }
+  },
+  "pokedex_number": 149,
+  "display_name": "MOLTRES",
+  "cry": {
+    "base": "SFX_CRY_09",
+    "pitch": "$F8",
+    "length": "$40"
+  },
+  "palette": "PAL_MOLTRES",
+  "icon": "ICON_BIRD"
 }

@@ -129,5 +129,14 @@
         "footprints"
       ]
     ]
-  }
+  },
+  "pokedex_number": 93,
+  "display_name": "DODUO",
+  "cry": {
+    "base": "SFX_CRY_0B",
+    "pitch": "$BB",
+    "length": "$01"
+  },
+  "palette": "PAL_DODUO",
+  "icon": "ICON_BIRD"
 }

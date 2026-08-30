@@ -123,5 +123,14 @@
         "cities in a rage"
       ]
     ]
-  }
+  },
+  "pokedex_number": 107,
+  "display_name": "GYARADOS",
+  "cry": {
+    "base": "SFX_CRY_17",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_GYARADOS",
+  "icon": "ICON_SNAKE"
 }

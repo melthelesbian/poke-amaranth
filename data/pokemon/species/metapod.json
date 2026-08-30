@@ -68,5 +68,14 @@
         "and tender body"
       ]
     ]
-  }
+  },
+  "pokedex_number": 36,
+  "display_name": "METAPOD",
+  "cry": {
+    "base": "SFX_CRY_1C",
+    "pitch": "$CC",
+    "length": "$01"
+  },
+  "palette": "PAL_METAPOD",
+  "icon": "ICON_BUG"
 }

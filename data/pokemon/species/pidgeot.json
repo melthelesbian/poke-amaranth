@@ -114,5 +114,14 @@
         "as MAGIKARP"
       ]
     ]
-  }
+  },
+  "pokedex_number": 14,
+  "display_name": "PIDGEOT",
+  "cry": {
+    "base": "SFX_CRY_14",
+    "pitch": "$11",
+    "length": "$FF"
+  },
+  "palette": "PAL_PIDGEOT",
+  "icon": "ICON_BIRD"
 }

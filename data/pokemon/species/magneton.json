@@ -124,5 +124,14 @@
         "flare up"
       ]
     ]
-  }
+  },
+  "pokedex_number": 96,
+  "display_name": "MAGNETON",
+  "cry": {
+    "base": "SFX_CRY_1C",
+    "pitch": "$20",
+    "length": "$C0"
+  },
+  "palette": "PAL_MAGNETON",
+  "icon": "ICON_BALL"
 }

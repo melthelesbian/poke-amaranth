@@ -138,5 +138,14 @@
         "enemies to sleep"
       ]
     ]
-  }
+  },
+  "pokedex_number": 45,
+  "display_name": "JIGGLYPUFF",
+  "cry": {
+    "base": "SFX_CRY_0E",
+    "pitch": "$FF",
+    "length": "$35"
+  },
+  "palette": "PAL_JIGGLYPUFF",
+  "icon": "ICON_FAIRY"
 }

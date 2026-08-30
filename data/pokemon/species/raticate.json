@@ -113,5 +113,14 @@
         "they are cut off"
       ]
     ]
-  }
+  },
+  "pokedex_number": 11,
+  "display_name": "RATICATE",
+  "cry": {
+    "base": "SFX_CRY_22",
+    "pitch": "$20",
+    "length": "$FF"
+  },
+  "palette": "PAL_RATICATE",
+  "icon": "ICON_QUADRUPED"
 }

@@ -145,5 +145,14 @@
         "hard to hold up"
       ]
     ]
-  }
+  },
+  "pokedex_number": 68,
+  "display_name": "VILEPLUME",
+  "cry": {
+    "base": "SFX_CRY_23",
+    "pitch": "$22",
+    "length": "$FF"
+  },
+  "palette": "PAL_VILEPLUME",
+  "icon": "ICON_GRASS"
 }

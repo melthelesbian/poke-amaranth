@@ -142,5 +142,14 @@
         "on its hind legs"
       ]
     ]
-  }
+  },
+  "pokedex_number": 2,
+  "display_name": "IVYSAUR",
+  "cry": {
+    "base": "SFX_CRY_0F",
+    "pitch": "$20",
+    "length": "$80"
+  },
+  "palette": "PAL_IVYSAUR",
+  "icon": "ICON_GRASS"
 }

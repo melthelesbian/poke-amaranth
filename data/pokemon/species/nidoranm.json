@@ -117,5 +117,14 @@
         "secreted venom"
       ]
     ]
-  }
+  },
+  "pokedex_number": 22,
+  "display_name": "NIDORAN\u2642",
+  "cry": {
+    "base": "SFX_CRY_00",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_NIDORAN_M",
+  "icon": "ICON_MON"
 }

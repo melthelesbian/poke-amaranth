@@ -116,5 +116,14 @@
         "or trip on them"
       ]
     ]
-  }
+  },
+  "pokedex_number": 49,
+  "display_name": "GEODUDE",
+  "cry": {
+    "base": "SFX_CRY_24",
+    "pitch": "$F0",
+    "length": "$10"
+  },
+  "palette": "PAL_GEODUDE",
+  "icon": "ICON_MON"
 }

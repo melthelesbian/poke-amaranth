@@ -116,5 +116,14 @@
         "and tail"
       ]
     ]
-  }
+  },
+  "pokedex_number": 40,
+  "display_name": "BEEDRILL",
+  "cry": {
+    "base": "SFX_CRY_13",
+    "pitch": "$60",
+    "length": "$80"
+  },
+  "palette": "PAL_BEEDRILL",
+  "icon": "ICON_BUG"
 }

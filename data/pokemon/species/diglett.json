@@ -119,5 +119,14 @@
         "above ground"
       ]
     ]
-  }
+  },
+  "pokedex_number": 97,
+  "display_name": "DIGLETT",
+  "cry": {
+    "base": "SFX_CRY_0B",
+    "pitch": "$AA",
+    "length": "$01"
+  },
+  "palette": "PAL_DIGLETT",
+  "icon": "ICON_MON"
 }

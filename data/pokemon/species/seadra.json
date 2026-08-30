@@ -127,5 +127,14 @@
         "stout tail"
       ]
     ]
-  }
+  },
+  "pokedex_number": 125,
+  "display_name": "SEADRA",
+  "cry": {
+    "base": "SFX_CRY_19",
+    "pitch": "$3C",
+    "length": "$01"
+  },
+  "palette": "PAL_SEADRA",
+  "icon": "ICON_WATER"
 }

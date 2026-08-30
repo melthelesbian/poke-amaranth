@@ -113,5 +113,14 @@
         "even stronger"
       ]
     ]
-  }
+  },
+  "pokedex_number": 100,
+  "display_name": "MACHOP",
+  "cry": {
+    "base": "SFX_CRY_1F",
+    "pitch": "$EE",
+    "length": "$01"
+  },
+  "palette": "PAL_MACHOP",
+  "icon": "ICON_MON"
 }

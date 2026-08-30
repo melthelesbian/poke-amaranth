@@ -125,5 +125,14 @@
         "to KO targets"
       ]
     ]
-  }
+  },
+  "pokedex_number": 117,
+  "display_name": "MAROWAK",
+  "cry": {
+    "base": "SFX_CRY_08",
+    "pitch": "$4F",
+    "length": "$60"
+  },
+  "palette": "PAL_MAROWAK",
+  "icon": "ICON_MON"
 }

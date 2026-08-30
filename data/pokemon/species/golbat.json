@@ -123,5 +123,14 @@
         "too heavy to fly"
       ]
     ]
-  }
+  },
+  "pokedex_number": 48,
+  "display_name": "GOLBAT",
+  "cry": {
+    "base": "SFX_CRY_1D",
+    "pitch": "$FA",
+    "length": "$80"
+  },
+  "palette": "PAL_GOLBAT",
+  "icon": "ICON_MON"
 }

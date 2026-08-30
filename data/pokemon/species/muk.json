@@ -123,5 +123,14 @@
         "contain poison"
       ]
     ]
-  }
+  },
+  "pokedex_number": 109,
+  "display_name": "MUK",
+  "cry": {
+    "base": "SFX_CRY_07",
+    "pitch": "$EF",
+    "length": "$FF"
+  },
+  "palette": "PAL_MUK",
+  "icon": "ICON_MON"
 }

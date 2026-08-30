@@ -136,5 +136,14 @@
         "other dimension"
       ]
     ]
-  }
+  },
+  "pokedex_number": 114,
+  "display_name": "HAUNTER",
+  "cry": {
+    "base": "SFX_CRY_1C",
+    "pitch": "$30",
+    "length": "$40"
+  },
+  "palette": "PAL_HAUNTER",
+  "icon": "ICON_MON"
 }

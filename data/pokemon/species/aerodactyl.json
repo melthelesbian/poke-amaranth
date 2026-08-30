@@ -114,5 +114,14 @@
         "saw-like fangs"
       ]
     ]
-  }
+  },
+  "pokedex_number": 143,
+  "display_name": "AERODACTYL",
+  "cry": {
+    "base": "SFX_CRY_23",
+    "pitch": "$20",
+    "length": "$F0"
+  },
+  "palette": "PAL_AERODACTYL",
+  "icon": "ICON_BIRD"
 }

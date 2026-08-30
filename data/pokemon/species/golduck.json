@@ -132,5 +132,14 @@
         "monster, Kappa"
       ]
     ]
-  }
+  },
+  "pokedex_number": 28,
+  "display_name": "GOLDUCK",
+  "cry": {
+    "base": "SFX_CRY_21",
+    "pitch": "$FF",
+    "length": "$40"
+  },
+  "palette": "PAL_GOLDUCK",
+  "icon": "ICON_MON"
 }

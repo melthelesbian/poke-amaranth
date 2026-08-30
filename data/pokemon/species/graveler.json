@@ -127,5 +127,14 @@
         "direction"
       ]
     ]
-  }
+  },
+  "pokedex_number": 50,
+  "display_name": "GRAVELER",
+  "cry": {
+    "base": "SFX_CRY_24",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_GRAVELER",
+  "icon": "ICON_MON"
 }

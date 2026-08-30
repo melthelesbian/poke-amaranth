@@ -114,5 +114,14 @@
         "for rest"
       ]
     ]
-  }
+  },
+  "pokedex_number": 16,
+  "display_name": "FEAROW",
+  "cry": {
+    "base": "SFX_CRY_18",
+    "pitch": "$40",
+    "length": "$A0"
+  },
+  "palette": "PAL_FEAROW",
+  "icon": "ICON_BIRD"
 }

@@ -117,5 +117,14 @@
         "in little time"
       ]
     ]
-  }
+  },
+  "pokedex_number": 89,
+  "display_name": "PONYTA",
+  "cry": {
+    "base": "SFX_CRY_25",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_PONYTA",
+  "icon": "ICON_QUADRUPED"
 }

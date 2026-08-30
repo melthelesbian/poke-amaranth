@@ -114,5 +114,14 @@
         "to be 5,000"
       ]
     ]
-  }
+  },
+  "pokedex_number": 78,
+  "display_name": "ALAKAZAM",
+  "cry": {
+    "base": "SFX_CRY_1C",
+    "pitch": "$98",
+    "length": "$FF"
+  },
+  "palette": "PAL_ALAKAZAM",
+  "icon": "ICON_MON"
 }

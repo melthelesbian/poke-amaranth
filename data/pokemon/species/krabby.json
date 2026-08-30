@@ -122,5 +122,14 @@
         "sideways"
       ]
     ]
-  }
+  },
+  "pokedex_number": 132,
+  "display_name": "KRABBY",
+  "cry": {
+    "base": "SFX_CRY_20",
+    "pitch": "$20",
+    "length": "$E0"
+  },
+  "palette": "PAL_KRABBY",
+  "icon": "ICON_WATER"
 }

@@ -117,5 +117,14 @@
         "any intruder"
       ]
     ]
-  }
+  },
+  "pokedex_number": 13,
+  "display_name": "PIDGEOTTO",
+  "cry": {
+    "base": "SFX_CRY_14",
+    "pitch": "$28",
+    "length": "$C0"
+  },
+  "palette": "PAL_PIDGEOTTO",
+  "icon": "ICON_BIRD"
 }

@@ -121,5 +121,14 @@
         "approach targets"
       ]
     ]
-  }
+  },
+  "pokedex_number": 47,
+  "display_name": "ZUBAT",
+  "cry": {
+    "base": "SFX_CRY_1D",
+    "pitch": "$E0",
+    "length": "$80"
+  },
+  "palette": "PAL_ZUBAT",
+  "icon": "ICON_MON"
 }

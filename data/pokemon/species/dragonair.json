@@ -131,5 +131,14 @@
         "conditions"
       ]
     ]
-  }
+  },
+  "pokedex_number": 145,
+  "display_name": "DRAGONAIR",
+  "cry": {
+    "base": "SFX_CRY_0F",
+    "pitch": "$40",
+    "length": "$80"
+  },
+  "palette": "PAL_DRAGONAIR",
+  "icon": "ICON_SNAKE"
 }

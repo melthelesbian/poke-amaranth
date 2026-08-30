@@ -127,5 +127,14 @@
         "bones"
       ]
     ]
-  }
+  },
+  "pokedex_number": 24,
+  "display_name": "NIDOKING",
+  "cry": {
+    "base": "SFX_CRY_09",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_NIDOKING",
+  "icon": "ICON_MON"
 }

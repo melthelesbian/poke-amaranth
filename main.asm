@@ -129,7 +129,7 @@ INCLUDE "engine/overworld/ledges.asm"
 
 SECTION "Pokémon Names", ROMX
 
-INCLUDE "data/pokemon/names.asm"
+INCLUDE "data/pokemon/names.gen.asm"
 INCLUDE "engine/movie/oak_speech/clear_save.asm"
 INCLUDE "engine/events/elevator.asm"
 
@@ -193,7 +193,7 @@ SECTION "Battle Engine 7", ROMX
 
 INCLUDE "data/moves/moves.gen.asm"
 INCLUDE "data/pokemon/base_stats.asm"
-INCLUDE "data/pokemon/cries.asm"
+INCLUDE "data/pokemon/cries.gen.asm"
 INCLUDE "engine/battle/unused_stats_functions.asm"
 INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
 INCLUDE "engine/battle/trainer_ai.asm"

@@ -125,5 +125,14 @@
         "power"
       ]
     ]
-  }
+  },
+  "pokedex_number": 42,
+  "display_name": "RAICHU",
+  "cry": {
+    "base": "SFX_CRY_09",
+    "pitch": "$EE",
+    "length": "$08"
+  },
+  "palette": "PAL_RAICHU",
+  "icon": "ICON_FAIRY"
 }

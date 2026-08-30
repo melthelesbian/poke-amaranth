@@ -127,5 +127,14 @@
         "powerful moves"
       ]
     ]
-  }
+  },
+  "pokedex_number": 21,
+  "display_name": "NIDOQUEEN",
+  "cry": {
+    "base": "SFX_CRY_0A",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_NIDOQUEEN",
+  "icon": "ICON_MON"
 }

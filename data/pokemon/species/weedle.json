@@ -69,5 +69,14 @@
         "on its head"
       ]
     ]
-  }
+  },
+  "pokedex_number": 38,
+  "display_name": "WEEDLE",
+  "cry": {
+    "base": "SFX_CRY_15",
+    "pitch": "$EE",
+    "length": "$01"
+  },
+  "palette": "PAL_WEEDLE",
+  "icon": "ICON_BUG"
 }

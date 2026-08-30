@@ -120,5 +120,14 @@
         "immobilize prey"
       ]
     ]
-  }
+  },
+  "pokedex_number": 131,
+  "display_name": "TENTACRUEL",
+  "cry": {
+    "base": "SFX_CRY_1A",
+    "pitch": "$EE",
+    "length": "$FF"
+  },
+  "palette": "PAL_TENTACRUEL",
+  "icon": "ICON_WATER"
 }

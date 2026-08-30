@@ -126,5 +126,14 @@
         "trying to stand"
       ]
     ]
-  }
+  },
+  "pokedex_number": 60,
+  "display_name": "POLIWAG",
+  "cry": {
+    "base": "SFX_CRY_0E",
+    "pitch": "$FF",
+    "length": "$FF"
+  },
+  "palette": "PAL_POLIWAG",
+  "icon": "ICON_MON"
 }

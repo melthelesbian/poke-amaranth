@@ -155,5 +155,14 @@
         "attract prey"
       ]
     ]
-  }
+  },
+  "pokedex_number": 67,
+  "display_name": "GLOOM",
+  "cry": {
+    "base": "SFX_CRY_08",
+    "pitch": "$AA",
+    "length": "$40"
+  },
+  "palette": "PAL_GLOOM",
+  "icon": "ICON_GRASS"
 }

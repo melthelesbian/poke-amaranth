@@ -278,7 +278,7 @@ GetPartyMonSpriteID:
 	srl a
 	ret
 
-INCLUDE "data/pokemon/menu_icons.asm"
+INCLUDE "data/pokemon/menu_icons.gen.asm"
 
 DEF INC_FRAME_1 EQUS "0, $20"
 DEF INC_FRAME_2 EQUS "$20, $20"

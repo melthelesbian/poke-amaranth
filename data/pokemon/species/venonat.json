@@ -130,5 +130,14 @@
         "light at night"
       ]
     ]
-  }
+  },
+  "pokedex_number": 31,
+  "display_name": "VENONAT",
+  "cry": {
+    "base": "SFX_CRY_1A",
+    "pitch": "$44",
+    "length": "$40"
+  },
+  "palette": "PAL_VENONAT",
+  "icon": "ICON_BUG"
 }

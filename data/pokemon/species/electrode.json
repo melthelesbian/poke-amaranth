@@ -118,5 +118,14 @@
         "provocation"
       ]
     ]
-  }
+  },
+  "pokedex_number": 120,
+  "display_name": "ELECTRODE",
+  "cry": {
+    "base": "SFX_CRY_06",
+    "pitch": "$A8",
+    "length": "$90"
+  },
+  "palette": "PAL_ELECTRODE",
+  "icon": "ICON_BALL"
 }

@@ -123,5 +123,14 @@
         "floor eons ago"
       ]
     ]
-  }
+  },
+  "pokedex_number": 141,
+  "display_name": "KABUTO",
+  "cry": {
+    "base": "SFX_CRY_16",
+    "pitch": "$BB",
+    "length": "$40"
+  },
+  "palette": "PAL_KABUTO",
+  "icon": "ICON_HELIX"
 }

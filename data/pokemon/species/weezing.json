@@ -120,5 +120,14 @@
         "years"
       ]
     ]
-  }
+  },
+  "pokedex_number": 111,
+  "display_name": "WEEZING",
+  "cry": {
+    "base": "SFX_CRY_12",
+    "pitch": "$FF",
+    "length": "$FF"
+  },
+  "palette": "PAL_WEEZING",
+  "icon": "ICON_MON"
 }

@@ -119,5 +119,14 @@
         "mountains"
       ]
     ]
-  }
+  },
+  "pokedex_number": 147,
+  "display_name": "ARTICUNO",
+  "cry": {
+    "base": "SFX_CRY_09",
+    "pitch": "$80",
+    "length": "$40"
+  },
+  "palette": "PAL_ARTICUNO",
+  "icon": "ICON_BIRD"
 }

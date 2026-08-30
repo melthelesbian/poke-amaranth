@@ -119,5 +119,14 @@
         "racing it"
       ]
     ]
-  }
+  },
+  "pokedex_number": 90,
+  "display_name": "RAPIDASH",
+  "cry": {
+    "base": "SFX_CRY_25",
+    "pitch": "$20",
+    "length": "$C0"
+  },
+  "palette": "PAL_RAPIDASH",
+  "icon": "ICON_QUADRUPED"
 }

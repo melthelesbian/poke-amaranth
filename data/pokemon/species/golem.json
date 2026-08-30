@@ -118,5 +118,14 @@
         "without damage"
       ]
     ]
-  }
+  },
+  "pokedex_number": 51,
+  "display_name": "GOLEM",
+  "cry": {
+    "base": "SFX_CRY_12",
+    "pitch": "$E0",
+    "length": "$40"
+  },
+  "palette": "PAL_GOLEM",
+  "icon": "ICON_MON"
 }

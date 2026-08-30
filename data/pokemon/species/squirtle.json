@@ -127,5 +127,14 @@
         "its mouth"
       ]
     ]
-  }
+  },
+  "pokedex_number": 7,
+  "display_name": "SQUIRTLE",
+  "cry": {
+    "base": "SFX_CRY_1D",
+    "pitch": "$60",
+    "length": "$40"
+  },
+  "palette": "PAL_SQUIRTLE",
+  "icon": "ICON_WATER"
 }

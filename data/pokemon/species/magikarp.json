@@ -66,5 +66,14 @@
         "that exist today"
       ]
     ]
-  }
+  },
+  "pokedex_number": 106,
+  "display_name": "MAGIKARP",
+  "cry": {
+    "base": "SFX_CRY_17",
+    "pitch": "$80",
+    "length": "$00"
+  },
+  "palette": "PAL_MAGIKARP",
+  "icon": "ICON_WATER"
 }

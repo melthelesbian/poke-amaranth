@@ -124,5 +124,14 @@
         "unwieldy to use"
       ]
     ]
-  }
+  },
+  "pokedex_number": 133,
+  "display_name": "KINGLER",
+  "cry": {
+    "base": "SFX_CRY_20",
+    "pitch": "$EE",
+    "length": "$E0"
+  },
+  "palette": "PAL_KINGLER",
+  "icon": "ICON_WATER"
 }

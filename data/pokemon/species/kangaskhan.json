@@ -118,5 +118,14 @@
         "years old"
       ]
     ]
-  }
+  },
+  "pokedex_number": 127,
+  "display_name": "KANGASKHAN",
+  "cry": {
+    "base": "SFX_CRY_03",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_KANGASKHAN",
+  "icon": "ICON_MON"
 }

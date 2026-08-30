@@ -129,5 +129,14 @@
         "powerful venom"
       ]
     ]
-  }
+  },
+  "pokedex_number": 23,
+  "display_name": "NIDORINO",
+  "cry": {
+    "base": "SFX_CRY_00",
+    "pitch": "$2C",
+    "length": "$C0"
+  },
+  "palette": "PAL_NIDORINO",
+  "icon": "ICON_MON"
 }

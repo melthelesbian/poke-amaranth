@@ -127,5 +127,14 @@
         "damp places"
       ]
     ]
-  }
+  },
+  "pokedex_number": 53,
+  "display_name": "PARASECT",
+  "cry": {
+    "base": "SFX_CRY_1E",
+    "pitch": "$42",
+    "length": "$FF"
+  },
+  "palette": "PAL_PARASECT",
+  "icon": "ICON_BUG"
 }

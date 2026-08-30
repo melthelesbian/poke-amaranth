@@ -111,5 +111,14 @@
         "many places"
       ]
     ]
-  }
+  },
+  "pokedex_number": 10,
+  "display_name": "RATTATA",
+  "cry": {
+    "base": "SFX_CRY_22",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_RATTATA",
+  "icon": "ICON_QUADRUPED"
 }

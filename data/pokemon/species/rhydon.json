@@ -116,5 +116,14 @@
         "degrees"
       ]
     ]
-  }
+  },
+  "pokedex_number": 57,
+  "display_name": "RHYDON",
+  "cry": {
+    "base": "SFX_CRY_11",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_RHYDON",
+  "icon": "ICON_MON"
 }

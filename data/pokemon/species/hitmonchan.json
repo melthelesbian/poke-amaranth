@@ -125,5 +125,14 @@
         "impossible to see"
       ]
     ]
-  }
+  },
+  "pokedex_number": 104,
+  "display_name": "HITMONCHAN",
+  "cry": {
+    "base": "SFX_CRY_0C",
+    "pitch": "$EE",
+    "length": "$C0"
+  },
+  "palette": "PAL_HITMONCHAN",
+  "icon": "ICON_MON"
 }

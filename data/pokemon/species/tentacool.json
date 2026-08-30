@@ -117,5 +117,14 @@
         "its stinging acid"
       ]
     ]
-  }
+  },
+  "pokedex_number": 130,
+  "display_name": "TENTACOOL",
+  "cry": {
+    "base": "SFX_CRY_1A",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_TENTACOOL",
+  "icon": "ICON_WATER"
 }

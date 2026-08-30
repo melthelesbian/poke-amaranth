@@ -126,5 +126,14 @@
         "never been seen"
       ]
     ]
-  }
+  },
+  "pokedex_number": 88,
+  "display_name": "CLOYSTER",
+  "cry": {
+    "base": "SFX_CRY_18",
+    "pitch": "$6F",
+    "length": "$E0"
+  },
+  "palette": "PAL_CLOYSTER",
+  "icon": "ICON_HELIX"
 }

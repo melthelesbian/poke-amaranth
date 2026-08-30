@@ -120,5 +120,14 @@
         "lightning bolts"
       ]
     ]
-  }
+  },
+  "pokedex_number": 148,
+  "display_name": "ZAPDOS",
+  "cry": {
+    "base": "SFX_CRY_18",
+    "pitch": "$FF",
+    "length": "$80"
+  },
+  "palette": "PAL_ZAPDOS",
+  "icon": "ICON_BIRD"
 }

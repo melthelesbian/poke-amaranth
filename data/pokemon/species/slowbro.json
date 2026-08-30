@@ -130,5 +130,14 @@
         "over scraps"
       ]
     ]
-  }
+  },
+  "pokedex_number": 84,
+  "display_name": "SLOWBRO",
+  "cry": {
+    "base": "SFX_CRY_1F",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_SLOWBRO",
+  "icon": "ICON_MON"
 }

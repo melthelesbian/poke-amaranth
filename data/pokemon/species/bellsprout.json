@@ -124,5 +124,14 @@
         "needed moisture"
       ]
     ]
-  }
+  },
+  "pokedex_number": 69,
+  "display_name": "BELLSPROUT",
+  "cry": {
+    "base": "SFX_CRY_21",
+    "pitch": "$55",
+    "length": "$01"
+  },
+  "palette": "PAL_BELLSPROUT",
+  "icon": "ICON_GRASS"
 }

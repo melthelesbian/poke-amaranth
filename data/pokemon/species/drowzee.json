@@ -126,5 +126,14 @@
         "bad dreams"
       ]
     ]
-  }
+  },
+  "pokedex_number": 91,
+  "display_name": "DROWZEE",
+  "cry": {
+    "base": "SFX_CRY_0D",
+    "pitch": "$88",
+    "length": "$20"
+  },
+  "palette": "PAL_DROWZEE",
+  "icon": "ICON_MON"
 }

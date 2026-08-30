@@ -130,5 +130,14 @@
         "it is caught"
       ]
     ]
-  }
+  },
+  "pokedex_number": 30,
+  "display_name": "PRIMEAPE",
+  "cry": {
+    "base": "SFX_CRY_0A",
+    "pitch": "$AF",
+    "length": "$40"
+  },
+  "palette": "PAL_PRIMEAPE",
+  "icon": "ICON_MON"
 }

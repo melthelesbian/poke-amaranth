@@ -141,5 +141,14 @@
         "unintentionally"
       ]
     ]
-  }
+  },
+  "pokedex_number": 6,
+  "display_name": "CHARIZARD",
+  "cry": {
+    "base": "SFX_CRY_04",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_CHARIZARD",
+  "icon": "ICON_MON"
 }

@@ -115,5 +115,14 @@
         "many people"
       ]
     ]
-  }
+  },
+  "pokedex_number": 119,
+  "display_name": "VOLTORB",
+  "cry": {
+    "base": "SFX_CRY_06",
+    "pitch": "$ED",
+    "length": "$80"
+  },
+  "palette": "PAL_VOLTORB",
+  "icon": "ICON_BALL"
 }

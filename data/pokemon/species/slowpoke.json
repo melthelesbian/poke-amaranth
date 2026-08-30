@@ -128,5 +128,14 @@
         "attack"
       ]
     ]
-  }
+  },
+  "pokedex_number": 83,
+  "display_name": "SLOWPOKE",
+  "cry": {
+    "base": "SFX_CRY_02",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_SLOWPOKE",
+  "icon": "ICON_QUADRUPED"
 }

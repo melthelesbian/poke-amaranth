@@ -126,5 +126,14 @@
         "in swarms"
       ]
     ]
-  }
+  },
+  "pokedex_number": 17,
+  "display_name": "EXEGGCUTE",
+  "cry": {
+    "base": "SFX_CRY_0B",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_EXEGGCUTE",
+  "icon": "ICON_GRASS"
 }

@@ -128,5 +128,14 @@
         "the next instant"
       ]
     ]
-  }
+  },
+  "pokedex_number": 29,
+  "display_name": "MANKEY",
+  "cry": {
+    "base": "SFX_CRY_0A",
+    "pitch": "$DD",
+    "length": "$60"
+  },
+  "palette": "PAL_MANKEY",
+  "icon": "ICON_MON"
 }

@@ -134,5 +134,14 @@
         "maintain balance"
       ]
     ]
-  }
+  },
+  "pokedex_number": 8,
+  "display_name": "WARTORTLE",
+  "cry": {
+    "base": "SFX_CRY_1D",
+    "pitch": "$20",
+    "length": "$40"
+  },
+  "palette": "PAL_WARTORTLE",
+  "icon": "ICON_WATER"
 }

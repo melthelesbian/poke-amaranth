@@ -1308,4 +1308,4 @@ IndexToPokedex:
 	pop bc
 	ret
 
-INCLUDE "data/pokemon/dex_order.asm"
+INCLUDE "data/pokemon/dex_order.gen.asm"

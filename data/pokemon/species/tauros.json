@@ -111,5 +111,14 @@
         "long tails"
       ]
     ]
-  }
+  },
+  "pokedex_number": 99,
+  "display_name": "TAUROS",
+  "cry": {
+    "base": "SFX_CRY_1D",
+    "pitch": "$11",
+    "length": "$40"
+  },
+  "palette": "PAL_TAUROS",
+  "icon": "ICON_QUADRUPED"
 }

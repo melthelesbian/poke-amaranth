@@ -125,5 +125,14 @@
         "catch prey"
       ]
     ]
-  }
+  },
+  "pokedex_number": 140,
+  "display_name": "OMASTAR",
+  "cry": {
+    "base": "SFX_CRY_1F",
+    "pitch": "$FF",
+    "length": "$40"
+  },
+  "palette": "PAL_OMASTAR",
+  "icon": "ICON_HELIX"
 }

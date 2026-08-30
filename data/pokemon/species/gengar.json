@@ -133,5 +133,14 @@
         "at their fright"
       ]
     ]
-  }
+  },
+  "pokedex_number": 115,
+  "display_name": "GENGAR",
+  "cry": {
+    "base": "SFX_CRY_07",
+    "pitch": "$00",
+    "length": "$FF"
+  },
+  "palette": "PAL_GENGAR",
+  "icon": "ICON_MON"
 }

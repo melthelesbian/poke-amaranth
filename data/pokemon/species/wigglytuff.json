@@ -139,5 +139,14 @@
         "an enormous size"
       ]
     ]
-  }
+  },
+  "pokedex_number": 46,
+  "display_name": "WIGGLYTUFF",
+  "cry": {
+    "base": "SFX_CRY_0E",
+    "pitch": "$68",
+    "length": "$60"
+  },
+  "palette": "PAL_WIGGLYTUFF",
+  "icon": "ICON_FAIRY"
 }

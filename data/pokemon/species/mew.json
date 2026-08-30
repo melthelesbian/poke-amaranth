@@ -161,5 +161,14 @@
         "seen it worldwide"
       ]
     ]
-  }
+  },
+  "pokedex_number": 151,
+  "display_name": "MEW",
+  "cry": {
+    "base": "SFX_CRY_1E",
+    "pitch": "$EE",
+    "length": "$FF"
+  },
+  "palette": "PAL_MEW",
+  "icon": "ICON_MON"
 }

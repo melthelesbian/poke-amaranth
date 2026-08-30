@@ -112,5 +112,14 @@
         "stay airborne"
       ]
     ]
-  }
+  },
+  "pokedex_number": 15,
+  "display_name": "SPEAROW",
+  "cry": {
+    "base": "SFX_CRY_10",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_SPEAROW",
+  "icon": "ICON_BIRD"
 }

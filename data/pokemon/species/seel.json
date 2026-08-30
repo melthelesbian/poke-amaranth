@@ -122,5 +122,14 @@
         "thick ice"
       ]
     ]
-  }
+  },
+  "pokedex_number": 136,
+  "display_name": "SEEL",
+  "cry": {
+    "base": "SFX_CRY_0C",
+    "pitch": "$88",
+    "length": "$C0"
+  },
+  "palette": "PAL_SEEL",
+  "icon": "ICON_WATER"
 }

@@ -128,5 +128,14 @@
         "for a mermaid's"
       ]
     ]
-  }
+  },
+  "pokedex_number": 73,
+  "display_name": "VAPOREON",
+  "cry": {
+    "base": "SFX_CRY_1A",
+    "pitch": "$AA",
+    "length": "$FF"
+  },
+  "palette": "PAL_VAPOREON",
+  "icon": "ICON_QUADRUPED"
 }

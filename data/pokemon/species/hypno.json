@@ -128,5 +128,14 @@
         "CONFUSION"
       ]
     ]
-  }
+  },
+  "pokedex_number": 92,
+  "display_name": "HYPNO",
+  "cry": {
+    "base": "SFX_CRY_0D",
+    "pitch": "$EE",
+    "length": "$40"
+  },
+  "palette": "PAL_HYPNO",
+  "icon": "ICON_MON"
 }

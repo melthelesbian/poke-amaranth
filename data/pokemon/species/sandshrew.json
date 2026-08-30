@@ -120,5 +120,14 @@
         "to hunt for food"
       ]
     ]
-  }
+  },
+  "pokedex_number": 58,
+  "display_name": "SANDSHREW",
+  "cry": {
+    "base": "SFX_CRY_00",
+    "pitch": "$20",
+    "length": "$40"
+  },
+  "palette": "PAL_SANDSHREW",
+  "icon": "ICON_MON"
 }

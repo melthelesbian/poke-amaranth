@@ -136,5 +136,14 @@
         "loses in battle"
       ]
     ]
-  }
+  },
+  "pokedex_number": 81,
+  "display_name": "STARYU",
+  "cry": {
+    "base": "SFX_CRY_1E",
+    "pitch": "$02",
+    "length": "$20"
+  },
+  "palette": "PAL_STARYU",
+  "icon": "ICON_HELIX"
 }

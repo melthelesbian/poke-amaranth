@@ -136,5 +136,14 @@
         "this #MON"
       ]
     ]
-  }
+  },
+  "pokedex_number": 1,
+  "display_name": "BULBASAUR",
+  "cry": {
+    "base": "SFX_CRY_0F",
+    "pitch": "$80",
+    "length": "$01"
+  },
+  "palette": "PAL_BULBASAUR",
+  "icon": "ICON_GRASS"
 }

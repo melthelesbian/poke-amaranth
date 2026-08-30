@@ -146,5 +146,14 @@
         "its body slimy"
       ]
     ]
-  }
+  },
+  "pokedex_number": 61,
+  "display_name": "POLIWHIRL",
+  "cry": {
+    "base": "SFX_CRY_0E",
+    "pitch": "$77",
+    "length": "$60"
+  },
+  "palette": "PAL_POLIWHIRL",
+  "icon": "ICON_MON"
 }

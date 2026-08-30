@@ -131,5 +131,14 @@
         "broad hands"
       ]
     ]
-  }
+  },
+  "pokedex_number": 105,
+  "display_name": "MR.MIME",
+  "cry": {
+    "base": "SFX_CRY_20",
+    "pitch": "$08",
+    "length": "$40"
+  },
+  "palette": "PAL_MR_MIME",
+  "icon": "ICON_MON"
 }

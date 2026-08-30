@@ -113,5 +113,14 @@
         "among flames"
       ]
     ]
-  }
+  },
+  "pokedex_number": 138,
+  "display_name": "MAGMAR",
+  "cry": {
+    "base": "SFX_CRY_04",
+    "pitch": "$FF",
+    "length": "$30"
+  },
+  "palette": "PAL_MAGMAR",
+  "icon": "ICON_MON"
 }

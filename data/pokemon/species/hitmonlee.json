@@ -120,5 +120,14 @@
         "loping strides"
       ]
     ]
-  }
+  },
+  "pokedex_number": 103,
+  "display_name": "HITMONLEE",
+  "cry": {
+    "base": "SFX_CRY_12",
+    "pitch": "$80",
+    "length": "$C0"
+  },
+  "palette": "PAL_HITMONLEE",
+  "icon": "ICON_MON"
 }

@@ -125,5 +125,14 @@
         "the bug host"
       ]
     ]
-  }
+  },
+  "pokedex_number": 52,
+  "display_name": "PARAS",
+  "cry": {
+    "base": "SFX_CRY_1E",
+    "pitch": "$20",
+    "length": "$E0"
+  },
+  "palette": "PAL_PARAS",
+  "icon": "ICON_BUG"
 }

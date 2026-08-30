@@ -137,5 +137,14 @@
         "1000-year curse"
       ]
     ]
-  }
+  },
+  "pokedex_number": 44,
+  "display_name": "NINETALES",
+  "cry": {
+    "base": "SFX_CRY_24",
+    "pitch": "$88",
+    "length": "$60"
+  },
+  "palette": "PAL_NINETALES",
+  "icon": "ICON_QUADRUPED"
 }

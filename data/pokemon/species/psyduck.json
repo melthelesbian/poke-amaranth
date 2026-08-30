@@ -131,5 +131,14 @@
         "powers"
       ]
     ]
-  }
+  },
+  "pokedex_number": 27,
+  "display_name": "PSYDUCK",
+  "cry": {
+    "base": "SFX_CRY_21",
+    "pitch": "$20",
+    "length": "$60"
+  },
+  "palette": "PAL_PSYDUCK",
+  "icon": "ICON_MON"
 }

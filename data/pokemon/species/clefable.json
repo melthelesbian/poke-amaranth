@@ -142,5 +142,14 @@
         "senses people"
       ]
     ]
-  }
+  },
+  "pokedex_number": 55,
+  "display_name": "CLEFABLE",
+  "cry": {
+    "base": "SFX_CRY_19",
+    "pitch": "$AA",
+    "length": "$20"
+  },
+  "palette": "PAL_CLEFABLE",
+  "icon": "ICON_FAIRY"
 }

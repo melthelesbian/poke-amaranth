@@ -141,5 +141,14 @@
         "certain areas"
       ]
     ]
-  }
+  },
+  "pokedex_number": 54,
+  "display_name": "CLEFAIRY",
+  "cry": {
+    "base": "SFX_CRY_19",
+    "pitch": "$CC",
+    "length": "$01"
+  },
+  "palette": "PAL_CLEFAIRY",
+  "icon": "ICON_FAIRY"
 }

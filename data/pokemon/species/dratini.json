@@ -125,5 +125,14 @@
         "living underwater"
       ]
     ]
-  }
+  },
+  "pokedex_number": 144,
+  "display_name": "DRATINI",
+  "cry": {
+    "base": "SFX_CRY_0F",
+    "pitch": "$60",
+    "length": "$40"
+  },
+  "palette": "PAL_DRATINI",
+  "icon": "ICON_SNAKE"
 }

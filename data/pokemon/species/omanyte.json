@@ -123,5 +123,14 @@
         "fossils"
       ]
     ]
-  }
+  },
+  "pokedex_number": 139,
+  "display_name": "OMANYTE",
+  "cry": {
+    "base": "SFX_CRY_1F",
+    "pitch": "$F0",
+    "length": "$01"
+  },
+  "palette": "PAL_OMANYTE",
+  "icon": "ICON_HELIX"
 }

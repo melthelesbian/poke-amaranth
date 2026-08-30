@@ -132,5 +132,14 @@
         "it grows older"
       ]
     ]
-  }
+  },
+  "pokedex_number": 43,
+  "display_name": "VULPIX",
+  "cry": {
+    "base": "SFX_CRY_24",
+    "pitch": "$4F",
+    "length": "$10"
+  },
+  "palette": "PAL_VULPIX",
+  "icon": "ICON_QUADRUPED"
 }

@@ -117,5 +117,14 @@
         "licks enemies"
       ]
     ]
-  }
+  },
+  "pokedex_number": 86,
+  "display_name": "LICKITUNG",
+  "cry": {
+    "base": "SFX_CRY_0C",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_LICKITUNG",
+  "icon": "ICON_MON"
 }

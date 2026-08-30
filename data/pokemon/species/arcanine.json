@@ -128,5 +128,14 @@
         "as if on wings"
       ]
     ]
-  }
+  },
+  "pokedex_number": 34,
+  "display_name": "ARCANINE",
+  "cry": {
+    "base": "SFX_CRY_15",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_ARCANINE",
+  "icon": "ICON_QUADRUPED"
 }

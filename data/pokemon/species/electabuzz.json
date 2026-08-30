@@ -109,5 +109,14 @@
         "in cities"
       ]
     ]
-  }
+  },
+  "pokedex_number": 128,
+  "display_name": "ELECTABUZZ",
+  "cry": {
+    "base": "SFX_CRY_06",
+    "pitch": "$8F",
+    "length": "$FF"
+  },
+  "palette": "PAL_ELECTABUZZ",
+  "icon": "ICON_MON"
 }

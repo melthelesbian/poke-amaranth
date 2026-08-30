@@ -139,5 +139,14 @@
         "element STONEs"
       ]
     ]
-  }
+  },
+  "pokedex_number": 72,
+  "display_name": "EEVEE",
+  "cry": {
+    "base": "SFX_CRY_1A",
+    "pitch": "$88",
+    "length": "$60"
+  },
+  "palette": "PAL_EEVEE",
+  "icon": "ICON_QUADRUPED"
 }

@@ -121,5 +121,14 @@
         "underground"
       ]
     ]
-  }
+  },
+  "pokedex_number": 98,
+  "display_name": "DUGTRIO",
+  "cry": {
+    "base": "SFX_CRY_0B",
+    "pitch": "$2A",
+    "length": "$10"
+  },
+  "palette": "PAL_DUGTRIO",
+  "icon": "ICON_MON"
 }

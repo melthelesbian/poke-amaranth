@@ -110,5 +110,14 @@
         "trailer flying"
       ]
     ]
-  }
+  },
+  "pokedex_number": 56,
+  "display_name": "RHYHORN",
+  "cry": {
+    "base": "SFX_CRY_04",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_RHYHORN",
+  "icon": "ICON_QUADRUPED"
 }

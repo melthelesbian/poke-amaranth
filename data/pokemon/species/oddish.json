@@ -140,5 +140,14 @@
         "sowing its seeds"
       ]
     ]
-  }
+  },
+  "pokedex_number": 66,
+  "display_name": "ODDISH",
+  "cry": {
+    "base": "SFX_CRY_08",
+    "pitch": "$DD",
+    "length": "$01"
+  },
+  "palette": "PAL_ODDISH",
+  "icon": "ICON_GRASS"
 }

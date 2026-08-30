@@ -121,5 +121,14 @@
         "out of factories"
       ]
     ]
-  }
+  },
+  "pokedex_number": 108,
+  "display_name": "GRIMER",
+  "cry": {
+    "base": "SFX_CRY_05",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_GRIMER",
+  "icon": "ICON_MON"
 }

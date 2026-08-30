@@ -129,5 +129,14 @@
         "biting"
       ]
     ]
-  }
+  },
+  "pokedex_number": 20,
+  "display_name": "NIDORINA",
+  "cry": {
+    "base": "SFX_CRY_01",
+    "pitch": "$2C",
+    "length": "$E0"
+  },
+  "palette": "PAL_NIDORINA",
+  "icon": "ICON_MON"
 }

@@ -142,5 +142,14 @@
         "seek sunlight"
       ]
     ]
-  }
+  },
+  "pokedex_number": 3,
+  "display_name": "VENUSAUR",
+  "cry": {
+    "base": "SFX_CRY_0F",
+    "pitch": "$00",
+    "length": "$C0"
+  },
+  "palette": "PAL_VENUSAUR",
+  "icon": "ICON_GRASS"
 }

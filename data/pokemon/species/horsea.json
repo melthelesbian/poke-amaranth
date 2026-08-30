@@ -125,5 +125,14 @@
         "of the water"
       ]
     ]
-  }
+  },
+  "pokedex_number": 124,
+  "display_name": "HORSEA",
+  "cry": {
+    "base": "SFX_CRY_19",
+    "pitch": "$99",
+    "length": "$10"
+  },
+  "palette": "PAL_HORSEA",
+  "icon": "ICON_WATER"
 }

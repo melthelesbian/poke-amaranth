@@ -119,5 +119,14 @@
         "and creeks"
       ]
     ]
-  }
+  },
+  "pokedex_number": 80,
+  "display_name": "SEAKING",
+  "cry": {
+    "base": "SFX_CRY_16",
+    "pitch": "$10",
+    "length": "$FF"
+  },
+  "palette": "PAL_SEAKING",
+  "icon": "ICON_WATER"
 }

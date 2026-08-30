@@ -126,5 +126,14 @@
         "to area"
       ]
     ]
-  }
+  },
+  "pokedex_number": 64,
+  "display_name": "ARBOK",
+  "cry": {
+    "base": "SFX_CRY_17",
+    "pitch": "$E0",
+    "length": "$10"
+  },
+  "palette": "PAL_ARBOK",
+  "icon": "ICON_SNAKE"
 }

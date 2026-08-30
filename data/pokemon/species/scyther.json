@@ -114,5 +114,14 @@
         "than one"
       ]
     ]
-  }
+  },
+  "pokedex_number": 122,
+  "display_name": "SCYTHER",
+  "cry": {
+    "base": "SFX_CRY_16",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_SCYTHER",
+  "icon": "ICON_BUG"
 }

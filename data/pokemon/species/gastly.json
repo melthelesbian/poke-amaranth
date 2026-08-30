@@ -125,5 +125,14 @@
         "without notice"
       ]
     ]
-  }
+  },
+  "pokedex_number": 113,
+  "display_name": "GASTLY",
+  "cry": {
+    "base": "SFX_CRY_1C",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_GASTLY",
+  "icon": "ICON_MON"
 }

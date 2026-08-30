@@ -124,5 +124,14 @@
         "cold waters"
       ]
     ]
-  }
+  },
+  "pokedex_number": 137,
+  "display_name": "DEWGONG",
+  "cry": {
+    "base": "SFX_CRY_0C",
+    "pitch": "$23",
+    "length": "$FF"
+  },
+  "palette": "PAL_DEWGONG",
+  "icon": "ICON_WATER"
 }

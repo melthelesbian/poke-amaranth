@@ -115,5 +115,14 @@
         "the horizon"
       ]
     ]
-  }
+  },
+  "pokedex_number": 102,
+  "display_name": "MACHAMP",
+  "cry": {
+    "base": "SFX_CRY_1F",
+    "pitch": "$08",
+    "length": "$C0"
+  },
+  "palette": "PAL_MACHAMP",
+  "icon": "ICON_MON"
 }

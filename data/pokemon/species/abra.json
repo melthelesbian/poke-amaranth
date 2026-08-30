@@ -74,5 +74,14 @@
         "safety"
       ]
     ]
-  }
+  },
+  "pokedex_number": 76,
+  "display_name": "ABRA",
+  "cry": {
+    "base": "SFX_CRY_1C",
+    "pitch": "$C0",
+    "length": "$01"
+  },
+  "palette": "PAL_ABRA",
+  "icon": "ICON_MON"
 }

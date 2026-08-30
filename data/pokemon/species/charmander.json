@@ -125,5 +125,14 @@
         "its tail"
       ]
     ]
-  }
+  },
+  "pokedex_number": 4,
+  "display_name": "CHARMANDER",
+  "cry": {
+    "base": "SFX_CRY_04",
+    "pitch": "$60",
+    "length": "$40"
+  },
+  "palette": "PAL_CHARMANDER",
+  "icon": "ICON_MON"
 }

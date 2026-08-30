@@ -125,5 +125,14 @@
         "shell is open"
       ]
     ]
-  }
+  },
+  "pokedex_number": 87,
+  "display_name": "SHELLDER",
+  "cry": {
+    "base": "SFX_CRY_18",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_SHELLDER",
+  "icon": "ICON_HELIX"
 }

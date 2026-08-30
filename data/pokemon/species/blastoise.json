@@ -134,5 +134,14 @@
         "speed tackles"
       ]
     ]
-  }
+  },
+  "pokedex_number": 9,
+  "display_name": "BLASTOISE",
+  "cry": {
+    "base": "SFX_CRY_13",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_BLASTOISE",
+  "icon": "ICON_WATER"
 }

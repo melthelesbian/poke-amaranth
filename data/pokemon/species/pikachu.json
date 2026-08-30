@@ -122,5 +122,14 @@
         "lightning storms"
       ]
     ]
-  }
+  },
+  "pokedex_number": 41,
+  "display_name": "PIKACHU",
+  "cry": {
+    "base": "SFX_CRY_0F",
+    "pitch": "$EE",
+    "length": "$01"
+  },
+  "palette": "PAL_PIKACHU",
+  "icon": "ICON_FAIRY"
 }

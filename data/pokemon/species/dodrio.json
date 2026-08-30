@@ -131,5 +131,14 @@
         "stays awake"
       ]
     ]
-  }
+  },
+  "pokedex_number": 94,
+  "display_name": "DODRIO",
+  "cry": {
+    "base": "SFX_CRY_0B",
+    "pitch": "$99",
+    "length": "$20"
+  },
+  "palette": "PAL_DODRIO",
+  "icon": "ICON_BIRD"
 }

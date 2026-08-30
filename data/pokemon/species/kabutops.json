@@ -126,5 +126,14 @@
         "the body fluids"
       ]
     ]
-  }
+  },
+  "pokedex_number": 142,
+  "display_name": "KABUTOPS",
+  "cry": {
+    "base": "SFX_CRY_18",
+    "pitch": "$EE",
+    "length": "$01"
+  },
+  "palette": "PAL_KABUTOPS",
+  "icon": "ICON_HELIX"
 }

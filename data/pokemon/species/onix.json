@@ -111,5 +111,14 @@
         "colored black"
       ]
     ]
-  }
+  },
+  "pokedex_number": 126,
+  "display_name": "ONIX",
+  "cry": {
+    "base": "SFX_CRY_17",
+    "pitch": "$FF",
+    "length": "$C0"
+  },
+  "palette": "PAL_ONIX",
+  "icon": "ICON_SNAKE"
 }

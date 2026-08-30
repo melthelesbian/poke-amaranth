@@ -124,5 +124,14 @@
         "its motions"
       ]
     ]
-  }
+  },
+  "pokedex_number": 101,
+  "display_name": "MACHOKE",
+  "cry": {
+    "base": "SFX_CRY_1F",
+    "pitch": "$48",
+    "length": "$60"
+  },
+  "palette": "PAL_MACHOKE",
+  "icon": "ICON_MON"
 }

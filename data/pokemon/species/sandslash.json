@@ -123,5 +123,14 @@
         "attack or escape"
       ]
     ]
-  }
+  },
+  "pokedex_number": 59,
+  "display_name": "SANDSLASH",
+  "cry": {
+    "base": "SFX_CRY_00",
+    "pitch": "$FF",
+    "length": "$FF"
+  },
+  "palette": "PAL_SANDSLASH",
+  "icon": "ICON_MON"
 }

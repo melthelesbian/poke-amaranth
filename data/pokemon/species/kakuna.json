@@ -68,5 +68,14 @@
         "from predators"
       ]
     ]
-  }
+  },
+  "pokedex_number": 39,
+  "display_name": "KAKUNA",
+  "cry": {
+    "base": "SFX_CRY_13",
+    "pitch": "$FF",
+    "length": "$01"
+  },
+  "palette": "PAL_KAKUNA",
+  "icon": "ICON_BUG"
 }

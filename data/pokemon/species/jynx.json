@@ -107,5 +107,14 @@
         "unison with it"
       ]
     ]
-  }
+  },
+  "pokedex_number": 135,
+  "display_name": "JYNX",
+  "cry": {
+    "base": "SFX_CRY_0D",
+    "pitch": "$FF",
+    "length": "$FF"
+  },
+  "palette": "PAL_JYNX",
+  "icon": "ICON_MON"
 }

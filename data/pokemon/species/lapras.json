@@ -118,5 +118,14 @@
         "across the water"
       ]
     ]
-  }
+  },
+  "pokedex_number": 134,
+  "display_name": "LAPRAS",
+  "cry": {
+    "base": "SFX_CRY_1B",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_LAPRAS",
+  "icon": "ICON_WATER"
 }

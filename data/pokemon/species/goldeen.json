@@ -117,5 +117,14 @@
         "the Water Queen"
       ]
     ]
-  }
+  },
+  "pokedex_number": 79,
+  "display_name": "GOLDEEN",
+  "cry": {
+    "base": "SFX_CRY_16",
+    "pitch": "$80",
+    "length": "$40"
+  },
+  "palette": "PAL_GOLDEEN",
+  "icon": "ICON_WATER"
 }

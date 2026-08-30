@@ -125,5 +125,14 @@
         "it"
       ]
     ]
-  }
+  },
+  "pokedex_number": 118,
+  "display_name": "CHANSEY",
+  "cry": {
+    "base": "SFX_CRY_14",
+    "pitch": "$0A",
+    "length": "$C0"
+  },
+  "palette": "PAL_CHANSEY",
+  "icon": "ICON_FAIRY"
 }

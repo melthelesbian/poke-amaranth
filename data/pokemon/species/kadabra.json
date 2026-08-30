@@ -121,5 +121,14 @@
         "close by"
       ]
     ]
-  }
+  },
+  "pokedex_number": 77,
+  "display_name": "KADABRA",
+  "cry": {
+    "base": "SFX_CRY_1C",
+    "pitch": "$A8",
+    "length": "$C0"
+  },
+  "palette": "PAL_KADABRA",
+  "icon": "ICON_MON"
 }

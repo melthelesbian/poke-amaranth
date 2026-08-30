@@ -123,5 +123,14 @@
         "degrees"
       ]
     ]
-  }
+  },
+  "pokedex_number": 75,
+  "display_name": "FLAREON",
+  "cry": {
+    "base": "SFX_CRY_1A",
+    "pitch": "$10",
+    "length": "$20"
+  },
+  "palette": "PAL_FLAREON",
+  "icon": "ICON_QUADRUPED"
 }

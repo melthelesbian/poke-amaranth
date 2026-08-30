@@ -123,5 +123,14 @@
         "real face"
       ]
     ]
-  }
+  },
+  "pokedex_number": 116,
+  "display_name": "CUBONE",
+  "cry": {
+    "base": "SFX_CRY_19",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_CUBONE",
+  "icon": "ICON_MON"
 }

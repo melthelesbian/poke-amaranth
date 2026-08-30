@@ -134,5 +134,14 @@
         "that of humans"
       ]
     ]
-  }
+  },
+  "pokedex_number": 146,
+  "display_name": "DRAGONITE",
+  "cry": {
+    "base": "SFX_CRY_0F",
+    "pitch": "$3C",
+    "length": "$C0"
+  },
+  "palette": "PAL_DRAGONITE",
+  "icon": "ICON_SNAKE"
 }

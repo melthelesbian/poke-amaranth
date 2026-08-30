@@ -126,5 +126,14 @@
         "from there"
       ]
     ]
-  }
+  },
+  "pokedex_number": 71,
+  "display_name": "VICTREEBEL",
+  "cry": {
+    "base": "SFX_CRY_25",
+    "pitch": "$66",
+    "length": "$CC"
+  },
+  "palette": "PAL_VICTREEBEL",
+  "icon": "ICON_GRASS"
 }

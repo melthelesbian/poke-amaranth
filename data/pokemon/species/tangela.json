@@ -120,5 +120,14 @@
         "shake as it walks"
       ]
     ]
-  }
+  },
+  "pokedex_number": 85,
+  "display_name": "TANGELA",
+  "cry": {
+    "base": "SFX_CRY_12",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_TANGELA",
+  "icon": "ICON_GRASS"
 }

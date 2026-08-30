@@ -136,5 +136,14 @@
         "human swimmers"
       ]
     ]
-  }
+  },
+  "pokedex_number": 62,
+  "display_name": "POLIWRATH",
+  "cry": {
+    "base": "SFX_CRY_0E",
+    "pitch": "$00",
+    "length": "$FF"
+  },
+  "palette": "PAL_POLIWRATH",
+  "icon": "ICON_MON"
 }

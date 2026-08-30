@@ -127,5 +127,14 @@
         "the air"
       ]
     ]
-  }
+  },
+  "pokedex_number": 37,
+  "display_name": "BUTTERFREE",
+  "cry": {
+    "base": "SFX_CRY_16",
+    "pitch": "$77",
+    "length": "$40"
+  },
+  "palette": "PAL_BUTTERFREE",
+  "icon": "ICON_BUG"
 }

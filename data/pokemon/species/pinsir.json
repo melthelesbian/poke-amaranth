@@ -113,5 +113,14 @@
         "it hard"
       ]
     ]
-  }
+  },
+  "pokedex_number": 121,
+  "display_name": "PINSIR",
+  "cry": {
+    "base": "SFX_CRY_14",
+    "pitch": "$00",
+    "length": "$80"
+  },
+  "palette": "PAL_PINSIR",
+  "icon": "ICON_BUG"
 }

@@ -69,5 +69,14 @@
         "slopes and walls"
       ]
     ]
-  }
+  },
+  "pokedex_number": 35,
+  "display_name": "CATERPIE",
+  "cry": {
+    "base": "SFX_CRY_16",
+    "pitch": "$80",
+    "length": "$20"
+  },
+  "palette": "PAL_CATERPIE",
+  "icon": "ICON_BUG"
 }

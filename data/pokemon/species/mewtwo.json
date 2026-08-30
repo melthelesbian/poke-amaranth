@@ -122,5 +122,14 @@
         "experiments"
       ]
     ]
-  }
+  },
+  "pokedex_number": 150,
+  "display_name": "MEWTWO",
+  "cry": {
+    "base": "SFX_CRY_1E",
+    "pitch": "$99",
+    "length": "$FF"
+  },
+  "palette": "PAL_MEWTWO",
+  "icon": "ICON_MON"
 }

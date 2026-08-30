@@ -125,5 +125,14 @@
         "metal sword"
       ]
     ]
-  }
+  },
+  "pokedex_number": 65,
+  "display_name": "FARFETCH'D",
+  "cry": {
+    "base": "SFX_CRY_10",
+    "pitch": "$DD",
+    "length": "$01"
+  },
+  "palette": "PAL_FARFETCHD",
+  "icon": "ICON_BIRD"
 }
