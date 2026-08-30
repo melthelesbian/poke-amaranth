@@ -22,4 +22,4 @@ GetMachinePrice::
 	ldh [hItemPrice + 2], a
 	ret
 
-INCLUDE "data/items/tm_prices.asm"
+INCLUDE "data/items/tm_prices.gen.asm"

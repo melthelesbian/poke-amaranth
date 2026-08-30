@@ -472,9 +472,9 @@ CannotGetOffHereText:
 	text_far _CannotGetOffHereText
 	text_end
 
-INCLUDE "data/items/use_party.asm"
+INCLUDE "data/items/use_party.gen.asm"
 
-INCLUDE "data/items/use_overworld.asm"
+INCLUDE "data/items/use_overworld.gen.asm"
 
 StartMenu_TownMap::
 	call GBPalWhiteOut

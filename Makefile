@@ -10,6 +10,8 @@ patches := \
 	amaranth_blue.patch
 
 move_csv := data/moves/moves.csv
+item_csv := data/items/items.csv
+machine_csv := data/items/machines.csv
 move_generated := \
 	constants/moves.gen.asm \
 	data/moves/moves.gen.asm \
@@ -18,6 +20,18 @@ move_generated := \
 	data/moves/sfx.gen.asm \
 	data/moves/animation_pointers.gen.asm \
 	data/battle/critical_hit_moves.gen.asm
+item_generated := \
+	constants/item_constants.gen.asm \
+	data/items/names.gen.asm \
+	data/items/prices.gen.asm \
+	data/items/key_items.gen.asm \
+	data/items/item_use_pointers.gen.asm \
+	data/items/use_party.gen.asm \
+	data/items/use_overworld.gen.asm \
+	data/items/guard_drink_items.gen.asm \
+	data/items/vending_prices.gen.asm \
+	data/items/descriptions.gen.asm \
+	data/items/tm_prices.gen.asm
 
 rom_obj := \
 	audio.o \
@@ -98,7 +112,8 @@ tidy:
 		  $(amaranth_red_debug_obj) \
 	      $(amaranth_blue_debug_obj) \
 	      rgbdscheck.o \
-	      $(move_generated)
+	      $(move_generated) \
+	      $(item_generated)
 	$(MAKE) clean -C tools/
 
 compare: $(roms) $(patches)
@@ -178,6 +193,39 @@ data/moves/animation_pointers.gen.asm: $(move_csv) tools/generate_moves.py
 
 data/battle/critical_hit_moves.gen.asm: $(move_csv) tools/generate_moves.py
 	python3 tools/generate_moves.py critical-hits $(move_csv) > $@
+
+constants/item_constants.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py constants > $@
+
+data/items/names.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py names > $@
+
+data/items/prices.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py prices > $@
+
+data/items/key_items.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py key-items > $@
+
+data/items/item_use_pointers.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py use > $@
+
+data/items/use_party.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py party > $@
+
+data/items/use_overworld.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py close > $@
+
+data/items/guard_drink_items.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py guard > $@
+
+data/items/vending_prices.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py vending > $@
+
+data/items/descriptions.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py descriptions > $@
+
+data/items/tm_prices.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py tm-prices > $@
 
 endif
 

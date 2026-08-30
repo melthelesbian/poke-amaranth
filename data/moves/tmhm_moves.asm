@@ -1,4 +1,4 @@
-; The add_hm and add_tm macros in constants/item_constants.asm simultaneously
+; The add_hm and add_tm macros in constants/item_constants.gen.asm simultaneously
 ; define constants for the item IDs and for the corresponding move values.
 
 TechnicalMachines:

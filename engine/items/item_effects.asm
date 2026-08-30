@@ -16,90 +16,7 @@ UseItem_::
 	jp hl
 
 ItemUsePtrTable:
-; entries correspond to item ids
-	dw ItemUseBall       ; MASTER_BALL
-	dw ItemUseBall       ; ULTRA_BALL
-	dw ItemUseBall       ; GREAT_BALL
-	dw ItemUseBall       ; POKE_BALL
-	dw ItemUseTownMap    ; TOWN_MAP
-	dw ItemUseBicycle    ; BICYCLE
-	dw ItemUseSurfboard  ; SURFBOARD
-	dw ItemUseBall       ; SAFARI_BALL
-	dw ItemUsePokedex    ; POKEDEX
-	dw ItemUseEvoStone   ; MOON_STONE
-	dw UnusableItem      ; UNUSED_0B (ANTIDOTE)
-	dw UnusableItem      ; UNUSED_0C (BURN_HEAL)
-	dw UnusableItem      ; UNUSED_0D (ICE_HEAL)
-	dw UnusableItem      ; UNUSED_0E (AWAKENING)
-	dw UnusableItem      ; UNUSED_0F (PARLYZ_HEAL)
-	dw ItemUseMedicine   ; FULL_RESTORE
-	dw ItemUseMedicine   ; MAX_POTION
-	dw ItemUseMedicine   ; HYPER_POTION
-	dw ItemUseMedicine   ; SUPER_POTION
-	dw ItemUseMedicine   ; POTION
-	dw ItemUseBait       ; BOULDERBADGE
-	dw ItemUseRock       ; CASCADEBADGE
-	dw UnusableItem      ; THUNDERBADGE
-	dw UnusableItem      ; RAINBOWBADGE
-	dw UnusableItem      ; SOULBADGE
-	dw UnusableItem      ; MARSHBADGE
-	dw UnusableItem      ; VOLCANOBADGE
-	dw UnusableItem      ; EARTHBADGE
-	dw ItemUseEscapeRope ; ESCAPE_ROPE
-	dw ItemUseRepel      ; REPEL
-	dw UnusableItem      ; OLD_AMBER
-	dw ItemUseEvoStone   ; FIRE_STONE
-	dw ItemUseEvoStone   ; THUNDER_STONE
-	dw ItemUseEvoStone   ; WATER_STONE
-	dw ItemUseVitamin    ; HP_UP
-	dw ItemUseVitamin    ; PROTEIN
-	dw ItemUseVitamin    ; IRON
-	dw ItemUseVitamin    ; CARBOS
-	dw ItemUseVitamin    ; CALCIUM
-	dw ItemUseVitamin    ; RARE_CANDY
-	dw UnusableItem      ; DOME_FOSSIL
-	dw UnusableItem      ; HELIX_FOSSIL
-	dw UnusableItem      ; UNUSED_2B (SECRET_KEY)
-	dw UnusableItem      ; ANCIENT_HAIR
-	dw UnusableItem      ; BIKE_VOUCHER
-	dw UnusableItem      ; UNUSED_2E (X_ACCURACY)
-	dw ItemUseEvoStone   ; LEAF_STONE
-	dw UnusableItem      ; UNUSED_30 (CARD_KEY)
-	dw UnusableItem      ; NUGGET
-	dw ItemUseEvoStone   ; DEVO_SPRAY (ITEM_32)
-	dw ItemUsePokeDoll   ; POKE_DOLL
-	dw ItemUseMedicine   ; PANACEA
-	dw ItemUseMedicine   ; REVIVE
-	dw ItemUseMedicine   ; MAX_REVIVE
-	dw UnusableItem      ; TEA_SHIPMENT (GUARD_SPEC)
-	dw UnusableItem      ; UNUSED_38 (SUPER_REPEL)
-	dw UnusableItem      ; UNUSED_39 (MAX_REPEL)
-	dw UnusableItem      ; UNUSED_3A (DIRE_HIT)
-	dw UnusableItem      ; COIN
-	dw ItemUseVitamin    ; FRESH_WATER
-	dw ItemUseVitamin    ; ICED_TEA
-	dw ItemUseVitamin    ; LEMONADE
-	dw UnusableItem      ; UNUSED_3F (SS_TICKET)
-	dw UnusableItem      ; GOLD_TEETH
-	dw UnusableItem      ; UNUSED_41 (X_ATTACK)
-	dw UnusableItem      ; UNUSED_42 (X_DEFEND)
-	dw UnusableItem      ; UNUSED_43 (X_SPEED)
-	dw UnusableItem      ; UNUSED_44 (X_SPECIAL)
-	dw ItemUseCoinCase   ; COIN_CASE
-	dw ItemUseOaksParcel ; OAKS_PARCEL
-	dw ItemUseItemfinder ; ITEMFINDER
-	dw UnusableItem      ; UNUSED_48 (SILPH_SCOPE)
-	dw ItemUsePokeFlute  ; POKE_FLUTE
-	dw UnusableItem      ; UNUSED_4A (LIFT_KEY)
-	dw UnusableItem      ; EXP_ALL
-	dw UnusableItem      ; UNUSED_4C (OLD_ROD)
-	dw UnusableItem      ; UNUSED_4D (GOOD_ROD)
-	dw ItemUseFishingRod ; FISHING_ROD
-	dw ItemUsePPUp       ; PP_UP
-	dw ItemUsePPRestore  ; ETHER
-	dw ItemUsePPRestore  ; MAX_ETHER
-	dw ItemUsePPRestore  ; ELIXIR
-	dw ItemUsePPRestore  ; MAX_ELIXIR
+INCLUDE "data/items/item_use_pointers.gen.asm"
 
 ItemUseBall:
 
@@ -2507,7 +2424,7 @@ IsKeyItem_::
 	ld [wIsKeyItem], a
 	ret
 
-INCLUDE "data/items/key_items.asm"
+INCLUDE "data/items/key_items.gen.asm"
 
 SendNewMonToBox:
 	ld de, wBoxCount
@@ -2866,4 +2783,3 @@ CheckFishingForMon:
 	inc de
 .doneFishingCheck
 	ret
-

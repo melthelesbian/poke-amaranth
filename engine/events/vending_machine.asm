@@ -130,4 +130,4 @@ LoadVendingMachineItem:
 	ldh [hVendingMachinePrice + 2], a
 	ret
 
-INCLUDE "data/items/vending_prices.asm"
+INCLUDE "data/items/vending_prices.gen.asm"

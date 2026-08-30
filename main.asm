@@ -35,10 +35,10 @@ INCLUDE "engine/events/display_pokedex.asm"
 
 SECTION "item names and prices", ROMX
 
-INCLUDE "data/items/prices.asm"
-INCLUDE "data/items/names.asm"
+INCLUDE "data/items/prices.gen.asm"
+INCLUDE "data/items/names.gen.asm"
 INCLUDE "engine/items/item_descriptions.asm"
-INCLUDE "data/items/descriptions.asm"
+INCLUDE "data/items/descriptions.gen.asm"
 INCLUDE "engine/pokemon/move_descriptions.asm"
 INCLUDE "data/moves/descriptions.gen.asm"
 

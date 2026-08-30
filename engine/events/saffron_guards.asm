@@ -12,4 +12,4 @@ RemoveGuardDrink::
 	jr z, .drinkLoop
 	farjp RemoveItemByID
 
-INCLUDE "data/items/guard_drink_items.asm"
+INCLUDE "data/items/guard_drink_items.gen.asm"
