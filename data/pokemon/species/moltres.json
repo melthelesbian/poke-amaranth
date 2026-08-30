@@ -99,5 +99,25 @@
       "level": 75,
       "move": "AGILITY"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "LEGENDARY",
+    "height": [
+      6,
+      7
+    ],
+    "weight": 1320,
+    "description": [
+      [
+        "Known as the",
+        "legendary bird of",
+        "fire. Every flap"
+      ],
+      [
+        "of its wings",
+        "creates a dazzling",
+        "flash of flames"
+      ]
+    ]
+  }
 }

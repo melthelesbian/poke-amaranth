@@ -96,5 +96,25 @@
       "level": 42,
       "move": "BUG_BUZZ"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "POISON BEE",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 650,
+    "description": [
+      [
+        "Flies at high",
+        "speed and attacks",
+        "using its large"
+      ],
+      [
+        "venomous stingers",
+        "on its forelegs",
+        "and tail"
+      ]
+    ]
+  }
 }

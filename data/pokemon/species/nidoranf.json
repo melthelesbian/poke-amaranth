@@ -97,5 +97,25 @@
       "level": 58,
       "move": "MOONBLAST"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "HAREPIN",
+    "height": [
+      1,
+      4
+    ],
+    "weight": 150,
+    "description": [
+      [
+        "Although small,",
+        "its venomous",
+        "barbs render this"
+      ],
+      [
+        "#MON dangerous.",
+        "The female has",
+        "smaller horns"
+      ]
+    ]
+  }
 }

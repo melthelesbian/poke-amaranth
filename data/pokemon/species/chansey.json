@@ -105,5 +105,25 @@
       "level": 60,
       "move": "MOONBLAST"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "NURSE",
+    "height": [
+      3,
+      7
+    ],
+    "weight": 760,
+    "description": [
+      [
+        "A rare and elusive",
+        "#MON that is",
+        "said to bring"
+      ],
+      [
+        "happiness to those",
+        "who manage to get",
+        "it"
+      ]
+    ]
+  }
 }

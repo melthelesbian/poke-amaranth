@@ -105,5 +105,25 @@
       "level": 58,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SEA HORSE",
+    "height": [
+      1,
+      4
+    ],
+    "weight": 180,
+    "description": [
+      [
+        "Known to shoot",
+        "down flying bugs",
+        "with precision"
+      ],
+      [
+        "blasts of ink",
+        "from the surface",
+        "of the water"
+      ]
+    ]
+  }
 }

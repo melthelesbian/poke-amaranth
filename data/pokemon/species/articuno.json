@@ -99,5 +99,25 @@
       "level": 75,
       "move": "AGILITY"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "LEGENDARY",
+    "height": [
+      5,
+      7
+    ],
+    "weight": 1220,
+    "description": [
+      [
+        "A legendary bird",
+        "#MON that is",
+        "said to appear to"
+      ],
+      [
+        "doomed people who",
+        "are lost in icy",
+        "mountains"
+      ]
+    ]
+  }
 }

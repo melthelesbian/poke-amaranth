@@ -94,5 +94,25 @@
       "level": 58,
       "move": "SKY_ATTACK"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BIG BIRD",
+    "height": [
+      4,
+      11
+    ],
+    "weight": 870,
+    "description": [
+      [
+        "When hunting, it",
+        "skims the surface",
+        "of water at high"
+      ],
+      [
+        "speed to pick off",
+        "unwary prey such",
+        "as MAGIKARP"
+      ]
+    ]
+  }
 }

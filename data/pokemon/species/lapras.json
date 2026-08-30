@@ -98,5 +98,25 @@
       "level": 58,
       "move": "BLIZZARD"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "FERRY",
+    "height": [
+      8,
+      2
+    ],
+    "weight": 4850,
+    "description": [
+      [
+        "A #MON that",
+        "has been over-",
+        "hunted almost to"
+      ],
+      [
+        "extinction. It",
+        "can ferry people",
+        "across the water"
+      ]
+    ]
+  }
 }

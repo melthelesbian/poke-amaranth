@@ -107,5 +107,25 @@
       "level": 60,
       "move": "MOONBLAST"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PIN QUEEN",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 1320,
+    "description": [
+      [
+        "Its hard scales",
+        "provide strong",
+        "protection. It"
+      ],
+      [
+        "uses its hefty",
+        "bulk to execute",
+        "powerful moves"
+      ]
+    ]
+  }
 }

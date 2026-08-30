@@ -113,5 +113,25 @@
       "level": 67,
       "move": "DREAM_EATER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SHADOW",
+    "height": [
+      4,
+      11
+    ],
+    "weight": 890,
+    "description": [
+      [
+        "Under a full moon,",
+        "this #MON",
+        "likes to mimic"
+      ],
+      [
+        "the shadows of",
+        "people and laugh",
+        "at their fright"
+      ]
+    ]
+  }
 }

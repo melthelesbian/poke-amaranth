@@ -90,5 +90,25 @@
       "level": 60,
       "move": "SKULL_BASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SPIKED",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 2540,
+    "description": [
+      [
+        "Its massive bones",
+        "are 1000 times",
+        "harder than human"
+      ],
+      [
+        "bones. It can",
+        "easily knock a",
+        "trailer flying"
+      ]
+    ]
+  }
 }

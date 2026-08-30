@@ -106,5 +106,25 @@
       "level": 59,
       "move": "NIGHT_SLASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "CLASSY CAT",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 710,
+    "description": [
+      [
+        "Although its fur",
+        "has many admirers,",
+        "it is tough to"
+      ],
+      [
+        "raise as a pet",
+        "because of its",
+        "fickle meanness"
+      ]
+    ]
+  }
 }

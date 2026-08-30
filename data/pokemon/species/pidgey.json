@@ -91,5 +91,25 @@
       "level": 52,
       "move": "SKY_ATTACK"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "TINY BIRD",
+    "height": [
+      1,
+      0
+    ],
+    "weight": 40,
+    "description": [
+      [
+        "A common sight in",
+        "forests and woods.",
+        "It flaps its"
+      ],
+      [
+        "wings at ground",
+        "level to kick up",
+        "blinding sand"
+      ]
+    ]
+  }
 }

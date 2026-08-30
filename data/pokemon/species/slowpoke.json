@@ -108,5 +108,25 @@
       "level": 54,
       "move": "PSYCHIC_M"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "LAZY",
+    "height": [
+      3,
+      11
+    ],
+    "weight": 790,
+    "description": [
+      [
+        "Incredibly slow",
+        "and dopey. It",
+        "takes 5 seconds"
+      ],
+      [
+        "for it to feel",
+        "pain when under",
+        "attack"
+      ]
+    ]
+  }
 }

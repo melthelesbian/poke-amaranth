@@ -111,5 +111,25 @@
       "level": 60,
       "move": "SOLARBEAM"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PITCHER",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 140,
+    "description": [
+      [
+        "It spits out",
+        "POISONPOWDER to",
+        "immobilize the"
+      ],
+      [
+        "enemy and then",
+        "finishes it with",
+        "a spray of ACID"
+      ]
+    ]
+  }
 }

@@ -96,5 +96,25 @@
       "level": 58,
       "move": "ROCK_SLIDE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PEBBLE",
+    "height": [
+      1,
+      4
+    ],
+    "weight": 440,
+    "description": [
+      [
+        "Found in fields",
+        "and mountains.",
+        "Mistaking them"
+      ],
+      [
+        "for boulders,",
+        "people often step",
+        "or trip on them"
+      ]
+    ]
+  }
 }

@@ -100,5 +100,25 @@
       "level": 75,
       "move": "AGILITY"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "LEGENDARY",
+    "height": [
+      5,
+      3
+    ],
+    "weight": 1160,
+    "description": [
+      [
+        "A legendary bird",
+        "#MON that is",
+        "said to appear"
+      ],
+      [
+        "from clouds while",
+        "dropping enormous",
+        "lightning bolts"
+      ]
+    ]
+  }
 }

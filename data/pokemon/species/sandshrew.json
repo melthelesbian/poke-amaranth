@@ -100,5 +100,25 @@
       "level": 46,
       "move": "EARTHQUAKE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PANGOLIN",
+    "height": [
+      2,
+      0
+    ],
+    "weight": 260,
+    "description": [
+      [
+        "Burrows deep",
+        "underground in",
+        "arid locations"
+      ],
+      [
+        "far from water.",
+        "It only emerges",
+        "to hunt for food"
+      ]
+    ]
+  }
 }

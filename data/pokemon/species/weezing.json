@@ -100,5 +100,25 @@
       "level": 65,
       "move": "EXPLOSION"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "GAS CLOUD",
+    "height": [
+      3,
+      11
+    ],
+    "weight": 210,
+    "description": [
+      [
+        "Where two kinds",
+        "of poison gases",
+        "meet, 2 KOFFINGs"
+      ],
+      [
+        "can fuse into a",
+        "WEEZING over many",
+        "years"
+      ]
+    ]
+  }
 }

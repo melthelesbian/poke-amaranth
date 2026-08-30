@@ -108,5 +108,25 @@
       "level": 52,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "MAD APE",
+    "height": [
+      1,
+      8
+    ],
+    "weight": 620,
+    "description": [
+      [
+        "Extremely quick to",
+        "anger. It could",
+        "be docile one"
+      ],
+      [
+        "moment then",
+        "thrashing away",
+        "the next instant"
+      ]
+    ]
+  }
 }

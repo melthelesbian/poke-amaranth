@@ -108,5 +108,25 @@
       "level": 60,
       "move": "FLAMETHROWER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PUPPY",
+    "height": [
+      2,
+      4
+    ],
+    "weight": 420,
+    "description": [
+      [
+        "Very protective",
+        "of its territory.",
+        "It will bark and"
+      ],
+      [
+        "bite to repel",
+        "intruders from",
+        "its space"
+      ]
+    ]
+  }
 }

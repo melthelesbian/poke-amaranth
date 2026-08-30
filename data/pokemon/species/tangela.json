@@ -100,5 +100,25 @@
       "level": 55,
       "move": "SPORE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "VINE",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 770,
+    "description": [
+      [
+        "The whole body is",
+        "swathed with wide",
+        "vines that are"
+      ],
+      [
+        "similar to sea-",
+        "weed. Its vines",
+        "shake as it walks"
+      ]
+    ]
+  }
 }

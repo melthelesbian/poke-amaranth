@@ -119,5 +119,25 @@
       "level": 48,
       "move": "DOUBLE_DASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "DYNAMIC",
+    "height": [
+      1,
+      0
+    ],
+    "weight": 140,
+    "description": [
+      [
+        "Its genetic code",
+        "is irregular.",
+        "It may mutate if"
+      ],
+      [
+        "it is exposed to",
+        "radiation from",
+        "element STONEs"
+      ]
+    ]
+  }
 }

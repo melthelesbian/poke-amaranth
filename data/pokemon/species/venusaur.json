@@ -122,5 +122,25 @@
       "level": 65,
       "move": "SOLARBEAM"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BIG BLOOM",
+    "height": [
+      6,
+      7
+    ],
+    "weight": 2210,
+    "description": [
+      [
+        "The plant blooms",
+        "when it is",
+        "absorbing solar"
+      ],
+      [
+        "energy. It stays",
+        "on the move to",
+        "seek sunlight"
+      ]
+    ]
+  }
 }

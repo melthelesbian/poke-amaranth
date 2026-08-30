@@ -111,5 +111,25 @@
       "level": 67,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SERPENTINE",
+    "height": [
+      13,
+      1
+    ],
+    "weight": 360,
+    "description": [
+      [
+        "A mystical #MON",
+        "that exudes a",
+        "gentle aura."
+      ],
+      [
+        "Has the ability",
+        "to change climate",
+        "conditions"
+      ]
+    ]
+  }
 }

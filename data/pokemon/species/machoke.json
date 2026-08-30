@@ -104,5 +104,25 @@
       "level": 58,
       "move": "SUBMISSION"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "FLEX",
+    "height": [
+      4,
+      11
+    ],
+    "weight": 1550,
+    "description": [
+      [
+        "Its muscular body",
+        "is so powerful, it",
+        "must wear a power"
+      ],
+      [
+        "save belt to be",
+        "able to regulate",
+        "its motions"
+      ]
+    ]
+  }
 }

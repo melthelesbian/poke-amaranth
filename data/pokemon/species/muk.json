@@ -103,5 +103,25 @@
       "level": 58,
       "move": "SLUDGE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SLUDGE",
+    "height": [
+      3,
+      11
+    ],
+    "weight": 660,
+    "description": [
+      [
+        "Thickly covered",
+        "with a filthy,",
+        "vile sludge. It"
+      ],
+      [
+        "is so toxic, even",
+        "its footprints",
+        "contain poison"
+      ]
+    ]
+  }
 }

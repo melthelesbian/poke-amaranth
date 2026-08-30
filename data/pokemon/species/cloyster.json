@@ -106,5 +106,25 @@
       "level": 58,
       "move": "BLIZZARD"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PEARL",
+    "height": [
+      4,
+      11
+    ],
+    "weight": 2920,
+    "description": [
+      [
+        "When attacked, it",
+        "launches its",
+        "horns in quick"
+      ],
+      [
+        "volleys. Its",
+        "innards have",
+        "never been seen"
+      ]
+    ]
+  }
 }

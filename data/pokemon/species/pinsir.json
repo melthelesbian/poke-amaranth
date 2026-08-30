@@ -93,5 +93,25 @@
       "level": 64,
       "move": "BUG_BUZZ"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BEETLE",
+    "height": [
+      4,
+      11
+    ],
+    "weight": 1210,
+    "description": [
+      [
+        "If it fails to",
+        "crush the victim",
+        "in its pincers,"
+      ],
+      [
+        "it will swing it",
+        "around and toss",
+        "it hard"
+      ]
+    ]
+  }
 }

@@ -49,5 +49,25 @@
       "level": 6,
       "move": "BUG_BITE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "LARVAL BUG",
+    "height": [
+      1,
+      0
+    ],
+    "weight": 60,
+    "description": [
+      [
+        "Its short feet",
+        "are tipped with",
+        "suction pads that"
+      ],
+      [
+        "enable it to",
+        "tirelessly climb",
+        "slopes and walls"
+      ]
+    ]
+  }
 }

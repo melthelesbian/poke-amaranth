@@ -93,5 +93,25 @@
       "level": 36,
       "move": "CRUNCH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "FANGED RAT",
+    "height": [
+      2,
+      4
+    ],
+    "weight": 410,
+    "description": [
+      [
+        "It uses its whis-",
+        "kers to maintain",
+        "its balance."
+      ],
+      [
+        "It apparently",
+        "slows down if",
+        "they are cut off"
+      ]
+    ]
+  }
 }

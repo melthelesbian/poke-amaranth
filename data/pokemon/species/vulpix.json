@@ -112,5 +112,25 @@
       "level": 62,
       "move": "RECOVER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "FIRE FOX",
+    "height": [
+      2,
+      0
+    ],
+    "weight": 220,
+    "description": [
+      [
+        "At the time of",
+        "birth, it has",
+        "just one tail."
+      ],
+      [
+        "The tail splits",
+        "from its tip as",
+        "it grows older"
+      ]
+    ]
+  }
 }

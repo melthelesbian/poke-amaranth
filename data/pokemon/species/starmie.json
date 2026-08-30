@@ -118,5 +118,25 @@
       "level": 62,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "STAR GEM",
+    "height": [
+      3,
+      7
+    ],
+    "weight": 1760,
+    "description": [
+      [
+        "Its central core",
+        "glows with the",
+        "seven colors of"
+      ],
+      [
+        "the rainbow. Some",
+        "people value the",
+        "core as a gem"
+      ]
+    ]
+  }
 }

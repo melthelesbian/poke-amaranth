@@ -122,5 +122,25 @@
       "level": 52,
       "move": "HYPER_BEAM"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "DIGITAL",
+    "height": [
+      2,
+      7
+    ],
+    "weight": 800,
+    "description": [
+      [
+        "A #MON that",
+        "consists entirely",
+        "of programming"
+      ],
+      [
+        "code. Capable of",
+        "moving freely in",
+        "cyberspace"
+      ]
+    ]
+  }
 }

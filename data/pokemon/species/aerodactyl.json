@@ -94,5 +94,25 @@
       "level": 55,
       "move": "CRUNCH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PTEROSAUR",
+    "height": [
+      5,
+      11
+    ],
+    "weight": 1300,
+    "description": [
+      [
+        "A ferocious, pre-",
+        "historic #MON",
+        "that goes for the"
+      ],
+      [
+        "enemy's throat",
+        "with its serrated",
+        "saw-like fangs"
+      ]
+    ]
+  }
 }

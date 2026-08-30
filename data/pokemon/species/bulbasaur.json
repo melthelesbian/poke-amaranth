@@ -116,5 +116,25 @@
       "level": 54,
       "move": "SOLARBEAM"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SEEDLING",
+    "height": [
+      2,
+      4
+    ],
+    "weight": 150,
+    "description": [
+      [
+        "A strange seed was",
+        "planted on its",
+        "back at birth."
+      ],
+      [
+        "The plant sprouts",
+        "and grows with",
+        "this #MON"
+      ]
+    ]
+  }
 }

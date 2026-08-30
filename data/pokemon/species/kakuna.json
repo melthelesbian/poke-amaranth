@@ -48,5 +48,25 @@
       "level": 7,
       "move": "DEFENSE_CURL"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "COCOON",
+    "height": [
+      2,
+      0
+    ],
+    "weight": 220,
+    "description": [
+      [
+        "Almost incapable",
+        "of moving, this",
+        "#MON can only"
+      ],
+      [
+        "harden its shell",
+        "to protect itself",
+        "from predators"
+      ]
+    ]
+  }
 }

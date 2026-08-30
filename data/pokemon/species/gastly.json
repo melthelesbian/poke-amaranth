@@ -105,5 +105,25 @@
       "level": 62,
       "move": "DREAM_EATER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "GHAST",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 2,
+    "description": [
+      [
+        "Almost invisible,",
+        "this gaseous",
+        "#MON cloaks"
+      ],
+      [
+        "the target and",
+        "puts it to sleep",
+        "without notice"
+      ]
+    ]
+  }
 }

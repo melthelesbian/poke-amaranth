@@ -57,5 +57,25 @@
       "level": 50,
       "move": "METRONOME"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "TRANSFORM",
+    "height": [
+      1,
+      0
+    ],
+    "weight": 90,
+    "description": [
+      [
+        "Capable of copying",
+        "an enemy's genetic",
+        "code to instantly"
+      ],
+      [
+        "transform itself",
+        "into a duplicate",
+        "of the enemy"
+      ]
+    ]
+  }
 }

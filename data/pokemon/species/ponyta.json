@@ -97,5 +97,25 @@
       "level": 62,
       "move": "HEAVY_SMASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "FLAME PONY",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 660,
+    "description": [
+      [
+        "Its hooves are 10",
+        "times harder than",
+        "diamonds. It can"
+      ],
+      [
+        "trample anything",
+        "completely flat",
+        "in little time"
+      ]
+    ]
+  }
 }

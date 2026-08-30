@@ -106,5 +106,25 @@
       "level": 58,
       "move": "SOLARBEAM"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SMALL EGG",
+    "height": [
+      1,
+      4
+    ],
+    "weight": 60,
+    "description": [
+      [
+        "Often mistaken",
+        "for eggs.",
+        "When disturbed,"
+      ],
+      [
+        "they quickly",
+        "gather and attack",
+        "in swarms"
+      ]
+    ]
+  }
 }

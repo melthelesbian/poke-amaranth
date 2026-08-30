@@ -118,5 +118,25 @@
       "level": 56,
       "move": "BUG_BUZZ"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "TOXIC MOTH",
+    "height": [
+      4,
+      11
+    ],
+    "weight": 280,
+    "description": [
+      [
+        "The dust-like",
+        "scales covering",
+        "its wings are"
+      ],
+      [
+        "color coded to",
+        "indicate the kinds",
+        "of poison it has"
+      ]
+    ]
+  }
 }

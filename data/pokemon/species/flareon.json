@@ -103,5 +103,25 @@
       "level": 56,
       "move": "FLARE_RUSH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "FLARE",
+    "height": [
+      2,
+      11
+    ],
+    "weight": 550,
+    "description": [
+      [
+        "When storing",
+        "thermal energy in",
+        "its body, its"
+      ],
+      [
+        "temperature could",
+        "soar to over 1600",
+        "degrees"
+      ]
+    ]
+  }
 }

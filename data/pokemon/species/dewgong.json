@@ -104,5 +104,25 @@
       "level": 62,
       "move": "REST"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "MANATEE",
+    "height": [
+      5,
+      7
+    ],
+    "weight": 2650,
+    "description": [
+      [
+        "Stores thermal",
+        "energy in its",
+        "body. Swims at a"
+      ],
+      [
+        "steady 8 knots",
+        "even in intensely",
+        "cold waters"
+      ]
+    ]
+  }
 }

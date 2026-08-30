@@ -109,5 +109,25 @@
       "level": 62,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BIRD TWINS",
+    "height": [
+      4,
+      7
+    ],
+    "weight": 860,
+    "description": [
+      [
+        "A bird that makes",
+        "up for its poor",
+        "flying with its"
+      ],
+      [
+        "fast foot speed.",
+        "Leaves giant",
+        "footprints"
+      ]
+    ]
+  }
 }

@@ -105,5 +105,25 @@
       "level": 64,
       "move": "STAR_JAB"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PUNCHER",
+    "height": [
+      4,
+      7
+    ],
+    "weight": 1110,
+    "description": [
+      [
+        "While apparently",
+        "doing nothing, it",
+        "fires punches in"
+      ],
+      [
+        "lightning fast",
+        "volleys that are",
+        "impossible to see"
+      ]
+    ]
+  }
 }

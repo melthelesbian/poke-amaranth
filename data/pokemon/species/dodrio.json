@@ -111,5 +111,25 @@
       "level": 64,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BIRD TRIO",
+    "height": [
+      5,
+      11
+    ],
+    "weight": 1880,
+    "description": [
+      [
+        "Uses its three",
+        "brains to execute",
+        "complex plans."
+      ],
+      [
+        "While two heads",
+        "sleep, one head",
+        "stays awake"
+      ]
+    ]
+  }
 }

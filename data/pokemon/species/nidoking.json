@@ -107,5 +107,25 @@
       "level": 60,
       "move": "CRUNCH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "KING PIN",
+    "height": [
+      4,
+      7
+    ],
+    "weight": 1370,
+    "description": [
+      [
+        "It uses its",
+        "powerful tail in",
+        "battle to smash,"
+      ],
+      [
+        "constrict, then",
+        "break the prey's",
+        "bones"
+      ]
+    ]
+  }
 }

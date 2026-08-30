@@ -126,5 +126,25 @@
       "level": 64,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "POLLYWOG",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 440,
+    "description": [
+      [
+        "Capable of living",
+        "in or out of",
+        "water. When out"
+      ],
+      [
+        "of water, it",
+        "sweats to keep",
+        "its body slimy"
+      ]
+    ]
+  }
 }

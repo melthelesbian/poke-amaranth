@@ -103,5 +103,25 @@
       "level": 55,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "AMMONITE",
+    "height": [
+      1,
+      4
+    ],
+    "weight": 170,
+    "description": [
+      [
+        "Although long",
+        "extinct, in rare",
+        "cases, it can be"
+      ],
+      [
+        "genetically",
+        "resurrected from",
+        "fossils"
+      ]
+    ]
+  }
 }

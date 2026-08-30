@@ -92,5 +92,25 @@
       "level": 42,
       "move": "SKY_ATTACK"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "ANGRY BIRD",
+    "height": [
+      1,
+      0
+    ],
+    "weight": 40,
+    "description": [
+      [
+        "Eats bugs in",
+        "grassy areas. It",
+        "has to flap its"
+      ],
+      [
+        "short wings at",
+        "high speed to",
+        "stay airborne"
+      ]
+    ]
+  }
 }

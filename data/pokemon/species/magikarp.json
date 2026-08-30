@@ -46,5 +46,25 @@
       "level": 30,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "JUMPY FISH",
+    "height": [
+      2,
+      11
+    ],
+    "weight": 220,
+    "description": [
+      [
+        "In the distant",
+        "past, it was",
+        "somewhat stronger"
+      ],
+      [
+        "than the horribly",
+        "weak descendants",
+        "that exist today"
+      ]
+    ]
+  }
 }

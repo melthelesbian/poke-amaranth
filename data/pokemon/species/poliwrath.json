@@ -116,5 +116,25 @@
       "level": 64,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "HYPNO TOAD",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 1190,
+    "description": [
+      [
+        "An adept swimmer",
+        "at both the front",
+        "crawl and breast"
+      ],
+      [
+        "stroke. Easily",
+        "overtakes the best",
+        "human swimmers"
+      ]
+    ]
+  }
 }

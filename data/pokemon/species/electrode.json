@@ -98,5 +98,25 @@
       "level": 64,
       "move": "EXPLOSION"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BIG BALL",
+    "height": [
+      3,
+      11
+    ],
+    "weight": 1470,
+    "description": [
+      [
+        "It stores electric",
+        "energy under very",
+        "high pressure."
+      ],
+      [
+        "It often explodes",
+        "with little or no",
+        "provocation"
+      ]
+    ]
+  }
 }

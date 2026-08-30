@@ -118,5 +118,25 @@
       "level": 60,
       "move": "HYPNOSIS"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BALLOON",
+    "height": [
+      1,
+      8
+    ],
+    "weight": 120,
+    "description": [
+      [
+        "When its huge eyes",
+        "light up, it sings",
+        "a mysteriously"
+      ],
+      [
+        "soothing melody",
+        "that lulls its",
+        "enemies to sleep"
+      ]
+    ]
+  }
 }

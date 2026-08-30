@@ -105,5 +105,25 @@
       "level": 58,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "NAUTILUS",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 770,
+    "description": [
+      [
+        "A prehistoric",
+        "#MON that died",
+        "out when its"
+      ],
+      [
+        "heavy shell made",
+        "it impossible to",
+        "catch prey"
+      ]
+    ]
+  }
 }

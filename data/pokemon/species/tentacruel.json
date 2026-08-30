@@ -100,5 +100,25 @@
       "level": 62,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "MANOWAR",
+    "height": [
+      5,
+      3
+    ],
+    "weight": 1210,
+    "description": [
+      [
+        "The tentacles are",
+        "normally kept",
+        "short. On hunts,"
+      ],
+      [
+        "they are extended",
+        "to ensnare and",
+        "immobilize prey"
+      ]
+    ]
+  }
 }

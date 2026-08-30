@@ -91,5 +91,25 @@
       "level": 34,
       "move": "CRUNCH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PACK RAT",
+    "height": [
+      1,
+      0
+    ],
+    "weight": 80,
+    "description": [
+      [
+        "Bites anything",
+        "when it attacks.",
+        "Small and very"
+      ],
+      [
+        "quick, it is a",
+        "common sight in",
+        "many places"
+      ]
+    ]
+  }
 }

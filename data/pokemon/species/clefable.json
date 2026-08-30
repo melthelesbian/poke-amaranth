@@ -122,5 +122,25 @@
       "level": 64,
       "move": "MOONBLAST"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "STAR PIXIE",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 880,
+    "description": [
+      [
+        "A timid fairy",
+        "#MON that is",
+        "rarely seen. It"
+      ],
+      [
+        "will run and hide",
+        "the moment it",
+        "senses people"
+      ]
+    ]
+  }
 }

@@ -114,5 +114,25 @@
       "level": 60,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "WAR TURTLE",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 500,
+    "description": [
+      [
+        "Often hides in",
+        "water to stalk",
+        "unwary prey. For"
+      ],
+      [
+        "swimming fast, it",
+        "moves its ears to",
+        "maintain balance"
+      ]
+    ]
+  }
 }

@@ -107,5 +107,25 @@
       "level": 62,
       "move": "ROCK_SLIDE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "ROCK",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 2320,
+    "description": [
+      [
+        "Rolls down slopes",
+        "to move. It rolls",
+        "over any obstacle"
+      ],
+      [
+        "without slowing",
+        "or changing its",
+        "direction"
+      ]
+    ]
+  }
 }

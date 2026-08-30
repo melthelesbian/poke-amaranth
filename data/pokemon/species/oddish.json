@@ -120,5 +120,25 @@
       "level": 58,
       "move": "PETAL_DANCE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "GRASS",
+    "height": [
+      1,
+      8
+    ],
+    "weight": 120,
+    "description": [
+      [
+        "During the day,",
+        "it keeps its face",
+        "buried in the"
+      ],
+      [
+        "ground. At night,",
+        "it wanders around",
+        "sowing its seeds"
+      ]
+    ]
+  }
 }

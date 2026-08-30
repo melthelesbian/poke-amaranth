@@ -109,5 +109,25 @@
       "level": 60,
       "move": "CRUNCH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PINPRICK",
+    "height": [
+      2,
+      11
+    ],
+    "weight": 430,
+    "description": [
+      [
+        "An aggressive",
+        "#MON that is",
+        "quick to attack."
+      ],
+      [
+        "The horn on its",
+        "head secretes a",
+        "powerful venom"
+      ]
+    ]
+  }
 }

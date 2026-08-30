@@ -103,5 +103,25 @@
       "level": 48,
       "move": "EARTHQUAKE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "ECHIDNA",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 650,
+    "description": [
+      [
+        "Curls up into a",
+        "spiny ball when",
+        "threatened. It"
+      ],
+      [
+        "can roll while",
+        "curled up to",
+        "attack or escape"
+      ]
+    ]
+  }
 }

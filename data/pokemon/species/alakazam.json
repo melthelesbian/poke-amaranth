@@ -94,5 +94,25 @@
       "level": 60,
       "move": "LIGHT_SCREEN"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PSIONIC",
+    "height": [
+      4,
+      11
+    ],
+    "weight": 1060,
+    "description": [
+      [
+        "Its brain can out-",
+        "perform a super-",
+        "computer."
+      ],
+      [
+        "Its intelligence",
+        "quotient is said",
+        "to be 5,000"
+      ]
+    ]
+  }
 }

@@ -105,5 +105,25 @@
       "level": 55,
       "move": "NIGHT_SLASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "LUCKY DUCK",
+    "height": [
+      2,
+      7
+    ],
+    "weight": 330,
+    "description": [
+      [
+        "The sprig of",
+        "green onions it",
+        "holds is its"
+      ],
+      [
+        "weapon. It is",
+        "used much like a",
+        "metal sword"
+      ]
+    ]
+  }
 }

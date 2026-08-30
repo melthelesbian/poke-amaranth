@@ -54,5 +54,25 @@
       "level": 1,
       "move": "TELEPORT"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "LATENT",
+    "height": [
+      2,
+      11
+    ],
+    "weight": 430,
+    "description": [
+      [
+        "Using its ability",
+        "to read minds, it",
+        "will identify"
+      ],
+      [
+        "impending danger",
+        "and TELEPORT to",
+        "safety"
+      ]
+    ]
+  }
 }

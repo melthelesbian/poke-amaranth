@@ -107,5 +107,25 @@
       "level": 56,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "TURTLE",
+    "height": [
+      1,
+      8
+    ],
+    "weight": 200,
+    "description": [
+      [
+        "After birth, its",
+        "back swells and",
+        "hardens into a"
+      ],
+      [
+        "shell. Powerfully",
+        "sprays foam from",
+        "its mouth"
+      ]
+    ]
+  }
 }

@@ -105,5 +105,25 @@
       "level": 62,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SERPENT",
+    "height": [
+      5,
+      11
+    ],
+    "weight": 70,
+    "description": [
+      [
+        "Long considered a",
+        "mythical #MON",
+        "until recently"
+      ],
+      [
+        "when a small",
+        "colony was found",
+        "living underwater"
+      ]
+    ]
+  }
 }

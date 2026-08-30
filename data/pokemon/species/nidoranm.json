@@ -97,5 +97,25 @@
       "level": 58,
       "move": "CRUNCH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "HAREPIN",
+    "height": [
+      1,
+      8
+    ],
+    "weight": 200,
+    "description": [
+      [
+        "Stiffens its ears",
+        "to sense danger.",
+        "The larger its"
+      ],
+      [
+        "horns, the more",
+        "powerful its",
+        "secreted venom"
+      ]
+    ]
+  }
 }

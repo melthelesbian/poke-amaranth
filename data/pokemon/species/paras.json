@@ -105,5 +105,25 @@
       "level": 52,
       "move": "BUG_BUZZ"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "CICADA",
+    "height": [
+      1,
+      0
+    ],
+    "weight": 120,
+    "description": [
+      [
+        "Burrows to suck",
+        "tree roots. The",
+        "mushrooms on its"
+      ],
+      [
+        "back grow by draw-",
+        "ing nutrients from",
+        "the bug host"
+      ]
+    ]
+  }
 }

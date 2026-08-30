@@ -48,5 +48,25 @@
       "level": 7,
       "move": "DEFENSE_CURL"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "COCOON",
+    "height": [
+      2,
+      4
+    ],
+    "weight": 220,
+    "description": [
+      [
+        "This #MON is",
+        "vulnerable to",
+        "attack while its"
+      ],
+      [
+        "shell is soft,",
+        "exposing its weak",
+        "and tender body"
+      ]
+    ]
+  }
 }

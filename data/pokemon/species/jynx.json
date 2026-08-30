@@ -87,5 +87,25 @@
       "level": 52,
       "move": "HYPNOSIS"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "OPERATIC",
+    "height": [
+      4,
+      7
+    ],
+    "weight": 900,
+    "description": [
+      [
+        "It seductively",
+        "wiggles its hips",
+        "as it walks. It"
+      ],
+      [
+        "can cause people",
+        "to dance in",
+        "unison with it"
+      ]
+    ]
+  }
 }

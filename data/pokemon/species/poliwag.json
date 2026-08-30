@@ -106,5 +106,25 @@
       "level": 55,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "TADPOLE",
+    "height": [
+      2,
+      0
+    ],
+    "weight": 270,
+    "description": [
+      [
+        "Its newly grown",
+        "legs prevent it",
+        "from running. It"
+      ],
+      [
+        "appears to prefer",
+        "swimming than",
+        "trying to stand"
+      ]
+    ]
+  }
 }

@@ -135,5 +135,25 @@
       "level": 62,
       "move": "PETAL_DANCE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BULBOUS",
+    "height": [
+      2,
+      7
+    ],
+    "weight": 190,
+    "description": [
+      [
+        "The fluid that",
+        "oozes from its",
+        "mouth isn't drool."
+      ],
+      [
+        "It is a nectar",
+        "that is used to",
+        "attract prey"
+      ]
+    ]
+  }
 }

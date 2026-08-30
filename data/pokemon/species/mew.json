@@ -141,5 +141,25 @@
       "level": 65,
       "move": "METRONOME"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "ANCIENT",
+    "height": [
+      1,
+      4
+    ],
+    "weight": 90,
+    "description": [
+      [
+        "So rare that it",
+        "is still said to",
+        "be a mirage by"
+      ],
+      [
+        "many experts. Only",
+        "a few people have",
+        "seen it worldwide"
+      ]
+    ]
+  }
 }

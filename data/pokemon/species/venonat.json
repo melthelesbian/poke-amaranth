@@ -110,5 +110,25 @@
       "level": 54,
       "move": "BUG_BUZZ"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "FUZZY BUG",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 660,
+    "description": [
+      [
+        "Lives in the",
+        "shadows of tall",
+        "trees where it"
+      ],
+      [
+        "eats insects. It",
+        "is attracted by",
+        "light at night"
+      ]
+    ]
+  }
 }

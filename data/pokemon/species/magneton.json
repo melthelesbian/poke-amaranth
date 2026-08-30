@@ -104,5 +104,25 @@
       "level": 60,
       "move": "HEAVY_SMASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "MAGNETIZED",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 1320,
+    "description": [
+      [
+        "Formed by several",
+        "MAGNEMITEs linked",
+        "together. They"
+      ],
+      [
+        "frequently appear",
+        "when sunspots",
+        "flare up"
+      ]
+    ]
+  }
 }

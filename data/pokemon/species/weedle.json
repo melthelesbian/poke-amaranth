@@ -49,5 +49,25 @@
       "level": 6,
       "move": "BUG_BITE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "POISON PIN",
+    "height": [
+      1,
+      0
+    ],
+    "weight": 70,
+    "description": [
+      [
+        "Often found in",
+        "forests, eating",
+        "leaves."
+      ],
+      [
+        "It has a sharp",
+        "venomous stinger",
+        "on its head"
+      ]
+    ]
+  }
 }

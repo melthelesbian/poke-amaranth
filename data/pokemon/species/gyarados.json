@@ -103,5 +103,25 @@
       "level": 63,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "LEVIATHAN",
+    "height": [
+      21,
+      4
+    ],
+    "weight": 5180,
+    "description": [
+      [
+        "Rarely seen in",
+        "the wild. Huge",
+        "and vicious, it"
+      ],
+      [
+        "is capable of",
+        "destroying entire",
+        "cities in a rage"
+      ]
+    ]
+  }
 }

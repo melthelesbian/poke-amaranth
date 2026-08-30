@@ -105,5 +105,25 @@
       "level": 65,
       "move": "BONEMERANG"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BONEKEEPER",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 990,
+    "description": [
+      [
+        "The bone it holds",
+        "is its key weapon.",
+        "It throws the"
+      ],
+      [
+        "bone skillfully",
+        "like a boomerang",
+        "to KO targets"
+      ]
+    ]
+  }
 }

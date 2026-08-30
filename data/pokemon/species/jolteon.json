@@ -103,5 +103,25 @@
       "level": 56,
       "move": "THUNDER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "JOLT",
+    "height": [
+      2,
+      7
+    ],
+    "weight": 540,
+    "description": [
+      [
+        "It accumulates",
+        "negative ions in",
+        "the atmosphere to"
+      ],
+      [
+        "blast out 10000-",
+        "volt lightning",
+        "bolts"
+      ]
+    ]
+  }
 }

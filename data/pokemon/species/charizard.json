@@ -121,5 +121,25 @@
       "level": 65,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "DRACONIC",
+    "height": [
+      5,
+      7
+    ],
+    "weight": 2000,
+    "description": [
+      [
+        "Spits fire that",
+        "is hot enough to",
+        "melt boulders."
+      ],
+      [
+        "Known to cause",
+        "forest fires",
+        "unintentionally"
+      ]
+    ]
+  }
 }

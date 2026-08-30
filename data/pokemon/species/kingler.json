@@ -104,5 +104,25 @@
       "level": 64,
       "move": "TAKE_DOWN"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "CLAW CRAB",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 1320,
+    "description": [
+      [
+        "The large pincer",
+        "has 10000 hp of",
+        "crushing power."
+      ],
+      [
+        "However, its huge",
+        "size makes it",
+        "unwieldy to use"
+      ]
+    ]
+  }
 }

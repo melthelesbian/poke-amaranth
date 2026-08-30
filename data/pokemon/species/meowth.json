@@ -104,5 +104,25 @@
       "level": 56,
       "move": "NIGHT_SLASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "COIN CAT",
+    "height": [
+      1,
+      4
+    ],
+    "weight": 90,
+    "description": [
+      [
+        "Adores circular",
+        "objects. Wanders",
+        "the streets on a"
+      ],
+      [
+        "nightly basis to",
+        "look for dropped",
+        "loose change"
+      ]
+    ]
+  }
 }

@@ -105,5 +105,25 @@
       "level": 56,
       "move": "SLUDGE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SNAKE",
+    "height": [
+      6,
+      7
+    ],
+    "weight": 150,
+    "description": [
+      [
+        "Moves silently",
+        "and stealthily.",
+        "Eats the eggs of"
+      ],
+      [
+        "birds, such as",
+        "PIDGEY and",
+        "SPEAROW, whole"
+      ]
+    ]
+  }
 }

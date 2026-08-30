@@ -111,5 +111,25 @@
       "level": 55,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "HEADACHE",
+    "height": [
+      2,
+      7
+    ],
+    "weight": 430,
+    "description": [
+      [
+        "While lulling its",
+        "enemies with its",
+        "vacant look, this"
+      ],
+      [
+        "wily #MON will",
+        "use psychokinetic",
+        "powers"
+      ]
+    ]
+  }
 }

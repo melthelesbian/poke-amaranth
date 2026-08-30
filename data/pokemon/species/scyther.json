@@ -94,5 +94,25 @@
       "level": 64,
       "move": "BUG_BUZZ"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "MANTIS",
+    "height": [
+      4,
+      11
+    ],
+    "weight": 1230,
+    "description": [
+      [
+        "With ninja-like",
+        "agility and speed,",
+        "it can create the"
+      ],
+      [
+        "illusion that",
+        "there is more",
+        "than one"
+      ]
+    ]
+  }
 }

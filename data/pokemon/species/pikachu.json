@@ -102,5 +102,25 @@
       "level": 45,
       "move": "THUNDER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "MOUSE",
+    "height": [
+      1,
+      4
+    ],
+    "weight": 130,
+    "description": [
+      [
+        "When several of",
+        "these #MON",
+        "gather, their"
+      ],
+      [
+        "electricity could",
+        "build and cause",
+        "lightning storms"
+      ]
+    ]
+  }
 }

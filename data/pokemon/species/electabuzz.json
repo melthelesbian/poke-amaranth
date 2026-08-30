@@ -89,5 +89,25 @@
       "level": 56,
       "move": "THUNDER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SHOCKER",
+    "height": [
+      3,
+      7
+    ],
+    "weight": 660,
+    "description": [
+      [
+        "Normally found",
+        "near power plants,",
+        "they can wander"
+      ],
+      [
+        "away and cause",
+        "major blackouts",
+        "in cities"
+      ]
+    ]
+  }
 }

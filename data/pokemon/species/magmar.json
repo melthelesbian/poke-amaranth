@@ -93,5 +93,25 @@
       "level": 58,
       "move": "FIRE_SPIN"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SPITFIRE",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 980,
+    "description": [
+      [
+        "Its body always",
+        "burns with an",
+        "orange glow that"
+      ],
+      [
+        "enables it to",
+        "hide perfectly",
+        "among flames"
+      ]
+    ]
+  }
 }

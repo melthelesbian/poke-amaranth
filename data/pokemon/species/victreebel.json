@@ -106,5 +106,25 @@
       "level": 60,
       "move": "SOLARBEAM"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "FLY TRAP",
+    "height": [
+      5,
+      7
+    ],
+    "weight": 340,
+    "description": [
+      [
+        "Said to live in",
+        "huge colonies",
+        "deep in jungles,"
+      ],
+      [
+        "although no one",
+        "has ever returned",
+        "from there"
+      ]
+    ]
+  }
 }

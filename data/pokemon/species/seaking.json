@@ -99,5 +99,25 @@
       "level": 57,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "KOI",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 860,
+    "description": [
+      [
+        "In the autumn",
+        "spawning season,",
+        "they can be seen"
+      ],
+      [
+        "swimming power-",
+        "fully up rivers",
+        "and creeks"
+      ]
+    ]
+  }
 }

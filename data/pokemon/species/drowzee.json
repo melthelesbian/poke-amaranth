@@ -106,5 +106,25 @@
       "level": 52,
       "move": "PSYCHIC_M"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SLEEPY",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 710,
+    "description": [
+      [
+        "Puts enemies to",
+        "sleep then eats",
+        "their dreams."
+      ],
+      [
+        "Occasionally gets",
+        "sick from eating",
+        "bad dreams"
+      ]
+    ]
+  }
 }

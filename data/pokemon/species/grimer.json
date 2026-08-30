@@ -101,5 +101,25 @@
       "level": 56,
       "move": "SLUDGE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SEWAGE",
+    "height": [
+      2,
+      11
+    ],
+    "weight": 660,
+    "description": [
+      [
+        "Appears in filthy",
+        "areas. Thrives by",
+        "sucking up"
+      ],
+      [
+        "polluted sludge",
+        "that is pumped",
+        "out of factories"
+      ]
+    ]
+  }
 }

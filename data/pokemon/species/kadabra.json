@@ -101,5 +101,25 @@
       "level": 60,
       "move": "LIGHT_SCREEN"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PSI",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 1250,
+    "description": [
+      [
+        "It emits special",
+        "alpha waves from",
+        "its body that"
+      ],
+      [
+        "induce headaches",
+        "just by being",
+        "close by"
+      ]
+    ]
+  }
 }

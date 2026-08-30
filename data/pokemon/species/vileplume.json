@@ -125,5 +125,25 @@
       "level": 62,
       "move": "PETAL_DANCE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "RAFFLESIA",
+    "height": [
+      3,
+      11
+    ],
+    "weight": 410,
+    "description": [
+      [
+        "The larger its",
+        "petals, the more",
+        "toxic pollen it"
+      ],
+      [
+        "contains. Its big",
+        "head is heavy and",
+        "hard to hold up"
+      ]
+    ]
+  }
 }

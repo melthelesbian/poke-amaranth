@@ -103,5 +103,25 @@
       "level": 55,
       "move": "AGILITY"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "TRILOBITE",
+    "height": [
+      1,
+      8
+    ],
+    "weight": 250,
+    "description": [
+      [
+        "A #MON that",
+        "was resurrected",
+        "from a fossil"
+      ],
+      [
+        "found in what was",
+        "once the ocean",
+        "floor eons ago"
+      ]
+    ]
+  }
 }

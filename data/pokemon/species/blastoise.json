@@ -114,5 +114,25 @@
       "level": 65,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BIG CANNON",
+    "height": [
+      5,
+      3
+    ],
+    "weight": 1890,
+    "description": [
+      [
+        "A brutal #MON",
+        "with pressurized",
+        "water jets on its"
+      ],
+      [
+        "shell. They are",
+        "used for high",
+        "speed tackles"
+      ]
+    ]
+  }
 }

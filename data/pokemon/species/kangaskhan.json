@@ -98,5 +98,25 @@
       "level": 64,
       "move": "SKULL_BASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "PARENT",
+    "height": [
+      7,
+      3
+    ],
+    "weight": 1760,
+    "description": [
+      [
+        "The infant rarely",
+        "ventures out of",
+        "its mother's"
+      ],
+      [
+        "protective pouch",
+        "until it is 3",
+        "years old"
+      ]
+    ]
+  }
 }

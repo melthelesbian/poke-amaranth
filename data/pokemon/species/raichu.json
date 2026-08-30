@@ -105,5 +105,25 @@
       "level": 45,
       "move": "THUNDER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BIG MOUSE",
+    "height": [
+      2,
+      7
+    ],
+    "weight": 660,
+    "description": [
+      [
+        "Its long tail",
+        "serves as a",
+        "ground to protect"
+      ],
+      [
+        "itself from its",
+        "own high voltage",
+        "power"
+      ]
+    ]
+  }
 }

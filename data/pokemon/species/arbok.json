@@ -106,5 +106,25 @@
       "level": 62,
       "move": "SLUDGE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "COBRA",
+    "height": [
+      11,
+      6
+    ],
+    "weight": 1430,
+    "description": [
+      [
+        "It is rumored that",
+        "the ferocious",
+        "warning markings"
+      ],
+      [
+        "on its belly",
+        "differ from area",
+        "to area"
+      ]
+    ]
+  }
 }

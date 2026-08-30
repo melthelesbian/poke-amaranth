@@ -102,5 +102,25 @@
       "level": 60,
       "move": "REST"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SEA LION",
+    "height": [
+      3,
+      7
+    ],
+    "weight": 1980,
+    "description": [
+      [
+        "The protruding",
+        "horn on its head",
+        "is very hard."
+      ],
+      [
+        "It is used for",
+        "bashing through",
+        "thick ice"
+      ]
+    ]
+  }
 }

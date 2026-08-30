@@ -11,6 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE_STATS = ROOT / "data/pokemon/base_stats"
 SPECIES = ROOT / "data/pokemon/species"
 EVOS_MOVES = ROOT / "data/pokemon/evos_moves"
+DEX_ENTRIES = ROOT / "data/pokemon/dex_entries"
+DEX_TEXT = ROOT / "data/pokemon/dex_text"
 SPRITE_DECLARATIONS = (ROOT / "gfx/pics.asm", ROOT / "data/pokemon/mew.asm")
 EXPECTED_COUNT = 151
 REQUIRED_FIELDS = (
@@ -26,6 +28,7 @@ REQUIRED_FIELDS = (
     "tmhm",
     "evolutions",
     "learnset",
+    "pokedex",
 )
 STAT_FIELDS = ("hp", "attack", "defense", "speed", "special")
 ALLOWED_FIELDS = set(REQUIRED_FIELDS)
@@ -67,7 +70,69 @@ def evo_move_blocks():
     return blocks
 
 
-def parse_base_stats(path, declared_sprites, evo_blocks):
+def dex_entry_blocks():
+    blocks = {}
+    for path in sorted(DEX_ENTRIES.glob("*.gen.asm")):
+        text = path.read_text()
+        match = re.search(r"^([A-Za-z0-9]+)DexEntry:\s*$", text, re.MULTILINE)
+        if not match:
+            fail(f"{path}: missing Pokédex entry label")
+        label = match.group(1)
+        if label in blocks:
+            fail(f"{path}: duplicate Pokédex entry label {label}")
+        blocks[label] = text[match.end():]
+    return blocks
+
+
+def dex_text_blocks():
+    blocks = {}
+    for path in sorted(DEX_TEXT.glob("*.gen.asm")):
+        text = path.read_text()
+        match = re.search(r"^_([A-Za-z0-9]+)DexEntry::\s*$", text, re.MULTILINE)
+        if not match:
+            fail(f"{path}: missing Pokédex text label")
+        label = match.group(1)
+        if label in blocks:
+            fail(f"{path}: duplicate Pokédex text label {label}")
+        blocks[label] = text[match.end():]
+    return blocks
+
+
+def parse_pokedex(asm_name, entry_blocks, text_blocks, path):
+    if asm_name not in entry_blocks:
+        fail(f"{path}: missing Pokédex entry for {asm_name}")
+    if asm_name not in text_blocks:
+        fail(f"{path}: missing Pokédex text for {asm_name}")
+    entry_text = entry_blocks[asm_name]
+    category = one(r'^\s*db "([^"]+)@"\s*$', entry_text, "Pokédex category", path)
+    height = one(r"^\s*db (\d+),(\d+)\s*$", entry_text, "Pokédex height", path)
+    weight = one(r"^\s*dw (\d+)\s*$", entry_text, "Pokédex weight", path)
+    text_label = one(r"^\s*text_far _([A-Za-z0-9]+DexEntry)\s*$", entry_text, "Pokédex text pointer", path)
+    if text_label != f"{asm_name}DexEntry":
+        fail(f"{path}: Pokédex text pointer does not match {asm_name}")
+    pages = [[]]
+    for line in text_blocks[asm_name].splitlines():
+        match = re.match(r'^\s*(text|next|page) "([^"]*)"\s*$', line)
+        if match:
+            directive, value = match.groups()
+            if directive == "page":
+                pages.append([])
+            pages[-1].append(value)
+        elif re.match(r"^\s*dex\s*$", line):
+            continue
+        elif line.strip():
+            fail(f"{path}: unsupported Pokédex text line: {line}")
+    if len(pages) != 2 or any(len(page) != 3 for page in pages):
+        fail(f"{path}: Pokédex text must contain two pages of three lines")
+    return {
+        "category": category,
+        "height": [int(height[0]), int(height[1])],
+        "weight": int(weight),
+        "description": pages,
+    }
+
+
+def parse_base_stats(path, declared_sprites, evo_blocks, entry_blocks, text_blocks):
     text = path.read_text()
     dex = one(r"^\s*db\s+(DEX_[A-Z0-9_]+)\s*;\s*pokedex id\s*$", text, "Pokédex ID", path)
     stats = one(
@@ -151,6 +216,7 @@ def parse_base_stats(path, declared_sprites, evo_blocks):
         "tmhm": tmhm,
         "evolutions": evolutions,
         "learnset": learnset,
+        "pokedex": parse_pokedex(asm_name, entry_blocks, text_blocks, path),
     }
 
 
@@ -160,9 +226,11 @@ def load_records():
         fail(f"expected {EXPECTED_COUNT} base-stat files, found {len(paths)}")
     declared_sprites = sprite_paths()
     evo_blocks = evo_move_blocks()
+    entry_blocks = dex_entry_blocks()
+    text_blocks = dex_text_blocks()
     records = []
     for path in paths:
-        records.append((path.name.removesuffix(".gen.asm"), parse_base_stats(path, declared_sprites, evo_blocks)))
+        records.append((path.name.removesuffix(".gen.asm"), parse_base_stats(path, declared_sprites, evo_blocks, entry_blocks, text_blocks)))
     return records
 
 
@@ -235,6 +303,18 @@ def validate_record(filename, record, seen_ids, seen_asm):
         fail(f"{prefix} learnset must contain level/move objects")
     if any(type(entry["level"]) is not int or not 1 <= entry["level"] <= 100 or not isinstance(entry["move"], str) or not entry["move"] for entry in learnset):
         fail(f"{prefix} learnset entries are invalid")
+    pokedex = record["pokedex"]
+    if not isinstance(pokedex, dict) or set(pokedex) != {"category", "height", "weight", "description"}:
+        fail(f"{prefix} pokedex fields are invalid")
+    if not isinstance(pokedex["category"], str) or not pokedex["category"]:
+        fail(f"{prefix} pokedex category must be a non-empty string")
+    if not isinstance(pokedex["height"], list) or len(pokedex["height"]) != 2 or any(type(value) is not int or value < 0 for value in pokedex["height"]):
+        fail(f"{prefix} pokedex height must contain two non-negative integers")
+    if type(pokedex["weight"]) is not int or pokedex["weight"] < 0:
+        fail(f"{prefix} pokedex weight must be a non-negative integer")
+    description = pokedex["description"]
+    if not isinstance(description, list) or len(description) != 2 or any(not isinstance(page, list) or len(page) != 3 or any(not isinstance(line, str) or not line for line in page) for page in description):
+        fail(f"{prefix} pokedex description must contain two pages of three non-empty lines")
 
 
 def load_json_records():
@@ -298,6 +378,29 @@ def generate_evos_moves(record):
     return "\n".join(lines) + "\n"
 
 
+def generate_dex_entry(record):
+    pokedex = record["pokedex"]
+    return "\n".join([
+        f"{record['asm_name']}DexEntry:",
+        f'\tdb "{pokedex["category"]}@"',
+        f"\tdb {pokedex['height'][0]},{pokedex['height'][1]}",
+        f"\tdw {pokedex['weight']}",
+        f"\ttext_far _{record['asm_name']}DexEntry",
+        "\ttext_end",
+        "",
+    ])
+
+
+def generate_dex_text(record):
+    pages = record["pokedex"]["description"]
+    lines = [f"_{record['asm_name']}DexEntry::"]
+    lines.extend([f'\ttext "{pages[0][0]}"', *(f'\tnext "{line}"' for line in pages[0][1:])])
+    lines.append(f'\tpage "{pages[1][0]}"')
+    lines.extend(f'\tnext "{line}"' for line in pages[1][1:])
+    lines.extend(["\tdex", ""])
+    return "\n".join(lines)
+
+
 def generate(filename, record):
     asm = [
         f"\tdb DEX_{record['id']} ; pokedex id",
@@ -332,9 +435,13 @@ def generate_all():
     records = load_json_records()
     BASE_STATS.mkdir(parents=True, exist_ok=True)
     EVOS_MOVES.mkdir(parents=True, exist_ok=True)
+    DEX_ENTRIES.mkdir(parents=True, exist_ok=True)
+    DEX_TEXT.mkdir(parents=True, exist_ok=True)
     for filename, record in records:
         (BASE_STATS / f"{filename}.gen.asm").write_text(generate(filename, record))
         (EVOS_MOVES / f"{filename}.gen.asm").write_text(generate_evos_moves(record))
+        (DEX_ENTRIES / f"{filename}.gen.asm").write_text(generate_dex_entry(record))
+        (DEX_TEXT / f"{filename}.gen.asm").write_text(generate_dex_text(record))
     print(f"generated {len(records)} species records")
 
 
@@ -345,8 +452,12 @@ def generate_one(filename):
     record = records[filename]
     BASE_STATS.mkdir(parents=True, exist_ok=True)
     EVOS_MOVES.mkdir(parents=True, exist_ok=True)
+    DEX_ENTRIES.mkdir(parents=True, exist_ok=True)
+    DEX_TEXT.mkdir(parents=True, exist_ok=True)
     (BASE_STATS / f"{filename}.gen.asm").write_text(generate(filename, record))
     (EVOS_MOVES / f"{filename}.gen.asm").write_text(generate_evos_moves(record))
+    (DEX_ENTRIES / f"{filename}.gen.asm").write_text(generate_dex_entry(record))
+    (DEX_TEXT / f"{filename}.gen.asm").write_text(generate_dex_text(record))
     print(f"generated {filename}")
 
 

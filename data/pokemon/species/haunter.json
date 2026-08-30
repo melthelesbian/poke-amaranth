@@ -116,5 +116,25 @@
       "level": 67,
       "move": "DREAM_EATER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "HAUNTING",
+    "height": [
+      5,
+      3
+    ],
+    "weight": 2,
+    "description": [
+      [
+        "Because of its",
+        "ability to slip",
+        "through block"
+      ],
+      [
+        "walls, it is said",
+        "to be from an-",
+        "other dimension"
+      ]
+    ]
+  }
 }

@@ -89,5 +89,25 @@
       "level": 57,
       "move": "HYPER_BEAM"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SLUMBER",
+    "height": [
+      6,
+      11
+    ],
+    "weight": 10140,
+    "description": [
+      [
+        "Very lazy. Just",
+        "eats and sleeps.",
+        "As its rotund"
+      ],
+      [
+        "bulk builds, it",
+        "becomes steadily",
+        "more slothful"
+      ]
+    ]
+  }
 }

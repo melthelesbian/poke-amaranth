@@ -95,5 +95,25 @@
       "level": 58,
       "move": "SUBMISSION"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BUILDER",
+    "height": [
+      5,
+      3
+    ],
+    "weight": 2870,
+    "description": [
+      [
+        "Using its heavy",
+        "muscles, it throws",
+        "powerful punches"
+      ],
+      [
+        "that can send the",
+        "victim clear over",
+        "the horizon"
+      ]
+    ]
+  }
 }

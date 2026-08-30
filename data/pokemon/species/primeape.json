@@ -110,5 +110,25 @@
       "level": 55,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "RAGING APE",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 710,
+    "description": [
+      [
+        "Always furious",
+        "and tenacious to",
+        "boot. It will not"
+      ],
+      [
+        "abandon chasing",
+        "its quarry until",
+        "it is caught"
+      ]
+    ]
+  }
 }

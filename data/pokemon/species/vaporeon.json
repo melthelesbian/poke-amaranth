@@ -108,5 +108,25 @@
       "level": 56,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "VAPOR",
+    "height": [
+      3,
+      3
+    ],
+    "weight": 640,
+    "description": [
+      [
+        "Lives close to",
+        "water. Its long",
+        "tail is ridged"
+      ],
+      [
+        "with a fin which",
+        "is often mistaken",
+        "for a mermaid's"
+      ]
+    ]
+  }
 }

@@ -33,7 +33,7 @@ item_generated := \
 	data/items/descriptions.gen.asm \
 	data/items/tm_prices.gen.asm
 pokemon_json := $(wildcard data/pokemon/species/*.json)
-pokemon_generated := $(foreach json,$(pokemon_json),data/pokemon/base_stats/$(notdir $(json:.json=.gen.asm)) data/pokemon/evos_moves/$(notdir $(json:.json=.gen.asm)))
+pokemon_generated := $(foreach json,$(pokemon_json),data/pokemon/base_stats/$(notdir $(json:.json=.gen.asm)) data/pokemon/evos_moves/$(notdir $(json:.json=.gen.asm)) data/pokemon/dex_entries/$(notdir $(json:.json=.gen.asm)) data/pokemon/dex_text/$(notdir $(json:.json=.gen.asm)))
 pokemon_pics := $(patsubst %.png,%.pic,$(wildcard gfx/pokemon/front/*.png gfx/pokemon/back/*.png))
 
 rom_obj := \
@@ -233,6 +233,12 @@ $(filter data/pokemon/base_stats/%,$(pokemon_generated)): data/pokemon/base_stat
 	python3 tools/generate_pokemon.py generate-one $*
 
 $(filter data/pokemon/evos_moves/%,$(pokemon_generated)): data/pokemon/evos_moves/%.gen.asm: data/pokemon/species/%.json tools/generate_pokemon.py data/pokemon/base_stats/%.gen.asm
+	@test -f $@ || python3 tools/generate_pokemon.py generate-one $*
+
+$(filter data/pokemon/dex_entries/%,$(pokemon_generated)): data/pokemon/dex_entries/%.gen.asm: data/pokemon/species/%.json tools/generate_pokemon.py data/pokemon/base_stats/%.gen.asm
+	@test -f $@ || python3 tools/generate_pokemon.py generate-one $*
+
+$(filter data/pokemon/dex_text/%,$(pokemon_generated)): data/pokemon/dex_text/%.gen.asm: data/pokemon/species/%.json tools/generate_pokemon.py data/pokemon/base_stats/%.gen.asm
 	@test -f $@ || python3 tools/generate_pokemon.py generate-one $*
 
 endif

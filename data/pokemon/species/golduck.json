@@ -112,5 +112,25 @@
       "level": 55,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "POWER DUCK",
+    "height": [
+      5,
+      7
+    ],
+    "weight": 1690,
+    "description": [
+      [
+        "Often seen swim-",
+        "ming elegantly by",
+        "lake shores. It"
+      ],
+      [
+        "is often mistaken",
+        "for the Japanese",
+        "monster, Kappa"
+      ]
+    ]
+  }
 }

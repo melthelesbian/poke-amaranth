@@ -91,5 +91,25 @@
       "level": 58,
       "move": "SKULL_BASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "ROCK SNAKE",
+    "height": [
+      28,
+      10
+    ],
+    "weight": 4630,
+    "description": [
+      [
+        "As it grows, the",
+        "stone portions of",
+        "its body harden"
+      ],
+      [
+        "to become similar",
+        "to a diamond, but",
+        "colored black"
+      ]
+    ]
+  }
 }

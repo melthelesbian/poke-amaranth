@@ -106,5 +106,25 @@
       "level": 58,
       "move": "AGILITY"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "EURYPTERID",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 890,
+    "description": [
+      [
+        "Its sleek shape is",
+        "perfect for swim-",
+        "ming. It slashes"
+      ],
+      [
+        "prey with its",
+        "claws and drains",
+        "the body fluids"
+      ]
+    ]
+  }
 }

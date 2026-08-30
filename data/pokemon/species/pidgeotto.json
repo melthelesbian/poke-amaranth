@@ -97,5 +97,25 @@
       "level": 55,
       "move": "SKY_ATTACK"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BIRD",
+    "height": [
+      3,
+      7
+    ],
+    "weight": 660,
+    "description": [
+      [
+        "Very protective",
+        "of its sprawling",
+        "territorial area,"
+      ],
+      [
+        "this #MON will",
+        "fiercely peck at",
+        "any intruder"
+      ]
+    ]
+  }
 }

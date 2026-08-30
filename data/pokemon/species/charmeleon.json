@@ -111,5 +111,25 @@
       "level": 60,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "LIZARD",
+    "height": [
+      3,
+      7
+    ],
+    "weight": 420,
+    "description": [
+      [
+        "When it swings",
+        "its burning tail,",
+        "it elevates the"
+      ],
+      [
+        "temperature to",
+        "unbearably high",
+        "levels"
+      ]
+    ]
+  }
 }

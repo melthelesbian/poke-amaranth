@@ -111,5 +111,25 @@
       "level": 64,
       "move": "MIMIC"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "MIME",
+    "height": [
+      4,
+      3
+    ],
+    "weight": 1200,
+    "description": [
+      [
+        "If interrupted",
+        "while it is",
+        "miming, it will"
+      ],
+      [
+        "slap around the",
+        "offender with its",
+        "broad hands"
+      ]
+    ]
+  }
 }

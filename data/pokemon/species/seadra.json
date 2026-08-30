@@ -107,5 +107,25 @@
       "level": 65,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SEA DRAGON",
+    "height": [
+      3,
+      11
+    ],
+    "weight": 550,
+    "description": [
+      [
+        "Capable of swim-",
+        "ming backwards by",
+        "rapidly flapping"
+      ],
+      [
+        "its wing-like",
+        "pectoral fins and",
+        "stout tail"
+      ]
+    ]
+  }
 }

@@ -108,5 +108,25 @@
       "level": 54,
       "move": "PSYCHIC_M"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "HYPNOSIS",
+    "height": [
+      5,
+      3
+    ],
+    "weight": 1670,
+    "description": [
+      [
+        "When it locks eyes",
+        "with an enemy, it",
+        "will use a mix of"
+      ],
+      [
+        "PSI moves such as",
+        "HYPNOSIS and",
+        "CONFUSION"
+      ]
+    ]
+  }
 }

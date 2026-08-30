@@ -108,5 +108,25 @@
       "level": 60,
       "move": "FLAMETHROWER"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "GUARDIAN",
+    "height": [
+      6,
+      3
+    ],
+    "weight": 3420,
+    "description": [
+      [
+        "A #MON that",
+        "has been admired",
+        "since the past"
+      ],
+      [
+        "for its beauty.",
+        "It runs agilely",
+        "as if on wings"
+      ]
+    ]
+  }
 }

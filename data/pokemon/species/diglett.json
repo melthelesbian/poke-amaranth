@@ -99,5 +99,25 @@
       "level": 46,
       "move": "FISSURE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "DIGGY",
+    "height": [
+      0,
+      8
+    ],
+    "weight": 20,
+    "description": [
+      [
+        "Lives about one",
+        "yard underground",
+        "where it feeds on"
+      ],
+      [
+        "plant roots. It",
+        "sometimes appears",
+        "above ground"
+      ]
+    ]
+  }
 }

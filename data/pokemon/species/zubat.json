@@ -101,5 +101,25 @@
       "level": 56,
       "move": "RAZOR_WIND"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BAT",
+    "height": [
+      2,
+      7
+    ],
+    "weight": 170,
+    "description": [
+      [
+        "Forms colonies in",
+        "perpetually dark",
+        "places. Uses"
+      ],
+      [
+        "ultrasonic waves",
+        "to identify and",
+        "approach targets"
+      ]
+    ]
+  }
 }

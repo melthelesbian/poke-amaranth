@@ -121,5 +121,25 @@
       "level": 64,
       "move": "MOONBLAST"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "MOON DANCE",
+    "height": [
+      2,
+      0
+    ],
+    "weight": 170,
+    "description": [
+      [
+        "Its magical and",
+        "cute appeal has",
+        "many admirers."
+      ],
+      [
+        "It is rare and",
+        "found only in",
+        "certain areas"
+      ]
+    ]
+  }
 }

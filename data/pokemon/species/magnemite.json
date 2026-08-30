@@ -102,5 +102,25 @@
       "level": 57,
       "move": "HEAVY_SMASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "MAGNET",
+    "height": [
+      1,
+      0
+    ],
+    "weight": 130,
+    "description": [
+      [
+        "Uses anti-gravity",
+        "to stay suspended.",
+        "Appears without"
+      ],
+      [
+        "warning and uses",
+        "THUNDER WAVE and",
+        "similar moves"
+      ]
+    ]
+  }
 }

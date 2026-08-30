@@ -100,5 +100,25 @@
       "level": 64,
       "move": "SWORDS_DANCE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "KICKER",
+    "height": [
+      4,
+      11
+    ],
+    "weight": 1100,
+    "description": [
+      [
+        "When in a hurry,",
+        "its legs lengthen",
+        "progressively."
+      ],
+      [
+        "It runs smoothly",
+        "with extra long,",
+        "loping strides"
+      ]
+    ]
+  }
 }

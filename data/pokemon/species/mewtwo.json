@@ -102,5 +102,25 @@
       "level": 75,
       "move": "SHADOW_TEAR"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "GENETIC",
+    "height": [
+      6,
+      7
+    ],
+    "weight": 2690,
+    "description": [
+      [
+        "It was created by",
+        "a scientist after",
+        "years of horrific"
+      ],
+      [
+        "gene splicing and",
+        "DNA engineering",
+        "experiments"
+      ]
+    ]
+  }
 }

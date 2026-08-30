@@ -98,5 +98,25 @@
       "level": 62,
       "move": "ROCK_SLIDE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "BOULDER",
+    "height": [
+      4,
+      7
+    ],
+    "weight": 6620,
+    "description": [
+      [
+        "Its boulder-like",
+        "body is extremely",
+        "hard. It can"
+      ],
+      [
+        "easily withstand",
+        "dynamite blasts",
+        "without damage"
+      ]
+    ]
+  }
 }

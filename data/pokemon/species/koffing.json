@@ -99,5 +99,25 @@
       "level": 62,
       "move": "EXPLOSION"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "POISON GAS",
+    "height": [
+      2,
+      0
+    ],
+    "weight": 20,
+    "description": [
+      [
+        "Because it stores",
+        "several kinds of",
+        "toxic gases in"
+      ],
+      [
+        "its body, it is",
+        "prone to exploding",
+        "without warning"
+      ]
+    ]
+  }
 }

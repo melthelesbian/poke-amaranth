@@ -97,5 +97,25 @@
       "level": 58,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "JELLYFISH",
+    "height": [
+      2,
+      11
+    ],
+    "weight": 1000,
+    "description": [
+      [
+        "Drifts in shallow",
+        "seas. Anglers who",
+        "hook them by"
+      ],
+      [
+        "accident are",
+        "often punished by",
+        "its stinging acid"
+      ]
+    ]
+  }
 }

@@ -116,5 +116,25 @@
       "level": 62,
       "move": "HYDRO_PUMP"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "STARSHAPE",
+    "height": [
+      2,
+      7
+    ],
+    "weight": 760,
+    "description": [
+      [
+        "An enigmatic",
+        "#MON that can",
+        "effortlessly"
+      ],
+      [
+        "regenerate any",
+        "appendage it",
+        "loses in battle"
+      ]
+    ]
+  }
 }

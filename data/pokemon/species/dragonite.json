@@ -114,5 +114,25 @@
       "level": 70,
       "move": "THRASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "DRAGON",
+    "height": [
+      7,
+      3
+    ],
+    "weight": 4630,
+    "description": [
+      [
+        "An extremely",
+        "rarely seen",
+        "marine #MON."
+      ],
+      [
+        "Its intelligence",
+        "is said to match",
+        "that of humans"
+      ]
+    ]
+  }
 }

@@ -101,5 +101,25 @@
       "level": 48,
       "move": "FISSURE"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "DIG GANG",
+    "height": [
+      2,
+      4
+    ],
+    "weight": 730,
+    "description": [
+      [
+        "A team of DIGLETT",
+        "triplets.",
+        "It triggers huge"
+      ],
+      [
+        "earthquakes by",
+        "burrowing 60 miles",
+        "underground"
+      ]
+    ]
+  }
 }

@@ -99,5 +99,25 @@
       "level": 64,
       "move": "HEAVY_SMASH"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "FIRE HORSE",
+    "height": [
+      5,
+      7
+    ],
+    "weight": 2090,
+    "description": [
+      [
+        "Very competitive,",
+        "this #MON will",
+        "chase anything"
+      ],
+      [
+        "that moves fast",
+        "in the hopes of",
+        "racing it"
+      ]
+    ]
+  }
 }

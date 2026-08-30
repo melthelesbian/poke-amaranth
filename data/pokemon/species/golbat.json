@@ -103,5 +103,25 @@
       "level": 58,
       "move": "RAZOR_WIND"
     }
-  ]
+  ],
+  "pokedex": {
+    "category": "SWIFT BAT",
+    "height": [
+      5,
+      3
+    ],
+    "weight": 1210,
+    "description": [
+      [
+        "Once it strikes,",
+        "it will not stop",
+        "draining energy"
+      ],
+      [
+        "from the victim",
+        "even if it gets",
+        "too heavy to fly"
+      ]
+    ]
+  }
 }
