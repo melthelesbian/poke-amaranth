@@ -46,5 +46,55 @@
     "SUBSTITUTE",
     "CUT",
     "FLY"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "KAKUNA"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POISON_STING"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 10,
+      "move": "SPIKE_CANNON"
+    },
+    {
+      "level": 14,
+      "move": "GLARE"
+    },
+    {
+      "level": 18,
+      "move": "ACID"
+    },
+    {
+      "level": 21,
+      "move": "TWINEEDLE"
+    },
+    {
+      "level": 25,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 30,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 36,
+      "move": "TOXIC"
+    },
+    {
+      "level": 42,
+      "move": "BUG_BUZZ"
+    }
   ]
 }

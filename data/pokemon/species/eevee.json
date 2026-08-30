@@ -49,5 +49,75 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "FIRE_STONE",
+      "level": 1,
+      "species": "FLAREON"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "THUNDER_STONE",
+      "level": 1,
+      "species": "JOLTEON"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "WATER_STONE",
+      "level": 1,
+      "species": "VAPOREON"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 9,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 13,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 17,
+      "move": "GLARE"
+    },
+    {
+      "level": 21,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 25,
+      "move": "SWIFT"
+    },
+    {
+      "level": 30,
+      "move": "BITE"
+    },
+    {
+      "level": 36,
+      "move": "SING"
+    },
+    {
+      "level": 42,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 48,
+      "move": "DOUBLE_DASH"
+    }
   ]
 }

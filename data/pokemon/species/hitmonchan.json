@@ -50,5 +50,60 @@
     "TWIN_SLICE",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 9,
+      "move": "KARATE_CHOP"
+    },
+    {
+      "level": 14,
+      "move": "AGILITY"
+    },
+    {
+      "level": 19,
+      "move": "FEINT_ATTACK"
+    },
+    {
+      "level": 24,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 30,
+      "move": "PREPARE"
+    },
+    {
+      "level": 36,
+      "move": "FIRE_PUNCH"
+    },
+    {
+      "level": 38,
+      "move": "THUNDERPUNCH"
+    },
+    {
+      "level": 40,
+      "move": "ICE_PUNCH"
+    },
+    {
+      "level": 47,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 55,
+      "move": "DIZZY_PUNCH"
+    },
+    {
+      "level": 64,
+      "move": "STAR_JAB"
+    }
   ]
 }

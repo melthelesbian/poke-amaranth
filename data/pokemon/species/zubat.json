@@ -48,5 +48,58 @@
     "CUT",
     "FLY",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 22,
+      "species": "GOLBAT"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POISON_STING"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 7,
+      "move": "GUST"
+    },
+    {
+      "level": 11,
+      "move": "SCREECH"
+    },
+    {
+      "level": 16,
+      "move": "ACID"
+    },
+    {
+      "level": 21,
+      "move": "BITE"
+    },
+    {
+      "level": 27,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 33,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 40,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 48,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 56,
+      "move": "RAZOR_WIND"
+    }
   ]
 }

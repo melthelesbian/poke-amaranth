@@ -45,5 +45,62 @@
     "HEAVY_SMASH",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 34,
+      "species": "DEWGONG"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 6,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 10,
+      "move": "POWDER_SNOW"
+    },
+    {
+      "level": 15,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 21,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 27,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 33,
+      "move": "ICY_WIND"
+    },
+    {
+      "level": 39,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 45,
+      "move": "AURORA_BEAM"
+    },
+    {
+      "level": 52,
+      "move": "HYDRO_PUMP"
+    },
+    {
+      "level": 60,
+      "move": "REST"
+    }
   ]
 }

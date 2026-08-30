@@ -40,5 +40,74 @@
     "PAY_DAY",
     "SUBSTITUTE",
     "SURF"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_TRADE",
+      "level": 1,
+      "species": "NIDOKING"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "MOON_STONE",
+      "level": 32,
+      "species": "NIDOKING"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "NIDORAN_M"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "POISON_STING"
+    },
+    {
+      "level": 9,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 13,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 18,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 24,
+      "move": "BITE"
+    },
+    {
+      "level": 30,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 37,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 44,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 52,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 60,
+      "move": "CRUNCH"
+    }
   ]
 }

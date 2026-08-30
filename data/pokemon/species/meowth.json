@@ -47,5 +47,62 @@
     "SUBSTITUTE",
     "CUT",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 28,
+      "species": "PERSIAN"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "LICK"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 9,
+      "move": "PAY_DAY"
+    },
+    {
+      "level": 13,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 17,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 22,
+      "move": "SCREECH"
+    },
+    {
+      "level": 27,
+      "move": "BITE"
+    },
+    {
+      "level": 33,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 40,
+      "move": "SLASH"
+    },
+    {
+      "level": 48,
+      "move": "AGILITY"
+    },
+    {
+      "level": 56,
+      "move": "NIGHT_SLASH"
+    }
   ]
 }

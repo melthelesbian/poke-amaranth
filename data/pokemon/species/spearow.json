@@ -47,5 +47,50 @@
     "SUBSTITUTE",
     "CUT",
     "FLY"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 20,
+      "species": "FEAROW"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "PECK"
+    },
+    {
+      "level": 3,
+      "move": "LEER"
+    },
+    {
+      "level": 7,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 12,
+      "move": "FEINT_ATTACK"
+    },
+    {
+      "level": 17,
+      "move": "GLARE"
+    },
+    {
+      "level": 22,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 28,
+      "move": "MIRROR_MOVE"
+    },
+    {
+      "level": 35,
+      "move": "DRILL_PECK"
+    },
+    {
+      "level": 42,
+      "move": "SKY_ATTACK"
+    }
   ]
 }

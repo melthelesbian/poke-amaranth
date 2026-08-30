@@ -44,5 +44,58 @@
     "SUBSTITUTE",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 40,
+      "species": "RAPIDASH"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "EMBER"
+    },
+    {
+      "level": 9,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 14,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 20,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 26,
+      "move": "FLAME_CHARGE"
+    },
+    {
+      "level": 32,
+      "move": "AGILITY"
+    },
+    {
+      "level": 39,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 46,
+      "move": "TAKE_DOWN"
+    },
+    {
+      "level": 54,
+      "move": "FLARE_RUSH"
+    },
+    {
+      "level": 62,
+      "move": "HEAVY_SMASH"
+    }
   ]
 }

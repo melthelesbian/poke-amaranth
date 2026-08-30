@@ -43,5 +43,55 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "RATTATA"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 6,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 9,
+      "move": "GROWL"
+    },
+    {
+      "level": 12,
+      "move": "BITE"
+    },
+    {
+      "level": 15,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 19,
+      "move": "TAKE_DOWN"
+    },
+    {
+      "level": 25,
+      "move": "SUPER_FANG"
+    },
+    {
+      "level": 31,
+      "move": "AGILITY"
+    },
+    {
+      "level": 36,
+      "move": "CRUNCH"
+    }
   ]
 }

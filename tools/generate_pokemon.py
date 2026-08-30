@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BASE_STATS = ROOT / "data/pokemon/base_stats"
 SPECIES = ROOT / "data/pokemon/species"
+EVOS_MOVES = ROOT / "data/pokemon/evos_moves"
 SPRITE_DECLARATIONS = (ROOT / "gfx/pics.asm", ROOT / "data/pokemon/mew.asm")
 EXPECTED_COUNT = 151
 REQUIRED_FIELDS = (
@@ -23,6 +24,8 @@ REQUIRED_FIELDS = (
     "level_1_moves",
     "growth_rate",
     "tmhm",
+    "evolutions",
+    "learnset",
 )
 STAT_FIELDS = ("hp", "attack", "defense", "speed", "special")
 ALLOWED_FIELDS = set(REQUIRED_FIELDS)
@@ -50,7 +53,21 @@ def sprite_paths():
     return paths
 
 
-def parse_base_stats(path, declared_sprites):
+def evo_move_blocks():
+    blocks = {}
+    for path in EVOS_MOVES.glob("*.asm"):
+        text = path.read_text()
+        labels = list(re.finditer(r"^([A-Za-z0-9]+)EvosMoves:\s*$", text, re.MULTILINE))
+        for index, match in enumerate(labels):
+            end = labels[index + 1].start() if index + 1 < len(labels) else len(text)
+            label = match.group(1)
+            if label in blocks:
+                fail(f"{path}: duplicate evolution/learnset label {label}")
+            blocks[label] = text[match.end():end]
+    return blocks
+
+
+def parse_base_stats(path, declared_sprites, evo_blocks):
     text = path.read_text()
     dex = one(r"^\s*db\s+(DEX_[A-Z0-9_]+)\s*;\s*pokedex id\s*$", text, "Pokédex ID", path)
     stats = one(
@@ -93,6 +110,34 @@ def parse_base_stats(path, declared_sprites):
         fail(f"{path}: front/back sprite labels do not share asm_name")
     if dex.removeprefix("DEX_") == "":
         fail(f"{path}: empty species ID")
+    if asm_name not in evo_blocks:
+        fail(f"{path}: missing evolution/learnset record for {asm_name}")
+    evolution_text, learnset_text = evo_blocks[asm_name].split("; Learnset", 1)
+    evolutions = []
+    for line in evolution_text.splitlines():
+        values = [value.strip() for value in line.split(",")]
+        if not values or not values[0].startswith("db EVOLVE_"):
+            continue
+        method = values[0][3:]
+        if method == "EVOLVE_LEVEL":
+            if len(values) != 3:
+                fail(f"{path}: malformed level evolution")
+            evolutions.append({"method": method, "level": int(values[1]), "species": values[2]})
+        elif method == "EVOLVE_ITEM":
+            if len(values) != 4:
+                fail(f"{path}: malformed item evolution")
+            evolutions.append({"method": method, "item": values[1], "level": int(values[2]), "species": values[3]})
+        elif method == "EVOLVE_TRADE":
+            if len(values) != 3:
+                fail(f"{path}: malformed trade evolution")
+            evolutions.append({"method": method, "level": int(values[1]), "species": values[2]})
+        else:
+            fail(f"{path}: unsupported evolution method {method}")
+    learnset = []
+    for line in learnset_text.splitlines():
+        match = re.match(r"^\s*db\s+(\d+)\s*,\s*([A-Za-z0-9_]+)\s*$", line)
+        if match:
+            learnset.append({"level": int(match.group(1)), "move": match.group(2)})
     return {
         "id": dex.removeprefix("DEX_"),
         "asm_name": asm_name,
@@ -104,6 +149,8 @@ def parse_base_stats(path, declared_sprites):
         "level_1_moves": level_1_moves,
         "growth_rate": growth_rate,
         "tmhm": tmhm,
+        "evolutions": evolutions,
+        "learnset": learnset,
     }
 
 
@@ -112,9 +159,10 @@ def load_records():
     if len(paths) != EXPECTED_COUNT:
         fail(f"expected {EXPECTED_COUNT} base-stat files, found {len(paths)}")
     declared_sprites = sprite_paths()
+    evo_blocks = evo_move_blocks()
     records = []
     for path in paths:
-        records.append((path.name.removesuffix(".gen.asm"), parse_base_stats(path, declared_sprites)))
+        records.append((path.name.removesuffix(".gen.asm"), parse_base_stats(path, declared_sprites, evo_blocks)))
     return records
 
 
@@ -166,6 +214,27 @@ def validate_record(filename, record, seen_ids, seen_asm):
         fail(f"{prefix} tmhm must be an array of symbols")
     if len(tmhm) != len(set(tmhm)):
         fail(f"{prefix} tmhm contains duplicate entries")
+    evolutions = record["evolutions"]
+    if not isinstance(evolutions, list):
+        fail(f"{prefix} evolutions must be an array")
+    for evolution in evolutions:
+        if not isinstance(evolution, dict) or evolution.get("method") not in {"EVOLVE_LEVEL", "EVOLVE_ITEM", "EVOLVE_TRADE"}:
+            fail(f"{prefix} invalid evolution")
+        if set(evolution) not in ({"method", "level", "species"}, {"method", "item", "level", "species"}):
+            fail(f"{prefix} invalid evolution fields")
+        if evolution["method"] == "EVOLVE_ITEM" and "item" not in evolution:
+            fail(f"{prefix} item evolution is missing item")
+        if evolution["method"] != "EVOLVE_ITEM" and "item" in evolution:
+            fail(f"{prefix} non-item evolution has item")
+        if type(evolution["level"]) is not int or not 1 <= evolution["level"] <= 100:
+            fail(f"{prefix} evolution level must be an integer from 1 to 100")
+        if not isinstance(evolution["species"], str) or not evolution["species"]:
+            fail(f"{prefix} evolution species must be a non-empty symbol")
+    learnset = record["learnset"]
+    if not isinstance(learnset, list) or any(not isinstance(entry, dict) or set(entry) != {"level", "move"} for entry in learnset):
+        fail(f"{prefix} learnset must contain level/move objects")
+    if any(type(entry["level"]) is not int or not 1 <= entry["level"] <= 100 or not isinstance(entry["move"], str) or not entry["move"] for entry in learnset):
+        fail(f"{prefix} learnset entries are invalid")
 
 
 def load_json_records():
@@ -209,6 +278,26 @@ def asm_line_moves(moves):
     return lines
 
 
+def generate_evos_moves(record):
+    lines = [
+        f"{record['asm_name']}EvosMoves:",
+        "; Evolutions",
+    ]
+    for evolution in record["evolutions"]:
+        method = evolution["method"]
+        if method == "EVOLVE_LEVEL":
+            values = [method, str(evolution["level"]), evolution["species"]]
+        elif method == "EVOLVE_ITEM":
+            values = [method, evolution["item"], str(evolution["level"]), evolution["species"]]
+        else:
+            values = [method, str(evolution["level"]), evolution["species"]]
+        lines.append("\tdb " + ", ".join(values))
+    lines.extend(["\tdb 0", "; Learnset"])
+    lines.extend(f"\tdb {entry['level']}, {entry['move']}" for entry in record["learnset"])
+    lines.append("\tdb 0")
+    return "\n".join(lines) + "\n"
+
+
 def generate(filename, record):
     asm = [
         f"\tdb DEX_{record['id']} ; pokedex id",
@@ -241,8 +330,11 @@ def generate(filename, record):
 
 def generate_all():
     records = load_json_records()
+    BASE_STATS.mkdir(parents=True, exist_ok=True)
+    EVOS_MOVES.mkdir(parents=True, exist_ok=True)
     for filename, record in records:
         (BASE_STATS / f"{filename}.gen.asm").write_text(generate(filename, record))
+        (EVOS_MOVES / f"{filename}.gen.asm").write_text(generate_evos_moves(record))
     print(f"generated {len(records)} species records")
 
 
@@ -250,7 +342,11 @@ def generate_one(filename):
     records = dict(load_json_records())
     if filename not in records:
         fail(f"no species JSON record for {filename}")
-    (BASE_STATS / f"{filename}.gen.asm").write_text(generate(filename, records[filename]))
+    record = records[filename]
+    BASE_STATS.mkdir(parents=True, exist_ok=True)
+    EVOS_MOVES.mkdir(parents=True, exist_ok=True)
+    (BASE_STATS / f"{filename}.gen.asm").write_text(generate(filename, record))
+    (EVOS_MOVES / f"{filename}.gen.asm").write_text(generate_evos_moves(record))
     print(f"generated {filename}")
 
 

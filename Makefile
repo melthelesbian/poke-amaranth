@@ -33,7 +33,7 @@ item_generated := \
 	data/items/descriptions.gen.asm \
 	data/items/tm_prices.gen.asm
 pokemon_json := $(wildcard data/pokemon/species/*.json)
-pokemon_generated := $(patsubst data/pokemon/species/%.json,data/pokemon/base_stats/%.gen.asm,$(pokemon_json))
+pokemon_generated := $(foreach json,$(pokemon_json),data/pokemon/base_stats/$(notdir $(json:.json=.gen.asm)) data/pokemon/evos_moves/$(notdir $(json:.json=.gen.asm)))
 pokemon_pics := $(patsubst %.png,%.pic,$(wildcard gfx/pokemon/front/*.png gfx/pokemon/back/*.png))
 
 rom_obj := \
@@ -114,10 +114,8 @@ tidy:
 		  $(amaranth_debug_obj) \
 		  $(amaranth_red_debug_obj) \
 	      $(amaranth_blue_debug_obj) \
-	      rgbdscheck.o \
-	      $(move_generated) \
-	      $(item_generated) \
-	      $(pokemon_generated)
+	      rgbdscheck.o
+	find . -type f -name '*.gen.asm' -delete
 	$(MAKE) clean -C tools/
 
 compare: $(roms) $(patches)
@@ -231,8 +229,11 @@ data/items/descriptions.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/ge
 data/items/tm_prices.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
 	python3 tools/generate_items.py tm-prices > $@
 
-$(pokemon_generated): data/pokemon/base_stats/%.gen.asm: data/pokemon/species/%.json tools/generate_pokemon.py $(pokemon_pics)
+$(filter data/pokemon/base_stats/%,$(pokemon_generated)): data/pokemon/base_stats/%.gen.asm: data/pokemon/species/%.json tools/generate_pokemon.py $(pokemon_pics)
 	python3 tools/generate_pokemon.py generate-one $*
+
+$(filter data/pokemon/evos_moves/%,$(pokemon_generated)): data/pokemon/evos_moves/%.gen.asm: data/pokemon/species/%.json tools/generate_pokemon.py data/pokemon/base_stats/%.gen.asm
+	@test -f $@ || python3 tools/generate_pokemon.py generate-one $*
 
 endif
 

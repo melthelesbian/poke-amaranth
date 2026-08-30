@@ -47,5 +47,56 @@
     "SUBSTITUTE",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 8,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 12,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 16,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 21,
+      "move": "RAGE"
+    },
+    {
+      "level": 27,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 33,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 40,
+      "move": "SING"
+    },
+    {
+      "level": 48,
+      "move": "DIZZY_PUNCH"
+    },
+    {
+      "level": 56,
+      "move": "THRASH"
+    },
+    {
+      "level": 64,
+      "move": "SKULL_BASH"
+    }
   ]
 }

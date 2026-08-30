@@ -47,5 +47,56 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "SING"
+    },
+    {
+      "level": 1,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 10,
+      "move": "POWDER_SNOW"
+    },
+    {
+      "level": 15,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 21,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 27,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 33,
+      "move": "AURORA_BEAM"
+    },
+    {
+      "level": 39,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 45,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 52,
+      "move": "HYDRO_PUMP"
+    },
+    {
+      "level": 58,
+      "move": "BLIZZARD"
+    }
   ]
 }

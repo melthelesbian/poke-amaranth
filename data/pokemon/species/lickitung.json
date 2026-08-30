@@ -46,5 +46,56 @@
     "ROCK_SLIDE",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "LICK"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 6,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 10,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 14,
+      "move": "ACID"
+    },
+    {
+      "level": 18,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 22,
+      "move": "WRAP"
+    },
+    {
+      "level": 26,
+      "move": "GLARE"
+    },
+    {
+      "level": 32,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 38,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 45,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 52,
+      "move": "TAKE_DOWN"
+    }
   ]
 }

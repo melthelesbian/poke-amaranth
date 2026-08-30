@@ -45,5 +45,62 @@
     "SUBSTITUTE",
     "CUT",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 30,
+      "species": "MAGNETON"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "SCREECH"
+    },
+    {
+      "level": 8,
+      "move": "THUNDERSHOCK"
+    },
+    {
+      "level": 12,
+      "move": "BARRIER"
+    },
+    {
+      "level": 16,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 21,
+      "move": "CRUSH"
+    },
+    {
+      "level": 26,
+      "move": "SPARK"
+    },
+    {
+      "level": 32,
+      "move": "REFLECT"
+    },
+    {
+      "level": 38,
+      "move": "MIRROR_MOVE"
+    },
+    {
+      "level": 44,
+      "move": "LIGHT_SCREEN"
+    },
+    {
+      "level": 50,
+      "move": "THUNDERBOLT"
+    },
+    {
+      "level": 57,
+      "move": "HEAVY_SMASH"
+    }
   ]
 }

@@ -48,5 +48,56 @@
     "FLY",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "PECK"
+    },
+    {
+      "level": 1,
+      "move": "SCREECH"
+    },
+    {
+      "level": 7,
+      "move": "POWDER_SNOW"
+    },
+    {
+      "level": 12,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 18,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 25,
+      "move": "MIST"
+    },
+    {
+      "level": 32,
+      "move": "AURORA_BEAM"
+    },
+    {
+      "level": 39,
+      "move": "SWIFT"
+    },
+    {
+      "level": 48,
+      "move": "RAZOR_WIND"
+    },
+    {
+      "level": 57,
+      "move": "REFLECT"
+    },
+    {
+      "level": 66,
+      "move": "BLIZZARD"
+    },
+    {
+      "level": 75,
+      "move": "AGILITY"
+    }
   ]
 }

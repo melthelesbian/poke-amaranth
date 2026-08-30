@@ -51,5 +51,62 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 28,
+      "species": "PRIMEAPE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 6,
+      "move": "FURY_SWIPES"
+    },
+    {
+      "level": 9,
+      "move": "LOW_KICK"
+    },
+    {
+      "level": 12,
+      "move": "PREPARE"
+    },
+    {
+      "level": 16,
+      "move": "KARATE_CHOP"
+    },
+    {
+      "level": 21,
+      "move": "RAGE"
+    },
+    {
+      "level": 26,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 31,
+      "move": "SEISMIC_TOSS"
+    },
+    {
+      "level": 37,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 44,
+      "move": "SUBMISSION"
+    },
+    {
+      "level": 52,
+      "move": "THRASH"
+    }
   ]
 }

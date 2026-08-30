@@ -48,5 +48,59 @@
     "FLY",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "THUNDER_STONE",
+      "level": 1,
+      "species": "RAICHU"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 6,
+      "move": "THUNDERSHOCK"
+    },
+    {
+      "level": 9,
+      "move": "LICK"
+    },
+    {
+      "level": 12,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 16,
+      "move": "THUNDER_WAVE"
+    },
+    {
+      "level": 20,
+      "move": "SPARK"
+    },
+    {
+      "level": 25,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 32,
+      "move": "DOUBLE_DASH"
+    },
+    {
+      "level": 38,
+      "move": "AGILITY"
+    },
+    {
+      "level": 45,
+      "move": "THUNDER"
+    }
   ]
 }

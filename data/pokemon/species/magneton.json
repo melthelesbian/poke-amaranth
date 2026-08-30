@@ -46,5 +46,63 @@
     "SUBSTITUTE",
     "CUT",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "MAGNEMITE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "SCREECH"
+    },
+    {
+      "level": 8,
+      "move": "THUNDERSHOCK"
+    },
+    {
+      "level": 12,
+      "move": "BARRIER"
+    },
+    {
+      "level": 16,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 21,
+      "move": "CRUSH"
+    },
+    {
+      "level": 26,
+      "move": "SPARK"
+    },
+    {
+      "level": 33,
+      "move": "REFLECT"
+    },
+    {
+      "level": 39,
+      "move": "MIRROR_MOVE"
+    },
+    {
+      "level": 45,
+      "move": "LIGHT_SCREEN"
+    },
+    {
+      "level": 52,
+      "move": "THUNDERBOLT"
+    },
+    {
+      "level": 60,
+      "move": "HEAVY_SMASH"
+    }
   ]
 }

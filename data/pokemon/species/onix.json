@@ -44,5 +44,52 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "SCREECH"
+    },
+    {
+      "level": 6,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 10,
+      "move": "ROCK_THROW"
+    },
+    {
+      "level": 15,
+      "move": "WRAP"
+    },
+    {
+      "level": 21,
+      "move": "BARRIER"
+    },
+    {
+      "level": 28,
+      "move": "GLARE"
+    },
+    {
+      "level": 35,
+      "move": "ROCK_SLIDE"
+    },
+    {
+      "level": 42,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 50,
+      "move": "REFLECT"
+    },
+    {
+      "level": 58,
+      "move": "SKULL_BASH"
+    }
   ]
 }

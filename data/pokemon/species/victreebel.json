@@ -44,5 +44,67 @@
     "SUBSTITUTE",
     "CUT",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "WEEPINBELL"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "VINE_WHIP"
+    },
+    {
+      "level": 1,
+      "move": "GROWTH"
+    },
+    {
+      "level": 6,
+      "move": "ACID"
+    },
+    {
+      "level": 10,
+      "move": "POUND"
+    },
+    {
+      "level": 14,
+      "move": "ABSORB"
+    },
+    {
+      "level": 18,
+      "move": "DISABLE"
+    },
+    {
+      "level": 23,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 28,
+      "move": "WRAP"
+    },
+    {
+      "level": 33,
+      "move": "RAZOR_LEAF"
+    },
+    {
+      "level": 39,
+      "move": "GLARE"
+    },
+    {
+      "level": 45,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 52,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 60,
+      "move": "SOLARBEAM"
+    }
   ]
 }

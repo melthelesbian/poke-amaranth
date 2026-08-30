@@ -82,5 +82,64 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 5,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 10,
+      "move": "TRANSFORM"
+    },
+    {
+      "level": 15,
+      "move": "DRAIN_KISS"
+    },
+    {
+      "level": 20,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 25,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 30,
+      "move": "MIMIC"
+    },
+    {
+      "level": 35,
+      "move": "BARRIER"
+    },
+    {
+      "level": 40,
+      "move": "DOUBLE_DASH"
+    },
+    {
+      "level": 45,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 50,
+      "move": "PSYCHIC_M"
+    },
+    {
+      "level": 55,
+      "move": "MINIMIZE"
+    },
+    {
+      "level": 60,
+      "move": "MOONBLAST"
+    },
+    {
+      "level": 65,
+      "move": "METRONOME"
+    }
   ]
 }

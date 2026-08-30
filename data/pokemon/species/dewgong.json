@@ -46,5 +46,63 @@
     "HEAVY_SMASH",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "SEEL"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 6,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 10,
+      "move": "POWDER_SNOW"
+    },
+    {
+      "level": 15,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 21,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 27,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 33,
+      "move": "ICY_WIND"
+    },
+    {
+      "level": 40,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 47,
+      "move": "AURORA_BEAM"
+    },
+    {
+      "level": 54,
+      "move": "HYDRO_PUMP"
+    },
+    {
+      "level": 62,
+      "move": "REST"
+    }
   ]
 }

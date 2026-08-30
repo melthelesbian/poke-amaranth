@@ -45,5 +45,59 @@
     "SUBSTITUTE",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "PONYTA"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "EMBER"
+    },
+    {
+      "level": 9,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 14,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 20,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 26,
+      "move": "FLAME_CHARGE"
+    },
+    {
+      "level": 32,
+      "move": "AGILITY"
+    },
+    {
+      "level": 39,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 48,
+      "move": "TAKE_DOWN"
+    },
+    {
+      "level": 56,
+      "move": "FLARE_RUSH"
+    },
+    {
+      "level": 64,
+      "move": "HEAVY_SMASH"
+    }
   ]
 }

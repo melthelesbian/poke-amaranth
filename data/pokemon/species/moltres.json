@@ -48,5 +48,56 @@
     "FLY",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "PECK"
+    },
+    {
+      "level": 1,
+      "move": "SCREECH"
+    },
+    {
+      "level": 7,
+      "move": "EMBER"
+    },
+    {
+      "level": 12,
+      "move": "FIRE_SPIN"
+    },
+    {
+      "level": 18,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 25,
+      "move": "GLARE"
+    },
+    {
+      "level": 32,
+      "move": "FLAME_CHARGE"
+    },
+    {
+      "level": 39,
+      "move": "DRAGONBREATH"
+    },
+    {
+      "level": 48,
+      "move": "SKY_ATTACK"
+    },
+    {
+      "level": 57,
+      "move": "BARRIER"
+    },
+    {
+      "level": 66,
+      "move": "FIRE_BLAST"
+    },
+    {
+      "level": 75,
+      "move": "AGILITY"
+    }
   ]
 }

@@ -49,5 +49,63 @@
     "SUBSTITUTE",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "NIDORINO"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "POISON_STING"
+    },
+    {
+      "level": 9,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 13,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 18,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 24,
+      "move": "BITE"
+    },
+    {
+      "level": 30,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 37,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 44,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 52,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 60,
+      "move": "CRUNCH"
+    }
   ]
 }

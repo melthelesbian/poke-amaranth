@@ -44,5 +44,58 @@
     "SUBSTITUTE",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 30,
+      "species": "TENTACRUEL"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 1,
+      "move": "ACID"
+    },
+    {
+      "level": 8,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 12,
+      "move": "WRAP"
+    },
+    {
+      "level": 17,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 23,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 29,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 35,
+      "move": "BARRIER"
+    },
+    {
+      "level": 42,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 50,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 58,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

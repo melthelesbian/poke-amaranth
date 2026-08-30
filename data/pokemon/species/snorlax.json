@@ -46,5 +46,48 @@
     "SUBSTITUTE",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 9,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 14,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 20,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 26,
+      "move": "REST"
+    },
+    {
+      "level": 33,
+      "move": "HEAVY_SMASH"
+    },
+    {
+      "level": 40,
+      "move": "PREPARE"
+    },
+    {
+      "level": 48,
+      "move": "TAKE_DOWN"
+    },
+    {
+      "level": 57,
+      "move": "HYPER_BEAM"
+    }
   ]
 }

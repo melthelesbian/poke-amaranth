@@ -61,5 +61,63 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "JIGGLYPUFF"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "SING"
+    },
+    {
+      "level": 8,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 12,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 16,
+      "move": "DOUBLESLAP"
+    },
+    {
+      "level": 21,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 26,
+      "move": "DRAIN_KISS"
+    },
+    {
+      "level": 32,
+      "move": "BARRIER"
+    },
+    {
+      "level": 38,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 45,
+      "move": "RECOVER"
+    },
+    {
+      "level": 52,
+      "move": "MOONBLAST"
+    },
+    {
+      "level": 60,
+      "move": "HYPNOSIS"
+    }
   ]
 }

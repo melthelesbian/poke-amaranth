@@ -41,5 +41,18 @@
     "SUBSTITUTE",
     "METRONOME",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 16,
+      "species": "KADABRA"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TELEPORT"
+    }
   ]
 }

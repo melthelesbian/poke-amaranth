@@ -45,5 +45,67 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "PARAS"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "ABSORB"
+    },
+    {
+      "level": 7,
+      "move": "STRING_SHOT"
+    },
+    {
+      "level": 10,
+      "move": "LEECH_SEED"
+    },
+    {
+      "level": 14,
+      "move": "FURY_SWIPES"
+    },
+    {
+      "level": 18,
+      "move": "SLEEP_CLOUD"
+    },
+    {
+      "level": 22,
+      "move": "TWIN_SLICE"
+    },
+    {
+      "level": 27,
+      "move": "BARRAGE"
+    },
+    {
+      "level": 32,
+      "move": "SLASH"
+    },
+    {
+      "level": 38,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 46,
+      "move": "SPORE"
+    },
+    {
+      "level": 52,
+      "move": "MEGA_DRAIN"
+    },
+    {
+      "level": 58,
+      "move": "BUG_BUZZ"
+    }
   ]
 }

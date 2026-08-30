@@ -43,5 +43,66 @@
     "SUBSTITUTE",
     "CUT",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 21,
+      "species": "WEEPINBELL"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "VINE_WHIP"
+    },
+    {
+      "level": 1,
+      "move": "GROWTH"
+    },
+    {
+      "level": 6,
+      "move": "ACID"
+    },
+    {
+      "level": 10,
+      "move": "POUND"
+    },
+    {
+      "level": 14,
+      "move": "ABSORB"
+    },
+    {
+      "level": 18,
+      "move": "DISABLE"
+    },
+    {
+      "level": 22,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 27,
+      "move": "WRAP"
+    },
+    {
+      "level": 32,
+      "move": "RAZOR_LEAF"
+    },
+    {
+      "level": 38,
+      "move": "GLARE"
+    },
+    {
+      "level": 44,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 50,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 57,
+      "move": "SOLARBEAM"
+    }
   ]
 }

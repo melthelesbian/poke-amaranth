@@ -40,5 +40,62 @@
     "ROCK_SLIDE",
     "SUBSTITUTE",
     "SURF"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 16,
+      "species": "NIDORINA"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 9,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 13,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 17,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 22,
+      "move": "DIG"
+    },
+    {
+      "level": 28,
+      "move": "SWIFT"
+    },
+    {
+      "level": 35,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 42,
+      "move": "GLARE"
+    },
+    {
+      "level": 50,
+      "move": "EARTHQUAKE"
+    },
+    {
+      "level": 58,
+      "move": "MOONBLAST"
+    }
   ]
 }

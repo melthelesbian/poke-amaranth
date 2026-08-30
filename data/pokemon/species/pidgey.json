@@ -38,5 +38,58 @@
     "REST",
     "SUBSTITUTE",
     "FLY"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 18,
+      "species": "PIDGEOTTO"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 4,
+      "move": "GROWL"
+    },
+    {
+      "level": 7,
+      "move": "GUST"
+    },
+    {
+      "level": 11,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 15,
+      "move": "FRIGHTEN"
+    },
+    {
+      "level": 19,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 24,
+      "move": "SCREECH"
+    },
+    {
+      "level": 30,
+      "move": "TAKE_DOWN"
+    },
+    {
+      "level": 37,
+      "move": "SING"
+    },
+    {
+      "level": 44,
+      "move": "RAZOR_WIND"
+    },
+    {
+      "level": 52,
+      "move": "SKY_ATTACK"
+    }
   ]
 }

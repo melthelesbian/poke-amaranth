@@ -45,5 +45,63 @@
     "SUBSTITUTE",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "EEVEE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "EMBER"
+    },
+    {
+      "level": 10,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 14,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 18,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 22,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 27,
+      "move": "FLAME_CHARGE"
+    },
+    {
+      "level": 33,
+      "move": "BITE"
+    },
+    {
+      "level": 40,
+      "move": "DRAGONBREATH"
+    },
+    {
+      "level": 48,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 56,
+      "move": "FLARE_RUSH"
+    }
   ]
 }

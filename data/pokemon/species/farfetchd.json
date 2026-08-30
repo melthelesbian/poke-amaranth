@@ -50,5 +50,60 @@
     "FLY",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 5,
+      "move": "PECK"
+    },
+    {
+      "level": 9,
+      "move": "PAY_DAY"
+    },
+    {
+      "level": 13,
+      "move": "DOUBLESLAP"
+    },
+    {
+      "level": 17,
+      "move": "PREPARE"
+    },
+    {
+      "level": 21,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 25,
+      "move": "FEINT_ATTACK"
+    },
+    {
+      "level": 29,
+      "move": "AGILITY"
+    },
+    {
+      "level": 34,
+      "move": "SLASH"
+    },
+    {
+      "level": 40,
+      "move": "DRILL_PECK"
+    },
+    {
+      "level": 47,
+      "move": "SWORDS_DANCE"
+    },
+    {
+      "level": 55,
+      "move": "NIGHT_SLASH"
+    }
   ]
 }

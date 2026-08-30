@@ -49,5 +49,56 @@
     "HEAVY_SMASH",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 9,
+      "move": "LOW_KICK"
+    },
+    {
+      "level": 14,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 19,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 24,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 30,
+      "move": "PREPARE"
+    },
+    {
+      "level": 36,
+      "move": "JUMP_KICK"
+    },
+    {
+      "level": 42,
+      "move": "ROLLING_KICK"
+    },
+    {
+      "level": 48,
+      "move": "COUNTER"
+    },
+    {
+      "level": 55,
+      "move": "HI_JUMP_KICK"
+    },
+    {
+      "level": 64,
+      "move": "SWORDS_DANCE"
+    }
   ]
 }

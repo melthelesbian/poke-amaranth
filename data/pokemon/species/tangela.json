@@ -49,5 +49,56 @@
     "SUBSTITUTE",
     "CUT",
     "SURF"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "STRING_SHOT"
+    },
+    {
+      "level": 1,
+      "move": "GROWTH"
+    },
+    {
+      "level": 5,
+      "move": "VINE_WHIP"
+    },
+    {
+      "level": 9,
+      "move": "LEECH_SEED"
+    },
+    {
+      "level": 13,
+      "move": "WRAP"
+    },
+    {
+      "level": 17,
+      "move": "PREPARE"
+    },
+    {
+      "level": 22,
+      "move": "ABSORB"
+    },
+    {
+      "level": 28,
+      "move": "STUN_CLOUD"
+    },
+    {
+      "level": 34,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 40,
+      "move": "MINIMIZE"
+    },
+    {
+      "level": 47,
+      "move": "MEGA_DRAIN"
+    },
+    {
+      "level": 55,
+      "move": "SPORE"
+    }
   ]
 }

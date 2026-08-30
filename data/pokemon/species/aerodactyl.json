@@ -43,5 +43,56 @@
     "CUT",
     "FLY",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GLARE"
+    },
+    {
+      "level": 6,
+      "move": "PECK"
+    },
+    {
+      "level": 10,
+      "move": "LEER"
+    },
+    {
+      "level": 14,
+      "move": "ROCK_THROW"
+    },
+    {
+      "level": 18,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 23,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 28,
+      "move": "BITE"
+    },
+    {
+      "level": 34,
+      "move": "ROCK_SLIDE"
+    },
+    {
+      "level": 40,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 47,
+      "move": "DRILL_PECK"
+    },
+    {
+      "level": 55,
+      "move": "CRUNCH"
+    }
   ]
 }

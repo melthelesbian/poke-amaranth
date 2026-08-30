@@ -46,5 +46,52 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "SCREECH"
+    },
+    {
+      "level": 7,
+      "move": "BUG_BITE"
+    },
+    {
+      "level": 12,
+      "move": "CRUSH"
+    },
+    {
+      "level": 18,
+      "move": "RAGE"
+    },
+    {
+      "level": 24,
+      "move": "COUNTER"
+    },
+    {
+      "level": 30,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 37,
+      "move": "GUILLOTINE"
+    },
+    {
+      "level": 45,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 54,
+      "move": "PREPARE"
+    },
+    {
+      "level": 64,
+      "move": "BUG_BUZZ"
+    }
   ]
 }

@@ -48,5 +48,62 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 30,
+      "species": "DRAGONAIR"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 8,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 13,
+      "move": "WRAP"
+    },
+    {
+      "level": 19,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 25,
+      "move": "DRAGON_RAGE"
+    },
+    {
+      "level": 32,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 39,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 46,
+      "move": "DRAGONBREATH"
+    },
+    {
+      "level": 54,
+      "move": "AGILITY"
+    },
+    {
+      "level": 62,
+      "move": "THRASH"
+    }
   ]
 }

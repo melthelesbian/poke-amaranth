@@ -54,5 +54,56 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 9,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 13,
+      "move": "DOUBLESLAP"
+    },
+    {
+      "level": 17,
+      "move": "DRAIN_KISS"
+    },
+    {
+      "level": 21,
+      "move": "MINIMIZE"
+    },
+    {
+      "level": 26,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 32,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 38,
+      "move": "SOFTBOILED"
+    },
+    {
+      "level": 45,
+      "move": "EGG_BOMB"
+    },
+    {
+      "level": 52,
+      "move": "REFLECT"
+    },
+    {
+      "level": 60,
+      "move": "MOONBLAST"
+    }
   ]
 }

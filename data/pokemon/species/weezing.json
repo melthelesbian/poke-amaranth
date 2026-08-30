@@ -42,5 +42,63 @@
     "HEAVY_SMASH",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "KOFFING"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 8,
+      "move": "GROWL"
+    },
+    {
+      "level": 13,
+      "move": "ACID"
+    },
+    {
+      "level": 18,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 24,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 30,
+      "move": "SMOG"
+    },
+    {
+      "level": 37,
+      "move": "SELFDESTRUCT"
+    },
+    {
+      "level": 44,
+      "move": "BARRIER"
+    },
+    {
+      "level": 51,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 58,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 65,
+      "move": "EXPLOSION"
+    }
   ]
 }

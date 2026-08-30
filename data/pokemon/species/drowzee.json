@@ -53,5 +53,58 @@
     "METRONOME",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 26,
+      "species": "HYPNO"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 9,
+      "move": "DISABLE"
+    },
+    {
+      "level": 10,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 12,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 16,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 21,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 27,
+      "move": "DREAM_EATER"
+    },
+    {
+      "level": 35,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 44,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 52,
+      "move": "PSYCHIC_M"
+    }
   ]
 }

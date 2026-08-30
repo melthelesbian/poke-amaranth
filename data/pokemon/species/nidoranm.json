@@ -40,5 +40,62 @@
     "PAY_DAY",
     "SUBSTITUTE",
     "SURF"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 16,
+      "species": "NIDORINO"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "POISON_STING"
+    },
+    {
+      "level": 9,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 13,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 17,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 22,
+      "move": "BITE"
+    },
+    {
+      "level": 28,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 35,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 42,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 50,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 58,
+      "move": "CRUNCH"
+    }
   ]
 }

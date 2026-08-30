@@ -49,5 +49,59 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "SANDSHREW"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 6,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 9,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 13,
+      "move": "FURY_SWIPES"
+    },
+    {
+      "level": 17,
+      "move": "GLARE"
+    },
+    {
+      "level": 21,
+      "move": "DIG"
+    },
+    {
+      "level": 27,
+      "move": "SLASH"
+    },
+    {
+      "level": 34,
+      "move": "TWIN_SLICE"
+    },
+    {
+      "level": 41,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 48,
+      "move": "EARTHQUAKE"
+    }
   ]
 }

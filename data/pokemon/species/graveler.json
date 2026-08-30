@@ -43,5 +43,69 @@
     "ROCK_SLIDE",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_TRADE",
+      "level": 1,
+      "species": "GOLEM"
+    },
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 40,
+      "species": "GOLEM"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "GEODUDE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 6,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 11,
+      "move": "ROCK_THROW"
+    },
+    {
+      "level": 16,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 22,
+      "move": "DIG"
+    },
+    {
+      "level": 29,
+      "move": "BARRIER"
+    },
+    {
+      "level": 36,
+      "move": "SPIKE_CANNON"
+    },
+    {
+      "level": 45,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 53,
+      "move": "EARTHQUAKE"
+    },
+    {
+      "level": 62,
+      "move": "ROCK_SLIDE"
+    }
   ]
 }

@@ -44,5 +44,72 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 36,
+      "species": "CHARIZARD"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "CHARMANDER"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 6,
+      "move": "EMBER"
+    },
+    {
+      "level": 8,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 11,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 15,
+      "move": "FRIGHTEN"
+    },
+    {
+      "level": 21,
+      "move": "FIRE_SPIN"
+    },
+    {
+      "level": 26,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 30,
+      "move": "FLAME_CHARGE"
+    },
+    {
+      "level": 37,
+      "move": "SLASH"
+    },
+    {
+      "level": 45,
+      "move": "AGILITY"
+    },
+    {
+      "level": 52,
+      "move": "FLAMETHROWER"
+    },
+    {
+      "level": 60,
+      "move": "THRASH"
+    }
   ]
 }

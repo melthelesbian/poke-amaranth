@@ -43,5 +43,63 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "DIGLETT"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 9,
+      "move": "ASTONISH"
+    },
+    {
+      "level": 10,
+      "move": "DIG"
+    },
+    {
+      "level": 13,
+      "move": "FURY_SWIPES"
+    },
+    {
+      "level": 18,
+      "move": "ROCK_THROW"
+    },
+    {
+      "level": 23,
+      "move": "SWIFT"
+    },
+    {
+      "level": 29,
+      "move": "SLASH"
+    },
+    {
+      "level": 35,
+      "move": "EARTHQUAKE"
+    },
+    {
+      "level": 41,
+      "move": "AGILITY"
+    },
+    {
+      "level": 48,
+      "move": "FISSURE"
+    }
   ]
 }

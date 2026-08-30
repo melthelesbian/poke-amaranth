@@ -46,5 +46,48 @@
     "SUBSTITUTE",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "THUNDERSHOCK"
+    },
+    {
+      "level": 8,
+      "move": "LOW_KICK"
+    },
+    {
+      "level": 12,
+      "move": "THUNDER_WAVE"
+    },
+    {
+      "level": 17,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 23,
+      "move": "THUNDERPUNCH"
+    },
+    {
+      "level": 30,
+      "move": "KARATE_CHOP"
+    },
+    {
+      "level": 38,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 47,
+      "move": "SUBMISSION"
+    },
+    {
+      "level": 56,
+      "move": "THUNDER"
+    }
   ]
 }

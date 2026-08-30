@@ -52,5 +52,71 @@
     "SUBSTITUTE",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "STARYU"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCREECH"
+    },
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 7,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 10,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 14,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 18,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 22,
+      "move": "SWIFT"
+    },
+    {
+      "level": 26,
+      "move": "MINIMIZE"
+    },
+    {
+      "level": 31,
+      "move": "DOUBLE_DASH"
+    },
+    {
+      "level": 36,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 42,
+      "move": "RECOVER"
+    },
+    {
+      "level": 48,
+      "move": "MOONBLAST"
+    },
+    {
+      "level": 55,
+      "move": "HYPER_BEAM"
+    },
+    {
+      "level": 62,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

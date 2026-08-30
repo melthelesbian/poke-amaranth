@@ -46,5 +46,52 @@
     "ROCK_SLIDE",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "LOW_KICK"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 8,
+      "move": "EMBER"
+    },
+    {
+      "level": 12,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 17,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 23,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 29,
+      "move": "FIRE_PUNCH"
+    },
+    {
+      "level": 35,
+      "move": "SMOG"
+    },
+    {
+      "level": 42,
+      "move": "ROLLING_KICK"
+    },
+    {
+      "level": 50,
+      "move": "GLARE"
+    },
+    {
+      "level": 58,
+      "move": "FIRE_SPIN"
+    }
   ]
 }

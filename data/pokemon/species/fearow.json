@@ -48,5 +48,51 @@
     "SUBSTITUTE",
     "CUT",
     "FLY"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "SPEAROW"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "PECK"
+    },
+    {
+      "level": 3,
+      "move": "LEER"
+    },
+    {
+      "level": 7,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 12,
+      "move": "FEINT_ATTACK"
+    },
+    {
+      "level": 17,
+      "move": "GLARE"
+    },
+    {
+      "level": 23,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 30,
+      "move": "MIRROR_MOVE"
+    },
+    {
+      "level": 37,
+      "move": "NIGHT_SLASH"
+    },
+    {
+      "level": 45,
+      "move": "SKY_ATTACK"
+    }
   ]
 }

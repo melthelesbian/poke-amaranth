@@ -46,5 +46,66 @@
     "CUT",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 16,
+      "species": "WARTORTLE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 6,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 9,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 12,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 15,
+      "move": "MIST"
+    },
+    {
+      "level": 19,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 23,
+      "move": "BARRIER"
+    },
+    {
+      "level": 28,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 34,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 41,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 48,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 56,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

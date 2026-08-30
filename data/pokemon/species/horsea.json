@@ -48,5 +48,62 @@
     "SUBSTITUTE",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 32,
+      "species": "SEADRA"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 6,
+      "move": "GROWL"
+    },
+    {
+      "level": 9,
+      "move": "SCREECH"
+    },
+    {
+      "level": 12,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 16,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 21,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 27,
+      "move": "DRAGON_RAGE"
+    },
+    {
+      "level": 33,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 39,
+      "move": "SWIFT"
+    },
+    {
+      "level": 45,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 51,
+      "move": "DRAGONBREATH"
+    },
+    {
+      "level": 58,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

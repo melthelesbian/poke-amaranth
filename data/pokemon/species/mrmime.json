@@ -56,5 +56,60 @@
     "METRONOME",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 9,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 14,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 19,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 24,
+      "move": "BARRIER"
+    },
+    {
+      "level": 30,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 36,
+      "move": "DRAIN_KISS"
+    },
+    {
+      "level": 42,
+      "move": "MIRROR_MOVE"
+    },
+    {
+      "level": 48,
+      "move": "REFLECT"
+    },
+    {
+      "level": 50,
+      "move": "LIGHT_SCREEN"
+    },
+    {
+      "level": 56,
+      "move": "MOONBLAST"
+    },
+    {
+      "level": 64,
+      "move": "MIMIC"
+    }
   ]
 }

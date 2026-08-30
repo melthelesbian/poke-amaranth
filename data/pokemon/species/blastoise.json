@@ -48,5 +48,71 @@
     "CUT",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "WARTORTLE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 6,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 9,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 12,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 15,
+      "move": "MIST"
+    },
+    {
+      "level": 20,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 25,
+      "move": "BARRIER"
+    },
+    {
+      "level": 30,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 36,
+      "move": "CRUSH"
+    },
+    {
+      "level": 42,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 48,
+      "move": "HEAVY_SMASH"
+    },
+    {
+      "level": 55,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 65,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

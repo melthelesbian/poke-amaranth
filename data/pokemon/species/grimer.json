@@ -48,5 +48,58 @@
     "SUBSTITUTE",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 38,
+      "species": "MUK"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 6,
+      "move": "ACID"
+    },
+    {
+      "level": 10,
+      "move": "DISABLE"
+    },
+    {
+      "level": 15,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 21,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 27,
+      "move": "SMOG"
+    },
+    {
+      "level": 33,
+      "move": "MINIMIZE"
+    },
+    {
+      "level": 40,
+      "move": "MIMIC"
+    },
+    {
+      "level": 48,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 56,
+      "move": "SLUDGE"
+    }
   ]
 }

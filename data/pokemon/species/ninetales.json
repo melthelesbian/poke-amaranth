@@ -51,5 +51,71 @@
     "SUBSTITUTE",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "VULPIX"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 7,
+      "move": "EMBER"
+    },
+    {
+      "level": 10,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 13,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 17,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 21,
+      "move": "FLAME_CHARGE"
+    },
+    {
+      "level": 25,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 30,
+      "move": "SWIFT"
+    },
+    {
+      "level": 36,
+      "move": "LIGHT_SCREEN"
+    },
+    {
+      "level": 42,
+      "move": "FLAMETHROWER"
+    },
+    {
+      "level": 48,
+      "move": "CRUNCH"
+    },
+    {
+      "level": 55,
+      "move": "MOONBLAST"
+    },
+    {
+      "level": 62,
+      "move": "RECOVER"
+    }
   ]
 }

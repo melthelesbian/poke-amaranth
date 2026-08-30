@@ -67,5 +67,60 @@
     "FLY",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "CONVERSION"
+    },
+    {
+      "level": 5,
+      "move": "THUNDERSHOCK"
+    },
+    {
+      "level": 9,
+      "move": "SCREECH"
+    },
+    {
+      "level": 14,
+      "move": "SONICBOOM"
+    },
+    {
+      "level": 15,
+      "move": "CONVERSION"
+    },
+    {
+      "level": 20,
+      "move": "MIRROR_MOVE"
+    },
+    {
+      "level": 26,
+      "move": "TRI_ATTACK"
+    },
+    {
+      "level": 32,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 35,
+      "move": "CONVERSION"
+    },
+    {
+      "level": 38,
+      "move": "RECOVER"
+    },
+    {
+      "level": 45,
+      "move": "MIMIC"
+    },
+    {
+      "level": 52,
+      "move": "HYPER_BEAM"
+    }
   ]
 }

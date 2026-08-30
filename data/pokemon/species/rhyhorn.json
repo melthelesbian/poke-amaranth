@@ -37,5 +37,58 @@
     "ROCK_SLIDE",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 38,
+      "species": "RHYDON"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 1,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 6,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 11,
+      "move": "SPIKE_CANNON"
+    },
+    {
+      "level": 16,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 22,
+      "move": "SCREECH"
+    },
+    {
+      "level": 29,
+      "move": "ROCK_THROW"
+    },
+    {
+      "level": 36,
+      "move": "GLARE"
+    },
+    {
+      "level": 44,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 52,
+      "move": "ROCK_SLIDE"
+    },
+    {
+      "level": 60,
+      "move": "SKULL_BASH"
+    }
   ]
 }

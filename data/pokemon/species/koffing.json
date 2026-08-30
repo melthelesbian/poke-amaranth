@@ -42,5 +42,62 @@
     "HEAVY_SMASH",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 35,
+      "species": "WEEZING"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 8,
+      "move": "GROWL"
+    },
+    {
+      "level": 13,
+      "move": "ACID"
+    },
+    {
+      "level": 18,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 24,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 30,
+      "move": "SMOG"
+    },
+    {
+      "level": 36,
+      "move": "SELFDESTRUCT"
+    },
+    {
+      "level": 42,
+      "move": "BARRIER"
+    },
+    {
+      "level": 48,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 55,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 62,
+      "move": "EXPLOSION"
+    }
   ]
 }

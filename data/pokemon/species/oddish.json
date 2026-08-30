@@ -47,5 +47,78 @@
     "CUT",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 21,
+      "species": "GLOOM"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "ABSORB"
+    },
+    {
+      "level": 1,
+      "move": "GROWTH"
+    },
+    {
+      "level": 6,
+      "move": "LEECH_SEED"
+    },
+    {
+      "level": 10,
+      "move": "ACID"
+    },
+    {
+      "level": 14,
+      "move": "VINE_WHIP"
+    },
+    {
+      "level": 16,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 18,
+      "move": "STUN_CLOUD"
+    },
+    {
+      "level": 20,
+      "move": "SMOG"
+    },
+    {
+      "level": 22,
+      "move": "SLEEP_CLOUD"
+    },
+    {
+      "level": 26,
+      "move": "MEGA_DRAIN"
+    },
+    {
+      "level": 30,
+      "move": "FEINT_ATTACK"
+    },
+    {
+      "level": 35,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 40,
+      "move": "RAZOR_LEAF"
+    },
+    {
+      "level": 46,
+      "move": "NIGHT_SLASH"
+    },
+    {
+      "level": 52,
+      "move": "SPORE"
+    },
+    {
+      "level": 58,
+      "move": "PETAL_DANCE"
+    }
   ]
 }

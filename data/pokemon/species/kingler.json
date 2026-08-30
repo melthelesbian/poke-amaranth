@@ -46,5 +46,63 @@
     "CUT",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "KRABBY"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 8,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 12,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 16,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 20,
+      "move": "CRUSH"
+    },
+    {
+      "level": 24,
+      "move": "BUBBLEBEAM"
+    },
+    {
+      "level": 32,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 40,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 48,
+      "move": "CRABHAMMER"
+    },
+    {
+      "level": 56,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 64,
+      "move": "TAKE_DOWN"
+    }
   ]
 }

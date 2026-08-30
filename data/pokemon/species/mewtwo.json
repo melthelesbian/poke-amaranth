@@ -55,5 +55,52 @@
     "SUBSTITUTE",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 8,
+      "move": "DISABLE"
+    },
+    {
+      "level": 15,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 22,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 30,
+      "move": "BARRIER"
+    },
+    {
+      "level": 38,
+      "move": "FEINT_ATTACK"
+    },
+    {
+      "level": 45,
+      "move": "RECOVER"
+    },
+    {
+      "level": 54,
+      "move": "PSYCHIC_M"
+    },
+    {
+      "level": 64,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 75,
+      "move": "SHADOW_TEAR"
+    }
   ]
 }

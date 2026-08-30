@@ -44,5 +44,67 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "EKANS"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POISON_STING"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 7,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 11,
+      "move": "BITE"
+    },
+    {
+      "level": 15,
+      "move": "ACID"
+    },
+    {
+      "level": 19,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 24,
+      "move": "WRAP"
+    },
+    {
+      "level": 29,
+      "move": "SUPER_FANG"
+    },
+    {
+      "level": 35,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 41,
+      "move": "GLARE"
+    },
+    {
+      "level": 47,
+      "move": "TAKE_DOWN"
+    },
+    {
+      "level": 54,
+      "move": "CRUNCH"
+    },
+    {
+      "level": 62,
+      "move": "SLUDGE"
+    }
   ]
 }

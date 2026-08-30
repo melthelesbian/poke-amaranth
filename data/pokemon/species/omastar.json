@@ -47,5 +47,63 @@
     "SUBSTITUTE",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "OMANYTE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 6,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 10,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 14,
+      "move": "LEER"
+    },
+    {
+      "level": 18,
+      "move": "BARRIER"
+    },
+    {
+      "level": 23,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 28,
+      "move": "SPIKE_CANNON"
+    },
+    {
+      "level": 35,
+      "move": "ICY_WIND"
+    },
+    {
+      "level": 42,
+      "move": "REFLECT"
+    },
+    {
+      "level": 50,
+      "move": "ROCK_SLIDE"
+    },
+    {
+      "level": 58,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

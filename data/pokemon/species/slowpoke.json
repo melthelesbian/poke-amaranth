@@ -51,5 +51,62 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 37,
+      "species": "SLOWBRO"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 9,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 13,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 18,
+      "move": "DISABLE"
+    },
+    {
+      "level": 23,
+      "move": "BUBBLEBEAM"
+    },
+    {
+      "level": 28,
+      "move": "PSYWAVE"
+    },
+    {
+      "level": 34,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 40,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 47,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 54,
+      "move": "PSYCHIC_M"
+    }
   ]
 }

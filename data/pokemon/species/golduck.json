@@ -54,5 +54,63 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "PSYDUCK"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 6,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 10,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 14,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 19,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 24,
+      "move": "DISABLE"
+    },
+    {
+      "level": 30,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 36,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 42,
+      "move": "SLASH"
+    },
+    {
+      "level": 48,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 55,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

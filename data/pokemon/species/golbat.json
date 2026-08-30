@@ -49,5 +49,59 @@
     "CUT",
     "FLY",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "ZUBAT"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POISON_STING"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 7,
+      "move": "GUST"
+    },
+    {
+      "level": 11,
+      "move": "SCREECH"
+    },
+    {
+      "level": 16,
+      "move": "ACID"
+    },
+    {
+      "level": 21,
+      "move": "BITE"
+    },
+    {
+      "level": 28,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 35,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 42,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 50,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 58,
+      "move": "RAZOR_WIND"
+    }
   ]
 }

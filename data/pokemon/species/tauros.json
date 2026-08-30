@@ -44,5 +44,52 @@
     "HEAVY_SMASH",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 8,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 13,
+      "move": "RAGE"
+    },
+    {
+      "level": 18,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 24,
+      "move": "GLARE"
+    },
+    {
+      "level": 30,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 37,
+      "move": "CRUSH"
+    },
+    {
+      "level": 45,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 54,
+      "move": "REST"
+    },
+    {
+      "level": 64,
+      "move": "THRASH"
+    }
   ]
 }

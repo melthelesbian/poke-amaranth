@@ -49,5 +49,63 @@
     "SUBSTITUTE",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "HORSEA"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 6,
+      "move": "GROWL"
+    },
+    {
+      "level": 9,
+      "move": "SCREECH"
+    },
+    {
+      "level": 12,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 16,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 21,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 27,
+      "move": "DRAGON_RAGE"
+    },
+    {
+      "level": 34,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 41,
+      "move": "SWIFT"
+    },
+    {
+      "level": 48,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 56,
+      "move": "DRAGONBREATH"
+    },
+    {
+      "level": 65,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

@@ -51,5 +51,59 @@
     "SUBSTITUTE",
     "METRONOME",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "CUBONE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 7,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 11,
+      "move": "ASTONISH"
+    },
+    {
+      "level": 16,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 21,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 27,
+      "move": "BONE_CLUB"
+    },
+    {
+      "level": 35,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 44,
+      "move": "SHADOW_TEAR"
+    },
+    {
+      "level": 54,
+      "move": "TAKE_DOWN"
+    },
+    {
+      "level": 65,
+      "move": "BONEMERANG"
+    }
   ]
 }

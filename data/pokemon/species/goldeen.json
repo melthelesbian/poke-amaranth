@@ -44,5 +44,58 @@
     "SUBSTITUTE",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 33,
+      "species": "SEAKING"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 7,
+      "move": "PECK"
+    },
+    {
+      "level": 11,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 15,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 20,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 26,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 32,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 39,
+      "move": "SPIKE_CANNON"
+    },
+    {
+      "level": 46,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 54,
+      "move": "THRASH"
+    }
   ]
 }

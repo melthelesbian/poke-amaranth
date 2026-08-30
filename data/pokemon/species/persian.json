@@ -48,5 +48,63 @@
     "SUBSTITUTE",
     "CUT",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "MEOWTH"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "LICK"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 9,
+      "move": "PAY_DAY"
+    },
+    {
+      "level": 13,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 17,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 22,
+      "move": "SCREECH"
+    },
+    {
+      "level": 27,
+      "move": "BITE"
+    },
+    {
+      "level": 34,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 42,
+      "move": "SLASH"
+    },
+    {
+      "level": 50,
+      "move": "AGILITY"
+    },
+    {
+      "level": 59,
+      "move": "NIGHT_SLASH"
+    }
   ]
 }

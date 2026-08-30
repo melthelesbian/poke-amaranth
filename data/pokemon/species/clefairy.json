@@ -59,5 +59,67 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "MOON_STONE",
+      "level": 20,
+      "species": "CLEFABLE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 7,
+      "move": "SWEET_CRY"
+    },
+    {
+      "level": 10,
+      "move": "METRONOME"
+    },
+    {
+      "level": 12,
+      "move": "DOUBLESLAP"
+    },
+    {
+      "level": 17,
+      "move": "DISABLE"
+    },
+    {
+      "level": 22,
+      "move": "DRAIN_KISS"
+    },
+    {
+      "level": 28,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 35,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 42,
+      "move": "DOUBLE_DASH"
+    },
+    {
+      "level": 49,
+      "move": "HYPER_BEAM"
+    },
+    {
+      "level": 56,
+      "move": "RECOVER"
+    },
+    {
+      "level": 64,
+      "move": "MOONBLAST"
+    }
   ]
 }

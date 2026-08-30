@@ -45,5 +45,66 @@
     "SUBSTITUTE",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 25,
+      "species": "POLIWHIRL"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 5,
+      "move": "GROWL"
+    },
+    {
+      "level": 8,
+      "move": "POUND"
+    },
+    {
+      "level": 11,
+      "move": "SING"
+    },
+    {
+      "level": 15,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 19,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 22,
+      "move": "DOUBLESLAP"
+    },
+    {
+      "level": 26,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 30,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 35,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 41,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 48,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 55,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

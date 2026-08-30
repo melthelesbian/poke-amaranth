@@ -42,5 +42,58 @@
     "SUBSTITUTE",
     "CUT",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 30,
+      "species": "ELECTRODE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "THUNDERSHOCK"
+    },
+    {
+      "level": 7,
+      "move": "SCREECH"
+    },
+    {
+      "level": 12,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 17,
+      "move": "SONICBOOM"
+    },
+    {
+      "level": 23,
+      "move": "SPARK"
+    },
+    {
+      "level": 29,
+      "move": "SELFDESTRUCT"
+    },
+    {
+      "level": 36,
+      "move": "HEAVY_SMASH"
+    },
+    {
+      "level": 44,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 52,
+      "move": "THUNDER"
+    },
+    {
+      "level": 60,
+      "move": "EXPLOSION"
+    }
   ]
 }

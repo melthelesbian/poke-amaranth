@@ -46,5 +46,62 @@
     "SUBSTITUTE",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 40,
+      "species": "OMASTAR"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 6,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 10,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 14,
+      "move": "LEER"
+    },
+    {
+      "level": 18,
+      "move": "BARRIER"
+    },
+    {
+      "level": 23,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 28,
+      "move": "SPIKE_CANNON"
+    },
+    {
+      "level": 34,
+      "move": "ICY_WIND"
+    },
+    {
+      "level": 40,
+      "move": "REFLECT"
+    },
+    {
+      "level": 47,
+      "move": "ROCK_SLIDE"
+    },
+    {
+      "level": 55,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

@@ -49,5 +49,59 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "MAGIKARP"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 15,
+      "move": "TACKLE"
+    },
+    {
+      "level": 20,
+      "move": "DRAGON_RAGE"
+    },
+    {
+      "level": 25,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 30,
+      "move": "BITE"
+    },
+    {
+      "level": 36,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 42,
+      "move": "DRAGONBREATH"
+    },
+    {
+      "level": 48,
+      "move": "HYDRO_PUMP"
+    },
+    {
+      "level": 55,
+      "move": "GLARE"
+    },
+    {
+      "level": 63,
+      "move": "THRASH"
+    }
   ]
 }

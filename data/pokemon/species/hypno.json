@@ -54,5 +54,59 @@
     "METRONOME",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "DROWZEE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 9,
+      "move": "DISABLE"
+    },
+    {
+      "level": 10,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 12,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 16,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 21,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 28,
+      "move": "DREAM_EATER"
+    },
+    {
+      "level": 36,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 45,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 54,
+      "move": "PSYCHIC_M"
+    }
   ]
 }

@@ -50,5 +50,71 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "POLIWHIRL"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 5,
+      "move": "GROWL"
+    },
+    {
+      "level": 8,
+      "move": "POUND"
+    },
+    {
+      "level": 11,
+      "move": "SING"
+    },
+    {
+      "level": 15,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 19,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 22,
+      "move": "DOUBLESLAP"
+    },
+    {
+      "level": 25,
+      "move": "KARATE_CHOP"
+    },
+    {
+      "level": 28,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 36,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 42,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 48,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 56,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 64,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

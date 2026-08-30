@@ -42,5 +42,62 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 26,
+      "species": "DUGTRIO"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 9,
+      "move": "ASTONISH"
+    },
+    {
+      "level": 10,
+      "move": "DIG"
+    },
+    {
+      "level": 13,
+      "move": "FURY_SWIPES"
+    },
+    {
+      "level": 18,
+      "move": "ROCK_THROW"
+    },
+    {
+      "level": 23,
+      "move": "SWIFT"
+    },
+    {
+      "level": 28,
+      "move": "SLASH"
+    },
+    {
+      "level": 33,
+      "move": "EARTHQUAKE"
+    },
+    {
+      "level": 39,
+      "move": "AGILITY"
+    },
+    {
+      "level": 46,
+      "move": "FISSURE"
+    }
   ]
 }

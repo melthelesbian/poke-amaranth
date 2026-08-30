@@ -48,5 +48,79 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "IVYSAUR"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 6,
+      "move": "VINE_WHIP"
+    },
+    {
+      "level": 8,
+      "move": "LEECH_SEED"
+    },
+    {
+      "level": 10,
+      "move": "POISON_STING"
+    },
+    {
+      "level": 13,
+      "move": "STUN_CLOUD"
+    },
+    {
+      "level": 13,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 16,
+      "move": "ABSORB"
+    },
+    {
+      "level": 20,
+      "move": "SLEEP_CLOUD"
+    },
+    {
+      "level": 24,
+      "move": "RAZOR_LEAF"
+    },
+    {
+      "level": 28,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 32,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 40,
+      "move": "GROWTH"
+    },
+    {
+      "level": 48,
+      "move": "MEGA_DRAIN"
+    },
+    {
+      "level": 56,
+      "move": "SPORE"
+    },
+    {
+      "level": 65,
+      "move": "SOLARBEAM"
+    }
   ]
 }

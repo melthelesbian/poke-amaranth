@@ -40,5 +40,59 @@
     "HEAVY_SMASH",
     "SUBSTITUTE",
     "FLY"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "PIDGEOTTO"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 4,
+      "move": "GROWL"
+    },
+    {
+      "level": 7,
+      "move": "GUST"
+    },
+    {
+      "level": 11,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 15,
+      "move": "FRIGHTEN"
+    },
+    {
+      "level": 20,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 26,
+      "move": "SCREECH"
+    },
+    {
+      "level": 32,
+      "move": "TAKE_DOWN"
+    },
+    {
+      "level": 40,
+      "move": "SING"
+    },
+    {
+      "level": 49,
+      "move": "RAZOR_WIND"
+    },
+    {
+      "level": 58,
+      "move": "SKY_ATTACK"
+    }
   ]
 }

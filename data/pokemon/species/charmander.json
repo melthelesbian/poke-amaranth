@@ -44,5 +44,66 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 16,
+      "species": "CHARMELEON"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 6,
+      "move": "EMBER"
+    },
+    {
+      "level": 8,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 11,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 15,
+      "move": "FRIGHTEN"
+    },
+    {
+      "level": 20,
+      "move": "FIRE_SPIN"
+    },
+    {
+      "level": 25,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 30,
+      "move": "FLAME_CHARGE"
+    },
+    {
+      "level": 35,
+      "move": "SLASH"
+    },
+    {
+      "level": 42,
+      "move": "AGILITY"
+    },
+    {
+      "level": 50,
+      "move": "FLAMETHROWER"
+    },
+    {
+      "level": 58,
+      "move": "THRASH"
+    }
   ]
 }

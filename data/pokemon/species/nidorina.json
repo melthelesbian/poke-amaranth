@@ -40,5 +40,74 @@
     "ROCK_SLIDE",
     "SUBSTITUTE",
     "SURF"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_TRADE",
+      "level": 1,
+      "species": "NIDOQUEEN"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "MOON_STONE",
+      "level": 32,
+      "species": "NIDOQUEEN"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "NIDORAN_F"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 5,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 9,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 13,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 18,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 23,
+      "move": "DIG"
+    },
+    {
+      "level": 30,
+      "move": "SWIFT"
+    },
+    {
+      "level": 37,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 44,
+      "move": "GLARE"
+    },
+    {
+      "level": 52,
+      "move": "EARTHQUAKE"
+    },
+    {
+      "level": 60,
+      "move": "MOONBLAST"
+    }
   ]
 }

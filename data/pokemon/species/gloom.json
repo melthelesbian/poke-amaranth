@@ -50,5 +50,90 @@
     "CUT",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_TRADE",
+      "level": 1,
+      "species": "VILEPLUME"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "LEAF_STONE",
+      "level": 30,
+      "species": "VILEPLUME"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "ODDISH"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "ABSORB"
+    },
+    {
+      "level": 1,
+      "move": "GROWTH"
+    },
+    {
+      "level": 6,
+      "move": "LEECH_SEED"
+    },
+    {
+      "level": 10,
+      "move": "ACID"
+    },
+    {
+      "level": 14,
+      "move": "VINE_WHIP"
+    },
+    {
+      "level": 16,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 18,
+      "move": "STUN_CLOUD"
+    },
+    {
+      "level": 20,
+      "move": "SMOG"
+    },
+    {
+      "level": 24,
+      "move": "SLEEP_CLOUD"
+    },
+    {
+      "level": 28,
+      "move": "MEGA_DRAIN"
+    },
+    {
+      "level": 32,
+      "move": "FEINT_ATTACK"
+    },
+    {
+      "level": 36,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 42,
+      "move": "RAZOR_LEAF"
+    },
+    {
+      "level": 48,
+      "move": "NIGHT_SLASH"
+    },
+    {
+      "level": 55,
+      "move": "SPORE"
+    },
+    {
+      "level": 62,
+      "move": "PETAL_DANCE"
+    }
   ]
 }

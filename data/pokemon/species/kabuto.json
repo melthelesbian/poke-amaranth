@@ -46,5 +46,62 @@
     "SUBSTITUTE",
     "CUT",
     "SURF"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 25,
+      "species": "KABUTOPS"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 6,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 10,
+      "move": "ABSORB"
+    },
+    {
+      "level": 14,
+      "move": "FURY_SWIPES"
+    },
+    {
+      "level": 18,
+      "move": "TWIN_SLICE"
+    },
+    {
+      "level": 23,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 28,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 34,
+      "move": "SLASH"
+    },
+    {
+      "level": 40,
+      "move": "SWORDS_DANCE"
+    },
+    {
+      "level": 47,
+      "move": "ROCK_SLIDE"
+    },
+    {
+      "level": 55,
+      "move": "AGILITY"
+    }
   ]
 }

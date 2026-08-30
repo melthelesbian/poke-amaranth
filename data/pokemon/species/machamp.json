@@ -41,5 +41,59 @@
     "PAY_DAY",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "MACHOKE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "PREPARE"
+    },
+    {
+      "level": 7,
+      "move": "LOW_KICK"
+    },
+    {
+      "level": 11,
+      "move": "LEER"
+    },
+    {
+      "level": 16,
+      "move": "RAGE"
+    },
+    {
+      "level": 21,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 27,
+      "move": "KARATE_CHOP"
+    },
+    {
+      "level": 34,
+      "move": "COUNTER"
+    },
+    {
+      "level": 42,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 50,
+      "move": "SEISMIC_TOSS"
+    },
+    {
+      "level": 58,
+      "move": "SUBMISSION"
+    }
   ]
 }

@@ -28,5 +28,26 @@
   "tmhm": [
     "BUG_BUZZ",
     "SUBSTITUTE"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 7,
+      "species": "METAPOD"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "STRING_SHOT"
+    },
+    {
+      "level": 6,
+      "move": "BUG_BITE"
+    }
   ]
 }

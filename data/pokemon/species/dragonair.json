@@ -48,5 +48,68 @@
     "SURF",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 55,
+      "species": "DRAGONITE"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "DRATINI"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 8,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 13,
+      "move": "WRAP"
+    },
+    {
+      "level": 19,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 25,
+      "move": "DRAGON_RAGE"
+    },
+    {
+      "level": 34,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 42,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 50,
+      "move": "DRAGONBREATH"
+    },
+    {
+      "level": 58,
+      "move": "AGILITY"
+    },
+    {
+      "level": 67,
+      "move": "THRASH"
+    }
   ]
 }

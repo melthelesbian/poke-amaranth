@@ -45,5 +45,59 @@
     "SUBSTITUTE",
     "SURF",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "GOLDEEN"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 7,
+      "move": "PECK"
+    },
+    {
+      "level": 11,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 15,
+      "move": "HORN_ATTACK"
+    },
+    {
+      "level": 20,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 26,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 32,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 40,
+      "move": "SPIKE_CANNON"
+    },
+    {
+      "level": 48,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 57,
+      "move": "THRASH"
+    }
   ]
 }

@@ -25,5 +25,26 @@
     "NO_MOVE"
   ],
   "growth_rate": "GROWTH_SLOW",
-  "tmhm": []
+  "tmhm": [],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 20,
+      "species": "GYARADOS"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SPLASH"
+    },
+    {
+      "level": 15,
+      "move": "TACKLE"
+    },
+    {
+      "level": 30,
+      "move": "THRASH"
+    }
+  ]
 }

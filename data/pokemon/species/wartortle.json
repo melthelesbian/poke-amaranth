@@ -47,5 +47,72 @@
     "CUT",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 36,
+      "species": "BLASTOISE"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "SQUIRTLE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 6,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 9,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 12,
+      "move": "TAIL_WHIP"
+    },
+    {
+      "level": 15,
+      "move": "MIST"
+    },
+    {
+      "level": 20,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 25,
+      "move": "BARRIER"
+    },
+    {
+      "level": 30,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 37,
+      "move": "WATERFALL"
+    },
+    {
+      "level": 44,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 52,
+      "move": "AMNESIA"
+    },
+    {
+      "level": 60,
+      "move": "HYDRO_PUMP"
+    }
   ]
 }

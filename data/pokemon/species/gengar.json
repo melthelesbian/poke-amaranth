@@ -55,5 +55,63 @@
     "FLY",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "HAUNTER"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "ASTONISH"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 8,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 12,
+      "move": "LICK"
+    },
+    {
+      "level": 16,
+      "move": "NIGHT_SHADE"
+    },
+    {
+      "level": 21,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 28,
+      "move": "SMOG"
+    },
+    {
+      "level": 35,
+      "move": "FEINT_ATTACK"
+    },
+    {
+      "level": 42,
+      "move": "SHADOW_TEAR"
+    },
+    {
+      "level": 50,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 58,
+      "move": "SLUDGE"
+    },
+    {
+      "level": 67,
+      "move": "DREAM_EATER"
+    }
   ]
 }

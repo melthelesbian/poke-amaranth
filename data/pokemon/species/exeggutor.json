@@ -50,5 +50,67 @@
     "SUBSTITUTE",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "EXEGGCUTE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BARRAGE"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 4,
+      "move": "TACKLE"
+    },
+    {
+      "level": 7,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 11,
+      "move": "LEECH_SEED"
+    },
+    {
+      "level": 15,
+      "move": "ABSORB"
+    },
+    {
+      "level": 19,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 24,
+      "move": "PSYWAVE"
+    },
+    {
+      "level": 30,
+      "move": "REFLECT"
+    },
+    {
+      "level": 36,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 43,
+      "move": "GROWTH"
+    },
+    {
+      "level": 50,
+      "move": "EGG_BOMB"
+    },
+    {
+      "level": 58,
+      "move": "SOLARBEAM"
+    }
   ]
 }

@@ -41,5 +41,65 @@
     "SUBSTITUTE",
     "METRONOME",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_TRADE",
+      "level": 1,
+      "species": "ALAKAZAM"
+    },
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 48,
+      "species": "ALAKAZAM"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "ABRA"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TELEPORT"
+    },
+    {
+      "level": 16,
+      "move": "KINESIS"
+    },
+    {
+      "level": 20,
+      "move": "DISABLE"
+    },
+    {
+      "level": 24,
+      "move": "BARRIER"
+    },
+    {
+      "level": 28,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 33,
+      "move": "RECOVER"
+    },
+    {
+      "level": 39,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 45,
+      "move": "PSYCHIC_M"
+    },
+    {
+      "level": 52,
+      "move": "REFLECT"
+    },
+    {
+      "level": 60,
+      "move": "LIGHT_SCREEN"
+    }
   ]
 }

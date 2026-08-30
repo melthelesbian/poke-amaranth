@@ -52,5 +52,63 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "MANKEY"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 6,
+      "move": "FURY_SWIPES"
+    },
+    {
+      "level": 9,
+      "move": "LOW_KICK"
+    },
+    {
+      "level": 12,
+      "move": "PREPARE"
+    },
+    {
+      "level": 16,
+      "move": "KARATE_CHOP"
+    },
+    {
+      "level": 21,
+      "move": "RAGE"
+    },
+    {
+      "level": 26,
+      "move": "DOUBLE_KICK"
+    },
+    {
+      "level": 32,
+      "move": "SEISMIC_TOSS"
+    },
+    {
+      "level": 39,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 46,
+      "move": "SUBMISSION"
+    },
+    {
+      "level": 55,
+      "move": "THRASH"
+    }
   ]
 }

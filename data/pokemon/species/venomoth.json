@@ -56,5 +56,67 @@
     "CUT",
     "FLY",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "VENONAT"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BUG_BITE"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 5,
+      "move": "TACKLE"
+    },
+    {
+      "level": 8,
+      "move": "STRING_SHOT"
+    },
+    {
+      "level": 12,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 16,
+      "move": "STUN_CLOUD"
+    },
+    {
+      "level": 21,
+      "move": "DISABLE"
+    },
+    {
+      "level": 24,
+      "move": "GUST"
+    },
+    {
+      "level": 27,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 33,
+      "move": "HYPNOSIS"
+    },
+    {
+      "level": 40,
+      "move": "PSYCHIC_M"
+    },
+    {
+      "level": 48,
+      "move": "RAZOR_WIND"
+    },
+    {
+      "level": 56,
+      "move": "BUG_BUZZ"
+    }
   ]
 }

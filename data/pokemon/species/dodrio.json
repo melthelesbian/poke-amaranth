@@ -49,5 +49,67 @@
     "SUBSTITUTE",
     "CUT",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "DODUO"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "SCRATCH"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 1,
+      "move": "PECK"
+    },
+    {
+      "level": 10,
+      "move": "LEER"
+    },
+    {
+      "level": 14,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 19,
+      "move": "FURY_SWIPES"
+    },
+    {
+      "level": 23,
+      "move": "GUST"
+    },
+    {
+      "level": 28,
+      "move": "GLARE"
+    },
+    {
+      "level": 35,
+      "move": "TRI_ATTACK"
+    },
+    {
+      "level": 41,
+      "move": "BODY_SLAM"
+    },
+    {
+      "level": 48,
+      "move": "DRILL_PECK"
+    },
+    {
+      "level": 56,
+      "move": "AGILITY"
+    },
+    {
+      "level": 64,
+      "move": "THRASH"
+    }
   ]
 }

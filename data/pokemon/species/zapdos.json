@@ -49,5 +49,56 @@
     "FLY",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "PECK"
+    },
+    {
+      "level": 1,
+      "move": "SCREECH"
+    },
+    {
+      "level": 7,
+      "move": "THUNDERSHOCK"
+    },
+    {
+      "level": 12,
+      "move": "THUNDER_WAVE"
+    },
+    {
+      "level": 18,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 25,
+      "move": "DISABLE"
+    },
+    {
+      "level": 32,
+      "move": "SPARK"
+    },
+    {
+      "level": 39,
+      "move": "DOUBLE_DASH"
+    },
+    {
+      "level": 48,
+      "move": "DRILL_PECK"
+    },
+    {
+      "level": 57,
+      "move": "SPIKE_CANNON"
+    },
+    {
+      "level": 66,
+      "move": "THUNDER"
+    },
+    {
+      "level": 75,
+      "move": "AGILITY"
+    }
   ]
 }

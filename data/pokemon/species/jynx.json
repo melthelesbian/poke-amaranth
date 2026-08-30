@@ -44,5 +44,48 @@
     "SUBSTITUTE",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "POUND"
+    },
+    {
+      "level": 1,
+      "move": "SING"
+    },
+    {
+      "level": 9,
+      "move": "POWDER_SNOW"
+    },
+    {
+      "level": 13,
+      "move": "LICK"
+    },
+    {
+      "level": 18,
+      "move": "DOUBLESLAP"
+    },
+    {
+      "level": 24,
+      "move": "DRAIN_KISS"
+    },
+    {
+      "level": 30,
+      "move": "ICE_PUNCH"
+    },
+    {
+      "level": 37,
+      "move": "PSYBEAM"
+    },
+    {
+      "level": 44,
+      "move": "MEGA_PUNCH"
+    },
+    {
+      "level": 52,
+      "move": "HYPNOSIS"
+    }
   ]
 }

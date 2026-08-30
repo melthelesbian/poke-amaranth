@@ -42,5 +42,71 @@
     "HEAVY_SMASH",
     "SUBSTITUTE",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "GROWLITHE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "LICK"
+    },
+    {
+      "level": 1,
+      "move": "GROWL"
+    },
+    {
+      "level": 6,
+      "move": "EMBER"
+    },
+    {
+      "level": 9,
+      "move": "SMOKESCREEN"
+    },
+    {
+      "level": 12,
+      "move": "MUD_SLAP"
+    },
+    {
+      "level": 16,
+      "move": "FRIGHTEN"
+    },
+    {
+      "level": 20,
+      "move": "FLAME_CHARGE"
+    },
+    {
+      "level": 25,
+      "move": "HEADBUTT"
+    },
+    {
+      "level": 30,
+      "move": "BITE"
+    },
+    {
+      "level": 36,
+      "move": "MIRROR_MOVE"
+    },
+    {
+      "level": 42,
+      "move": "FLARE_RUSH"
+    },
+    {
+      "level": 48,
+      "move": "AGILITY"
+    },
+    {
+      "level": 54,
+      "move": "HEAVY_SMASH"
+    },
+    {
+      "level": 60,
+      "move": "FLAMETHROWER"
+    }
   ]
 }

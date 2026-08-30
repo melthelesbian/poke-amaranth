@@ -53,5 +53,62 @@
     "SUBSTITUTE",
     "CUT",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 24,
+      "species": "VENOMOTH"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BUG_BITE"
+    },
+    {
+      "level": 1,
+      "move": "LEER"
+    },
+    {
+      "level": 5,
+      "move": "TACKLE"
+    },
+    {
+      "level": 8,
+      "move": "POISON_STING"
+    },
+    {
+      "level": 12,
+      "move": "CONFUSION"
+    },
+    {
+      "level": 16,
+      "move": "POISON_CLOUD"
+    },
+    {
+      "level": 21,
+      "move": "DISABLE"
+    },
+    {
+      "level": 26,
+      "move": "LEECH_LIFE"
+    },
+    {
+      "level": 32,
+      "move": "DOUBLESLAP"
+    },
+    {
+      "level": 39,
+      "move": "CONFUSE_RAY"
+    },
+    {
+      "level": 46,
+      "move": "VENOM_STRIKE"
+    },
+    {
+      "level": 54,
+      "move": "BUG_BUZZ"
+    }
   ]
 }

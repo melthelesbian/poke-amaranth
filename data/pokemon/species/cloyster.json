@@ -44,5 +44,67 @@
     "SUBSTITUTE",
     "SURF",
     "STRENGTH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "SHELLDER"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "BUBBLE"
+    },
+    {
+      "level": 1,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 9,
+      "move": "BIDE"
+    },
+    {
+      "level": 12,
+      "move": "WATER_GUN"
+    },
+    {
+      "level": 15,
+      "move": "ICY_WIND"
+    },
+    {
+      "level": 19,
+      "move": "BARRIER"
+    },
+    {
+      "level": 23,
+      "move": "CRUSH"
+    },
+    {
+      "level": 28,
+      "move": "WHIRLPOOL"
+    },
+    {
+      "level": 34,
+      "move": "AURORA_BEAM"
+    },
+    {
+      "level": 40,
+      "move": "REFLECT"
+    },
+    {
+      "level": 46,
+      "move": "HEAVY_SMASH"
+    },
+    {
+      "level": 52,
+      "move": "HYDRO_PUMP"
+    },
+    {
+      "level": 58,
+      "move": "BLIZZARD"
+    }
   ]
 }

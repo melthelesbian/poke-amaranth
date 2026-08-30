@@ -44,5 +44,59 @@
     "CUT",
     "STRENGTH",
     "FLASH"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "VOLTORB"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 1,
+      "move": "THUNDERSHOCK"
+    },
+    {
+      "level": 7,
+      "move": "SCREECH"
+    },
+    {
+      "level": 12,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 17,
+      "move": "SONICBOOM"
+    },
+    {
+      "level": 23,
+      "move": "SPARK"
+    },
+    {
+      "level": 29,
+      "move": "SELFDESTRUCT"
+    },
+    {
+      "level": 36,
+      "move": "HEAVY_SMASH"
+    },
+    {
+      "level": 45,
+      "move": "FOCUS_ENERGY"
+    },
+    {
+      "level": 54,
+      "move": "THUNDER"
+    },
+    {
+      "level": 64,
+      "move": "EXPLOSION"
+    }
   ]
 }

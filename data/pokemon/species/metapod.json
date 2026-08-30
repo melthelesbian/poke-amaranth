@@ -25,5 +25,28 @@
     "NO_MOVE"
   ],
   "growth_rate": "GROWTH_MEDIUM_FAST",
-  "tmhm": []
+  "tmhm": [],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 10,
+      "species": "BUTTERFREE"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "CATERPIE"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "DEFENSE_CURL"
+    },
+    {
+      "level": 7,
+      "move": "DEFENSE_CURL"
+    }
+  ]
 }

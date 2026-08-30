@@ -38,5 +38,64 @@
     "REST",
     "SUBSTITUTE",
     "FLY"
+  ],
+  "evolutions": [
+    {
+      "method": "EVOLVE_LEVEL",
+      "level": 36,
+      "species": "PIDGEOT"
+    },
+    {
+      "method": "EVOLVE_ITEM",
+      "item": "DEVO_SPRAY",
+      "level": 1,
+      "species": "PIDGEY"
+    }
+  ],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TACKLE"
+    },
+    {
+      "level": 4,
+      "move": "GROWL"
+    },
+    {
+      "level": 7,
+      "move": "GUST"
+    },
+    {
+      "level": 11,
+      "move": "QUICK_ATTACK"
+    },
+    {
+      "level": 15,
+      "move": "FRIGHTEN"
+    },
+    {
+      "level": 20,
+      "move": "WING_ATTACK"
+    },
+    {
+      "level": 26,
+      "move": "SCREECH"
+    },
+    {
+      "level": 32,
+      "move": "TAKE_DOWN"
+    },
+    {
+      "level": 39,
+      "move": "SING"
+    },
+    {
+      "level": 47,
+      "move": "RAZOR_WIND"
+    },
+    {
+      "level": 55,
+      "move": "SKY_ATTACK"
+    }
   ]
 }

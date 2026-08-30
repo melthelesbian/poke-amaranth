@@ -30,5 +30,32 @@
     "TOXIC",
     "MIMIC",
     "SUBSTITUTE"
+  ],
+  "evolutions": [],
+  "learnset": [
+    {
+      "level": 1,
+      "move": "TRANSFORM"
+    },
+    {
+      "level": 10,
+      "move": "MIRROR_MOVE"
+    },
+    {
+      "level": 20,
+      "move": "MINIMIZE"
+    },
+    {
+      "level": 30,
+      "move": "MIMIC"
+    },
+    {
+      "level": 40,
+      "move": "SUBSTITUTE"
+    },
+    {
+      "level": 50,
+      "move": "METRONOME"
+    }
   ]
 }
