@@ -1,0 +1,48 @@
+{
+  "id": "ARBOK",
+  "asm_name": "Arbok",
+  "sprites": {
+    "front": "gfx/pokemon/front/arbok.png",
+    "back": "gfx/pokemon/back/arbokb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 95,
+    "defense": 70,
+    "speed": 80,
+    "special": 75
+  },
+  "types": [
+    "POISON",
+    "DARK"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SLUDGE",
+    "SWIFT",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

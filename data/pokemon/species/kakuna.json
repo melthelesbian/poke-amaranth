@@ -1,0 +1,29 @@
+{
+  "id": "KAKUNA",
+  "asm_name": "Kakuna",
+  "sprites": {
+    "front": "gfx/pokemon/front/kakuna.png",
+    "back": "gfx/pokemon/back/kakunab.png"
+  },
+  "stats": {
+    "hp": 45,
+    "attack": 25,
+    "defense": 50,
+    "speed": 35,
+    "special": 25
+  },
+  "types": [
+    "BUG",
+    "POISON"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": []
+}

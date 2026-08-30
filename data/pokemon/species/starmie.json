@@ -1,0 +1,56 @@
+{
+  "id": "STARMIE",
+  "asm_name": "Starmie",
+  "sprites": {
+    "front": "gfx/pokemon/front/starmie.png",
+    "back": "gfx/pokemon/back/starmieb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 75,
+    "defense": 85,
+    "speed": 115,
+    "special": 100
+  },
+  "types": [
+    "WATER",
+    "FAIRY"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "RAZOR_WIND",
+    "TELEPORT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "MEGA_DRAIN",
+    "THUNDERBOLT",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "BUG_BUZZ",
+    "SWIFT",
+    "HYPNOSIS",
+    "REST",
+    "MOONBLAST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "FLASH"
+  ]
+}

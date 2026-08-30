@@ -1,0 +1,48 @@
+{
+  "id": "TAUROS",
+  "asm_name": "Tauros",
+  "sprites": {
+    "front": "gfx/pokemon/front/tauros.png",
+    "back": "gfx/pokemon/back/taurosb.png"
+  },
+  "stats": {
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "speed": 110,
+    "special": 70
+  },
+  "types": [
+    "NORMAL",
+    "NORMAL"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "HEADBUTT",
+    "DOUBLE_KICK",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "MACHOP",
+  "asm_name": "Machop",
+  "sprites": {
+    "front": "gfx/pokemon/front/machop.png",
+    "back": "gfx/pokemon/back/machopb.png"
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 80,
+    "defense": 50,
+    "speed": 35,
+    "special": 35
+  },
+  "types": [
+    "FIGHTING",
+    "FIGHTING"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "AGILITY",
+    "SUBMISSION",
+    "FOCUS_ENERGY",
+    "BIDE",
+    "SWIFT",
+    "REST",
+    "PAY_DAY",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

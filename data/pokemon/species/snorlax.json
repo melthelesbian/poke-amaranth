@@ -1,0 +1,50 @@
+{
+  "id": "SNORLAX",
+  "asm_name": "Snorlax",
+  "sprites": {
+    "front": "gfx/pokemon/front/snorlax.png",
+    "back": "gfx/pokemon/back/snorlaxb.png"
+  },
+  "stats": {
+    "hp": 160,
+    "attack": 110,
+    "defense": 65,
+    "speed": 30,
+    "special": 90
+  },
+  "types": [
+    "NORMAL",
+    "NORMAL"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "BUBBLEBEAM",
+    "HYPER_BEAM",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SKULL_BASH",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

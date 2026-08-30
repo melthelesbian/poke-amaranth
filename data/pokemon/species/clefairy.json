@@ -1,0 +1,63 @@
+{
+  "id": "CLEFAIRY",
+  "asm_name": "Clefairy",
+  "sprites": {
+    "front": "gfx/pokemon/front/clefairy.png",
+    "back": "gfx/pokemon/back/clefairyb.png"
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 45,
+    "defense": 50,
+    "speed": 35,
+    "special": 65
+  },
+  "types": [
+    "FAIRY",
+    "FAIRY"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TELEPORT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "SOLARBEAM",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "SWIFT",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "METRONOME",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

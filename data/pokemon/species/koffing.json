@@ -1,0 +1,46 @@
+{
+  "id": "KOFFING",
+  "asm_name": "Koffing",
+  "sprites": {
+    "front": "gfx/pokemon/front/koffing.png",
+    "back": "gfx/pokemon/back/koffingb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 65,
+    "defense": 95,
+    "speed": 35,
+    "special": 60
+  },
+  "types": [
+    "POISON",
+    "POISON"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "RAZOR_WIND",
+    "HEADBUTT",
+    "TOXIC",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SLUDGE",
+    "SWIFT",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "PARAS",
+  "asm_name": "Paras",
+  "sprites": {
+    "front": "gfx/pokemon/front/paras.png",
+    "back": "gfx/pokemon/back/parasb.png"
+  },
+  "stats": {
+    "hp": 45,
+    "attack": 75,
+    "defense": 60,
+    "speed": 25,
+    "special": 65
+  },
+  "types": [
+    "BUG",
+    "GRASS"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "BUG_BUZZ",
+    "VENOM_STRIKE",
+    "REST",
+    "ROCK_SLIDE",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

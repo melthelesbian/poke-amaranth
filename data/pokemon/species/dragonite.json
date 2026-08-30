@@ -1,0 +1,60 @@
+{
+  "id": "DRAGONITE",
+  "asm_name": "Dragonite",
+  "sprites": {
+    "front": "gfx/pokemon/front/dragonite.png",
+    "back": "gfx/pokemon/back/dragoniteb.png"
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 135,
+    "defense": 95,
+    "speed": 80,
+    "special": 100
+  },
+  "types": [
+    "DRAGON",
+    "FLYING"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "RAZOR_WIND",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "SUBMISSION",
+    "SOLARBEAM",
+    "DRAGONBREATH",
+    "THUNDERBOLT",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "MOONBLAST",
+    "SUBSTITUTE",
+    "FLY",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

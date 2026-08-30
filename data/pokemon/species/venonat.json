@@ -1,0 +1,57 @@
+{
+  "id": "VENONAT",
+  "asm_name": "Venonat",
+  "sprites": {
+    "front": "gfx/pokemon/front/venonat.png",
+    "back": "gfx/pokemon/back/venonatb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 55,
+    "defense": 50,
+    "speed": 45,
+    "special": 55
+  },
+  "types": [
+    "BUG",
+    "POISON"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "AGILITY",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SLUDGE",
+    "BUG_BUZZ",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLASH"
+  ]
+}

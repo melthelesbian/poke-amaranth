@@ -1,0 +1,46 @@
+{
+  "id": "VOLTORB",
+  "asm_name": "Voltorb",
+  "sprites": {
+    "front": "gfx/pokemon/front/voltorb.png",
+    "back": "gfx/pokemon/back/voltorbb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 30,
+    "defense": 50,
+    "speed": 100,
+    "special": 55
+  },
+  "types": [
+    "ELECTRIC",
+    "STEEL"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "HEADBUTT",
+    "TELEPORT",
+    "THUNDER_WAVE",
+    "AGILITY",
+    "SOLARBEAM",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "CUT",
+    "FLASH"
+  ]
+}

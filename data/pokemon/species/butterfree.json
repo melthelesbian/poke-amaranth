@@ -1,0 +1,53 @@
+{
+  "id": "BUTTERFREE",
+  "asm_name": "Butterfree",
+  "sprites": {
+    "front": "gfx/pokemon/front/butterfree.png",
+    "back": "gfx/pokemon/back/butterfreeb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 75,
+    "defense": 50,
+    "speed": 70,
+    "special": 95
+  },
+  "types": [
+    "BUG",
+    "FAIRY"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "RAZOR_WIND",
+    "HEADBUTT",
+    "TELEPORT",
+    "RAZOR_LEAF",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "MEGA_DRAIN",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "DOUBLE_DASH",
+    "BIDE",
+    "BUG_BUZZ",
+    "SWIFT",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "SUBSTITUTE",
+    "FLY",
+    "FLASH"
+  ]
+}

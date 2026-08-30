@@ -1,0 +1,51 @@
+{
+  "id": "ODDISH",
+  "asm_name": "Oddish",
+  "sprites": {
+    "front": "gfx/pokemon/front/oddish.png",
+    "back": "gfx/pokemon/back/oddishb.png"
+  },
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 55,
+    "speed": 30,
+    "special": 75
+  },
+  "types": [
+    "GRASS",
+    "POISON"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "FOCUS_ENERGY",
+    "DIG",
+    "BIDE",
+    "SLUDGE",
+    "HYPNOSIS",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

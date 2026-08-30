@@ -1,0 +1,52 @@
+{
+  "id": "GASTLY",
+  "asm_name": "Gastly",
+  "sprites": {
+    "front": "gfx/pokemon/front/gastly.png",
+    "back": "gfx/pokemon/back/gastlyb.png"
+  },
+  "stats": {
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "speed": 80,
+    "special": 100
+  },
+  "types": [
+    "GHOST",
+    "POISON"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "TELEPORT",
+    "TOXIC",
+    "THUNDER_WAVE",
+    "AGILITY",
+    "CRUNCH",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SLUDGE",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "FLY",
+    "FLASH"
+  ]
+}

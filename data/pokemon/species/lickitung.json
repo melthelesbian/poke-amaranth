@@ -1,0 +1,50 @@
+{
+  "id": "LICKITUNG",
+  "asm_name": "Lickitung",
+  "sprites": {
+    "front": "gfx/pokemon/front/lickitung.png",
+    "back": "gfx/pokemon/back/lickitungb.png"
+  },
+  "stats": {
+    "hp": 100,
+    "attack": 70,
+    "defense": 85,
+    "speed": 40,
+    "special": 75
+  },
+  "types": [
+    "NORMAL",
+    "NORMAL"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "TOXIC",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SLUDGE",
+    "SKULL_BASH",
+    "REST",
+    "MOONBLAST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

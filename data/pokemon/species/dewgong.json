@@ -1,0 +1,50 @@
+{
+  "id": "DEWGONG",
+  "asm_name": "Dewgong",
+  "sprites": {
+    "front": "gfx/pokemon/front/dewgong.png",
+    "back": "gfx/pokemon/back/dewgongb.png"
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 70,
+    "defense": 80,
+    "speed": 70,
+    "special": 95
+  },
+  "types": [
+    "WATER",
+    "ICE"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "HEADBUTT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "MOONBLAST",
+    "HEAVY_SMASH",
+    "SURF",
+    "FLASH"
+  ]
+}

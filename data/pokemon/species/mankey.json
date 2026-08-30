@@ -1,0 +1,55 @@
+{
+  "id": "MANKEY",
+  "asm_name": "Mankey",
+  "sprites": {
+    "front": "gfx/pokemon/front/mankey.png",
+    "back": "gfx/pokemon/back/mankeyb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 80,
+    "defense": 35,
+    "speed": 70,
+    "special": 45
+  },
+  "types": [
+    "FIGHTING",
+    "FIGHTING"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

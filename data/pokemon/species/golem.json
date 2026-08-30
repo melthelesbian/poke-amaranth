@@ -1,0 +1,48 @@
+{
+  "id": "GOLEM",
+  "asm_name": "Golem",
+  "sprites": {
+    "front": "gfx/pokemon/front/golem.png",
+    "back": "gfx/pokemon/back/golemb.png"
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 120,
+    "defense": 130,
+    "speed": 45,
+    "special": 65
+  },
+  "types": [
+    "ROCK",
+    "GROUND"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "HYPER_BEAM",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

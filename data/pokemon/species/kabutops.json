@@ -1,0 +1,52 @@
+{
+  "id": "KABUTOPS",
+  "asm_name": "Kabutops",
+  "sprites": {
+    "front": "gfx/pokemon/front/kabutops.png",
+    "back": "gfx/pokemon/back/kabutopsb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 115,
+    "defense": 100,
+    "speed": 80,
+    "special": 70
+  },
+  "types": [
+    "BUG",
+    "ROCK"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "TOXIC",
+    "BUBBLEBEAM",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "BUG_BUZZ",
+    "SWIFT",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "SURF",
+    "STRENGTH"
+  ]
+}

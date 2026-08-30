@@ -1,0 +1,50 @@
+{
+  "id": "KABUTO",
+  "asm_name": "Kabuto",
+  "sprites": {
+    "front": "gfx/pokemon/front/kabuto.png",
+    "back": "gfx/pokemon/back/kabutob.png"
+  },
+  "stats": {
+    "hp": 30,
+    "attack": 80,
+    "defense": 90,
+    "speed": 55,
+    "special": 55
+  },
+  "types": [
+    "BUG",
+    "ROCK"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "TOXIC",
+    "BUBBLEBEAM",
+    "AGILITY",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "BUG_BUZZ",
+    "SWIFT",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "SURF"
+  ]
+}

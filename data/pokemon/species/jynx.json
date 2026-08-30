@@ -1,0 +1,48 @@
+{
+  "id": "JYNX",
+  "asm_name": "Jynx",
+  "sprites": {
+    "front": "gfx/pokemon/front/jynx.png",
+    "back": "gfx/pokemon/back/jynxb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 80,
+    "defense": 35,
+    "speed": 75,
+    "special": 95
+  },
+  "types": [
+    "ICE",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "REST",
+    "PAY_DAY",
+    "SUBSTITUTE",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

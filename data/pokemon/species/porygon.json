@@ -1,0 +1,71 @@
+{
+  "id": "PORYGON",
+  "asm_name": "Porygon",
+  "sprites": {
+    "front": "gfx/pokemon/front/porygon.png",
+    "back": "gfx/pokemon/back/porygonb.png"
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 80,
+    "defense": 90,
+    "speed": 60,
+    "special": 105
+  },
+  "types": [
+    "NORMAL",
+    "MYSTERY"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TELEPORT",
+    "TOXIC",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "DRAGONBREATH",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "DIG",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "SHADOW_TEAR",
+    "BIDE",
+    "FLAMETHROWER",
+    "BUG_BUZZ",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "METRONOME",
+    "FLY",
+    "SURF",
+    "FLASH"
+  ]
+}

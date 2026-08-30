@@ -1,0 +1,53 @@
+{
+  "id": "HITMONLEE",
+  "asm_name": "Hitmonlee",
+  "sprites": {
+    "front": "gfx/pokemon/front/hitmonlee.png",
+    "back": "gfx/pokemon/back/hitmonleeb.png"
+  },
+  "stats": {
+    "hp": 50,
+    "attack": 120,
+    "defense": 55,
+    "speed": 90,
+    "special": 110
+  },
+  "types": [
+    "FIGHTING",
+    "FIGHTING"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TELEPORT",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

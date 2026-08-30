@@ -1,0 +1,34 @@
+{
+  "id": "DITTO",
+  "asm_name": "Ditto",
+  "sprites": {
+    "front": "gfx/pokemon/front/ditto.png",
+    "back": "gfx/pokemon/back/dittob.png"
+  },
+  "stats": {
+    "hp": 75,
+    "attack": 75,
+    "defense": 75,
+    "speed": 75,
+    "special": 75
+  },
+  "types": [
+    "NORMAL",
+    "NORMAL"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "TELEPORT",
+    "TOXIC",
+    "MIMIC",
+    "SUBSTITUTE"
+  ]
+}

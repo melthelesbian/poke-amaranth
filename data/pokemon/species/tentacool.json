@@ -1,0 +1,48 @@
+{
+  "id": "TENTACOOL",
+  "asm_name": "Tentacool",
+  "sprites": {
+    "front": "gfx/pokemon/front/tentacool.png",
+    "back": "gfx/pokemon/back/tentacoolb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 40,
+    "defense": 35,
+    "speed": 70,
+    "special": 100
+  },
+  "types": [
+    "WATER",
+    "POISON"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "TOXIC",
+    "ICE_PUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "CRUNCH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "SLUDGE",
+    "VENOM_STRIKE",
+    "REST",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

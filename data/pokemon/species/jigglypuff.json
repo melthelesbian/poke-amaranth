@@ -1,0 +1,64 @@
+{
+  "id": "JIGGLYPUFF",
+  "asm_name": "Jigglypuff",
+  "sprites": {
+    "front": "gfx/pokemon/front/jigglypuff.png",
+    "back": "gfx/pokemon/back/jigglypuffb.png"
+  },
+  "stats": {
+    "hp": 115,
+    "attack": 45,
+    "defense": 20,
+    "speed": 20,
+    "special": 45
+  },
+  "types": [
+    "NORMAL",
+    "FAIRY"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "DIG",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLY",
+    "SURF",
+    "FLASH"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "BELLSPROUT",
+  "asm_name": "Bellsprout",
+  "sprites": {
+    "front": "gfx/pokemon/front/bellsprout.png",
+    "back": "gfx/pokemon/back/bellsproutb.png"
+  },
+  "stats": {
+    "hp": 50,
+    "attack": 75,
+    "defense": 35,
+    "speed": 40,
+    "special": 70
+  },
+  "types": [
+    "GRASS",
+    "POISON"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "HEADBUTT",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "BIDE",
+    "SLUDGE",
+    "VENOM_STRIKE",
+    "REST",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLASH"
+  ]
+}

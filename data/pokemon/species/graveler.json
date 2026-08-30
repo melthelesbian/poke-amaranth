@@ -1,0 +1,47 @@
+{
+  "id": "GRAVELER",
+  "asm_name": "Graveler",
+  "sprites": {
+    "front": "gfx/pokemon/front/graveler.png",
+    "back": "gfx/pokemon/back/gravelerb.png"
+  },
+  "stats": {
+    "hp": 55,
+    "attack": 95,
+    "defense": 115,
+    "speed": 35,
+    "special": 45
+  },
+  "types": [
+    "ROCK",
+    "GROUND"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

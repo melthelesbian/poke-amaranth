@@ -1,0 +1,45 @@
+{
+  "id": "ABRA",
+  "asm_name": "Abra",
+  "sprites": {
+    "front": "gfx/pokemon/front/abra.png",
+    "back": "gfx/pokemon/back/abrab.png"
+  },
+  "stats": {
+    "hp": 25,
+    "attack": 20,
+    "defense": 15,
+    "speed": 90,
+    "special": 105
+  },
+  "types": [
+    "PSYCHIC_TYPE",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_VERY_EASY",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "TELEPORT",
+    "THUNDER_WAVE",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "REST",
+    "SUBSTITUTE",
+    "METRONOME",
+    "FLASH"
+  ]
+}

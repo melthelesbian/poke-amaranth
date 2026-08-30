@@ -1,0 +1,48 @@
+{
+  "id": "CHARMANDER",
+  "asm_name": "Charmander",
+  "sprites": {
+    "front": "gfx/pokemon/front/charmander.png",
+    "back": "gfx/pokemon/back/charmanderb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "speed": 65,
+    "special": 60
+  },
+  "types": [
+    "FIRE",
+    "FIRE"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "DRAGONBREATH",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

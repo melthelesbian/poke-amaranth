@@ -1,0 +1,53 @@
+{
+  "id": "TANGELA",
+  "asm_name": "Tangela",
+  "sprites": {
+    "front": "gfx/pokemon/front/tangela.png",
+    "back": "gfx/pokemon/back/tangelab.png"
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 75,
+    "defense": 120,
+    "speed": 50,
+    "special": 105
+  },
+  "types": [
+    "GRASS",
+    "GRASS"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "AGILITY",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "FOCUS_ENERGY",
+    "DIG",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "SURF"
+  ]
+}

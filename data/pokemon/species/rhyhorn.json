@@ -1,0 +1,41 @@
+{
+  "id": "RHYHORN",
+  "asm_name": "Rhyhorn",
+  "sprites": {
+    "front": "gfx/pokemon/front/rhyhorn.png",
+    "back": "gfx/pokemon/back/rhyhornb.png"
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 85,
+    "defense": 95,
+    "speed": 25,
+    "special": 30
+  },
+  "types": [
+    "ROCK",
+    "ROCK"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "HEADBUTT",
+    "DOUBLE_KICK",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "BIDE",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "PERSIAN",
+  "asm_name": "Persian",
+  "sprites": {
+    "front": "gfx/pokemon/front/persian.png",
+    "back": "gfx/pokemon/back/persianb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 70,
+    "defense": 60,
+    "speed": 115,
+    "special": 75
+  },
+  "types": [
+    "DARK",
+    "DARK"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "REST",
+    "PAY_DAY",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLASH"
+  ]
+}

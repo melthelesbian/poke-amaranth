@@ -1,0 +1,53 @@
+{
+  "id": "NIDOQUEEN",
+  "asm_name": "Nidoqueen",
+  "sprites": {
+    "front": "gfx/pokemon/front/nidoqueen.png",
+    "back": "gfx/pokemon/back/nidoqueenb.png"
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 95,
+    "defense": 85,
+    "speed": 75,
+    "special": 80
+  },
+  "types": [
+    "FAIRY",
+    "GROUND"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "DRAGONBREATH",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "MOONBLAST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

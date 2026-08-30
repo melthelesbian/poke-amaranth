@@ -1,0 +1,51 @@
+{
+  "id": "MEOWTH",
+  "asm_name": "Meowth",
+  "sprites": {
+    "front": "gfx/pokemon/front/meowth.png",
+    "back": "gfx/pokemon/back/meowthb.png"
+  },
+  "stats": {
+    "hp": 50,
+    "attack": 45,
+    "defense": 55,
+    "speed": 90,
+    "special": 50
+  },
+  "types": [
+    "DARK",
+    "DARK"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "DOUBLE_KICK",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "REST",
+    "PAY_DAY",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLASH"
+  ]
+}

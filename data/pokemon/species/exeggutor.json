@@ -1,0 +1,54 @@
+{
+  "id": "EXEGGUTOR",
+  "asm_name": "Exeggutor",
+  "sprites": {
+    "front": "gfx/pokemon/front/exeggutor.png",
+    "back": "gfx/pokemon/back/exeggutorb.png"
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 105,
+    "defense": 85,
+    "speed": 55,
+    "special": 125
+  },
+  "types": [
+    "GRASS",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TELEPORT",
+    "TOXIC",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "RAZOR_LEAF",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "HYPNOSIS",
+    "SKULL_BASH",
+    "REST",
+    "SUBSTITUTE",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

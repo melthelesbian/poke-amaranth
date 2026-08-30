@@ -1,0 +1,46 @@
+{
+  "id": "ARCANINE",
+  "asm_name": "Arcanine",
+  "sprites": {
+    "front": "gfx/pokemon/front/arcanine.png",
+    "back": "gfx/pokemon/back/arcanineb.png"
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 115,
+    "defense": 80,
+    "speed": 95,
+    "special": 100
+  },
+  "types": [
+    "FIRE",
+    "DARK"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "HEADBUTT",
+    "DOUBLE_KICK",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

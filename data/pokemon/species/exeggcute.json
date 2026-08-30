@@ -1,0 +1,48 @@
+{
+  "id": "EXEGGCUTE",
+  "asm_name": "Exeggcute",
+  "sprites": {
+    "front": "gfx/pokemon/front/exeggcute.png",
+    "back": "gfx/pokemon/back/exeggcuteb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 40,
+    "defense": 80,
+    "speed": 40,
+    "special": 60
+  },
+  "types": [
+    "GRASS",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TELEPORT",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "HYPNOSIS",
+    "REST",
+    "SUBSTITUTE",
+    "FLASH"
+  ]
+}

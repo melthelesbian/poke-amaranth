@@ -1,0 +1,59 @@
+{
+  "id": "MEWTWO",
+  "asm_name": "Mewtwo",
+  "sprites": {
+    "front": "gfx/pokemon/front/mewtwo.png",
+    "back": "gfx/pokemon/back/mewtwob.png"
+  },
+  "stats": {
+    "hp": 105,
+    "attack": 110,
+    "defense": 90,
+    "speed": 130,
+    "special": 125
+  },
+  "types": [
+    "PSYCHIC_TYPE",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_CHALLENGING",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "TELEPORT",
+    "TOXIC",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "SHADOW_TEAR",
+    "BIDE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

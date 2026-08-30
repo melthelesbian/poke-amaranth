@@ -1,0 +1,57 @@
+{
+  "id": "PSYDUCK",
+  "asm_name": "Psyduck",
+  "sprites": {
+    "front": "gfx/pokemon/front/psyduck.png",
+    "back": "gfx/pokemon/back/psyduckb.png"
+  },
+  "stats": {
+    "hp": 50,
+    "attack": 50,
+    "defense": 50,
+    "speed": 55,
+    "special": 65
+  },
+  "types": [
+    "WATER",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TELEPORT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "BUBBLEBEAM",
+    "DOUBLE_KICK",
+    "ICE_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "REST",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

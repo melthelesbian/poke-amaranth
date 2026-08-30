@@ -1,0 +1,52 @@
+{
+  "id": "VENUSAUR",
+  "asm_name": "Venusaur",
+  "sprites": {
+    "front": "gfx/pokemon/front/venusaur.png",
+    "back": "gfx/pokemon/back/venusaurb.png"
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 85,
+    "defense": 85,
+    "speed": 80,
+    "special": 100
+  },
+  "types": [
+    "GRASS",
+    "POISON"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "HYPER_BEAM",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "BIDE",
+    "SLUDGE",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

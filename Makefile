@@ -32,6 +32,9 @@ item_generated := \
 	data/items/vending_prices.gen.asm \
 	data/items/descriptions.gen.asm \
 	data/items/tm_prices.gen.asm
+pokemon_json := $(wildcard data/pokemon/species/*.json)
+pokemon_generated := $(patsubst data/pokemon/species/%.json,data/pokemon/base_stats/%.gen.asm,$(pokemon_json))
+pokemon_pics := $(patsubst %.png,%.pic,$(wildcard gfx/pokemon/front/*.png gfx/pokemon/back/*.png))
 
 rom_obj := \
 	audio.o \
@@ -113,7 +116,8 @@ tidy:
 	      $(amaranth_blue_debug_obj) \
 	      rgbdscheck.o \
 	      $(move_generated) \
-	      $(item_generated)
+	      $(item_generated) \
+	      $(pokemon_generated)
 	$(MAKE) clean -C tools/
 
 compare: $(roms) $(patches)
@@ -226,6 +230,9 @@ data/items/descriptions.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/ge
 
 data/items/tm_prices.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
 	python3 tools/generate_items.py tm-prices > $@
+
+$(pokemon_generated): data/pokemon/base_stats/%.gen.asm: data/pokemon/species/%.json tools/generate_pokemon.py $(pokemon_pics)
+	python3 tools/generate_pokemon.py generate-one $*
 
 endif
 

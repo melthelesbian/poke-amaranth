@@ -1,0 +1,50 @@
+{
+  "id": "VULPIX",
+  "asm_name": "Vulpix",
+  "sprites": {
+    "front": "gfx/pokemon/front/vulpix.png",
+    "back": "gfx/pokemon/back/vulpixb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 40,
+    "speed": 65,
+    "special": 65
+  },
+  "types": [
+    "FIRE",
+    "FAIRY"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "TELEPORT",
+    "DOUBLE_KICK",
+    "AGILITY",
+    "CRUNCH",
+    "SOLARBEAM",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "MOONBLAST",
+    "SUBSTITUTE",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

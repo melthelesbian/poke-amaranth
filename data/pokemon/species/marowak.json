@@ -1,0 +1,55 @@
+{
+  "id": "MAROWAK",
+  "asm_name": "Marowak",
+  "sprites": {
+    "front": "gfx/pokemon/front/marowak.png",
+    "back": "gfx/pokemon/back/marowakb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 90,
+    "defense": 100,
+    "speed": 45,
+    "special": 80
+  },
+  "types": [
+    "GROUND",
+    "GHOST"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TELEPORT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "PAY_DAY",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "METRONOME",
+    "STRENGTH"
+  ]
+}

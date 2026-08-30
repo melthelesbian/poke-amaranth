@@ -1,0 +1,42 @@
+{
+  "id": "PIDGEY",
+  "asm_name": "Pidgey",
+  "sprites": {
+    "front": "gfx/pokemon/front/pidgey.png",
+    "back": "gfx/pokemon/back/pidgeyb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 40,
+    "speed": 55,
+    "special": 35
+  },
+  "types": [
+    "NORMAL",
+    "FLYING"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "AGILITY",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "REST",
+    "SUBSTITUTE",
+    "FLY"
+  ]
+}

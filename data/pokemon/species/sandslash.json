@@ -1,0 +1,53 @@
+{
+  "id": "SANDSLASH",
+  "asm_name": "Sandslash",
+  "sprites": {
+    "front": "gfx/pokemon/front/sandslash.png",
+    "back": "gfx/pokemon/back/sandslashb.png"
+  },
+  "stats": {
+    "hp": 75,
+    "attack": 100,
+    "defense": 120,
+    "speed": 65,
+    "special": 65
+  },
+  "types": [
+    "GROUND",
+    "NORMAL"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

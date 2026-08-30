@@ -1,0 +1,44 @@
+{
+  "id": "NIDORINA",
+  "asm_name": "Nidorina",
+  "sprites": {
+    "front": "gfx/pokemon/front/nidorina.png",
+    "back": "gfx/pokemon/back/nidorinab.png"
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 65,
+    "defense": 70,
+    "speed": 60,
+    "special": 55
+  },
+  "types": [
+    "NORMAL",
+    "GROUND"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "DOUBLE_KICK",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "REST",
+    "MOONBLAST",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "SURF"
+  ]
+}

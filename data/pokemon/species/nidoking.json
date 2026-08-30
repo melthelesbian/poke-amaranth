@@ -1,0 +1,53 @@
+{
+  "id": "NIDOKING",
+  "asm_name": "Nidoking",
+  "sprites": {
+    "front": "gfx/pokemon/front/nidoking.png",
+    "back": "gfx/pokemon/back/nidokingb.png"
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 115,
+    "defense": 80,
+    "speed": 85,
+    "special": 75
+  },
+  "types": [
+    "DARK",
+    "POISON"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "CRUNCH",
+    "DRAGONBREATH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "BIDE",
+    "SLUDGE",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

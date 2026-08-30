@@ -1,0 +1,49 @@
+{
+  "id": "MAGNEMITE",
+  "asm_name": "Magnemite",
+  "sprites": {
+    "front": "gfx/pokemon/front/magnemite.png",
+    "back": "gfx/pokemon/back/magnemiteb.png"
+  },
+  "stats": {
+    "hp": 25,
+    "attack": 35,
+    "defense": 70,
+    "speed": 45,
+    "special": 95
+  },
+  "types": [
+    "STEEL",
+    "ELECTRIC"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "TELEPORT",
+    "THUNDER_WAVE",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "HYPNOSIS",
+    "REST",
+    "MOONBLAST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "CUT",
+    "FLASH"
+  ]
+}

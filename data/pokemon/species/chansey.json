@@ -1,0 +1,58 @@
+{
+  "id": "CHANSEY",
+  "asm_name": "Chansey",
+  "sprites": {
+    "front": "gfx/pokemon/front/chansey.png",
+    "back": "gfx/pokemon/back/chanseyb.png"
+  },
+  "stats": {
+    "hp": 255,
+    "attack": 10,
+    "defense": 10,
+    "speed": 50,
+    "special": 105
+  },
+  "types": [
+    "NORMAL",
+    "FAIRY"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "255",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_FAST",
+  "tmhm": [
+    "TELEPORT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

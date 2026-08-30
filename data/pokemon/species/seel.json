@@ -1,0 +1,49 @@
+{
+  "id": "SEEL",
+  "asm_name": "Seel",
+  "sprites": {
+    "front": "gfx/pokemon/front/seel.png",
+    "back": "gfx/pokemon/back/seelb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 45,
+    "defense": 55,
+    "speed": 45,
+    "special": 70
+  },
+  "types": [
+    "WATER",
+    "ICE"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "HEADBUTT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "MOONBLAST",
+    "HEAVY_SMASH",
+    "SURF",
+    "FLASH"
+  ]
+}

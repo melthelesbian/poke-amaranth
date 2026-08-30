@@ -1,0 +1,53 @@
+{
+  "id": "ZAPDOS",
+  "asm_name": "Zapdos",
+  "sprites": {
+    "front": "gfx/pokemon/front/zapdos.png",
+    "back": "gfx/pokemon/back/zapdosb.png"
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 95,
+    "defense": 85,
+    "speed": 105,
+    "special": 125
+  },
+  "types": [
+    "ELECTRIC",
+    "FLYING"
+  ],
+  "catch_rate": "CR_CHALLENGING",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "CRUNCH",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "FLY",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

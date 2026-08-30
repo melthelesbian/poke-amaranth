@@ -1,0 +1,52 @@
+{
+  "id": "ARTICUNO",
+  "asm_name": "Articuno",
+  "sprites": {
+    "front": "gfx/pokemon/front/articuno.png",
+    "back": "gfx/pokemon/back/articunob.png"
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 95,
+    "defense": 100,
+    "speed": 85,
+    "special": 130
+  },
+  "types": [
+    "ICE",
+    "FLYING"
+  ],
+  "catch_rate": "CR_CHALLENGING",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "REST",
+    "MOONBLAST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "FLY",
+    "SURF",
+    "FLASH"
+  ]
+}

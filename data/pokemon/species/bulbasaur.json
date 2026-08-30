@@ -1,0 +1,51 @@
+{
+  "id": "BULBASAUR",
+  "asm_name": "Bulbasaur",
+  "sprites": {
+    "front": "gfx/pokemon/front/bulbasaur.png",
+    "back": "gfx/pokemon/back/bulbasaurb.png"
+  },
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 50,
+    "speed": 45,
+    "special": 65
+  },
+  "types": [
+    "GRASS",
+    "POISON"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "BIDE",
+    "SLUDGE",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

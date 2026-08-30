@@ -1,0 +1,45 @@
+{
+  "id": "MACHAMP",
+  "asm_name": "Machamp",
+  "sprites": {
+    "front": "gfx/pokemon/front/machamp.png",
+    "back": "gfx/pokemon/back/machampb.png"
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 130,
+    "defense": 80,
+    "speed": 55,
+    "special": 75
+  },
+  "types": [
+    "FIGHTING",
+    "FIGHTING"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "FOCUS_ENERGY",
+    "BIDE",
+    "SWIFT",
+    "REST",
+    "PAY_DAY",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

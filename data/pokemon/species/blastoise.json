@@ -1,0 +1,52 @@
+{
+  "id": "BLASTOISE",
+  "asm_name": "Blastoise",
+  "sprites": {
+    "front": "gfx/pokemon/front/blastoise.png",
+    "back": "gfx/pokemon/back/blastoiseb.png"
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 90,
+    "defense": 100,
+    "speed": 60,
+    "special": 100
+  },
+  "types": [
+    "WATER",
+    "STEEL"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "SUBMISSION",
+    "CRUNCH",
+    "WATERFALL",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "BIDE",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "CUT",
+    "SURF",
+    "STRENGTH"
+  ]
+}

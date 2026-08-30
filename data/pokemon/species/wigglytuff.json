@@ -1,0 +1,65 @@
+{
+  "id": "WIGGLYTUFF",
+  "asm_name": "Wigglytuff",
+  "sprites": {
+    "front": "gfx/pokemon/front/wigglytuff.png",
+    "back": "gfx/pokemon/back/wigglytuffb.png"
+  },
+  "stats": {
+    "hp": 140,
+    "attack": 70,
+    "defense": 45,
+    "speed": 45,
+    "special": 75
+  },
+  "types": [
+    "NORMAL",
+    "FAIRY"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "DIG",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

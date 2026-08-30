@@ -1,0 +1,54 @@
+{
+  "id": "FARFETCHD",
+  "asm_name": "Farfetchd",
+  "sprites": {
+    "front": "gfx/pokemon/front/farfetchd.png",
+    "back": "gfx/pokemon/back/farfetchdb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 105,
+    "defense": 60,
+    "speed": 100,
+    "special": 80
+  },
+  "types": [
+    "FLYING",
+    "DARK"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "RAZOR_LEAF",
+    "DOUBLE_KICK",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SWIFT",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "METRONOME",
+    "CUT",
+    "FLY",
+    "SURF",
+    "STRENGTH"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "PIDGEOT",
+  "asm_name": "Pidgeot",
+  "sprites": {
+    "front": "gfx/pokemon/front/pidgeot.png",
+    "back": "gfx/pokemon/back/pidgeotb.png"
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 80,
+    "defense": 80,
+    "speed": 120,
+    "special": 80
+  },
+  "types": [
+    "NORMAL",
+    "FLYING"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "HYPER_BEAM",
+    "AGILITY",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "FLY"
+  ]
+}

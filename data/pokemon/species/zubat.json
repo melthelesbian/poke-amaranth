@@ -1,0 +1,52 @@
+{
+  "id": "ZUBAT",
+  "asm_name": "Zubat",
+  "sprites": {
+    "front": "gfx/pokemon/front/zubat.png",
+    "back": "gfx/pokemon/back/zubatb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 35,
+    "speed": 55,
+    "special": 40
+  },
+  "types": [
+    "POISON",
+    "FLYING"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SLUDGE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLY",
+    "FLASH"
+  ]
+}

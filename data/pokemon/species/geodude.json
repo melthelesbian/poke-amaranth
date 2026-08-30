@@ -1,0 +1,47 @@
+{
+  "id": "GEODUDE",
+  "asm_name": "Geodude",
+  "sprites": {
+    "front": "gfx/pokemon/front/geodude.png",
+    "back": "gfx/pokemon/back/geodudeb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 80,
+    "defense": 100,
+    "speed": 20,
+    "special": 30
+  },
+  "types": [
+    "ROCK",
+    "GROUND"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

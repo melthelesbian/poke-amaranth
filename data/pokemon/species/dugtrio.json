@@ -1,0 +1,47 @@
+{
+  "id": "DUGTRIO",
+  "asm_name": "Dugtrio",
+  "sprites": {
+    "front": "gfx/pokemon/front/dugtrio.png",
+    "back": "gfx/pokemon/back/dugtriob.png"
+  },
+  "stats": {
+    "hp": 35,
+    "attack": 100,
+    "defense": 50,
+    "speed": 120,
+    "special": 70
+  },
+  "types": [
+    "GROUND",
+    "GROUND"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TELEPORT",
+    "HYPER_BEAM",
+    "AGILITY",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "ROCK_SLIDE",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "FEAROW",
+  "asm_name": "Fearow",
+  "sprites": {
+    "front": "gfx/pokemon/front/fearow.png",
+    "back": "gfx/pokemon/back/fearowb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 65,
+    "speed": 100,
+    "special": 60
+  },
+  "types": [
+    "FLYING",
+    "DARK"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "RAZOR_WIND",
+    "HEADBUTT",
+    "TOXIC",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SLUDGE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLY"
+  ]
+}

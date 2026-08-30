@@ -1,0 +1,57 @@
+{
+  "id": "DROWZEE",
+  "asm_name": "Drowzee",
+  "sprites": {
+    "front": "gfx/pokemon/front/drowzee.png",
+    "back": "gfx/pokemon/back/drowzeeb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 45,
+    "speed": 40,
+    "special": 90
+  },
+  "types": [
+    "PSYCHIC_TYPE",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "TELEPORT",
+    "TOXIC",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "THUNDER_WAVE",
+    "SUBMISSION",
+    "CRUNCH",
+    "DIG",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "SLUDGE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "SUBSTITUTE",
+    "METRONOME",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "MUK",
+  "asm_name": "Muk",
+  "sprites": {
+    "front": "gfx/pokemon/front/muk.png",
+    "back": "gfx/pokemon/back/mukb.png"
+  },
+  "stats": {
+    "hp": 105,
+    "attack": 105,
+    "defense": 75,
+    "speed": 50,
+    "special": 100
+  },
+  "types": [
+    "POISON",
+    "POISON"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "TOXIC",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SLUDGE",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

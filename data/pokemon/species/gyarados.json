@@ -1,0 +1,53 @@
+{
+  "id": "GYARADOS",
+  "asm_name": "Gyarados",
+  "sprites": {
+    "front": "gfx/pokemon/front/gyarados.png",
+    "back": "gfx/pokemon/back/gyaradosb.png"
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 125,
+    "defense": 80,
+    "speed": 80,
+    "special": 100
+  },
+  "types": [
+    "WATER",
+    "DRAGON"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "DRAGONBREATH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "FLY",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

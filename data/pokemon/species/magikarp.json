@@ -1,0 +1,29 @@
+{
+  "id": "MAGIKARP",
+  "asm_name": "Magikarp",
+  "sprites": {
+    "front": "gfx/pokemon/front/magikarp.png",
+    "back": "gfx/pokemon/back/magikarpb.png"
+  },
+  "stats": {
+    "hp": 20,
+    "attack": 10,
+    "defense": 55,
+    "speed": 80,
+    "special": 20
+  },
+  "types": [
+    "WATER",
+    "WATER"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": []
+}

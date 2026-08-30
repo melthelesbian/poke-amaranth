@@ -1,0 +1,48 @@
+{
+  "id": "VICTREEBEL",
+  "asm_name": "Victreebel",
+  "sprites": {
+    "front": "gfx/pokemon/front/victreebel.png",
+    "back": "gfx/pokemon/back/victreebelb.png"
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 105,
+    "defense": 65,
+    "speed": 70,
+    "special": 100
+  },
+  "types": [
+    "GRASS",
+    "POISON"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "HEADBUTT",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "BIDE",
+    "SLUDGE",
+    "VENOM_STRIKE",
+    "REST",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLASH"
+  ]
+}

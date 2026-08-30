@@ -1,0 +1,32 @@
+{
+  "id": "CATERPIE",
+  "asm_name": "Caterpie",
+  "sprites": {
+    "front": "gfx/pokemon/front/caterpie.png",
+    "back": "gfx/pokemon/back/caterpieb.png"
+  },
+  "stats": {
+    "hp": 45,
+    "attack": 30,
+    "defense": 35,
+    "speed": 45,
+    "special": 20
+  },
+  "types": [
+    "BUG",
+    "BUG"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "BUG_BUZZ",
+    "SUBSTITUTE"
+  ]
+}

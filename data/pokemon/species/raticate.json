@@ -1,0 +1,47 @@
+{
+  "id": "RATICATE",
+  "asm_name": "Raticate",
+  "sprites": {
+    "front": "gfx/pokemon/front/raticate.png",
+    "back": "gfx/pokemon/back/raticateb.png"
+  },
+  "stats": {
+    "hp": 55,
+    "attack": 85,
+    "defense": 60,
+    "speed": 100,
+    "special": 50
+  },
+  "types": [
+    "NORMAL",
+    "DARK"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SKULL_BASH",
+    "REST",
+    "PAY_DAY",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

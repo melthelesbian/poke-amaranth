@@ -1,0 +1,51 @@
+{
+  "id": "SPEAROW",
+  "asm_name": "Spearow",
+  "sprites": {
+    "front": "gfx/pokemon/front/spearow.png",
+    "back": "gfx/pokemon/back/spearowb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 60,
+    "defense": 30,
+    "speed": 70,
+    "special": 30
+  },
+  "types": [
+    "NORMAL",
+    "FLYING"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "RAZOR_WIND",
+    "HEADBUTT",
+    "TOXIC",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SLUDGE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLY"
+  ]
+}

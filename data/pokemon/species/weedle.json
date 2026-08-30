@@ -1,0 +1,32 @@
+{
+  "id": "WEEDLE",
+  "asm_name": "Weedle",
+  "sprites": {
+    "front": "gfx/pokemon/front/weedle.png",
+    "back": "gfx/pokemon/back/weedleb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "speed": 50,
+    "special": 20
+  },
+  "types": [
+    "BUG",
+    "POISON"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "BUG_BUZZ",
+    "SUBSTITUTE"
+  ]
+}

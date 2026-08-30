@@ -1,0 +1,50 @@
+{
+  "id": "OMANYTE",
+  "asm_name": "Omanyte",
+  "sprites": {
+    "front": "gfx/pokemon/front/omanyte.png",
+    "back": "gfx/pokemon/back/omanyteb.png"
+  },
+  "stats": {
+    "hp": 35,
+    "attack": 40,
+    "defense": 100,
+    "speed": 35,
+    "special": 90
+  },
+  "types": [
+    "WATER",
+    "ROCK"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "TOXIC",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "MEGA_DRAIN",
+    "WATERFALL",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SLUDGE",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

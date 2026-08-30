@@ -1,0 +1,48 @@
+{
+  "id": "GOLDEEN",
+  "asm_name": "Goldeen",
+  "sprites": {
+    "front": "gfx/pokemon/front/goldeen.png",
+    "back": "gfx/pokemon/back/goldeenb.png"
+  },
+  "stats": {
+    "hp": 45,
+    "attack": 70,
+    "defense": 60,
+    "speed": 65,
+    "special": 50
+  },
+  "types": [
+    "WATER",
+    "WATER"
+  ],
+  "catch_rate": "CR_VERY_EASY",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "HEADBUTT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "AGILITY",
+    "CRUNCH",
+    "THUNDERBOLT",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "FLASH"
+  ]
+}

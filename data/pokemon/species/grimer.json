@@ -1,0 +1,52 @@
+{
+  "id": "GRIMER",
+  "asm_name": "Grimer",
+  "sprites": {
+    "front": "gfx/pokemon/front/grimer.png",
+    "back": "gfx/pokemon/back/grimerb.png"
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 80,
+    "defense": 50,
+    "speed": 25,
+    "special": 50
+  },
+  "types": [
+    "POISON",
+    "POISON"
+  ],
+  "catch_rate": "CR_VERY_EASY",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "TOXIC",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SLUDGE",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

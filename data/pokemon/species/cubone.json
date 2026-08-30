@@ -1,0 +1,54 @@
+{
+  "id": "CUBONE",
+  "asm_name": "Cubone",
+  "sprites": {
+    "front": "gfx/pokemon/front/cubone.png",
+    "back": "gfx/pokemon/back/cuboneb.png"
+  },
+  "stats": {
+    "hp": 50,
+    "attack": 50,
+    "defense": 95,
+    "speed": 35,
+    "special": 50
+  },
+  "types": [
+    "GROUND",
+    "GHOST"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TELEPORT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "PAY_DAY",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "METRONOME",
+    "STRENGTH"
+  ]
+}

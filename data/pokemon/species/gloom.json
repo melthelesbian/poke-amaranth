@@ -1,0 +1,54 @@
+{
+  "id": "GLOOM",
+  "asm_name": "Gloom",
+  "sprites": {
+    "front": "gfx/pokemon/front/gloom.png",
+    "back": "gfx/pokemon/back/gloomb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 70,
+    "speed": 40,
+    "special": 85
+  },
+  "types": [
+    "GRASS",
+    "POISON"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "FOCUS_ENERGY",
+    "DIG",
+    "BIDE",
+    "SLUDGE",
+    "HYPNOSIS",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

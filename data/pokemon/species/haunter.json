@@ -1,0 +1,52 @@
+{
+  "id": "HAUNTER",
+  "asm_name": "Haunter",
+  "sprites": {
+    "front": "gfx/pokemon/front/haunter.png",
+    "back": "gfx/pokemon/back/haunterb.png"
+  },
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 45,
+    "speed": 95,
+    "special": 115
+  },
+  "types": [
+    "GHOST",
+    "POISON"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "TELEPORT",
+    "TOXIC",
+    "THUNDER_WAVE",
+    "AGILITY",
+    "CRUNCH",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SLUDGE",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "FLY",
+    "FLASH"
+  ]
+}

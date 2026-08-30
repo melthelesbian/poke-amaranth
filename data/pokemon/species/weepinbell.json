@@ -1,0 +1,47 @@
+{
+  "id": "WEEPINBELL",
+  "asm_name": "Weepinbell",
+  "sprites": {
+    "front": "gfx/pokemon/front/weepinbell.png",
+    "back": "gfx/pokemon/back/weepinbellb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 50,
+    "speed": 55,
+    "special": 85
+  },
+  "types": [
+    "GRASS",
+    "POISON"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "HEADBUTT",
+    "TOXIC",
+    "RAZOR_LEAF",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "BIDE",
+    "SLUDGE",
+    "VENOM_STRIKE",
+    "REST",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLASH"
+  ]
+}

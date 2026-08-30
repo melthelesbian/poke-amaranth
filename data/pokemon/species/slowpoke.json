@@ -1,0 +1,55 @@
+{
+  "id": "SLOWPOKE",
+  "asm_name": "Slowpoke",
+  "sprites": {
+    "front": "gfx/pokemon/front/slowpoke.png",
+    "back": "gfx/pokemon/back/slowpokeb.png"
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 65,
+    "defense": 65,
+    "speed": 15,
+    "special": 40
+  },
+  "types": [
+    "WATER",
+    "NORMAL"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "DIG",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

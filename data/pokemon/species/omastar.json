@@ -1,0 +1,51 @@
+{
+  "id": "OMASTAR",
+  "asm_name": "Omastar",
+  "sprites": {
+    "front": "gfx/pokemon/front/omastar.png",
+    "back": "gfx/pokemon/back/omastarb.png"
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 60,
+    "defense": 125,
+    "speed": 55,
+    "special": 115
+  },
+  "types": [
+    "WATER",
+    "ROCK"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "TOXIC",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "MEGA_DRAIN",
+    "WATERFALL",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SLUDGE",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

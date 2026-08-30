@@ -1,0 +1,44 @@
+{
+  "id": "NIDORAN_M",
+  "asm_name": "NidoranM",
+  "sprites": {
+    "front": "gfx/pokemon/front/nidoranm.png",
+    "back": "gfx/pokemon/back/nidoranmb.png"
+  },
+  "stats": {
+    "hp": 45,
+    "attack": 60,
+    "defense": 50,
+    "speed": 50,
+    "special": 40
+  },
+  "types": [
+    "NORMAL",
+    "POISON"
+  ],
+  "catch_rate": "CR_VERY_EASY",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "DOUBLE_KICK",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "BIDE",
+    "SLUDGE",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "SUBSTITUTE",
+    "SURF"
+  ]
+}

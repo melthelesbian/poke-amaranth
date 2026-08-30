@@ -1,0 +1,50 @@
+{
+  "id": "BEEDRILL",
+  "asm_name": "Beedrill",
+  "sprites": {
+    "front": "gfx/pokemon/front/beedrill.png",
+    "back": "gfx/pokemon/back/beedrillb.png"
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 95,
+    "defense": 50,
+    "speed": 75,
+    "special": 60
+  },
+  "types": [
+    "BUG",
+    "POISON"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "TOXIC",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SLUDGE",
+    "BUG_BUZZ",
+    "SWIFT",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "FLY"
+  ]
+}

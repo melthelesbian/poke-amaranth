@@ -1,0 +1,56 @@
+{
+  "id": "SLOWBRO",
+  "asm_name": "Slowbro",
+  "sprites": {
+    "front": "gfx/pokemon/front/slowbro.png",
+    "back": "gfx/pokemon/back/slowbrob.png"
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 90,
+    "defense": 110,
+    "speed": 30,
+    "special": 100
+  },
+  "types": [
+    "WATER",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "DIG",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "PIDGEOTTO",
+  "asm_name": "Pidgeotto",
+  "sprites": {
+    "front": "gfx/pokemon/front/pidgeotto.png",
+    "back": "gfx/pokemon/back/pidgeottob.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 55,
+    "speed": 70,
+    "special": 50
+  },
+  "types": [
+    "NORMAL",
+    "FLYING"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "AGILITY",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "REST",
+    "SUBSTITUTE",
+    "FLY"
+  ]
+}

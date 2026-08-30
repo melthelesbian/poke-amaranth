@@ -1,0 +1,54 @@
+{
+  "id": "VAPOREON",
+  "asm_name": "Vaporeon",
+  "sprites": {
+    "front": "gfx/pokemon/front/vaporeon.png",
+    "back": "gfx/pokemon/back/vaporeonb.png"
+  },
+  "stats": {
+    "hp": 125,
+    "attack": 60,
+    "defense": 65,
+    "speed": 75,
+    "special": 125
+  },
+  "types": [
+    "WATER",
+    "WATER"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "BUBBLEBEAM",
+    "DOUBLE_KICK",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "CRUNCH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

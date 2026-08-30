@@ -1,0 +1,53 @@
+{
+  "id": "POLIWHIRL",
+  "asm_name": "Poliwhirl",
+  "sprites": {
+    "front": "gfx/pokemon/front/poliwhirl.png",
+    "back": "gfx/pokemon/back/poliwhirlb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 65,
+    "speed": 90,
+    "special": 50
+  },
+  "types": [
+    "WATER",
+    "WATER"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "ICE_PUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

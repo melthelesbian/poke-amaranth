@@ -1,0 +1,49 @@
+{
+  "id": "JOLTEON",
+  "asm_name": "Jolteon",
+  "sprites": {
+    "front": "gfx/pokemon/front/jolteon.png",
+    "back": "gfx/pokemon/back/jolteonb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 75,
+    "defense": 60,
+    "speed": 125,
+    "special": 125
+  },
+  "types": [
+    "ELECTRIC",
+    "ELECTRIC"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "DOUBLE_KICK",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "SUBSTITUTE",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

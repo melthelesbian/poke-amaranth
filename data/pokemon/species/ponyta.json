@@ -1,0 +1,48 @@
+{
+  "id": "PONYTA",
+  "asm_name": "Ponyta",
+  "sprites": {
+    "front": "gfx/pokemon/front/ponyta.png",
+    "back": "gfx/pokemon/back/ponytab.png"
+  },
+  "stats": {
+    "hp": 50,
+    "attack": 85,
+    "defense": 55,
+    "speed": 90,
+    "special": 65
+  },
+  "types": [
+    "FIRE",
+    "FIRE"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "HEADBUTT",
+    "DOUBLE_KICK",
+    "AGILITY",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "CHARMELEON",
+  "asm_name": "Charmeleon",
+  "sprites": {
+    "front": "gfx/pokemon/front/charmeleon.png",
+    "back": "gfx/pokemon/back/charmeleonb.png"
+  },
+  "stats": {
+    "hp": 55,
+    "attack": 60,
+    "defense": 55,
+    "speed": 80,
+    "special": 75
+  },
+  "types": [
+    "FIRE",
+    "FIRE"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "DRAGONBREATH",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "EKANS",
+  "asm_name": "Ekans",
+  "sprites": {
+    "front": "gfx/pokemon/front/ekans.png",
+    "back": "gfx/pokemon/back/ekansb.png"
+  },
+  "stats": {
+    "hp": 35,
+    "attack": 60,
+    "defense": 45,
+    "speed": 55,
+    "special": 50
+  },
+  "types": [
+    "POISON",
+    "DARK"
+  ],
+  "catch_rate": "CR_VERY_EASY",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SLUDGE",
+    "SWIFT",
+    "SKULL_BASH",
+    "VENOM_STRIKE",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

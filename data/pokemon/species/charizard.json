@@ -1,0 +1,55 @@
+{
+  "id": "CHARIZARD",
+  "asm_name": "Charizard",
+  "sprites": {
+    "front": "gfx/pokemon/front/charizard.png",
+    "back": "gfx/pokemon/back/charizardb.png"
+  },
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 75,
+    "speed": 100,
+    "special": 100
+  },
+  "types": [
+    "FIRE",
+    "DRAGON"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "DRAGONBREATH",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "CUT",
+    "FLY",
+    "STRENGTH"
+  ]
+}

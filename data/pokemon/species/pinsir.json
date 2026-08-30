@@ -1,0 +1,50 @@
+{
+  "id": "PINSIR",
+  "asm_name": "Pinsir",
+  "sprites": {
+    "front": "gfx/pokemon/front/pinsir.png",
+    "back": "gfx/pokemon/back/pinsirb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 120,
+    "defense": 110,
+    "speed": 95,
+    "special": 75
+  },
+  "types": [
+    "BUG",
+    "STEEL"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "BUG_BUZZ",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

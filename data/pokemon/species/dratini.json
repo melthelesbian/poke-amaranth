@@ -1,0 +1,52 @@
+{
+  "id": "DRATINI",
+  "asm_name": "Dratini",
+  "sprites": {
+    "front": "gfx/pokemon/front/dratini.png",
+    "back": "gfx/pokemon/back/dratinib.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 65,
+    "defense": 45,
+    "speed": 50,
+    "special": 50
+  },
+  "types": [
+    "DRAGON",
+    "DRAGON"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "HEADBUTT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "DRAGONBREATH",
+    "THUNDERBOLT",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "MOONBLAST",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

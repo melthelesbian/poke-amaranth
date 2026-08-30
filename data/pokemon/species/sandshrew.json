@@ -1,0 +1,51 @@
+{
+  "id": "SANDSHREW",
+  "asm_name": "Sandshrew",
+  "sprites": {
+    "front": "gfx/pokemon/front/sandshrew.png",
+    "back": "gfx/pokemon/back/sandshrewb.png"
+  },
+  "stats": {
+    "hp": 50,
+    "attack": 75,
+    "defense": 90,
+    "speed": 40,
+    "special": 35
+  },
+  "types": [
+    "GROUND",
+    "NORMAL"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "DOUBLE_KICK",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "PAY_DAY",
+    "ROCK_SLIDE",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH"
+  ]
+}

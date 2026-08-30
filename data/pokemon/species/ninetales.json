@@ -1,0 +1,55 @@
+{
+  "id": "NINETALES",
+  "asm_name": "Ninetales",
+  "sprites": {
+    "front": "gfx/pokemon/front/ninetales.png",
+    "back": "gfx/pokemon/back/ninetalesb.png"
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 75,
+    "defense": 75,
+    "speed": 110,
+    "special": 100
+  },
+  "types": [
+    "FIRE",
+    "FAIRY"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "RAZOR_WIND",
+    "SWORDS_DANCE",
+    "TELEPORT",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "SOLARBEAM",
+    "FOCUS_ENERGY",
+    "DIG",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLAMETHROWER",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "REST",
+    "MOONBLAST",
+    "SUBSTITUTE",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

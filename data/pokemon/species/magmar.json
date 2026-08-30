@@ -1,0 +1,50 @@
+{
+  "id": "MAGMAR",
+  "asm_name": "Magmar",
+  "sprites": {
+    "front": "gfx/pokemon/front/magmar.png",
+    "back": "gfx/pokemon/back/magmarb.png"
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 95,
+    "defense": 50,
+    "speed": 95,
+    "special": 100
+  },
+  "types": [
+    "FIRE",
+    "FIGHTING"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "TOXIC",
+    "FIRE_PUNCH",
+    "DOUBLE_KICK",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "BIDE",
+    "FLAMETHROWER",
+    "SLUDGE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "STRENGTH"
+  ]
+}

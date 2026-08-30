@@ -1,0 +1,55 @@
+{
+  "id": "RAICHU",
+  "asm_name": "Raichu",
+  "sprites": {
+    "front": "gfx/pokemon/front/raichu.png",
+    "back": "gfx/pokemon/back/raichub.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 90,
+    "defense": 55,
+    "speed": 110,
+    "special": 95
+  },
+  "types": [
+    "ELECTRIC",
+    "ELECTRIC"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "DIG",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

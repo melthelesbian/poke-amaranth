@@ -1,0 +1,51 @@
+{
+  "id": "LAPRAS",
+  "asm_name": "Lapras",
+  "sprites": {
+    "front": "gfx/pokemon/front/lapras.png",
+    "back": "gfx/pokemon/back/laprasb.png"
+  },
+  "stats": {
+    "hp": 130,
+    "attack": 85,
+    "defense": 80,
+    "speed": 60,
+    "special": 95
+  },
+  "types": [
+    "WATER",
+    "ICE"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "DRAGONBREATH",
+    "THUNDERBOLT",
+    "WATERFALL",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "REST",
+    "MOONBLAST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "HYPNO",
+  "asm_name": "Hypno",
+  "sprites": {
+    "front": "gfx/pokemon/front/hypno.png",
+    "back": "gfx/pokemon/back/hypnob.png"
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 75,
+    "defense": 70,
+    "speed": 70,
+    "special": 115
+  },
+  "types": [
+    "PSYCHIC_TYPE",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "TELEPORT",
+    "TOXIC",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "SUBMISSION",
+    "CRUNCH",
+    "DIG",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "SLUDGE",
+    "SWIFT",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "SUBSTITUTE",
+    "METRONOME",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

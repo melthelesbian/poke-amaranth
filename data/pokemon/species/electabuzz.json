@@ -1,0 +1,50 @@
+{
+  "id": "ELECTABUZZ",
+  "asm_name": "Electabuzz",
+  "sprites": {
+    "front": "gfx/pokemon/front/electabuzz.png",
+    "back": "gfx/pokemon/back/electabuzzb.png"
+  },
+  "stats": {
+    "hp": 75,
+    "attack": 95,
+    "defense": 70,
+    "speed": 75,
+    "special": 95
+  },
+  "types": [
+    "ELECTRIC",
+    "FIGHTING"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "DOUBLE_KICK",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SUBMISSION",
+    "CRUNCH",
+    "THUNDERBOLT",
+    "EARTHQUAKE",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

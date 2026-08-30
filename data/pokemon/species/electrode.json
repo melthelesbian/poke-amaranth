@@ -1,0 +1,48 @@
+{
+  "id": "ELECTRODE",
+  "asm_name": "Electrode",
+  "sprites": {
+    "front": "gfx/pokemon/front/electrode.png",
+    "back": "gfx/pokemon/back/electrodeb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 70,
+    "speed": 150,
+    "special": 80
+  },
+  "types": [
+    "ELECTRIC",
+    "STEEL"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "HEADBUTT",
+    "TELEPORT",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "AGILITY",
+    "SOLARBEAM",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "DOUBLE_DASH",
+    "BIDE",
+    "FLARE_RUSH",
+    "SWIFT",
+    "SKULL_BASH",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "CUT",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

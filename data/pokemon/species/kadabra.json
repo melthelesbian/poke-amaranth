@@ -1,0 +1,45 @@
+{
+  "id": "KADABRA",
+  "asm_name": "Kadabra",
+  "sprites": {
+    "front": "gfx/pokemon/front/kadabra.png",
+    "back": "gfx/pokemon/back/kadabrab.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "speed": 105,
+    "special": 120
+  },
+  "types": [
+    "PSYCHIC_TYPE",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "TELEPORT",
+    "THUNDER_WAVE",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "REST",
+    "SUBSTITUTE",
+    "METRONOME",
+    "FLASH"
+  ]
+}

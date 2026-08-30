@@ -1,0 +1,49 @@
+{
+  "id": "POLIWAG",
+  "asm_name": "Poliwag",
+  "sprites": {
+    "front": "gfx/pokemon/front/poliwag.png",
+    "back": "gfx/pokemon/back/poliwagb.png"
+  },
+  "stats": {
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "speed": 90,
+    "special": 40
+  },
+  "types": [
+    "WATER",
+    "WATER"
+  ],
+  "catch_rate": "CR_TRIVIAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "AGILITY",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "REST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "SURF",
+    "FLASH"
+  ]
+}

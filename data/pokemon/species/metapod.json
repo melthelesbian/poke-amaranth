@@ -1,0 +1,29 @@
+{
+  "id": "METAPOD",
+  "asm_name": "Metapod",
+  "sprites": {
+    "front": "gfx/pokemon/front/metapod.png",
+    "back": "gfx/pokemon/back/metapodb.png"
+  },
+  "stats": {
+    "hp": 50,
+    "attack": 20,
+    "defense": 55,
+    "speed": 30,
+    "special": 25
+  },
+  "types": [
+    "BUG",
+    "BUG"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": []
+}

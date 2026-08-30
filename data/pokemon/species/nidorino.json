@@ -1,0 +1,44 @@
+{
+  "id": "NIDORINO",
+  "asm_name": "Nidorino",
+  "sprites": {
+    "front": "gfx/pokemon/front/nidorino.png",
+    "back": "gfx/pokemon/back/nidorinob.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 75,
+    "defense": 65,
+    "speed": 65,
+    "special": 55
+  },
+  "types": [
+    "NORMAL",
+    "POISON"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "TOXIC",
+    "DOUBLE_KICK",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "BIDE",
+    "SLUDGE",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "SUBSTITUTE",
+    "SURF"
+  ]
+}

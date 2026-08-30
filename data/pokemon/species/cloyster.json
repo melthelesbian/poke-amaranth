@@ -1,0 +1,48 @@
+{
+  "id": "CLOYSTER",
+  "asm_name": "Cloyster",
+  "sprites": {
+    "front": "gfx/pokemon/front/cloyster.png",
+    "back": "gfx/pokemon/back/cloysterb.png"
+  },
+  "stats": {
+    "hp": 50,
+    "attack": 95,
+    "defense": 180,
+    "speed": 70,
+    "special": 85
+  },
+  "types": [
+    "WATER",
+    "ICE"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "TOXIC",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "CRUNCH",
+    "WATERFALL",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "HYPNOSIS",
+    "REST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

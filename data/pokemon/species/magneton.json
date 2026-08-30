@@ -1,0 +1,50 @@
+{
+  "id": "MAGNETON",
+  "asm_name": "Magneton",
+  "sprites": {
+    "front": "gfx/pokemon/front/magneton.png",
+    "back": "gfx/pokemon/back/magnetonb.png"
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 60,
+    "defense": 95,
+    "speed": 70,
+    "special": 120
+  },
+  "types": [
+    "STEEL",
+    "ELECTRIC"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "TELEPORT",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "CRUNCH",
+    "MEGA_DRAIN",
+    "SOLARBEAM",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "HYPNOSIS",
+    "REST",
+    "MOONBLAST",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "CUT",
+    "FLASH"
+  ]
+}

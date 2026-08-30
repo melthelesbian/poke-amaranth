@@ -1,0 +1,53 @@
+{
+  "id": "SEADRA",
+  "asm_name": "Seadra",
+  "sprites": {
+    "front": "gfx/pokemon/front/seadra.png",
+    "back": "gfx/pokemon/back/seadrab.png"
+  },
+  "stats": {
+    "hp": 75,
+    "attack": 95,
+    "defense": 95,
+    "speed": 85,
+    "special": 95
+  },
+  "types": [
+    "WATER",
+    "DRAGON"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "HEADBUTT",
+    "TOXIC",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "DRAGONBREATH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SLUDGE",
+    "SWIFT",
+    "VENOM_STRIKE",
+    "REST",
+    "MOONBLAST",
+    "SUBSTITUTE",
+    "SURF",
+    "FLASH"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "HORSEA",
+  "asm_name": "Horsea",
+  "sprites": {
+    "front": "gfx/pokemon/front/horsea.png",
+    "back": "gfx/pokemon/back/horseab.png"
+  },
+  "stats": {
+    "hp": 30,
+    "attack": 40,
+    "defense": 70,
+    "speed": 60,
+    "special": 70
+  },
+  "types": [
+    "WATER",
+    "WATER"
+  ],
+  "catch_rate": "CR_VERY_EASY",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "HEADBUTT",
+    "TOXIC",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "THUNDER_WAVE",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "DRAGONBREATH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SLUDGE",
+    "SWIFT",
+    "VENOM_STRIKE",
+    "REST",
+    "MOONBLAST",
+    "SUBSTITUTE",
+    "SURF",
+    "FLASH"
+  ]
+}

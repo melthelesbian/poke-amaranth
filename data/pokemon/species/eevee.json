@@ -1,0 +1,53 @@
+{
+  "id": "EEVEE",
+  "asm_name": "Eevee",
+  "sprites": {
+    "front": "gfx/pokemon/front/eevee.png",
+    "back": "gfx/pokemon/back/eeveeb.png"
+  },
+  "stats": {
+    "hp": 55,
+    "attack": 55,
+    "defense": 50,
+    "speed": 55,
+    "special": 65
+  },
+  "types": [
+    "NORMAL",
+    "NORMAL"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_NORMAL",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "HEADBUTT",
+    "DOUBLE_KICK",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "MOONBLAST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "METRONOME",
+    "SURF",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

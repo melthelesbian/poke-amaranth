@@ -1,0 +1,59 @@
+{
+  "id": "GENGAR",
+  "asm_name": "Gengar",
+  "sprites": {
+    "front": "gfx/pokemon/front/gengar.png",
+    "back": "gfx/pokemon/back/gengarb.png"
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 60,
+    "speed": 115,
+    "special": 125
+  },
+  "types": [
+    "GHOST",
+    "DARK"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "TELEPORT",
+    "TOXIC",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "THUNDER_WAVE",
+    "HYPER_BEAM",
+    "AGILITY",
+    "CRUNCH",
+    "THUNDERBOLT",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "SHADOW_TEAR",
+    "BIDE",
+    "SLUDGE",
+    "SKULL_BASH",
+    "HYPNOSIS",
+    "DREAM_EATER",
+    "VENOM_STRIKE",
+    "REST",
+    "PAY_DAY",
+    "HEAVY_SMASH",
+    "SUBSTITUTE",
+    "FLY",
+    "STRENGTH",
+    "FLASH"
+  ]
+}

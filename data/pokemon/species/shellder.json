@@ -1,0 +1,47 @@
+{
+  "id": "SHELLDER",
+  "asm_name": "Shellder",
+  "sprites": {
+    "front": "gfx/pokemon/front/shellder.png",
+    "back": "gfx/pokemon/back/shellderb.png"
+  },
+  "stats": {
+    "hp": 30,
+    "attack": 65,
+    "defense": 100,
+    "speed": 40,
+    "special": 45
+  },
+  "types": [
+    "WATER",
+    "ICE"
+  ],
+  "catch_rate": "CR_EASY",
+  "exp_yield": "EXP_YIELD_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "TOXIC",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "CRUNCH",
+    "WATERFALL",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "HYPNOSIS",
+    "REST",
+    "HEAVY_SMASH",
+    "ROCK_SLIDE",
+    "SUBSTITUTE",
+    "SURF",
+    "STRENGTH"
+  ]
+}

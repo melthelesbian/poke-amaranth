@@ -1,0 +1,48 @@
+{
+  "id": "ALAKAZAM",
+  "asm_name": "Alakazam",
+  "sprites": {
+    "front": "gfx/pokemon/front/alakazam.png",
+    "back": "gfx/pokemon/back/alakazamb.png"
+  },
+  "stats": {
+    "hp": 55,
+    "attack": 50,
+    "defense": 45,
+    "speed": 120,
+    "special": 135
+  },
+  "types": [
+    "PSYCHIC_TYPE",
+    "PSYCHIC_TYPE"
+  ],
+  "catch_rate": "CR_VERY_HARD",
+  "exp_yield": "EXP_YIELD_VERY_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "TELEPORT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "THUNDER_WAVE",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "REST",
+    "SUBSTITUTE",
+    "METRONOME",
+    "FLASH"
+  ]
+}

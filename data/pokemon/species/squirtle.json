@@ -1,0 +1,50 @@
+{
+  "id": "SQUIRTLE",
+  "asm_name": "Squirtle",
+  "sprites": {
+    "front": "gfx/pokemon/front/squirtle.png",
+    "back": "gfx/pokemon/back/squirtleb.png"
+  },
+  "stats": {
+    "hp": 45,
+    "attack": 45,
+    "defense": 65,
+    "speed": 45,
+    "special": 55
+  },
+  "types": [
+    "WATER",
+    "WATER"
+  ],
+  "catch_rate": "CR_NORMAL",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_SLOW",
+  "tmhm": [
+    "MEGA_PUNCH",
+    "HEADBUTT",
+    "FIRE_PUNCH",
+    "ICE_PUNCH",
+    "THUNDERPUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "SUBMISSION",
+    "CRUNCH",
+    "WATERFALL",
+    "EARTHQUAKE",
+    "FOCUS_ENERGY",
+    "DIG",
+    "BIDE",
+    "SKULL_BASH",
+    "REST",
+    "SUBSTITUTE",
+    "CUT",
+    "SURF",
+    "STRENGTH"
+  ]
+}

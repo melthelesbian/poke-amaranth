@@ -1,0 +1,54 @@
+{
+  "id": "STARYU",
+  "asm_name": "Staryu",
+  "sprites": {
+    "front": "gfx/pokemon/front/staryu.png",
+    "back": "gfx/pokemon/back/staryub.png"
+  },
+  "stats": {
+    "hp": 30,
+    "attack": 45,
+    "defense": 55,
+    "speed": 85,
+    "special": 70
+  },
+  "types": [
+    "WATER",
+    "FAIRY"
+  ],
+  "catch_rate": "CR_VERY_EASY",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_SLOW",
+  "tmhm": [
+    "RAZOR_WIND",
+    "TELEPORT",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "LIGHT_SCREEN",
+    "REFLECT",
+    "AGILITY",
+    "MEGA_DRAIN",
+    "THUNDERBOLT",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "PSYCHIC_M",
+    "PSYWAVE",
+    "MIMIC",
+    "DOUBLE_DASH",
+    "BIDE",
+    "BUG_BUZZ",
+    "SWIFT",
+    "HYPNOSIS",
+    "REST",
+    "MOONBLAST",
+    "SUBSTITUTE",
+    "SURF",
+    "FLASH"
+  ]
+}

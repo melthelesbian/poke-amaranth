@@ -1,0 +1,50 @@
+{
+  "id": "KINGLER",
+  "asm_name": "Kingler",
+  "sprites": {
+    "front": "gfx/pokemon/front/kingler.png",
+    "back": "gfx/pokemon/back/kinglerb.png"
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 105,
+    "defense": 115,
+    "speed": 75,
+    "special": 65
+  },
+  "types": [
+    "WATER",
+    "STEEL"
+  ],
+  "catch_rate": "CR_HARD",
+  "exp_yield": "EXP_YIELD_HIGH",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "ICE_PUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "HYPER_BEAM",
+    "CRUNCH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "SURF",
+    "STRENGTH"
+  ]
+}

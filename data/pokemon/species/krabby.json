@@ -1,0 +1,49 @@
+{
+  "id": "KRABBY",
+  "asm_name": "Krabby",
+  "sprites": {
+    "front": "gfx/pokemon/front/krabby.png",
+    "back": "gfx/pokemon/back/krabbyb.png"
+  },
+  "stats": {
+    "hp": 30,
+    "attack": 105,
+    "defense": 90,
+    "speed": 50,
+    "special": 25
+  },
+  "types": [
+    "WATER",
+    "STEEL"
+  ],
+  "catch_rate": "CR_VERY_EASY",
+  "exp_yield": "EXP_YIELD_VERY_LOW",
+  "level_1_moves": [
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE",
+    "NO_MOVE"
+  ],
+  "growth_rate": "GROWTH_MEDIUM_FAST",
+  "tmhm": [
+    "SWORDS_DANCE",
+    "ICE_PUNCH",
+    "BUBBLEBEAM",
+    "ICE_BEAM",
+    "CRUNCH",
+    "WATERFALL",
+    "FOCUS_ENERGY",
+    "DIG",
+    "MIMIC",
+    "BIDE",
+    "SWIFT",
+    "SKULL_BASH",
+    "REST",
+    "HEAVY_SMASH",
+    "TWIN_SLICE",
+    "SUBSTITUTE",
+    "CUT",
+    "SURF",
+    "STRENGTH"
+  ]
+}
