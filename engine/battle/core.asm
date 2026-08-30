@@ -4982,7 +4982,7 @@ CriticalHitTest:
 	ld [wCriticalHitOrOHKO], a   ; set critical hit flag
 	ret
 
-HighCriticalMoves: INCLUDE "data/battle/critical_hit_moves.asm"
+HighCriticalMoves: INCLUDE "data/battle/critical_hit_moves.gen.asm"
 
 ; function to determine if Counter hits and if so, how much damage it does
 HandleCounterMove:

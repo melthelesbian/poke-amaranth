@@ -29,3 +29,8 @@
 *.sn*
 *.sa*
 *.sg1
+
+*.gen.asm
+
+# working directories
+tmp/

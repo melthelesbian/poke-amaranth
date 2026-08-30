@@ -9,6 +9,16 @@ patches := \
 	amaranth_red.patch \
 	amaranth_blue.patch
 
+move_csv := data/moves/moves.csv
+move_generated := \
+	constants/moves.gen.asm \
+	data/moves/moves.gen.asm \
+	data/moves/names.gen.asm \
+	data/moves/descriptions.gen.asm \
+	data/moves/sfx.gen.asm \
+	data/moves/animation_pointers.gen.asm \
+	data/battle/critical_hit_moves.gen.asm
+
 rom_obj := \
 	audio.o \
 	home.o \
@@ -87,7 +97,8 @@ tidy:
 		  $(amaranth_debug_obj) \
 		  $(amaranth_red_debug_obj) \
 	      $(amaranth_blue_debug_obj) \
-	      rgbdscheck.o
+	      rgbdscheck.o \
+	      $(move_generated)
 	$(MAKE) clean -C tools/
 
 compare: $(roms) $(patches)
@@ -146,6 +157,27 @@ $(foreach obj, $(amaranth_blue_vc_obj), $(eval $(call DEP,$(obj),$(obj:_amrnth_b
 # Dependencies for VC files that need to run scan_includes
 %.constants.sym: %.constants.asm $(shell tools/scan_includes %.constants.asm) $(preinclude_deps) | rgbdscheck.o
 	$(RGBASM) $(RGBASMFLAGS) $< > $@
+
+constants/moves.gen.asm: $(move_csv) tools/generate_moves.py
+	python3 tools/generate_moves.py constants $(move_csv) > $@
+
+data/moves/moves.gen.asm: $(move_csv) tools/generate_moves.py
+	python3 tools/generate_moves.py moves $(move_csv) > $@
+
+data/moves/names.gen.asm: $(move_csv) tools/generate_moves.py
+	python3 tools/generate_moves.py names $(move_csv) > $@
+
+data/moves/descriptions.gen.asm: $(move_csv) tools/generate_moves.py
+	python3 tools/generate_moves.py descriptions $(move_csv) > $@
+
+data/moves/sfx.gen.asm: $(move_csv) tools/generate_moves.py
+	python3 tools/generate_moves.py sfx $(move_csv) > $@
+
+data/moves/animation_pointers.gen.asm: $(move_csv) tools/generate_moves.py
+	python3 tools/generate_moves.py animation-pointers $(move_csv) > $@
+
+data/battle/critical_hit_moves.gen.asm: $(move_csv) tools/generate_moves.py
+	python3 tools/generate_moves.py critical-hits $(move_csv) > $@
 
 endif
 

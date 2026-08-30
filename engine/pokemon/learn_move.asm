@@ -314,7 +314,7 @@ LearnMoveEffectPrintHandlers:
 	db -1
 	
 
-MoveEffectHighCritical: INCLUDE "data/battle/critical_hit_moves.asm"
+MoveEffectHighCritical: INCLUDE "data/battle/critical_hit_moves.gen.asm"
 
 
 PrintMoveEffectIcons:

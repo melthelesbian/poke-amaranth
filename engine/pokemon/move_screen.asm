@@ -198,7 +198,7 @@ MoveScreenEffectPrintHandlers:
 	ms_print_handler THRASH_PETAL_DANCE_EFFECT , printRage
 	db -1
 
-MoveScreenEffectHighCritical: INCLUDE "data/battle/critical_hit_moves.asm"
+MoveScreenEffectHighCritical: INCLUDE "data/battle/critical_hit_moves.gen.asm"
 
 
 PrintMoveScreenEffectIcons:

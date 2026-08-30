@@ -2251,7 +2251,7 @@ IsCryMove:
 	scf
 	ret
 
-INCLUDE "data/moves/sfx.asm"
+INCLUDE "data/moves/sfx.gen.asm"
 
 CopyPicTiles:
 	ldh a, [hWhoseTurn]

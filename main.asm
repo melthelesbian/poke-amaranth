@@ -40,7 +40,7 @@ INCLUDE "data/items/names.asm"
 INCLUDE "engine/items/item_descriptions.asm"
 INCLUDE "data/items/descriptions.asm"
 INCLUDE "engine/pokemon/move_descriptions.asm"
-INCLUDE "data/moves/descriptions.asm"
+INCLUDE "data/moves/descriptions.gen.asm"
 
 SECTION "bank3", ROMX
 
@@ -191,7 +191,7 @@ INCLUDE "engine/slots/game_corner_slots.asm"
 
 SECTION "Battle Engine 7", ROMX
 
-INCLUDE "data/moves/moves.asm"
+INCLUDE "data/moves/moves.gen.asm"
 INCLUDE "data/pokemon/base_stats.asm"
 INCLUDE "data/pokemon/cries.asm"
 INCLUDE "engine/battle/unused_stats_functions.asm"

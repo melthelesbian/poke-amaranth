@@ -27,7 +27,7 @@ DEF NUM_STATS EQU const_value - 1
 	const_skip 2
 DEF NUM_STAT_MODS EQU const_value
 
-; Moves struct fields (see data/moves/moves.asm)
+; Moves struct fields (see data/moves/moves.gen.asm)
 rsreset
 DEF MOVE_ANIM   rb
 DEF MOVE_EFFECT rb
