@@ -143,7 +143,11 @@ def effect_title(move):
 
 
 def price(value):
-    return "-" if str(value) == "0" else f"₽{esc(value)}"
+    return "---" if str(value) == "0" else f"₽{esc(value)}"
+
+
+def sell_price(value):
+    return price(str(int(value) // 2))
 
 
 def load_csv(path):
@@ -426,9 +430,9 @@ def build(model, out):
         content = f'<div class="panel"><dl><dt>Type</dt><dd>{type_html([m["type"]])}</dd><dt>Power</dt><dd>{m["power"] if m["power"] != "0" else "Status move"}</dd><dt>Accuracy</dt><dd>{m["accuracy"]}%</dd><dt>PP</dt><dd>{m["pp"]}</dd><dt>High critical hit</dt><dd>{"Yes" if m["high_crit"] == "true" else "No"}</dd></dl></div>{machine_text}<p>{description(m["description_1"] + r"\n" + m["description_2"])}</p><h2>Learned by level</h2><ul>{learners}</ul><h2>TM/HM compatibility</h2><ul>{compatible}</ul>'
         write_page(out, model, current, m["name"], content)
     public_items = [i for i in model["items"] if i["kind"] == "item" and i["symbol"] != "NO_ITEM" and not i["symbol"].startswith("UNUSED") and not i["symbol"].endswith("BADGE") and not i["aliases"]]
-    item_rows = ''.join(f'<tr data-filter-row><td>{esc(i["id"])}</td><td>{item_link(model, "items/", i)}{" <span class=\"key-item-mark\" title=\"Key item\" aria-label=\"Key item\">⚿</span>" if i["key_item"] == "true" else ""}</td><td>{price(i["price"])}</td><td>{description(i["description_text"])}</td></tr>' for i in public_items)
-    machine_rows = ''.join(f'<tr data-filter-row><td>{link(model, "items/", m["_url"], esc(m["name"]))}</td><td>{type_html([model["moves_by"][m["move"]]["type"]])}</td><td>{price(m["price"])}</td><td>{move_link(model, "items/", model["moves_by"][m["move"]])}</td></tr>' for m in model["machines"])
-    write_page(out, model, "items/", "Items", '<input class="filter" data-filter type="search" placeholder="Filter items" aria-label="Filter items"><h2>Inventory items</h2><div class="table-wrap"><table data-sortable><thead><tr><th>Index</th><th>Item</th><th>Price</th><th>Description</th></tr></thead><tbody>' + item_rows + '</tbody></table></div><h2>TMs/HMs</h2><div class="table-wrap"><table data-sortable><thead><tr><th>TM/HM</th><th>Type</th><th>Price</th><th>Move</th></tr></thead><tbody>' + machine_rows + '</tbody></table></div>')
+    item_rows = ''.join(f'<tr data-filter-row><td>{esc(i["id"])}</td><td>{item_link(model, "items/", i)}{" <span class=\"key-item-mark\" title=\"Key item\" aria-label=\"Key item\">⚿</span>" if i["key_item"] == "true" else ""}</td><td>{price(i["price"])}</td><td>{sell_price(i["price"])}</td><td>{description(i["description_text"])}</td></tr>' for i in public_items if i["symbol"] != "SAFARI_BALL")
+    machine_rows = ''.join(f'<tr data-filter-row><td>{esc(m["item_id"])}</td><td>{type_html([model["moves_by"][m["move"]]["type"]])}</td><td>{link(model, "items/", m["_url"], esc(m["name"]))}</td><td>{move_link(model, "items/", model["moves_by"][m["move"]])}</td><td>{price(m["price"])}</td><td>{sell_price(m["price"])}</td><td>{description(model["moves_by"][m["move"]]["description_1"] + r"\n" + model["moves_by"][m["move"]]["description_2"])}</td></tr>' for m in model["machines"])
+    write_page(out, model, "items/", "Items", '<input class="filter" data-filter type="search" placeholder="Filter items" aria-label="Filter items"><h2>Inventory items</h2><div class="table-wrap"><table class="inventory-table" data-sortable><thead><tr><th>Index</th><th>Item</th><th>Buy</th><th>Sell</th><th>Description</th></tr></thead><tbody>' + item_rows + '</tbody></table></div><h2>TMs/HMs</h2><div class="table-wrap"><table class="machine-index-table" data-sortable><thead><tr><th>Index</th><th>Type</th><th>Item</th><th>Move</th><th>Buy</th><th>Sell</th><th>Description</th></tr></thead><tbody>' + machine_rows + '</tbody></table></div>')
     ordinary_items = public_items
     for i in ordinary_items:
         current = i["_url"]; uses = ''.join(f'<li>{pokemon_link(model, current, u["source"])} &rarr; {pokemon_link(model, current, u["target"])}</li>' for u in model["evolution_users_by_item"].get(i["symbol"], [])); content = f'<div class="panel"><dl><dt>Price</dt><dd>{price(i["price"])}</dd><dt>Key item</dt><dd>{"Yes" if i["key_item"] == "true" else "No"}</dd></dl>{paragraphs(i["description_text"])}</div>' + (f'<h2>Evolution use</h2><ul>{uses}</ul>' if uses else '')

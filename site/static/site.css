@@ -305,6 +305,64 @@ table[data-sortable] th:focus-visible {
 	white-space: nowrap;
 }
 
+.inventory-table th:nth-child(1),
+.inventory-table td:nth-child(1),
+.inventory-table th:nth-child(3),
+.inventory-table td:nth-child(3),
+.inventory-table th:nth-child(4),
+.inventory-table td:nth-child(4) {
+	width: 1%;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+
+.inventory-table th:nth-child(3),
+.inventory-table td:nth-child(3),
+.inventory-table th:nth-child(4),
+.inventory-table td:nth-child(4) {
+	text-align: right;
+}
+
+.inventory-table th:nth-child(4),
+.inventory-table td:nth-child(4),
+.inventory-table th:nth-child(5),
+.inventory-table td:nth-child(5) {
+	width: 1%;
+	white-space: nowrap;
+}
+
+.machine-index-table th:nth-child(1),
+.machine-index-table td:nth-child(1),
+.machine-index-table th:nth-child(2),
+.machine-index-table td:nth-child(2),
+.machine-index-table th:nth-child(4),
+.machine-index-table td:nth-child(4),
+.machine-index-table th:nth-child(5),
+.machine-index-table td:nth-child(5),
+.machine-index-table th:nth-child(6),
+.machine-index-table td:nth-child(6),
+.machine-index-table th:nth-child(7),
+.machine-index-table td:nth-child(7) {
+	width: 1%;
+	white-space: nowrap;
+}
+
+.machine-index-table th:nth-child(1),
+.machine-index-table td:nth-child(1),
+.machine-index-table th:nth-child(5),
+.machine-index-table td:nth-child(5),
+.machine-index-table th:nth-child(6),
+.machine-index-table td:nth-child(6) {
+	font-variant-numeric: tabular-nums;
+}
+
+.machine-index-table th:nth-child(5),
+.machine-index-table td:nth-child(5),
+.machine-index-table th:nth-child(6),
+.machine-index-table td:nth-child(6) {
+	text-align: right;
+}
+
 .move-effect {
 	display: inline-block;
 	width: 16px;
