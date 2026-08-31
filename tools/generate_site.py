@@ -19,6 +19,7 @@ SPECIES_DIR = ROOT / "data/pokemon/species"
 SITE_TEMPLATE = ROOT / "site/templates/base.html"
 STAT_FIELDS = ("hp", "attack", "defense", "speed", "special")
 PALETTE_FILE = ROOT / "data/sgb/sgb_palettes.asm"
+README_FILE = ROOT / "README.md"
 
 
 def fail(message):
@@ -49,6 +50,48 @@ def paragraphs(value):
 
 def description(value):
     return "<br>".join(esc(line) for line in text(value).split(r"\n"))
+
+
+def markdown_inline(value):
+    value = html.escape(value, quote=True)
+    value = re.sub(r"!\[([^]]*)\]\(([^)]+)\)", lambda match: f'<img src="{html.escape(match.group(2), quote=True)}" alt="{match.group(1)}">', value)
+    value = re.sub(r"\[([^]]+)\]\(([^)]+)\)", lambda match: f'<a href="{html.escape(match.group(2), quote=True)}">{match.group(1)}</a>', value)
+    return re.sub(r"`([^`]+)`", r"<code>\1</code>", value)
+
+
+def markdown_html(source):
+    lines = source.splitlines()
+    if lines and lines[0].startswith("# "):
+        lines = lines[1:]
+    blocks, paragraph, index = [], [], 0
+
+    def flush_paragraph():
+        if paragraph:
+            blocks.append(f'<p>{markdown_inline(" ".join(paragraph))}</p>')
+            paragraph.clear()
+
+    while index < len(lines):
+        line = lines[index]
+        heading = re.match(r"^(#{2,6})\s+(.+)$", line)
+        if not line.strip():
+            flush_paragraph()
+        elif heading:
+            flush_paragraph()
+            level, title = len(heading.group(1)), markdown_inline(heading.group(2))
+            blocks.append(f"<h{level}>{title}</h{level}>")
+        elif line.startswith("* "):
+            flush_paragraph()
+            items = []
+            while index < len(lines) and lines[index].startswith("* "):
+                items.append(f"<li>{markdown_inline(lines[index][2:])}</li>")
+                index += 1
+            blocks.append("<ul>" + "".join(items) + "</ul>")
+            continue
+        else:
+            paragraph.append(line)
+        index += 1
+    flush_paragraph()
+    return "<article class=\"readme\">" + "".join(blocks) + "</article>"
 
 
 def type_name(value):
@@ -307,13 +350,14 @@ def build(model, out):
     (out / "static").mkdir()
     shutil.copy2(ROOT / "site/static/site.css", out / "static/site.css")
     shutil.copy2(ROOT / "site/static/site.js", out / "static/site.js")
+    shutil.copytree(ROOT / "docs", out / "docs")
     for p in model["pokemon"]:
         for source in p["sprites"].values():
             dest = out / source
             dest.parent.mkdir(parents=True, exist_ok=True)
             apply_palette(ROOT / source, dest, model["palettes"][p["palette"]])
     p_by_id = {p["id"]: p for p in model["pokemon"]}
-    write_page(out, model, "", "Pokémon Amaranth", '<p>A player-facing reference for the Pokémon Amaranth reimagining.</p><div class="cards"><a class="card" href="pokemon/">Pokémon</a><a class="card" href="moves/">Moves</a><a class="card" href="items/">Items</a></div><p class="muted">%d Pokémon, %d moves, and %d items.</p>' % (len(model["pokemon"]), len(model["moves"]), len([i for i in model["items"] if i["kind"] == "item" and i["symbol"] != "NO_ITEM"])))
+    write_page(out, model, "", "Pokémon Amaranth", markdown_html(README_FILE.read_text(encoding="utf-8")))
     rows = ''.join(f'<article class="pokemon-card" data-filter-row><a href="{relative("pokemon/", p["_url"])}"><span class="sprite-frame"><img class="sprite" src="{relative("pokemon/", p["sprites"]["front"])}" alt="Front sprite of {esc(p["display_name"])}"></span><span class="dex-number">#{p["pokedex_number"]:03d}</span><span class="pokemon-name sprite-name">{esc(p["display_name"])}</span><span class="pokemon-types sprite-types">{type_html(p["types"])}</span></a></article>' for p in sorted(model["pokemon"], key=lambda x: x["pokedex_number"]))
     write_page(out, model, "pokemon/", "Pokémon", '<input class="filter" data-filter type="search" placeholder="Filter Pokémon" aria-label="Filter Pokémon"><div class="pokemon-grid">' + rows + '</div>')
     for p in model["pokemon"]:
