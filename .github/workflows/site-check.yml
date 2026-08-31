@@ -1,0 +1,14 @@
+name: Site check
+
+on:
+  pull_request:
+  push:
+    branches: [develop]
+
+jobs:
+  site-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate site data
+        run: make site-check

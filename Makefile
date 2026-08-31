@@ -86,7 +86,7 @@ RGBLINK ?= $(RGBDS)rgblink
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
-.PHONY: all amaranth red blue blue_debug clean tidy compare tools
+.PHONY: all amaranth red blue blue_debug clean tidy compare tools site site-check site-clean
 
 amaranth:       amaranth.gbc
 amaranth_debug: amaranth_debug.gbc
@@ -131,6 +131,15 @@ compare: $(roms) $(patches)
 
 tools:
 	$(MAKE) -C tools/
+
+site:
+	python3 tools/generate_site.py build/site
+
+site-check:
+	python3 tools/generate_site.py --check
+
+site-clean:
+	rm -rf build/site
 
 
 RGBASMFLAGS = -Q8 -P includes.asm -Weverything -Wtruncation=1

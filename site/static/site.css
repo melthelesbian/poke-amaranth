@@ -1,0 +1,491 @@
+:root {
+	color-scheme: light;
+
+	--bg: #fdf0fe;
+	--panel: #fffdfa;
+	--panel-strong: #f0e7dc;
+	--text: #25212a;
+	--muted: #746d7d;
+	--border: #dfd4c8;
+	--accent: #d64273;
+	--accent-dark: #9f244f;
+
+	font-family:
+		Inter,
+		ui-sans-serif,
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		sans-serif;
+
+	line-height: 1.5;
+	color: var(--text);
+	background: var(--bg);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+}
+
+.wrap {
+	width: min(1100px, calc(100% - 2rem));
+	margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Site chrome                                                                */
+/* -------------------------------------------------------------------------- */
+
+.site-header {
+	background: #440044;
+	color: white;
+	padding: 0.8rem 0;
+}
+
+.site-header .wrap {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.brand,
+nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+nav {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+a {
+	color: #174ea6;
+}
+
+h1 {
+	margin: 2rem 0 1rem;
+}
+
+h2 {
+	margin-top: 2rem;
+	border-bottom: 2px solid #d6dce8;
+	padding-bottom: 0.25rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Generic cards / panels                                                     */
+/* -------------------------------------------------------------------------- */
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+}
+
+.card,
+.panel {
+	background: white;
+	border: 1px solid #d6dce8;
+	border-radius: 0.5rem;
+	padding: 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Tables                                                                     */
+/* -------------------------------------------------------------------------- */
+
+.table-wrap {
+	overflow-x: auto;
+	overflow-y: visible;
+	background: white;
+	border: 1px solid #d6dce8;
+	padding-bottom: 0.15rem;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	min-width: 620px;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 0.55rem 0.7rem;
+	border-bottom: 1px solid #e2e6ee;
+	vertical-align: middle;
+}
+
+th {
+	background: #edf1f8;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Sprites                                                                    */
+/* -------------------------------------------------------------------------- */
+
+.sprite {
+	width: 96px;
+	height: 96px;
+	object-fit: contain;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
+
+.sprite.small {
+	width: 48px;
+	height: 48px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Pokémon preview grid                                                       */
+/* -------------------------------------------------------------------------- */
+
+.pokemon-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+	gap: 1rem;
+
+	/*
+	 * dexplan puts a 60rem maximum width on an outer panel,
+	 * then gives the panel body 1rem padding on each side.
+	 * This approximates the resulting inner grid width.
+	 */
+	width: min(100%, calc(60rem - 2rem - 2px));
+	margin: 0 auto;
+}
+
+.pokemon-card {
+	min-width: 0;
+	padding: 0.5rem;
+	margin: 0;
+	border: 0;
+	border-radius: 0.5rem;
+	background: #fdf0fe;
+	text-align: center;
+}
+
+.pokemon-card a {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+
+.pokemon-card a:visited {
+	color: inherit;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Sprite square                                                              */
+/* -------------------------------------------------------------------------- */
+
+.sprite-frame {
+	background: #fdf0fe;
+	border: 0;
+	border-radius: 0.35rem;
+	padding: 0.15rem;
+
+	aspect-ratio: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-width: 0;
+	overflow: hidden;
+}
+
+.sprite-frame img {
+	width: 96px;
+	height: 96px;
+	max-width: 100%;
+	object-fit: contain;
+
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+
+	display: block;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Pokédex number                                                             */
+/* -------------------------------------------------------------------------- */
+
+.pokemon-card .dex-number {
+	display: block;
+
+	margin-top: 0.2rem;
+
+	font-size: 0.72rem;
+	font-weight: 600;
+	line-height: 1.1;
+
+	color: #174ea6;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Pokémon name                                                               */
+/* -------------------------------------------------------------------------- */
+
+.pokemon-card .sprite-name,
+.pokemon-card .pokemon-name {
+	display: block;
+
+	margin-top: 0.1rem;
+
+	font-size: 0.7rem;
+	font-weight: 400;
+	line-height: normal;
+
+	color: var(--muted);
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Type badges                                                                */
+/* -------------------------------------------------------------------------- */
+
+.pokemon-types {
+	display: flex;
+	gap: 0.2rem;
+	justify-content: center;
+
+	margin-top: 0.15rem;
+
+	min-width: 0;
+}
+
+.pokemon-types .type {
+	display: inline-block;
+
+	min-width: 0;
+	margin: 0;
+
+	border: 0;
+	border-radius: 0.2rem;
+
+	padding: 0.05rem 0.35rem;
+
+	font-size: 0.6rem;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 1.4;
+
+	text-align: center;
+	text-transform: capitalize;
+
+	color: #fff;
+	white-space: nowrap;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Generic type badges used outside the preview grid                          */
+/* -------------------------------------------------------------------------- */
+
+.type {
+	display: inline-block;
+
+	min-width: 0;
+
+	border: 1px solid rgb(0 0 0 / 0.3);
+	border-radius: 0.12rem;
+
+	padding: 0.05rem 0.2rem;
+	margin: 0.02rem;
+
+	font-size: 0.58rem;
+	line-height: 1.05;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+
+	text-align: center;
+	color: white;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Type colors                                                                */
+/* -------------------------------------------------------------------------- */
+
+.type-normal {
+	background: #a8a77a;
+}
+
+.type-fighting {
+	background: #c22e28;
+}
+
+.type-flying {
+	background: #a98ff3;
+}
+
+.type-poison {
+	background: #a33ea1;
+}
+
+.type-ground {
+	background: #e2bf65;
+}
+
+.type-rock {
+	background: #b6a136;
+}
+
+.type-bug {
+	background: #a6b91a;
+}
+
+.type-ghost {
+	background: #735797;
+}
+
+.type-steel {
+	background: #b7b7ce;
+}
+
+.type-fire {
+	background: #ee8130;
+}
+
+.type-water {
+	background: #6390f0;
+}
+
+.type-grass {
+	background: #7ac74c;
+}
+
+.type-electric {
+	background: #f7d02c;
+}
+
+.type-psychic {
+	background: #f95587;
+}
+
+.type-ice {
+	background: #96d9d6;
+}
+
+.type-dragon {
+	background: #6f35fc;
+}
+
+.type-dark {
+	background: #705746;
+}
+
+.type-fairy {
+	background: #d685ad;
+}
+
+.type-stellar {
+	background: #40b5a5;
+}
+
+.type-mystery {
+	background: #c9c9d4;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Pokémon detail pages                                                       */
+/* -------------------------------------------------------------------------- */
+
+.sprites {
+	display: flex;
+	gap: 1.5rem;
+	align-items: end;
+}
+
+.stats {
+	max-width: 600px;
+}
+
+.stat {
+	display: grid;
+	grid-template-columns: 7rem 3rem 1fr;
+	gap: 0.5rem;
+	align-items: center;
+	margin: 0.25rem 0;
+}
+
+.bar {
+	height: 0.7rem;
+	background: #dce3ef;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.bar i {
+	display: block;
+	height: 100%;
+	background: #386cb0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Forms                                                                      */
+/* -------------------------------------------------------------------------- */
+
+.filter {
+	width: min(100%, 25rem);
+	padding: 0.6rem;
+	margin: 0 0 1rem;
+	font: inherit;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Miscellaneous                                                              */
+/* -------------------------------------------------------------------------- */
+
+.muted {
+	color: #536174;
+}
+
+dl {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 0.35rem 1rem;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Responsive                                                                 */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+	.site-header .wrap {
+		display: block;
+	}
+
+	nav {
+		margin-top: 0.5rem;
+	}
+
+	h1 {
+		margin-top: 1.25rem;
+	}
+}

@@ -34,3 +34,6 @@
 
 # working directories
 tmp/
+
+# disposable static site output
+build/
