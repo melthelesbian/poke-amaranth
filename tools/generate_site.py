@@ -98,6 +98,41 @@ def type_name(value):
     return value.removesuffix("_TYPE")
 
 
+def move_effect(move):
+    if move["high_crit"] == "true":
+        return "CH"
+    effects = {
+        "POISON_EFFECT": "PSN", "POISON_SIDE_EFFECT1": "PSN", "POISON_SIDE_EFFECT2": "PSN",
+        "SLEEP_EFFECT": "SLP", "CONFUSION_EFFECT": "CNF", "CONFUSION_SIDE_EFFECT": "CNF",
+        "FREEZE_SIDE_EFFECT": "FRZ", "BURN_SIDE_EFFECT1": "BRN", "BURN_SIDE_EFFECT2": "BRN",
+        "PARALYZE_EFFECT": "PAR", "PARALYZE_SIDE_EFFECT1": "PAR", "PARALYZE_SIDE_EFFECT2": "PAR",
+        "ATTACK_UP1_EFFECT": "U1", "DEFENSE_UP1_EFFECT": "U1", "SPEED_UP1_EFFECT": "U1", "SPECIAL_UP1_EFFECT": "U1",
+        "ATTACK_UP2_EFFECT": "U2", "DEFENSE_UP2_EFFECT": "U2", "SPEED_UP2_EFFECT": "U2", "SPECIAL_UP2_EFFECT": "U2",
+        "ATTACK_DOWN1_EFFECT": "D1", "ATTACK_DOWN_SIDE_EFFECT": "D1", "DEFENSE_DOWN1_EFFECT": "D1", "DEFENSE_DOWN_SIDE_EFFECT": "D1",
+        "SPEED_DOWN1_EFFECT": "D1", "SPEED_DOWN_SIDE_EFFECT": "D1", "SPECIAL_DOWN1_EFFECT": "D1", "SPECIAL_DOWN_SIDE_EFFECT": "D1",
+        "ATTACK_DOWN2_EFFECT": "D2", "DEFENSE_DOWN2_EFFECT": "D2", "SPEED_DOWN2_EFFECT": "D2", "SPECIAL_DOWN2_EFFECT": "D2",
+        "HEAL_EFFECT": "HEART", "DRAIN_HP_EFFECT": "HEART", "LEECH_SEED_EFFECT": "HEART",
+        "RECOIL_EFFECT": "BOUNCE", "FLINCH_SIDE_EFFECT1": "PAIN", "FLINCH_SIDE_EFFECT2": "PAIN",
+        "CHARGE_EFFECT": "CLOCK", "FLY_EFFECT": "CLOCK", "HYPER_BEAM_EFFECT": "CLOCK",
+        "TRAPPING_EFFECT": "SPIRAL", "RAGE_EFFECT": "ANGRY", "THRASH_PETAL_DANCE_EFFECT": "ANGRY",
+    }
+    return effects.get(move["effect"], "" if move["effect"] in ("NO_ADDITIONAL_EFFECT", "SPLASH_EFFECT") else "SPARKLE")
+
+
+def multi_hit_prefix(move):
+    return {"ATTACK_TWICE_EFFECT": "+", "TWO_TO_FIVE_ATTACKS_EFFECT": "×", "TWINEEDLE_EFFECT": "+"}.get(move["effect"], "")
+
+
+def effect_html(move):
+    effect = move_effect(move)
+    title = effect_title(move)
+    return f'<span class="move-effect move-effect-{slug(effect)}" title="{esc(title)}"></span>' if effect else ""
+
+
+def effect_title(move):
+    return "HIGH CRIT" if move["high_crit"] == "true" else move["effect"].replace("_", " ")
+
+
 def price(value):
     return "-" if str(value) == "0" else f"₽{esc(value)}"
 
@@ -350,6 +385,7 @@ def build(model, out):
     (out / "static").mkdir()
     shutil.copy2(ROOT / "site/static/site.css", out / "static/site.css")
     shutil.copy2(ROOT / "site/static/site.js", out / "static/site.js")
+    shutil.copy2(ROOT / "gfx/font/font.png", out / "static/font.png")
     shutil.copytree(ROOT / "docs", out / "docs")
     for p in model["pokemon"]:
         for source in p["sprites"].values():
@@ -366,20 +402,20 @@ def build(model, out):
         learns = ''.join(f'<tr><td>{e["level"]}</td><td>{move_link(model, current, model["moves_by"][e["move"]])}</td><td>{type_html([model["moves_by"][e["move"]]["type"]])}</td><td>{model["moves_by"][e["move"]]["power"]}</td><td>{model["moves_by"][e["move"]]["accuracy"]}%</td><td>{model["moves_by"][e["move"]]["pp"]}</td></tr>' for e in p["learnset"])
         machines = ''.join(f'<tr><td>{link(model, current, m["_url"], esc(m["kind"] + str(integer(m["number"])).zfill(2)))}</td><td>{move_link(model, current, model["moves_by"][move])}</td><td>{type_html([model["moves_by"][move]["type"]])}</td><td>{model["moves_by"][move]["power"]}</td><td>{model["moves_by"][move]["accuracy"]}%</td><td>{model["moves_by"][move]["pp"]}</td></tr>' for move in p["tmhm"] for m in [model["machines_by_move"].get(move)] if m)
         sprite = lambda source: relative(current, source)
-        content = f'<section class="panel"><div class="sprites"><div><img class="sprite" src="{sprite(p["sprites"]["front"])}" alt="Front sprite of {esc(p["display_name"])}"><div>Front</div></div><div><img class="sprite" src="{sprite(p["sprites"]["back"])}" alt="Back sprite of {esc(p["display_name"])}"><div>Back</div></div></div><dl><dt>Number</dt><dd>#{p["pokedex_number"]:03d}</dd><dt>Types</dt><dd>{type_html(p["types"])}</dd></dl></section><h2>Pokédex information</h2><dl><dt>Category</dt><dd>{esc(p["pokedex"]["category"])}</dd><dt>Height</dt><dd>{p["pokedex"]["height"][0]}′ {p["pokedex"]["height"][1]}″</dd><dt>Weight</dt><dd>{p["pokedex"]["weight"] / 10:g} kg</dd></dl>{paragraphs(" ".join(sum(p["pokedex"]["description"], [])))}<h2>Base stats</h2><div class="panel stats">{stats}<b>Total: {sum(p["stats"].values())}</b></div><h2>Evolution</h2><ul>{evos}</ul><h2>Level-up learnset</h2><div class="table-wrap"><table><thead><tr><th>Level</th><th>Move</th><th>Type</th><th>Power</th><th>Accuracy</th><th>PP</th></tr></thead><tbody>{learns}</tbody></table></div><h2>TM/HM compatibility</h2><div class="table-wrap"><table><thead><tr><th>TM/HM</th><th>Move</th><th>Type</th><th>Power</th><th>Accuracy</th><th>PP</th></tr></thead><tbody>{machines}</tbody></table></div><h2>Gameplay data</h2><dl><dt>Catch rate</dt><dd>{pretty(p["catch_rate"])}</dd><dt>EXP yield</dt><dd>{pretty(p["exp_yield"])}</dd><dt>Growth rate</dt><dd>{pretty(p["growth_rate"])}</dd></dl>'
+        content = f'<section class="panel"><div class="sprites"><div><img class="sprite" src="{sprite(p["sprites"]["front"])}" alt="Front sprite of {esc(p["display_name"])}"><div>Front</div></div><div><img class="sprite" src="{sprite(p["sprites"]["back"])}" alt="Back sprite of {esc(p["display_name"])}"><div>Back</div></div></div><dl><dt>Number</dt><dd>#{p["pokedex_number"]:03d}</dd><dt>Types</dt><dd>{type_html(p["types"])}</dd></dl></section><h2>Pokédex information</h2><dl><dt>Category</dt><dd>{esc(p["pokedex"]["category"])}</dd><dt>Height</dt><dd>{p["pokedex"]["height"][0]}′ {p["pokedex"]["height"][1]}″</dd><dt>Weight</dt><dd>{p["pokedex"]["weight"] / 10:g} kg</dd></dl>{paragraphs(" ".join(sum(p["pokedex"]["description"], [])))}<h2>Base stats</h2><div class="panel stats">{stats}<b>Total: {sum(p["stats"].values())}</b></div><h2>Evolution</h2><ul>{evos}</ul><h2>Level-up learnset</h2><div class="table-wrap"><table data-sortable><thead><tr><th>Level</th><th>Move</th><th>Type</th><th>Power</th><th>Accuracy</th><th>PP</th></tr></thead><tbody>{learns}</tbody></table></div><h2>TM/HM compatibility</h2><div class="table-wrap"><table data-sortable><thead><tr><th>TM/HM</th><th>Move</th><th>Type</th><th>Power</th><th>Accuracy</th><th>PP</th></tr></thead><tbody>{machines}</tbody></table></div><h2>Gameplay data</h2><dl><dt>Catch rate</dt><dd>{pretty(p["catch_rate"])}</dd><dt>EXP yield</dt><dd>{pretty(p["exp_yield"])}</dd><dt>Growth rate</dt><dd>{pretty(p["growth_rate"])}</dd></dl>'
         write_page(out, model, current, p["display_name"], content)
-    move_rows = ''.join(f'<tr data-filter-row><td>{move_link(model, "moves/", m)}</td><td>{type_html([m["type"]])}</td><td>{m["power"] if m["power"] != "0" else "Status"}</td><td>{m["accuracy"]}%</td><td>{m["pp"]}</td><td>{"Yes" if m["high_crit"] == "true" else "No"}</td><td>{(model["machines_by_move"][m["constant"]]["kind"] + str(integer(model["machines_by_move"][m["constant"]]["number"])).zfill(2) if m["constant"] in model["machines_by_move"] else "" )}</td><td>{description(m["description_1"] + r"\n" + m["description_2"])}</td></tr>' for m in model["moves"])
-    write_page(out, model, "moves/", "Moves", '<input class="filter" data-filter type="search" placeholder="Filter moves" aria-label="Filter moves"><div class="table-wrap"><table><thead><tr><th>Move</th><th>Type</th><th>Power</th><th>Accuracy</th><th>PP</th><th>High crit</th><th>TM/HM</th><th>Description</th></tr></thead><tbody>' + move_rows + '</tbody></table></div>')
+    move_rows = ''.join(f'<tr data-filter-row><td>{move_link(model, "moves/", m)}</td><td>{type_html([m["type"]])}</td><td data-sort-value="{esc(m["power"])}">{"---" if m["power"] in ("0", "1") else m["power"]}{multi_hit_prefix(m)}</td><td data-sort-value="{esc(effect_title(m))}">{effect_html(m)}</td><td>{m["accuracy"]}%</td><td>{m["pp"]}</td><td>{description(m["description_1"] + r"\n" + m["description_2"])}</td></tr>' for m in sorted(model["moves"], key=lambda move: move["name"].casefold()))
+    write_page(out, model, "moves/", "Moves", '<input class="filter" data-filter type="search" placeholder="Filter moves" aria-label="Filter moves"><div class="table-wrap"><table data-sortable><thead><tr><th>Move</th><th>Type</th><th>Power</th><th>Effect</th><th>Accuracy</th><th>PP</th><th>Description</th></tr></thead><tbody>' + move_rows + '</tbody></table></div>')
     for m in model["moves"]:
         current = m["_url"]; machine = model["machines_by_move"].get(m["constant"]); learners = ''.join(f'<li>{pokemon_link(model, current, x["pokemon"])} (level {x["level"]})</li>' for x in model["level_learners_by_move"].get(m["constant"], [])) or '<li>None recorded</li>'; compatible = ''.join(f'<li>{pokemon_link(model, current, p)}</li>' for p in model["machine_learners_by_move"].get(m["constant"], [])) or '<li>None recorded</li>'
         machine_text = f'<p>TM/HM: {link(model, current, machine["_url"], esc(machine["name"]))}</p>' if machine else ''
         content = f'<div class="panel"><dl><dt>Type</dt><dd>{type_html([m["type"]])}</dd><dt>Power</dt><dd>{m["power"] if m["power"] != "0" else "Status move"}</dd><dt>Accuracy</dt><dd>{m["accuracy"]}%</dd><dt>PP</dt><dd>{m["pp"]}</dd><dt>High critical hit</dt><dd>{"Yes" if m["high_crit"] == "true" else "No"}</dd></dl></div>{machine_text}<p>{description(m["description_1"] + r"\n" + m["description_2"])}</p><h2>Learned by level</h2><ul>{learners}</ul><h2>TM/HM compatibility</h2><ul>{compatible}</ul>'
         write_page(out, model, current, m["name"], content)
-    public_items = [i for i in model["items"] if i["kind"] == "item" and i["symbol"] != "NO_ITEM" and not i["symbol"].startswith("UNUSED")]
-    item_rows = ''.join(f'<tr data-filter-row><td>{item_link(model, "items/", i)}</td><td>{"Key Item" if i["key_item"] == "true" else "Item"}</td><td>{price(i["price"])}</td><td>{description(i["description_text"])}</td></tr>' for i in public_items)
-    machine_rows = ''.join(f'<tr data-filter-row><td>{link(model, "items/", m["_url"], esc(m["name"]))}</td><td>{esc(m["kind"])}</td><td>{price(m["price"])}</td><td>{move_link(model, "items/", model["moves_by"][m["move"]])}</td></tr>' for m in model["machines"])
-    write_page(out, model, "items/", "Items", '<input class="filter" data-filter type="search" placeholder="Filter items" aria-label="Filter items"><h2>Inventory items</h2><div class="table-wrap"><table><thead><tr><th>Item</th><th>Category</th><th>Price</th><th>Description</th></tr></thead><tbody>' + item_rows + '</tbody></table></div><h2>TMs/HMs</h2><div class="table-wrap"><table><thead><tr><th>TM/HM</th><th>Kind</th><th>Price</th><th>Move</th></tr></thead><tbody>' + machine_rows + '</tbody></table></div>')
-    ordinary_items = [i for i in model["items"] if i["kind"] == "item" and i["symbol"] != "NO_ITEM"]
+    public_items = [i for i in model["items"] if i["kind"] == "item" and i["symbol"] != "NO_ITEM" and not i["symbol"].startswith("UNUSED") and not i["symbol"].endswith("BADGE") and not i["aliases"]]
+    item_rows = ''.join(f'<tr data-filter-row><td>{esc(i["id"])}</td><td>{item_link(model, "items/", i)}{" <span class=\"key-item-mark\" title=\"Key item\" aria-label=\"Key item\">⚿</span>" if i["key_item"] == "true" else ""}</td><td>{price(i["price"])}</td><td>{description(i["description_text"])}</td></tr>' for i in public_items)
+    machine_rows = ''.join(f'<tr data-filter-row><td>{link(model, "items/", m["_url"], esc(m["name"]))}</td><td>{esc(m["kind"])}</td><td>{price(m["price"])}</td><td>{move_link(model, "items/", model["moves_by"][m["move"]])}</td><td>{type_html([model["moves_by"][m["move"]]["type"]])}</td></tr>' for m in model["machines"])
+    write_page(out, model, "items/", "Items", '<input class="filter" data-filter type="search" placeholder="Filter items" aria-label="Filter items"><h2>Inventory items</h2><div class="table-wrap"><table data-sortable><thead><tr><th>Index</th><th>Item</th><th>Price</th><th>Description</th></tr></thead><tbody>' + item_rows + '</tbody></table></div><h2>TMs/HMs</h2><div class="table-wrap"><table data-sortable><thead><tr><th>TM/HM</th><th>Kind</th><th>Price</th><th>Move</th><th>Type</th></tr></thead><tbody>' + machine_rows + '</tbody></table></div>')
+    ordinary_items = public_items
     for i in ordinary_items:
         current = i["_url"]; uses = ''.join(f'<li>{pokemon_link(model, current, u["source"])} &rarr; {pokemon_link(model, current, u["target"])}</li>' for u in model["evolution_users_by_item"].get(i["symbol"], [])); content = f'<div class="panel"><dl><dt>Price</dt><dd>{price(i["price"])}</dd><dt>Key item</dt><dd>{"Yes" if i["key_item"] == "true" else "No"}</dd></dl>{paragraphs(i["description_text"])}</div>' + (f'<h2>Evolution use</h2><ul>{uses}</ul>' if uses else '')
         write_page(out, model, current, i["name"], content)

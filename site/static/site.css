@@ -106,6 +106,12 @@ h2 {
 	height: auto;
 }
 
+.key-item-mark {
+	margin-left: 0.25rem;
+	font-weight: 700;
+	color: #386cb0;
+}
+
 /* -------------------------------------------------------------------------- */
 /* Tables                                                                     */
 /* -------------------------------------------------------------------------- */
@@ -135,6 +141,64 @@ td {
 th {
 	background: #edf1f8;
 }
+
+table[data-sortable] th {
+	cursor: pointer;
+}
+
+table[data-sortable] th::after {
+	content: " ↕";
+	font-size: 0.8em;
+	opacity: 0.55;
+}
+
+table[data-sortable] th[aria-sort="ascending"]::after {
+	content: " ↑";
+	opacity: 1;
+}
+
+table[data-sortable] th[aria-sort="descending"]::after {
+	content: " ↓";
+	opacity: 1;
+}
+
+table[data-sortable] th:focus-visible {
+	outline: 2px solid #386cb0;
+	outline-offset: -2px;
+}
+
+.move-effect {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("font.png");
+	background-size: 256px 128px;
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+	vertical-align: middle;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.move-effect-angry { background-position: -208px -64px; }
+.move-effect-spiral { background-position: -224px -64px; }
+.move-effect-clock { background-position: -240px -64px; }
+.move-effect-bounce { background-position: 0 -80px; }
+.move-effect-pain { background-position: -16px -80px; }
+.move-effect-heart { background-position: -32px -80px; }
+.move-effect-inf { background-position: -48px -80px; }
+.move-effect-u1 { background-position: -64px -80px; }
+.move-effect-u2 { background-position: -80px -80px; }
+.move-effect-d1 { background-position: -96px -80px; }
+.move-effect-d2 { background-position: -112px -80px; }
+.move-effect-psn { background-position: -128px -80px; }
+.move-effect-slp { background-position: -144px -80px; }
+.move-effect-cnf { background-position: -160px -80px; }
+.move-effect-frz { background-position: -176px -80px; }
+.move-effect-brn { background-position: -192px -80px; }
+.move-effect-par { background-position: -208px -80px; }
+.move-effect-ch { background-position: -224px -80px; }
+.move-effect-sparkle { background-position: -240px -80px; }
 
 /* -------------------------------------------------------------------------- */
 /* Sprites                                                                    */
@@ -323,6 +387,12 @@ th {
 
 	text-align: center;
 	color: white;
+}
+
+table .type {
+	padding: 0.1rem 0.4rem;
+	font-size: 0.7rem;
+	line-height: 1.2;
 }
 
 /* -------------------------------------------------------------------------- */
