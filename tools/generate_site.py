@@ -34,6 +34,15 @@ def pretty(value):
     return value.removeprefix("EVOLVE_").replace("_", " ").title()
 
 
+def gameplay_label(value):
+    value = str(value)
+    for prefix in ("EXP_YIELD_", "GROWTH_", "CR_"):
+        if value.startswith(prefix):
+            value = value.removeprefix(prefix)
+            break
+    return value.replace("_", "-").title()
+
+
 def text(value):
     """Translate only the text markers used by the canonical data."""
     return str(value).replace("#MON", "Pokémon").replace("# BALL", "POKé BALL").replace("<TM>", "TM").replace("<HM>", "HM")
@@ -259,7 +268,8 @@ def render(model, current, title, content):
     template = Template(SITE_TEMPLATE.read_text(encoding="utf-8"))
     return template.safe_substitute(TITLE=esc(title), HEADING=esc(title), CONTENT=content,
         CSS=rel("static/site.css"), JS=rel("static/site.js"), HOME=rel("index.html"),
-        POKEMON=rel("pokemon/"), MOVES=rel("moves/"), ITEMS=rel("items/"))
+        POKEMON=rel("pokemon/"), MOVES=rel("moves/"), ITEMS=rel("items/"),
+        FAVICON=rel("static/favicon.png"))
 
 
 def write_page(out, model, path, title, content):
@@ -385,6 +395,7 @@ def build(model, out):
     (out / "static").mkdir()
     shutil.copy2(ROOT / "site/static/site.css", out / "static/site.css")
     shutil.copy2(ROOT / "site/static/site.js", out / "static/site.js")
+    shutil.copy2(ROOT / "site/static/favicon.png", out / "static/favicon.png")
     shutil.copy2(ROOT / "gfx/font/font.png", out / "static/font.png")
     shutil.copytree(ROOT / "docs", out / "docs")
     for p in model["pokemon"]:
@@ -397,12 +408,15 @@ def build(model, out):
     rows = ''.join(f'<article class="pokemon-card" data-filter-row><a href="{relative("pokemon/", p["_url"])}"><span class="sprite-frame"><img class="sprite" src="{relative("pokemon/", p["sprites"]["front"])}" alt="Front sprite of {esc(p["display_name"])}"></span><span class="dex-number">#{p["pokedex_number"]:03d}</span><span class="pokemon-name sprite-name">{esc(p["display_name"])}</span><span class="pokemon-types sprite-types">{type_html(p["types"])}</span></a></article>' for p in sorted(model["pokemon"], key=lambda x: x["pokedex_number"]))
     write_page(out, model, "pokemon/", "Pokémon", '<input class="filter" data-filter type="search" placeholder="Filter Pokémon" aria-label="Filter Pokémon"><div class="pokemon-grid">' + rows + '</div>')
     for p in model["pokemon"]:
-        current = p["_url"]; stats = ''.join(f'<div class="stat"><b>{s.title()}</b><span>{p["stats"][s]}</span><span class="bar"><i style="width:{min(100, p["stats"][s] / 2)}%"></i></span></div>' for s in STAT_FIELDS)
+        stat_labels = {"hp": "HP", "attack": "ATK", "defense": "DEF", "speed": "SPD", "special": "SPC"}
+        current = p["_url"]; stats = ''.join(f'<div class="stat"><b>{stat_labels[s]}</b><span>{p["stats"][s]}</span><span class="bar"><i style="width:{min(100, p["stats"][s] / 2)}%"></i></span></div>' for s in STAT_FIELDS)
         evos = ''.join(f'<li>{("Level " + str(e["level"])) if e["method"] == "EVOLVE_LEVEL" else ("Trade" if e["method"] == "EVOLVE_TRADE" else item_link(model, current, model["items_by"][e["item"]]))} &rarr; {pokemon_link(model, current, p_by_id[e["species"]])}</li>' for e in p["evolutions"]) or '<li>None recorded</li>'
-        learns = ''.join(f'<tr><td>{e["level"]}</td><td>{move_link(model, current, model["moves_by"][e["move"]])}</td><td>{type_html([model["moves_by"][e["move"]]["type"]])}</td><td>{model["moves_by"][e["move"]]["power"]}</td><td>{model["moves_by"][e["move"]]["accuracy"]}%</td><td>{model["moves_by"][e["move"]]["pp"]}</td></tr>' for e in p["learnset"])
-        machines = ''.join(f'<tr><td>{link(model, current, m["_url"], esc(m["kind"] + str(integer(m["number"])).zfill(2)))}</td><td>{move_link(model, current, model["moves_by"][move])}</td><td>{type_html([model["moves_by"][move]["type"]])}</td><td>{model["moves_by"][move]["power"]}</td><td>{model["moves_by"][move]["accuracy"]}%</td><td>{model["moves_by"][move]["pp"]}</td></tr>' for move in p["tmhm"] for m in [model["machines_by_move"].get(move)] if m)
+        learns = ''.join(f'<tr><td>{e["level"]}</td><td>{move_link(model, current, model["moves_by"][e["move"]])}</td><td>{type_html([model["moves_by"][e["move"]]["type"]])}</td><td data-sort-value="{esc(model["moves_by"][e["move"]]["power"])}">{"---" if model["moves_by"][e["move"]]["power"] in ("0", "1") else model["moves_by"][e["move"]]["power"]}{multi_hit_prefix(model["moves_by"][e["move"]])}</td><td>{effect_html(model["moves_by"][e["move"]])}</td><td>{model["moves_by"][e["move"]]["accuracy"]}%</td><td>{model["moves_by"][e["move"]]["pp"]}</td></tr>' for e in p["learnset"])
+        machines = ''.join(f'<tr><td>{link(model, current, m["_url"], esc(m["kind"] + str(integer(m["number"])).zfill(2)))}</td><td>{move_link(model, current, model["moves_by"][move])}</td><td>{type_html([model["moves_by"][move]["type"]])}</td><td data-sort-value="{esc(model["moves_by"][move]["power"])}">{"---" if model["moves_by"][move]["power"] in ("0", "1") else model["moves_by"][move]["power"]}{multi_hit_prefix(model["moves_by"][move])}</td><td>{effect_html(model["moves_by"][move])}</td><td>{model["moves_by"][move]["accuracy"]}%</td><td>{model["moves_by"][move]["pp"]}</td></tr>' for move in p["tmhm"] for m in [model["machines_by_move"].get(move)] if m)
         sprite = lambda source: relative(current, source)
-        content = f'<section class="panel"><div class="sprites"><div><img class="sprite" src="{sprite(p["sprites"]["front"])}" alt="Front sprite of {esc(p["display_name"])}"><div>Front</div></div><div><img class="sprite" src="{sprite(p["sprites"]["back"])}" alt="Back sprite of {esc(p["display_name"])}"><div>Back</div></div></div><dl><dt>Number</dt><dd>#{p["pokedex_number"]:03d}</dd><dt>Types</dt><dd>{type_html(p["types"])}</dd></dl></section><h2>Pokédex information</h2><dl><dt>Category</dt><dd>{esc(p["pokedex"]["category"])}</dd><dt>Height</dt><dd>{p["pokedex"]["height"][0]}′ {p["pokedex"]["height"][1]}″</dd><dt>Weight</dt><dd>{p["pokedex"]["weight"] / 10:g} kg</dd></dl>{paragraphs(" ".join(sum(p["pokedex"]["description"], [])))}<h2>Base stats</h2><div class="panel stats">{stats}<b>Total: {sum(p["stats"].values())}</b></div><h2>Evolution</h2><ul>{evos}</ul><h2>Level-up learnset</h2><div class="table-wrap"><table data-sortable><thead><tr><th>Level</th><th>Move</th><th>Type</th><th>Power</th><th>Accuracy</th><th>PP</th></tr></thead><tbody>{learns}</tbody></table></div><h2>TM/HM compatibility</h2><div class="table-wrap"><table data-sortable><thead><tr><th>TM/HM</th><th>Move</th><th>Type</th><th>Power</th><th>Accuracy</th><th>PP</th></tr></thead><tbody>{machines}</tbody></table></div><h2>Gameplay data</h2><dl><dt>Catch rate</dt><dd>{pretty(p["catch_rate"])}</dd><dt>EXP yield</dt><dd>{pretty(p["exp_yield"])}</dd><dt>Growth rate</dt><dd>{pretty(p["growth_rate"])}</dd></dl>'
+        pokedex_info = f'<div class="pokedex-info"><h2>Pokédex information</h2><p class="pokemon-category">{esc(p["pokedex"]["category"])}</p><dl><dt>Height</dt><dd>{p["pokedex"]["height"][0]}′ {p["pokedex"]["height"][1]}″</dd><dt>Weight</dt><dd>{p["pokedex"]["weight"] / 10:g} kg</dd></dl>{paragraphs(" ".join(sum(p["pokedex"]["description"], [])))}</div>'
+        gameplay_info = f'<dl class="gameplay-info"><dt>Catch Difficulty</dt><dd>{gameplay_label(p["catch_rate"])}</dd><dt>EXP Yield</dt><dd>{gameplay_label(p["exp_yield"])}</dd><dt>Growth Rate</dt><dd>{gameplay_label(p["growth_rate"])}</dd></dl>'
+        content = f'<section class="panel pokemon-overview"><div class="pokemon-identity"><div class="sprites"><div><img class="sprite" src="{sprite(p["sprites"]["front"])}" alt="Front sprite of {esc(p["display_name"])}"><div>Front</div></div><div><img class="sprite" src="{sprite(p["sprites"]["back"])}" alt="Back sprite of {esc(p["display_name"])}"><div>Back</div></div></div><dl><dt>Number</dt><dd>#{p["pokedex_number"]:03d}</dd><dt>Types</dt><dd>{type_html(p["types"])}</dd></dl>{gameplay_info}</div><div class="stats"><h2 class="stats-heading">Base stats</h2>{stats}<div class="stat-total"><b>BST</b><span>{sum(p["stats"].values())}</span></div></div>{pokedex_info}</section><h2>Evolution</h2><ul>{evos}</ul><h2>Level-up learnset</h2><div class="table-wrap"><table data-sortable><thead><tr><th>Level</th><th>Move</th><th>Type</th><th>Power</th><th>Effect</th><th>Accuracy</th><th>PP</th></tr></thead><tbody>{learns}</tbody></table></div><h2>TM/HM compatibility</h2><div class="table-wrap"><table data-sortable><thead><tr><th>TM/HM</th><th>Move</th><th>Type</th><th>Power</th><th>Effect</th><th>Accuracy</th><th>PP</th></tr></thead><tbody>{machines}</tbody></table></div>'
         write_page(out, model, current, p["display_name"], content)
     move_rows = ''.join(f'<tr data-filter-row><td>{move_link(model, "moves/", m)}</td><td>{type_html([m["type"]])}</td><td data-sort-value="{esc(m["power"])}">{"---" if m["power"] in ("0", "1") else m["power"]}{multi_hit_prefix(m)}</td><td data-sort-value="{esc(effect_title(m))}">{effect_html(m)}</td><td>{m["accuracy"]}%</td><td>{m["pp"]}</td><td>{description(m["description_1"] + r"\n" + m["description_2"])}</td></tr>' for m in sorted(model["moves"], key=lambda move: move["name"].casefold()))
     write_page(out, model, "moves/", "Moves", '<input class="filter" data-filter type="search" placeholder="Filter moves" aria-label="Filter moves"><div class="table-wrap"><table data-sortable><thead><tr><th>Move</th><th>Type</th><th>Power</th><th>Effect</th><th>Accuracy</th><th>PP</th><th>Description</th></tr></thead><tbody>' + move_rows + '</tbody></table></div>')
@@ -413,8 +427,8 @@ def build(model, out):
         write_page(out, model, current, m["name"], content)
     public_items = [i for i in model["items"] if i["kind"] == "item" and i["symbol"] != "NO_ITEM" and not i["symbol"].startswith("UNUSED") and not i["symbol"].endswith("BADGE") and not i["aliases"]]
     item_rows = ''.join(f'<tr data-filter-row><td>{esc(i["id"])}</td><td>{item_link(model, "items/", i)}{" <span class=\"key-item-mark\" title=\"Key item\" aria-label=\"Key item\">⚿</span>" if i["key_item"] == "true" else ""}</td><td>{price(i["price"])}</td><td>{description(i["description_text"])}</td></tr>' for i in public_items)
-    machine_rows = ''.join(f'<tr data-filter-row><td>{link(model, "items/", m["_url"], esc(m["name"]))}</td><td>{esc(m["kind"])}</td><td>{price(m["price"])}</td><td>{move_link(model, "items/", model["moves_by"][m["move"]])}</td><td>{type_html([model["moves_by"][m["move"]]["type"]])}</td></tr>' for m in model["machines"])
-    write_page(out, model, "items/", "Items", '<input class="filter" data-filter type="search" placeholder="Filter items" aria-label="Filter items"><h2>Inventory items</h2><div class="table-wrap"><table data-sortable><thead><tr><th>Index</th><th>Item</th><th>Price</th><th>Description</th></tr></thead><tbody>' + item_rows + '</tbody></table></div><h2>TMs/HMs</h2><div class="table-wrap"><table data-sortable><thead><tr><th>TM/HM</th><th>Kind</th><th>Price</th><th>Move</th><th>Type</th></tr></thead><tbody>' + machine_rows + '</tbody></table></div>')
+    machine_rows = ''.join(f'<tr data-filter-row><td>{link(model, "items/", m["_url"], esc(m["name"]))}</td><td>{type_html([model["moves_by"][m["move"]]["type"]])}</td><td>{price(m["price"])}</td><td>{move_link(model, "items/", model["moves_by"][m["move"]])}</td></tr>' for m in model["machines"])
+    write_page(out, model, "items/", "Items", '<input class="filter" data-filter type="search" placeholder="Filter items" aria-label="Filter items"><h2>Inventory items</h2><div class="table-wrap"><table data-sortable><thead><tr><th>Index</th><th>Item</th><th>Price</th><th>Description</th></tr></thead><tbody>' + item_rows + '</tbody></table></div><h2>TMs/HMs</h2><div class="table-wrap"><table data-sortable><thead><tr><th>TM/HM</th><th>Type</th><th>Price</th><th>Move</th></tr></thead><tbody>' + machine_rows + '</tbody></table></div>')
     ordinary_items = public_items
     for i in ordinary_items:
         current = i["_url"]; uses = ''.join(f'<li>{pokemon_link(model, current, u["source"])} &rarr; {pokemon_link(model, current, u["target"])}</li>' for u in model["evolution_users_by_item"].get(i["symbol"], [])); content = f'<div class="panel"><dl><dt>Price</dt><dd>{price(i["price"])}</dd><dt>Key item</dt><dd>{"Yes" if i["key_item"] == "true" else "No"}</dd></dl>{paragraphs(i["description_text"])}</div>' + (f'<h2>Evolution use</h2><ul>{uses}</ul>' if uses else '')

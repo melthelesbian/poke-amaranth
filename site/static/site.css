@@ -104,6 +104,8 @@ h2 {
 .readme img {
 	max-width: 100%;
 	height: auto;
+	margin: 0.5rem;
+	box-shadow: 0 0.2rem 0.5rem rgb(0 0 0 / 0.2);
 }
 
 .key-item-mark {
@@ -489,16 +491,86 @@ table .type {
 	align-items: end;
 }
 
+.sprites > div {
+	text-align: center;
+}
+
+.pokemon-overview {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1.4fr) minmax(0, 1.2fr);
+	gap: 1rem 1.75rem;
+	align-items: start;
+	background: #fdf0fe;
+}
+
+.pokemon-overview > * {
+	min-width: 0;
+}
+
+.pokemon-identity {
+	min-width: 0;
+}
+
+.pokemon-identity dl {
+	margin: 0;
+	margin-top: 0.5rem;
+}
+
+.pokemon-identity .gameplay-info {
+	margin-top: 0.75rem;
+}
+
 .stats {
 	max-width: 600px;
 }
 
+.pokemon-overview .stats {
+	max-width: none;
+}
+
+.pokemon-overview .stats-heading,
+.pokemon-overview .pokedex-info h2 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	border-bottom-width: 1px;
+	margin-top: 0;
+	margin-bottom: 0.45rem;
+	padding-bottom: 0.15rem;
+}
+
+.pokemon-overview .type {
+	padding: 0.1rem 0.4rem;
+	font-size: 0.7rem;
+	line-height: 1.2;
+}
+
 .stat {
 	display: grid;
-	grid-template-columns: 7rem 3rem 1fr;
-	gap: 0.5rem;
+	grid-template-columns: 3rem 2.5rem minmax(0, 1fr);
+	gap: 0.35rem;
 	align-items: center;
-	margin: 0.25rem 0;
+	margin: 0.15rem 0;
+}
+
+.stat-total {
+	display: grid;
+	grid-template-columns: 3rem 2.5rem;
+	gap: 0.35rem;
+	margin-top: 0.35rem;
+}
+
+.stat > span:nth-child(2),
+.stat-total > span {
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+}
+
+.pokemon-category {
+	margin: 0 0 0.35rem;
+}
+
+.pokedex-info dl + p {
+	margin-top: 0.75rem;
 }
 
 .bar {
@@ -511,7 +583,7 @@ table .type {
 .bar i {
 	display: block;
 	height: 100%;
-	background: #386cb0;
+	background: #8b5cf6;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -552,6 +624,10 @@ dd {
 /* -------------------------------------------------------------------------- */
 
 @media (max-width: 600px) {
+	.pokemon-overview {
+		grid-template-columns: 1fr;
+	}
+
 	.site-header .wrap {
 		display: block;
 	}
