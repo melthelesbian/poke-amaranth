@@ -10,10 +10,11 @@ ITEM_FIELDS = (
     "id", "kind", "symbol", "name", "legacy_symbol", "aliases", "price",
     "key_item", "description_group", "description_label", "description_text",
     "use_handler", "party_menu", "close_menu", "vending_price", "guard_drink",
+    "bag_sort_order",
 )
 MACHINE_FIELDS = ("item_id", "kind", "number", "move", "name", "price")
 MODES = {"constants", "names", "prices", "key-items", "use", "party", "close",
-         "guard", "vending", "descriptions", "tm-prices"}
+          "guard", "vending", "descriptions", "tm-prices", "sort-order"}
 ITEM_MAX = 0x61
 ORDINARY_MAX = 0x53
 
@@ -49,6 +50,8 @@ def load_items(path):
     rows = load_csv(path, ITEM_FIELDS)
     if not rows:
         fail("items CSV contains no rows")
+    for item in rows:
+        item["bag_sort_order"] = item["bag_sort_order"] or ""
     ids = set()
     symbols = set()
     for row_number, item in enumerate(rows, 2):
@@ -70,6 +73,8 @@ def load_items(path):
             fail(f"row {row_number}: price must fit bcd3")
         for field in ("key_item", "party_menu", "close_menu", "guard_drink"):
             boolean(item[field], row_number, field)
+        if item["bag_sort_order"]:
+            integer(item["bag_sort_order"], row_number, "bag_sort_order")
         integer(item["description_group"], row_number, "description_group")
         if "@" in item["name"] or "@" in item["description_text"]:
             fail(f"row {row_number}: text contains the ASM string terminator @")
@@ -236,6 +241,19 @@ def generate(mode, items, machines):
         out += ["TechnicalMachinePrices:", "; In thousands (nybbles).", "\tnybble_array TechnicalMachinePrices"]
         out += [f"\tnybble {integer(row['price'], 0, 'price') // 1000}" for row in tms]
         out.append("\tend_nybble_array NUM_TMS")
+    elif mode == "sort-order":
+        sorted_items = sorted(
+            (row for row in ordinary if row["bag_sort_order"]),
+            key=lambda row: integer(row["bag_sort_order"], 0, "bag_sort_order"),
+        )
+        orders = [integer(row["bag_sort_order"], 0, "bag_sort_order") for row in sorted_items]
+        if orders != list(range(1, len(orders) + 1)):
+            fail("bag_sort_order values must be contiguous starting at 1")
+        out += ["ItemSortList::"]
+        out += [f"\tdb {row['symbol']}" for row in sorted_items]
+        out += [f"\tdb HM_{int(row['number']):02d}" for row in hms]
+        out += [f"\tdb TM_{int(row['number']):02d}" for row in tms]
+        out.append("\tdb -1 ; end")
     return "\n".join(out) + "\n"
 
 

@@ -1,88 +1,88 @@
-id,kind,symbol,name,legacy_symbol,aliases,price,key_item,description_group,description_label,description_text,use_handler,party_menu,close_menu,vending_price,guard_drink
+id,kind,symbol,name,legacy_symbol,aliases,price,key_item,description_group,description_label,description_text,use_handler,party_menu,close_menu,vending_price,guard_drink,bag_sort_order
 0x00,item,NO_ITEM,,,,0,false,51,NoItemDescription,This item is\nnot in use.,,false,false,,false
-0x01,item,MASTER_BALL,MASTER BALL,,,0,false,1,MasterBallDescription,Catch wild #MON\nwithout fail.,ItemUseBall,false,false,,false
-0x02,item,ULTRA_BALL,ULTRA BALL,,,900,false,2,UltraBallDescription,Better catch chance\nthan a GREAT BALL.,ItemUseBall,false,false,,false
-0x03,item,GREAT_BALL,GREAT BALL,,,450,false,3,GreatBallDescription,Better catch chance\nthan a # BALL.,ItemUseBall,false,false,,false
-0x04,item,POKE_BALL,POKé BALL,,,150,false,4,PokeBallDescription,Tool used to catch\nwild #MON.,ItemUseBall,false,false,,false
+0x01,item,MASTER_BALL,MASTER BALL,,,0,false,1,MasterBallDescription,Catch wild #MON\nwithout fail.,ItemUseBall,false,false,,false,9
+0x02,item,ULTRA_BALL,ULTRA BALL,,,900,false,2,UltraBallDescription,Better catch chance\nthan a GREAT BALL.,ItemUseBall,false,false,,false,7
+0x03,item,GREAT_BALL,GREAT BALL,,,450,false,3,GreatBallDescription,Better catch chance\nthan a # BALL.,ItemUseBall,false,false,,false,6
+0x04,item,POKE_BALL,POKé BALL,,,150,false,4,PokeBallDescription,Tool used to catch\nwild #MON.,ItemUseBall,false,false,,false,5
 0x05,item,UNUSED_05,TOWN MAP,TOWN_MAP,,0,true,5,TownMapDescription,You should not see\nthis in-game.,ItemUseTownMap,false,false,,false
-0x06,item,BICYCLE,BICYCLE,,,0,true,6,BicycleDescription,The fastest way to\ntravel!,ItemUseBicycle,false,false,,false
-0x07,item,SURFBOARD,SURFBOARD,,,0,true,7,SurfboardDescription,Allows you to surf\non water.,ItemUseSurfboard,false,false,,false
-0x08,item,SAFARI_BALL,SAFARI BALL,,,1000,true,8,SafariBallDescription,A ball for use in\nthe SAFARI ZONE.,ItemUseBall,false,false,,false
-0x09,item,POKEDEX,POKéDEX,,,0,true,9,PokedexDescription,High-tech #MON\nencyclopedia.,ItemUsePokedex,false,false,,false
-0x0A,item,MOON_STONE,MOON STONE,,,4000,false,10,MoonStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false
+0x06,item,BICYCLE,BICYCLE,,,0,true,6,BicycleDescription,The fastest way to\ntravel!,ItemUseBicycle,false,false,,false,1
+0x07,item,SURFBOARD,SURFBOARD,,,0,true,7,SurfboardDescription,Allows you to surf\non water.,ItemUseSurfboard,false,false,,false,2
+0x08,item,SAFARI_BALL,SAFARI BALL,,,1000,true,8,SafariBallDescription,A ball for use in\nthe SAFARI ZONE.,ItemUseBall,false,false,,false,8
+0x09,item,POKEDEX,POKéDEX,,,0,true,9,PokedexDescription,High-tech #MON\nencyclopedia.,ItemUsePokedex,false,false,,false,
+0x0A,item,MOON_STONE,MOON STONE,,,4000,false,10,MoonStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false,41
 0x0B,item,UNUSED_0B,UNUSED 0B,ANTIDOTE,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x0C,item,UNUSED_0C,UNUSED 0C,BURN_HEAL,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x0D,item,UNUSED_0D,UNUSED 0D,ICE_HEAL,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x0E,item,UNUSED_0E,UNUSED 0E,AWAKENING,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x0F,item,UNUSED_0F,UNUSED 0F,PARLYZ_HEAL,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x10,item,FULL_RESTORE,FULL RESTORE,,,3000,false,11,FullRestoreDescription,Fully restores HP\nand status.,ItemUseMedicine,true,false,,false
-0x11,item,MAX_POTION,MAX POTION,,,2500,false,12,MaxPotionDescription,Fully restores HP\nof a #MON.,ItemUseMedicine,true,false,,false
-0x12,item,HYPER_POTION,HYPER POTION,,,1000,false,13,HyperPotionDescription,Restores up to 200\nHP of a #MON.,ItemUseMedicine,true,false,,false
-0x13,item,SUPER_POTION,SUPER POTION,,,500,false,14,SuperPotionDescription,Restores up to 100\nHP of a #MON.,ItemUseMedicine,true,false,,false
-0x14,item,POTION,POTION,,,250,false,15,PotionDescription,Restores up to 50\nHP of a #MON.,ItemUseMedicine,true,false,,false
-0x15,item,BOULDERBADGE,BOULDERBADGE,,SAFARI_BAIT,0,true,16,BoulderBadgeDescription,A badge received\nfrom a GYM LEADER.,ItemUseBait,false,false,,false
-0x16,item,CASCADEBADGE,CASCADEBADGE,,SAFARI_ROCK,0,true,16,CascadeBadgeDescription,A badge received\nfrom a GYM LEADER.,ItemUseRock,false,false,,false
+0x10,item,FULL_RESTORE,FULL RESTORE,,,3000,false,11,FullRestoreDescription,Fully restores HP\nand status.,ItemUseMedicine,true,false,,false,17
+0x11,item,MAX_POTION,MAX POTION,,,2500,false,12,MaxPotionDescription,Fully restores HP\nof a #MON.,ItemUseMedicine,true,false,,false,16
+0x12,item,HYPER_POTION,HYPER POTION,,,1000,false,13,HyperPotionDescription,Restores up to 200\nHP of a #MON.,ItemUseMedicine,true,false,,false,15
+0x13,item,SUPER_POTION,SUPER POTION,,,500,false,14,SuperPotionDescription,Restores up to 100\nHP of a #MON.,ItemUseMedicine,true,false,,false,14
+0x14,item,POTION,POTION,,,250,false,15,PotionDescription,Restores up to 50\nHP of a #MON.,ItemUseMedicine,true,false,,false,13
+0x15,item,BOULDERBADGE,BOULDERBADGE,,SAFARI_BAIT,0,true,16,BoulderBadgeDescription,A badge received\nfrom a GYM LEADER.,ItemUseBait,false,false,,false,49
+0x16,item,CASCADEBADGE,CASCADEBADGE,,SAFARI_ROCK,0,true,16,CascadeBadgeDescription,A badge received\nfrom a GYM LEADER.,ItemUseRock,false,false,,false,50
 0x17,item,THUNDERBADGE,THUNDERBADGE,,,0,true,16,ThunderBadgeDescription,A badge received\nfrom a GYM LEADER.,UnusableItem,false,false,,false
 0x18,item,RAINBOWBADGE,RAINBOWBADGE,,,0,true,16,RainbowBadgeDescription,A badge received\nfrom a GYM LEADER.,UnusableItem,false,false,,false
 0x19,item,SOULBADGE,SOULBADGE,,,0,true,16,SoulBadgeDescription,A badge received\nfrom a GYM LEADER.,UnusableItem,false,false,,false
 0x1A,item,MARSHBADGE,MARSHBADGE,,,0,true,16,MarshBadgeDescription,A badge received\nfrom a GYM LEADER.,UnusableItem,false,false,,false
 0x1B,item,VOLCANOBADGE,VOLCANOBADGE,,,0,true,16,VolcanoBadgeDescription,A badge received\nfrom a GYM LEADER.,UnusableItem,false,false,,false
 0x1C,item,EARTHBADGE,EARTHBADGE,,,0,true,16,EarthBadgeDescription,A badge received\nfrom a GYM LEADER.,UnusableItem,false,false,,false
-0x1D,item,ESCAPE_ROPE,ESCAPE ROPE,,,275,false,17,EscapeRopeDescription,Rope that enables\nescape from caves.,ItemUseEscapeRope,false,true,,false
-0x1E,item,REPEL,REPEL,,,500,false,18,RepelDescription,Repel weak #MON\nfor 250 steps.,ItemUseRepel,false,false,,false
-0x1F,item,OLD_AMBER,OLD AMBER,,,15000,false,19,OldAmberDescription,Old resin with DNA\nfrom a #MON.,UnusableItem,false,false,,false
-0x20,item,FIRE_STONE,FIRE STONE,,,2000,false,10,FireStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false
-0x21,item,THUNDER_STONE,THUNDERSTONE,,,2000,false,10,ThunderStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false
-0x22,item,WATER_STONE,WATER STONE,,,2000,false,10,WaterStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false
-0x23,item,HP_UP,HP UP,,,5000,false,20,HPUpDescription,Raises a #MON's\nmaximum HP.,ItemUseVitamin,true,false,,false
-0x24,item,PROTEIN,PROTEIN,,,5000,false,21,ProteinDescription,Raises a #MON's\nAttack stat.,ItemUseVitamin,true,false,,false
-0x25,item,IRON,IRON,,,5000,false,22,IronDescription,Raises a #MON's\nDefense stat.,ItemUseVitamin,true,false,,false
-0x26,item,CARBOS,CARBOS,,,5000,false,23,CarbosDescription,Raises a #MON's\nSpeed stat.,ItemUseVitamin,true,false,,false
-0x27,item,CALCIUM,CALCIUM,,,5000,false,24,CalciumDescription,Raises a #MON's\nSpecial stat.,ItemUseVitamin,true,false,,false
-0x28,item,RARE_CANDY,RARE CANDY,,,7500,false,25,RareCandyDescription,Raises a #MON's\nlevel by one.,ItemUseVitamin,true,false,,false
-0x29,item,DOME_FOSSIL,DOME FOSSIL,,,10000,false,26,DomeFossilDescription,Fossilized remains\nof a #MON.,UnusableItem,false,false,,false
-0x2A,item,HELIX_FOSSIL,HELIX FOSSIL,,,10000,false,26,HelixFossilDescription,Fossilized remains\nof a #MON.,UnusableItem,false,false,,false
+0x1D,item,ESCAPE_ROPE,ESCAPE ROPE,,,275,false,17,EscapeRopeDescription,Rope that enables\nescape from caves.,ItemUseEscapeRope,false,true,,false,11
+0x1E,item,REPEL,REPEL,,,500,false,18,RepelDescription,Repel weak #MON\nfor 250 steps.,ItemUseRepel,false,false,,false,10
+0x1F,item,OLD_AMBER,OLD AMBER,,,15000,false,19,OldAmberDescription,Old resin with DNA\nfrom a #MON.,UnusableItem,false,false,,false,47
+0x20,item,FIRE_STONE,FIRE STONE,,,2000,false,10,FireStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false,38
+0x21,item,THUNDER_STONE,THUNDERSTONE,,,2000,false,10,ThunderStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false,39
+0x22,item,WATER_STONE,WATER STONE,,,2000,false,10,WaterStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false,40
+0x23,item,HP_UP,HP UP,,,5000,false,20,HPUpDescription,Raises a #MON's\nmaximum HP.,ItemUseVitamin,true,false,,false,30
+0x24,item,PROTEIN,PROTEIN,,,5000,false,21,ProteinDescription,Raises a #MON's\nAttack stat.,ItemUseVitamin,true,false,,false,31
+0x25,item,IRON,IRON,,,5000,false,22,IronDescription,Raises a #MON's\nDefense stat.,ItemUseVitamin,true,false,,false,32
+0x26,item,CARBOS,CARBOS,,,5000,false,23,CarbosDescription,Raises a #MON's\nSpeed stat.,ItemUseVitamin,true,false,,false,33
+0x27,item,CALCIUM,CALCIUM,,,5000,false,24,CalciumDescription,Raises a #MON's\nSpecial stat.,ItemUseVitamin,true,false,,false,34
+0x28,item,RARE_CANDY,RARE CANDY,,,7500,false,25,RareCandyDescription,Raises a #MON's\nlevel by one.,ItemUseVitamin,true,false,,false,29
+0x29,item,DOME_FOSSIL,DOME FOSSIL,,,10000,false,26,DomeFossilDescription,Fossilized remains\nof a #MON.,UnusableItem,false,false,,false,45
+0x2A,item,HELIX_FOSSIL,HELIX FOSSIL,,,10000,false,26,HelixFossilDescription,Fossilized remains\nof a #MON.,UnusableItem,false,false,,false,46
 0x2B,item,UNUSED_2B,UNUSED 2B,SECRET_KEY,,0,true,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x2C,item,ANCIENT_HAIR,ANCIENT HAIR,,,0,true,27,AncientHairDescription,Ancient hair from\na rare #MON.,UnusableItem,false,false,,false
-0x2D,item,BIKE_VOUCHER,BIKE VOUCHER,,,0,true,28,BikeVoucherDescription,Exchange for free\nBICYCLE.,UnusableItem,false,false,,false
+0x2C,item,ANCIENT_HAIR,ANCIENT HAIR,,,0,true,27,AncientHairDescription,Ancient hair from\na rare #MON.,UnusableItem,false,false,,false,48
+0x2D,item,BIKE_VOUCHER,BIKE VOUCHER,,,0,true,28,BikeVoucherDescription,Exchange for free\nBICYCLE.,UnusableItem,false,false,,false,53
 0x2E,item,UNUSED_2E,UNUSED 2E,,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x2F,item,LEAF_STONE,LEAF STONE,,,2000,false,10,LeafStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false
+0x2F,item,LEAF_STONE,LEAF STONE,,,2000,false,10,LeafStoneDescription,Evolves certain\nkinds of #MON.,ItemUseEvoStone,true,false,,false,37
 0x30,item,UNUSED_30,UNUSED 30,CARD_KEY,,0,true,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x31,item,NUGGET,NUGGET,,,10000,false,29,NuggetDescription,A golden nugget to\nsell to shops.,UnusableItem,false,false,,false
-0x32,item,DEVO_SPRAY,DEVO SPRAY,ITEM_32,,1000,false,30,DevoSprayDescription,Spray that reverts\n#MON evolution.,ItemUseEvoStone,false,false,,false
-0x33,item,POKE_DOLL,POKé DOLL,,,1000,false,31,PokeDollDescription,Use to escape from\nwild #MON.,ItemUsePokeDoll,false,false,,false
-0x34,item,PANACEA,PANACEA,,,500,false,32,PanaceaDescription,Cures any status\nproblem.,ItemUseMedicine,true,false,,false
-0x35,item,REVIVE,REVIVE,,,1500,false,33,ReviveDescription,Revive a #MON\nto 1/2 HP.,ItemUseMedicine,true,false,,false
-0x36,item,MAX_REVIVE,MAX REVIVE,,,4000,false,34,MaxReviveDescription,Revive a #MON\nto full HP.,ItemUseMedicine,true,false,,false
-0x37,item,TEA_SHIPMENT,TEA SHIPMENT,GUARD_SPEC,,0,true,35,TeaShipmentDescription,A case of bottled\nhomemade tea.,UnusableItem,false,false,,true
+0x31,item,NUGGET,NUGGET,,,10000,false,29,NuggetDescription,A golden nugget to\nsell to shops.,UnusableItem,false,false,,false,44
+0x32,item,DEVO_SPRAY,DEVO SPRAY,ITEM_32,,1000,false,30,DevoSprayDescription,Spray that reverts\n#MON evolution.,ItemUseEvoStone,false,false,,false,36
+0x33,item,POKE_DOLL,POKé DOLL,,,1000,false,31,PokeDollDescription,Use to escape from\nwild #MON.,ItemUsePokeDoll,false,false,,false,12
+0x34,item,PANACEA,PANACEA,,,500,false,32,PanaceaDescription,Cures any status\nproblem.,ItemUseMedicine,true,false,,false,23
+0x35,item,REVIVE,REVIVE,,,1500,false,33,ReviveDescription,Revive a #MON\nto 1/2 HP.,ItemUseMedicine,true,false,,false,21
+0x36,item,MAX_REVIVE,MAX REVIVE,,,4000,false,34,MaxReviveDescription,Revive a #MON\nto full HP.,ItemUseMedicine,true,false,,false,22
+0x37,item,TEA_SHIPMENT,TEA SHIPMENT,GUARD_SPEC,,0,true,35,TeaShipmentDescription,A case of bottled\nhomemade tea.,UnusableItem,false,false,,true,54
 0x38,item,UNUSED_38,UNUSED 38,SUPER_REPEL,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x39,item,UNUSED_39,UNUSED 39,MAX_REPEL,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x3A,item,UNUSED_3A,UNUSED 3A,DIRE_HIT,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x3B,item,COIN,COIN,,,10,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x3C,item,FRESH_WATER,FRESH WATER,,,100,false,36,FreshWaterDescription,Restores 25 HP of\na #MON.,ItemUseVitamin,true,false,100,false
-0x3D,item,ICED_TEA,ICED TEA,SODA_POP,,200,false,37,IcedTeaDescription,Restores 50 HP of\na #MON.,ItemUseVitamin,true,false,200,false
-0x3E,item,LEMONADE,LEMONADE,,,300,false,38,LemonadeDescription,Restores 75 HP of\na #MON.,ItemUseVitamin,true,false,300,false
+0x3B,item,COIN,COIN,,,10,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false,43
+0x3C,item,FRESH_WATER,FRESH WATER,,,100,false,36,FreshWaterDescription,Restores 25 HP of\na #MON.,ItemUseVitamin,true,false,100,false,18
+0x3D,item,ICED_TEA,ICED TEA,SODA_POP,,200,false,37,IcedTeaDescription,Restores 50 HP of\na #MON.,ItemUseVitamin,true,false,200,false,19
+0x3E,item,LEMONADE,LEMONADE,,,300,false,38,LemonadeDescription,Restores 75 HP of\na #MON.,ItemUseVitamin,true,false,300,false,20
 0x3F,item,UNUSED_3F,UNUSED 3F,SS_TICKET,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x40,item,GOLD_TEETH,GOLD TEETH,,,0,true,39,GoldTeethDescription,"Shiny gold teeth,\nkinda gross.",UnusableItem,false,false,,false
+0x40,item,GOLD_TEETH,GOLD TEETH,,,0,true,39,GoldTeethDescription,"Shiny gold teeth,\nkinda gross.",UnusableItem,false,false,,false,55
 0x41,item,UNUSED_41,UNUSED 41,,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x42,item,UNUSED_42,UNUSED 42,,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x43,item,UNUSED_43,UNUSED 43,,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x44,item,UNUSED_44,UNUSED 44,,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x45,item,COIN_CASE,COIN CASE,,,0,true,40,CoinCaseDescription,Holds up to 9999\nCOINS.,ItemUseCoinCase,false,false,,false
-0x46,item,OAKS_PARCEL,OAK's PARCEL,,,0,true,41,OaksParcelDescription,A parcel for\nPROFFESSOR OAK.,ItemUseOaksParcel,false,false,,false
-0x47,item,ITEMFINDER,ITEMFINDER,,,0,true,42,ItemfinderDescription,Finds hidden\nitems nearby.,ItemUseItemfinder,false,true,,false
+0x45,item,COIN_CASE,COIN CASE,,,0,true,40,CoinCaseDescription,Holds up to 9999\nCOINS.,ItemUseCoinCase,false,false,,false,42
+0x46,item,OAKS_PARCEL,OAK's PARCEL,,,0,true,41,OaksParcelDescription,A parcel for\nPROFFESSOR OAK.,ItemUseOaksParcel,false,false,,false,52
+0x47,item,ITEMFINDER,ITEMFINDER,,,0,true,42,ItemfinderDescription,Finds hidden\nitems nearby.,ItemUseItemfinder,false,true,,false,4
 0x48,item,UNUSED_48,UNUSED 48,SILPH_SCOPE,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x49,item,POKE_FLUTE,POKé FLUTE,,,0,true,43,PokeFluteDescription,Wakes #MON from\nsleep.,ItemUsePokeFlute,false,true,,false
+0x49,item,POKE_FLUTE,POKé FLUTE,,,0,true,43,PokeFluteDescription,Wakes #MON from\nsleep.,ItemUsePokeFlute,false,true,,false,24
 0x4A,item,UNUSED_4A,UNUSED 4A,LIFT_KEY,,0,false,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x4B,item,EXP_ALL,EXP.ALL,,,0,true,44,ExpAllDescription,Gives all #MON\nin party EXP.,UnusableItem,false,false,,false
+0x4B,item,EXP_ALL,EXP.ALL,,,0,true,44,ExpAllDescription,Gives all #MON\nin party EXP.,UnusableItem,false,false,,false,51
 0x4C,item,UNUSED_4C,UNUSED 4C,OLD_ROD,,0,true,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
 0x4D,item,UNUSED_4D,UNUSED 4D,GOOD_ROD,,0,true,51,NoItemDescription,This item is\nnot in use.,UnusableItem,false,false,,false
-0x4E,item,FISHING_ROD,FISHING ROD,,,0,true,45,FishingRodDescription,A rod for fishing\nfor #MON.,ItemUseFishingRod,false,true,,false
-0x4F,item,PP_UP,PP UP,,,9800,false,46,PPUpDescription,Raises PP of a\n#MON's move.,ItemUsePPUp,true,false,,false
-0x50,item,ETHER,ETHER,,,5000,false,47,EtherDescription,Restores 10 PP of\na #MON's move.,ItemUsePPRestore,true,false,,false
-0x51,item,MAX_ETHER,MAX ETHER,,,10000,false,48,MaxEtherDescription,Restores all PP of\na #MON's move.,ItemUsePPRestore,true,false,,false
-0x52,item,ELIXIR,ELIXIR,,,7500,false,49,ElixirDescription,Restores 10 PP of\nall #MON moves.,ItemUsePPRestore,true,false,,false
-0x53,item,MAX_ELIXIR,MAX ELIXIR,,,15000,false,50,MaxElixirDescription,Restores all PP of\nall #MON moves.,ItemUsePPRestore,true,false,,false
+0x4E,item,FISHING_ROD,FISHING ROD,,,0,true,45,FishingRodDescription,A rod for fishing\nfor #MON.,ItemUseFishingRod,false,true,,false,3
+0x4F,item,PP_UP,PP UP,,,9800,false,46,PPUpDescription,Raises PP of a\n#MON's move.,ItemUsePPUp,true,false,,false,35
+0x50,item,ETHER,ETHER,,,5000,false,47,EtherDescription,Restores 10 PP of\na #MON's move.,ItemUsePPRestore,true,false,,false,25
+0x51,item,MAX_ETHER,MAX ETHER,,,10000,false,48,MaxEtherDescription,Restores all PP of\na #MON's move.,ItemUsePPRestore,true,false,,false,26
+0x52,item,ELIXIR,ELIXIR,,,7500,false,49,ElixirDescription,Restores 10 PP of\nall #MON moves.,ItemUsePPRestore,true,false,,false,27
+0x53,item,MAX_ELIXIR,MAX ELIXIR,,,15000,false,50,MaxElixirDescription,Restores all PP of\nall #MON moves.,ItemUsePPRestore,true,false,,false,28
 0x54,floor,FLOOR_B2F,B2F,,,0,false,51,NoItemDescription,This item is\nnot in use.,,false,false,,false
 0x55,floor,FLOOR_B1F,B1F,,,0,false,51,NoItemDescription,This item is\nnot in use.,,false,false,,false
 0x56,floor,FLOOR_1F,1F,,,0,false,51,NoItemDescription,This item is\nnot in use.,,false,false,,false

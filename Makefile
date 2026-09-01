@@ -31,7 +31,8 @@ item_generated := \
 	data/items/guard_drink_items.gen.asm \
 	data/items/vending_prices.gen.asm \
 	data/items/descriptions.gen.asm \
-	data/items/tm_prices.gen.asm
+	data/items/tm_prices.gen.asm \
+	data/items/sort_order.gen.asm
 pokemon_json := $(wildcard data/pokemon/species/*.json)
 pokemon_metadata_generated := \
 	constants/pokedex_constants.gen.asm \
@@ -245,6 +246,9 @@ data/items/descriptions.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/ge
 
 data/items/tm_prices.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
 	python3 tools/generate_items.py tm-prices > $@
+
+data/items/sort_order.gen.asm: $(item_csv) $(machine_csv) $(move_csv) tools/generate_items.py
+	python3 tools/generate_items.py sort-order > $@
 
 $(filter data/pokemon/base_stats/%,$(pokemon_generated)): data/pokemon/base_stats/%.gen.asm: data/pokemon/species/%.json tools/generate_pokemon.py $(pokemon_pics)
 	python3 tools/generate_pokemon.py generate-one $*
