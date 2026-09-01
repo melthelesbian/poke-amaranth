@@ -419,16 +419,11 @@ table[data-sortable] th:focus-visible {
 
 .pokemon-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
-	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+	column-gap: 0.75rem;
+	row-gap: 1.5rem;
 
-	/*
-	 * dexplan puts a 60rem maximum width on an outer panel,
-	 * then gives the panel body 1rem padding on each side.
-	 * This approximates the resulting inner grid width.
-	 */
-	width: min(100%, calc(60rem - 2rem - 2px));
-	margin: 0 auto;
+	width: 100%;
 }
 
 .pokemon-card {
@@ -452,7 +447,7 @@ table[data-sortable] th:focus-visible {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Sprite square                                                              */
+/* Sprite frame                                                               */
 /* -------------------------------------------------------------------------- */
 
 .sprite-frame {
@@ -460,8 +455,6 @@ table[data-sortable] th:focus-visible {
 	border: 0;
 	border-radius: 0.35rem;
 	padding: 0.15rem;
-
-	aspect-ratio: 1;
 
 	display: flex;
 	align-items: center;
@@ -493,7 +486,7 @@ table[data-sortable] th:focus-visible {
 	margin-top: 0.2rem;
 
 	font-size: 0.72rem;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: 1.1;
 
 	color: #174ea6;
@@ -513,8 +506,8 @@ table[data-sortable] th:focus-visible {
 
 	margin-top: 0.1rem;
 
-	font-size: 0.7rem;
-	font-weight: 400;
+	font-size: 0.8rem;
+	font-weight: 700;
 	line-height: normal;
 
 	color: var(--muted);
