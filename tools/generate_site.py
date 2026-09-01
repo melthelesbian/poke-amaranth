@@ -139,14 +139,20 @@ def multi_hit_prefix(move):
     return {"ATTACK_TWICE_EFFECT": "+", "TWO_TO_FIVE_ATTACKS_EFFECT": "×", "TWINEEDLE_EFFECT": "+"}.get(move["effect"], "")
 
 
-def effect_html(move):
+def effect_html(move, title=None):
     effect = move_effect(move)
-    title = effect_title(move)
+    title = effect_title(move) if title is None else title
     return f'<span class="move-effect move-effect-{slug(effect)}" title="{esc(title)}"></span>' if effect else ""
 
 
 def effect_title(move):
-    return "HIGH CRIT" if move["high_crit"] == "true" else move["effect"].replace("_", " ")
+    if move["high_crit"] == "true":
+        return "HIGH CRIT"
+    title = move["effect"].replace("_", " ")
+    if re.search(r"\bSIDE EFFECT\d*\b", title):
+        return title
+    title = re.sub(r"\s+EFFECT(?=\d)", " ", title)
+    return re.sub(r"\s+EFFECT\b", "", title)
 
 
 def price(value):
@@ -308,6 +314,28 @@ def pokemon_link(model, current, p): return link(model, current, p["_url"], esc(
 def item_link(model, current, item): return link(model, current, item["_url"], esc(item["name"]))
 
 
+def pokemon_table(model, current, learners, levels=False):
+    if not learners:
+        return "None recorded"
+    rows = []
+    for learner in learners:
+        pokemon = learner["pokemon"] if levels else learner
+        level = f'<td data-sort-value="{learner["level"]}">{learner["level"]}</td>' if levels else ""
+        rows.append(
+            f'<tr><td><img class="sprite small" src="{relative(current, pokemon["sprites"]["front"])}" alt=""></td>'
+            f'<td data-sort-value="{esc(" ".join(type_name(value) for value in pokemon["types"]))}">{type_html(pokemon["types"])}</td>'
+            f'<td>{pokemon_link(model, current, pokemon)}</td>{level}</tr>'
+        )
+    rows = "".join(rows)
+    level_heading = '<th scope="col">Level</th>' if levels else ''
+    return (
+        '<div class="table-wrap"><table class="learner-table" data-sortable>'
+        '<thead><tr><th scope="col" data-no-sort aria-label="Sprite"></th>'
+        f'<th scope="col">Type</th><th scope="col">Pokémon</th>{level_heading}</tr></thead>'
+        f"<tbody>{rows}</tbody></table></div>"
+    )
+
+
 def move_stats(move):
     return f"{type_html([move['type']])} {esc(move['power']) if move['power'] != '0' else 'Status'} / {esc(move['accuracy'])}% / {esc(move['pp'])} PP"
 
@@ -407,7 +435,7 @@ def build(model, out):
     shutil.copy2(ROOT / "site/static/site.css", out / "static/site.css")
     shutil.copy2(ROOT / "site/static/site.js", out / "static/site.js")
     shutil.copy2(ROOT / "site/static/favicon.png", out / "static/favicon.png")
-    shutil.copy2(ROOT / "gfx/font/font.png", out / "static/font.png")
+    apply_palette(ROOT / "gfx/font/font.png", out / "static/font.png", model["palettes"]["PAL_MISSINGNO"])
     shutil.copytree(ROOT / "docs", out / "docs")
     for p in model["pokemon"]:
         for source in p["sprites"].values():
@@ -432,9 +460,11 @@ def build(model, out):
     move_rows = ''.join(f'<tr data-filter-row><td>{type_html([m["type"]])}</td><td>{move_link(model, "moves/", m)}</td><td data-sort-value="{esc(m["power"])}">{"---" if m["power"] in ("0", "1") else m["power"]}{multi_hit_prefix(m)}</td><td>{m["pp"]}</td><td>{m["accuracy"]}%</td><td data-sort-value="{esc(effect_title(m))}">{effect_html(m)}</td><td>{description(m["description_1"] + r"\n" + m["description_2"])}</td></tr>' for m in sorted(model["moves"], key=lambda move: move["name"].casefold()))
     write_page(out, model, "moves/", "Moves", '<input class="filter" data-filter type="search" placeholder="Filter moves" aria-label="Filter moves"><div class="table-wrap"><table class="moves-table" data-sortable><thead><tr><th>Type</th><th>Move</th><th>Power</th><th>PP</th><th>Accuracy</th><th>Effect</th><th>Description</th></tr></thead><tbody>' + move_rows + '</tbody></table></div>')
     for m in model["moves"]:
-        current = m["_url"]; machine = model["machines_by_move"].get(m["constant"]); learners = ''.join(f'<li>{pokemon_link(model, current, x["pokemon"])} (level {x["level"]})</li>' for x in model["level_learners_by_move"].get(m["constant"], [])) or '<li>None recorded</li>'; compatible = ''.join(f'<li>{pokemon_link(model, current, p)}</li>' for p in model["machine_learners_by_move"].get(m["constant"], [])) or '<li>None recorded</li>'
-        machine_text = f'<p>TM/HM: {link(model, current, machine["_url"], esc(machine["name"]))}</p>' if machine else ''
-        content = f'<div class="panel"><dl><dt>Type</dt><dd>{type_html([m["type"]])}</dd><dt>Power</dt><dd>{m["power"] if m["power"] != "0" else "Status move"}</dd><dt>Accuracy</dt><dd>{m["accuracy"]}%</dd><dt>PP</dt><dd>{m["pp"]}</dd><dt>High critical hit</dt><dd>{"Yes" if m["high_crit"] == "true" else "No"}</dd></dl></div>{machine_text}<p>{description(m["description_1"] + r"\n" + m["description_2"])}</p><h2>Learned by level</h2><ul>{learners}</ul><h2>TM/HM compatibility</h2><ul>{compatible}</ul>'
+        current = m["_url"]; machine = model["machines_by_move"].get(m["constant"]); learners = pokemon_table(model, current, model["level_learners_by_move"].get(m["constant"], []), True); compatible = pokemon_table(model, current, model["machine_learners_by_move"].get(m["constant"], []))
+        effect = effect_html(m, effect_title(m))
+        effect_value = f'{effect} {esc(effect_title(m))}' if effect else "---"
+        machine_row = f'<div class="move-summary-machine"><dt>TM/HM</dt><dd>{link(model, current, machine["_url"], esc(machine["name"]))}</dd></div>' if machine else ''
+        content = f'<div class="panel move-summary"><dl class="move-summary-stats"><div><dt>TYPE</dt><dd>{type_html([m["type"]])}</dd></div><div><dt>POWER</dt><dd>{"---" if m["power"] in ("0", "1") else m["power"]}{multi_hit_prefix(m)}</dd></div><div><dt>ACCURACY</dt><dd>{m["accuracy"]}%</dd></div><div><dt>PP</dt><dd>{m["pp"]}</dd></div></dl><dl class="move-summary-secondary"><div><dt>EFFECT</dt><dd>{effect_value}</dd></div><div class="move-summary-description"><dt>DESCRIPTION</dt><dd>{description(m["description_1"] + r"\n" + m["description_2"])}</dd></div>{machine_row}</dl></div><h2>Learned by level</h2>{learners}<h2>TM/HM compatibility</h2>{compatible}'
         write_page(out, model, current, m["name"], content)
     public_items = [i for i in model["items"] if i["kind"] == "item" and i["symbol"] != "NO_ITEM" and not i["symbol"].startswith("UNUSED") and not i["symbol"].endswith("BADGE") and not i["aliases"]]
     item_rows = ''.join(f'<tr data-filter-row><td>{esc(i["id"])}</td><td>{item_link(model, "items/", i)}{" <span class=\"key-item-mark\" title=\"Key item\" aria-label=\"Key item\">⚿</span>" if i["key_item"] == "true" else ""}</td><td>{price(i["price"])}</td><td>{sell_price(i["price"])}</td><td>{description(i["description_text"])}</td></tr>' for i in public_items if i["symbol"] != "SAFARI_BALL")

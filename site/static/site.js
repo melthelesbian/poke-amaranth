@@ -9,7 +9,8 @@
   }
 
   document.querySelectorAll('table[data-sortable]').forEach(function (table) {
-    table.querySelectorAll('thead th').forEach(function (header, column) {
+    table.querySelectorAll('thead th:not([data-no-sort])').forEach(function (header) {
+      const column = header.cellIndex;
       header.tabIndex = 0;
       header.setAttribute('aria-sort', 'none');
       function sort() {
