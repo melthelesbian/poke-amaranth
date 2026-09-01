@@ -217,12 +217,27 @@ table[data-sortable] th:focus-visible {
 
 .learner-table td:nth-child(1) .sprite {
 	display: block;
+	margin-inline: auto;
+}
+
+.learner-table th:nth-child(1),
+.learner-table td:nth-child(1) {
+	text-align: center;
 }
 
 .learner-table th:nth-child(4),
 .learner-table td:nth-child(4) {
 	font-variant-numeric: tabular-nums;
 	text-align: right;
+}
+
+.learner-dex-number {
+	display: block;
+	font-size: 0.6rem;
+	font-weight: 400;
+	font-variant-numeric: tabular-nums;
+	line-height: 1.1;
+	color: #174ea6;
 }
 
 .learnset-table th,

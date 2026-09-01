@@ -149,9 +149,10 @@ def effect_title(move):
     if move["high_crit"] == "true":
         return "HIGH CRIT"
     title = move["effect"].replace("_", " ")
-    if re.search(r"\bSIDE EFFECT\d*\b", title):
+    title = re.sub(r"(\D)(\d+)$", r"\1 \2", title)
+    if re.search(r"\bSIDE EFFECT(?:\s*\d+)?\b", title):
         return title
-    title = re.sub(r"\s+EFFECT(?=\d)", " ", title)
+    title = re.sub(r"\s+EFFECT(?=\s*\d)", "", title)
     return re.sub(r"\s+EFFECT\b", "", title)
 
 
@@ -318,11 +319,11 @@ def pokemon_table(model, current, learners, levels=False):
     if not learners:
         return "None recorded"
     rows = []
-    for learner in learners:
+    for learner in sorted(learners, key=lambda entry: (entry["pokemon"] if levels else entry)["pokedex_number"]):
         pokemon = learner["pokemon"] if levels else learner
         level = f'<td data-sort-value="{learner["level"]}">{learner["level"]}</td>' if levels else ""
         rows.append(
-            f'<tr><td><img class="sprite small" src="{relative(current, pokemon["sprites"]["front"])}" alt=""></td>'
+            f'<tr><td data-sort-value="{pokemon["pokedex_number"]}"><img class="sprite small" src="{relative(current, pokemon["sprites"]["front"])}" alt=""><span class="learner-dex-number">#{pokemon["pokedex_number"]:03d}</span></td>'
             f'<td data-sort-value="{esc(" ".join(type_name(value) for value in pokemon["types"]))}">{type_html(pokemon["types"])}</td>'
             f'<td>{pokemon_link(model, current, pokemon)}</td>{level}</tr>'
         )
@@ -330,7 +331,7 @@ def pokemon_table(model, current, learners, levels=False):
     level_heading = '<th scope="col">Level</th>' if levels else ''
     return (
         '<div class="table-wrap"><table class="learner-table" data-sortable>'
-        '<thead><tr><th scope="col" data-no-sort aria-label="Sprite"></th>'
+        '<thead><tr><th scope="col">#</th>'
         f'<th scope="col">Type</th><th scope="col">Pokémon</th>{level_heading}</tr></thead>'
         f"<tbody>{rows}</tbody></table></div>"
     )
