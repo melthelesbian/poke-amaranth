@@ -57,6 +57,13 @@ def paragraphs(value):
     return "".join(f"<p>{esc(line)}</p>" for line in lines if line)
 
 
+def pokedex_description(pages):
+    value = " ".join(sum(pages, []))
+    if value and value[-1] not in ".!?":
+        value += "."
+    return paragraphs(value)
+
+
 def description(value):
     return "<br>".join(esc(line) for line in text(value).split(r"\n"))
 
@@ -418,7 +425,7 @@ def build(model, out):
         learns = ''.join(f'<tr><td>{e["level"]}</td><td>{type_html([model["moves_by"][e["move"]]["type"]])}</td><td>{move_link(model, current, model["moves_by"][e["move"]])}</td><td data-sort-value="{esc(model["moves_by"][e["move"]]["power"])}">{"---" if model["moves_by"][e["move"]]["power"] in ("0", "1") else model["moves_by"][e["move"]]["power"]}{multi_hit_prefix(model["moves_by"][e["move"]])}</td><td>{model["moves_by"][e["move"]]["pp"]}</td><td>{model["moves_by"][e["move"]]["accuracy"]}%</td><td>{effect_html(model["moves_by"][e["move"]])}</td></tr>' for e in p["learnset"])
         machines = ''.join(f'<tr><td>{link(model, current, m["_url"], esc(m["kind"] + str(integer(m["number"])).zfill(2)))}</td><td>{type_html([model["moves_by"][move]["type"]])}</td><td>{move_link(model, current, model["moves_by"][move])}</td><td data-sort-value="{esc(model["moves_by"][move]["power"])}">{"---" if model["moves_by"][move]["power"] in ("0", "1") else model["moves_by"][move]["power"]}{multi_hit_prefix(model["moves_by"][move])}</td><td>{model["moves_by"][move]["pp"]}</td><td>{model["moves_by"][move]["accuracy"]}%</td><td>{effect_html(model["moves_by"][move])}</td></tr>' for move in p["tmhm"] for m in [model["machines_by_move"].get(move)] if m)
         sprite = lambda source: relative(current, source)
-        pokedex_info = f'<div class="pokedex-info"><h2>Pokédex information</h2><p class="pokemon-category">{esc(p["pokedex"]["category"])}</p><dl><dt>Height</dt><dd>{p["pokedex"]["height"][0]}′ {p["pokedex"]["height"][1]}″</dd><dt>Weight</dt><dd>{p["pokedex"]["weight"] / 10:g} kg</dd></dl>{paragraphs(" ".join(sum(p["pokedex"]["description"], [])))}</div>'
+        pokedex_info = f'<div class="pokedex-info"><h2>Pokédex information</h2><p class="pokemon-category">{esc(p["pokedex"]["category"])}</p><dl><dt>Height</dt><dd>{p["pokedex"]["height"][0]}′ {p["pokedex"]["height"][1]}″</dd><dt>Weight</dt><dd>{p["pokedex"]["weight"] / 10:g} kg</dd></dl>{pokedex_description(p["pokedex"]["description"])}</div>'
         gameplay_info = f'<dl class="gameplay-info"><dt>Catch Difficulty</dt><dd>{gameplay_label(p["catch_rate"])}</dd><dt>EXP Yield</dt><dd>{gameplay_label(p["exp_yield"])}</dd><dt>Growth Rate</dt><dd>{gameplay_label(p["growth_rate"])}</dd></dl>'
         content = f'<section class="panel pokemon-overview"><div class="pokemon-identity"><div class="sprites"><div><img class="sprite" src="{sprite(p["sprites"]["front"])}" alt="Front sprite of {esc(p["display_name"])}"><div>Front</div></div><div><img class="sprite" src="{sprite(p["sprites"]["back"])}" alt="Back sprite of {esc(p["display_name"])}"><div>Back</div></div></div><dl><dt>Number</dt><dd>#{p["pokedex_number"]:03d}</dd><dt>Types</dt><dd>{type_html(p["types"])}</dd></dl>{gameplay_info}</div><div class="stats"><h2 class="stats-heading">Base stats</h2>{stats}<div class="stat-total"><b>BST</b><span>{sum(p["stats"].values())}</span></div></div>{pokedex_info}</section><h2>Evolution</h2><ul>{evos}</ul><h2>Level-up learnset</h2><div class="table-wrap"><table class="learnset-table" data-sortable><thead><tr><th>Level</th><th>Type</th><th>Move</th><th>Power</th><th>PP</th><th>Accuracy</th><th>Effect</th></tr></thead><tbody>{learns}</tbody></table></div><h2>TM/HM compatibility</h2><div class="table-wrap"><table class="machine-table" data-sortable><thead><tr><th>TM/HM</th><th>Type</th><th>Move</th><th>Power</th><th>PP</th><th>Accuracy</th><th>Effect</th></tr></thead><tbody>{machines}</tbody></table></div>'
         write_page(out, model, current, p["display_name"], content)
